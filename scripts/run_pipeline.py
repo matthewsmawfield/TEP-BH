@@ -28,6 +28,7 @@ PIPELINE_STEPS = [
     ("step_06_cmb_blackbody_origin", "CMB blackbody origin", []),
     ("step_07_entropy_arrow", "Entropy and arrow of time", []),
     ("step_08_primordial_perturbation_boundary", "Primordial perturbation boundary", []),
+    ("step_09_temporal_horizon_claim_gate", "Temporal-horizon claim gate", []),
     ("step_09b_native_tensor_integration", "Native tensor-mode integration", []),
     ("step_10_cmb_lss_class", "CMB and LSS consistency", []),
 ]

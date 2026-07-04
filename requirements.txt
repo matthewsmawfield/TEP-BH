@@ -15,6 +15,9 @@ dynesty>=1.2.0,<2.0.0
 emcee>=3.0.0,<4.0.0
 cobaya>=3.0.0,<4.0.0
 
+# Symbolic mathematics (used in derivations/)
+sympy>=1.9.0
+
 # Cosmology codes (optional - external dependencies)
 # CLASS must be built separately from external/class/
 # See external/class/README.md for build instructions
