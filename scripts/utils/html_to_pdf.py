@@ -225,6 +225,21 @@ class HTMLToPDFConverter:
                 logger.warning(
                     "Could not verify content loading, proceeding anyway")
 
+            # Wait for MathJax to finish typesetting
+            try:
+                await page.wait_for_function(
+                    """() => typeof MathJax !== 'undefined' && MathJax.startup && MathJax.startup.document""",
+                    timeout=30000
+                )
+                await page.wait_for_function(
+                    """() => document.querySelectorAll('mjx-container').length > 0""",
+                    timeout=30000
+                )
+                await page.wait_for_timeout(2000)
+                logger.info("MathJax typesetting complete")
+            except Exception:
+                logger.warning("Could not verify MathJax completion, proceeding anyway")
+
             # Wait specifically for images to load
             try:
                 await page.wait_for_function(

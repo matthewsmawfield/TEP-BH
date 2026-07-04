@@ -16,10 +16,21 @@ function createManuscriptContext() {
     const path = require('path');
     const summaryPath = path.join(__dirname, '..', 'results', 'tep_th_summary.json');
     const summary = loadJsonIfExists(summaryPath) || {};
+
+    const screeningNoticePath = path.join(__dirname, '..', 'core', 'screening_projection_notice.html');
+    const screeningNotice = (function () {
+        const fs = require('fs');
+        if (!fs.existsSync(screeningNoticePath)) {
+            return '';
+        }
+        return fs.readFileSync(screeningNoticePath, 'utf8').trim();
+    })();
+
     return {
         ...summary.placeholders,
         evidence_gates: summary.evidence_gates || [],
-        pipeline: summary.pipeline || {}
+        pipeline: summary.pipeline || {},
+        SCREENING_PROJECTION_NOTICE: screeningNotice || ''
     };
 }
 

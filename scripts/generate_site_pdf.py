@@ -212,6 +212,16 @@ async def generate_pdf(quality: str = 'high', wait_time: float = 5.0, skip_build
         print(f"❌ HTML file not found: {html_file}")
         return False
 
+    # Create PDF-specific HTML with synchronous MathJax loading
+    pdf_html_file = dist_dir / 'index_pdf.html'
+    html_content = html_file.read_text(encoding='utf8')
+    html_content = html_content.replace(
+        'id="MathJax-script" async',
+        'id="MathJax-script"'
+    )
+    pdf_html_file.write_text(html_content, encoding='utf8')
+    html_file = pdf_html_file
+
     # Output path (temp, will be copied to docs)
     output_pdf = dist_dir / 'manuscript.pdf'
 

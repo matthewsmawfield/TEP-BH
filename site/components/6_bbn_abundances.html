@@ -2,6 +2,9 @@
 <p>
     Big Bang Nucleosynthesis (BBN) is a critical test of early-universe cosmology. The TEP temporal-horizon cosmology must preserve light-element abundances without requiring a zero-volume initial state. The pipeline evaluates $Y_p$ (helium-4 mass fraction), D/H (deuterium/hydrogen ratio), $^3$He/H, $^7$Li/H, and $N_{\rm eff}$ (effective neutrino species).
 </p>
+
+<p><strong>Screening projection notice.</strong> Screening in TEP is represented at theory level by the environmental operator S_Σ(E). Quantities such as ρ_T, R_T(M), S_⊕(r), compactness Φ/c^2, local stellar density, thermal epoch, coherence length, proximity, and boundary geometry are domain-specific projections of E, not independent screening mechanisms and not interchangeable universal thresholds.</p>
+
 <h2>6.1 Thermal Screening of the Temporal Field</h2>
 
 <p>
@@ -25,7 +28,10 @@
 </div>
 
 <p>
-    This scale is not chosen by hand; it is fixed by the pipeline parameter $z_{t}=100$ with $T_{\rm lock}=0.03$ eV. The epoch-screening function
+    This scale is not chosen by hand; it is fixed by the pipeline parameter $z_{t}^{\rm th}=100$ with $T_{\rm lock}=0.03$ eV. (Note: This thermal screening parameter $z_t^{\rm th}$ is physically distinct from the acoustic-sector temporal shear turnover parameter $z_T^{\rm HC}=5$ used in TEP-HC and the line-of-sight transport turnover $z_T^{\rm los}$ used in TEP-C0.)
+</p>
+<p>
+    <em>Amplitude dictionary.</em> $\epsilon_{\rm field}=0.0175$ denotes the primordial spectral-flow parameter constrained by the observed spectral index $n_s=0.965$. $\epsilon_{\rm dyn}(z)$ denotes the screened dynamical response controlling late-time expansion, BBN, recombination, and perturbations. $\epsilon_T^{\rm los}$ denotes the late-time line-of-sight transport amplitude fitted in TEP-C0. $\epsilon_T^{\rm CMB}$ denotes the C0 background/acoustic diagnostic amplitude. $\epsilon_T^{\rm HC}=0.0056\pm0.0043$ denotes the native <code>hi_class</code> homogeneous conformal amplitude reported in TEP-HC. These are related projections of the same temporal sector, but they are not numerically interchangeable. The epoch-screening function
 </p>
 
 <div class="equation">

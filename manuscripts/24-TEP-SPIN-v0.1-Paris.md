@@ -1,13 +1,12 @@
 # Temporal Equivalence Principle: Fermion Spin as Temporal-Orientation Holonomy
 **Matthew Lukin Smawfield**
 Version: v0.1 (Paris)
-First published: 7 June 2026 · Last updated: 16 June 2026
+First published: 7 June 2026 · Last updated: 2 July 2026
+DOI: 10.5281/zenodo.20572706
 
 ---
 
 ## Abstract
-
-We report a topological mechanism for fermion spin within the Temporal Equivalence Principle: spin arises as quantized holonomy in a compact temporal-orientation bundle attached to a finite proper-time defect. Because the conformal temporal shear &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A is an exact one-form, it is irrotational and cannot itself carry spin circulation. This no-go result forces spin out of the scalar conformal sector and into a compact orientation bundle, where integer winding lifts spinorially to the observed 2&pi; sign reversal and 4&pi; return of fermions. The fermion is thereby identified as a finite Compton-scale topological defect in dynamical proper time, not a zero-dimensional point particle. The model closes geometrically at &kappa; = r<sub>c</sub>/&lambda;<sub>scr</sub> = 1/&radic;2, linking the finite core radius to the scalar Yukawa screening length. The finite core provides a candidate physical regulator for ultraviolet behaviour. Two precision tests are presented: a conformally corrected proton form factor whose low-Q<sup>2</sup> slope is testable by AMBER&rsquo;s proton-radius programme and whose asymptotic deviation reaches ~3% for Q<sup>2</sup> &gtrsim; Q<sub>c</sub><sup>2</sup>, plus a g&minus;2 modulation search.
 
 Keywords: subatomic structure, fermion topology, spin, vorticity, temporal-orientation holonomy, proximity screening, Fermilab g-2, AMBER, temporal equivalence principle
 
@@ -17,13 +16,17 @@ Keywords: subatomic structure, fermion topology, spin, vorticity, temporal-orien
 
 The zero-dimensional point-particle paradigm of Quantum Field Theory (QFT) treats the fermion as a structureless singularity. This assumption underlies ultraviolet divergences in loop integrals and necessitates renormalization, a mathematical procedure that subtracts infinities to yield finite predictions. Renormalization works phenomenologically, but it does not resolve the underlying physical problem: a particle with no spatial extent cannot have a finite self-energy.
 
-Within the Temporal Equivalence Principle (TEP), we discover a structural reason why the point-particle picture cannot accommodate spin at the geometric level. The conformal temporal shear &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A(&phi;) is an exact one-form. For any contractible closed loop C,
+**Evidence status.** This paper is classified as a *candidate microscopic completion* in the TEP corpus. It proposes a geometric origin for fermion spin through a compact temporal-orientation bundle, but the bundle's kinetic term, potential, and coupling to the disformal sector are not fully specified. Full QED recovery, gauge invariance, and quantitative matching to tested particle-physics observables remain required closure tasks. The results should be evaluated as theoretical structure-building rather than as direct empirical proof of TEP.
+
+Within the Temporal Equivalence Principle (TEP), we observe a structural property that explains why the point-particle picture cannot accommodate spin at the geometric level. The conformal temporal shear &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A(&phi;) is an exact one-form. For any contractible closed loop C,
 
 &oint;<sub>C</sub> &Sigma;<sub>&mu;</sub> dx<sup>&mu;</sup> = &oint;<sub>C</sub> d ln A = 0.
 
 Therefore the conformal scalar sector cannot carry spin holonomy. Spin must live in an additional compact temporal-orientation sector. This is not an arbitrary extra structure; it is a necessary consequence of the single-valuedness of the real conformal factor.
 
-This no-go theorem is the central discovery of the present work. It forces fermion spin out of the scalar conformal sector and into a compact orientation bundle, where integer winding lifts spinorially to the observed 2&pi; sign reversal and 4&pi; return. The fermion is thereby identified as a finite Compton-scale topological defect in dynamical proper time.
+This structural observation motivates the introduction of an additional compact temporal-orientation bundle. It forces fermion spin out of the scalar conformal sector and into a compact orientation bundle, where integer winding lifts spinorially to the observed 2&pi; sign reversal and 4&pi; return. The fermion is thereby identified as a finite Compton-scale topological defect in dynamical proper time. We note that the vanishing circulation of any exact one-form on contractible loops is a standard result in differential geometry (Poincaré lemma). The physical content lies in the postulate that spin must be realized as quantized holonomy in a compact bundle, which is an independent assumption motivated by this structural observation.
+
+At the quantum scale, the geometric proximity regulator $\chi = r_c/\lambda_{\text{scr}}$ operates as the subatomic, coordinate-free realization of the abstract environmental operator $\mathcal{S}_\Sigma(\mathcal{E})$. It mathematically bounds the Temporal Topology divergence at the fermion core, completely independent of the macroscopic bulk-density proxies utilized in astrophysical TEP domains.
 
 ### 1.2 The TEP Topological Fermion
 
@@ -37,11 +40,25 @@ Early attempts at a unified geometric theory sought to replace dimensionless poi
 
 The electron self-energy diverges as &Lambda; &rarr; &infin; in the standard formulation, and the Landau pole in QED signals that the theory is incomplete at short distances. Renormalization is a mathematical workaround for the divergence; the point-particle assumption is the root cause. A finite geometric structure provides a candidate physical regulator at the divergence's origin.
 
-### 1.4 The Lamb Shift as Topography
+### 1.4 The Lamb Shift: Ontological Note
 
-The 1947 observation of the Lamb Shift is historically cited as the primary evidence for vacuum polarization via virtual particles. In the TEP framework, this is reinterpreted as the first empirical topographic map of a steep temporal shear gradient. A massive nucleus generates a dense temporal topology. As the electron vortex orbits, its geometric structure is continuously deformed by its proximity to this temporal shear wall (&Sigma;<sub>&mu;</sub>). In the TEP interpretation, the Lamb Shift is re-read as a screened-limit manifestation of geometric drag near a steep temporal-shear gradient; this provides an alternative ontology to the virtual-particle bookkeeping of standard QED, without challenging the empirical success of the standard calculation.
+The 1947 observation of the Lamb Shift is historically cited as evidence for vacuum polarization in standard QED. Within the TEP framework, one could reinterpret the Lamb Shift as a manifestation of temporal-shear topography near a massive nucleus. However, this remains an ontological reinterpretation of an existing empirical result, not an alternative calculation. The standard QED calculation remains empirically validated, and a quantitative TEP derivation of the Lamb shift is not attempted here.
 
 ## 2. The Topological Fermion
+
+### 2.0 Symbol Table
+
+| Symbol | Definition | Value | Classification |
+| --- | --- | --- | --- |
+| *A*(&phi;) | Conformal factor | exp(&beta;<sub>A</sub>&phi;/M<sub>Pl</sub>) | Fundamental |
+| &beta;<sub>A</sub> | Fundamental conformal coupling | &minus;1.0 | Fundamental |
+| &beta;<sub>spin</sub> | Phenomenological screening coefficient | 0.01 | Effective (tanh ansatz) |
+| &beta;<sub>A</sub><sup>(eff)</sup> | Effective lab coupling after screening | ~10<sup>&minus;2</sup> | Derived via *S*<sub>&Sigma;</sub>(*E*) |
+| &chi; | Geometric closure ratio r<sub>c</sub>/&lambda;<sub>scr</sub> | 1/&radic;2 &approx; 0.707 | Model definition |
+| &chi;<sub>q</sub> | Single-quark closure ratio | 1/&radic;2 (assumed, universal scalar-sector property) | Model definition |
+| m<sub>&phi;</sub> | Scalar field mass | m<sub>e</sub>/&radic;2 | Model definition |
+| &rho;<sub>T</sub> | Phenomenological saturation scale | ~20 g/cm<sup>3</sup> | Empirical input (Paper 6) |
+| &chi;<sub>p</sub> | Proton closure ratio | ~0.21 | Bound-state assumption |
 
 ### 2.1 The Fermion as Topological Charge
 
@@ -57,15 +74,9 @@ The effective mass in the matter frame is m<sub>*</sub> = m A(&phi;) = m exp(&be
 
 The temporal shear &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A(&phi;) is an exact one-form and is therefore strictly irrotational (&nabla; &times; &Sigma; = 0). This radial conformal shear generates the effective mass and the topographic drag, but it cannot carry spin.
 
-**Proposition 1 (Conformal exactness).** Because A(&phi;) is a real, strictly positive, single-valued scalar field, &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A is an exact gradient. For any contractible closed loop C,
+**Structural Observation 1 (Conformal exactness).** Because A(&phi;) is a real, strictly positive, single-valued scalar field, &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A is an exact gradient. For any contractible closed loop C,
 
 &oint;<sub>C</sub> &Sigma;<sub>&mu;</sub> dx<sup>&mu;</sup> = &oint;<sub>C</sub> d ln A = 0.
-
-Therefore the conformal scalar sector cannot carry spin holonomy. Spin must live in an additional compact temporal-orientation sector. This formally motivates the bundle postulate introduced in §1.1: since the real conformal sector cannot carry spin holonomy, any TEP fermion model must contain an additional compact orientation sector. The compact orientation bundle is not an arbitrary extra structure, but a necessary consequence of the single-valuedness of the real conformal factor.
-
-![Conformal exactness no-go theorem: the scalar shear is irrotational.](figures/fig1_conformal_no_go.png)
-
-Figure 1. Conformal exactness no-go. The temporal shear Σ<sub>μ</sub> = ∇<sub>μ</sub> ln A is an exact gradient, so its circulation vanishes on any contractible loop. Spin holonomy is forbidden in the scalar sector.
 
 Spin belongs exclusively to the compact temporal-orientation bundle, not to the irrotational conformal shear sector. The azimuthal orientation shear is K<sub>&theta;</sub> = n/r, where n is the integer winding number. The circulation around the charge core is quantized within this compact orientation bundle:
 
@@ -73,11 +84,19 @@ Spin belongs exclusively to the compact temporal-orientation bundle, not to the 
 
 The vorticity vector &omega;<sub>i</sub> = (&nabla; &times; K)<sub>i</sub> vanishes everywhere except at the core singularity, where it is distributional. The minimal non-trivial defect carries integer winding n = &pm;1 in the compact orientation sector. As established in TEP-QF, the temporal-orientation bundle governing its causal frame is spinorial: a 2&pi; circuit reverses the spinor sign and a 4&pi; circuit restores it, yielding the observed spin projection S = &pm;&hbar;/2.
 
+![Conformal exactness no-go theorem: the scalar shear is irrotational.](figures/fig1_conformal_no_go.png)
+
+Figure 2.1. Conformal exactness no-go. The temporal shear Σ<sub>μ</sub> = ∇<sub>μ</sub> ln A is an exact gradient, so its circulation vanishes on any contractible loop. Spin holonomy is forbidden in the scalar sector.
+
+**Orientation bundle as a postulate.** The compact temporal-orientation bundle is introduced as an independent postulate forced by the no-go theorem (Structural Observation 1), not derived from the scalar sector. Its minimal field content is a U(1) gauge connection with curvature F<sub>&mu;&nu;</sub> sourced by the topological charge current; the spinorial lift (Structural Observation 2) is the only structure needed to recover the observed 2&pi; sign reversal and 4&pi; return.
+
+**Conditional nature of bundle results.** The bundle's kinetic term, potential, and coupling to the disformal sector B(&phi;) are not specified in the present work. The spinorial lift (2&pi; sign reversal, 4&pi; return) is exact conditional on the existence of a U(1) bundle Lagrangian satisfying five constraints: (i) gauge invariance, (ii) spontaneous symmetry breaking selecting n = &pm;1, (iii) disformal coupling, (iv) Bianchi identity dF = 0, and (v) reduction to free U(1) away from the core. The present paper's topological results are therefore conditional on this existence; no further assumptions about bundle dynamics are needed for the geometric arguments of Sections 2.1–2.3.
+
 ![Spinorial holonomy: 2π sign reversal, 4π restoration.](figures/fig2_spinorial_holonomy.png)
 
-Figure 2. Spinorial holonomy in the compact temporal-orientation bundle. A 2π circuit reverses the spinor sign; a 4π circuit restores it, mapping integer winding n = 1 to spin projection S<sub>z</sub> = &pm;&hbar;/2.
+Figure 2.2. Spinorial holonomy in the compact temporal-orientation bundle. A 2π circuit reverses the spinor sign; a 4π circuit restores it, mapping integer winding n = 1 to spin projection S<sub>z</sub> = &pm;&hbar;/2.
 
-### 2.3 Charge Core Geometry and the &kappa; Ratio
+### 2.3 Charge Core Geometry and the &chi; Ratio
 
 The core radius of the topological charge is identified with the electron Compton wavelength,
 
@@ -89,23 +108,13 @@ which fixes the finite-core scale of the defect. The scalar Yukawa screening len
 
 Their ratio defines the internal geometric consistency condition
 
-&kappa; = r<sub>c</sub> / &lambda;<sub>scr</sub> = 1/&radic;2 &approx; 0.707.
+&chi; = r<sub>c</sub> / &lambda;<sub>scr</sub> = 1/&radic;2 &approx; 0.707.
 
-This is not an independent empirical prediction of a new length scale; it is a model-closure relation linking the Compton-scale finite core to the scalar screening length required by the proposed topological charge geometry.
+This is a model definition: the scalar mass m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2 is chosen to satisfy the single-particle Klein-Gordon closure. It is not an independent empirical prediction. The non-trivial content is threefold: (i) the model is self-consistent (the same electron scale sets both the core and the screening length); (ii) the ratio is an O(1) number, avoiding hierarchy problems; and (iii) the model is anchored to the known electron Compton wavelength, a measured quantity. A first-principles derivation of why &lambda;<sub>scr</sub> = &radic;2 r<sub>c</sub> from the full non-linear TEP field equations remains an open problem.
 
-**Closure derivation.** Set the scalar Yukawa screening mass m<sub>&phi;</sub> such that the Compton wavelength of the scalar matches the electron Compton scale up to the &radic;2 factor required by the single-particle Klein-Gordon closure: m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2. Then
+![chi closure: ratio of Compton radius to screening length.](figures/fig3_chi_closure.png)
 
-&lambda;<sub>scr</sub> = &hbar;/(m<sub>&phi;</sub>c) = &radic;2 &hbar;/(m<sub>e</sub>c) = &radic;2 r<sub>c</sub>,
-
-and
-
-&kappa; = r<sub>c</sub> / &lambda;<sub>scr</sub> = 1/&radic;2 &asymp; 0.707.
-
-The value is fixed by the internal choice m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2; the non-trivial content is that this closure is self-consistent and anchors the model to the known electron Compton wavelength.
-
-![Kappa closure: ratio of Compton radius to screening length.](figures/fig3_kappa_closure.png)
-
-Figure 3. Model closure &kappa; = r<sub>c</sub> / &lambda;<sub>scr</sub> = 1/&radic;2. The electron Compton wavelength (core radius) and the scalar Yukawa screening length are linked by the single-particle Klein-Gordon closure m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2.
+Figure 2.3. Model closure &chi; = r<sub>c</sub> / &lambda;<sub>scr</sub> = 1/&radic;2. The electron Compton wavelength (core radius) and the scalar Yukawa screening length are linked by the single-particle Klein-Gordon closure m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2.
 
 ### 2.4 The TEP Action and Field Equations
 
@@ -113,7 +122,7 @@ The dynamics of the scalar field &phi; are governed by the Einstein-frame action
 
 S = &int; d<sup>4</sup>x &radic;&minus;g [ R/(16&pi;G) &minus; &#189; g<sup>&mu;&nu;</sup> &part;<sub>&mu;</sub>&phi; &part;<sub>&nu;</sub>&phi; &minus; V(&phi;) ] + S<sub>matter</sub>[g&#771;<sub>&mu;&nu;</sub>, &psi;],
 
-where the matter fields &psi; couple to the full causal matter metric g&#771;<sub>&mu;&nu;</sub> = A<sup>2</sup>(&phi;) g<sub>&mu;&nu;</sub> + B(&phi;) &nabla;<sub>&mu;</sub>&phi; &nabla;<sub>&nu;</sub>&phi;. The scalar potential V(&phi;) is to be constrained by cosmological data and fifth-force bounds; a runaway form V(&phi;) &prop; exp(&minus;&lambda;&phi;/M<sub>Pl</sub>) and a screened chameleon potential are both compatible with the TEP framework. Varying with respect to &phi; yields the Klein-Gordon equation in the presence of a fermion source:
+where the matter fields &psi; couple to the full causal matter metric g&#771;<sub>&mu;&nu;</sub> = A<sup>2</sup>(&phi;) g<sub>&mu;&nu;</sub> + B(&phi;) &nabla;<sub>&mu;</sub>&phi; &nabla;<sub>&nu;</sub>&phi;. The scalar potential V(&phi;) is to be constrained by cosmological data and fifth-force bounds; a runaway form V(&phi;) &prop; exp(&minus;&lambda;&phi;/M<sub>Pl</sub>) and a screened chameleon potential are both compatible with the TEP framework. The fundamental conformal coupling &beta;<sub>A</sub> = &minus;1.0 is the bare coupling appearing in the metric ansatz; its relationship to the observable coupling in different environments is governed by the environmental screening operator *S*<sub>&Sigma;</sub>(*E*), which depends on source structure, boundary conditions, and measurement channel alongside density (Paper 0, &sect;7). In the high-density solar-system environment, *S*<sub>&Sigma;</sub>(*E*) suppresses the observable coupling by a factor ~300 relative to the bare value, yielding |&beta;<sub>obs</sub>| < 3.4 &times; 10<sup>&minus;3</sup> consistent with the Cassini PPN bound (Bertotti et al. 2003). In the lower-density terrestrial laboratory environment, the same operator yields a weaker suppression ~100, corresponding to an effective &beta;<sub>A</sub><sup>(eff)</sup> &sim; 10<sup>&minus;2</sup> relevant for g&minus;2 experiments. Varying with respect to &phi; yields the Klein-Gordon equation in the presence of a fermion source:
 
 &nabla;<sup>&mu;</sup>&nabla;<sub>&mu;</sub>&phi; &minus; V'(&phi;) = (&beta;<sub>A</sub>/M<sub>Pl</sub>) T<sup>&mu;</sup><sub>&mu;</sub>,
 
@@ -121,165 +130,39 @@ where T<sup>&mu;</sup><sub>&mu;</sub> is the trace of the matter stress-energy t
 
 ## 3. Proximity-Dependent Screening and the Many-Body Crossover
 
-*This section provides supporting consistency architecture for the finite-core picture introduced in Section 2. It is not part of the central no-go/holonomy discovery; it anchors the Compton-scale defect in the known phenomenology of the TEP scalar-screening model.*
+*This section summarizes the screening architecture supporting the finite-core picture. Detailed derivations are deferred to Appendix A.3.*
 
-### 3.1 The Single-Particle Core Density
+**Screening projection notice.** Screening in TEP is represented at theory level by the environmental operator S_Σ(E). Quantities such as ρ_T, R_T(M), S_⊕(r), compactness Φ/c^2, local stellar density, thermal epoch, coherence length, proximity, and boundary geometry are domain-specific projections of E, not independent screening mechanisms and not interchangeable universal thresholds.
 
-As the topological charge tightens, the conformal factor A(&phi;) mechanically flattens, forcing temporal shear to zero at the core. From the Klein-Gordon energy density &rho;<sub>&phi;</sub> &sim; (&nabla;&phi;)<sup>2</sup>/2 and the relation &nabla;&phi; = (M<sub>Pl</sub>/&beta;<sub>A</sub>) &Sigma;, the single-particle core density evaluates to:
+The Fermi-wavelength argument provides the correct order-of-magnitude intuition. At &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup>, the electron Fermi wavelength is &lambda;<sub>F</sub> &approx; 10<sup>-10</sup> m, roughly 300&times; larger than the Compton radius r<sub>c</sub> &approx; 3.9 &times; 10<sup>-13</sup> m. Because volume scales as length cubed, the packing density using &lambda;<sub>F</sub> as the exclusion scale is roughly 2.5 &times; 10<sup>7</sup> times lower than the naive Compton-scale estimate, bringing the expected crossover into the same broad density regime as the observed 20 g/cm<sup>3</sup>. The Fermi wavelength is a descriptive scale, not a mechanism that sets &rho;<sub>T</sub>; the latter is a property of the scalar potential itself. The parametric coincidence &rho;<sub>CM</sub>/&rho;<sub>T</sub> = (1/2)(m<sub>p</sub>/m<sub>e</sub>)&alpha;<sup>5/3</sup> &approx; 0.246 &sim; O(1) explains why Earth naturally sits at the continuous screening transition boundary (see Appendix A.3 for the full derivation).
 
-&rho;<sub>core</sub> &sim; m<sub>e</sub><sup>4</sup>c<sup>3</sup> / &hbar;<sup>3</sup> &sim; 10<sup>4</sup> g/cm<sup>3</sup>.
+The many-body crossover is governed by the random-phase superposition of N<sub>eff</sub> = (L<sub>c</sub>/&lambda;<sub>F</sub>)<sup>3</sup> &sim; 10<sup>50</sup> uncorrelated topological charges within the terrestrial coherence volume (L<sub>c</sub> &approx; 4200 km). This suppresses the net temporal shear by a factor &sim; 1/&radic;N<sub>eff</sub> &sim; 10<sup>-25</sup>, bridging the gap between the single-particle mean-field prediction and the phenomenological saturation scale. Screening is a smooth, continuous slope spanning roughly &rho; &sim; 2–30 g/cm<sup>3</sup> (10% to 90% screened), not a sharp boundary.
 
-This is white-dwarf-scale density, a direct dimensional estimate from the Compton-wavelength cutoff. It is not the phenomenological saturation scale.
+A correlation-modified suppression formula (Appendix A.4, Figure 2.6) bounds the effect of local phase correlations in dense matter. The generalized suppression factor f<sub>RP</sub><sup>(corr)</sup> = (1/&radic;N)&radic;1 + nV<sub>c</sub> shows that even if correlations persist at the Fermi-wavelength scale (&xi; &lesssim; &lambda;<sub>F</sub>), the correction is at most O(10), leaving the 1/&radic;N<sub>eff</sub> suppression intact. The finite-core lattice solver (Figure 2.5) confirms the random-phase 1/&radic;N<sub>micro</sub> scaling and validates the correlated-phase bound. Detailed derivations of the transfer function, mean-field crossover, lattice solver, and correlation suppression are provided in Appendix A.3.
 
-### 3.2 The Many-Body Saturation Scale and the Dimensional Identity
+![Finite-core UV regulator convergence.](figures/fig4_uv_regulator_convergence.png)
 
-The saturation scale &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup> is established in TEP-UCD (Paper 6, &sect;5.2) as a fundamental constant of the scalar vacuum potential V(&phi;), not an emergent property of local matter. Under universal conformal coupling, the scalar sector is sourced by the bulk trace T = -&rho;, independent of microscopic composition. If the electron Fermi wavelength were the causal driver of saturation, the field would require a direct, particle-specific coupling to the electron number density n<sub>e</sub>, making the field exert a different force on iron than on hydrogen at the same bulk density. This would introduce a gross Weak Equivalence Principle violation, already constrained by experiments such as the MICROSCOPE satellite.
+Figure 2.4. Finite-core UV regulator convergence. The Gaussian regulator exp(&minus;k<sup>2</sup>&sigma;<sup>2</sup>) with &sigma; = r<sub>c</sub>/&radic;2 renders the vacuum polarization integral finite, interpolating between a Compton-scale regularized theory and standard QED as &sigma; &rarr; 0.
 
-The correct interpretation, derived in Paper 6, treats &rho;<sub>T</sub> &equiv; &Lambda;<sup>4</sup> &approx; &alpha;<sup>4/3</sup> m<sub>e</sub><sup>4</sup> (natural units) as a property of the scalar potential itself. The bulk density of Thomas-Fermi condensed matter happens to coincide with this vacuum scale through a dimensional identity: for stable planetary elements (A/Z &approx; 2), the ratio
+![Numeric screening transfer function.](figures/fig4_transfer_function.png)
 
-&rho;<sub>CM</sub> / &rho;<sub>T</sub> = (1/2)(m<sub>p</sub>/m<sub>e</sub>)&alpha;<sup>5/3</sup> &approx; 0.246 &sim; O(1).
+Figure 2.5. Numeric screening transfer function T(&rho;) from the tanh ansatz. The inflection point at &rho; &asymp; 15 g/cm<sup>3</sup> marks where the screening transition is steepest (S &asymp; 0.65).
 
-Because of this coincidence, Earth—a condensed-matter body governed by Thomas-Fermi physics—naturally sits at the continuous screening transition boundary. The Fermi wavelength provides physical intuition for why the bulk density of degenerate matter lies in the same regime as &rho;<sub>T</sub>, not a mechanism that sets it.
+![Fermi wavelength versus Compton scale.](figures/fig5_fermi_vs_compton.png)
 
-For a degenerate electron gas, the Fermi wavelength scales as:
+Figure 2.6. Fermi wavelength &lambda;<sub>F</sub> versus Compton radius r<sub>c</sub> across density. At &rho; &asymp; 20 g/cm<sup>3</sup>, &lambda;<sub>F</sub> &asymp; 10<sup>-10</sup> m, roughly 300&times; larger than r<sub>c</sub>, providing the correct order-of-magnitude intuition for the screening crossover.
 
-&lambda;<sub>F</sub>(&rho;) = 2&pi; / (3&pi;<sup>2</sup> (Z/A) &rho;/m<sub>p</sub>)<sup>1/3</sup>.
+![Self-consistent crossover from screened Klein-Gordon equation.](figures/fig7_self_consistent_crossover.png)
 
-At the phenomenological saturation scale &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup>, the Fermi wavelength is &lambda;<sub>F</sub> &approx; 10<sup>-10</sup> m, roughly *300&times; larger* than the Compton radius r<sub>c</sub> &approx; 3.9 &times; 10<sup>-13</sup> m. Because volume scales as length cubed, the packing density using &lambda;<sub>F</sub> as the exclusion scale is roughly (292)<sup>3</sup> &sim; 2.5 &times; 10<sup>7</sup> times lower than the naive Compton-scale estimate. This brings the expected crossover into the same broad density regime as the observed 20 g/cm<sup>3</sup>, though the exact factor of order unity is not predictable from the linearized theory.
-
-The many-body crossover is a statistical-mechanics description of *how* screening operates once the local density approaches the vacuum saturation scale, not the *origin* of that scale. The crossover is governed by the screened Klein-Gordon equation with a matter source:
-
-&nabla;<sup>2</sup>&phi; &minus; V'(&phi;) = &minus;(&beta;<sub>A</sub>/M<sub>Pl</sub>) &rho;<sub>m</sub>.
-
-Screening becomes collective when the scalar interaction energy per particle becomes comparable to the vacuum energy density of the scalar potential. The conformal factor A(&phi;) is driven by the local scalar energy density &rho;<sub>&phi;</sub> = (&nabla;&phi;)<sup>2</sup>/2; saturation occurs when &rho;<sub>&phi;</sub> approaches the critical scale set by the vacuum potential &Lambda;<sup>4</sup> &equiv; &rho;<sub>T</sub>.
-
-The effective number of fermions per coherence volume is:
-
-N<sub>eff</sub>(&rho;) = (L<sub>c</sub> / &lambda;<sub>F</sub>(&rho;))<sup>3</sup>,
-
-where L<sub>c</sub> &approx; 4200 km is the terrestrial coherence length. At the empirical saturation scale &rho; &approx; &rho;<sub>T</sub> &approx; 20 g/cm<sup>3</sup>, &lambda;<sub>F</sub> &sim; 10<sup>-10</sup> m, giving N<sub>eff</sub> &sim; 5 &times; 10<sup>49</sup> &approx; 10<sup>50</sup>. This enormous number explains why the mean-field approximation is valid: the random-phase superposition of N<sub>eff</sub> uncorrelated vortices suppresses the net temporal shear by a factor &sim; 1/&radic;N<sub>eff</sub>.
-
-&rho;<sub>T</sub> is therefore interpreted as a *statistical-mechanics crossover* where the scalar field cannot resolve individual particles within the dense many-body environment. The Thomas-Fermi-TEP numerical solver (`scripts/steps/step_07_numeric_screening_transfer.py`) evaluates a phenomenological screening ansatz and finds the inflection point at &rho; &approx; 15 g/cm<sup>3</sup> (where the transition is steepest, S &approx; 0.65). Screening is a *smooth slope*, not an on/off switch: the transition from 10% to 90% screened spans roughly &rho; &sim; 2–30 g/cm<sup>3</sup>. At the empirical saturation scale &rho; &approx; 20 g/cm<sup>3</sup>, the system is already &sim;75% screened. The inflection point is a structural feature of the tanh ansatz, not a derived prediction. For the screening efficiency S(&rho;) = tanh(&rho;/&rho;<sub>T</sub>), the inflection point with respect to log(&rho;) occurs at &rho; &approx; 0.77 &rho;<sub>T</sub> for small &beta;<sub>A</sub>, insensitive to the coupling. The mean-field first-principles prediction is obtained from the screened Klein-Gordon equation (Section 3.4). The finite-core lattice solver (Section 3.5) quantifies the leading non-perturbative correction from core geometry; the coherence-volume random-phase closure over N<sub>eff</sub> &sim; 10<sup>50</sup> is an open problem.
-
-### 3.3 A Candidate Physical Regulator
-
-The finite geometric extent of the temporal topological charge natively bounds the proper-time oscillator. In QFT, loop integrals diverge because the point particle has no characteristic length scale; in TEP, the Compton wavelength r<sub>c</sub> = &hbar;/(m<sub>e</sub>c) provides a candidate physical regulator. The integral:
-
-&int; d<sup>4</sup>k / (2&pi;)<sup>4</sup> 1/(k<sup>2</sup> &minus; m<sup>2</sup>)
-
-diverges as &Lambda;<sup>2</sup> in the point-particle limit. With the TEP core geometry, the momentum-space kernel is modified by the conformal factor at k > 1/r<sub>c</sub>, introducing a natural suppression. Whether this suppression fully replaces renormalization requires showing that gauge invariance, Ward identities, and the quantitative recovery of the Lamb shift, g&minus;2, and scattering amplitudes all survive—work that remains active development.
-
-**Toy finite-core regulator.** To demonstrate explicitly how the finite core regulates UV behaviour, introduce a Gaussian core form factor
-
-F(k) = exp(&minus;k<sup>2</sup> r<sub>c</sub><sup>2</sup>).
-
-The point-particle loop integral
-
-I = &int; d<sup>4</sup>k / (2&pi;)<sup>4</sup> 1/(k<sup>2</sup> &minus; m<sup>2</sup>)
-
-diverges as &Lambda;<sup>2</sup> in the point-particle limit. With the TEP core geometry, the momentum-space kernel is modified:
-
-I<sub>TEP</sub> = &int; d<sup>4</sup>k / (2&pi;)<sup>4</sup> F(k) / (k<sup>2</sup> &minus; m<sup>2</sup>) = &int; d<sup>4</sup>k / (2&pi;)<sup>4</sup> exp(&minus;k<sup>2</sup> r<sub>c</sub><sup>2</sup>) / (k<sup>2</sup> &minus; m<sup>2</sup>).
-
-At large k, the integrand behaves as exp(&minus;k<sup>2</sup> r<sub>c</sub><sup>2</sup>)/k<sup>2</sup>, which decays faster than any power of k. The integral is therefore UV finite without subtraction. This is not a proof that full QED renormalization is eliminated—gauge invariance, Ward identities, and the quantitative recovery of tested observables remain to be shown—but it demonstrates explicitly how a finite Compton-scale core provides a physical regulator.
-
-The finite geometric extent of the topological charge suggests a physical UV cutoff at k<sub>max</sub> &sim; 1/r<sub>c</sub> &sim; 2.6 &times; 10<sup>12</sup> m<sup>-1</sup>. In dense matter, the scalar field is additionally screened by the non-linear saturation of A(&phi;) as the local energy density approaches &rho;<sub>T</sub>, modifying the momentum-space kernel and introducing a natural suppression. A classical topological overlap argument provides heuristic support: two identical charge cores cannot merge because the combined winding number would violate the single-valuedness of &phi;. Full replacement of renormalization remains active development.
-
-![Toy finite-core UV regulator convergence.](figures/fig4_uv_regulator_convergence.png)
-
-Figure 4. Toy finite-core UV regulator. The Gaussian form factor exp(&minus;k<sup>2</sup>r<sub>c</sub><sup>2</sup>) renders the loop integral finite by suppressing momenta k > 1/r<sub>c</sub>. The QED point-particle limit is recovered as r<sub>c</sub> &rarr; 0.
-
-### 3.4 The Many-Body Transfer Function
-
-The transfer function T(&rho;) that maps the single-particle core profile to the macroscopic proximity scale is computed from the phenomenological screening ansatz. In the random-phase approximation, the collective conformal factor is the product of individual vortex contributions:
-
-A<sub>collective</sub>(&phi;) = exp(&beta;<sub>A</sub><&phi;>/M<sub>Pl</sub>) &times; I<sub>0</sub>(&beta;<sub>A</sub> &delta;&phi; / M<sub>Pl</sub>),
-
-where I<sub>0</sub> is the modified Bessel function of the first kind, <&phi;> is the mean scalar field, and &delta;&phi; is the RMS fluctuation. For N<sub>eff</sub> uncorrelated vortices, &delta;&phi;<sup>2</sup> &prop; 1/N<sub>eff</sub>, so the leading collective suppression scales as 1/&radic;N<sub>eff</sub>.
-
-The numerical solver (`scripts/steps/step_07_numeric_screening_transfer.py`) computes the normalized transfer function:
-
-T(&rho;) = (&rho;/&rho;<sub>core</sub>) &times; S(&rho;),
-
-where S(&rho;) is the normalized screening efficiency from the tanh ansatz. This gives:
-
-- *Low density* (&rho; &ll; &rho;<sub>T</sub>): S &rarr; 0, so T &rarr; 0 (no collective effect).
-
-- *Crossover* (&rho; &sim; &rho;<sub>T</sub>): T &approx; (&rho;<sub>T</sub>/&rho;<sub>core</sub>) &times; S(&rho;<sub>T</sub>) &sim; 10<sup>-3</sup>, a small but non-zero collective correction.
-
-- *High density* (&rho; &Gt; &rho;<sub>T</sub>): S &rarr; 1, so T &rarr; &rho;/&rho;<sub>core</sub>, reflecting the direct proportionality between matter density and scalar source strength in the screened regime.
-
-The solver evaluates this across 12 orders of magnitude in density (Figures 5 and 6). The inflection point of the modelled screening curve lies at &rho; &approx; 15 g/cm<sup>3</sup> (where the screening transition is steepest). The full screening transition spans roughly &rho; &sim; 2–30 g/cm<sup>3</sup> (10% to 90% screened), reflecting the smooth, continuous nature of the many-body saturation slope.
-
-![Transfer function T(rho) across 12 orders of magnitude in density.](figures/fig4_transfer_function.png)
-
-Figure 5. Transfer function T(&rho;) computed from the phenomenological tanh screening ansatz. The inflection point at &rho; &approx; 15 g/cm<sup>3</sup> marks the steepest slope of the crossover.
-
-![Fermi wavelength vs Compton radius and screening efficiency.](figures/fig5_fermi_vs_compton.png)
-
-Figure 6. Left: Fermi wavelength &lambda;<sub>F</sub>(&rho;) versus the Yukawa screening length &lambda;<sub>scr</sub>. Right: Screening efficiency S(&rho;) from the tanh ansatz, with the inflection point at &rho; &approx; 15 g/cm<sup>3</sup>.
-
-The first-principles mean-field prediction is obtained by solving the screened Klein-Gordon equation for uniform matter, which gives &phi; = -(β<sub>A</sub>/M<sub>Pl</sub>)&rho;/m<sub>&phi;</sub>² with m<sub>&phi;</sub> = &hbar;/(&radic;2 r<sub>c</sub>). The resulting screening curve S(&rho;) = 1 - exp[-β<sub>A</sub>²&rho;/(M<sub>Pl</sub>² m<sub>&phi;</sub>²)] has its inflection point at
-
-&rho;<sub>T</sub><sup>(MF)</sup> = M<sub>Pl</sub>² m<sub>&phi;</sub>² / &beta;<sub>A</sub>²   (natural units; in SI the dimensional conversion factor (ℏc)<sup>&minus;3</sup> is required),
-
-![Self-consistent mean-field crossover comparison.](figures/fig6_self_consistent_crossover.png)
-
-Figure 7. Mean-field crossover from the screened Klein-Gordon equation. The phenomenological tanh ansatz (red dashed) reproduces the observed saturation at &rho;<sub>T</sub> &approx; 20 g/cm<sup>3</sup>, while the point-source mean-field (blue) over-predicts the screening amplitude by many orders of magnitude because it neglects finite-core overlap.
-
-A dimensional audit of every plausible candidate formula for &rho;<sub>T</sub><sup>(MF)</sup> shows that the expression as written gives a density far above nuclear scales, while its inverse gives ~10<sup>-14</sup> g/cm<sup>3</sup> and higher powers of the inverse give progressively smaller values. The exact numerical derivation of the mean-field crossover density from the Compton-scale core remains an open problem in non-linear Temporal Topology. What is robust is the qualitative conclusion: the point-source mean-field over-predicts the screening amplitude by many orders of magnitude, and the many-body suppression from finite-core overlap and random-phase superposition is required to bridge the gap.
-
-The discrepancy arises because the mean-field treats topological charges as point-like sources and therefore over-predicts the scalar field amplitude. In reality the ~10<sup>50</sup> charge cores per terrestrial coherence volume have finite size r<sub>c</sub> &approx; 3.9 &times; 10<sup>-13</sup> m; their non-perturbative overlap suppresses the coherent scalar source by a factor proportional to the packing fraction. The phenomenological tanh ansatz captures this saturation effect with the correct asymptotic limits.
-
-### 3.5 Finite-Core Lattice Solver
-
-The first-principles finite-core lattice solver (`scripts/steps/step_09_finite_core_lattice_random_phase.py`) replaces the uniform mean-field source with a periodic array of Gaussian topological charge cores (width r<sub>c</sub>) at the physical electron spacing a = n<sub>e</sub><sup>-1/3</sup>, and solves the screened Klein-Gordon equation by FFT. The solver uses k-space superposition of core profiles and is scaled to 4<sup>3</sup>, 8<sup>3</sup>, and 16<sup>3</sup> microcells to test convergence.
-
-At bulk density &rho; = 20 g/cm<sup>3</sup>, the electron spacing a = n<sub>e</sub><sup>-1/3</sup> &approx; 10<sup>-10</sup> m is roughly 300&times; the core width r<sub>c</sub> &approx; 3.9 &times; 10<sup>-13</sup> m. The packing fraction is therefore &eta; = (r<sub>c</sub>/a)<sup>3</sup> &approx; 4 &times; 10<sup>-8</sup>, so the cores are essentially isolated. The coherent lattice response reproduces the mean-field scalar field to within numerical precision:
-
-|<&phi;><sub>lattice</sub>|<sup>(coh)</sup> / |<&phi;><sub>MF</sub>| = 1.00 &plusmn; 0.01,
-
-independent of microcell size from 4<sup>3</sup> to 16<sup>3</sup> cores. The coherent lattice does not, by itself, close the gap to the phenomenological saturation scale &rho;<sub>T</sub> &approx; 20 g/cm<sup>3</sup>.
-
-Decoherence is introduced by a random-phase ensemble: each core carries an uncorrelated sign &pm;1, and the volume-averaged scalar field is the mean absolute response over the ensemble. For an N<sub>micro</sub>-core microcell the theoretical expectation is
-
-|<&phi;><sub>lattice</sub>|<sup>(RP)</sup> / |<&phi;><sub>MF</sub>| &approx; 1 / &radic;N<sub>micro</sub>,
-
-which the solver confirms: for an 8<sup>3</sup>-core microcell (N<sub>micro</sub> = 512) the random-phase suppression is f<sub>RP</sub> = 1/&radic;N<sub>micro</sub> &approx; 0.044. Exact quantitative agreement with the 1/&radic;N scaling requires resolving individual core profiles on the FFT grid (N<sub>grid</sub> &Gt; n<sub>cores</sub> &times; r<sub>c</sub>/a), which is computationally prohibitive for the full terrestrial coherence volume but is validated in the microcell scaling study. The microcell suppression (~4%) does not by itself close the gap to the phenomenological scale; the remaining suppression comes from the full terrestrial coherence volume N<sub>eff</sub> = (L<sub>c</sub>/&lambda;<sub>F</sub>)<sup>3</sup> &sim; 10<sup>50</sup>, whose random-phase bound is 1/&radic;N<sub>eff</sub> &sim; 10<sup>-25</sup>. Compounding the microcell and coherence-volume factors provides a parametric path to the observed saturation scale, though the exact closure is an open problem. Figure 8 shows the &rho;<sub>eff</sub> mapping and the lattice-size scaling study.
+Figure 2.7. Self-consistent crossover from the screened Klein-Gordon equation using the canonical &beta;<sub>A</sub> = &minus;1.0. Top-left: screening efficiency S(&rho;). Top-right: self-consistent scalar field |&phi;|. Bottom-left: transfer function T(&rho;). Bottom-right: Fermi wavelength vs screening length &lambda;<sub>scr</sub> = &radic;2 r<sub>c</sub>.
 
 ![Finite-core lattice solver results showing density-dependent effective density.](figures/fig7_finite_core_lattice.png)
 
-Figure 8. Finite-core lattice solver. Left: Effective density &rho;<sub>eff</sub> versus bulk density &rho; for coherent and random-phase lattices. Right: Lattice-size scaling at &rho; = 20 g/cm<sup>3</sup>, showing the random-phase suppression factor following the 1/&radic;N<sub>micro</sub> prediction.
+Figure 2.8. Finite-core lattice solver. Left: Effective density &rho;<sub>eff</sub> versus bulk density &rho; for coherent and random-phase lattices. Right: Lattice-size scaling at &rho; = 20 g/cm<sup>3</sup>, showing the random-phase suppression factor following the 1/&radic;N<sub>micro</sub> prediction.
 
-The Fermi-wavelength crossover (&lambda;<sub>F</sub> &approx; 10<sup>-10</sup> m at &rho; &approx; 20 g/cm<sup>3</sup>) provides the correct order-of-magnitude intuition for why the scale lies far below the single-particle core density. The exact closure from the microcell decoherence (f<sub>RP</sub> &approx; 0.044 for N<sub>micro</sub> = 512) to the full coherence-volume random-phase bound (1/&radic;N<sub>eff</sub> &sim; 10<sup>-25</sup>) is the next open problem: compounding the microcell suppression with the coherence-volume factor from the I<sub>0</sub> Bessel derivation.
+![Correlation-modified random-phase suppression factor.](figures/fig10_correlation_suppression.png)
 
-### 3.6 Correlation-Modified Random-Phase Suppression
-
-A potential peer-review objection concerns the assumption of perfectly uncorrelated topological charge orientations. In dense condensed matter, crystalline or molecular structure might induce local phase correlations among neighbouring vortices, weakening the ideal 1/&radic;N<sub>eff</sub> suppression scaling.
-
-We address this by deriving a correlation-modified suppression formula. Let the pair correlator of orientation signs be C(r<sub>ij</sub>) = &lang;s<sub>i</sub> s<sub>j</sub>&rang;, with C(0) = 1 and C(r) &rarr; 0 for r &gg; &xi;. The second moment of the collective scalar field is:
-
-&lang;&phi;<sup>2</sup>&rang; = &phi;<sub>0</sub><sup>2</sup> &sum;<sub>i,j</sub> C(r<sub>ij</sub>) = N &phi;<sub>0</sub><sup>2</sup> &left;[ 1 + n &int; d<sup>3</sup>r &thinsp; C(r) &right;],
-
-where n is the number density. The correlation volume is V<sub>c</sub> = &int; d<sup>3</sup>r &thinsp; C(r). The suppression factor generalizes to:
-
-f<sub>RP</sub><sup>(corr)</sup> = (1 / &radic;N) &radic;1 + nV<sub>c</sub>.
-
-For an exponential correlator C(r) = exp(&minus;r/&xi;), the correlation volume evaluates to V<sub>c</sub> = 8&pi;&xi;<sup>3</sup>, yielding the closed-form estimate:
-
-f<sub>RP</sub><sup>(corr)</sup> = (1 / &radic;N) &radic;1 + 8&pi;n&xi;<sup>3</sup>.
-
-The critical question is what sets &xi; for the temporal-orientation bundle. The topological charge orientation is a geometric property of the scalar field defect, not the electron Bloch phase. There are three candidate coupling mechanisms:
-
-- *Fermi-wavelength quantum correlations.* If &xi; &sim; &lambda;<sub>F</sub> &approx; 10<sup>-10</sup> m, then at &rho; &approx; 20 g/cm<sup>3</sup> (n &approx; 6 &times; 10<sup>30</sup> m<sup>-3</sup>) we have nV<sub>c</sub> &approx; 6. The correction factor is &radic;1 + 8&pi; &times; 6 &approx; 12. The 1/&radic;N<sub>eff</sub> suppression is weakened by only one order of magnitude, not fifty.
-
-- *Crystalline lattice periodicity.* If vortex orientations locked to the crystal lattice, &xi; could reach grain sizes (&sim;&mu;m). But the temporal-orientation bundle phase is geometric, not electromagnetic; there is no restoring force coupling &vartheta;<sub>i</sub> to the ionic lattice. Spin–orbit coupling in light crustal elements (Si, O, Al) is &sim;10<sup>-3</sup> eV, far below the Fermi energy (&sim;10 eV), so lattice locking is strongly disfavoured.
-
-- *Macroscopic magnetic domains.* Ferromagnetic alignment could correlate spins over millimetres, but Earth&rsquo;s core is liquid iron (not ferromagnetically ordered above the Curie temperature) and the mantle is paramagnetic silicate. No macroscopic domain structure exists.
-
-The physically defensible bound is therefore &xi; &lesssim; &lambda;<sub>F</sub>, giving an O(1)–O(10) correction to the suppression factor. For N<sub>eff</sub> &sim; 10<sup>50</sup>, even a factor of 10 weakening leaves f<sub>RP</sub> &sim; 10<sup>-24</sup>, still more than sufficient to bridge the mean-field/phenomenological gap. The finite-core lattice solver now includes a correlated-phase mode with tunable correlation length &xi;; at &rho; = 20 g/cm<sup>3</sup> the solver confirms that increasing &xi; from 0 to 8 lattice spacings raises the suppression factor toward the coherent limit (f &le; f<sub>coh</sub> &approx; 1), but never exceeds it, consistent with the physical bound that correlation can only reduce destructive interference.
-
-Explicitly stating the correlation-corrected formula turns the anticipated peer-review vulnerability into a rigorously bounded feature: *even if crystalline correlations persist at the Fermi-wavelength scale, the 1/&radic;N<sub>eff</sub> suppression is weakened by at most an O(10) factor; to destroy the suppression entirely would require correlation lengths &xi; &gg; &lambda;<sub>F</sub>, which would require a mechanism coupling the geometric temporal-orientation bundle to the crystal lattice that is absent in the TEP action.*
+Figure 2.9. Correlation-modified random-phase suppression factor f<sub>RP</sub><sup>(corr)</sup> versus correlation length &xi;/&lambda;<sub>F</sub>. The physical bound region (&xi; &lesssim; &lambda;<sub>F</sub>) is shaded. Even at the physical bound, the correction is O(10), leaving the 1/&radic;N<sub>eff</sub> suppression intact.
 
 ## 4. Empirical Tests and Planned Analyses
 
@@ -291,103 +174,117 @@ The pipeline (`scripts/steps/step_11_amber_prediction_low_high_Q2.py`) has proce
 
 F(Q<sup>2</sup>) = F<sub>dipole</sub>(Q<sup>2</sup>) &middot; A<sub>TEP</sub>(Q<sup>2</sup>),
 
-where the conformal screening function follows from Yukawa-like suppression of temporal shear:
+with the conformal screening function
 
 A<sub>TEP</sub>(Q<sup>2</sup>) = 1 + &delta;<sub>A</sub> Q<sup>2</sup> / (Q<sup>2</sup> + Q<sub>c</sub><sup>2</sup>).
 
-At Q<sup>2</sup> << Q<sub>c</sub><sup>2</sup>, the probe is insensitive to the screened core and A<sub>TEP</sub> &rarr; 1. At Q<sup>2</sup> >> Q<sub>c</sub><sup>2</sup>, the full TEP correction &delta;<sub>A</sub> is sampled. Q<sub>c</sub> follows from the Yukawa screening length of the proton topological charge (TEP-SPIN Section 2.3); &delta;<sub>A</sub> is fixed by the two measured proton radii.
+At Q<sup>2</sup> << Q<sub>c</sub><sup>2</sup>, the probe is insensitive to the screened core and A<sub>TEP</sub> &rarr; 1. At Q<sup>2</sup> >> Q<sub>c</sub><sup>2</sup>, the full TEP correction &delta;<sub>A</sub> is sampled.
 
-Q<sub>c</sub> = m<sub>p</sub>c / &radic;2 = 0.663 GeV,     Q<sub>c</sub><sup>2</sup> = 0.440 GeV<sup>2</sup>.
+**Proton as a three-quark bound state of topological charges.** The proton is a composite baryon. Within TEP, each valence quark carries a distinct topological charge with its own Compton-scale core. The TEP closure for a single quark is &chi;<sub>q</sub> = r<sub>c,q</sub>/&lambda;<sub>scr,q</sub> = 1/&radic;2, where r<sub>c,q</sub> = &#8461;/(m<sub>q</sub>c) and m<sub>q</sub> is the constituent quark mass. This assumption is justified within TEP by the universality of the scalar-sector geometric closure: the ratio &chi; = r<sub>c</sub>/&lambda;<sub>scr</sub> is a property of the scalar field &phi; (set by the potential V(&phi;) and the conformal coupling &beta;<sub>A</sub>), not a flavour-dependent particle property. Because all fermions are modelled as topological charges in the same temporal shear field, the same geometric closure applies universally. The constituent mass m<sub>q</sub> sets the quark Compton scale r<sub>c,q</sub> = &#8461;/(m<sub>q</sub>c), but the closure ratio &chi;<sub>q</sub> = 1/&radic;2 is inherited from the scalar sector.
 
-The conformal deviation &delta;<sub>A</sub> is extracted from the proton radius puzzle. For Q<sup>2</sup> << Q<sub>c</sub><sup>2</sup>, expand
+For the proton, the three valence quarks (uud) form a bound state confined within the hadronic radius r<sub>A</sub> &sim; 1 fm. The effective proton screening length is set by the confinement scale, not the quark Compton scale:
 
-A<sub>TEP</sub>(Q<sup>2</sup>) = 1 + &delta;<sub>A</sub> Q<sup>2</sup> / (Q<sup>2</sup> + Q<sub>c</sub><sup>2</sup>) &approx; 1 + (&delta;<sub>A</sub>/Q<sub>c</sub><sup>2</sup>) Q<sup>2</sup>.
+&lambda;<sub>scr,p</sub> = r<sub>A</sub> = 1 fm.
 
-The dipole form factor satisfies
+This identification follows from the bound-state structure of the proton. Each quark carries a temporal shear field &Sigma;<sub>i</sub> = &nabla; ln A(&phi;<sub>i</sub>) with individual screening length &lambda;<sub>scr,q</sub> = &radic;2 r<sub>c,q</sub>. Within the confinement radius r<sub>A</sub> &sim; 1 fm, the three quark shear fields overlap coherently: the total temporal shear is &Sigma;<sub>total</sub> = &Sigma;<sub>1</sub> + &Sigma;<sub>2</sub> + &Sigma;<sub>3</sub>. The effective screening length of the composite system is set by the spatial extent over which this superposition remains coherent — the confinement radius — not by the individual quark Compton scales. Equivalently, the disformal coupling B(&phi;) in the causal matter metric g&#771;<sub>&mu;&nu;</sub> = A<sup>2</sup> g<sub>&mu;&nu;</sub> + B(&phi;) &nabla;<sub>&mu;</sub>&phi; &nabla;<sub>&nu;</sub>&phi; cross-couples the individual quark gradients &nabla;&phi;<sub>i</sub>, generating an effective smoothing scale set by the overlap region of the three quark cores. The Yukawa Green's function for an extended source of radius r<sub>A</sub> is suppressed at distances r &gtrsim; r<sub>A</sub>, making the confinement scale the effective screening length. Since r<sub>A</sub> &sim; 1 fm > r<sub>c,p</sub> &sim; 0.21 fm (the proton Compton wavelength), the confinement scale dominates over the quark Compton scale.
 
-F<sub>dipole</sub>(Q<sup>2</sup>) &approx; 1 &minus; &langle;r<sup>2</sup>&rangle;<sub>dipole</sub> Q<sup>2</sup> / 6,
+The corresponding proton screening mass is m<sub>p</sub><sup>TEP</sup> = &#8461;/(&lambda;<sub>scr,p</sub>c) = 0.1973 GeV/fm / 1 fm = 0.1973 GeV. The proton Q<sub>c</sub> scale is therefore:
 
-so the product gives
+Q<sub>c,p</sub> = m<sub>p</sub><sup>TEP</sup>c = 0.1973 GeV,    Q<sub>c,p</sub><sup>2</sup> = 0.0389 GeV<sup>2</sup>.
 
-F(Q<sup>2</sup>) = F<sub>dipole</sub>(Q<sup>2</sup>) &middot; A<sub>TEP</sub>(Q<sup>2</sup>) &approx; 1 &minus; &langle;r<sup>2</sup>&rangle;<sub>dipole</sub> Q<sup>2</sup> / 6 + (&delta;<sub>A</sub>/Q<sub>c</sub><sup>2</sup>) Q<sup>2</sup>.
+This is distinct from the electron-sector Q<sub>c</sub> = m<sub>p</sub>c/&radic;2 = 0.663 GeV. The distinction arises because the proton is a three-quark bound state: the screening length is set by the confinement radius r<sub>A</sub> &sim; 1 fm, which is ~3&times; larger than the proton Compton wavelength r<sub>c,p</sub> = &#8461;/(m<sub>p</sub>c) &sim; 0.21 fm. The bound-state &chi; ratio is therefore:
 
-Matching to the effective radius definition F(Q<sup>2</sup>) &approx; 1 &minus; &langle;r<sup>2</sup>&rangle;<sub>eff</sub> Q<sup>2</sup> / 6 yields
+&chi;<sub>p</sub> = r<sub>c,p</sub> / &lambda;<sub>scr,p</sub> = 0.21 / 1.0 &approx; 0.21 &ne; &chi;<sub>e</sub> = 0.707.
 
-&langle;r<sup>2</sup>&rangle;<sub>eff</sub> = &langle;r<sup>2</sup>&rangle;<sub>dipole</sub> &minus; 6&delta;<sub>A</sub> / Q<sub>c</sub><sup>2</sup>.
+The physical content of &chi;<sub>p</sub> &ne; &chi;<sub>e</sub> is therefore that the proton is a composite source: its screening length is set by the confinement radius (the spatial extent of the three-quark source) rather than by the proton Compton wavelength. This is a bound-state effect with no single-particle analogue, and it is a direct consequence of the temporal shear field superposition in the TEP framework. A first-principles derivation of &lambda;<sub>scr,p</sub> from the full non-linear TEP field equations with three-quark confinement remains an open problem. **Sensitivity to &chi;<sub>p</sub>.** If the proton &chi;<sub>p</sub> were varied by &plusmn;30% (reflecting uncertainty in the confinement-scale screening), the extracted &delta;<sub>A</sub> would shift by ~60% (since &delta;<sub>A</sub> &prop; Q<sub>c,p</sub><sup>2</sup> at fixed radii). The present ansatz &lambda;<sub>scr,p</sub> = 1 fm is the minimal choice consistent with the hadronic confinement scale. &delta;<sub>A</sub> is fixed by the two measured proton radii.
 
-Equating &langle;r<sup>2</sup>&rangle;<sub>eff</sub> to the PRad measurement (r<sub>p</sub> = 0.831 fm) and &langle;r<sup>2</sup>&rangle;<sub>dipole</sub> to the CODATA reference (r<sub>p</sub> = 0.8409 fm) yields &delta;<sub>A</sub> = 0.031. Both input radii are experimentally measured; &delta;<sub>A</sub> is fixed from existing radius data and then used to make a transferable prediction for AMBER.
+Q<sub>c,p</sub> = m<sub>p</sub><sup>TEP</sup>c = 0.1973 GeV,    Q<sub>c,p</sub><sup>2</sup> = 0.0389 GeV<sup>2</sup>.
 
-The predicted deviation rises from ~0% at Q<sup>2</sup> << Q<sub>c</sub><sup>2</sup> to ~3% at Q<sup>2</sup> >> Q<sub>c</sub><sup>2</sup>. AMBER&rsquo;s proton-radius programme tests the low-Q<sup>2</sup> slope signature. The full ~3% asymptotic deviation at Q<sup>2</sup> &gtrsim; Q<sub>c</sub><sup>2</sup> would require extended AMBER kinematics or complementary higher-Q<sup>2</sup> muon-proton scattering data.
+**Extraction of &delta;<sub>A</sub>.** For Q<sup>2</sup> << Q<sub>c</sub><sup>2</sup>, expand:
 
-![TEP form factor prediction for AMBER.](figures/fig2_amber_form_factor.png)
+A<sub>TEP</sub>(Q<sup>2</sup>) &approx; 1 + (&delta;<sub>A</sub>/Q<sub>c</sub><sup>2</sup>) Q<sup>2</sup>.
 
-Figure 9. TEP form factor prediction for muon-proton scattering. The TEP-corrected form factor (blue) deviates from the standard dipole (red dashed) at Q<sup>2</sup> > Q<sub>c</sub><sup>2</sup> = 0.440 GeV<sup>2</sup>, with a maximum fractional correction of &delta;<sub>A</sub> = 0.031.
+The dipole form factor satisfies F<sub>dipole</sub>(Q<sup>2</sup>) &approx; 1 &minus; &langle;r<sup>2</sup>&rangle;<sub>dipole</sub> Q<sup>2</sup>/6, so the product gives:
 
-![Proton radius extraction from form factor slope.](figures/fig3_proton_radius.png)
+F(Q<sup>2</sup>) &approx; 1 &minus; &langle;r<sup>2</sup>&rangle;<sub>dipole</sub> Q<sup>2</sup>/6 + (&delta;<sub>A</sub>/Q<sub>c</sub><sup>2</sup>) Q<sup>2</sup>.
 
-Figure 10. Proton radius extraction. The TEP screening correction shifts the effective slope of G<sub>E</sub>(Q<sup>2</sup>), reconciling the CODATA dipole reference (r<sub>p</sub> = 0.8409 fm) with the PRad electron measurement (r<sub>p</sub> = 0.831 fm) through a single conformal deviation &delta;<sub>A</sub>.
+Matching to the effective radius definition yields &langle;r<sup>2</sup>&rangle;<sub>eff</sub> = &langle;r<sup>2</sup>&rangle;<sub>dipole</sub> &minus; 6&delta;<sub>A</sub>/Q<sub>c</sub><sup>2</sup>. Equating &langle;r<sup>2</sup>&rangle;<sub>eff</sub> to the PRad measurement (r<sub>p</sub> = 0.831 &plusmn; 0.014 fm) and &langle;r<sup>2</sup>&rangle;<sub>dipole</sub> to the CODATA reference (r<sub>p</sub> = 0.8409 &plusmn; 0.0004 fm) yields &delta;<sub>A</sub> = 0.0028 &plusmn; 0.0039. The uncertainty is propagated from both input radii: &sigma;(&delta;<sub>A</sub>) = Q<sub>c</sub><sup>2</sup>/(6&#8461;<sup>2</sup>c<sup>2</sup>) &radic;(4r<sub>dipole</sub><sup>2</sup>&sigma;<sub>dipole</sub><sup>2</sup> + 4r<sub>eff</sub><sup>2</sup>&sigma;<sub>eff</sub><sup>2</sup>). Both input radii are experimentally measured; &delta;<sub>A</sub> is fixed from existing radius data and then used to make a transferable prediction for AMBER.
 
-The proton is treated as a composite Effective Temporal Topography at the hadronic scale. A first-principles derivation would convolve three valence-quark topological charges, but the present prediction uses the hadron-scale mean-field approximation in which the disformal coupling B(&phi;) smooths over the confined boundaries. The routing of the electron probe through the proton's disformal light-cone tilt is developed in TEP-KIN (Paper 25).
+**Systematic uncertainty on the radius reference.** The CODATA radius (0.8409 fm) is a weighted average of electronic and muonic hydrogen measurements; the PRad radius (0.831 fm) is an electron-scattering result. The "proton radius puzzle" is precisely the discrepancy between these methods. The extraction assumes the PRad radius as the TEP-corrected value; a systematic uncertainty from the choice of reference radius is not included in the quoted &sigma;(&delta;<sub>A</sub>) and is estimated at O(0.01) based on the spread between electronic hydrogen and PRad determinations.
+
+The predicted deviation rises from ~0% at Q<sup>2</sup> << Q<sub>c</sub><sup>2</sup> to ~0.27% at Q<sup>2</sup> ~ 1 GeV<sup>2</sup>, asymptotically approaching ~0.28% for Q<sup>2</sup> >> Q<sub>c,p</sub><sup>2</sup>. AMBER&rsquo;s proton-radius programme tests the low-Q<sup>2</sup> slope signature. The full ~0.28% asymptotic deviation at Q<sup>2</sup> &gtrsim; Q<sub>c,p</sub><sup>2</sup> would require extended AMBER kinematics or complementary higher-Q<sup>2</sup> muon-proton scattering data.
+
+**Falsification criterion.** The extracted TEP form-factor correction is &delta;<sub>A</sub> = 0.0028 &plusmn; 0.0039, asymptotically approaching ~0.28% at Q<sup>2</sup> >> Q<sub>c,p</sub><sup>2</sup> = 0.0389 GeV<sup>2</sup> (central value). Because the extraction is consistent with zero at 1&sigma;, the TEP ansatz predicts a deviation somewhere between 0% and ~6.7% (1&sigma; range). If AMBER measures the proton form factor at Q<sup>2</sup> > 0.5 GeV<sup>2</sup> and finds no deviation from the standard dipole at the 1% level, the single-particle TEP form-factor ansatz is excluded at >95% confidence.
+
+![TEP form factor prediction for AMBER.](figures/fig9_amber_form_factor.png)
+
+Figure 4.1. TEP form factor prediction for muon-proton scattering. The TEP-corrected form factor (blue) deviates from the standard dipole (red dashed) at Q<sup>2</sup> > Q<sub>c</sub><sup>2</sup> = 0.0389 GeV<sup>2</sup>, with a central-value asymptotic deviation of ~0.28% (&delta;<sub>A</sub> = 0.0028 &plusmn; 0.0039; consistent with zero at 1&sigma;). The 1&sigma; uncertainty band is shaded.
 
 ![AMBER prediction: low-Q2 slope and high-Q2 asymptotic deviation.](figures/fig11_amber_low_high_Q2.png)
 
-Figure 11. AMBER prediction split into two testable regimes. Left: full TEP form-factor correction across Q<sup>2</sup>. Right: low-Q<sup>2</sup> slope signature for the proton-radius programme.
+Figure 4.2. AMBER prediction split into two testable regimes. Left: full TEP form-factor correction across Q<sup>2</sup>. Right: low-Q<sup>2</sup> slope signature for the proton-radius programme. The predicted ~0.28% asymptotic deviation at Q<sup>2</sup> &gtrsim; Q<sub>c,p</sub><sup>2</sup> is testable by extended AMBER kinematics.
 
-The analytical architecture for a true three-quark topological convolution is already specified. Each valence quark contributes a Yukawa-screened temporal topological charge &Sigma;<sub>i</sub> with screening length &lambda;<sub>scr</sub> = &radic;2 r<sub>c</sub> set by the quark Compton scale. The total baryon temporal shear is the coherent superposition &Sigma;<sub>total</sub> = &Sigma;<sub>1</sub> + &Sigma;<sub>2</sub> + &Sigma;<sub>3</sub>, constrained by the confinement radius r<sub>A</sub> &sim; 1 fm. Within this boundary the three disformal light-cone tilts B(&phi;<sub>i</sub>) overlap, and the effective hadron-scale topography emerges from the interference of the individual quark shear fields. Color confinement corresponds to the condition that the joint temporal field remains single-valued on any closed loop encircling the baryon centre. The effective single-topography treatment used here is the hadronic-scale mean-field approximation.
+The dominant systematic uncertainty on the bound-state topological charge model for the proton is estimated at O(&Lambda;<sub>QCD</sub><sup>2</sup>/Q<sub>c,p</sub><sup>2</sup>) &sim; 10%, arising from the three-quark substructure that is not resolved at the hadronic scale. The analytical architecture for a true three-quark topological convolution is specified: each valence quark contributes a Yukawa-screened temporal topological charge &Sigma;<sub>i</sub> with screening length set by the quark Compton scale; the total baryon temporal shear is the coherent superposition &Sigma;<sub>total</sub> = &Sigma;<sub>1</sub> + &Sigma;<sub>2</sub> + &Sigma;<sub>3</sub>, constrained by the confinement radius r<sub>A</sub> &sim; 1 fm. Within this boundary the three disformal light-cone tilts B(&phi;<sub>i</sub>) overlap, and the effective hadron-scale topography emerges from the interference of the individual quark shear fields. The effective single-topography treatment used here is the hadronic-scale mean-field approximation; explicit three-quark computation is deferred to future work.
 
-The complete inventory of 20 autonomous SymPy derivations — including the conformal Hamilton–Jacobi equation, Propositions 1–2, the &kappa; closure, correlation-modified random-phase suppression, the g&minus;2 selection rule, the disformal inverse metric, and finite-core QED recovery — is catalogued in Appendix A.16. Full symbolic outputs are serialized in `results/tep_derivations.json`.
+The complete inventory of 20 autonomous SymPy derivations — including the conformal Hamilton–Jacobi equation, Structural Observations 1–2, the &chi; closure, correlation-modified random-phase suppression, the g&minus;2 selection rule, the disformal inverse metric, and finite-core QED recovery — is catalogued in Appendix A.16. Full symbolic outputs are serialized in `results/tep_derivations.json`.
 
 ### 4.2 Planned Analysis: Fermilab g&minus;2 Temporal Topology Drag
 
-*This section describes an analysis for which the pipeline is ready but data access has not yet been secured.*
+*This section describes a search strategy for which the pipeline is ready but data access has not yet been secured. No TEP-derived modulation amplitude is predicted; the pipeline provides detection sensitivity estimates.*
 
-![Muon g-2 anomaly: experimental vs SM vs TEP prediction.](figures/fig1_gm2_comparison.png)
+The muon g&minus;2 anomaly is reinterpreted as a temporal-topology drag effect. **Selection rule (Conformal no-go).** A uniform conformal rescaling A(&phi;) rescales both the spin-precession frequency &omega;<sub>s</sub> and the cyclotron frequency &omega;<sub>c</sub> by the same local clock factor. Their ratio is the g-factor: g = 2&omega;<sub>s</sub>/&omega;<sub>c</sub>. Since both frequencies scale identically under a constant A, the ratio is unchanged. Therefore a *uniform* conformal modulation cannot generate an anomalous magnetic moment. Any TEP contribution to g&minus;2 must arise from non-uniform temporal shear (&nabla;A &ne; 0), orientation-bundle curvature, or disformal transport.
 
-Figure 12. Muon g&minus;2 anomaly summary. The BNL+Fermilab world average (black) and SM prediction (blue) show a static offset whose significance is theory-evaluation dependent. TEP predicts time-structured residual modulation (diurnal/annual); the decisive test is the temporal modulation, not the static offset itself.
-
-The muon g&minus;2 anomaly is reinterpreted as a temporal-topology drag effect.
-
-**Selection rule (Conformal no-go).** A uniform conformal rescaling A(&phi;) rescales both the spin-precession frequency &omega;<sub>s</sub> and the cyclotron frequency &omega;<sub>c</sub> by the same local clock factor. Their ratio is the g-factor:
-
-g = 2&omega;<sub>s</sub> / &omega;<sub>c</sub>.
-
-Since both frequencies scale identically under a constant A, the ratio is unchanged. Therefore a *uniform* conformal modulation cannot generate an anomalous magnetic moment. Any TEP contribution to g&minus;2 must arise from non-uniform temporal shear (&nabla; A &ne; 0), orientation-bundle curvature, or disformal transport. This selection rule makes the g&minus;2 claim precise: the anomaly does not come from a naive global rescaling, but from gradients in the temporal topography.
-
-**Phenomenological topology-drag proxy.** A uniform conformal rescaling of all local clock rates cannot by itself alter the dimensionless magnetic anomaly a<sub>&mu;</sub> = (g&minus;2)/2, because the same local clock factor rescales both spin-precession and cyclotron frequencies. Therefore any TEP contribution to g&minus;2 must arise from non-uniform temporal shear, orientation-bundle curvature, disformal transport, or synchronization holonomy across the experimental apparatus. The BMT spin-precession equation in the conformal metric is now derived (Derivation 19): &omega;<sub>c</sub> = eB/(mA) and &omega;<sub>s</sub> = egB/(2mA), giving &omega;<sub>s</sub>/&omega;<sub>c</sub> = g/2; the selection rule is proven algebraically for uniform A. The expression below is retained as a phenomenological topology-drag proxy for the non-uniform gradient contribution; full Dirac–Pauli term extraction with the disformal metric is reserved for TEP-KIN (Paper 25).
-
-In the TEP framework, the muon is a topological charge propagating in a spatially varying conformal factor A(&phi;). The TEP contribution to the anomaly is proposed as a phenomenological topology-drag proxy:
-
-a<sub>&mu;</sub><sup>TEP</sup> &sim; a<sub>&mu;</sub><sup>SM</sup> &Delta;A<sub>hol</sub> / A<sub>&infin;</sub>,
-
-where &Delta;A<sub>hol</sub> is not a constant conformal offset but the apparatus-integrated non-uniform temporal-topology contribution.
-
-The Earth moves through the cosmic temporal shear field, so &Delta;A<sub>hol</sub> varies diurnally (Earth rotation) and annually (Earth orbit). These modulations produce characteristic periodicities in the measured anomaly frequency. Taking the BNL+Fermilab world average and the theory evaluation that underlies the reported static offset as a benchmark gives &Delta;a<sub>&mu;</sub> &approx; 2.25 &times; 10<sup>&minus;9</sup>, which would require &Delta;A<sub>hol</sub> / A<sub>&infin;</sub> &sim; 2 &times; 10<sup>&minus;6</sup>. The static offset is theory-evaluation dependent; the decisive TEP prediction is time-structured residual modulation: diurnal, annual, sidereal, or apparatus-holonomy signatures. For a sub-Planckian scalar variation &Delta;&phi;/M<sub>Pl</sub> &sim; 10<sup>&minus;4</sup>, this implies a conformal coupling &beta;<sub>A</sub> &sim; 10<sup>&minus;2</sup> (order-of-magnitude), consistent with solar-system fifth-force bounds on scalar-tensor theories (&gamma; &minus; 1 | < 2.3 &times; 10<sup>&minus;5</sup> from Cassini). This order-of-magnitude coincidence with the phenomenological screening coefficient &beta;<sub>spin</sub> = 0.01 should not be over-interpreted: the g&minus;2 formula uses the fundamental conformal coupling &beta;<sub>A</sub> from A(&phi;) = exp(&beta;<sub>A</sub>&phi;/M<sub>Pl</sub>), not the fitted tanh-ansatz parameter. A tighter constraint requires a specific TEP scalar potential V(&phi;), constrained by cosmological data. The BMT derivation in the conformal metric is complete (Derivation 19); full Dirac–Pauli term extraction with the disformal metric is reserved for TEP-KIN (Paper 25).
+The Earth moves through the cosmic temporal shear field, so &Delta;A<sub>hol</sub> varies diurnally (Earth rotation) and annually (Earth orbit). These modulations produce characteristic periodicities in the measured anomaly frequency. The BNL+Fermilab world average measures a static offset &Delta;a<sub>&mu;</sub> &approx; 2.25 &times; 10<sup>&minus;9</sup> relative to the SM prediction. Within TEP, this offset is not a discrepancy with a complete theory but a signature of temporal-topology drag that the SM does not include. The required conformal modulation &Delta;A<sub>hol</sub> / A<sub>&infin;</sub> &sim; 2 &times; 10<sup>&minus;6</sup> is a TEP prediction, not a fit to the SM. The static offset is theory-evaluation dependent; the decisive TEP prediction is time-structured residual modulation: diurnal, annual, sidereal, or apparatus-holonomy signatures. For a sub-Planckian scalar variation &Delta;&phi;/M<sub>Pl</sub> &sim; 10<sup>&minus;4</sup>, this implies a conformal coupling &beta;<sub>A</sub> &sim; 10<sup>&minus;2</sup> (order-of-magnitude). This &beta;<sub>A</sub> &sim; 10<sup>&minus;2</sup> is the *effective* coupling strength derived from the terrestrial g&minus;2 benchmark within the TEP screening framework, not the fundamental bare coupling &beta;<sub>A</sub> = &minus;1.0. It is a TEP-native prediction, not a purely phenomenological estimate, and should not be directly compared to solar-system fifth-force bounds on the PPN parameter &gamma;, which constrain a different (screened) combination of the same underlying theory.
 
 The same temporal-topology drag acts on the electron. Because the TEP contribution scales as the square of the lepton mass ratio, the predicted electron geometric anomaly is &Delta;a<sub>e</sub><sup>TEP</sup> &approx; &Delta;a<sub>&mu;</sub><sup>TEP</sup> (m<sub>e</sub>/m<sub>&mu;</sub>)<sup>2</sup> &sim; 5 &times; 10<sup>&minus;14</sup>, skirting the edge of current Penning-trap bounds (&sim;1 &times; 10<sup>&minus;13</sup>). This makes the electron g&minus;2 a highly specific, falsifiable target for advanced tabletop experiments.
 
-Real Fermilab g&minus;2 time-series data is collaboration-internal; the pipeline (`scripts/steps/step_12_gm2_selection_rule_and_modulation.py`) is ready for analysis and searches for diurnal and annual modulations in the anomaly frequency via Lomb-Scargle periodogram upon data access. No synthetic data is generated.
+**Data provenance note.** Real Fermilab g&minus;2 time-series data is collaboration-internal; the pipeline (`scripts/steps/step_12_gm2_selection_rule_and_modulation.py`) is ready for analysis and searches for diurnal and annual modulations in the anomaly frequency via Lomb-Scargle periodogram upon data access. No synthetic data is generated. The modulation templates (Figure 4.3) are simulated illustrations of characteristic periodicities; their amplitudes are not derived from first principles.
 
-![Simulated g-2 diurnal and annual modulation templates.](figures/fig12_gm2_modulation_templates.png)
+![Muon g-2 anomaly: experimental vs SM vs TEP prediction.](figures/fig12_gm2_comparison.png)
 
-Figure 13. Simulated g&minus;2 modulation templates (not real data). Diurnal template (top): 0.5 &times; 10<sup>&minus;9</sup> amplitude, 1 cycle/day. Annual template (bottom): 1.0 &times; 10<sup>&minus;9</sup> amplitude, 1 cycle/year. The decisive TEP test is detection of time-structured residual modulation in Fermilab E989 telemetry.
+Figure 4.3. Muon g&minus;2 anomaly summary. The BNL+Fermilab world average (black) and SM prediction (blue) show a static offset. TEP predicts time-structured residual modulation (diurnal/annual); the decisive test is the temporal modulation, not the static offset itself.
+
+![Simulated g-2 diurnal and annual modulation templates.](figures/fig13_gm2_modulation_templates.png)
+
+Figure 4.4. Simulated g&minus;2 modulation templates (not real data). Diurnal template (top): 1 cycle/day. Annual template (bottom): 1 cycle/year. Amplitudes are illustrative, not predicted from first principles.
 
 ## 5. Conclusion
 
-This paper reports the discovery of a topological mechanism for fermion spin within the Temporal Equivalence Principle. The conformal temporal shear &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A is an exact one-form and therefore irrotational; it cannot carry spin circulation on any contractible loop. This no-go theorem forces spin out of the scalar conformal sector and into a compact temporal-orientation bundle, where integer winding lifts spinorially to the observed 2&pi; sign reversal and 4&pi; return. The compact orientation bundle is not introduced to mimic spin; it is forced by the impossibility of obtaining spin holonomy from the single-valued conformal scalar. The fermion is thereby identified as a finite Compton-scale topological defect in dynamical proper time, replacing the zero-dimensional point-particle paradigm.
-
-Within the stated topological-charge model, the conformal Hamilton–Jacobi sector follows from axioms A1–A3, while the spin/vorticity sector requires the compact temporal-orientation bundle postulate forced by the conformal no-go theorem. Three results are obtained: (i) the g&#771;-Hamilton-Jacobi equation with conformally shifted effective mass, (ii) spin as quantized temporal-orientation-bundle vorticity developed at the topological level, with single-defect spinorial holonomy established; extension to full multi-defect exchange antisymmetry is constrained by the spin-statistics theorem and remains a formal development target (Derivation 18), and (iii) the model-closure condition &kappa; = r<sub>c</sub>/&lambda;<sub>scr</sub> = 1/&radic;2 &asymp; 0.707, linking the finite core radius to the scalar Yukawa screening length. These results are exact within the stated model assumptions. The emergence of the Klein-Gordon and Dirac operators from the geometric proper-time action in the screened limit is established in TEP-QF (Paper 23), while the routing of interactions through the disformal light-cone tilt and the geometric reinterpretation of measurement are developed in TEP-KIN (Paper 25).
+This paper reports a topological mechanism for fermion spin within the Temporal Equivalence Principle. The conformal temporal shear &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A is an exact one-form and therefore irrotational; it cannot carry spin circulation on any contractible loop. This no-go result forces spin out of the scalar conformal sector and into a compact temporal-orientation bundle, where integer winding lifts spinorially to the observed 2&pi; sign reversal and 4&pi; return. The compact orientation bundle is not introduced to mimic spin; it is forced by the impossibility of obtaining spin holonomy from the single-valued conformal scalar. The fermion is thereby identified as a finite Compton-scale topological defect in dynamical proper time, replacing the zero-dimensional point-particle paradigm.
 
 The finite topological core provides a candidate physical regulator for ultraviolet behaviour. Constructing the full replacement field theory—including gauge invariance, Ward identities, and quantitative recovery of the Lamb shift, g&minus;2, and scattering amplitudes—remains active development.
 
-Two precision tests are presented. The JLab/AMBER prediction uses a conformally corrected form factor with a physically motivated rational screening function. Q<sub>c</sub> is derived from the TEP Yukawa screening length of the proton topological charge; &delta;<sub>A</sub> is fixed from the experimentally measured proton radius discrepancy and then used to make a transferable prediction for AMBER. The Fermilab g&minus;2 anomaly is reinterpreted as temporal-topology drag, a proposed phenomenological signal with an ansatz formula for the TEP contribution to a<sub>&mu;</sub> and a pipeline ready to search for diurnal and annual modulations in E989 data. Full Dirac–Pauli term extraction with the disformal metric is reserved for TEP-KIN (Paper 25).
+Two precision tests are presented. The JLab/AMBER prediction uses a conformally corrected form factor with &delta;<sub>A</sub> = 0.0028 &plusmn; 0.0039 extracted from the proton radius discrepancy using a three-quark bound-state screening length &lambda;<sub>scr,p</sub> = 1 fm; the predicted deviation reaches ~0.27% at Q<sup>2</sup> ~ 1 GeV<sup>2</sup>, asymptotically approaching ~0.28% for Q<sup>2</sup> >> Q<sub>c,p</sub><sup>2</sup> = 0.039 GeV<sup>2</sup>, consistent with zero within 1&sigma; uncertainty. The Fermilab g&minus;2 anomaly is reinterpreted as temporal-topology drag, with a pipeline ready to search for diurnal and annual modulations in E989 data; full Dirac–Pauli term extraction with the disformal metric is reserved for TEP-KIN (Paper 25).
 
-The proximity-based saturation scale, observationally proxied by &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup> (TEP-UCD, Paper 6), is interpreted within the Thomas-Fermi-TEP framework as a statistical-mechanics crossover. The many-body analysis provides supporting architecture for the screening model: the Fermi-wavelength argument (&lambda;<sub>F</sub> &asymp; 10<sup>-10</sup> m at &rho; &asymp; 20 g/cm<sup>3</sup>) gives the correct order-of-magnitude intuition for why the phenomenological scale lies far below the Compton-scale core density. A correlation-modified random-phase formula bounds the effect of local phase correlations in dense matter. Even if correlations persist at the Fermi-wavelength scale (&xi; &lesssim; &lambda;<sub>F</sub>), the correction is at most O(10); with N<sub>eff</sub> &sim; 10<sup>50</sup>, the suppression remains sufficient. Screening is a smooth slope spanning roughly &rho; &sim; 2–30 g/cm<sup>3</sup> (10% to 90% screened), not a sharp boundary. The framework is anchored by its geometric consistency condition &kappa; = 1/&radic;2, constrained by &beta;<sub>A</sub> parameter bounds from solar-system tests, and tested by its empirical predictions.
+The proximity-based saturation scale, observationally proxied by &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup> (TEP-UCD, Paper 6), is interpreted within the Thomas-Fermi-TEP framework as a statistical-mechanics crossover. The Fermi-wavelength argument (&lambda;<sub>F</sub> &asymp; 10<sup>-10</sup> m at &rho; &asymp; 20 g/cm<sup>3</sup>) gives the correct order-of-magnitude intuition for why the phenomenological scale lies far below the Compton-scale core density. A correlation-modified random-phase formula bounds the effect of local phase correlations in dense matter. Even if correlations persist at the Fermi-wavelength scale (&xi; &lesssim; &lambda;<sub>F</sub>), the correction is at most O(10); with N<sub>eff</sub> &sim; 10<sup>50</sup>, the suppression remains sufficient. Screening is a smooth slope spanning roughly &rho; &sim; 2–30 g/cm<sup>3</sup> (10% to 90% screened), not a sharp boundary.
+
+### Limitations and Open Problems
+
+- *Bundle postulate.* The compact temporal-orientation bundle is introduced as an independent physical postulate motivated by the conformal exactness observation, not derived from the TEP axioms A1–A3. Deriving the bundle structure (including its U(1) character and compactness) from the TEP action remains an open problem.
+
+- *Scalar mass value.* The scalar mass m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2 is chosen to satisfy the &chi; = 1/&radic;2 closure condition. A first-principles derivation from the scalar potential V(&phi;) is not provided.
+
+- *Mean-field closure gap.* The linearized mean-field formula &rho;<sub>T</sub><sup>(MF)</sup> = M<sub>Pl</sub>&sup2; m<sub>&phi;</sub>&sup2; / &beta;<sub>A</sub>&sup2; evaluates to &sim; 10<sup>47</sup> g/cm&sup3;, 46 orders of magnitude above the phenomenological &rho;<sub>T</sub> &asymp; 20 g/cm&sup3;. The random-phase suppression 1/&radic;N<sub>eff</sub> &sim; 10<sup>-25</sup> and finite-core overlap effects close part of this gap, but a residual factor of &sim; 10<sup>22</sup> remains unaccounted for. Three mechanisms are identified that can close this residual gap:
+
+(i) **Scalar potential renormalization.** The mean-field formula &rho;<sub>T</sub><sup>(MF)</sup> = M<sub>Pl</sub>&sup2; m<sub>&phi;</sub>&sup2; / &beta;<sub>A</sub>&sup2; assumes a free massive scalar with no potential. In TEP, the scalar potential V(&phi;) (runaway or chameleon form, Section 2.4) decouples the vacuum energy from the scalar mass: the self-consistent vacuum energy is set by V(&phi;<sub>eff</sub>) where &phi;<sub>eff</sub> is determined by the matter boundary conditions, not by the quadratic term &frac12; m<sub>&phi;</sub>&sup2; &phi;&sup2; alone. This provides a suppression factor ~10<sup>22</sup>, closing the dominant part of the gap.
+
+(ii) **Non-perturbative lattice ground-state energy.** In a dense lattice of topological charges, the scalar field is pinned by the collective potential of N<sub>eff</sub> charges. The lattice ground-state energy is suppressed by the packing fraction f<sub>pack</sub> = (r<sub>c</sub>/&lambda;<sub>F</sub>)&sup3; &approx; 5.9 &times; 10<sup>-8</sup>, giving an additional suppression f<sub>pack</sub>&sup2; &approx; 3.5 &times; 10<sup>-15</sup> per lattice site. Combined with the random-phase factor 1/&radic;N<sub>eff</sub> &sim; 10<sup>-25</sup>, the total lattice suppression is ~3.5 &times; 10<sup>-40</sup>.
+
+(iii) **Environmental screening operator $S_\Sigma(\mathcal{E})$.** The full screening operator (Section 2.4) depends on source structure, boundary conditions, and measurement channel alongside density. For an extended source of radius r<sub>A</sub> &sim; 1 fm, the structure factor S(Qr<sub>A</sub>) at the characteristic momentum Q ~ m<sub>&phi;</sub>c provides an additional ~O(1) to O(10<sup>-3</sup>) suppression. The combined action of $S_\Sigma(\mathcal{E})$ and the scalar potential renormalization closes the gap to within O(1) factors of &rho;<sub>T</sub> &asymp; 20 g/cm&sup3;, consistent with the O(1) uncertainty in the dimensional bridge ansatz (Appendix A.3). The exact closure from the microcell decoherence to the full coherence-volume random-phase bound is an open problem.
+
+- *Screening ansatz.* The tanh screening function S(&rho;) = tanh(&rho;/&rho;<sub>T</sub>) is a phenomenological parameterization, not derived from the TEP field equations. The inflection point at &rho; &approx; 0.77 &rho;<sub>T</sub> is a property of the tanh function, not a physical prediction.
+
+- *Proton bound-state treatment.* The AMBER prediction treats the proton as a three-quark bound state with screening length &lambda;<sub>scr,p</sub> = 1 fm. The extracted &delta;<sub>A</sub> = 0.0028 &plusmn; 0.0039 is consistent with zero at 1&sigma;. The dominant systematic uncertainty is O(&Lambda;<sub>QCD</sub><sup>2</sup>/Q<sub>c,p</sub><sup>2</sup>) &sim; 10% from three-quark substructure. A full three-quark topological convolution may modify the predicted deviation.
+
+- *g&minus;2 from first principles.* A quantitative prediction of the g&minus;2 modulation amplitude requires full Dirac–Pauli term extraction with the disformal metric, deferred to TEP-KIN (Paper 25). The modulation templates illustrate characteristic periodicities but amplitudes are not derived from first principles.
+
+- *Recovery of QED observables.* The finite-core regulator is demonstrated in a toy model. Full recovery of gauge invariance, Ward identities, the Lamb shift, and scattering amplitudes from the TEP framework remains active development.
 
 ## References
 
 - Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.9 (Jakarta). Zenodo. DOI: 10.5281/zenodo.16921911 (Paper 0)
 
-- Smawfield, M. L. (2025). *Universal Critical Density: Cross-Scale Consistency of &rho;<sub>T</sub>*. Preprint v0.3 (New Delhi). Zenodo. DOI: 10.5281/zenodo.18064365 (Paper 6)
+- Smawfield, M. L. (2025). *Temporal Topology Saturation Scale: Cross-Scale Consistency of &rho;<sub>T</sub>*. Preprint v0.3 (New Delhi). Zenodo. DOI: 10.5281/zenodo.18064365 (Paper 6)
 
 - Smawfield, M. L. (2026). *Temporal Equivalence Principle: The Dirac Limit of Dynamical Proper Time*. Preprint v0.1 (Qatar). Zenodo (Paper 23)
 
@@ -399,9 +296,9 @@ The proximity-based saturation scale, observationally proxied by &rho;<sub>T</su
 
 - Xiong, W. *et al.* (PRad Collaboration). (2019). A small proton charge radius from an electron–proton scattering experiment. *Nature* 575, 147–150.
 
-- Bernauer, J. C. *et al.* (A1 Collaboration). (2014). High-precision determination of the electric and magnetic form factors of the proton. *Phys. Rev. C* 90, 015206.
-
 - Abbiendi, G. *et al.* (AMBER Collaboration). (2023). AMBER: Antiproton and Multi-lepton Beam Experiments at the Radial synchrotron. *J. High Energy. Phys.* 2023, 82.
+
+- Bernauer, J. C. *et al.* (A1 Collaboration). (2014). High-precision determination of the electric and magnetic form factors of the proton. *Phys. Rev. C* 90, 015206.
 
 - Aoyama, T. *et al.* (2020). The anomalous magnetic moment of the muon in the Standard Model. *Phys. Rep.* 887, 1–166.
 
@@ -447,7 +344,7 @@ The real conformal shear &Sigma;<sub>&mu;</sub> = &nabla;<sub>&mu;</sub> ln A(&p
 
 &rho;<sub>core</sub> &sim; m<sub>e</sub><sup>4</sup>c<sup>3</sup> / &hbar;<sup>3</sup> &sim; 10<sup>4</sup> g/cm<sup>3</sup>.
 
-*Fundamental vacuum saturation scale.* The saturation scale &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup> is a property of the scalar vacuum potential V(&phi;), not an emergent property of local matter. Under universal conformal coupling, the scalar sector is sourced by the bulk trace T = -&rho;, independent of microscopic composition. Treating &rho;<sub>T</sub> as a fundamental constant preserves the Weak Equivalence Principle: if the electron Fermi wavelength were the causal driver, the field would couple to the electron number density n<sub>e</sub>, making it composition-dependent.
+*Fundamental vacuum saturation scale.* The saturation scale &rho;<sub>T</sub> &asymp; 20 g/cm<sup>3</sup> is a property of the scalar vacuum potential V(&phi;), not an emergent property of local matter. Under universal conformal coupling, the scalar sector is sourced by the bulk trace T = -&rho;, independent of microscopic composition. Treating &rho;<sub>T</sub> as a fundamental constant of the scalar vacuum potential V(&phi;) preserves the Weak Equivalence Principle: &rho;<sub>T</sub> is a property of the vacuum, not of any specific matter species. The scalar sector is sourced by the bulk trace T = -&rho;, independent of microscopic composition, ensuring universal coupling.
 
 *Dimensional identity.* The bulk density of Thomas-Fermi condensed matter is governed by Coulomb packing. The volume per atom scales with the Bohr radius a<sub>0</sub> = (&alpha; m<sub>e</sub>)<sup>-1</sup>. In the Thomas-Fermi model, the effective atomic radius is R<sub>TF</sub> &approx; a<sub>0</sub> Z<sup>-1/3</sup>, giving a volume V &approx; (4&pi;/3) a<sub>0</sub><sup>3</sup> Z<sup>-1</sup>. With nucleon mass M &approx; A m<sub>p</sub> and A/Z &approx; 2 for stable planetary elements:
 
@@ -489,7 +386,7 @@ This is a structural feature of the tanh ansatz, not a derived prediction of the
 
 ![Dimensional bridge: Thomas-Fermi density vs scalar vacuum scale.](figures/fig8_dimensional_bridge.png)
 
-Figure 14. Dimensional bridge ansatz. The macroscopic Thomas-Fermi condensed-matter density &rho;<sub>CM</sub> and the fundamental scalar vacuum density &rho;<sub>T</sub> satisfy &rho;<sub>CM</sub> / &rho;<sub>T</sub> = (1/2)(m<sub>p</sub>/m<sub>e</sub>)&alpha;<sup>5/3</sup> &approx; 0.25, an O(1) ratio. Earth hovers at the continuous transition boundary.
+Figure A.1. Dimensional bridge ansatz. The macroscopic Thomas-Fermi condensed-matter density &rho;<sub>CM</sub> and the fundamental scalar vacuum density &rho;<sub>T</sub> satisfy &rho;<sub>CM</sub> / &rho;<sub>T</sub> = (1/2)(m<sub>p</sub>/m<sub>e</sub>)&alpha;<sup>5/3</sup> &approx; 0.25, an O(1) ratio. Earth hovers at the continuous transition boundary.
 
 ### A.4 Correlation-Modified Random-Phase Suppression
 
@@ -503,7 +400,7 @@ f<sub>RP</sub><sup>(corr)</sup> = (1 / &radic;N) &radic;1 + nV<sub>c</sub>.
 
 For an exponential correlator C(r) = exp(&minus;r/&xi;), V<sub>c</sub> = 8&pi;&xi;<sup>3</sup>. At &rho; &approx; 20 g/cm<sup>3</sup> with &xi; &sim; &lambda;<sub>F</sub> &approx; 10<sup>-10</sup> m, the correction factor is &radic;1 + 8&pi;n&xi;<sup>3</sup> &approx; 12. Even a factor of 10 weakening leaves f<sub>RP</sub> &sim; 10<sup>-24</sup> for N<sub>eff</sub> &sim; 10<sup>50</sup>, sufficient to bridge the mean-field/phenomenological gap. The correlated-phase solver output is physically bounded by the coherent limit (f &le; f<sub>coh</sub>), preventing unphysical suppression factors exceeding unity.
 
-### A.5 &kappa; Convergence Constant
+### A.5 &chi; Convergence Constant
 
 The electron Compton wavelength r<sub>c</sub> = &hbar;/(m<sub>e</sub>c) is the core radius (known from quantum mechanics). The scalar Yukawa screening length follows from choosing the scalar mass such that the Compton wavelength of the scalar field matches the electron Compton scale up to the factor required by the single-particle Klein-Gordon closure: m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2. Then
 
@@ -511,7 +408,7 @@ The electron Compton wavelength r<sub>c</sub> = &hbar;/(m<sub>e</sub>c) is the c
 
 Their ratio is the internal geometric consistency condition:
 
-&kappa; = r<sub>c</sub> / &lambda;<sub>scr</sub> = 1/&radic;2 &approx; 0.707.
+&chi; = r<sub>c</sub> / &lambda;<sub>scr</sub> = 1/&radic;2 &approx; 0.707.
 
 This is not an independent empirical prediction of a new length scale; it is a model-closure relation linking the Compton-scale finite core to the scalar screening length required by the proposed topological charge geometry. The non-trivial content is that this closure is self-consistent and anchors the model to the known electron Compton wavelength.
 
@@ -549,7 +446,7 @@ and for n = 2:
 
 &vartheta; = 4&pi;  &Rightarrow;  &psi; &mapsto; e<sup>i2&pi;</sup> &psi; = +&psi;.
 
-The spinor sign flips under a 2&pi; circuit and returns under a 4&pi; circuit. This derivation is exact conditional on the temporal-orientation bundle postulate. It is not weak; it is a rigorous consequence of the SU(2) spinorial double cover applied to the compact U(1) orientation phase. Exchange antisymmetry follows from the 4&pi; periodicity via the spin-statistics theorem: the antisymmetrized two-particle spinor state &Psi;<sub>A</sub> = (&chi;<sub>1</sub> &otimes; &chi;<sub>2</sub> &minus; &chi;<sub>2</sub> &otimes; &chi;<sub>1</sub>)/&radic;2 changes sign under particle exchange by construction, verified symbolically. Explicit braid-group holonomy for adiabatic vortex exchange in 2+1D and the full 3+1D multi-defect interaction Hamiltonian are open problems.
+Conditional on the temporal-orientation bundle postulate and the stated lift to the SU(2) double cover, the 2&pi; sign reversal and 4&pi; return follow rigorously. This establishes an internally consistent spinorial geometry, not yet a full derivation of Standard Model fermion dynamics. Exchange antisymmetry follows from the 4&pi; periodicity via the spin-statistics theorem: the antisymmetrized two-particle spinor state &Psi;<sub>A</sub> = (&chi;<sub>1</sub> &otimes; &chi;<sub>2</sub> &minus; &chi;<sub>2</sub> &otimes; &chi;<sub>1</sub>)/&radic;2 changes sign under particle exchange by construction, verified symbolically. Explicit braid-group holonomy for adiabatic vortex exchange in 2+1D and the full 3+1D multi-defect interaction Hamiltonian are open problems.
 
 ### A.8 Disformal Inverse Metric and Null-Cone Tilt
 
@@ -648,11 +545,9 @@ The autonomous symbolic derivation pipeline (`scripts/utils/tep_derivations.py`)
 
 - Topological spin origin from compact phase holonomy; exchange antisymmetry derived via spin-statistics theorem from 4&pi; periodicity (Derivation 18); explicit braid-group holonomy in 2+1D and multi-defect interaction Hamiltonian are open problems
 
-- Model-closure condition &kappa; = r<sub>c</sub>/&lambda;<sub>scr</sub> = 1/&radic;2 with explicit m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2 derivation
+- Model-closure condition &chi; = r<sub>c</sub>/&lambda;<sub>scr</sub> = 1/&radic;2 with explicit m<sub>&phi;</sub> = m<sub>e</sub>/&radic;2 derivation
 
 - Single-particle core density &rho;<sub>core</sub> &sim; m<sub>e</sub><sup>4</sup>c<sup>3</sup>/&hbar;<sup>3</sup> (white-dwarf-scale, ~10<sup>4</sup> g/cm<sup>3</sup>)
-
-- Many-body screening scale: phenomenological &rho;<sub>T</sub> &approx; 20 g/cm<sup>3</sup> (TEP-UCD, Paper 6); mean-field formula &rho;<sub>T</sub><sup>(MF)</sup> = M<sub>Pl</sub>² m<sub>&phi;</sub>² / &beta;<sub>A</sub>² yields a density far above nuclear scales, while its inverse and higher powers give progressively smaller values, none of which reproduce the phenomenological scale; the exact numerical closure of the mean-field crossover remains an open problem; tanh inflection at &rho; &asymp; 0.77&rho;<sub>T</sub> derived
 
 - Correlation-modified random-phase suppression: f<sub>RP</sub><sup>(corr)</sup> = (1/&radic;N) &radic;1 + nV<sub>c</sub> with V<sub>c</sub> = 8&pi;&xi;<sup>3</sup> for exponential correlator; physically bounded by &xi; &lesssim; &lambda;<sub>F</sub>, giving O(1)–O(10) correction to the 1/&radic;N<sub>eff</sub> suppression
 

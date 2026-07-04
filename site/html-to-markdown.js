@@ -20,7 +20,9 @@ class HTMLToMarkdownConverter {
             .replace(/<(strong|b)[^>]*>([\s\S]*?)<\/(strong|b)>/gi, '**$2**')
             .replace(/<(em|i)[^>]*>([\s\S]*?)<\/(em|i)>/gi, '*$2*')
             .replace(/<code[^>]*>([\s\S]*?)<\/code>/gi, '`$1`')
-            .replace(/<\/?[a-zA-Z][^>]*>/g, '')
+            .replace(/<sub[^>]*>([\s\S]*?)<\/sub>/gi, '<sub>$1</sub>')
+            .replace(/<sup[^>]*>([\s\S]*?)<\/sup>/gi, '<sup>$1</sup>')
+            .replace(/<\/?(?!sub|sup)[a-zA-Z][^>]*>/g, '')
             .replace(/\s+/g, ' ')
             .trim();
     }
@@ -77,9 +79,11 @@ class HTMLToMarkdownConverter {
             .replace(/<(strong|b)[^>]*>([\s\S]*?)<\/(strong|b)>/gi, '**$2**')
             .replace(/<(em|i)[^>]*>([\s\S]*?)<\/(em|i)>/gi, '*$2*')
             .replace(/<code[^>]*>([\s\S]*?)<\/code>/gi, '`$1`')
+            .replace(/<sub[^>]*>([\s\S]*?)<\/sub>/gi, '<sub>$1</sub>')
+            .replace(/<sup[^>]*>([\s\S]*?)<\/sup>/gi, '<sup>$1</sup>')
             .replace(/<\/?div[^>]*>/gi, '\n')
             .replace(/<\/?section[^>]*>/gi, '\n')
-            .replace(/<\/?[a-zA-Z][^>]*>/g, '')
+            .replace(/<\/?(?!sub|sup)[a-zA-Z][^>]*>/g, '')
             .replace(/^[ \t]+/gm, '')
             .replace(/[ \t]+$/gm, '')
             .replace(/\n{3,}/g, '\n\n')
@@ -104,7 +108,8 @@ class HTMLToMarkdownConverter {
 
         const header = `# ${manifest.title}\n**${manifest.author}**\nVersion: ${manifest.version}\nFirst published: ${manifest.first_published} - Last updated: ${manifest.date}\nDOI: ${manifest.doi}\n\n---\n\n`;
         const markdown = header + this.htmlToMarkdown(body) + '\n';
-        const outputPath = path.join(__dirname, '..', '27-TEP-TH-v0.1-Thika.md');
+        const versionOnly = manifest.version.replace(/\s*\([^)]+\)/, '');
+        const outputPath = path.join(__dirname, '..', `27-TEP-TH-${versionOnly}-${manifest.codename}.md`);
         fs.writeFileSync(outputPath, markdown, 'utf8');
         console.log(`Markdown saved to: ${outputPath}`);
     }

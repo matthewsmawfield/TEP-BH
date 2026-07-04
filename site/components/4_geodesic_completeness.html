@@ -4,6 +4,10 @@
     A key test for physical singularities is geodesic incompleteness. Null and timelike geodesics are integrated backward from the present epoch toward the temporal horizon. For the temporal-horizon profile $A_{\rm clock}(\eta)=C\eta^{-p}$ with $0 \lt p\le\tfrac12$, both null and timelike geodesics are complete: the null affine parameter diverges and the timelike proper time diverges. For $0 \lt p\lt1$ the timelike branch is already complete; null completeness requires the slightly stronger bound $p\le\tfrac12$. The boundary is curvature-empty in this branch.
 </p>
 
+<p>
+    Here $\eta$ is the temporal-horizon conformal coordinate, oriented so that approach to $\mathscr{T}^{-}$ corresponds to the asymptotic limit in which $A_{\rm clock}\to0$. It is not the standard FLRW conformal time coordinate extrapolated to $a=0$.
+</p>
+
 <h2>4.1 Conformal Christoffel Symbols</h2>
 
 <p>
@@ -64,6 +68,30 @@
     where $\eta$ is the background coordinate time. For the temporal-horizon profile $A_{\rm clock}(\eta)=C\eta^{-p}$ with $0 \lt p\lt1$ as $\eta\to\infty$ (early times), the integrand behaves as $\eta^{-2p}$. The integral $\int^{\infty}\eta^{-2p}\,d\eta$ diverges for $2p\le 1$, i.e. for $0 \lt p\le\tfrac12$. Null geodesics do not terminate in this branch; they extend to $\tilde{\lambda}\to\infty$. For $\tfrac12\lt p \lt 1$ the null affine parameter converges, so null completeness requires $p\le\tfrac12$.
 </p>
 
+<p>
+    The divergence rates are explicit. Evaluating the integral with a lower cutoff $\eta_{0}\sim\mathcal{O}(1)$,
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:null_divergence}
+        \tilde{\lambda}(\eta)=\int_{\eta_{0}}^{\eta}C^{2}\eta'^{-2p}\,d\eta'=\frac{C^{2}}{1-2p}\Bigl(\eta^{1-2p}-\eta_{0}^{1-2p}\Bigr)\quad(p\neq\tfrac12) \, ,
+    \end{equation}
+</div>
+
+<p>
+    so that for $p<\tfrac12$ the null affine parameter diverges as a power law, $\tilde{\lambda}\propto\eta^{1-2p}\to\infty$. At the marginal value $p=\tfrac12$,
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:null_log}
+        \tilde{\lambda}(\eta)=C^{2}\,\ln\!\left(\frac{\eta}{\eta_{0}}\right) \to \infty \quad (p=\tfrac12) \, ,
+    \end{equation}
+</div>
+
+<p>
+    diverging only logarithmically. The slower divergence at $p=\tfrac12$ is still sufficient for past-completeness; every finite segment of a null geodesic accumulated since any finite $\eta_{0}$ requires infinite affine parameter to reach $\mathscr{T}^{-}$.
+</p>
+
 <h2>4.3 Timelike Geodesics and Proper Time</h2>
 
 <p>
@@ -81,7 +109,17 @@
 </p>
 
 <p>
-    The geodesic equations in the matter frame are regular everywhere:
+    The timelike divergence is also explicit:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:timelike_divergence}
+        \tilde{\tau}(\eta)=\int_{\eta_{0}}^{\eta}C\eta'^{-p}\,d\eta'=\frac{C}{1-p}\Bigl(\eta^{1-p}-\eta_{0}^{1-p}\Bigr)\quad(p\neq1) \, ,
+    \end{equation}
+</div>
+
+<p>
+    which diverges as a power law $\tilde{\tau}\propto\eta^{1-p}\to\infty$ for all $0\lt p\lt1$. The timelike bound $p\lt1$ is weaker than the null bound $p\le\tfrac12$; every timelike observer accumulates infinite proper time before reaching $\mathscr{T}^{-}$. The geodesic equations in the matter frame are regular everywhere:
 </p>
 
 <div class="equation">
@@ -111,6 +149,10 @@
     The cleanest fully complete temporal-horizon branch is therefore $0 \lt p\le\tfrac12$. In this branch the temporal horizon is simultaneously curvature-empty, timelike-complete, and null-complete.
 </p>
 
+<p>
+    Proposition 1 establishes regularity for the temporal-conformal branch satisfying $0 \lt p\le\tfrac12$. This branch is selected by the observational requirement that $A_{\rm clock}(z)=(1+z)^{-1}$ exactly, independent of model details. The profile $A_{\rm clock}\sim\eta^{-p}$ with $p=1$ would give the standard FLRW clock map, but that branch ($p=1$) lies outside the curvature-regular window; it is the <em>observational</em> selection of $A_{\rm clock}(z)=(1+z)^{-1}$—not an adjustable model parameter—that forces the temporal-horizon exponent into the regular range. Within TEP, the regular branch is therefore not a tuning choice but a consequence of the exact redshift reconstruction.
+</p>
+
 <h2>4.5 Conformal Compactification and Penrose-Style Diagram</h2>
 
 <p>
@@ -134,7 +176,7 @@
 </div>
 
 <p>
-    maps $\eta\in[0,\eta_{0}]$ and $r\in[0,\infty)$ to the rectangle $0\le T_{\Lambda}\le\pi/4$, $0\le R\lt\pi/2$. The bottom edge $T_{\Lambda}=0$ is the Big Bang singularity: a spacelike boundary where $a\to0$ and all curvature invariants diverge. Every causal curve terminates there in finite proper time.
+    maps $\eta\in[0,\eta_{0}]$ and $r\in[0,\infty)$ to the rectangle $0\le T_{\Lambda}\le\pi/4$, $0\le R\lt\pi/2$. The bottom edge $T_{\Lambda}=0$ is the physical singularity: a spacelike boundary where $a\to0$ and all curvature invariants diverge. Every causal curve terminates there in finite proper time.
 </p>
 
 <p>
@@ -253,4 +295,14 @@
 
 <p>
     The analytic curvature and geodesic results place $\mathscr{T}^{-}$ on the footing of a regular spacelike conformal boundary; Figure 1 gives a Penrose-style schematic representation of that boundary structure. It is a boundary of the manifold, not a singularity within it.
+</p>
+
+<h2>4.6 Implications for Quantum Cosmology</h2>
+
+<p>
+    The regularity of the temporal conformal boundary $\mathscr{T}^{-}$ removes the standard motivation for a quantum gravitational "beginning" at finite proper time. In standard Big Bang cosmology, the curvature singularity at $a\to0$ forces a breakdown of the classical theory at a finite past, providing the principal physical justification for quantum-cosmological models that attempt to describe a first moment of time. Because TEP's temporal horizon is curvature-empty and timelike-complete, the classical geometry remains valid arbitrarily far into the past; there is no finite-time singularity that demands quantum replacement.
+</p>
+
+<p>
+    This opens the possibility of a well-defined wavefunction on the regular boundary $\mathscr{T}^{-}$, formulated as a boundary condition on a smooth conformal compactification rather than as an initial condition at a singular point. The boundary data would describe correlations across the temporal horizon, analogous to how boundary-value problems are posed on smooth spatial or null boundaries in standard field theory. Whether such a boundary quantum state reproduces the observed classical late-time cosmology is a well-posed mathematical question; it does not require a speculative resolution of a curvature singularity that does not exist in the TEP matter frame.
 </p>

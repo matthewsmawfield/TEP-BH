@@ -3,7 +3,7 @@
     A complete replacement for the Big Bang must reproduce not only the CMB mean blackbody temperature and acoustic scale, but also the full anisotropy power spectra and the late-time large-scale structure in the screened-limit reduction. This step tests whether TEP-screened backgrounds match the Planck 2018 TT, TE, and EE angular power spectra, the matter power spectrum, the growth factor, and Baryon Acoustic Oscillation (BAO) scales measured by SDSS and BOSS.
 </p>
 <p>
-    The test is performed using the CLASS Boltzmann code as an independent cross-check of the native <code>hi_class</code> TEP implementation reported in TEP-HC (Paper 18). TEP-HC previously verified, through direct Boltzmann integration in the native <code>hi_class</code> <code>tep_mode</code>, that the static conformal geometry preserves the pre-recombination sound horizon to parts-per-million ($r_s^{\rm TEP}/r_s^{\Lambda\rm CDM} = 0.999994$) and leaves the acoustic-peak morphology intact. This acoustic-sector preservation is independently confirmed using CLASS, and the validation is extended to the full TT/TE/EE power spectra, matter power spectrum, growth factor, and BAO scales in the screened-limit reduction.
+    The test is performed using the CLASS Boltzmann code as an independent cross-check of the native <code>hi_class</code> TEP implementation reported in TEP-HC (Paper 18). TEP-HC previously verified, through direct Boltzmann integration in the native <code>hi_class</code> <code>tep_mode</code>, that the static conformal geometry preserves the pre-recombination sound horizon with ratio $r_s^{\rm TEP}/r_s^{\Lambda\rm CDM} = 0.999994$ (corresponding to a $<6$ ppm deviation) and leaves the acoustic-peak morphology intact. This acoustic-sector preservation is independently confirmed using CLASS, and the validation is extended to the full TT/TE/EE power spectra, matter power spectrum, growth factor, and BAO scales in the screened-limit reduction.
 </p>
 <p>
     For TEP with early-epoch screening, the dynamical response $A_{\rm dyn}(z) \to 1$ at recombination ($z \sim 1100$), so the background thermodynamics analytically reduce to the LCDM limit at the epochs where CMB and LSS observables are set. In the screened limit TEP therefore makes the same CMB/LSS predictions as LCDM by construction, not by proxy. CLASS LCDM is used as a <em>null-equivalence check</em>: any deviation between the CLASS output and Planck would indicate either a numerical error or a breakdown of the screened-limit reduction. No such deviation is found. The unscreened branch is already ruled out by BBN constraints and would shift the recombination epoch; its spectra would deviate measurably from Planck.
@@ -50,7 +50,7 @@
     <li>$f\sigma_8(z=0.61) = 0.469$ (BOSS DR12: $0.436 \pm 0.019$)</li>
 </ul>
 <p>
-    All growth quantities lie within the 3$\sigma$ BOSS DR12 confidence intervals.
+    All growth quantities lie within the 3$\sigma$ BOSS DR12 confidence intervals. These are screened-limit inherited $\Lambda$CDM benchmark values reproduced by the TEP thermal mapping; they are not independently derived from a native TEP growth equation. The active growth-factor closure (EFT Bellini–Sawicki mapping, $\sigma_8 \approx 0.825$) is supplied by TEP-HC (Paper 18) and imported here as a cross-validated companion result.
 </p>
 <h2>12.3 Baryon Acoustic Oscillation Scales</h2>
 <p>

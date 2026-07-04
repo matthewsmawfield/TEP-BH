@@ -1,11 +1,18 @@
 {
   "title": "Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity",
   "author": "Matthew Lukin Smawfield",
-  "version": "v0.1 (Thika)",
-  "date": "18 June 2026",
+  "version": "v0.2 (Thika)",
+  "codename": "Thika",
+  "date": "3 July 2026",
   "first_published": "18 June 2026",
   "doi": "10.5281/zenodo.20723059",
   "sections": [
+    {
+      "id": "section-parameter-dictionary",
+      "title": "Unified TEP Parameter Dictionary",
+      "file": "15a_parameter_dictionary.html",
+      "order": 15.75
+    },
     {
       "id": "section-abstract",
       "title": "Abstract",
@@ -83,6 +90,12 @@
       "title": "CMB Anisotropy and Large-Scale Structure Consistency",
       "file": "11_cmb_lss_class.html",
       "order": 13
+    },
+    {
+      "id": "section-falsifiable-predictions",
+      "title": "Falsifiable Predictions",
+      "file": "13a_falsifiable_predictions.html",
+      "order": 13.5
     },
     {
       "id": "section-conclusion",
