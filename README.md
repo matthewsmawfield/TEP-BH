@@ -220,7 +220,7 @@ If using this work, please cite:
   title        = {Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity},
   year         = 2026,
   publisher    = {Zenodo},
-  version      = {v0.1 (Thika)},
+  version      = {v0.2 (Thika)},
   doi          = {10.5281/zenodo.20723059},
   url = {https://mlsmawfield.com/tep/th}
 }

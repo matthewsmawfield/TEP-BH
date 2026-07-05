@@ -7,7 +7,7 @@ import re
 import sys
 
 RESULTS_DIR = pathlib.Path("results")
-MANUSCRIPT = pathlib.Path("manuscripts/27-TEP-TH-v0.1-Thika.md")
+MANUSCRIPT = pathlib.Path("manuscripts/27-TEP-TH-v0.2-Thika.md")
 SITE_INDEX = pathlib.Path("site/dist/index.html")
 SITE_SRC = pathlib.Path("site/index.html")
 

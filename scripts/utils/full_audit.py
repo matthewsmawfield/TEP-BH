@@ -10,7 +10,7 @@ import sys
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[2]
 RESULTS_DIR = PROJECT_ROOT / "results"
 SCRIPTS_DIR = PROJECT_ROOT / "scripts"
-MANUSCRIPT = PROJECT_ROOT / "manuscripts" / "27-TEP-TH-v0.1-Thika.md"
+MANUSCRIPT = PROJECT_ROOT / "manuscripts" / "27-TEP-TH-v0.2-Thika.md"
 
 AUDIT_ISSUES: list[str] = []
 AUDIT_WARNINGS: list[str] = []

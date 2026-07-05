@@ -7,10 +7,10 @@ authors:
 title: 'Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity'
 type: article
 version: v0.2 (Thika)
-date-released: 2026-07-03
+date-released: 2026-07-05
 doi: 10.5281/zenodo.20723059
 url: https://mlsmawfield.com/tep/th
-license: CC-BY-4.0
+license: MIT
 abstract: "Standard FLRW cosmology extrapolates observed cosmic expansion backward to a(t)->0, producing a Big Bang singularity at finite proper time. This paper demonstrates that this singularity is a reconstruction artifact of imposing a globally isochronous expanding-frame description on a conformal temporal geometry. In the Temporal Equivalence Principle (TEP), the observational role of FLRW expansion is reconstructed through conformal temporal transport: the effective scale factor a_eff arises from accumulated open-path conformal temporal shear along cosmological lines of sight rather than from physical expansion of space. TEP-C0 (Paper 26) established the distance-redshift and supernova evidence and deferred full nonsingular matter-frame closure to a dedicated temporal-horizon analysis; here that closure is delivered.
 
 The Temporal Horizon Cosmology framework is developed here, proving that the apparent a_eff->0 limit is not a physical curvature singularity but a temporal horizon. Two distinct projections of the temporal field are required: A_clock(z)=(1+z)^(-1) is the exact observational clock/redshift mapping that drives a_eff->0 as z->infinity, while A_dyn(z)=(1+z/z_t)^(-epsilon_eff(z)) is the dynamically screened shear response that modifies expansion, BBN, recombination, and perturbations only at late times. Proposition 1 establishes curvature regularity of the temporal conformal boundary: for A_clock(eta)=C eta^(-p) with 0 < p <= 1/2, all polynomial curvature invariants vanish at the boundary, timelike proper time diverges, and null geodesics have divergent affine parameter. The singular lower edge of standard flat Lambda CDM is replaced by a smooth temporal conformal boundary T^-, where A_clock->0 and curvature invariants vanish. The conformal compactification is smooth, the Weyl tensor vanishes on the boundary, and every causal curve approaches the regular past boundary T^- rather than terminating at a singularity. The temporal horizon is therefore simultaneously curvature-empty, timelike-complete, and null-complete in this branch.

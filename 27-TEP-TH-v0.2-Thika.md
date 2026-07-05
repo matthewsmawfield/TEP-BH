@@ -1,7 +1,7 @@
 # Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity
 **Matthew Lukin Smawfield**
 Version: v0.2 (Thika)
-First published: 18 June 2026 - Last updated: 3 July 2026
+First published: 18 June 2026 - Last updated: 5 July 2026
 DOI: 10.5281/zenodo.20723059
 
 ---
@@ -10,7 +10,7 @@ DOI: 10.5281/zenodo.20723059
 
 Standard FLRW cosmology extrapolates observed cosmic expansion backward to $a(t)\to0$, producing a Big Bang singularity at finite proper time. This paper demonstrates that this singularity is a reconstruction artifact of imposing a globally isochronous expanding-frame description on a conformal temporal geometry. In the Temporal Equivalence Principle (TEP), the observational role of FLRW expansion is reconstructed through conformal temporal transport: the effective scale factor $a_{\rm eff}$ arises from accumulated open-path conformal temporal shear along cosmological lines of sight rather than from physical expansion of space. TEP-C0 (Paper 26) established the distance-redshift and supernova evidence ; the full nonsingular matter-frame closure is delivered here.
 
-The Temporal Horizon Cosmology framework is developed here, proving that the apparent $a_{\rm eff}\to0$ limit is not a physical curvature singularity but a temporal horizon. Two distinct projections of the temporal field are required: $A_{\rm clock}(z)=(1+z)^{-1}$ is the exact observational clock/redshift mapping that drives $a_{\rm eff}\to0$ as $z\to\infty$, while $A_{\rm dyn}(z)=\left(1+z/z_{t}\right)^{-\epsilon_{\rm eff}(z)}$ is the dynamically screened shear response that modifies expansion, BBN, recombination, and perturbations only at late times. Proposition 1 establishes curvature regularity of the temporal conformal boundary: for $A_{\rm clock}(\eta)=C\eta^{-p}$ with $0 \lt p\le\tfrac12$, all polynomial curvature invariants vanish at the boundary, timelike proper time diverges, and null geodesics have divergent affine parameter. This branch is selected by the observational requirement that $A_{\rm clock}(z)=(1+z)^{-1}$ exactly, independent of model details. Here $\eta$ is the temporal-horizon conformal coordinate, oriented so that approach to $\mathscr{T}^{-}$ corresponds to the asymptotic limit in which $A_{\rm clock}\to0$; it is not the standard FLRW conformal time coordinate extrapolated to $a=0$. Figure 1 (Section 4.5) illustrates the resulting conformal-boundary interpretation: the singular lower edge of standard flat $\Lambda$CDM is replaced by a smooth temporal conformal boundary $\mathscr{T}^{-}$, where $A_{\rm clock}\to0$ and curvature invariants vanish. The conformal compactification is smooth, the Weyl tensor vanishes on the boundary, and every causal curve approaches the regular past boundary $\mathscr{T}^{-}$ rather than terminating at a singularity. The temporal horizon is therefore simultaneously curvature-empty, timelike-complete, and null-complete in this branch.
+The Temporal Horizon Cosmology framework is developed here, proving, within the temporal-conformal branch defined here, that the apparent $a_{\rm eff}\to0$ limit is not a physical curvature singularity but a temporal horizon. Two distinct projections of the temporal field are required: $A_{\rm clock}(z)=(1+z)^{-1}$ is the exact observational clock/redshift mapping that drives $a_{\rm eff}\to0$ as $z\to\infty$, while $A_{\rm dyn}(z)=\left(1+z/z_{t}\right)^{-\epsilon_{\rm eff}(z)}$ is the dynamically screened shear response that modifies expansion, BBN, recombination, and perturbations only at late times. Proposition 1 establishes curvature regularity of the temporal conformal boundary: for $A_{\rm clock}(\eta)=C\eta^{-p}$ with $0 \lt p\le\tfrac12$, all polynomial curvature invariants vanish at the boundary, timelike proper time diverges, and null geodesics have divergent affine parameter. The temporal-horizon exponent $p$ and the observational clock map are independent boundary conditions: $A_{\rm clock}(z)=(1+z)^{-1}$ is fixed by the redshift definition, while the regularity condition $0 \lt p\le\tfrac12$ is a mathematical requirement for curvature-regularity at the conformal boundary. Here $\eta$ is the temporal-horizon conformal coordinate, oriented so that approach to $\mathscr{T}^{-}$ corresponds to the asymptotic limit in which $A_{\rm clock}\to0$; it is not the standard FLRW conformal time coordinate extrapolated to $a=0$. Figure 1 (Section 4.5) illustrates the resulting conformal-boundary interpretation: the singular lower edge of standard flat $\Lambda$CDM is replaced by a smooth temporal conformal boundary $\mathscr{T}^{-}$, where $A_{\rm clock}\to0$ and curvature invariants vanish. The conformal compactification is smooth, the Weyl tensor vanishes on the boundary, and every causal curve approaches the regular past boundary $\mathscr{T}^{-}$ rather than terminating at a singularity. The temporal horizon is therefore simultaneously curvature-empty, timelike-complete, and null-complete in this branch.
 
 The effective stress-energy tensor of the temporal field violates the Strong Energy Condition, an explicit prerequisite of the Hawking-Penrose singularity theorems. The thermal screening scale is $T_{\rm lock}=0.03\,\mathrm{eV}$ with transition redshift $z_{t}=100$ and $T_{0}=2.725\,\mathrm{K}$, giving strong epoch-by-epoch screening ($S_{\rm epoch}\sim 10^{-12}$ at BBN, $\sim 10^{-2}$ at recombination). Screened TEP reproduces the standard BBN successful sector and inherits the standard lithium anomaly. Recombination is computed with the full non-equilibrium Peebles/RECFAST treatment. The temporal-horizon thermal mapping preserves a FIRAS-compatible blackbody with no spectral distortions.
 
@@ -19,8 +19,6 @@ The scalar perturbation spectrum is derived from fluctuations of the clock field
 The causal matter-frame universe is curvature-regular at the temporal conformal boundary. The apparent Big Bang is a temporal horizon, not a physical curvature singularity. All background and thermal observational pillars are preserved in the screened-limit reduction; the scalar perturbation shape is reproduced, and the tensor-to-scalar ratio is computed from the native temporal-conformal wave equation, yielding values well below observational bounds.
 
 Code Availability: https://github.com/matthewsmawfield/TEP-TH
-
-All results below are obtained with the native `tep_mode` implementation; no post-processing rescaling of the scale factor is applied.
 
 Keywords: temporal equivalence principle, temporal horizon cosmology, big bang singularity, static conformal geometry, cosmology, modified gravity, temporal shear
 
@@ -196,6 +194,8 @@ For $0 \lt p\lt1$, the factor $\eta^{4p-4}\to0$ as $\eta\to\infty$, so both the 
 
 *Proof sketch.* Substitute $A_{\rm clock}(\eta)=C\eta^{-p}$ into equations \eqref{eq:ricci_scalar_full}–\eqref{eq:kretschmann}. In the static conformal background $R=0$ and spatial gradients vanish by homogeneity. The time derivatives scale as $A_{\rm clock}'\sim -pC\eta^{-p-1}$ and $A_{\rm clock}''\sim p(p+1)C\eta^{-p-2}$. The Ricci scalar \eqref{eq:ricci_scalar_A} contains terms $A_{\rm clock}^{-2}R$ and $A_{\rm clock}^{-3}\Box A_{\rm clock}$. With $R=0$ and homogeneity, the dominant term is $6A_{\rm clock}''/A_{\rm clock}^{3}=6p(p+1)C^{-2}\eta^{2p-2}\to0$ for $0 \lt p\lt1$. The Ricci-tensor invariant has coefficient $12p^{2}(p^{2}+p+1)/C^{4}$ and the Kretschmann invariant has coefficient $12p^{2}(p^{2}+1)/C^{4}$, which satisfy the zero-Weyl identity $\tilde{K}=2\tilde{R}_{\mu\nu}\tilde{R}^{\mu\nu}-\tfrac13\tilde{R}^{2}$; both are strictly positive for all $p>0$ and scale as $\eta^{4p-4}\to0$ for $0 \lt p\lt1$. Numerical evaluation confirms vanishing to machine precision across $\eta\in[1,10^{4}]$. $\square$
 
+For $p\le\tfrac12$ the Kretschmann scalar falls faster than $\eta^{-2}$, ensuring that null affine parameters diverge (Section 4.2).
+
 This establishes the temporal boundary as a regular conformal endpoint, adopting the mathematical architecture of Penrose's conformal compactification and null infinity ($\mathscr{I}^{+}$) (Penrose 2006; Tod 2003, 2015), here applied to the asymptotic past. The boundary is not a curvature singularity; it is a conformal-temporal boundary where the Lorentzian metric becomes degenerate in the observational clock frame.
 
 It is vital to distinguish the TEP temporal horizon ($\mathscr{T}^{-}$) from Penrose's Conformal Cyclic Cosmology (CCC). Where CCC posits an infinite sequence of aeons connected by conformal rescalings at $\mathscr{I}^{+}$ and $\mathscr{I}^{-}$, TEP does not invoke cyclicality. $\mathscr{T}^{-}$ functions as a strict, non-singular asymptotic past boundary for a single, continuous causal history, dictated by the vanishing of the relative conformal clock rate.
@@ -220,7 +220,7 @@ Under the conformal transformation $\tilde{g}_{\mu\nu}=A_{\rm clock}^{2}\,g_{\mu
 - g_{\alpha\beta}\,g^{\mu\nu}\,\partial_{\nu}\ln A_{\rm clock} \, .
 \end{equation}
 
-For the static conformal background $g_{\mu\nu}$ with $\partial_{i}A_{\rm clock}=0$ and $A_{\rm clock}=A_{\rm clock}(t)$, the non-zero modified symbols are
+For the static conformal background $g_{\mu\nu}$ with $\partial_{i}A_{\rm clock}=0$ and $A_{\rm clock}=A_{\rm clock}(t)$, the nonzero modified symbols are
 
 \begin{equation}
 \tilde{\Gamma}^{0}{}_{00} = \frac{\dot{A}_{\rm clock}}{A_{\rm clock}} \, , \qquad
@@ -300,7 +300,7 @@ with $\tilde{\Gamma}$ given by \eqref{eq:christoffel}. Since $\tilde{\Gamma}\sim
 
 The cleanest fully complete temporal-horizon branch is therefore $0 \lt p\le\tfrac12$. In this branch the temporal horizon is simultaneously curvature-empty, timelike-complete, and null-complete.
 
-Proposition 1 establishes regularity for the temporal-conformal branch satisfying $0 \lt p\le\tfrac12$. This branch is selected by the observational requirement that $A_{\rm clock}(z)=(1+z)^{-1}$ exactly, independent of model details. The profile $A_{\rm clock}\sim\eta^{-p}$ with $p=1$ would give the standard FLRW clock map, but that branch ($p=1$) lies outside the curvature-regular window; it is the *observational* selection of $A_{\rm clock}(z)=(1+z)^{-1}$—not an adjustable model parameter—that forces the temporal-horizon exponent into the regular range. Within TEP, the regular branch is therefore not a tuning choice but a consequence of the exact redshift reconstruction.
+Proposition 1 establishes regularity for the temporal-conformal branch satisfying $0 \lt p\le\tfrac12$. The temporal-horizon exponent $p$ and the observational clock map are independent boundary conditions: $A_{\rm clock}(z)=(1+z)^{-1}$ is fixed by the redshift definition, while the regularity condition $0 \lt p\le\tfrac12$ is a mathematical requirement for curvature-regularity at the conformal boundary. The profile $A_{\rm clock}\sim\eta^{-p}$ with $p=1$ would give the standard FLRW clock map, but that branch ($p=1$) lies outside the curvature-regular window. Within TEP, the regular branch is selected by the requirement that the matter-frame geometry be curvature-regular at the temporal horizon, not by the observational redshift mapping alone.
 
 ## 4.5 Conformal Compactification and Penrose-Style Diagram
 
@@ -344,7 +344,7 @@ The TEP diagram (Panel b) is a rectangle with horizontal top and bottom edges an
 
 Crucially, *every* inextendible causal curve in the TEP diagram has its past limit on $\mathscr{T}^{-}$ and its future limit on the present-epoch boundary; there is no singularity anywhere in the diagram.
 
-**Comparison with standard cosmology.** Figure 1 makes the distinction immediate. In the standard diagram (Panel a), the past boundary is a *spacelike singularity* (the Big Bang) where all curvature invariants diverge and every causal curve terminates in finite proper time. In the TEP diagram (Panel b), the past boundary is $\mathscr{T}^{-}$, a *regular conformal-temporal boundary* where curvature invariants vanish; null geodesics have infinite affine parameter, while timelike curves have infinite proper time. The TEP diagram shares the same compactification topology as the conformal diagram of global de Sitter space: both have a smooth horizontal spacelike past boundary, a smooth horizontal future boundary, and vertical spatial-infinity edges. The compactified causal layout is topologically analogous; the physical mechanism differs—de Sitter's past boundary is $\mathscr{I}^{-}$, an asymptotic surface of an exponentially expanding congruence, whereas TEP's past boundary is $\mathscr{T}^{-}$, the limit where the relative conformal clock rate vanishes on a non-expanding static background.
+**Comparison with standard cosmology.** Figure 1 makes the distinction immediate. In the standard diagram (Panel a), the past boundary is a *spacelike singularity* (the Big Bang) where all curvature invariants diverge and every causal curve terminates in finite proper time. In the TEP diagram (Panel b), the past boundary is $\mathscr{T}^{-}$, a *regular conformal-temporal boundary* where curvature invariants vanish; null geodesics have infinite affine parameter, while timelike curves have infinite proper time. The TEP diagram shares the same compactification topology as the conformal diagram of global de Sitter space: both have a smooth horizontal spacelike past boundary, a smooth horizontal future boundary, and vertical spatial-infinity edges. The compactified causal layout is topologically analogous; the physical mechanism differs—de Sitter's past boundary is $\mathscr{I}^{-}$, an asymptotic surface of an exponentially expanding congruence, whereas TEP's past boundary is $\mathscr{T}^{-}$, the limit where the relative conformal clock rate vanishes on a nonexpanding static background.
 
 **Boundary-regularity interpretation.** For the temporal-horizon profile $A_{\rm clock}(\eta)=C\eta^{-p}$ with $0 \lt p\le\tfrac12$:
 
@@ -412,7 +412,7 @@ The pipeline evaluates the NEC, WEC, DEC, and SEC for the temporal field across 
 
 ## 5.2 Past-Completeness and the BGV Theorem
 
-The Borde-Guth-Vilenkin theorem states that any spacetime satisfying the null energy condition and containing a congruence with averaged Hubble parameter $H_{\rm av}>0$ along a past-directed geodesic is past-incomplete in finite proper time. It is the standard obstruction to past-eternal non-singular cosmologies. In the TEP static matter frame, however, the physical congruence is non-expanding.
+The Borde-Guth-Vilenkin theorem states that any spacetime satisfying the null energy condition and containing a congruence with averaged Hubble parameter $H_{\rm av}>0$ along a past-directed geodesic is past-incomplete in finite proper time. It is the standard obstruction to past-eternal nonsingular cosmologies. In the TEP static matter frame, however, the physical congruence is nonexpanding.
 
 The matter-frame coordinate scale factor is $a_{\rm m}=1$ everywhere, so the comoving congruence has vanishing expansion
 
@@ -420,7 +420,7 @@ The matter-frame coordinate scale factor is $a_{\rm m}=1$ everywhere, so the com
 \theta = 3\,\frac{\dot a_{\rm m}}{a_{\rm m}} = 0 \, .
 \end{equation}
 
-The apparent redshift-scale expansion is carried entirely by the clock-rescaling field $A_{\rm clock}$, not by kinematic expansion of the congruence. Consequently $H_{\rm av}=0$ along the matter-frame geodesics and the BGV hypothesis $H_{\rm av}>0$ fails by construction. This is not a loophole in the theorem's assumptions; it is a structural feature of the TEP framework. BGV is a theorem about congruence kinematics, and TEP relocates the cosmological "expansion" from congruence kinematics to clock transport. The infinite proper time established in Section 4.3 is therefore consistent with $\theta=0$, exactly as a non-expanding congruence should give.
+The apparent redshift-scale expansion is carried entirely by the clock-rescaling field $A_{\rm clock}$, not by kinematic expansion of the congruence. Consequently $H_{\rm av}=0$ along the matter-frame geodesics and the BGV hypothesis $H_{\rm av}>0$ fails by construction. This is not a loophole in the theorem's assumptions; it is a structural feature of the TEP framework. BGV is a theorem about congruence kinematics, and TEP relocates the cosmological "expansion" from congruence kinematics to clock transport. The infinite proper time established in Section 4.3 is therefore consistent with $\theta=0$, exactly as a nonexpanding congruence should give.
 
 By contrast, inflationary cosmology does satisfy $H_{\rm av}>0$ because the scale factor grows kinematically; BGV therefore applies to it and forces a past boundary. In TEP the boundary is not a singularity produced by the theorem but a temporal horizon produced by the clock map, and the geodesic analysis of Section 4 shows that causal curves approach it only asymptotically in infinite affine parameter. The BGV theorem is respected but inapplicable.
 
@@ -555,7 +555,7 @@ The pipeline computes these quantities for $z\in[0,2000]$. In the screened-limit
 
 - Manual $\theta_s = 0.01061$ ($+1.9\%$ relative to Planck $0.01041$)
 
-The manual Peebles calculation has inherent numerical limitations at the $\sim 2\%$ level. The full CLASS Boltzmann calculation (Step 10) gives $100\theta_s = 1.0419$, consistent with Planck 2018 at the $0.09\%$ level. Recombination and acoustic-scale preservation are therefore corollaries of the screened-limit reduction, not independent empirical passes.
+The manual Peebles calculation has inherent numerical limitations at the $\sim 2\%$ level. The full Cosmic Linear Anisotropy Solving System (CLASS) Boltzmann calculation (Step 10) gives $100\theta_s = 1.0419$, consistent with Planck 2018 at the $0.09\%$ level. Recombination and acoustic-scale preservation are therefore corollaries of the screened-limit reduction, not independent empirical passes.
 
 # 8. CMB Blackbody Origin and Spectral Distortion
 

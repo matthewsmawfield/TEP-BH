@@ -1,6 +1,5 @@
-v0.2 (Thika) — Manuscript polish and terminology alignment - 3 July 2026
+v0.2 (Thika) — Manuscript polish and terminology alignment - 5 July 2026
 
-- First published: 18 June 2026
 - TEP terminology aligned across corpus: matter-frame, temporal horizon, Temporal Shear
 - Bold mid-sentence formatting cleaned up (clock map, dynamical response)
 - Standard cosmology and TEP reinterpretation clearly distinguished

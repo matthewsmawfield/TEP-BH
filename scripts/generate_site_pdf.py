@@ -37,7 +37,7 @@ def load_citation_metadata():
     citation_file = base_dir / 'CITATION.cff'
 
     # Default fallback
-    metadata = {'version': 'v0.1', 'codename': 'Thika', 'paper_code': 'TEP-TH', 'paper_num': '27'}
+    metadata = {'version': 'v0.2', 'codename': 'Thika', 'paper_code': 'TEP-TH', 'paper_num': '27'}
 
     # Try VERSION.json first for paper code and number
     if version_file.exists():
@@ -71,7 +71,7 @@ def load_citation_metadata():
             if yaml:
                 with open(citation_file, 'r') as f:
                     data = yaml.safe_load(f)
-                version_str = data.get('version', 'v0.1')
+                version_str = data.get('version', 'v0.2')
                 title = data.get('title', '')
                 # Infer paper code from title if not already set
                 if metadata['paper_code'] == 'TEP-C0':
@@ -85,9 +85,9 @@ def load_citation_metadata():
                 with open(citation_file, 'r') as f:
                     content = f.read()
                 version_match = re.search(r'version:\s*"?([^"\n]+)"?', content)
-                version_str = version_match.group(1).strip() if version_match else 'v0.1'
+                version_str = version_match.group(1).strip() if version_match else 'v0.2'
 
-            # Parse version string like 'v0.1 (Thika)'
+            # Parse version string like 'v0.2 (Thika)'
             pattern = r'^(v?[\d.]+)(?:\s*\(([^)]+)\))?$'
             match = re.match(pattern, version_str.strip())
             if match:
