@@ -1,0 +1,123 @@
+{
+  "canonical_tep_schwarzschild_qnm_shift": 0.0,
+  "dependencies": [
+    "step_01_field_equations"
+  ],
+  "description": "Compute Regge-Wheeler and Zerilli gravitational perturbation potentials and WKB quasinormal-mode frequencies on the prescribed Schwarzschild geometric metric",
+  "echo_analysis": {
+    "domain": "geometric_schwarzschild_exterior",
+    "gravitational_echo_prediction_supported": false,
+    "has_exterior_echo_cavity": false,
+    "n_peaks_exterior": 1,
+    "note": "No matter-metric or black-hole-interior structure is used as a GW echo prediction.",
+    "r_temporal_horizon": null
+  },
+  "exterior_geometric_potential_diagnostic": {
+    "domain": "geometric_schwarzschild_exterior",
+    "gravitational_echo_prediction_supported": false,
+    "has_exterior_echo_cavity": false,
+    "n_peaks_exterior": 1,
+    "note": "No matter-metric or black-hole-interior structure is used as a GW echo prediction."
+  },
+  "gravitational_metric": "geometric_g_schwarzschild",
+  "key_result": "RW/Zerilli QNMs (l=2, n=0) are identical to Schwarzschild (omega_RW=0.3988+0.0882i); no echo cavity (n_peaks=1, no GW echo prediction)",
+  "matter_metric_used_for_gravitational_predictions": false,
+  "model": {
+    "B0": 1.0,
+    "B_type": "gaussian_bump",
+    "M": 1.0,
+    "beta_A": -1.0,
+    "delta": 0.05,
+    "n_B": 2.0,
+    "phi_0": 2.0,
+    "r_h": 2.0,
+    "sigma_B": 1.5
+  },
+  "n_grid_points": 20000,
+  "note": "Canonical TEP GWs propagate on geometric g; with g prescribed as Schwarzschild, RW/Zerilli potentials and nonspinning QNMs are Schwarzschild and are not A^-4 matter-metric scaled.",
+  "potential_profiles": {
+    "regge_wheeler": {
+      "V_at_10M": 0.04317974458019242,
+      "V_at_2M": -0.00040862713942097135,
+      "V_at_3M": 0.14818256454125528,
+      "V_max": 0.15128666062784393,
+      "V_pp_at_peak": -0.00991047000287751,
+      "formula": "V_RW = F * [l(l+1)/r^2 - 6M/r^3]",
+      "l": 2,
+      "r_peak_M": 3.2818707247405547,
+      "r_star_peak": 0.7743192287561143
+    },
+    "zerilli": {
+      "V_at_10M": 0.04047740440743614,
+      "V_at_2M": -0.000525641311728895,
+      "V_at_3M": 0.15090389614533453,
+      "V_max": 0.15131052902839126,
+      "V_pp_at_peak": -0.009922850854137157,
+      "formula": "V_Z = 2F(lam^2(lam+1)r^3 + 3lam^2Mr^2 + 9lamM^2r + 9M^3) / [r^3(lam*r + 3M)^2]",
+      "l": 2,
+      "r_peak_M": 3.10018677785803,
+      "r_star_peak": 0.28695372078429204
+    }
+  },
+  "qnm_comparison_table": {
+    "note": "Canonical TEP GWs propagate on geometric g (prescribed Schwarzschild); RW/Zerilli QNMs are identical to Schwarzschild.",
+    "regge_wheeler_l2_n0": {
+      "expected_accurate_schw": "0.3737 - 0.0890i",
+      "omega_I_schw": 0.08824744877591957,
+      "omega_I_tep": 0.08824744877591957,
+      "omega_R_schw": 0.3988411624234671,
+      "omega_R_tep": 0.3988411624234671,
+      "tep_schw_shift": 0.0
+    },
+    "zerilli_l2_n0": {
+      "omega_I_schw": 0.08829366603487879,
+      "omega_I_tep": 0.08829366603487879,
+      "omega_R_schw": 0.3988813112822785,
+      "omega_R_tep": 0.3988813112822785,
+      "tep_schw_shift": 0.0
+    }
+  },
+  "qnm_regge_wheeler_geometric": {
+    "V_max": 0.15128666062784393,
+    "V_pp": -0.00991047000287751,
+    "omega_I": 0.08824744877591957,
+    "omega_R": 0.3988411624234671,
+    "r_max": 3.2818707247405547,
+    "r_star_max": 0.7743192287561143
+  },
+  "qnm_regge_wheeler_schwarzschild_reference": {
+    "V_max": 0.15128666062784393,
+    "V_pp": -0.00991047000287751,
+    "omega_I": 0.08824744877591957,
+    "omega_R": 0.3988411624234671,
+    "r_max": 3.2818707247405547,
+    "r_star_max": 0.7743192287561143
+  },
+  "qnm_zerilli_geometric": {
+    "V_max": 0.15131052902839126,
+    "V_pp": -0.009922850854137157,
+    "omega_I": 0.08829366603487879,
+    "omega_R": 0.3988813112822785,
+    "r_max": 3.10018677785803,
+    "r_star_max": 0.28695372078429204
+  },
+  "qnm_zerilli_schwarzschild_reference": {
+    "V_max": 0.15131052902839126,
+    "V_pp": -0.009922850854137157,
+    "omega_I": 0.08829366603487879,
+    "omega_R": 0.3988813112822785,
+    "r_max": 3.10018677785803,
+    "r_star_max": 0.28695372078429204
+  },
+  "r_range": [
+    1e-08,
+    49.99999999999999
+  ],
+  "r_star_range": [
+    32.66665881917791,
+    54.738212770371454
+  ],
+  "status": "success",
+  "step": "step_02_perturbations",
+  "timestamp": "2026-07-29T01:18:12.353620"
+}

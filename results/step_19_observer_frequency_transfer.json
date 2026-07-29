@@ -1,0 +1,2518 @@
+{
+  "step": "14_observer_frequency_transfer",
+  "description": "Invariant emitter-receiver frequency transfer \u2014 Temporal Horizon test",
+  "parameters": {
+    "M": 1.0,
+    "ell": 0.5,
+    "r_h": 2.0,
+    "phi0": 1.0,
+    "r_recv": 50.0
+  },
+  "case_1_ff_static": [
+    {
+      "r_emit": 0.001,
+      "Z": null,
+      "omega_e": 1003.9999999960052,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0030204081632653063,
+      "Z": null,
+      "omega_e": 335.0810809708606,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0050408163265306125,
+      "Z": null,
+      "omega_e": 202.3805662892752,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.007061224489795919,
+      "Z": null,
+      "omega_e": 145.61849570151185,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.009081632653061226,
+      "Z": null,
+      "omega_e": 114.11235655449651,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.011102040816326531,
+      "Z": null,
+      "omega_e": 94.07352393823405,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.013122448979591837,
+      "Z": null,
+      "omega_e": 80.20527867519918,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.015142857142857145,
+      "Z": null,
+      "omega_e": 70.0377219597294,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.01716326530612245,
+      "Z": null,
+      "omega_e": 62.263951239038725,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.019183673469387756,
+      "Z": null,
+      "omega_e": 56.12763133537703,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.02120408163265306,
+      "Z": null,
+      "omega_e": 51.16069333858544,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.02322448979591837,
+      "Z": null,
+      "omega_e": 47.05794637898733,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.025244897959183676,
+      "Z": null,
+      "omega_e": 43.611900076839845,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.02726530612244898,
+      "Z": null,
+      "omega_e": 40.67656563327358,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.02928571428571429,
+      "Z": null,
+      "omega_e": 38.14624099926961,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.031306122448979595,
+      "Z": null,
+      "omega_e": 35.94251091401771,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0333265306122449,
+      "Z": null,
+      "omega_e": 34.00597564947017,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.035346938775510206,
+      "Z": null,
+      "omega_e": 32.290816432573735,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.03736734693877551,
+      "Z": null,
+      "omega_e": 30.76112391457801,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.03938775510204082,
+      "Z": null,
+      "omega_e": 29.388356634765774,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.04140816326530612,
+      "Z": null,
+      "omega_e": 28.149543531767268,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.043428571428571434,
+      "Z": null,
+      "omega_e": 27.02598819748853,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.04544897959183674,
+      "Z": null,
+      "omega_e": 26.0023187409055,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.047469387755102045,
+      "Z": null,
+      "omega_e": 25.0657802919742,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.04948979591836735,
+      "Z": null,
+      "omega_e": 24.20570080561593,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.051510204081632656,
+      "Z": null,
+      "omega_e": 23.41308258378375,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.05353061224489796,
+      "Z": null,
+      "omega_e": 22.680286300730593,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.05555102040816327,
+      "Z": null,
+      "omega_e": 22.000783980883803,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.05757142857142858,
+      "Z": null,
+      "omega_e": 21.368963990597248,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.059591836734693884,
+      "Z": null,
+      "omega_e": 20.779975699391123,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.06161224489795919,
+      "Z": null,
+      "omega_e": 20.22960470469927,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0636326530612245,
+      "Z": null,
+      "omega_e": 19.71417182714442,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0656530612244898,
+      "Z": null,
+      "omega_e": 19.230450755739486,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0676734693877551,
+      "Z": null,
+      "omega_e": 18.775600445428076,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.06969387755102041,
+      "Z": null,
+      "omega_e": 18.34710927329766,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07171428571428572,
+      "Z": null,
+      "omega_e": 17.942748634524115,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07373469387755102,
+      "Z": null,
+      "omega_e": 17.560534167437574,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07575510204081633,
+      "Z": null,
+      "omega_e": 17.198693183415443,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07777551020408163,
+      "Z": null,
+      "omega_e": 16.85563717330387,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07979591836734694,
+      "Z": null,
+      "omega_e": 16.529938490615024,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08181632653061224,
+      "Z": null,
+      "omega_e": 16.220310489498136,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08383673469387756,
+      "Z": null,
+      "omega_e": 15.925590534680662,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08585714285714287,
+      "Z": null,
+      "omega_e": 15.64472541029275,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08787755102040817,
+      "Z": null,
+      "omega_e": 15.376758741503387,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08989795918367348,
+      "Z": null,
+      "omega_e": 15.120820112309946,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.09191836734693878,
+      "Z": null,
+      "omega_e": 14.876115618505779,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.09393877551020409,
+      "Z": null,
+      "omega_e": 14.641919639753846,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0959591836734694,
+      "Z": null,
+      "omega_e": 14.41756765108992,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0979795918367347,
+      "Z": null,
+      "omega_e": 14.202449923818694,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.1,
+      "Z": null,
+      "omega_e": 13.996005990017474,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.1,
+      "Z": null,
+      "omega_e": 13.996005990017474,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.13673469387755102,
+      "Z": null,
+      "omega_e": 11.303246108630974,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.17346938775510204,
+      "Z": null,
+      "omega_e": 9.743988056316223,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.21020408163265306,
+      "Z": null,
+      "omega_e": 8.720639168550878,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.24693877551020407,
+      "Z": null,
+      "omega_e": 7.99068189333523,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.28367346938775506,
+      "Z": null,
+      "omega_e": 7.436882467049775,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.3204081632653061,
+      "Z": null,
+      "omega_e": 6.995600269798714,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.3571428571428571,
+      "Z": null,
+      "omega_e": 6.629359562117225,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.3938775510204081,
+      "Z": null,
+      "omega_e": 6.314778033988217,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.43061224489795913,
+      "Z": null,
+      "omega_e": 6.036671285936237,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.46734693877551015,
+      "Z": null,
+      "omega_e": 5.7849248547345145,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.5040816326530612,
+      "Z": null,
+      "omega_e": 5.552713558264672,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.5408163265306122,
+      "Z": null,
+      "omega_e": 5.335422108994805,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.5775510204081632,
+      "Z": null,
+      "omega_e": 5.129952788874728,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.6142857142857142,
+      "Z": null,
+      "omega_e": 4.934259353728181,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.6510204081632652,
+      "Z": null,
+      "omega_e": 4.7470213451669405,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.6877551020408162,
+      "Z": null,
+      "omega_e": 4.567411101900831,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.7244897959183673,
+      "Z": null,
+      "omega_e": 4.394925568092316,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.7612244897959183,
+      "Z": null,
+      "omega_e": 4.229265433966754,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.7979591836734693,
+      "Z": null,
+      "omega_e": 4.07024975797666,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.8346938775510203,
+      "Z": null,
+      "omega_e": 3.917757391018604,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.8714285714285713,
+      "Z": null,
+      "omega_e": 3.771688493792376,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.9081632653061223,
+      "Z": null,
+      "omega_e": 3.631940830385655,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.9448979591836734,
+      "Z": null,
+      "omega_e": 3.4983966213140283,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.9816326530612244,
+      "Z": null,
+      "omega_e": 3.37091666308629,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.0183673469387755,
+      "Z": null,
+      "omega_e": 3.249339206658204,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.0551020408163265,
+      "Z": null,
+      "omega_e": 3.133481743642911,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.0918367346938775,
+      "Z": null,
+      "omega_e": 3.023144381895438,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.1285714285714286,
+      "Z": null,
+      "omega_e": 2.9181139097547746,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.1653061224489796,
+      "Z": null,
+      "omega_e": 2.8181679641597794,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.2020408163265306,
+      "Z": null,
+      "omega_e": 2.723078948304055,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.2387755102040816,
+      "Z": null,
+      "omega_e": 2.632617506354044,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.2755102040816326,
+      "Z": null,
+      "omega_e": 2.546555471811531,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.3122448979591836,
+      "Z": null,
+      "omega_e": 2.464668276019089,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.3489795918367347,
+      "Z": null,
+      "omega_e": 2.3867368452374627,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.3857142857142857,
+      "Z": null,
+      "omega_e": 2.312549037354767,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.4224489795918367,
+      "Z": null,
+      "omega_e": 2.2419006791245275,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.4591836734693877,
+      "Z": null,
+      "omega_e": 2.1745962665781664,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.4959183673469387,
+      "Z": null,
+      "omega_e": 2.110449388210248,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.5326530612244897,
+      "Z": null,
+      "omega_e": 2.049282924920376,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.5693877551020408,
+      "Z": null,
+      "omega_e": 1.9909290739682133,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.6061224489795918,
+      "Z": null,
+      "omega_e": 1.9352292372644728,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.6428571428571428,
+      "Z": null,
+      "omega_e": 1.88203380771232,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.6795918367346938,
+      "Z": null,
+      "omega_e": 1.8312018813121775,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.7163265306122448,
+      "Z": null,
+      "omega_e": 1.782600917469236,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.7530612244897958,
+      "Z": null,
+      "omega_e": 1.736106365419177,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.7897959183673469,
+      "Z": null,
+      "omega_e": 1.691601270878388,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.8265306122448979,
+      "Z": null,
+      "omega_e": 1.6489758738649165,
+      "omega_o": 0.019595919575251985,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.863265306122449,
+      "Z": 82.0643910010054,
+      "omega_e": 1.6081272060477345,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0733844468784228,
+      "F_e": 0.003629070613237917,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9,
+      "Z": 80.06558140122722,
+      "omega_e": 1.5689586938842397,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0526315789473684,
+      "F_e": 0.018888435928794634,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9,
+      "Z": 80.06558140122722,
+      "omega_e": 1.5689586938842397,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0526315789473684,
+      "F_e": 0.018888435928794634,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.904736842105263,
+      "Z": 79.81383892328897,
+      "omega_e": 1.564025568532887,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0500138159712629,
+      "F_e": 0.020833226590020737,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9094736842105262,
+      "Z": 79.56343529308593,
+      "omega_e": 1.5591186791340772,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.047409040793826,
+      "F_e": 0.02277276434038855,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9142105263157894,
+      "Z": 79.31436103820344,
+      "omega_e": 1.5542378400671342,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0448171569975255,
+      "F_e": 0.024707041777377814,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9189473684210525,
+      "Z": 79.06660676437511,
+      "omega_e": 1.5493828672427692,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0422380691168405,
+      "F_e": 0.02663605212056852,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9236842105263157,
+      "Z": 78.8201631548273,
+      "omega_e": 1.5445535780902355,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.039671682626539,
+      "F_e": 0.02855978919712998,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9284210526315788,
+      "Z": 78.57502096962749,
+      "omega_e": 1.5397497915445584,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.037117903930131,
+      "F_e": 0.030478247427607408,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.933157894736842,
+      "Z": 78.33117104503656,
+      "omega_e": 1.5349713280338433,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.034576640348489,
+      "F_e": 0.03239142181199639,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9378947368421051,
+      "Z": 78.08860429286517,
+      "omega_e": 1.5302180094666626,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0320478001086366,
+      "F_e": 0.034299307916102806,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9426315789473683,
+      "Z": 77.84731169983385,
+      "omega_e": 1.525489659219517,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0295312923327014,
+      "F_e": 0.03620190185818084,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9473684210526314,
+      "Z": 77.6072843269375,
+      "omega_e": 1.5207861021243811,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0270270270270272,
+      "F_e": 0.03809920029584424,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9521052631578948,
+      "Z": 77.36851330881366,
+      "omega_e": 1.5161071644563253,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0245349150714478,
+      "F_e": 0.039991200413246,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.956842105263158,
+      "Z": 77.13098985311508,
+      "omega_e": 1.51145267392122,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0220548682087143,
+      "F_e": 0.04187789990851909,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.961578947368421,
+      "Z": 76.89470523988624,
+      "omega_e": 1.506822459643518,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0195867990340757,
+      "F_e": 0.043759296981476736,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9663157894736842,
+      "Z": 76.65965082094408,
+      "omega_e": 1.5022163521541199,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0171306209850106,
+      "F_e": 0.04563539032156383,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9710526315789474,
+      "Z": 76.4258180192631,
+      "omega_e": 1.4976341833783238,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.014686248331108,
+      "F_e": 0.04750617909605559,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9757894736842105,
+      "Z": 76.19319832836429,
+      "omega_e": 1.4930757866238507,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0122535961640917,
+      "F_e": 0.04937166293849948,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9805263157894737,
+      "Z": 75.96178331170852,
+      "omega_e": 1.4885409965689584,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0098325803879884,
+      "F_e": 0.05123184193739505,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9852631578947368,
+      "Z": 75.73156460209393,
+      "omega_e": 1.4840296492506326,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.007423117709438,
+      "F_e": 0.05308671662510733,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.99,
+      "Z": 75.50253390105804,
+      "omega_e": 1.47954158205287,
+      "omega_o": 0.019595919575251985,
+      "T": null,
+      "A_e": 1.0050251256281406,
+      "F_e": 0.05493628796700567,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    }
+  ],
+  "case_2_ff_ff": [
+    {
+      "r_emit": 0.001,
+      "Z": null,
+      "omega_e": 1003.9999999960052,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0030204081632653063,
+      "Z": null,
+      "omega_e": 335.0810809708606,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0050408163265306125,
+      "Z": null,
+      "omega_e": 202.3805662892752,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.007061224489795919,
+      "Z": null,
+      "omega_e": 145.61849570151185,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.009081632653061226,
+      "Z": null,
+      "omega_e": 114.11235655449651,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.011102040816326531,
+      "Z": null,
+      "omega_e": 94.07352393823405,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.013122448979591837,
+      "Z": null,
+      "omega_e": 80.20527867519918,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.015142857142857145,
+      "Z": null,
+      "omega_e": 70.0377219597294,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.01716326530612245,
+      "Z": null,
+      "omega_e": 62.263951239038725,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.019183673469387756,
+      "Z": null,
+      "omega_e": 56.12763133537703,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.02120408163265306,
+      "Z": null,
+      "omega_e": 51.16069333858544,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.02322448979591837,
+      "Z": null,
+      "omega_e": 47.05794637898733,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.025244897959183676,
+      "Z": null,
+      "omega_e": 43.611900076839845,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.02726530612244898,
+      "Z": null,
+      "omega_e": 40.67656563327358,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.02928571428571429,
+      "Z": null,
+      "omega_e": 38.14624099926961,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.031306122448979595,
+      "Z": null,
+      "omega_e": 35.94251091401771,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0333265306122449,
+      "Z": null,
+      "omega_e": 34.00597564947017,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.035346938775510206,
+      "Z": null,
+      "omega_e": 32.290816432573735,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.03736734693877551,
+      "Z": null,
+      "omega_e": 30.76112391457801,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.03938775510204082,
+      "Z": null,
+      "omega_e": 29.388356634765774,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.04140816326530612,
+      "Z": null,
+      "omega_e": 28.149543531767268,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.043428571428571434,
+      "Z": null,
+      "omega_e": 27.02598819748853,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.04544897959183674,
+      "Z": null,
+      "omega_e": 26.0023187409055,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.047469387755102045,
+      "Z": null,
+      "omega_e": 25.0657802919742,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.04948979591836735,
+      "Z": null,
+      "omega_e": 24.20570080561593,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.051510204081632656,
+      "Z": null,
+      "omega_e": 23.41308258378375,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.05353061224489796,
+      "Z": null,
+      "omega_e": 22.680286300730593,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.05555102040816327,
+      "Z": null,
+      "omega_e": 22.000783980883803,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.05757142857142858,
+      "Z": null,
+      "omega_e": 21.368963990597248,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.059591836734693884,
+      "Z": null,
+      "omega_e": 20.779975699391123,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.06161224489795919,
+      "Z": null,
+      "omega_e": 20.22960470469927,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0636326530612245,
+      "Z": null,
+      "omega_e": 19.71417182714442,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0656530612244898,
+      "Z": null,
+      "omega_e": 19.230450755739486,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0676734693877551,
+      "Z": null,
+      "omega_e": 18.775600445428076,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.06969387755102041,
+      "Z": null,
+      "omega_e": 18.34710927329766,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07171428571428572,
+      "Z": null,
+      "omega_e": 17.942748634524115,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07373469387755102,
+      "Z": null,
+      "omega_e": 17.560534167437574,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07575510204081633,
+      "Z": null,
+      "omega_e": 17.198693183415443,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07777551020408163,
+      "Z": null,
+      "omega_e": 16.85563717330387,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.07979591836734694,
+      "Z": null,
+      "omega_e": 16.529938490615024,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08181632653061224,
+      "Z": null,
+      "omega_e": 16.220310489498136,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08383673469387756,
+      "Z": null,
+      "omega_e": 15.925590534680662,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08585714285714287,
+      "Z": null,
+      "omega_e": 15.64472541029275,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08787755102040817,
+      "Z": null,
+      "omega_e": 15.376758741503387,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.08989795918367348,
+      "Z": null,
+      "omega_e": 15.120820112309946,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.09191836734693878,
+      "Z": null,
+      "omega_e": 14.876115618505779,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.09393877551020409,
+      "Z": null,
+      "omega_e": 14.641919639753846,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0959591836734694,
+      "Z": null,
+      "omega_e": 14.41756765108992,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.0979795918367347,
+      "Z": null,
+      "omega_e": 14.202449923818694,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.1,
+      "Z": null,
+      "omega_e": 13.996005990017474,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.1,
+      "Z": null,
+      "omega_e": 13.996005990017474,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.13673469387755102,
+      "Z": null,
+      "omega_e": 11.303246108630974,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.17346938775510204,
+      "Z": null,
+      "omega_e": 9.743988056316223,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.21020408163265306,
+      "Z": null,
+      "omega_e": 8.720639168550878,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.24693877551020407,
+      "Z": null,
+      "omega_e": 7.99068189333523,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.28367346938775506,
+      "Z": null,
+      "omega_e": 7.436882467049775,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.3204081632653061,
+      "Z": null,
+      "omega_e": 6.995600269798714,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.3571428571428571,
+      "Z": null,
+      "omega_e": 6.629359562117225,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.3938775510204081,
+      "Z": null,
+      "omega_e": 6.314778033988217,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.43061224489795913,
+      "Z": null,
+      "omega_e": 6.036671285936237,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.46734693877551015,
+      "Z": null,
+      "omega_e": 5.7849248547345145,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.5040816326530612,
+      "Z": null,
+      "omega_e": 5.552713558264672,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.5408163265306122,
+      "Z": null,
+      "omega_e": 5.335422108994805,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.5775510204081632,
+      "Z": null,
+      "omega_e": 5.129952788874728,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside inner horizon (r=0.5970); outgoing null reaches inner horizon but is trapped between horizons"
+    },
+    {
+      "r_emit": 0.6142857142857142,
+      "Z": null,
+      "omega_e": 4.934259353728181,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.6510204081632652,
+      "Z": null,
+      "omega_e": 4.7470213451669405,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.6877551020408162,
+      "Z": null,
+      "omega_e": 4.567411101900831,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.7244897959183673,
+      "Z": null,
+      "omega_e": 4.394925568092316,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.7612244897959183,
+      "Z": null,
+      "omega_e": 4.229265433966754,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.7979591836734693,
+      "Z": null,
+      "omega_e": 4.07024975797666,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.8346938775510203,
+      "Z": null,
+      "omega_e": 3.917757391018604,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.8714285714285713,
+      "Z": null,
+      "omega_e": 3.771688493792376,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.9081632653061223,
+      "Z": null,
+      "omega_e": 3.631940830385655,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.9448979591836734,
+      "Z": null,
+      "omega_e": 3.4983966213140283,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 0.9816326530612244,
+      "Z": null,
+      "omega_e": 3.37091666308629,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.0183673469387755,
+      "Z": null,
+      "omega_e": 3.249339206658204,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.0551020408163265,
+      "Z": null,
+      "omega_e": 3.133481743642911,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.0918367346938775,
+      "Z": null,
+      "omega_e": 3.023144381895438,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.1285714285714286,
+      "Z": null,
+      "omega_e": 2.9181139097547746,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.1653061224489796,
+      "Z": null,
+      "omega_e": 2.8181679641597794,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.2020408163265306,
+      "Z": null,
+      "omega_e": 2.723078948304055,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.2387755102040816,
+      "Z": null,
+      "omega_e": 2.632617506354044,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.2755102040816326,
+      "Z": null,
+      "omega_e": 2.546555471811531,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.3122448979591836,
+      "Z": null,
+      "omega_e": 2.464668276019089,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.3489795918367347,
+      "Z": null,
+      "omega_e": 2.3867368452374627,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.3857142857142857,
+      "Z": null,
+      "omega_e": 2.312549037354767,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.4224489795918367,
+      "Z": null,
+      "omega_e": 2.2419006791245275,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.4591836734693877,
+      "Z": null,
+      "omega_e": 2.1745962665781664,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.4959183673469387,
+      "Z": null,
+      "omega_e": 2.110449388210248,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.5326530612244897,
+      "Z": null,
+      "omega_e": 2.049282924920376,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.5693877551020408,
+      "Z": null,
+      "omega_e": 1.9909290739682133,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.6061224489795918,
+      "Z": null,
+      "omega_e": 1.9352292372644728,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.6428571428571428,
+      "Z": null,
+      "omega_e": 1.88203380771232,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.6795918367346938,
+      "Z": null,
+      "omega_e": 1.8312018813121775,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.7163265306122448,
+      "Z": null,
+      "omega_e": 1.782600917469236,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.7530612244897958,
+      "Z": null,
+      "omega_e": 1.736106365419177,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.7897959183673469,
+      "Z": null,
+      "omega_e": 1.691601270878388,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.8265306122448979,
+      "Z": null,
+      "omega_e": 1.6489758738649165,
+      "omega_o": 0.02799998400004801,
+      "causal_status": "Emitter inside horizon at r=1.8546 (trapped region); outgoing null cannot reach exterior receiver"
+    },
+    {
+      "r_emit": 1.863265306122449,
+      "Z": 57.433147320547654,
+      "omega_e": 1.6081272060477345,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0733844468784228,
+      "F_e": 0.003629070613237917,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9,
+      "Z": 56.03427108678168,
+      "omega_e": 1.5689586938842397,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0526315789473684,
+      "F_e": 0.018888435928794634,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9,
+      "Z": 56.03427108678168,
+      "omega_e": 1.5689586938842397,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0526315789473684,
+      "F_e": 0.018888435928794634,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.904736842105263,
+      "Z": 55.858087937843294,
+      "omega_e": 1.564025568532887,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0500138159712629,
+      "F_e": 0.020833226590020737,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9094736842105262,
+      "Z": 55.682841787745446,
+      "omega_e": 1.5591186791340772,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.047409040793826,
+      "F_e": 0.02277276434038855,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9142105263157894,
+      "Z": 55.50852600717448,
+      "omega_e": 1.5542378400671342,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0448171569975255,
+      "F_e": 0.024707041777377814,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9189473684210525,
+      "Z": 55.33513402150918,
+      "omega_e": 1.5493828672427692,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0422380691168405,
+      "F_e": 0.02663605212056852,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9236842105263157,
+      "Z": 55.16265931036201,
+      "omega_e": 1.5445535780902355,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.039671682626539,
+      "F_e": 0.02855978919712998,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9284210526315788,
+      "Z": 54.99109540712303,
+      "omega_e": 1.5397497915445584,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.037117903930131,
+      "F_e": 0.030478247427607408,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.933157894736842,
+      "Z": 54.82043589850664,
+      "omega_e": 1.5349713280338433,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.034576640348489,
+      "F_e": 0.03239142181199639,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9378947368421051,
+      "Z": 54.65067442410106,
+      "omega_e": 1.5302180094666626,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0320478001086366,
+      "F_e": 0.034299307916102806,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9426315789473683,
+      "Z": 54.48180467592058,
+      "omega_e": 1.525489659219517,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0295312923327014,
+      "F_e": 0.03620190185818084,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9473684210526314,
+      "Z": 54.31382039796071,
+      "omega_e": 1.5207861021243811,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0270270270270272,
+      "F_e": 0.03809920029584424,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9521052631578948,
+      "Z": 54.14671538575614,
+      "omega_e": 1.5161071644563253,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0245349150714478,
+      "F_e": 0.039991200413246,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.956842105263158,
+      "Z": 53.980483485941576,
+      "omega_e": 1.51145267392122,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0220548682087143,
+      "F_e": 0.04187789990851909,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.961578947368421,
+      "Z": 53.81511859581543,
+      "omega_e": 1.506822459643518,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0195867990340757,
+      "F_e": 0.043759296981476736,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9663157894736842,
+      "Z": 53.650614662906385,
+      "omega_e": 1.5022163521541199,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0171306209850106,
+      "F_e": 0.04563539032156383,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9710526315789474,
+      "Z": 53.4869656845431,
+      "omega_e": 1.4976341833783238,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.014686248331108,
+      "F_e": 0.04750617909605559,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9757894736842105,
+      "Z": 53.324165707426495,
+      "omega_e": 1.4930757866238507,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0122535961640917,
+      "F_e": 0.04937166293849948,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9805263157894737,
+      "Z": 53.16220882720526,
+      "omega_e": 1.4885409965689584,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0098325803879884,
+      "F_e": 0.05123184193739505,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.9852631578947368,
+      "Z": 53.00108918805411,
+      "omega_e": 1.4840296492506326,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.007423117709438,
+      "F_e": 0.05308671662510733,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 1.99,
+      "Z": 52.84080098225532,
+      "omega_e": 1.47954158205287,
+      "omega_o": 0.02799998400004801,
+      "T": null,
+      "A_e": 1.0050251256281406,
+      "F_e": 0.05493628796700567,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    }
+  ],
+  "case_3_static_static": [
+    {
+      "r_emit": 2.01,
+      "Z": 6.356639671360978,
+      "omega_e": 0.12456419976884593,
+      "omega_o": 0.019595919575251985,
+      "T": 0.15731582277746076,
+      "A_e": 0.9950248756218907,
+      "F_e": 0.06268716067476032,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 2.1730612244897958,
+      "Z": 8.215882160575948,
+      "omega_e": 0.16099776605839378,
+      "omega_o": 0.019595919575251985,
+      "T": 0.12171547503425953,
+      "A_e": 0.9203606311044328,
+      "F_e": 0.12240062201892954,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 2.3361224489795918,
+      "Z": 9.16911891190029,
+      "omega_e": 0.17967731677352006,
+      "omega_o": 0.019595919575251985,
+      "T": 0.10906173315105924,
+      "A_e": 0.8561195072944877,
+      "F_e": 0.17618856255766036,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 2.4991836734693877,
+      "Z": 9.676502033566088,
+      "omega_e": 0.18961995561952333,
+      "omega_o": 0.019595919575251985,
+      "T": 0.10334312921458348,
+      "A_e": 0.80026130981545,
+      "F_e": 0.22457656319597818,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 2.6622448979591837,
+      "Z": 9.925976361367438,
+      "omega_e": 0.19450863448320865,
+      "omega_o": 0.019595919575251985,
+      "T": 0.1007457567491362,
+      "A_e": 0.7512456880030663,
+      "F_e": 0.268147515102785,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 2.8253061224489793,
+      "Z": 10.015376807321038,
+      "omega_e": 0.19626051843210707,
+      "omega_o": 0.019595919575251985,
+      "T": 0.09984646800997245,
+      "A_e": 0.7078878936723492,
+      "F_e": 0.3074658631679056,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 2.9883673469387753,
+      "Z": 10.001772449991822,
+      "omega_e": 0.19599392854001074,
+      "omega_o": 0.019595919575251985,
+      "T": 0.09998227864110402,
+      "A_e": 0.6692617632998703,
+      "F_e": 0.34304666441143894,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 3.1514285714285712,
+      "Z": 9.920712946954232,
+      "omega_e": 0.19440549303767626,
+      "omega_o": 0.019595919575251985,
+      "T": 0.10079920720889428,
+      "A_e": 0.6346328195829556,
+      "F_e": 0.3753461799047624,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 3.3144897959183672,
+      "Z": 9.795300372402975,
+      "omega_e": 0.19194791831304453,
+      "omega_o": 0.019595919575251985,
+      "T": 0.10208977386924999,
+      "A_e": 0.6034111200049258,
+      "F_e": 0.40476242176587873,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 3.477551020408163,
+      "Z": 9.640990306371139,
+      "omega_e": 0.18892407066943281,
+      "omega_o": 0.019595919575251985,
+      "T": 0.10372378440616847,
+      "A_e": 0.5751173708920188,
+      "F_e": 0.4316399265309838,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 3.640612244897959,
+      "Z": 9.468337293926991,
+      "omega_e": 0.18554077612315234,
+      "omega_o": 0.019595919575251985,
+      "T": 0.10561516441132719,
+      "A_e": 0.5493581478782443,
+      "F_e": 0.4562759613451649,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 3.803673469387755,
+      "Z": 9.284653804163403,
+      "omega_e": 0.18194132923044343,
+      "omega_o": 0.019595919575251985,
+      "T": 0.10770460817306751,
+      "A_e": 0.5258074900740423,
+      "F_e": 0.47892684532070284,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 3.9667346938775507,
+      "Z": 9.095054840304355,
+      "omega_e": 0.17822596318311043,
+      "omega_o": 0.019595919575251985,
+      "T": 0.10994985929810361,
+      "A_e": 0.5041930339044092,
+      "F_e": 0.4998138082920136,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 4.129795918367346,
+      "Z": 8.903137101703233,
+      "omega_e": 0.1744651586124186,
+      "omega_o": 0.019595919575251985,
+      "T": 0.11231995964755985,
+      "A_e": 0.48428543190353834,
+      "F_e": 0.5191281754364085,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 4.292857142857143,
+      "Z": 8.711432005406255,
+      "omega_e": 0.1707085209632171,
+      "omega_o": 0.019595919575251985,
+      "T": 0.11479168974508518,
+      "A_e": 0.4658901830282862,
+      "F_e": 0.5370358421916404,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 4.455918367346939,
+      "Z": 8.521714274919205,
+      "omega_e": 0.16699082757459352,
+      "omega_o": 0.019595919575251985,
+      "T": 0.11734728104451508,
+      "A_e": 0.4488412567555189,
+      "F_e": 0.5536810832083531,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 4.618979591836735,
+      "Z": 8.335215855428698,
+      "omega_e": 0.16333621954534594,
+      "omega_o": 0.019595919575251985,
+      "T": 0.11997289780428462,
+      "A_e": 0.432996067688773,
+      "F_e": 0.569189769858421,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 4.78204081632653,
+      "Z": 8.152776407944824,
+      "omega_e": 0.15976115080509853,
+      "omega_o": 0.019595919575251985,
+      "T": 0.12265760152891068,
+      "A_e": 0.4182314783202459,
+      "F_e": 0.5836720778974006,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 4.945102040816327,
+      "Z": 7.97495052471114,
+      "omega_e": 0.1562764890988531,
+      "omega_o": 0.019595919575251985,
+      "T": 0.1253926274403089,
+      "A_e": 0.40444059262927656,
+      "F_e": 0.597224763015619,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 5.108163265306123,
+      "Z": 7.802084936183644,
+      "omega_e": 0.1528890289287397,
+      "omega_o": 0.019595919575251985,
+      "T": 0.12817086819477072,
+      "A_e": 0.3915301638034358,
+      "F_e": 0.6099330736998312,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 5.271224489795919,
+      "Z": 7.634374619836865,
+      "omega_e": 0.14960259105766816,
+      "omega_o": 0.019595919575251985,
+      "T": 0.13098649854064517,
+      "A_e": 0.379418483100391,
+      "F_e": 0.6218723612854558,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 5.434285714285714,
+      "Z": 7.471903893482746,
+      "omega_e": 0.14641882777070006,
+      "omega_o": 0.019595919575251985,
+      "T": 0.13383469785689223,
+      "A_e": 0.36803364879074657,
+      "F_e": 0.6331094378252324,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 5.597346938775511,
+      "Z": 7.314676706637167,
+      "omega_e": 0.14333781646223098,
+      "omega_o": 0.019595919575251985,
+      "T": 0.1367114419551343,
+      "A_e": 0.3573121376745542,
+      "F_e": 0.6437037240746477,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 5.760408163265306,
+      "Z": 7.162639086853809,
+      "omega_e": 0.14035849949254356,
+      "omega_o": 0.019595919575251985,
+      "T": 0.13961334472867462,
+      "A_e": 0.34719761921632536,
+      "F_e": 0.6537082226981525,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 5.923469387755102,
+      "Z": 7.0156958403527945,
+      "omega_e": 0.13747901145198324,
+      "omega_o": 0.019595919575251985,
+      "T": 0.14253753622672924,
+      "A_e": 0.3376399655469423,
+      "F_e": 0.6631703457221313,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 6.086530612244898,
+      "Z": 6.873723013064412,
+      "omega_e": 0.13469692334656896,
+      "omega_o": 0.019595919575251985,
+      "T": 0.1454815677180138,
+      "A_e": 0.32859442060085836,
+      "F_e": 0.6721326201976934,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 6.249591836734694,
+      "Z": 6.7365772028637485,
+      "omega_e": 0.132009425079794,
+      "omega_o": 0.019595919575251985,
+      "T": 0.14844333700724094,
+      "A_e": 0.3200208993240375,
+      "F_e": 0.6806332918539432,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 6.41265306122449,
+      "Z": 6.60410251973799,
+      "omega_e": 0.12941346184350463,
+      "omega_o": 0.019595919575251985,
+      "T": 0.15142102912716046,
+      "A_e": 0.31188339380052194,
+      "F_e": 0.6887068430837706,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 6.575714285714286,
+      "Z": 6.476135780371952,
+      "omega_e": 0.12690583591058052,
+      "omega_o": 0.019595919575251985,
+      "T": 0.15441306882891911,
+      "A_e": 0.3041494677384315,
+      "F_e": 0.6963844387839736,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 6.738775510204082,
+      "Z": 6.352510371900915,
+      "omega_e": 0.12448328234872441,
+      "omega_o": 0.019595919575251985,
+      "T": 0.15741808221570233,
+      "A_e": 0.29678982434887946,
+      "F_e": 0.7036943112604065,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 6.901836734693878,
+      "Z": 6.23305910914951,
+      "omega_e": 0.12214252501068558,
+      "omega_o": 0.019595919575251985,
+      "T": 0.16043486552728173,
+      "A_e": 0.2897779354800556,
+      "F_e": 0.7106620935144187,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 7.064897959183674,
+      "Z": 6.117616328682044,
+      "omega_e": 0.11988031756910165,
+      "omega_o": 0.019595919575251985,
+      "T": 0.16346235956504257,
+      "A_e": 0.28308972210988503,
+      "F_e": 0.7173111086723368,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 7.22795918367347,
+      "Z": 6.006019403161985,
+      "omega_e": 0.11769347319176518,
+      "omega_o": 0.019595919575251985,
+      "T": 0.16649962860152112,
+      "A_e": 0.27670327808679446,
+      "F_e": 0.7236626220421106,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 7.391020408163265,
+      "Z": 5.898109815034343,
+      "omega_e": 0.11557888558141735,
+      "omega_o": 0.019595919575251985,
+      "T": 0.16954584288189914,
+      "A_e": 0.2705986304395847,
+      "F_e": 0.729736061229054,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 7.5540816326530615,
+      "Z": 5.793733895269195,
+      "omega_e": 0.11353354345210655,
+      "omega_o": 0.019595919575251985,
+      "T": 0.17260026402257414,
+      "A_e": 0.2647575307307848,
+      "F_e": 0.7355492088741225,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 7.717142857142857,
+      "Z": 5.692743307874823,
+      "omega_e": 0.11155454002366898,
+      "omega_o": 0.019595919575251985,
+      "T": 0.17566223276160917,
+      "A_e": 0.259163272861903,
+      "F_e": 0.7411183718595115,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 7.8802040816326535,
+      "Z": 5.594995341965479,
+      "omega_e": 0.109639078745065,
+      "omega_o": 0.019595919575251985,
+      "T": 0.1787311586301889,
+      "A_e": 0.2538005334990806,
+      "F_e": 0.7464585302301542,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 8.04326530612245,
+      "Z": 5.500353058795189,
+      "omega_e": 0.10778447617564177,
+      "omega_o": 0.019595919575251985,
+      "T": 0.18180651120221772,
+      "A_e": 0.2486552319090632,
+      "F_e": 0.7515834685837303,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 8.206326530612245,
+      "Z": 5.408685330204793,
+      "omega_e": 0.10598816273853834,
+      "omega_o": 0.019595919575251985,
+      "T": 0.18488781264746573,
+      "A_e": 0.24371440650568255,
+      "F_e": 0.7565058922681005,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 8.369387755102041,
+      "Z": 5.319866796533836,
+      "omega_e": 0.10424768189593048,
+      "omega_o": 0.019595919575251985,
+      "T": 0.18797463136700165,
+      "A_e": 0.23896610582784686,
+      "F_e": 0.7612375303790476,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 8.532448979591837,
+      "Z": 5.233777765598087,
+      "omega_e": 0.10256068816940214,
+      "omega_o": 0.019595919575251985,
+      "T": 0.19106657653159365,
+      "A_e": 0.2343992920184649,
+      "F_e": 0.7657892272609708,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 8.695510204081632,
+      "Z": 5.150304069361562,
+      "omega_e": 0.1009249443313022,
+      "omega_o": 0.019595919575251985,
+      "T": 0.19416329337696,
+      "A_e": 0.23000375516334962,
+      "F_e": 0.7701710239690818,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 8.858571428571429,
+      "Z": 5.069336891090133,
+      "omega_e": 0.09933831801766017,
+      "omega_o": 0.019595919575251985,
+      "T": 0.1972644591361841,
+      "A_e": 0.2257700370907918,
+      "F_e": 0.7743922309457985,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 9.021632653061225,
+      "Z": 4.990772572798175,
+      "omega_e": 0.09779877795492646,
+      "omega_o": 0.019595919575251985,
+      "T": 0.2003697795107763,
+      "A_e": 0.22168936343482784,
+      "F_e": 0.7784614929899588,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 9.18469387755102,
+      "Z": 4.914512410491121,
+      "omega_e": 0.09630438994756178,
+      "omega_o": 0.019595919575251985,
+      "T": 0.20347898559891256,
+      "A_e": 0.21775358293522945,
+      "F_e": 0.7823868474499038,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 9.347755102040818,
+      "Z": 4.840462442913121,
+      "omega_e": 0.09485331273835326,
+      "omega_o": 0.019595919575251985,
+      "T": 0.20659183121317085,
+      "A_e": 0.21395511309055973,
+      "F_e": 0.786175776446032,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 9.510816326530612,
+      "Z": 4.768533238114172,
+      "omega_e": 0.09344379382600122,
+      "omega_o": 0.019595919575251985,
+      "T": 0.20970809053130843,
+      "A_e": 0.2102868914018411,
+      "F_e": 0.7898352538215287,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 9.673877551020409,
+      "Z": 4.69863968106611,
+      "omega_e": 0.09207416530325914,
+      "omega_o": 0.019595919575251985,
+      "T": 0.21282755603279252,
+      "A_e": 0.2067423315471921,
+      "F_e": 0.7933717874286507,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 9.836938775510205,
+      "Z": 4.630700764713104,
+      "omega_e": 0.09074283976237586,
+      "omega_o": 0.019595919575251985,
+      "T": 0.21595003668131751,
+      "A_e": 0.20331528391527143,
+      "F_e": 0.796791457279737,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    },
+    {
+      "r_emit": 10.0,
+      "Z": 4.564639386186583,
+      "omega_e": 0.08944830630173986,
+      "omega_o": 0.019595919575251985,
+      "T": 0.21907535631975208,
+      "A_e": 0.2,
+      "F_e": 0.8000999500249875,
+      "A_o": 0.04,
+      "F_o": 0.96000015999936,
+      "causal_status": "F > 0 throughout [r_emit, r_recv]; outgoing null escapes directly"
+    }
+  ],
+  "key_finding": "The invariant frequency transfer factor Z = omega_e/omega_o determines whether the Temporal Horizon is established. On the Hayward benchmark with phi0=1 (divergent A), the deep-interior limit shows whether the theory produces redshift (Z > 1, temporal freeze candidate), blueshift (Z < 1, no freeze), or no special effect. This is the decisive calculation that replaces coordinate-time arguments."
+}

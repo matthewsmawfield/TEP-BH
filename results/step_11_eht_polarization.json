@@ -1,0 +1,52 @@
+{
+  "conclusion": "TEP does not predict observable birefringence in the exterior. The conformal factor A ~ 1 and the disformal term B ~ 0 in the exterior, so photon polarization is unaffected. The observed low polarization fraction is not explained by TEP.",
+  "data_sources": {
+    "m87_star": [
+      "EHT 2021, ApJ 910, L13 (Paper VII: Polarimetric Performance)",
+      "EHT 2021, ApJ 910, L12 (Paper VI: Polarimetric Imaging)"
+    ],
+    "sgr_a_star": [
+      "EHT 2024, ApJ 964, L26 (Sgr A* Polarimetry)"
+    ]
+  },
+  "dependencies": [
+    "step_00_data_download"
+  ],
+  "description": "Record EHT polarimetric measurements for M87* and Sgr A* and document the TEP exterior-null result: the conformal factor A~1 and disformal function B~0 in the exterior, so TEP predicts no observable birefringence.",
+  "key_result": "TEP does not predict observable birefringence in the exterior; the observed low polarization fraction (~4-7%) is not explained by TEP and is attributed to Faraday rotation in standard GR+MHD.",
+  "m87_parameters": {
+    "distance_mpc": 16.8,
+    "inclination_deg": 17.0,
+    "mass_msun": 6500000000.0
+  },
+  "results": {
+    "m87_star": {
+      "pol_observed": 0.04,
+      "tep_explains_low_pol": false,
+      "tep_predicts_birefringence": false
+    },
+    "sgr_a_star": {
+      "pol_observed": 0.07,
+      "tep_explains_low_pol": false,
+      "tep_predicts_birefringence": false
+    }
+  },
+  "status": "success",
+  "step": "step_11_eht_polarization",
+  "tep_exterior_null_result": {
+    "A_exterior": 1.0,
+    "B_exterior": 0.0,
+    "delta_phase_total_rad": 0.0,
+    "explanation": "In the exterior, A(phi) ~ 1 and B(phi) ~ 0, so the disformal coupling vanishes and photon polarization is unaffected. TEP does not predict observable birefringence in the exterior.",
+    "pol_suppression_factor": 1.0,
+    "tep_predicts_birefringence": false
+  },
+  "tep_model": {
+    "birefringence_regime": "interior only (r < r_h), not observable by EHT",
+    "conformal_factor": "A(phi) = exp(beta_A * phi)",
+    "disformal_function": "B(phi) = B0 * |phi|^n / (1 + |phi|^n)",
+    "exterior_behavior": "A -> 1, B -> 0 as phi -> 0 in the weak-field exterior",
+    "predicts_birefringence": false
+  },
+  "timestamp": "2026-07-29T01:18:12.927850"
+}

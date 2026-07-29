@@ -1,0 +1,13 @@
+quantity,value
+r_photon_M,3.000002133850842
+b_photon_M,5.196154114191303
+r_photon_schw_M,3.0
+b_photon_schw_M,5.196152422706632
+r_isco_M,6.0
+r_isco_schw_M,6.0
+M87_shadow_tep_uas,39.68935518529365
+M87_shadow_schw_uas,39.68934226536587
+M87_shadow_measured_uas,42.0
+SgrA_shadow_tep_uas,53.255242517899916
+SgrA_shadow_schw_uas,53.25522518191943
+SgrA_shadow_measured_uas,48.7

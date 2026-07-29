@@ -64,3 +64,17 @@ docs/_build/
 *.pickle
 
 .devin/
+
+# Logs and temp files
+logs/
+*.log
+
+# IDE workspace files
+*.code-workspace
+
+# Planning scratch files
+plan
+plan[0-9]*
+
+# OS files
+.DS_Store

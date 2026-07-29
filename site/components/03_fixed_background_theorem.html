@@ -1,0 +1,85 @@
+<h1>3. The Fixed-Background Theorem</h1>
+<p>
+ This section proves that, within the stated fixed-Schwarzschild power-law conformal class, a dynamical proper-time field necessarily backreacts on gravity. The proof uses Schwarzschild as a restricted test case: the geometric metric is held fixed to Schwarzschild and the question is whether the conformal-disformal matter metric can simultaneously achieve curvature regularity and bounded areal radius. The answer is no. This is not a candidate solution — it is a theorem inside the main derivation, establishing that the full TEP solution must be self-gravitating within this class. The broader physical interpretation — that every conceivable dynamical proper-time field must backreact — is a physical inference from the theorem, not the exact theorem itself.
+</p>
+
+<h2>3.1 The Incompatibility</h2>
+<p>
+Consider the conformal matter metric $\tilde g = A^2 g_{\rm Schw}$ with $A = (r_h/r)^{\phi_0}$ in the deep interior, on a fixed Schwarzschild background. The exact Kretschmann scalar scales as
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:fbt_1}
+ \tilde K \sim r^{4\phi_0 - 6}
+\end{equation}
+</div>
+
+<p>
+(Appendix D), not $r^{12\phi_0-6}$ as the naive conformal formula suggests — the derivative terms from the non-constant conformal factor dominate. The areal radius scales as
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:fbt_2}
+ \rho = A\,r \sim r^{1-\phi_0}.
+\end{equation}
+</div>
+
+<p>
+Two conditions are required for a regular temporal-well interior:
+</p>
+<ul>
+ <li>Finite curvature ($\tilde K$ finite or vanishing) requires $\phi_0 \geq 3/2$. At $\phi_0 = 3/2$ the leading curvature is finite and constant; for $\phi_0 > 3/2$ the curvature vanishes.</li>
+ <li>Bounded areal radius ($\rho$ finite) requires $\phi_0 \leq 1$.</li>
+</ul>
+<p>
+ These are mutually exclusive when the geometric metric is held fixed to Schwarzschild.
+</p>
+
+<h2>3.2 The Limiting Cases</h2>
+<p>
+ The limiting case $\phi_0 = 2$ achieves vanishing curvature: $\tilde K \sim 39r^2/16 \to 0$ (Appendix D). The matter metric is Lorentzian and nondegenerate throughout the open domain $r > 0$ ($\det\tilde g_{2D} < 0$ for all $r > 0$, since $\det\tilde g_{2D} = A^4 \det g_{2D}$ and $A > 0$). However, the areal radius diverges: $\rho \sim r_h^2/r \to \infty$. The $r \to 0$ limit is an asymptotic spatially enlarged end, not an ordinary manifold point — a negative determinant for every $r > 0$ proves no finite positive radius is degenerate, but does not prove the limit $r = 0$ can be added as a regular point. The conformal scaling stretches both time and space — the interior is spatially enlarged, not a black-hole interior.
+</p>
+<p>
+ The complementary limit $\phi_0 = 1$ keeps the areal radius bounded but the curvature diverges: $\tilde K \sim 9/r^2 \to \infty$. The singularity is not resolved.
+</p>
+<p>
+ The theorem proves this is a structural impossibility within the tested class, not a failure of a particular choice: fixed geometry cannot support both conditions simultaneously.
+</p>
+
+<h2>3.3 The Conformal Theorem and the Disformal Extension Programme</h2>
+<p>
+ The theorem above is a conformal theorem: it applies rigorously to the conformal metric $\tilde g = A^2 g$ with $A = (r_h/r)^{\phi_0}$ on fixed Schwarzschild. The full disformal generalisation — classifying all allowed asymptotics of $A$, $B$, $\phi$ under $\det\tilde g < 0$, $\tilde K < \infty$, and $\tilde R_{\rm area} < \infty$ — is a separate mathematical programme that has not been completed. A systematic gate search over the tested disformal parameter space is reported, but the disformal result is not claimed as a theorem until the classification is complete.
+</p>
+<p>
+ The required conditions for a regular temporal-well interior are: (i) bounded areal radius ($\rho = Ar$ finite as $r \to 0$); (ii) finite or vanishing Kretschmann ($\tilde K$ not diverging); (iii) Lorentzianity ($\det \tilde g_{2D} < 0$, checked by the canonical determinant $-A^4 G^2 - A^2 F B(\phi')^2$, not by $g_{rr}$ alone); (iv) no finite-radius causal boundary ($N \geq N_{\min} > 0$ everywhere). In Eddington–Finkelstein coordinates, $g_{rr} = 0$ is normal and does not violate Lorentzianity — the determinant is what decides nondegeneracy, with the cross term $\tilde g_{vr}$ preserving Lorentzianity when $\tilde g_{rr} = 0$.
+</p>
+<p>
+ The gate search explored: (a) saturating scalar profiles $\phi \to \phi_\infty$ (gives bounded $A$; the determinant must be checked with the canonical formula, not $g_{rr}$); (b) different $B$ activation profiles (logistic, Gaussian, quartic Gaussian — all vanish in the interior, leaving $A$ to control curvature); (c) mild conformal growth $\phi_0 \in (0.5, 1.0)$ (balances finite areal radius against curvature, but $\tilde K \sim r^{4\phi_0-6}$ still diverges for $\phi_0 < 3/2$). The saturating-scalar case requires a separate determinant-based analysis and is not excluded by $g_{rr} \to 0$ alone. The conformal theorem (the $B = 0$ case) is rigorous; the full disformal generalisation is an open programme.
+</p>
+
+<h2>3.4 Physical Principle</h2>
+<div class="key-concept">
+ <p>
+ The fixed-background theorem is the mathematical expression of a physical principle: because gravity depends on how things move through time, changing time must also change gravity. The temporal field cannot sit inertly atop a Schwarzschild geometry; it must backreact on the geometric metric itself. Within the tested class, a dynamical proper-time field necessarily implies a dynamical gravitational geometry. The coupled solution of Section 4 implements this requirement.
+ </p>
+</div>
+
+<h2>3.5 Raychaudhuri Equation and the Convergence Condition</h2>
+<p>
+On the globally Lorentzian domain, a hypersurface-orthogonal timelike congruence obeys
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:fbt_3}
+ \frac{d\tilde\theta}{d\tilde\tau}=-\frac13\tilde\theta^2-\tilde\sigma_{\mu\nu}\tilde\sigma^{\mu\nu}-\tilde R_{\mu\nu}\tilde u^\mu u^\nu.
+\end{equation}
+</div>
+
+<p>
+The sign of $\tilde R_{\mu\nu}\tilde u^\mu u^\nu$ is the geometric statement of the timelike convergence condition. The canonical Einstein equations are written for $g_{\mu\nu}$, not necessarily in the form $\tilde G_{\mu\nu} = 8\pi \tilde T_{\mu\nu}$, so the direct geometric statement is that the timelike convergence condition fails in the matter geometry. Only after deriving the effective matter-frame Einstein equation and stress tensor can this be identified as a Strong Energy Condition (SEC) violation. On a regular background with a de Sitter-like temporal minimum ($f(0) = 1$), the effective pressure is negative in the causal matter frame, and the convergence condition fails over the interior domain. This is the Hawking–Penrose escape clause: with the convergence condition violated, the theorems' conclusion of inevitable geodesic incompleteness no longer applies to $(\mathcal M, \tilde g)$.
+</p>
+
+<h2>3.6 Metric-Specific Hypotheses</h2>
+<p>
+ Penrose–Hawking theorems infer causal geodesic incompleteness when their geometric, causal, energy, and global hypotheses hold for a specified Lorentzian metric. In a two-metric theory, those hypotheses must be checked separately for $(\mathcal M,g)$ and $(\mathcal M,\tilde g)$. Incompleteness of Schwarzschild $g$ does not logically prove incompleteness of $\tilde g$, but neither does the existence of a second metric prove its completeness. The fixed-background theorem shows that $\tilde g$ on fixed Schwarzschild cannot be both curvature-regular and spatially bounded; the regular-geometry benchmark (Section 5, Appendix K) shows that $\tilde g$ on a regular background can achieve finite curvature and bounded areal radius, though the $\phi_0 = 1$ benchmark produces a finite-area asymptotic end rather than an ordinary regular centre.
+</p>

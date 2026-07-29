@@ -1,0 +1,146 @@
+<h1>Appendix C — Strong-Field Asymptotic Expansion (the $\phi_0=2$ Case)</h1>
+<p>
+ This appendix derives the interior scaling of the metric functions, the physical radial distance, and the areal radius for the $\phi_0 = 2$ case (curvature-regular but spatially-enlarged; see Appendix D for the fixed-background theorem that establishes why this case is not the final answer). All exponents and numerical values are taken directly from the pipeline integration of the reduced system in Appendix B.
+</p>
+<div class="key-concept">
+ <h4>Context</h4>
+ <p>
+ The $\phi_0 = 2$ case achieves $\tilde K \sim 39r^2/16 \to 0$ (curvature-regular) but has diverging areal radius $\rho \sim r_h^2/r \to \infty$ (spatially-enlarged, not a regular centre). The fixed-background theorem (Appendix D) proves this is unavoidable for fixed Schwarzschild: curvature regularity ($\phi_0 > 3/2$) and bounded areal radius ($\phi_0 \leq 1$) are mutually exclusive. The validation benchmark achieves both by allowing the geometric metric to be regular.
+ </p>
+</div>
+
+<h2>C.1 Interior Scaling</h2>
+<p>
+In the deep interior ($r \ll r_h = 2M$), the scalar field follows a logarithmic profile $\phi(r) = \phi_0 \ln(r/r_h)$ with $\phi_0 = 2.0$, and the conformal and disformal factors are
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appC_1}
+ A(\phi) = A_0\,e^{\beta_A \phi}, \qquad B(\phi) = B_0\,\frac{|\phi|^2}{1+|\phi|^2}\,\exp\!\left(-\frac{\phi^4}{2\,\sigma_B^4}\right),
+\end{equation}
+</div>
+
+<p>
+with $\beta_A = -1$, $\sigma_B = 1.5$, and disformal coupling $\delta = 0.05$. Substituting the logarithmic $\phi$, the effective radial scalings are
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appC_2}
+ A(r) \sim A_0\,(r/r_h)^{-2}, \qquad B(r) \to 0, \qquad \phi(r) \sim 2\ln(r/r_h).
+\end{equation}
+</div>
+
+<p>
+With $\beta_A=-1$ and $\phi_0=2$, the conformal factor diverges as $A\sim(r/r_h)^{-2}$. The disformal factor is suppressed by the quartic cutoff $\exp(-\phi^4/2\sigma_B^4)$: as $|\phi|\to\infty$ the logistic prefactor saturates to unity but the quartic exponential drives $B\to 0$ instantly. The net effect is that the disformal sector vanishes in the deep interior while the conformal sector diverges, establishing conformal dominance throughout the interior.
+</p>
+
+<h2>C.2 Conformal Factor Profile</h2>
+<p>
+ The pipeline integration gives the following values of $A(\phi)$ along the radial profile:
+</p>
+<table class="data-table">
+ <thead>
+ <tr><th>Location</th><th>$r/M$</th><th>$A$</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Geometric horizon</td><td>$2.0$</td><td>$1.0005$</td></tr>
+ <tr><td>Innermost sampled</td><td>$10^{-8}$</td><td>$4.0\times10^{16}$</td></tr>
+ </tbody>
+</table>
+<p>
+ The conformal factor is essentially unity at the geometric horizon (deviation $5.5\times10^{-4}$) and reaches $4.0\times10^{16}$ at the innermost sampled radius $r_{\min}=10^{-8}M$. The deep-interior scaling is the inverse-second-power law implied by $\phi_0=2$ and $\beta_A=-1$. Note: this table uses the old logistic-screened fixed-background profile, where $\phi \approx 0$ at the horizon and $A \approx 1$. This is a different model from the sGB-coupled exterior with $\beta_A = -1$, where the mass-inflation branch gives $A(2M) \approx 1.063$ for $\eta = -0.1$ (Section 4.3 assessment). The two profiles cannot be combined.
+</p>
+
+<h2>C.3 Disformal Factor Profile</h2>
+<p>
+ The corresponding values of $B(\phi)$ are:
+</p>
+<table class="data-table">
+ <thead>
+ <tr><th>Location</th><th>$r/M$</th><th>$B$</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Geometric horizon</td><td>$2.0$</td><td>$3.0\times10^{-7}$</td></tr>
+ <tr><td>Innermost sampled</td><td>$10^{-8}$</td><td>$<10^{-300}$</td></tr>
+ </tbody>
+</table>
+<p>
+ The disformal factor is $B=3.0\times10^{-7}$ at the geometric horizon and below $10^{-300}$ at the innermost sampled radius. Unlike a purely logistic activation, the quartic Gaussian cutoff $\exp(-\phi^4/2\sigma_B^4)$ drives $B$ to zero in the deep interior rather than saturating to $B_0$. The disformal sector is dynamically irrelevant in the interior; the geometry is governed entirely by the conformal factor.
+</p>
+
+<h2>C.4 Conformal Dominance and the Absence of a Causal Boundary</h2>
+<p>
+The canonical determinant of the two-dimensional $(v,r)$ sector for $ds_g^2 = -F\,dv^2 + 2G\,dv\,dr + R^2\,d\Omega^2$ and a static radial scalar is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appC_3}
+ \det\tilde g_{2D} = -A^4 G^2 - A^2 F\,B(\phi')^2.
+\end{equation}
+</div>
+
+<p>
+For the $\phi_0 = 2$ fixed-Schwarzschild case, $G = 1$ in EF coordinates. In the deep interior, $A\sim(r/r_h)^{-2}\to\infty$ while $B\to 0$ exponentially. The $-A^4 G^2$ term therefore dominates at every sampled radius, and the determinant is strictly negative:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appC_4}
+ \det\tilde g_{2D}\big|_{\rm horizon} = -1.002, \qquad \det\tilde g_{2D}\big|_{r_{\min}} = -2.56\times10^{66}.
+\end{equation}
+</div>
+
+<p>
+The matter metric is Lorentzian and nondegenerate for all $r > 0$. However, a negative determinant for every $r > 0$ proves only that no finite positive radius is degenerate; it does not prove the limit $r = 0$ can be added as a regular point. The $r \to 0$ limit is an asymptotic spatially enlarged end ($\rho \sim r_h^2/r \to \infty$), not a regular manifold point. The determinant must be checked with the canonical formula inside horizons ($F < 0$), where the disformal term becomes positive.
+</p>
+
+<h2>C.5 Areal Radius and Interior Volume Growth</h2>
+<p>
+The areal radius of the matter geometry is $\rho = A\,r$. With $A\sim(r/r_h)^{-2}$, this gives
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appC_5}
+ \rho \sim \frac{r_h^2}{r} \to \infty \quad\text{as}\quad r\to 0.
+\end{equation}
+</div>
+
+<p>
+The areal radius diverges: the physical space does not collapse. The constant-$r$ volume element of the matter metric is $d\tilde V/dv = 4\pi A^2 r^2 \sqrt{|F|}$. The pipeline gives
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appC_6}
+ \frac{d\tilde V}{dv}\bigg|_{0.1M} = 8.76\times10^{4}, \qquad \frac{d\tilde V}{dv}\bigg|_{r_{\min}} = 2.84\times10^{22}.
+\end{equation}
+</div>
+
+<p>
+Since the geometry is globally Lorentzian, this volume growth is a physical proper volume, not a formal diagnostic. The would-be central singularity of Schwarzschild is replaced by continuous, low-curvature regular space.
+</p>
+
+<h2>C.6 Curvature Scaling (Corrected)</h2>
+<p>
+ The exact Kretschmann scalar scales as $\tilde K \sim r^{4\phi_0 - 6} = r^{2}$ for $\phi_0 = 2$ (Appendix D), so the curvature vanishes as $r\to 0$. The pipeline confirms $\tilde K \approx 0.024$ at $0.1M$ and $\tilde K \approx 1.36\times10^{-16}$ at the innermost sampled radius, compared with $K_{\rm Schw} = 4.8\times10^{7}$ and $4.8\times10^{49}$ respectively. The exact formula $\tilde K \sim 39r^2/16$ matches the numerical values to within 4%. Note: the naive conformal formula $\tilde K = A^{-12} K_{\rm Schw} \sim r^{18}$ is incorrect — it omits the derivative terms from the non-constant conformal factor $A(r)$, which dominate for $\phi_0 < 3/2$ and contribute at the same order for $\phi_0 = 2$. The curvature vanishing is real, but the power is $r^2$, not $r^{18}$. Details are recorded in Appendix D.
+</p>
+
+<h2>C.7 Summary of Asymptotic Behaviour</h2>
+<table class="data-table">
+ <thead>
+ <tr><th>Quantity</th><th>Scaling</th><th>Behaviour as $r\to0$</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>$A(r)$</td><td>$\sim (r/r_h)^{-2}$</td><td>diverges ($\to 4.0\times10^{16}$)</td></tr>
+ <tr><td>$B(r)$</td><td>$\to 0$ (quartic Gaussian cutoff)</td><td>vanishes ($< 10^{-300}$)</td></tr>
+ <tr><td>$\phi(r)$</td><td>$\sim 2\ln(r/r_h)$</td><td>diverges logarithmically ($\to -38.2$)</td></tr>
+ <tr><td>$\det\tilde g_{2D}$</td><td>$\sim -A^4 < 0$</td><td>strictly negative (globally Lorentzian)</td></tr>
+ <tr><td>Areal radius $\rho = Ar$</td><td>$\sim r^{-1}$</td><td>diverges ($\to\infty$; spatially-enlarged — see fixed-background theorem, App. D)</td></tr>
+ <tr><td>Kretschmann $\tilde K$</td><td>$\sim r^{2}$ (exact; not $r^{18}$)</td><td>vanishes ($\to 0$; curvature-regular)</td></tr>
+ <tr><td>Interior volume</td><td>$\sim A^2 r^2$</td><td>grows ($\to 2.84\times10^{22}$)</td></tr>
+ <tr><td>Singularity</td><td>—</td><td>curvature-regular, but areal radius diverges (the $\phi_0=2$ case)</td></tr>
+ </tbody>
+</table>
+<div class="key-concept">
+ <p>
+ The interior scaling $A\sim(r/r_h)^{-2}$ with $B\to 0$ establishes conformal dominance: the determinant is strictly negative at every sampled radius, the matter geometry is globally Lorentzian, and the areal radius diverges as $\rho\sim 1/r$. The exact Kretschmann scalar vanishes as $\tilde K\sim r^{2}$ (not $r^{18}$ as the naive conformal formula suggests). The $\phi_0 = 2$ case is curvature-regular but spatially-enlarged; the fixed-background theorem (Appendix D) proves this is unavoidable for fixed Schwarzschild, motivating the validation benchmark on a Hayward background.
+ </p>
+</div>

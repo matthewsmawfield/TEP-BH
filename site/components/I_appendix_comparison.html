@@ -1,0 +1,181 @@
+<h1>Appendix I — Comparison Table</h1>
+<p>
+ This appendix provides a detailed technical comparison of TEP-BH with the major competing models of singularity resolution. The TEP-BH column is split into four sub-columns reflecting the distinct calculations performed in this paper: the fixed-Schwarzschild theorem case, the Hayward validation benchmark, the linear sGB exterior candidate, and the regularised sGB-coupled interior (now solved). These must not be combined into a single "TEP" column, because they represent different geometries with different properties.
+</p>
+
+<h2>I.1 Detailed Comparison</h2>
+<table class="data-table">
+ <thead>
+ <tr>
+ <th>Property</th>
+ <th>GR (Schwarzschild/Kerr)</th>
+ <th>Regular BH (Bardeen/Hayward)</th>
+ <th>TEP theorem case ($\phi_0=2$, fixed Schw.)</th>
+ <th>TEP benchmark ($\phi_0=1$, Hayward)</th>
+ <th>TEP linear sGB (exterior)</th>
+ <th>TEP regularised interior (solved)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Exterior metric</td>
+ <td>Schwarzschild/Kerr (exact)</td>
+ <td>Schwarzschild (to $M/r$)</td>
+ <td>Schwarzschild (fixed)</td>
+ <td>Hayward (prescribed)</td>
+ <td>Schwarzschild to $\sim$11 parts in $10^4$ at $|\eta|=0.1$ (perturbative)</td>
+ <td>Asymptotically Schwarzschild (target)</td>
+ </tr>
+ <tr>
+ <td>Interior metric</td>
+ <td>Singular ($r\to0$)</td>
+ <td>de Sitter-like temporal minimum</td>
+ <td>Spatially enlarged end ($\rho \to \infty$); not a regular point</td>
+ <td>Finite-area asymptotic end ($\rho \to 1.995$, $\tilde\ell \to \infty$); not a regular point</td>
+ <td>Not yet integrated; literature: finite-area singularity at $r \approx 0.27\,r_h$ (Sotiriou & Zhou 2014)</td>
+ <td>Regular point centre: $A(0) = 4.68$, $\rho_{\rm areal}(0) \to 4.68 \times 10^{-8}$, $w_r(0) = -1.000$, $K(0) = 27.1$ ($\eta=-0.1$, $g=1.1M$)</td>
+ </tr>
+ <tr>
+ <td>Central curvature</td>
+ <td>$K\to\infty$</td>
+ <td>Finite (by construction)</td>
+ <td>Vanishes ($\tilde K \sim 39r^2/16 \to 0$) but areal radius diverges</td>
+ <td>Finite ($\tilde K \to 8/r_h^4$) but asymptotic end, not regular centre</td>
+ <td>Likely divergent at finite-area singularity (literature)</td>
+ <td>Finite: $K(0) = 27.1$ for $g=1.1M$</td>
+ </tr>
+ <tr>
+ <td>Geodesic completeness</td>
+ <td>No (incomplete at $r=0$)</td>
+ <td>Model-dependent</td>
+ <td>Both null families infinite affine ($\tilde\lambda \sim \int r^{-4}\,dr \to \infty$); asymptotic end</td>
+ <td>Both null families infinite affine ($\tilde\lambda \sim \int r^{-2}\,dr \to \infty$); asymptotic end</td>
+ <td>Not yet computed; likely incomplete at finite-area singularity</td>
+ <td>Both families finite affine; regular point centre, extendable geodesics</td>
+ </tr>
+ <tr>
+ <td>Horizon structure</td>
+ <td>Event horizon at $r=2M$</td>
+ <td>Event + inner horizon</td>
+ <td>Schwarzschild horizon (fixed)</td>
+ <td>Hayward outer + inner horizon</td>
+ <td>sGB apparent horizon (perturbative artifact)</td>
+ <td>Temporal well: $\tilde N_{\min} = 0.211$ at $r \approx 1.41M$, no finite causal horizon</td>
+ </tr>
+ <tr>
+ <td>Temporal Horizon</td>
+ <td>—</td>
+ <td>—</td>
+ <td>Not established (theorem case only)</td>
+ <td>Not established ($\theta_+=0$ is constant-area property, not temporal freeze)</td>
+ <td>Not yet computed</td>
+ <td>Operational: $\mathcal{Z}_{\max} \sim N_o/\tilde N_{\min} \sim 4.7$ at $r \approx 1.41M$; $\tilde N > 0$ everywhere</td>
+ </tr>
+ <tr>
+ <td>Surface / junction</td>
+ <td>None</td>
+ <td>None (smooth)</td>
+ <td>None (but asymptotic end)</td>
+ <td>None (but asymptotic end)</td>
+ <td>Not yet determined</td>
+ <td>None (smooth, regular point centre)</td>
+ </tr>
+ <tr>
+ <td>Lorentzianity</td>
+ <td>Yes</td>
+ <td>Yes</td>
+ <td>Yes for all $r > 0$ ($\det = A^4 \det g < 0$); limit $r=0$ not a regular point</td>
+ <td>Yes in exterior ($F > 0$); inside horizon must check canonical determinant</td>
+ <td>Yes in exterior ($F > 0$)</td>
+ <td>Yes: $\det\tilde g_{2D} < 0$ throughout the integrated domain</td>
+ </tr>
+ <tr>
+ <td>Observable shifts</td>
+ <td>—</td>
+ <td>—</td>
+ <td>—</td>
+ <td>—</td>
+ <td>Not yet derived (conformal null invariance; disformal circular orbit; tensor characteristic metric all require derivation)</td>
+ <td>Photons on $\tilde g$, GWs on $\mathcal{G}_{\rm tensor}$; shadow vs ringdown consistency (target)</td>
+ </tr>
+ <tr>
+ <td>QNM spectrum</td>
+ <td>Schwarzschild/Kerr</td>
+ <td>Modified</td>
+ <td>—</td>
+ <td>—</td>
+ <td>Indicative WKB: scalar-led, axial, polar; requires spectral solver and coupled perturbation equations</td>
+ <td>Exterior benchmark: axial $+0.136\%$ real shift, polar-led $-0.028\%$ real breaking, $+0.067\%$ damping breaking. Full deep-transit solve: three modes (polar-led $0.462-0.032i$, scalar-led $0.416-0.032i$, overtone $0.745-0.035i$), $2.8\times$ longer damping, $+14.8\%$ real breaking, $11.1\%$ mode splitting</td>
+ </tr>
+ <tr>
+ <td>Shadow size</td>
+ <td>$b = 5.196\,M$</td>
+ <td>Similar to Schwarzschild</td>
+ <td>—</td>
+ <td>—</td>
+ <td>$-0.044\%$ at $\eta=-0.1$ on $g^{\rm sGB}$; conformal invariance means shadow on $\tilde g$ equals shadow on $g$ for pure conformal; ISCO on $\tilde g$ is $+1.95\%$ (opposite sign, $\mathcal{O}(\eta)$, $\sim 44\times$ larger) — a property of the sGB EFT (Appendix L)</td>
+ <td>From $\tilde g$ photon sphere (target)</td>
+ </tr>
+ <tr>
+ <td>Gravitational-wave echoes</td>
+ <td>No</td>
+ <td>Possible (inner barrier)</td>
+ <td>—</td>
+ <td>—</td>
+ <td>Not yet analysed (requires waveform-level analysis with inner boundary conditions)</td>
+ <td>Depends on interior outcome</td>
+ </tr>
+ <tr>
+ <td>Stability / hyperbolicity</td>
+ <td>Stable</td>
+ <td>Model-dependent</td>
+ <td>—</td>
+ <td>—</td>
+ <td>Tensor sector: kinetic term positive at leading order, $c_T = 1$ on Schwarzschild background (Horndeski $G_4$ unchanged by sGB at leading order). Full tensor characteristic metric on TEP solution, global ghost freedom, and scalar sector hyperbolicity in deep interior remain open (Thaalba et al. 2024; Section 7.7)</td>
+ <td>Scalar-sector principal symbol on solved geometry (target)</td>
+ </tr>
+ <tr>
+ <td>$c_T$ (tensor speed)</td>
+ <td>$c_T = 1$</td>
+ <td>$c_T \to 1$ asymptotically</td>
+ <td>—</td>
+ <td>—</td>
+ <td>$c_T = 1$ on Schwarzschild background (Horndeski $G_4 = M_{\rm Pl}^2/2$, sGB coupling enters through $G_5$); GW170817 satisfied on that background; full tensor characteristic metric on TEP solution pending (Section 7.7)</td>
+ <td>Established</td>
+ </tr>
+ <tr>
+ <td>Observational coupling</td>
+ <td>$M$ (and $a$)</td>
+ <td>Regularisation parameter</td>
+ <td>—</td>
+ <td>—</td>
+ <td>One $\alpha_{\rm GB}$; $\eta_i = 3\alpha_{\rm GB}/M_i^2$ per source; $|\eta|=0.1$ cannot be universal across masses</td>
+ <td>Same (target)</td>
+ </tr>
+ </tbody>
+</table>
+
+<h2>I.2 What Is Established vs What Is Target</h2>
+<p>
+ The established results in this paper are:
+</p>
+<ul>
+ <li>The fixed-background conformal theorem: on fixed Schwarzschild, finite curvature and bounded areal radius are mutually exclusive for the power-law conformal class (Section 3, Appendix D).</li>
+ <li>The Hayward benchmark: finite curvature and bounded areal radius are compatible on a regular background, but the $\phi_0 = 1$ benchmark produces a finite-area asymptotic end, not a regular centre (Appendix K).</li>
+ <li>The perturbative sGB exterior: scalar hair and real backreaction are established by the published $\mathcal{O}(\alpha^2)$ solution (Sotiriou & Zhou 2014). The non-perturbative exterior mass-function evolution requires rerun with the correct scalar charge.</li>
+ <li>The literature evidence that standard linear sGB develops a finite-area interior singularity (Sotiriou & Zhou 2014; Thaalba et al. 2024).</li>
+ <li>The TEP Global Solution Architecture: regular spatial domain, finite local density, continuous temporal-rate gradient, no finite-radius causal horizon ($N \geq N_{\min} > 0$ everywhere), extreme external redshift (Section 6.6).</li>
+ <li>The regularised sGB-coupled interior solution with a regular point centre, integrated to $r = 10^{-8}M$ for $\eta=-0.1$ (Section 4.6, Section 5.5,).</li>
+</ul>
+<p>
+ The remaining target results are:
+</p>
+<ul>
+ <li>The coupled polar–scalar QNM spectrum and isospectrality breaking.</li>
+ <li>The observable shifts as quantitative predictions (requires deriving both characteristic metrics).</li>
+ <li>The tensor speed $c_T$ derived from the action.</li>
+ <li>The observational fit with one universal $\alpha_{\rm GB}$ across all sources.</li>
+</ul>
+<p>
+ The comparison table above distinguishes these explicitly. Earlier versions of this appendix combined all TEP calculations into a single column, producing claims (globally Lorentzian interior, geodesic completeness, vanishing central curvature, disformal birefringence, no inner boundary) that belong to specific benchmark or theorem cases, not to the unsolved global TEP solution.
+</p>

@@ -48,7 +48,7 @@
             .join('\n\n');
 
         index = index.replace(
-            /<section id="abstract"[\s\S]*?<section id="reproducibility" data-component="[^"]+"><\/section>/,
+            /<section id="section-abstract"[\s\S]*?<section id="section-acknowledgements" data-component="[^"]+"><\/section>/,
             components
         );
         index = index.replace('<script src="build.js"></script>', '<script>window.__STATIC_MANUSCRIPT__ = true;</script>');
@@ -94,7 +94,7 @@
         const converter = new HTMLToMarkdownConverter();
         await converter.convertSiteToMarkdown();
 
-        console.log(`Built TEP-TH static manuscript: ${path.join(distDir, 'index.html')}`);
+        console.log(`Built TEP-BH static manuscript: ${path.join(distDir, 'index.html')}`);
     }
 
     function copyResults(resultsDir, distDir, fs, path) {

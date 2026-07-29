@@ -1,0 +1,129 @@
+<h1>Appendix A — Conventions and Disformal Identities</h1>
+<p>
+ This appendix fixes the sign, curvature and disformal conventions used throughout the paper. All identities quoted in the main text are derived here explicitly so that no sign or factor ambiguity survives into the field equations, the curvature invariants of Appendix D, or the perturbation analysis of Appendix G.
+</p>
+
+<h2>A.1 Metric Signature and Curvature</h2>
+<p>
+The metric signature $(-,+,+,+)$ is adopted. The Riemann tensor is defined via the Wald convention
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appA_1}
+ ({\nabla_a\nabla_b - \nabla_b\nabla_a)\,V_c = R_{abc}{}^{d}\,V_d,
+\end{equation}
+</div>
+
+<p>
+with Ricci tensor $R_{ab} = R_{acb}{}^{c}$ and Ricci scalar $R = g^{ab}R_{ab}$. The Einstein tensor is $G_{ab} = R_{ab} - \tfrac12 R\,g_{ab}$, and the Einstein equations read $G_{\mu\nu}[g] = 8\pi\,T_{\mu\nu}$ in geometrized units $G = c = 1$. With this convention the Schwarzschild Kretschmann scalar is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appA_2}
+ K_{\rm Schw} = R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma} = \frac{48\,M^2}{r^6},
+\end{equation}
+</div>
+
+<p>
+which is the reference used for the curvature comparison in Appendix D.
+</p>
+
+<h2>A.2 Disformal Transformation</h2>
+<p>
+The matter (causal) metric is the disformal image of the geometric metric,
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appA_3}
+ \tilde g_{\mu\nu} = A^2(\phi)\,g_{\mu\nu} + B(\phi)\,\nabla_\mu\phi\,\nabla_\nu\phi,
+\end{equation}
+</div>
+
+<p>
+where $A(\phi)$ is the conformal factor and $B(\phi)$ is the disformal coupling. Defining $X \equiv -\tfrac12\,g^{\mu\nu}\nabla_\mu\phi\,\nabla_\nu\phi$, the inverse matter metric is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appA_4}
+ \tilde g^{\mu\nu} = A^{-2}\left(g^{\mu\nu} - \frac{B\,\nabla^\mu\phi\,\nabla^\nu\phi}{A^2 - 2BX}\right).
+\end{equation}
+</div>
+
+<p>
+This is the identity used in the geodesic equations of Appendix E and in the perturbation potentials of Appendix G.
+</p>
+
+<h2>A.3 Determinant and Invertibility</h2>
+<p>
+In four spacetime dimensions the determinant of the disformal metric is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appA_5}
+ \det\tilde g = A^{8}\,\det g\,\left(1 - \frac{2BX}{A^2}\right) = A^{8}\,\det g\,\frac{A^2 - 2BX}{A^2}.
+\end{equation}
+</div>
+
+<p>
+The transformation is therefore invertible if and only if
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appA_6}
+ A^2 > 0 \qquad\text{and}\qquad A^2 - 2BX \neq 0.
+\end{equation}
+</div>
+
+<p>
+The 2D $(v,r)$ determinant in Eddington–Finkelstein coordinates is the canonical expression $\det\tilde g_{2D} = -A^4 G^2 - A^2 F B(\phi')^2$ (Section 6.7). The geometric horizon has $\det\tilde g_{2D}=-1.002$ and is Lorentzian. The determinant is strictly negative at every sampled radius from the horizon to the innermost grid point ($r_{\min}=10^{-8}M$) in the exterior region ($F > 0$). Inside horizons ($F < 0$), the disformal term becomes positive and the determinant must be checked with the canonical formula. The disformal transformation is invertible where $A^2 - 2BX \neq 0$; this must be verified separately for the interior. For the $\phi_0 = 2$ fixed-Schwarzschild case, both null families have infinite affine parameter ($\tilde\lambda \sim \int r^{-4}\,dr \to \infty$) because $A \sim r^{-2}$; the $r \to 0$ limit is an asymptotic spatially enlarged end, not a regular point (Appendix E).
+</p>
+
+<h2>A.4 Connection Difference</h2>
+<p>
+The Levi-Civita connection of $\tilde g$ differs from that of $g$ by a tensorial term. Writing $\Sigma_\mu \equiv \nabla_\mu\ln A$ and $\Phi_\mu \equiv \nabla_\mu\phi$, the difference is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appA_7}
+ \tilde\Gamma^{\lambda}_{\;\;\mu\nu} - \Gamma^{\lambda}_{\;\;\mu\nu} = 2\,\delta^{(\lambda}_{(\mu}\,\Sigma_{\nu)} - g_{\mu\nu}\,\Sigma^{\lambda} + \frac{B}{A^2-2BX}\Big[\Phi_{\mu}\,\Phi_{\nu}\,\Sigma^{\lambda} + 2\,\Phi^{(\lambda}\,\nabla_{\mu)}\Phi_{\nu)} - g_{\mu\nu}\,\Phi^{\lambda}\,\Sigma_{\rho}\Phi^{\rho}\Big] + \mathcal{O}(\nabla B),
+\end{equation}
+</div>
+
+<p>
+where $\mathcal{O}(\nabla B)$ collects terms proportional to $\nabla_\mu B$. The conformal piece (the first two terms) is the standard scalar-tensor result; the disformal piece (the bracket) is what produces the modified causal structure and the shear zone in the interior.
+</p>
+
+<h2>A.5 Stress-Energy Transformation</h2>
+<p>
+Matter minimally coupled to $\tilde g_{\mu\nu}$ has stress tensor $\tilde T^{\mu\nu} = -(2/\sqrt{-\tilde g})\,\delta S_m/\delta\tilde g_{\mu\nu}$. When expressed with respect to the geometric metric $g_{\mu\nu}$, this becomes
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appA_8}
+ T^{\mu\nu} \equiv \frac{2}{\sqrt{-g}}\frac{\delta S_m}{\delta g_{\mu\nu}} = A^{-2}\,\tilde T^{\mu\nu} + \frac{B}{A^2}\,\tilde T^{\alpha\beta}\,\nabla_\alpha\phi\,\nabla_\beta\phi\,g^{\mu\nu} + \text{disformal trace corrections}.
+\end{equation}
+</div>
+
+<p>
+The first term is the familiar conformal rescaling; the second is the disformal correction that feeds back into the geometric Einstein equations $G_{\mu\nu}[g] = 8\pi\,T_{\mu\nu}$. Conservation is frame-consistent: $\tilde\nabla_\mu\tilde T^{\mu\nu} = 0$ in the matter frame, which maps to a non-standard conservation law in the geometric frame that is sourced by the disformal gradient $\nabla_\mu B$.
+</p>
+
+<h2>A.6 Summary of Identities</h2>
+<table class="data-table">
+ <thead>
+ <tr><th>Object</th><th>Expression</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Inverse matter metric</td><td>$\tilde g^{\mu\nu} = A^{-2}\big(g^{\mu\nu} - \frac{B\,\nabla^\mu\phi\,\nabla^\nu\phi}{A^2 - 2BX}\big)$</td></tr>
+ <tr><td>Determinant (4D)</td><td>$\det\tilde g = A^{8}\,\det g\,\frac{A^2 - 2BX}{A^2}$</td></tr>
+ <tr><td>Invertibility</td><td>$A^2 > 0$ and $A^2 - 2BX \neq 0$</td></tr>
+ <tr><td>Lorentzian signature</td><td>$\det\tilde g_{2D} = -A^4 G^2 - A^2 F B(\phi')^2 < 0$ in exterior ($F > 0$); must be checked inside horizons</td></tr>
+ <tr><td>Connection split</td><td>$\tilde\Gamma - \Gamma = $ conformal $+$ disformal</td></tr>
+ <tr><td>Stress split</td><td>$T^{\mu\nu} = A^{-2}\tilde T^{\mu\nu} + $ disformal corrections</td></tr>
+ </tbody>
+</table>
+<div class="key-concept">
+ <p>
+ The disformal metric is invertible and Lorentzian in the exterior region ($F > 0$), with $\det\tilde g_{2D} < 0$ at every sampled radius. The pipeline-verified conditions $A^2 > 0$ and $A^2 - 2BX \neq 0$ hold at every sampled radius in the exterior. Inside horizons ($F < 0$), the disformal term $-A^2 F B(\phi')^2$ becomes positive and can oppose the conformal term; the determinant must be checked with the canonical formula. The interior hyperbolicity depends on the outcome of the interior integration (Section 4.6).
+ </p>
+</div>

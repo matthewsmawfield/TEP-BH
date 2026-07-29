@@ -1,42 +1,60 @@
-# Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity
+# Temporal Equivalence Principle: Black Holes and the Temporal Horizon
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Status:** Complete — Paper 27 (Thika), v0.2
+**Status:** Preprint — Paper 28 (Bahrain), v0.1
 
 ## Abstract
 
-Standard FLRW cosmology extrapolates observed cosmic expansion backward to $a(t)\to0$, producing a Big Bang singularity at finite proper time. This paper demonstrates that this singularity is a reconstruction artifact of imposing a globally isochronous expanding-frame description on a conformal temporal geometry. In the Temporal Equivalence Principle (TEP), the observational role of FLRW expansion is reconstructed through conformal temporal transport: the effective scale factor $a_{\rm eff}$ arises from accumulated open-path conformal temporal shear along cosmological lines of sight rather than from physical expansion of space. TEP-C0 (Paper 26) established the distance-redshift and supernova evidence and deferred full nonsingular matter-frame closure to a dedicated temporal-horizon analysis; here that closure is delivered.
+The Temporal Equivalence Principle (TEP) asks: *can the phenomena attributed to black holes arise from an extreme relative-time gradient without physical collapse into an ultra-dense object?* The framework distinguishes the Einstein-frame gravitational metric $g_{\mu\nu}$ from the universal causal matter metric
+$$\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi,$$
+so that matter, photons, and ideal clocks propagate on $\tilde g_{\mu\nu}$ while tensor and scalar characteristics are derived from the principal symbol of the coupled gravitational–scalar system.
 
-The Temporal Horizon Cosmology framework is developed here, proving that the apparent $a_{\rm eff}\to0$ limit is not a physical curvature singularity but a temporal horizon. Two distinct projections of the temporal field are required: $A_{\rm clock}(z)=(1+z)^{-1}$ is the exact observational clock/redshift mapping that drives $a_{\rm eff}\to0$ as $z\to\infty$, while $A_{\rm dyn}(z)=\left(1+z/z_{t}\right)^{-\epsilon_{\rm eff}(z)}$ is the dynamically screened shear response that modifies expansion, BBN, recombination, and perturbations only at late times. Proposition 1 establishes curvature regularity of the temporal conformal boundary: for $A_{\rm clock}(\eta)=C\eta^{-p}$ with $0 < p\le\tfrac12$, all polynomial curvature invariants vanish at the boundary, timelike proper time diverges, and null geodesics have divergent affine parameter. Figure 1 (Section 4.5) illustrates the resulting conformal-boundary interpretation: the singular lower edge of standard flat $\Lambda$CDM is replaced by a smooth temporal conformal boundary $\mathscr{T}^{-}$, where $A_{\rm clock}\to0$ and curvature invariants vanish. The conformal compactification is smooth, the Weyl tensor vanishes on the boundary, and every causal curve approaches the regular past boundary $\mathscr{T}^{-}$ rather than terminating at a singularity. The temporal horizon is therefore simultaneously curvature-empty, timelike-complete, and null-complete in this branch.
+The mass conventionally assigned to an astrophysical black-hole candidate is not directly weighed. It is reconstructed from observed angular positions, spectral shifts, signal periods and image scales under the Isochrony Axiom — the assumption that source clocks, photon propagation and observer clocks can be mapped onto a single universal time coordinate. TEP defines a strong-field Phantom Mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ and proposes to determine its sign and magnitude through a non-isochronous refit. The sign is not assumed: slow deep clocks alone deflate the inferred mass; positive Phantom Mass requires spatial magnification to dominate temporal stretching. This is the strong-field counterpart of Phantom Mass at galactic scales. A "black hole" is a *temporal well* — a regular spatial region in which the rate of proper time differs radically from the exterior, with physical lapse $N(r) \geq N_{\min} > 0$ everywhere, finite but extremely small at the centre. *Cosmological expansion and black-hole collapse are dual misinterpretations of dynamical proper time.*
 
-The effective stress-energy tensor of the temporal field violates the Strong Energy Condition, an explicit prerequisite of the Hawking-Penrose singularity theorems. The thermal screening scale is derived from the transition redshift: $T_{\rm lock}=T_{0}(1+z_{t})\sim 0.03\,\mathrm{eV}$ for $z_{t}\sim 130$ and $T_{0}=2.725\,\mathrm{K}$, giving strong epoch-by-epoch screening ($S_{\rm epoch}\sim 10^{-12}$ at BBN, $\sim 10^{-2}$ at recombination); $T_{\rm lock}$ is not an independent parameter but is fixed once $z_{t}$ is fixed. Screened TEP reproduces the standard BBN successful sector and inherits the standard lithium anomaly. Recombination is computed with the full non-equilibrium Peebles/RECFAST treatment. The temporal-horizon thermal mapping preserves a FIRAS-compatible blackbody with no spectral distortions.
+The fixed-background conformal theorem proves that the temporal field must backreact on the geometric metric: holding $g_{\mu\nu}$ fixed to Schwarzschild makes finite curvature ($\phi_0 \geq 3/2$) and bounded areal radius ($\phi_0 \leq 1$) mutually exclusive. The inverse reconstruction identifies $w_r = -1$ as a sufficient regularity target, demonstrated by the Hayward benchmark and now realised by the regularised sGB-coupled interior solver. The sGB coupling serves as a low-energy effective field theory for the exterior, providing conditional observable shifts at fixed GR-calibrated mass: shadow $-0.044\%$ (photons, $\mathcal{O}(\eta^2)$), ISCO on $\tilde g$ $+1.95\%$ (massive particles, $\mathcal{O}(\eta)$) at $\eta = -0.1$. The coupling-order difference between the photon and massive-particle sectors reflects conformal invariance of null geodesics in the sGB benchmark (Section 6.2): both sectors are governed by the same unified temporal field, and the difference arises because null geodesics are conformally invariant while timelike geodesics feel the conformal factor $A = e^{-\phi} > 1$. The tensor speed $c_T = 1$ on the Schwarzschild background; the full tensor characteristic metric on the TEP solution requires the complete coupled perturbation system.
 
-The scalar perturbation spectrum is derived from fluctuations of the clock field, $\zeta=\delta\ln A_{\rm clock}$, yielding a power spectrum $P_{\zeta}(k)\propto k^{n_{s}-1}$ with spectral-flow parameter $n_{s}-1=-2\epsilon_{\rm field}$. The observed Planck value $n_{s}=0.965$ constrains $\epsilon_{\rm field}=0.0175$. Tensor modes are derived directly from the temporal-conformal metric: for $A_{\rm clock}(\eta)\sim\eta^{-p}$ the tensor source term $A_{\rm clock}''/A_{\rm clock}=p(p+1)/\eta^{2}\to 0$ at the horizon, so the tensor equation approaches the Minkowski vacuum. The imported inflationary consistency relation $r=16\epsilon_{\rm field}$ is not assumed. Numerical integration of the native tensor equation across the finite transition profile (Step 09b) yields $r(k_{\rm pivot})=9\times 10^{-6}$ and $r_{\rm max}=6.26\times 10^{-4}$, both well below the BICEP/Keck 2021 bound $r<0.036$; tensor power is controlled only by the finite transition region. CMB anisotropy and LSS observables are reproduced in the screened-limit reduction, inheriting agreement with Planck 2018 and BOSS DR12 by construction rather than as independent empirical confirmation.
-
-The causal matter-frame universe is curvature-regular at the temporal conformal boundary. The apparent Big Bang is a temporal horizon, not a physical curvature singularity. All background and thermal observational pillars are preserved in the screened-limit reduction; the scalar perturbation shape is reproduced, and the tensor-to-scalar ratio is computed from the native temporal-conformal wave equation, yielding values well below observational bounds.
+The decisive analysis is a *TEP-native refit of the raw observations*, not a perturbation of a pre-assumed Schwarzschild mass. We demonstrate the pipeline on the 25-year astrometric and spectroscopic record of the S2 star orbiting Sgr A*, using GRAVITY/VLT and Keck data through a 7-step non-isochronous inference. At S2 scales the mass-inflation branch is selected with $100\%$ positive Phantom Mass posterior, while the coupling is consistent with zero at current precision, showing TEP reduces to GR in the weak field. At horizon scale, a direct visibility-domain fit to $46{,}846$ binned EHT M87$^\ast$ and Sgr A$^\ast$ long-baseline amplitudes excludes the extreme horizonless threshold at $>2\sigma$, bounding the temporal well's regularisation scale to the sub-critical regime ($g < g_{\rm crit}$). The full observational replacement requires the nonlinear TEP solution and the raw-observable refit.
 
 ## Overview
 
-TEP-TH (Paper 27, Thika) delivers the full temporal-horizon closure of the Temporal Equivalence Principle framework, proving that the apparent Big Bang singularity is a reconstruction artifact. Building on TEP-C0 (Paper 26, Athens) which established the distance-redshift and supernova evidence, and TEP-HC (Paper 18, Cambridge) which validated the acoustic-sector perturbations via hi_class, TEP-TH provides:
+TEP-BH (Paper 28, Bahrain) derives the causal completion of gravitational collapse in the Temporal Equivalence Principle framework. The geometric Schwarzschild endpoint is not the physical endpoint of matter propagation. The complete conformal-disformal matter metric is globally Lorentzian and nondegenerate, with the conformal factor diverging as $A \to \infty$ and the disformal shear vanishing as $B \to 0$ in the deep interior. The center is continuous, curvature-free regular space with diverging areal radius, not a spatial singularity.
 
-- **Temporal-horizon curvature analysis** proving regularity at $A_{\rm clock}\to 0$ (Proposition 1)
-- **Geodesic completeness** demonstrating infinite affine/proper time at the temporal boundary
-- **Penrose diagram** (Figure 1) placing $\mathscr{T}^{-}$ on the same rigorous footing as $\mathscr{I}^{+}$
-- **BBN nucleosynthesis** with AlterBBN network and epoch-screened TEP expansion
-- **Recombination physics** with full non-equilibrium Peebles/RECFAST treatment
-- **Temporal-horizon thermal mapping** preserving FIRAS-compatible blackbody
-- **Scalar perturbations** derived from clock-field fluctuations with spectral-flow parameter $\epsilon_{\rm field}=0.0175$
-- **Tensor perturbations** computed from native temporal-conformal wave equation yielding $r(k_{\rm pivot})=9\times 10^{-6}$
-- **CMB anisotropy** (TT, TE, EE) and **LSS observables** validated in screened-limit reduction
+The paper provides:
+
+- **Spherical ansatz and field equations** for the strong-field scalar configuration
+- **Causal regularity and completeness** of the physical metric $\tilde g_{\mu\nu}$ at $r\to 0$
+- **The density illusion**: physical volume element does not collapse as $r^3$
+- **Singularity theorem reinterpretation** in a two-metric framework
+- **Horizon thermodynamics and information** without a physical singularity
+- **Comparative anatomy** distinguishing TEP from gravastars, temporal wells, fuzzballs and firewalls
+- **Linear stability and ringdown** signatures
+- **Electromagnetic propagation and black-hole imaging** signatures
+- **Accretion, ISCO and redshift transfer** in the disformal causal metric
+- **Minimal empirical test programme**
+
+## Manuscript Sections
+
+1. Introduction: Which Conclusions Follow from a Two-Metric Construction?
+2. TEP Foundations and Frame Dictionary
+3. Spherical Geometry and the Fixed-Background Theorem
+4. Coupled Solution: Einstein–Scalar–Gauss–Bonnet Exterior
+5. Global Geometry: Benchmark and Validation
+6. Causal Structure and the Temporal Horizon
+7. Perturbation Analysis: Three-Channel Ringdown and Tensor Speed
+8. Observable Predictions
+9. Interpretation
+10. Conclusion
+
+Appendices A–L: Conventions and Disformal Identities, Reduced Field Equations, Strong-Field Asymptotic Expansion, Curvature Invariants and the Fixed-Background Theorem, Geodesic Structure, Physical Volume and Density Diagnostics, Scope of Gravitational Perturbations, Ray Tracing and Orbital Mechanics, Comparison Table, Reproducibility, Hayward Benchmark, Explicit Derivation of Corrected Exterior Observables.
 
 ## Installation
 
 ```bash
 # Clone repository
-git clone https://github.com/matthewsmawfield/TEP-TH.git
-cd TEP-TH
+git clone https://github.com/matthewsmawfield/TEP-BH.git
+cd TEP-BH
 
 # Create virtual environment
 python -m venv venv
@@ -44,185 +62,61 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Initialize external submodules (AlterBBN, CLASS)
-git submodule update --init --recursive
 ```
 
-## Quick Start
+## Site Build
 
 ```bash
-# Run full pipeline
-cd TEP-TH
-python scripts/run_pipeline.py
-
-# Individual steps (see scripts/README.md)
-python scripts/steps/step_00_temporal_horizon_mapping.py
-python scripts/steps/step_01_matter_frame_curvature.py
-python scripts/steps/step_02_geodesic_completeness.py
+cd site
+npm run build
 ```
 
-## Pipeline Execution
+This generates:
+- `site/dist/index.html` — static manuscript
+- `28-TEP-BH-v0.1-Bahrain.md` — root markdown manuscript
 
-### Full Pipeline
+## PDF Generation
+
 ```bash
-cd TEP-TH
-python scripts/run_pipeline.py
+python scripts/utils/generate_site_pdf.py --quality high --wait-time 8
 ```
 
-### Individual Steps
-```bash
-# Temporal horizon mapping
-python scripts/steps/step_00_temporal_horizon_mapping.py
-
-# Matter-frame curvature
-python scripts/steps/step_01_matter_frame_curvature.py
-
-# Geodesic completeness
-python scripts/steps/step_02_geodesic_completeness.py
-
-# BBN with AlterBBN
-python scripts/steps/step_04_full_bbn_abundances.py
-
-# Recombination
-python scripts/steps/step_05_recombination_visibility.py
-
-# Scalar perturbations
-python scripts/steps/step_08_primordial_perturbation_boundary.py
-
-# Tensor perturbations
-python scripts/steps/step_09b_native_tensor_integration.py
-```
-
-## Data Sources
-
-All data is downloaded from public repositories:
-
-- **BBN data**: [BBN Frontiers 2020 Review](https://arxiv.org/abs/2005.14167)
-  - Light-element abundance constraints
-  - Nuclear reaction rates
-
-- **FIRAS CMB**: [NASA LAMBDA](https://lambda.gsfc.nasa.gov)
-  - COBE/FIRAS monopole spectrum
-  - Perfect blackbody validation
-
-- **CMB/LSS**: Planck 2018 and BOSS DR12 public releases
-  - Used for screened-limit validation
-
-## Physics Validation
-
-| Observable | Computed | Target | Status |
-|------------|----------|--------|--------|
-| $\tilde{\mathcal{K}}$ at horizon | 0 | 0 (regular) | ✅ |
-| Timelike proper time | $\infty$ | $\infty$ (complete) | ✅ |
-| Null affine parameter | $\infty$ | $\infty$ (complete) | ✅ |
-| $Y_p$ | 0.247 | Planck 0.247 | ✅ |
-| D/H | $2.51\times 10^{-5}$ | PDG $2.6\times 10^{-5}$ | ✅ |
-| $n_s$ | 0.965 | Planck 0.965 | ✅ |
-| $r(k_{\rm pivot})$ | $9\times 10^{-6}$ | BICEP/Keck $<0.036$ | ✅ |
-| $r_{\rm max}$ | $6.26\times 10^{-4}$ | BICEP/Keck $<0.036$ | ✅ |
+Generates `28-TEP-BH-v0.1-Bahrain.pdf` in both the root and `site/public/docs/`.
 
 ## Project Structure
 
 ```
-TEP-TH/
+TEP-BH/
 ├── core/                 # Physics modules
-│   ├── conformal_scaling.py  # Conformal clock field
-│   ├── constants.py         # Physical constants
-│   └── cosmology.py          # Background cosmology
-├── scripts/              # Pipeline scripts
-│   ├── steps/               # Individual pipeline steps
-│   │   ├── step_00_temporal_horizon_mapping.py
-│   │   ├── step_01_matter_frame_curvature.py
-│   │   ├── step_02_geodesic_completeness.py
-│   │   └── ...
-│   └── utils/               # Utilities
-├── external/              # External codes
-│   ├── AlterBBN/            # BBN network
-│   └── class/               # CLASS Boltzmann code
-├── data/                 # Data directory
-│   ├── raw/                 # Downloaded datasets
-│   └── processed/          # Intermediate outputs
+├── scripts/              # Pipeline and utility scripts
+│   ├── run_pipeline.py
+│   ├── steps/            # Individual pipeline steps
+│   └── utils/            # Utilities (PDF generation, PDF processing, logging)
 ├── results/              # Pipeline outputs
-│   ├── figures/             # Generated plots
-│   └── outputs/             # JSON results
 ├── site/                 # Manuscript site
-│   ├── components/          # HTML components
-│   └── public/              # Static assets
-└── manuscripts/          # Markdown manuscripts
+│   ├── components/       # HTML components (edit these)
+│   ├── dist/             # Built static site (auto-generated)
+│   ├── public/           # Static assets, PDF, sitemap
+│   ├── build.js          # Site build script
+│   └── manifest.json     # Site manifest
+├── manuscripts/          # Markdown manuscripts
+├── 28-TEP-BH-v0.1-Bahrain.md  # Auto-generated root manuscript
+└── 28-TEP-BH-v0.1-Bahrain.pdf # Generated PDF
 ```
-
-## Testing
-
-```bash
-# Run individual step with verbose logging
-python scripts/steps/step_01_matter_frame_curvature.py --verbose
-
-# Check results
-cat results/step_01_matter_frame_curvature.json
-```
-
-## Methodology
-
-### Temporal-Horizon Mapping
-
-The TEP framework distinguishes two projections of the temporal field:
-
-```
-A_clock(z) = (1 + z)^(-1)  # Exact observational clock/redshift mapping
-A_dyn(z) = (1 + z/z_t)^(-epsilon_eff(z))  # Dynamically screened shear response
-epsilon_eff(z) = epsilon_dyn * S_epoch(T)
-S_epoch(T) = 1 / (1 + (T_eV/T_lock)^n_epoch)
-```
-
-Where:
-- `A_clock(z)`: drives a_eff → 0 as z → ∞ (temporal horizon)
-- `A_dyn(z)`: modifies expansion, BBN, recombination, perturbations at late times
-- `epsilon_dyn`: baseline shear amplitude
-- `z_t`: transition redshift (=100)
-- `T_lock = 0.03` eV: thermal screening threshold
-- `S_epoch(T)`: epoch-screening function (S → 0 in hot early universe, S → 1 at late times)
-
-### Curvature Regularity
-
-For the temporal-horizon profile $A_{\rm clock}(\eta)=C\eta^{-p}$ with $0<p\le\tfrac12$:
-- All polynomial curvature invariants vanish at the boundary
-- Timelike proper time diverges for $0<p\le 1$
-- Null affine parameter diverges for $0<p\le\tfrac12$
-- The boundary is a regular conformal-temporal endpoint
-
-### BBN Computation
-
-- **Network**: AlterBBN (full nuclear network)
-- **Physics**: TEP-modified expansion rate with epoch screening
-- **Abundances**: $Y_p$, D/H, $^3$He/H, $^7$Li/H, $N_{\rm eff}$
-
-### Recombination
-
-- **Treatment**: Full non-equilibrium Peebles/RECFAST
-- **Thermal mapping**: Temporal-horizon conformal transformation preserves blackbody
-- **Validation**: $x_e(z)$, $g(z)$, $r_s$, $\theta_s$
-
-### Perturbations
-
-- **Scalar**: Derived from clock-field fluctuations $\zeta=\delta\ln A_{\rm clock}$
-- **Spectral flow**: $n_s-1=-2\epsilon_{\rm field}$ with $\epsilon_{\rm field}=0.0175$
-- **Tensor**: Native temporal-conformal wave equation, source term $\to 0$ at horizon
-- **Results**: $r(k_{\rm pivot})=9\times 10^{-6}$, $r_{\rm max}=6.26\times 10^{-4}$
 
 ## Citation
 
 If using this work, please cite:
 
 ```bibtex
-@software{tep_th_2026,
+@software{tep_bh_2026,
   author       = {Matthew Lukin Smawfield},
-  title        = {Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity},
+  title        = {Temporal Equivalence Principle: Black Holes and the Temporal Horizon},
   year         = 2026,
   publisher    = {Zenodo},
-  version      = {v0.2 (Thika)},
-  doi          = {10.5281/zenodo.20723059},
-  url = {https://mlsmawfield.com/tep/th}
+  version      = {v0.1 (Bahrain)},
+  doi          = {10.5281/zenodo.xxxxxxxx},
+  url = {https://mlsmawfield.com/tep/bh}
 }
 ```
 
@@ -230,23 +124,12 @@ If using this work, please cite:
 
 MIT License - see [LICENSE](LICENSE) file.
 
-## Status
-
-- ✅ Temporal-horizon curvature analysis: Complete
-- ✅ Geodesic completeness: Complete
-- ✅ Penrose diagram: Complete
-- ✅ BBN: Complete (AlterBBN network)
-- ✅ Recombination: Complete (Peebles/RECFAST)
-- ✅ Scalar perturbations: Complete
-- ✅ Tensor perturbations: Complete (native wave equation)
-- ✅ CMB/LSS validation: Complete (screened-limit reduction)
-
 ## Related Papers
 
 - **TEP-C0 (Paper 26, Athens)**: Distance-redshift and supernova evidence
 - **TEP-HC (Paper 18, Cambridge)**: Acoustic-sector perturbations via hi_class
-- **TEP-TH (Paper 27, Thika)**: Temporal-horizon closure (this work)
+- **TEP-BH (Paper 28, Bahrain)**: Black-hole causal completion (this work)
 
 ## Contact
 
-For questions or issues, please open a GitHub issue at https://github.com/matthewsmawfield/TEP-TH
+For questions or issues, please open a GitHub issue at https://github.com/matthewsmawfield/TEP-BH

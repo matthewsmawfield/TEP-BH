@@ -1,7 +1,7 @@
 {
-  "name": "tep-th-site",
+  "name": "tep-bh-site",
   "version": "0.1.0",
-  "description": "TEP-TH: Temporal Horizon Cosmology",
+  "description": "TEP-BH: Temporal Horizon Cosmology",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",
@@ -11,7 +11,7 @@
     "markdown": "node html-to-markdown.js"
   },
   "keywords": [
-    "TEP-TH",
+    "TEP-BH",
     "Temporal Cosmology",
     "Cosmic Redshift",
     "FLRW",
@@ -24,7 +24,7 @@
     "Cosmology"
   ],
   "author": "Matthew Lukin Smawfield",
-  "license": "CC-BY-4.0",
+  "license": "MIT",
   "devDependencies": {
     "chokidar": "^4.0.3",
     "live-server": "^1.2.2"

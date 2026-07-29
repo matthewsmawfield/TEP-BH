@@ -1,0 +1,56 @@
+{
+  "CEERS_2782": {
+    "citation": "Kocevski et al. 2023, ApJL 946, L14",
+    "mass_msun": {
+      "uncertainty": 4000000.0,
+      "value": 13000000.0
+    },
+    "redshift": 5.242,
+    "survey": "JWST CEERS"
+  },
+  "CEERS_746": {
+    "citation": "Kocevski et al. 2023, ApJL 946, L14",
+    "mass_msun": {
+      "uncertainty": 19000000.0,
+      "value": 28000000.0
+    },
+    "redshift": 5.624,
+    "survey": "JWST CEERS"
+  },
+  "GN_z11": {
+    "citation": "Maiolino et al. 2024, Nature 627, 59",
+    "mass_msun": {
+      "uncertainty": 800000.0,
+      "value": 1600000.0
+    },
+    "redshift": 10.6,
+    "survey": "JWST"
+  },
+  "J1243_0100": {
+    "citation": "Matsuoka et al. 2019, ApJL 872, L2",
+    "mass_msun": {
+      "uncertainty": 200000000.0,
+      "value": 330000000.0
+    },
+    "redshift": 7.07,
+    "survey": "Subaru HSC"
+  },
+  "J1342_0928": {
+    "citation": "Banados et al. 2018, Nature 553, 473",
+    "mass_msun": {
+      "uncertainty": 200000000.0,
+      "value": 800000000.0
+    },
+    "redshift": 7.54,
+    "survey": "SDSS"
+  },
+  "UHZ1": {
+    "citation": "Bogdan et al. 2024, ApJL 960, L1",
+    "mass_msun": {
+      "uncertainty": 10000000.0,
+      "value": 40000000.0
+    },
+    "redshift": 10.1,
+    "survey": "Chandra+JWST"
+  }
+}

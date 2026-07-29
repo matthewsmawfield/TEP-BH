@@ -1,0 +1,92 @@
+{
+  "formula": "c_T\u00b2(r) = 1 - 8 \u03b1_GB M F(r) / r\u00b3",
+  "gw170817_argument": {
+    "D_Mpc": 40,
+    "M_km": 14.770000000000001,
+    "alpha_GB_km2": 2.9,
+    "constraint": 1e-15,
+    "delta_t_km": 0.39268788083953954,
+    "delta_t_s": 1.3089596027984652e-06,
+    "fractional_delay": 3.1812044786093616e-22,
+    "safety_factor": 3143463.4482758623,
+    "satisfied": true,
+    "t_cosmo_s": 4114666666666666.5
+  },
+  "key_physics": "\u03c6G is NOT topological when \u03c6 is dynamical; this is why sGB produces backreaction",
+  "local_cT_values": {
+    "10.0": {
+      "F": 0.8,
+      "cT": 0.9998933276438375,
+      "cT_sq": 0.9997866666666667,
+      "deviation": 0.00010667235616246273
+    },
+    "100.0": {
+      "F": 0.98,
+      "cT": 0.9999998693333249,
+      "cT_sq": 0.9999997386666667,
+      "deviation": 1.306666751466068e-07
+    },
+    "2.0": {
+      "F": 0.0,
+      "cT": 1.0,
+      "cT_sq": 1.0,
+      "deviation": 0.0
+    },
+    "2.5": {
+      "F": 0.19999999999999996,
+      "cT": 0.9982918744869491,
+      "cT_sq": 0.9965866666666666,
+      "deviation": 0.0017081255130508843
+    },
+    "20.0": {
+      "F": 0.9,
+      "cT": 0.9999849998874983,
+      "cT_sq": 0.99997,
+      "deviation": 1.5000112501661889e-05
+    },
+    "3.0": {
+      "F": 0.33333333333333337,
+      "cT": 0.9983525524232615,
+      "cT_sq": 0.9967078189300411,
+      "deviation": 0.0016474475767385144
+    },
+    "4.0": {
+      "F": 0.5,
+      "cT": 0.9989577902327339,
+      "cT_sq": 0.9979166666666667,
+      "deviation": 0.0010422097672661002
+    },
+    "50.0": {
+      "F": 0.96,
+      "cT": 0.9999989759994757,
+      "cT_sq": 0.999997952,
+      "deviation": 1.0240005242634354e-06
+    },
+    "6.0": {
+      "F": 0.6666666666666667,
+      "cT": 0.9995883926559523,
+      "cT_sq": 0.9991769547325103,
+      "deviation": 0.00041160734404765975
+    }
+  },
+  "note": "The topological argument (c_T = 1 exactly from GB being total derivative) is WRONG because the action contains \u03c6G, not G. The scalar field breaks topological invarance.  The c_T result is PROVISIONAL pending cross-check with a full characteristic-integration code.",
+  "properties": {
+    "GW170817_constraint": "|c_T/c - 1| < 1e-15",
+    "GW170817_mechanism": "path-dependent escape: strong-field delay ~1\u03bcs diluted over 40 Mpc \u2192 ~1e-21",
+    "GW170817_satisfied": true,
+    "asymptotic_decay": "1/r\u00b3",
+    "birefringence_b": 0.0,
+    "c_T_asymptotic": 1.0,
+    "c_T_at_10M": 0.9998933276438375,
+    "c_T_at_horizon": 1.0,
+    "c_T_at_photon_sphere": 0.9983525524232615,
+    "ghost_free": true,
+    "tuning_required": false
+  },
+  "references": [
+    "Kobayashi, Yamaguchi & Yokoyama 2011",
+    "Nishizawa & Arai 2019"
+  ],
+  "result": "c_T deviates locally, recovers asymptotically",
+  "status": "PROVISIONAL"
+}

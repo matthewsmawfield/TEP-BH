@@ -1,0 +1,340 @@
+{
+  "method": "First-order perturbation theory with exact Schwarzschild QNM (qnm/Leaver) + sGB potential correction + second-order polar-scalar mixing",
+  "parameters": {
+    "M": 1.0,
+    "l": 2
+  },
+  "schwarzschild_reference": {
+    "gravitational": {
+      "real": 0.37367168441804177,
+      "imag": -0.08896231568893546
+    },
+    "scalar": {
+      "real": 0.48364387221071264,
+      "imag": -0.09675877597828755
+    }
+  },
+  "eta_values": [
+    0.0,
+    -0.05,
+    -0.1,
+    -0.15,
+    -0.2
+  ],
+  "results": [
+    {
+      "eta": 0.0,
+      "r_h": 2.0,
+      "alpha_GB": 0.0,
+      "axial_qnm": {
+        "real": 0.37367168441804177,
+        "imag": -0.08896231568893546
+      },
+      "scalar_qnm": {
+        "real": 0.48364387221091365,
+        "imag": -0.09675877597824734
+      },
+      "polar_led_qnm": {
+        "real": 0.37367168441804177,
+        "imag": -0.08896231568893546
+      },
+      "scalar_led_qnm": {
+        "real": 0.48364387221091365,
+        "imag": -0.09675877597824734
+      },
+      "axial_shift": {
+        "real_percent": 0.0,
+        "imag_percent": -0.0
+      },
+      "polar_led_shift": {
+        "real_percent": 0.0,
+        "imag_percent": -0.0
+      },
+      "scalar_led_shift": {
+        "real_percent": 4.1560720637190434e-11,
+        "imag_percent": -4.1565045299943737e-11
+      },
+      "isospectrality_breaking": {
+        "real_percent": 0.0,
+        "damping_percent": 0.0
+      },
+      "corrections": {
+        "axial_potential": null,
+        "scalar_potential": {
+          "real": 2.0099924459684647e-13,
+          "imag": 4.021231736247048e-14
+        },
+        "polar_mixing": {
+          "real": -0.0,
+          "imag": -0.0
+        },
+        "scalar_mixing": {
+          "real": 0.0,
+          "imag": 0.0
+        }
+      },
+      "eikonal_bryant_2021": {
+        "omega_R_plus": 0.6254627916220946,
+        "omega_R_minus": 0.6254627916220946,
+        "omega_I_plus": -0.24056261216234406,
+        "omega_I_minus": -0.24056261216234406,
+        "splitting_percent": 0.0
+      }
+    },
+    {
+      "eta": -0.05,
+      "r_h": 1.9993194444444444,
+      "alpha_GB": -0.016666666666666666,
+      "axial_qnm": {
+        "real": 0.3737081635335393,
+        "imag": -0.08895363088159182
+      },
+      "scalar_qnm": {
+        "real": 0.4837082743994056,
+        "imag": -0.09674589154553381
+      },
+      "polar_led_qnm": {
+        "real": 0.3736555283410932,
+        "imag": -0.0889573624449622
+      },
+      "scalar_led_qnm": {
+        "real": 0.4837754046807953,
+        "imag": -0.09674113235520058
+      },
+      "axial_shift": {
+        "real_percent": 0.009762344062635332,
+        "imag_percent": -0.009762344062639258
+      },
+      "polar_led_shift": {
+        "real_percent": -0.004323602141197719,
+        "imag_percent": -0.005567800180224285
+      },
+      "scalar_led_shift": {
+        "real_percent": 0.02719614113612165,
+        "imag_percent": -0.01823464890763794
+      },
+      "isospectrality_breaking": {
+        "real_percent": -0.01408594620383305,
+        "damping_percent": 0.004194543882414973
+      },
+      "corrections": {
+        "axial_potential": {
+          "real": 3.647911549755062e-05,
+          "imag": 8.684807343645616e-06
+        },
+        "scalar_potential": {
+          "real": 6.440218869298651e-05,
+          "imag": 1.2884432753737387e-05
+        },
+        "polar_mixing": {
+          "real": -5.263519244607158e-05,
+          "imag": -3.731563370384737e-06
+        },
+        "scalar_mixing": {
+          "real": 6.713028138967238e-05,
+          "imag": 4.759190333235264e-06
+        }
+      },
+      "eikonal_bryant_2021": {
+        "omega_R_plus": 0.6254919363270414,
+        "omega_R_minus": 0.6254336469171479,
+        "omega_I_plus": -0.24054634258665408,
+        "omega_I_minus": -0.2405515048010202,
+        "splitting_percent": 0.015144032921811764
+      }
+    },
+    {
+      "eta": -0.1,
+      "r_h": 1.9972777777777777,
+      "alpha_GB": -0.03333333333333333,
+      "axial_qnm": {
+        "real": 0.37381733889984586,
+        "imag": -0.08892763883079476
+      },
+      "scalar_qnm": {
+        "real": 0.48390060594151657,
+        "imag": -0.09670741330634594
+      },
+      "polar_led_qnm": {
+        "real": 0.3736050457589898,
+        "imag": -0.08894268931833718
+      },
+      "scalar_led_qnm": {
+        "real": 0.48417136201973116,
+        "imag": -0.09668821809840955
+      },
+      "axial_shift": {
+        "real_percent": 0.03897926652669301,
+        "imag_percent": -0.03897926652669353
+      },
+      "polar_led_shift": {
+        "real_percent": -0.01783347837976292,
+        "imag_percent": -0.022061443034945616
+      },
+      "scalar_led_shift": {
+        "real_percent": 0.10906574844159209,
+        "imag_percent": -0.07292142667641402
+      },
+      "isospectrality_breaking": {
+        "real_percent": -0.05681274490645592,
+        "damping_percent": 0.01691782349174791
+      },
+      "corrections": {
+        "axial_potential": {
+          "real": 0.00014565448180409572,
+          "imag": 3.4676858140709145e-05
+        },
+        "scalar_potential": {
+          "real": 0.0002567337308039338,
+          "imag": 5.136267194160799e-05
+        },
+        "polar_mixing": {
+          "real": -0.00021229314085610533,
+          "imag": -1.5050487542421719e-05
+        },
+        "scalar_mixing": {
+          "real": 0.00027075607821457385,
+          "imag": 1.9195207936395328e-05
+        }
+      },
+      "eikonal_bryant_2021": {
+        "omega_R_plus": 0.6255793704418816,
+        "omega_R_minus": 0.6253462128023076,
+        "omega_I_plus": -0.2404975356221231,
+        "omega_I_minus": -0.24051818095450964,
+        "splitting_percent": 0.060576131687247056
+      }
+    },
+    {
+      "eta": -0.15,
+      "r_h": 1.993875,
+      "alpha_GB": -0.049999999999999996,
+      "axial_qnm": {
+        "real": 0.3739984218963565,
+        "imag": -0.08888452728830107
+      },
+      "scalar_qnm": {
+        "real": 0.48421824650387146,
+        "imag": -0.09664386548990402
+      },
+      "polar_led_qnm": {
+        "real": 0.37351420588220346,
+        "imag": -0.08891885570352666
+      },
+      "scalar_led_qnm": {
+        "real": 0.48483580969254575,
+        "imag": -0.09660008344852332
+      },
+      "axial_shift": {
+        "real_percent": 0.08743972100096511,
+        "imag_percent": -0.08743972100095722
+      },
+      "polar_led_shift": {
+        "real_percent": -0.04214355606943158,
+        "imag_percent": -0.04885212921026859
+      },
+      "scalar_led_shift": {
+        "real_percent": 0.24644941253671154,
+        "imag_percent": -0.1640084097383008
+      },
+      "isospectrality_breaking": {
+        "real_percent": -0.12958327707039669,
+        "damping_percent": 0.03858759179068863
+      },
+      "corrections": {
+        "axial_potential": {
+          "real": 0.0003267374783147416,
+          "imag": 7.778840063440276e-05
+        },
+        "scalar_potential": {
+          "real": 0.000574374293158798,
+          "imag": 0.00011491048838354
+        },
+        "polar_mixing": {
+          "real": -0.00048421601415307345,
+          "imag": -3.432841522558473e-05
+        },
+        "scalar_mixing": {
+          "real": 0.0006175631886743002,
+          "imag": 4.378204138070005e-05
+        }
+      },
+      "eikonal_bryant_2021": {
+        "omega_R_plus": 0.6257250939666154,
+        "omega_R_minus": 0.6252004892775739,
+        "omega_I_plus": -0.24041619655636806,
+        "omega_I_minus": -0.24046263533519538,
+        "splitting_percent": 0.13629629629630588
+      }
+    },
+    {
+      "eta": -0.2,
+      "r_h": 1.989111111111111,
+      "alpha_GB": -0.06666666666666667,
+      "axial_qnm": {
+        "real": 0.37425008922190794,
+        "imag": -0.08882461130055591
+      },
+      "scalar_qnm": {
+        "real": 0.48465684455778707,
+        "imag": -0.09655611867187992
+      },
+      "polar_led_qnm": {
+        "real": 0.37337300216780067,
+        "imag": -0.08888679224398266
+      },
+      "scalar_led_qnm": {
+        "real": 0.48577547067102467,
+        "imag": -0.09647681385631209
+      },
+      "axial_shift": {
+        "real_percent": 0.15478957276813288,
+        "imag_percent": -0.15478957276814667
+      },
+      "polar_led_shift": {
+        "real_percent": -0.07993173223876181,
+        "imag_percent": -0.08489374896318916
+      },
+      "scalar_led_shift": {
+        "real_percent": 0.4407371999915124,
+        "imag_percent": -0.2914072848944883
+      },
+      "isospectrality_breaking": {
+        "real_percent": -0.2347213050068947,
+        "damping_percent": 0.06989582380495751
+      },
+      "corrections": {
+        "axial_potential": {
+          "real": 0.0005784048038661966,
+          "imag": 0.00013770438837954656
+        },
+        "scalar_potential": {
+          "real": 0.0010129723470744432,
+          "imag": 0.00020265730640762412
+        },
+        "polar_mixing": {
+          "real": -0.0008770870541072903,
+          "imag": -6.218094342675275e-05
+        },
+        "scalar_mixing": {
+          "real": 0.0011186261132375822,
+          "imag": 7.930481556783504e-05
+        }
+      },
+      "eikonal_bryant_2021": {
+        "omega_R_plus": 0.6259291069012425,
+        "omega_R_minus": 0.6249964763429466,
+        "omega_I_plus": -0.24030233420208372,
+        "omega_I_minus": -0.2403848591303827,
+        "splitting_percent": 0.2423045267489594
+      }
+    }
+  ],
+  "references": {
+    "sotiriou_zhou_2014": "Sotiriou & Zhou, PRD 90, 124063 (2014)",
+    "bryant_2021": "Bryant et al., PRD 104, 044051 (2021)",
+    "chung_yunes_2024": "Chung & Yunes, PRD 110, 064019 (2024)",
+    "blazquez_2016": "Blazquez-Salcedo et al., PRD 94, 104024 (2016)",
+    "leaver_1985": "Leaver, Proc. R. Soc. A 402, 285 (1985)"
+  }
+}

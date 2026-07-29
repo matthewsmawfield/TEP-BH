@@ -1,0 +1,35 @@
+{
+  "m87_star": {
+    "citations": [
+      "EHT 2021, ApJ 910, L13 (Paper VII: Polarimetric Performance)",
+      "EHT 2021, ApJ 910, L12 (Paper VI: Polarimetric Imaging)"
+    ],
+    "evpa_swirl_angle_deg": {
+      "citation": "EHT 2021, ApJ 910, L13",
+      "uncertainty": 30.0,
+      "value": 180.0
+    },
+    "magnetic_field_topology": "predominantly normal (poloidal)",
+    "observed_ring_polarization_fraction": {
+      "citation": "EHT 2021, ApJ 910, L13",
+      "uncertainty": 0.01,
+      "value": 0.04
+    }
+  },
+  "sgr_a_star": {
+    "citations": [
+      "EHT 2024, ApJ 964, L26 (Sgr A* Polarimetry)"
+    ],
+    "evpa_swirl_angle_deg": {
+      "citation": "EHT 2024, ApJ 964, L26",
+      "uncertainty": 30.0,
+      "value": 90.0
+    },
+    "magnetic_field_topology": "mixed",
+    "observed_ring_polarization_fraction": {
+      "citation": "EHT 2024, ApJ 964, L26",
+      "uncertainty": 0.02,
+      "value": 0.07
+    }
+  }
+}

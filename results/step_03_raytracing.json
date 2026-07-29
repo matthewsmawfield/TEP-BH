@@ -1,0 +1,110 @@
+{
+  "dependencies": [
+    "step_01_field_equations"
+  ],
+  "description": "Compute photon sphere, shadow angular diameter, and ISCO from the TEP disformal metric; compare with EHT M87* and Sgr A* observations",
+  "isco": {
+    "A_at_6M": 1.0,
+    "B_at_6M": 9.062831441342095e-35,
+    "E_isco": 0.9428090415820634,
+    "L_isco": 3.4641016151377544,
+    "Omega_isco": 0.06804138174397717,
+    "disformal_correction_estimate": 7.966017585183637e-67,
+    "dphi_at_6M": -9.37537567414715e-17,
+    "note": "ISCO = 6M to numerical precision as A approaches unity; disformal correction < 1e-6",
+    "r_isco": 6.0,
+    "r_isco_ratio": 1.0,
+    "r_isco_schwarzschild": 6.0,
+    "redshift_factor_isco": 0.816496580927726,
+    "redshift_z_isco": 0.22474487139158894
+  },
+  "key_result": "Photon sphere r=3.0000M, ISCO r=6.0000M, M87 shadow=39.69 uas, Sgr A* shadow=53.26 uas \u2014 all consistent with Schwarzschild (deviation < 1e-4%)",
+  "model": {
+    "B0": 1.0,
+    "B_type": "gaussian_bump",
+    "M": 1.0,
+    "beta_A": -1.0,
+    "delta": 0.05,
+    "n_B": 2.0,
+    "phi_0": 2.0,
+    "r_h": 2.0,
+    "sigma_B": 1.5
+  },
+  "n_points": 20000,
+  "note": "Prescribed-branch null result: with g prescribed as Schwarzschild and the conformal factor A canceling in the exterior, photon sphere (r=3M), ISCO (r=6M), and shadow angular diameters are identical to Schwarzschild; TEP deviations are < 1e-4 percent and below EHT sensitivity.",
+  "observational": {
+    "M87": {
+      "D_physical_m": 5.1839383344e+23,
+      "M_physical_m": 9598352991717.354,
+      "angular_size_conversion": "theta_uas = (2 * b * M_phys / D) / UAS_TO_RAD, UAS_TO_RAD = 4.848e-12",
+      "distance_Mpc": 16.8,
+      "mass_Msun": 6500000000.0,
+      "shadow_measured_uas": 42.0,
+      "shadow_schw_rad": 1.9241936124488318e-10,
+      "shadow_schw_uas": 39.68934226536587,
+      "shadow_tep_rad": 1.9241942388246063e-10,
+      "shadow_tep_uas": 39.68935518529365,
+      "tep_deviation_percent": 3.255263765808667e-05,
+      "tep_vs_measured_percent": -5.501535273110358
+    },
+    "SgrA": {
+      "D_physical_m": 2.554015332966e+20,
+      "M_physical_m": 6345249662.370688,
+      "angular_size_conversion": "theta_uas = (2 * b * M_phys / D) / UAS_TO_RAD, UAS_TO_RAD = 4.848e-12",
+      "distance_kpc": 8.277,
+      "mass_Msun": 4297000.0,
+      "shadow_measured_uas": 48.7,
+      "shadow_schw_rad": 2.581886175876362e-10,
+      "shadow_schw_uas": 53.25522518191943,
+      "shadow_tep_rad": 2.5818870163484133e-10,
+      "shadow_tep_uas": 53.255242517899916,
+      "tep_deviation_percent": 3.2552637658309865e-05,
+      "tep_vs_measured_percent": 9.35368073490742
+    }
+  },
+  "photon_sphere": {
+    "A_at_photon_sphere": 0.9999636556473371,
+    "F_at_photon_sphere": 0.3336439491434382,
+    "R_at_photon_sphere": 3.001289338821017,
+    "b_photon": 5.196154114191303,
+    "b_photon_deviation_percent": 3.255263766244027e-05,
+    "b_photon_ratio": 1.0000003255263765,
+    "b_photon_schwarzschild": 5.196152422706632,
+    "f_eff_at_photon_sphere": 0.33361969743744946,
+    "impact_parameter_derivation": {
+      "A_at_photon_sphere": 0.9999636556473371,
+      "A_cancels": true,
+      "F_at_photon_sphere": 0.3336439491434382,
+      "R_at_photon_sphere": 3.001289338821017,
+      "f_at_photon_sphere": 0.33361969743744946,
+      "formula": "b = R / sqrt(f) = A*r / (A*sqrt(|F|)) = r / sqrt(|F|)",
+      "note": "Conformal factor A cancels in b = R/sqrt(f), giving Schwarzschild impact parameter in the exterior.",
+      "r_at_photon_sphere": 3.000002133850842
+    },
+    "r_photon": 3.000002133850842,
+    "r_photon_deviation_percent": 7.112836139337256e-05,
+    "r_photon_ratio": 1.000000711283614,
+    "r_photon_schwarzschild": 3.0
+  },
+  "r_max": 49.99999999999999,
+  "r_min": 1e-08,
+  "radial_grid": {
+    "n_points": 20000,
+    "r_max_M": 49.99999999999999,
+    "r_min_M": 1e-08
+  },
+  "schwarzschild_comparison": {
+    "M87_shadow_deviation_percent": 3.255263765808667e-05,
+    "SgrA_shadow_deviation_percent": 3.2552637658309865e-05,
+    "b_photon_deviation_percent": 3.255263766244027e-05,
+    "b_photon_schw_M": 5.196152422706632,
+    "note": "All deviations are < 1e-4 percent because the conformal factor A cancels in the exterior and B ~ 0.",
+    "r_isco_deviation_percent": 0.0,
+    "r_isco_schw_M": 6.0,
+    "r_photon_deviation_percent": 7.112836139337256e-05,
+    "r_photon_schw_M": 3.0
+  },
+  "status": "success",
+  "step": "step_03_raytracing",
+  "timestamp": "2026-07-29T01:18:12.374026"
+}

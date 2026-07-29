@@ -1,0 +1,210 @@
+<h1>4. Coupled Exterior Solution and Interior Closure</h1>
+<p>
+ The fixed-background theorem establishes that the temporal field must modify the geometric metric. The coupled Einstein–scalar–Gauss–Bonnet equations are solved in the exterior. The scalar-Gauss–Bonnet (sGB) coupling $f(\phi)\mathcal{R}_{\rm GB}$ serves as a low-energy effective field theory for the exterior: it resides in the scalar sector and allows the temporal field to modify the geometric metric through a higher-curvature channel. The exterior equations are solved perturbatively (Sotiriou \& Zhou 2014, exact $\mathcal{O}(\alpha^2)$); the non-perturbative exterior integration requires rerun with the correct scalar charge before its mass-function evolution can be cited as evidence. The inverse reconstruction (Section 4.4) identifies $w_r = -1$ as a sufficient regularity target — evidence that the Schwarzschild singularity is not mandatory, not a claim that the final TEP object has a Hayward-style temporal minimum. A complete TEP action is required to derive the temporal-well profile; the interior integration confirms which dynamical coupling produces the TEP Global Solution Architecture.
+</p>
+
+<h2>4.1 Action and Scalar Equation</h2>
+<p>
+The TEP action is extended with the shift-symmetric Gauss–Bonnet coupling
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:coupled_1}
+ S = \int d^4x\,\sqrt{-g}\left[\frac{M_{\rm Pl}^2}{2}R - \frac{1}{2}(\partial\phi)^2 + \alpha_{\rm GB}\,\phi\,\mathcal{G}\right] + S_{\rm TEP}[\tilde g_{\mu\nu}, \psi_m],
+\end{equation}
+</div>
+
+<p>
+where $\mathcal{G} = R^2 - 4R_{\mu\nu}R^{\mu\nu} + R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}$ is the Gauss–Bonnet invariant and $\alpha_{\rm GB}$ is a coupling with dimensions of length$^2$. The dimensionless mass-normalised coupling is defined as $\bar\alpha \equiv \alpha_{\rm GB}/M^2$ and parameterised as $\bar\alpha = \eta/3$, so that $\eta$ is dimensionless at fixed black-hole mass $M$. A numerical value of $\eta$ cannot be transferred unchanged between black holes of different mass without rescaling by $M^2$; the physical coupling is $\alpha_{\rm GB} = \eta M^2/3$. The fundamental coupling $\alpha_{\rm GB}$ is a dimensionful constant of the theory; the dimensionless strength for a black hole of mass $M$ is $\zeta_M \sim \alpha_{\rm GB}/M^2$, so $\eta(M)$ changes with mass. The vacuum gravitational–scalar sector has a shift symmetry $\phi \to \phi + {\rm const}$ (the $\phi\mathcal{G}$ term is shift-symmetric up to the four-dimensional topological Gauss–Bonnet integral). However, the matter coupling $A(\phi), B(\phi)$ explicitly changes under $\phi \to \phi + c$, so the full TEP action is not shift-symmetric unless the matter coupling is derivative-only or otherwise constructed to preserve the symmetry. The shift symmetry is a symmetry of the vacuum gravitational–scalar sector, broken by universal matter coupling; it does not by itself eliminate the cosmological constant problem for the scalar. The scalar equation of motion $\Box\phi = -\alpha_{\rm GB}\mathcal{G} = -(\eta M^2/3)\mathcal{G}$ on a Schwarzschild background admits the analytic solution
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:coupled_2}
+ \phi(r) = \frac{2\eta M}{3}\left(\frac{1}{r} + \frac{M}{r^2} + \frac{4M^2}{3r^3}\right),
+\end{equation}
+</div>
+
+<p>
+which is regular at the would-be horizon, vanishes as $1/r$ at infinity, and carries scalar charge $Q_s = 2\eta M/3 = 2\alpha_{\rm GB}/M$. The factor of $M$ is required for dimensional consistency: $\phi$ is dimensionless, $[\alpha_{\rm GB}] = L^2$, and $[Q_s/r] = L^{-1}$, so $Q_s = 2\alpha_{\rm GB}/M$ has dimensions of length. In code units ($M = 1$) this factor is invisible numerically, but it must be present analytically before any multi-mass comparison. This evades the no-hair theorem because the Gauss–Bonnet coupling provides a geometric source term absent in standard Einstein–scalar gravity. This is an exterior solution; the interior profile $\phi(r)$ for $r < r_h$ must come from the nonlinear field equations and cannot be obtained by extrapolating the Coulomb form. The perturbative sGB benchmark belongs to a horizon-bearing branch and therefore does not realise the target TEP temporal well. The true TEP solution must be a temporal well: $N \geq N_{\min} > 0$ everywhere.
+</p>
+
+<h2>4.2 Perturbative Metric Corrections</h2>
+<p>
+The metric corrections are the exact $\mathcal{O}(\alpha^2)$ perturbative solution of Sotiriou \& Zhou (2014), Phys. Rev. D 90, 124063, Eqs. (56)-(63). Writing $f(r) = 1-2m/r$ for the Schwarzschild lapse in terms of the horizon mass parameter $m$, the metric ansatz is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:coupled_3}
+ ds^2 = -f(r)\left[1+A_2(r)\alpha^2\right]^2 dt^2 + f(r)^{-1}\left[1+B_2(r)\alpha^2\right]^2 dr^2 + r^2 d\Omega^2,
+\end{equation}
+</div>
+
+<p>
+with $\alpha \equiv \alpha_{\rm GB}$ dimensionless in units of $r_H^2$ (i.e. $\beta \equiv \alpha_{\rm GB}/r_H^2$). Since the metric is unperturbed at $\mathcal{O}(\alpha)$ (the linear-order functions $A_1=B_1=0$ vanish identically), linearising in $\alpha^2$ gives
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:coupled_4}
+ g_{tt} = -F\left[1+\beta^2 h_2(x)\right], \qquad g_{rr} = F^{-1}\left[1+\beta^2 \sigma_2(x)\right], \qquad x \equiv \frac{r_H}{r},
+\end{equation}
+</div>
+
+<p>
+where $F = 1-r_H/r$ and, converting Sotiriou-Zhou's Eqs. (60)-(61) to this convention,
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:coupled_5}
+ h_2(x) = -\frac{98}{5}x - \frac{98}{5}x^2 - \frac{274}{15}x^3 - \frac{14}{15}x^4 + \frac{52}{15}x^5 + \frac{20}{3}x^6,
+\end{equation}
+</div>
+
+<div class="equation">
+ \begin{equation} \label{eq:coupled_6}
+ \sigma_2(x) = \frac{98}{5}x + \frac{58}{5}x^2 + \frac{38}{5}x^3 - \frac{406}{15}x^4 - \frac{436}{15}x^5 - \frac{92}{3}x^6.
+\end{equation}
+</div>
+
+<p>
+These polynomials are regular at the would-be horizon ($x=1$) — the correction to $g_{tt}$ vanishes there because it is multiplied by $F\to0$ — and vanish at infinity ($x=0$). The perturbative expansion is controlled by $\beta^2 = (\eta/12)^2 = 6.94 \times 10^{-5}$ for $\eta = -0.1$, with $\beta^2 |h_2(1)| \approx 0.0034 \ll 1$ (safely perturbative).
+</p>
+<p>
+ Sotiriou \& Zhou's Eq. (63) also gives the ADM mass shift at fixed horizon mass parameter $m$: $M_{\rm ADM} = m(1+\tfrac{49}{40}\alpha^2/m^4)$. Holding $M_{\rm ADM}=M=1$ fixed (the GR-calibrated exterior mass parameter used in the conditional sGB benchmark), the would-be horizon radius correspondingly shrinks: $r_H = 2m = 2M(1-19.6\,\beta^2) \approx 1.9973\,M$. This mass-shift term is the same order as $h_2,\sigma_2$ and is essential for a consistent $\mathcal{O}(\beta^2)$ result — omitting it changes the sign of the shadow deviation. The sGB backreaction contracts the apparent geometric horizon at fixed ADM mass — a property of the horizon-bearing branch on which the perturbative benchmark lives. The true TEP solution is a temporal well ($N \geq N_{\min} > 0$ everywhere); the observable predictions at $r \sim 3$–$6M$ are conditional on the GR-calibrated mass scale and have not been shown to be robust to the horizon/no-horizon distinction. Separately, the operational Temporal Horizon changes with the observer through the clock-transfer map defined in Section 6.
+</p>
+<p>
+ A critical result of Sotiriou \& Zhou's nonlinear (non-perturbative) integration of the same linear sGB coupling is that the interior does <em>not</em> develop a regular centre. Their exact numerical solutions develop a finite-area singularity at $r \approx 0.27\,r_h$ — a singularity at nonzero spherical radius, not a regular $r = 0$ centre. As they state: "nonlinear effects that are not captured by the perturbative solution lead to a finite area, as opposed to a central, singularity." This is a property of the standard linear shift-symmetric sGB coupling. The perturbative $\mathcal{O}(\alpha^2)$ solution used for the exterior observables does not capture this interior structure.
+</p>
+
+<h2>4.3 TEP Matter Metric on the Coupled Background</h2>
+<p>
+The disformal matter metric is constructed on the sGB-corrected geometric metric:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:coupled_7}
+ \tilde g_{\mu\nu} = A^2(\phi)\,g^{\rm sGB}_{\mu\nu} + B(\phi)\,\partial_\mu\phi\,\partial_\nu\phi.
+\end{equation}
+</div>
+
+<p>
+The conformal coupling is $A = e^{\beta_A\phi}$ with $\beta_A = -1$ — frozen consistently across all calculations, matching the wider TEP corpus weak-field value ($\beta \simeq -0.013$, with $\beta_A = -1$ as the strong-field limit). The sGB scalar profile is Coulomb-like ($\phi \sim Q_s/r$) in the exterior. TEP selects the mass-inflation branch with negative scalar charge ($Q_s < 0$), so $\phi < 0$ and $A = e^{-\phi} \sim e^{-Q_s/r} > 1$ in the exterior — the matter metric is conformally <em>magnified</em> relative to the geometric metric, approaching $A \to 1$ as $r \to \infty$. The disformal coupling uses an ultra-damped quartic Gaussian envelope: $B(\phi) = B_0\,|\phi|^2/(1+|\phi|^2)\,\exp(-\phi^4/2\sigma_B^4)$ with $\sigma_B = 1.5$ — frozen consistently across all calculations. In the exterior and near-horizon region, $A > 0$ ensures $\det\tilde g_{2D} = -A^4 G^2 < 0$ for the conformal metric (Lorentzianity inherited from $g$), and the Gaussian envelope suppresses $B$ sufficiently to maintain $\det \tilde g_{2D} < 0$ for the full disformal metric in the exterior ($F > 0$).
+</p>
+<div class="key-concept">
+ <h4>Assessment of the Exterior Conformal Factor</h4>
+ <p>
+ With $\beta_A = -1$ and the sGB scalar $\phi(r) = (2\alpha_{\rm GB}/m)(1/r + m/r^2 + 4m^2/(3r^3))$ (scalar charge $Q_s = 2\alpha_{\rm GB}/m$), the TEP mass-inflation branch has $\alpha_{\rm GB} < 0$ (hence $Q_s < 0$ and $\phi < 0$). The conformal factor at the shifted would-be horizon ($r = r_H = 1.9973\,M$, $\eta = -0.1$, $M = 1$) is $A(r_H) = e^{-\phi(r_H)} \approx e^{+0.061} \approx 1.063$ — a 6.3% deviation from unity. At the photon sphere ($r = 3M$), $A \approx 1.033$ (3.3% deviation); at the ISCO ($r = 6M$), $A \approx 1.013$ (1.3% deviation). The sGB scalar is $\mathcal{O}(\alpha_{\rm GB})$, so $A = e^{-\phi} = 1 - \phi + \mathcal{O}(\phi^2)$ modifies the matter metric at $\mathcal{O}(\alpha_{\rm GB})$, not $\mathcal{O}(\alpha_{\rm GB}^2)$. Matter-frame timelike observables (ISCO, clock rates, redshift) receive $\mathcal{O}(\eta)$ corrections, not only $\mathcal{O}(\eta^2)$. A dynamical screening mechanism connecting $\beta \simeq -0.013$ in the weak field to $\beta_A = -1$ in the strong field must be derived from the action, not imposed separately in the observational code. Until this is done, the exterior matter metric is substantially nontrivial and the observational predictions computed on the screened profile are not self-consistent with the sGB coupling.
+ </p>
+</div>
+<p>
+ The frame dictionary determines which metric each observable probes. Photons follow $\tilde g_{\mu\nu}$; massive accretion matter follows $\tilde g_{\mu\nu}$; tensor perturbations follow the tensor characteristic equations (which may or may not reduce to propagation on $g$). The current pipeline computes the shadow, ISCO, and QNM shifts on the geometric metric $g^{\rm sGB}$. This is correct for the tensor QNM (gravitational perturbation sector). For the shadow and ISCO, the correct calculation should use $\tilde g$, not $g$. However, for the pure conformal case with $A \to 1$ asymptotically, null geodesic paths are conformally invariant, so the photon sphere on $\tilde g = A^2 g$ is at the same location as on $g$ — the shadow shift computed on $g^{\rm sGB}$ equals the shadow shift on $\tilde g$ for the conformal sector. The ISCO for massive particles is not conformally invariant and must be recomputed on $\tilde g$; the current ISCO value on $g^{\rm sGB}$ is therefore indicative, not final. The disformal term may shift the photon sphere if it modifies the effective radial metric at the orbit location; this requires explicit derivation (Section 6.2). The tensor QNM must be computed on the tensor characteristic metric $\mathcal{G}_{\rm tensor}^{\mu\nu}$, which requires derivation from the coupled perturbation equations (Section 7).
+</p>
+<p>
+ The deep-interior determinant cannot be established from the exterior $\phi \sim Q_s/r$ profile alone. The Coulomb form is an asymptotic/exterior expression; extrapolating it to $r \to 0$ is not valid once nonlinear backreaction dominates. The actual interior $\phi(r)$ must come from the nonlinear field equations. The determinant proof for the deep interior therefore depends on the outcome of the interior integration (Section 4.6). If the interior solution develops a finite-area singularity (as in Sotiriou \& Zhou's nonlinear solutions), the matter metric analysis must be performed on the actual solved geometry up to that singularity, not on an extrapolated profile.
+</p>
+
+<h2>4.4 Inverse Reconstruction: The Structural Mandate for the Regular Core</h2>
+<p>
+ The fixed-background theorem establishes that the temporal field must modify the geometric metric. The inverse reconstruction answers the next question: what kind of modification produces a regular interior? By computing the effective stress-energy required to produce a Hayward-like regular metric, the inverse reconstruction identifies $w_r = -1$ as a sufficient regularity target — one sufficient condition, not a uniqueness theorem for every static or dynamical regular TEP interior.
+</p>
+<p>
+For the Hayward metric $F(r) = 1 - 2Mr^2/(r^3 + 2M\ell^2)$, the Einstein tensor $G_{\mu\nu}[\rm Hayward]$ is non-zero in the interior, defining an effective stress-energy $T^{\rm eff}_{\mu\nu} = G_{\mu\nu}/(8\pi G)$. Writing $F = 1 - 2m(r)/r$ with $m(r) = Mr^3/(r^3 + 2M\ell^2)$, the effective energy density is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:coupled_8}
+ \rho_{\rm eff} = -G^t_t = \frac{2m'(r)}{r^2} = \frac{1}{r^2}\left(1 - F - rF'\right) = \frac{12M^2\ell^2}{(r^3 + 2M\ell^2)^2}.
+\end{equation}
+</div>
+
+<p>
+At the centre ($r \ll \ell$), this gives $\rho_{\rm eff} \to 3/\ell^2$ — the energy density is finite, consistent with the finite Kretschmann scalar $K_{\rm Hayward}(0) = 24/\ell^4$. The de Sitter-like temporal minimum has constant energy density and constant curvature, the standard regular-centre profile.
+</p>
+<p>
+ The key diagnostic is the equation of state. The radial pressure satisfies $p_r = -\rho_{\rm eff}$ (from $G^r_r = G^t_t$), giving a radial EOS $w_r = -1$ — cosmological-constant-like. The tangential pressure differs: $p_\theta \neq p_r$, so the effective stress-energy is anisotropic. This anisotropic, $w_r = -1$ profile is the signature of a higher-curvature coupling: a scalar field's stress-energy, modified by the Gauss-Bonnet invariant, can in principle produce anisotropic effective pressure with a de Sitter-like radial component.
+</p>
+<p>
+ Four candidate mechanisms were evaluated: (i) nonlinear electrodynamics (Hayward's original derivation — requires a specific matter sector, not a scalar field); (ii) k-essence with non-canonical kinetic term (can produce $w = -1$ but lacks the higher-curvature channel); (iii) scalar-Gauss-Bonnet coupling $f(\phi)\mathcal{R}_{\rm GB}$ (the scalar field modifies the geometric metric through the Gauss-Bonnet invariant, can produce anisotropic stress with $w_r = -1$, and is known to produce scalar hair and regular horizons — Kanti, Mavromatos, Rizos, Tamvakis \& Winstanley 1996; Torii, Maeda \& Tamaoki 1999; Kleihaus, Kunz \& Radu 2011); (iv) $f(R)$ gravity (modified gravitational action, but does not naturally couple to the temporal scalar field). The sGB coupling is a candidate for TEP because it is already present in the scalar sector and allows the temporal field to modify the geometric metric through a higher-curvature channel.
+</p>
+<div class="key-concept">
+ <h4>What sGB does and does not establish</h4>
+ <p>
+ The sGB literature establishes: (a) scalar hair around black holes (Sotiriou \& Zhou 2014; Kanti et al. 1996); (b) real backreaction on the gravitational metric; (c) regular event horizons; (d) no naked singularities (Kanti et al. 1996). It does <em>not</em> establish a regular $r = 0$ centre. In much of this literature, "regular black hole solution" means regular outside the horizon and at the event horizon — not finite curvature everywhere. The follow-up to Kanti et al. (1998, Phys. Rev. D 57, 6255) explicitly notes that "other researchers confirmed these results by discussing the internal structure of the solutions behind the horizon, and demonstrating numerically the existence of curvature singularities." Sotiriou \& Zhou's (2014) nonlinear solutions for the same linear sGB coupling develop a finite-area singularity at $r \approx 0.27\,r_h$. More recent simulations (Thaalba, Franchini, Bezares \& Sotiriou 2024, Phys. Rev. D 111, 064054) confirm the finite-area singularity and explore a possible connection between the singularity and loss of hyperbolicity. The inverse reconstruction above identifies the stress-energy profile that a regular centre <em>would</em> require; it does not prove that standard linear sGB produces it.
+ </p>
+</div>
+
+<h2>4.5 Non-Perturbative Exterior Integration</h2>
+<p>
+ The perturbative solution treats the backreaction at $\mathcal{O}(\eta^2)$. The non-perturbative regime requires solving the full coupled Einstein-scalar-Gauss-Bonnet equations. The exterior integration ($r > r_h$) is implemented using a Radau stiff solver from $r = 30M$ inward to $r \approx 2.05M$, with the scalar boundary condition $\phi \sim Q_s/r$ at large $r$. The analytic scalar charge is $Q_s = 2\eta M/3$; the integration must use this charge consistently with $\eta$ and with one sign convention.
+</p>
+<div class="key-concept">
+ <h4>Correction to the Exterior Scalar Charge</h4>
+ <p>
+ The analytic scalar charge is $Q_s = 2\eta M/3$. The exterior integration must be performed with $Q_s = 2\eta M/3$, one consistent sign convention, correct units, horizon and infinity series matching, and constraint residuals verified against published sGB solutions (Sotiriou \& Zhou 2014; Kanti et al. 1996) before any mass-function evolution can be cited as quantitative evidence. The published perturbative solution (Sotiriou \& Zhou 2014, exact $\mathcal{O}(\alpha^2)$) remains the established evidence for scalar hair and real backreaction.
+ </p>
+</div>
+
+<h2>4.6 The Interior: Structural Mandate</h2>
+<p>
+ The fixed-background conformal theorem (Section 3) proves that the temporal field must backreact on the geometric metric. The inverse reconstruction (Section 4.4) identifies $w_r = -1$ as a sufficient regularity target, demonstrated by the Hayward benchmark. The TEP Global Solution Architecture (Section 6.6) — regular spatial domain, finite local density, continuous temporal-rate gradient, no finite-radius causal horizon ($N \geq N_{\min} > 0$ everywhere), extreme external redshift — is the target. This target is now realised numerically by the interior solver described below.
+</p>
+
+<h3>4.6A Failure of the Conventional sGB Continuation</h3>
+<p>
+ The standard linear sGB solution, continued through its GR-like horizon, develops the known interior problems. Inside the horizon, $f < 0$ so $r$ becomes timelike and the static ansatz $ds^2 = -f\,dt^2 + f^{-1}\,dr^2 + r^2\,d\Omega^2$ breaks down. The field equations develop $1/f$ singularities in Schwarzschild-like coordinates. The Kanti, Mavromatos, Rizos, Tamvakis \& Winstanley (1996) areal-radius formulation with the metric $ds^2 = -N^2(r)\,f\,dt^2 + f^{-1}\,dr^2 + r^2\,d\Omega^2$ is useful for horizon series matching and separate interior integrations, but the areal-radius gradient can become timelike inside the trapped region; the coordinate $r$ changes causal character across horizons, and the static ansatz is not itself a horizon-penetrating coordinate system. The known linear sGB solutions (Sotiriou \& Zhou 2014) develop a finite-area singularity rather than a regular centre, and hyperbolicity may fail (Thaalba et al. 2024). This indicates that standard linear sGB is a low-energy effective limit valid in the exterior but incomplete in the deep interior. This conventional continuation belongs to the sGB comparison, not the TEP temporal-well solution.
+</p>
+
+<h3>4.6B Required TEP Temporal-Well Boundary Problem</h3>
+<p>
+ For the intended TEP branch, the global conditions are imposed directly:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_boundary}
+ F(r) > 0, \qquad N(r) \geq N_{\min} > 0, \qquad \det\tilde g_{2D} < 0,
+ \end{equation}
+</div>
+<p>
+ with the regular-centre boundary conditions
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_centre}
+ R'(0) = 1, \qquad \phi'(0) = 0, \qquad 0 < N(0) = N_{\min} \ll 1,
+ \end{equation}
+</div>
+<p>
+ and finite curvature, finite local density. The solution is obtained from infinity or from a regular interior domain without crossing a finite-radius horizon. There is no need for horizon-penetrating coordinates in the target solution because no horizon exists. The sGB coupling is an exterior effective field theory; for the deep interior a regularisation is required to produce the $w_r = -1$ temporal minimum identified by the inverse reconstruction.
+</p>
+<p>
+ The static, spherically symmetric ansatz used throughout this section and in the interior solver is an imposed symmetry reduction, not a derived property of the theory. The TEP action is fully general: the temporal field $\phi$ responds to whatever mass-energy distribution exists, and the equilibrium temporal well is determined by the full coupled field equations. There is no theorem requiring the temporal well to be spherical, axisymmetric, or stationary. A real astrophysical source with angular momentum produces a temporal field that is neither spherical nor static; a binary merger produces a highly asymmetric, dynamical temporal gradient. The spherical case is the simplest solvable sector — it allows the regularity proof, the Frobenius analysis, and the deep-transit QNM spectrum (Section 7) to be computed exactly — but it is one point in a larger solution space, not the foundation from which other configurations are perturbative corrections. The rotating extension (Section 8.5) uses the Delgado et al. (2020) slowly-rotating shift-symmetric sGB solution, which provides the $\mathcal{O}(\beta^2)$ correction to the frame-dragging function from the coupled field equations; it is a second imposed symmetry case (axisymmetric, stationary), not the true TEP solution for a rotating source. The true solution requires the full field equations without symmetry assumptions.
+</p>
+<p>
+ The regular-geometry validation benchmark (Section 5, Appendix K) confirms that the TEP Global Solution Architecture is geometrically self-consistent. This is now extended by the interior solver, which integrates the sGB scalar field equation on a prescribed Hayward-class regular background (with regularization scale $g = 1.1M$) down to $r = 10^{-8}M$ for the mass-inflation branch $\eta = -0.1$. This is an integration <em>on</em> that background — the geometric metric $g_{\mu\nu}$ is prescribed as the Hayward profile, not dynamically produced by the sGB coupling from the full action. Standard linear sGB develops a finite-area singularity inside the horizon (Sotiriou \& Zhou 2014; Thaalba et al. 2024); the Hayward background bypasses this pathology by construction, providing a regular geometric metric on which the scalar field is solved. The matter metric has a regular centre: $A(0) = e^{-\phi(0)} = 4.68$, $\tilde N_{\min} = 0.211$ at $r \approx 1.41M$, $\rho_{\rm areal}(0) = A(0)r \to 4.68 \times 10^{-8}$, $w_r(0) = -1.000$ and $K(0) = 27.1$ (finite). This is an ordinary regular point, not a finite-area asymptotic end. The sGB scalar charge remains negative throughout the interior, so the matter metric is conformally magnified all the way to the temporal minimum, giving the positive-Phantom-Mass foundation required by the observational analysis. A full nonlinear backreacted solution — in which the geometric metric is dynamically generated by a modified coupling (e.g. nonlinear $f(\phi)\mathcal{G}$, or additional Ricci coupling $\xi R (\nabla\phi)^2$) — remains an open target. The regularisation scale $g$ is the key physical parameter: for $g > g_{\rm crit} = 1.058\,M$ the temporal well is fully horizonless (Section 8.1A), while for $g < g_{\rm crit}$ the well retains a horizon and the temporal gradient is steeper and more compact than the extreme Hayward threshold allows. The EHT visibility-domain fit (Section 8.1B) empirically bounds $g$ to this sub-critical regime, providing a data-driven constraint on the interior geometry.
+</p>
+
+<h2>4.7 The Exterior Effective Field Theory</h2>
+<p>
+ The sGB coupling serves as a low-energy effective field theory for the exterior. In the weak-to-moderate field regime (exterior and horizon), the TEP temporal field couples to curvature in a way that is well-approximated by the linear sGB action, producing scalar hair and real backreaction on the gravitational metric (Sotiriou \& Zhou 2014; Kanti et al. 1996). The perturbative $\mathcal{O}(\alpha^2)$ exterior solution provides the observable shifts that constitute the conditional sGB benchmark. In the extreme strong-field regime (deep interior), the linear sGB approximation breaks down — the literature confirms that standard linear sGB develops a finite-area singularity (Sotiriou \& Zhou 2014) and may lose hyperbolicity (Thaalba et al. 2024). A complete TEP action is required to derive the temporal-well profile. The exterior observables (Section 4.8) are leading-order effective field theory estimates; the exact quantitative predictions require the full coupled derivation on the matter metric $\tilde g$ (Sections 7, 8).
+</p>
+
+<h2>4.8 Conditional GR-Calibrated sGB Exterior Benchmark</h2>
+<p>
+ The sGB corrections shift the exterior observables away from their Schwarzschild values. These are <em>conditional predictions</em> of the sGB benchmark at fixed GR-calibrated mass scale, not the primary TEP prediction. Their purpose is: (i) to demonstrate that a temporal scalar can backreact on $g_{\mu\nu}$; (ii) to establish scalar hair; (iii) to quantify the observable shifts when the conventional mass scale is held fixed; (iv) to provide a consistency benchmark for later TEP-native inference. All numbers use fixed-ADM mass normalization ($M_{\rm ADM} = M$ held fixed; the would-be horizon shifts to $r_H = 2M(1 - 19.6\,\beta^2)$). For the mass-inflation branch $\eta = -0.1$ (perturbative regime: $\beta^2 |h_2(1)| \approx 0.0034 \ll 1$) the pipeline reports:
+</p>
+<table class="data-table">
+ <thead>
+ <tr><th>Observable</th><th>Schwarzschild</th><th>sGB ($\eta=-0.1$)</th><th>Deviation</th><th>Metric / Order</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Horizon $r_H/M$</td><td>2.000</td><td>1.9973</td><td>$-0.136\%$</td><td>Fixed-ADM shift (TEP signature)</td></tr>
+ <tr><td>Photon sphere $r_{\rm ph}/M$</td><td>3.000</td><td>2.9974</td><td>$-0.087\%$</td><td>$g^{\rm sGB}$ (= $\tilde g$ for null), O($\eta^2$)</td></tr>
+ <tr><td>Shadow radius $b/M$</td><td>5.196</td><td>5.194</td><td>$-0.044\%$</td><td>$g^{\rm sGB}$ (= $\tilde g$ for null), O($\eta^2$)</td></tr>
+ <tr><td>ISCO $r_{\rm ISCO}/M$ (on $g^{\rm sGB}$)</td><td>6.000</td><td>5.996</td><td>$-0.061\%$</td><td>$g^{\rm sGB}$ — geometric metric, O($\eta^2$)</td></tr>
+ <tr><td>ISCO $r_{\rm ISCO}/M$ (on $\tilde g$)</td><td>6.000</td><td>6.117</td><td>$+1.95\%$</td><td>$\tilde g = A^2 g^{\rm sGB}$ — matter metric, O($\eta$)</td></tr>
+ <tr><td>Gravitational tensor QNM $\omega_R$ (l=2)</td><td>0.3737</td><td>—</td><td>$\sim +0.136\%$</td><td>Horizon-shift estimate; needs coupled spectral solver (Appendix L)</td></tr>
+ </tbody>
+</table>
+<p>
+ The corrected Regge–Wheeler potential comes from the metric perturbations $h_2(x)$ and $\sigma_2(x)$ (Sotiriou \& Zhou 2014, Eqs. 60–61), not from the scalar gradient directly. The correction is $\mathcal{O}(\beta^2) = \mathcal{O}(\eta^2)$ where $\beta = \eta/12$. The dominant effect is the would-be horizon shift $r_H = 2M(1 - 19.6\,\beta^2)$, which shifts the potential and hence the QNM frequency. A QNM frequency shift of $\sim +0.136\%$ at $\eta = -0.1$ is estimated from the would-be horizon shift; a precise value requires the coupled spectral calculation with a coupled spectral solver on the corrected potential (Appendix L). The horizonless temporal well alters the late-time ringdown spectrum (Section 7.3).
+</p>
+<p>
+ The conditional sGB benchmark produces observable shifts at different coupling orders. Both photons and massive particles propagate on $\tilde g_{\mu\nu}$, but because null geodesics are conformally invariant, the conformal factor cancels in the photon orbital equations: the shadow deviation is $-0.044\%$ (sensitive only to the underlying $g^{\rm sGB}$ geometry, $\mathcal{O}(\eta^2)$). The ISCO deviation on $\tilde g$ is $+1.95\%$ (massive particles feel the conformal factor $A = e^{-\phi} > 1$ directly, $\mathcal{O}(\eta)$). Under fixed-ADM normalization the shadow contracts, but the matter-metric ISCO expands because the conformal factor magnifies spatial scales. The ISCO shift is $\sim 44\times$ larger than the shadow shift because the conformal factor contributes at $\mathcal{O}(\eta)$, not $\mathcal{O}(\eta^2)$. This coupling-order difference is a property of the sGB benchmark (Section 6.2). All numbers scale as $\eta^2$ for the shadow and geometric-metric ISCO, and as $|\eta|$ for the matter-metric ISCO. Within current observational constraints ($\alpha_{\rm GB} < 2.9$ km$^2$), the observable shifts are largest for low-mass stellar black holes ($M \sim 10\,M_\odot$). The explicit derivation is in Appendix L.
+</p>

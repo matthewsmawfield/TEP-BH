@@ -1,0 +1,120 @@
+{
+  "A_at_6M": 1.0,
+  "B_at_6M": 9.062831441342095e-35,
+  "dependencies": [
+    "step_01_field_equations"
+  ],
+  "description": "Compute circular timelike geodesic properties, epicyclic frequencies, ISCO, radiative efficiency, redshift profile, and QPO frequency ratios for the TEP disformal metric",
+  "epicyclic_at_10M": {
+    "Omega_r": 0.01999570668063879,
+    "Omega_theta": 0.03160920624205434,
+    "ratio": 0.6325912307799613
+  },
+  "epicyclic_at_20M": {
+    "Omega_r": 0.009360310003749537,
+    "Omega_theta": 0.011188939709714235,
+    "ratio": 0.8365680972990602
+  },
+  "epicyclic_at_50M": {
+    "Omega_r": 0.0026532998322843205,
+    "Omega_theta": 0.0028284271247461905,
+    "ratio": 0.938083151964686
+  },
+  "epicyclic_at_6M": {
+    "Omega_r": 0.0,
+    "Omega_theta": 0.06807534776232708,
+    "ratio": 0.0
+  },
+  "epicyclic_profiles": {
+    "at_10M": {
+      "Omega_r": 0.01999570668063879,
+      "Omega_theta": 0.03160920624205434,
+      "ratio": 0.6325912307799613
+    },
+    "at_20M": {
+      "Omega_r": 0.009360310003749537,
+      "Omega_theta": 0.011188939709714235,
+      "ratio": 0.8365680972990602
+    },
+    "at_50M": {
+      "Omega_r": 0.0026532998322843205,
+      "Omega_theta": 0.0028284271247461905,
+      "ratio": 0.938083151964686
+    },
+    "at_6M": {
+      "Omega_r": 0.0,
+      "Omega_theta": 0.06807534776232708,
+      "ratio": 0.0
+    }
+  },
+  "isco_detail": {
+    "E_isco": 0.9428090415820634,
+    "L_isco_M": 3.4641016151377544,
+    "Omega_isco_per_M": 0.06804138174397717,
+    "formulas": {
+      "E_isco": "sqrt(8/9) ~ 0.9428",
+      "L_isco": "2*sqrt(3)*M ~ 3.464*M",
+      "Omega_isco": "1/(6*sqrt(6)*M) ~ 0.0680/M",
+      "eta": "1 - E_isco ~ 5.72%",
+      "g_redshift": "sqrt(1 - 2M/r_ISCO) = sqrt(2/3) ~ 0.8165"
+    },
+    "r_isco_M": 6.0,
+    "radiative_efficiency": 0.057190958417936644,
+    "radiative_efficiency_percent": 5.719095841793664,
+    "redshift_factor_isco": 0.816496580927726,
+    "redshift_z_isco": 0.22474487139158894
+  },
+  "isco_properties": {
+    "E_isco": 0.9428090415820634,
+    "L_isco": 3.4641016151377544,
+    "Omega_isco": 0.06804138174397717,
+    "r_isco": 6.0,
+    "radiative_efficiency": 0.057190958417936644,
+    "radiative_efficiency_percent": 5.719095841793664,
+    "redshift_factor_isco": 0.816496580927726,
+    "redshift_z_isco": 0.22474487139158894
+  },
+  "key_result": "ISCO at r=6M with eta=5.72% radiative efficiency; epicyclic frequencies and 3:2 QPO resonance match Schwarzschild (conformal factor A cancels in exterior)",
+  "model": {
+    "B0": 1.0,
+    "B_type": "gaussian_bump",
+    "M": 1.0,
+    "beta_A": -1.0,
+    "delta": 0.05,
+    "n_B": 2.0,
+    "phi_0": 2.0,
+    "r_h": 2.0,
+    "sigma_B": 1.5
+  },
+  "n_points": 20000,
+  "note": "Exterior orbital dynamics are Schwarzschild (conformal factor A cancels). TEP modifications are interior (r < 2M) and do not affect observable orbital dynamics.",
+  "qpo_analysis": {
+    "f_lower_at_resonance": 0.002987774272206048,
+    "f_orbital_at_resonance": 0.004481661408309072,
+    "f_upper_at_resonance": 0.004481661408309072,
+    "has_32_resonance": true,
+    "note": "3:2 QPO ratio from epicyclic frequencies (Schwarzschild exterior)",
+    "r_32_resonance": 10.804070088867054,
+    "ratio_at_resonance": 0.666823614071578
+  },
+  "qpo_frequency_scaling": {
+    "Omega_isco_Hz": 219.8520897281467,
+    "f_lower_at_resonance_Hz": 9.653954704390411,
+    "f_orbital_at_resonance_Hz": 14.480932056585617,
+    "f_orbital_isco_Hz": 219.85208972814667,
+    "f_upper_at_resonance_Hz": 14.480932056585617,
+    "freq_scale_Hz_per_Omega": 3231.1526323112535,
+    "frequency_conversion": "f_Hz = Omega / (2*pi) * c^3 / (G * M_kg)",
+    "reference_BH_mass_Msun": 10.0
+  },
+  "r_max": 49.99999999999999,
+  "r_min": 1e-08,
+  "radial_grid": {
+    "n_points": 20000,
+    "r_max_M": 49.99999999999999,
+    "r_min_M": 1e-08
+  },
+  "status": "success",
+  "step": "step_04_accretion",
+  "timestamp": "2026-07-29T01:18:12.440561"
+}

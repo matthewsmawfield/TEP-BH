@@ -1,0 +1,159 @@
+{
+  "compiled_measurements": {
+    "eht": "data/processed/eht_measurements.json",
+    "ligo": "data/processed/ligo_qnm_measurements.json"
+  },
+  "dependencies": [],
+  "description": "Download public observational data (EHT M87*/Sgr A*, LIGO/Virgo GWTC) and compile measurement reference tables",
+  "files": [
+    {
+      "citation": "EHT Collaboration 2019, First M87 EHT Results: Calibrated Data (2019-D01-01). DOI: 10.25739/g85n-f134.",
+      "domain": "eht_m87",
+      "optional": false,
+      "sha256": "6fe88630bb531ec543bf3108cd21ba4baaea448eec1c0e4e7d4368d8ef0c97c3",
+      "size_bytes": 4955,
+      "source_id": "eht_m87_2017_csv_readme",
+      "status": "downloaded",
+      "target": "eht_m87_2019_D01-01_README.md",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/README.md"
+    },
+    {
+      "citation": "EHT Collaboration 2019, M87* April 5 2017 low-band calibrated visibilities.",
+      "domain": "eht_m87",
+      "optional": false,
+      "sha256": "e11231fbb09a29762dbb318a733be329a1dfea2ba2cad4e13a6208766b0134a8",
+      "size_bytes": 528479,
+      "source_id": "eht_m87_2017_csv_day095_lo",
+      "status": "downloaded",
+      "target": "eht_m87/SR1_M87_2017_095_lo_hops_netcal_StokesI.csv",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/csv/SR1_M87_2017_095_lo_hops_netcal_StokesI.csv"
+    },
+    {
+      "citation": "EHT Collaboration 2019, M87* April 6 2017 low-band calibrated visibilities.",
+      "domain": "eht_m87",
+      "optional": false,
+      "sha256": "fd4d1b39ab2e561f502d70c93667d67a525aa9ac4af432ceed01669e039911c5",
+      "size_bytes": 708585,
+      "source_id": "eht_m87_2017_csv_day096_lo",
+      "status": "downloaded",
+      "target": "eht_m87/SR1_M87_2017_096_lo_hops_netcal_StokesI.csv",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/csv/SR1_M87_2017_096_lo_hops_netcal_StokesI.csv"
+    },
+    {
+      "citation": "EHT Collaboration 2019, M87* April 10 2017 low-band calibrated visibilities.",
+      "domain": "eht_m87",
+      "optional": false,
+      "sha256": "1dc51e3e31a840ec34de5b5ff4d8a6af0cbb73cd8c6db85e917366ed3ec7924a",
+      "size_bytes": 194347,
+      "source_id": "eht_m87_2017_csv_day100_lo",
+      "status": "downloaded",
+      "target": "eht_m87/SR1_M87_2017_100_lo_hops_netcal_StokesI.csv",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/csv/SR1_M87_2017_100_lo_hops_netcal_StokesI.csv"
+    },
+    {
+      "citation": "EHT Collaboration 2019, M87* April 11 2017 low-band calibrated visibilities.",
+      "domain": "eht_m87",
+      "optional": false,
+      "sha256": "6411680cdd4a0b6a651b56c8ada9069ae49659935877ff7e03acb9b173a80bb2",
+      "size_bytes": 610274,
+      "source_id": "eht_m87_2017_csv_day101_lo",
+      "status": "downloaded",
+      "target": "eht_m87/SR1_M87_2017_101_lo_hops_netcal_StokesI.csv",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/csv/SR1_M87_2017_101_lo_hops_netcal_StokesI.csv"
+    },
+    {
+      "citation": "EHT Collaboration 2024, A&A 681, A79. Table 9: Ring parameters for 2018 April 21.",
+      "domain": "eht_m87",
+      "optional": true,
+      "sha256": "75e13064c526e39a680ca819c98252104128c42089dbe80d172eccce6100272e",
+      "size_bytes": 78308,
+      "source_id": "eht_m87_2018_table9",
+      "status": "downloaded",
+      "target": "eht_m87/EHT_M87_2018_ring_parameters_table9.html",
+      "url": "https://www.aanda.org/articles/aa/full_html/2024/01/aa47932-23/T9.html"
+    }
+  ],
+  "key_result": "6 downloaded, 0 cached, 0 failed of 6 sources; EHT and LIGO measurement tables compiled",
+  "n_cached": 0,
+  "n_downloaded": 6,
+  "n_failed": 0,
+  "n_optional_failed": 0,
+  "n_sources": 6,
+  "sources": [
+    {
+      "citation": "EHT Collaboration 2019, First M87 EHT Results: Calibrated Data (2019-D01-01). DOI: 10.25739/g85n-f134.",
+      "domain": "eht_m87",
+      "error": "",
+      "optional": false,
+      "sha256": "6fe88630bb531ec543bf3108cd21ba4baaea448eec1c0e4e7d4368d8ef0c97c3",
+      "size_bytes": 4955,
+      "source_id": "eht_m87_2017_csv_readme",
+      "status": "downloaded",
+      "target": "eht_m87_2019_D01-01_README.md",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/README.md"
+    },
+    {
+      "citation": "EHT Collaboration 2019, M87* April 5 2017 low-band calibrated visibilities.",
+      "domain": "eht_m87",
+      "error": "",
+      "optional": false,
+      "sha256": "e11231fbb09a29762dbb318a733be329a1dfea2ba2cad4e13a6208766b0134a8",
+      "size_bytes": 528479,
+      "source_id": "eht_m87_2017_csv_day095_lo",
+      "status": "downloaded",
+      "target": "eht_m87/SR1_M87_2017_095_lo_hops_netcal_StokesI.csv",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/csv/SR1_M87_2017_095_lo_hops_netcal_StokesI.csv"
+    },
+    {
+      "citation": "EHT Collaboration 2019, M87* April 6 2017 low-band calibrated visibilities.",
+      "domain": "eht_m87",
+      "error": "",
+      "optional": false,
+      "sha256": "fd4d1b39ab2e561f502d70c93667d67a525aa9ac4af432ceed01669e039911c5",
+      "size_bytes": 708585,
+      "source_id": "eht_m87_2017_csv_day096_lo",
+      "status": "downloaded",
+      "target": "eht_m87/SR1_M87_2017_096_lo_hops_netcal_StokesI.csv",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/csv/SR1_M87_2017_096_lo_hops_netcal_StokesI.csv"
+    },
+    {
+      "citation": "EHT Collaboration 2019, M87* April 10 2017 low-band calibrated visibilities.",
+      "domain": "eht_m87",
+      "error": "",
+      "optional": false,
+      "sha256": "1dc51e3e31a840ec34de5b5ff4d8a6af0cbb73cd8c6db85e917366ed3ec7924a",
+      "size_bytes": 194347,
+      "source_id": "eht_m87_2017_csv_day100_lo",
+      "status": "downloaded",
+      "target": "eht_m87/SR1_M87_2017_100_lo_hops_netcal_StokesI.csv",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/csv/SR1_M87_2017_100_lo_hops_netcal_StokesI.csv"
+    },
+    {
+      "citation": "EHT Collaboration 2019, M87* April 11 2017 low-band calibrated visibilities.",
+      "domain": "eht_m87",
+      "error": "",
+      "optional": false,
+      "sha256": "6411680cdd4a0b6a651b56c8ada9069ae49659935877ff7e03acb9b173a80bb2",
+      "size_bytes": 610274,
+      "source_id": "eht_m87_2017_csv_day101_lo",
+      "status": "downloaded",
+      "target": "eht_m87/SR1_M87_2017_101_lo_hops_netcal_StokesI.csv",
+      "url": "https://raw.githubusercontent.com/eventhorizontelescope/2019-D01-01/master/csv/SR1_M87_2017_101_lo_hops_netcal_StokesI.csv"
+    },
+    {
+      "citation": "EHT Collaboration 2024, A&A 681, A79. Table 9: Ring parameters for 2018 April 21.",
+      "domain": "eht_m87",
+      "error": "",
+      "optional": true,
+      "sha256": "75e13064c526e39a680ca819c98252104128c42089dbe80d172eccce6100272e",
+      "size_bytes": 78308,
+      "source_id": "eht_m87_2018_table9",
+      "status": "downloaded",
+      "target": "eht_m87/EHT_M87_2018_ring_parameters_table9.html",
+      "url": "https://www.aanda.org/articles/aa/full_html/2024/01/aa47932-23/T9.html"
+    }
+  ],
+  "status": "success",
+  "step": "step_00_data_download",
+  "timestamp": "2026-07-29T01:18:11.953619"
+}

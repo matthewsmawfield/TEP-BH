@@ -1,0 +1,163 @@
+<h1>Appendix H — Ray Tracing and Orbital Mechanics</h1>
+<p>
+ This appendix records the photon-sphere, ISCO, and QPO calculations together with the EHT shadow-size central-value comparisons. The reported pipeline configuration imposes exterior screening, $A=1$ and $B=0$, over the ray and orbit domains, so these calculations reproduce the Schwarzschild baseline. Gravitational ringdown is separately governed by the geometric metric $g_{\mu\nu}$, which is fixed at Schwarzschild here.
+</p>
+
+<h2>H.1 Photon Sphere</h2>
+<p>
+Null geodesics of the matter metric $\tilde g_{\mu\nu}$ reduce to Schwarzschild null geodesics on the screened exterior used by the pipeline, where $A=1$ and $B=0$. The photon sphere is therefore at
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_1}
+ r_{\rm ph} = 3\,M,
+\end{equation}
+</div>
+
+<p>
+and the critical impact parameter for the shadow edge is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_2}
+ b_{\rm crit} = \frac{r_{\rm ph}}{\sqrt{1 - 2M/r_{\rm ph}}} = 3\sqrt{3}\,M = 5.196\,M.
+\end{equation}
+</div>
+
+<p>
+These are baseline values. The current exterior-null ray tracing does not calculate a subleading disformal correction to the shadow edge.
+</p>
+
+<h2>H.2 ISCO and Radiative Efficiency</h2>
+<p>
+On the exterior-screened baseline, the innermost stable circular orbit (ISCO) for timelike geodesics is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_3}
+ r_{\rm ISCO} = 6\,M.
+\end{equation}
+</div>
+
+<p>
+The specific energy and angular momentum at the ISCO are
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_4}
+ E_{\rm ISCO} = \sqrt{\frac{8}{9}} = 0.9428, \qquad L_{\rm ISCO} = 2\sqrt{3}\,M = 3.464\,M.
+\end{equation}
+</div>
+
+<p>
+The radiative efficiency — the fraction of rest-mass energy liberated by accretion onto the ISCO — is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_5}
+ \eta = 1 - E_{\rm ISCO} = 1 - \sqrt{\frac{8}{9}} = 0.0572 = 5.72\%.
+\end{equation}
+</div>
+
+<p>
+These are standard Schwarzschild values resulting from screening over the orbit domain. They do not imply that a nonconstant conformal factor would exactly cancel from timelike geodesics.
+</p>
+
+<h2>H.3 Redshift Factor at ISCO</h2>
+<p>
+The gravitational redshift factor at the ISCO is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_6}
+ g = \sqrt{1 - \frac{2M}{r_{\rm ISCO}}} = \sqrt{1 - \frac{1}{3}} = \sqrt{\frac{2}{3}} = 0.816.
+\end{equation}
+</div>
+
+<p>
+The corresponding redshift is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_7}
+ z = \frac{1}{g} - 1 = \sqrt{\frac{3}{2}} - 1 = 0.225.
+\end{equation}
+</div>
+
+<p>
+These are the standard Schwarzschild ISCO values, confirming that the iron-line and reflection spectroscopy signatures of the TEP exterior are identical to GR at the ISCO.
+</p>
+
+<h2>H.4 3:2 QPO Resonance</h2>
+<p>
+Quasi-periodic oscillations (QPOs) from black-hole accretion disks often appear in a 3:2 frequency ratio, interpreted as a resonance between the radial and vertical epicyclic frequencies. For the TEP exterior (Schwarzschild), the resonance condition $\Omega_r / \Omega_\theta = 2/3$ is satisfied at
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_8}
+ r_{\rm QPO} = 10.8\,M,
+\end{equation}
+</div>
+
+<p>
+where the epicyclic frequency ratio is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appH_9}
+ \frac{\Omega_r}{\Omega_\theta}\bigg|_{r=10.8\,M} = 0.667 = \frac{2}{3}.
+\end{equation}
+</div>
+
+<p>
+This is the standard Schwarzschild 3:2 resonance radius. The TEP disformal interior does not affect this radius because it is well outside the horizon.
+</p>
+
+<h2>H.5 EHT Shadow Comparisons</h2>
+<p>
+ The shadow angular diameter is computed from the critical impact parameter $b_{\rm crit} = 5.196\,M$ and the source distance and mass. The pipeline evaluates the shadow size for the two EHT targets:
+</p>
+<table class="data-table">
+ <thead>
+ <tr><th>Source</th><th>TEP prediction</th><th>EHT measurement</th><th>Deviation</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>M87*</td><td>$39.69\;\mu\text{as}$</td><td>$42 \pm 3\;\mu\text{as}$</td><td>$0.77\sigma$</td></tr>
+ <tr><td>Sgr A*</td><td>$53.26\;\mu\text{as}$</td><td>$48.7 \pm 7.0\;\mu\text{as}$</td><td>$0.65\sigma$</td></tr>
+ </tbody>
+</table>
+<p>
+ The exterior-screened central values, $39.69\;\mu$as for M87* and $53.26\;\mu$as for Sgr A*, lie within the quoted measurement intervals $42\pm3\;\mu$as and $48.7\pm7.0\;\mu$as, respectively. These are central-value checks; a full likelihood analysis would propagate correlated mass, distance, calibration, and imaging systematics. The fixed-background limit reproduces the Schwarzschild baseline; the coupled solution (Section 4) provides TEP-specific shadow deviations of $-0.044\%$ for $\eta=-0.1$ on $g^{\rm sGB}$ (Appendix L).
+</p>
+
+<h2>H.6 Gravitational Ringdown Baseline</h2>
+<p>
+ Gravitational waves propagate on the geometric metric, not on the matter metric used for ray tracing. Since the fixed-background limit holds the geometric metric at Schwarzschild, its non-spinning gravitational ringdown is the Schwarzschild GR baseline. GW150914 produced a spinning remnant and must be compared with the appropriate geometric Kerr spectrum. The coupled solution (Section 4) provides coupling-specific QNM shifts of sub-percent to percent-level.
+</p>
+
+<h2>H.7 Summary of Orbital and Observational Predictions</h2>
+<table class="data-table">
+ <thead>
+ <tr><th>Observable</th><th>Value</th><th>vs Schwarzschild</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Photon sphere</td><td>$r = 3\,M$</td><td>identical</td></tr>
+ <tr><td>Critical impact parameter</td><td>$b = 5.196\,M$</td><td>identical</td></tr>
+ <tr><td>ISCO</td><td>$r = 6\,M$</td><td>identical</td></tr>
+ <tr><td>ISCO energy</td><td>$E = \sqrt{8/9} = 0.9428$</td><td>screened baseline</td></tr>
+ <tr><td>ISCO angular momentum</td><td>$L = 3.464\,M$</td><td>identical</td></tr>
+ <tr><td>Radiative efficiency</td><td>$\eta = 5.72\%$</td><td>identical</td></tr>
+ <tr><td>Redshift factor at ISCO</td><td>$g = 0.816$</td><td>identical</td></tr>
+ <tr><td>Redshift at ISCO</td><td>$z = 0.225$</td><td>identical</td></tr>
+ <tr><td>3:2 QPO resonance</td><td>$r = 10.8\,M$</td><td>identical</td></tr>
+ <tr><td>M87* shadow</td><td>$39.69\;\mu$as</td><td>$0.77\sigma$ from EHT</td></tr>
+ <tr><td>Sgr A* shadow</td><td>$53.26\;\mu$as</td><td>$0.65\sigma$ from EHT</td></tr>
+ <tr><td>GW150914 $f_{220}$ (non-spinning WKB diagnostic)</td><td>$206.5\,$Hz</td><td>Schwarzschild baseline (0% shift)</td></tr>
+ <tr><td>GW150914 $f_{220}$ (Kerr, $\chi=0.67$)</td><td>$267\,$Hz</td><td>Kerr baseline; measured $\sim 250\,$Hz</td></tr>
+ </tbody>
+</table>
+<div class="key-concept">
+ <p>
+ The exterior orbital structure (photon sphere at $3M$, ISCO at $6M$, 3:2 QPO at $10.8M$) is identical to Schwarzschild. EHT shadows agree at $0.77\sigma$ (M87*) and $0.65\sigma$ (Sgr A*). The gravitational QNM baseline is the Schwarzschild spectrum for non-spinning remnants; for GW150914's spinning remnant ($\chi=0.67$) the appropriate baseline is Kerr, giving $f_{220}\approx 267\,$Hz (step_14) versus the measured $\sim 250\,$Hz. The non-spinning WKB diagnostic $f_{220}=206.5\,$Hz (step_05, $\omega_R^{\rm WKB}=0.3988$) is not the physical prediction for a spinning remnant and carries $\sim 7\%$ WKB systematic error relative to the exact Schwarzschild value $\omega_R^{\rm exact}=0.3737$. There is no coupling-specific ringdown frequency shift in this fixed-background limit.
+ </p>
+</div>

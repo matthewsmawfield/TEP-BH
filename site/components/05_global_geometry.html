@@ -1,0 +1,106 @@
+<h1>5. Global Geometry and Curvature Regularity</h1>
+<p>
+ The geometry of the TEP matter metric is validated on a regular-geometry benchmark. The fixed-background theorem (Section 3) proves that curvature regularity and bounded areal radius are mutually exclusive on fixed Schwarzschild. The validation benchmark (Hayward class, Appendix K) confirms they are mutually compatible once the geometric singularity is absent. All benchmark results below use the logarithmic scalar profile ($\phi_0 = 1$). In addition, the sGB-coupled interior has now been integrated down to $r = 10^{-8}M$ by (Section 4.6); that numerical result gives a genuine regular point centre rather than a finite-area asymptotic end.
+</p>
+
+<h2>5.1 The Determinant: Global Lorentzian Signature</h2>
+<p>
+For a static radial scalar on the regular geometric background, the radial-block determinant of the matter metric is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:global_1}
+ \det\tilde g_{2D} = -A^4 G^2 - A^2 B\,F\,(\phi')^2,
+\end{equation}
+</div>
+
+<p>
+where $F$ and $G$ are the metric functions of the geometric background. The conformal term $-A^4 G^2$ is strictly negative, and the disformal correction $-A^2 B F (\phi')^2$ is controlled by the quartic Gaussian damping of $B(\phi)$. The determinant is strictly negative at every radius:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:global_2}
+ \det\tilde g_{2D} < 0 \quad \text{for all } r > 0.
+\end{equation}
+</div>
+
+<p>
+The space is globally Lorentzian. There is no determinant-zero boundary, no signature change, and no invertibility obstruction at any radius from the deep temporal region to the centre. The quartic Gaussian envelope $\exp(-\phi^4/2\sigma_B^4)$ suppresses $B$ below $10^{-300}$ in the deep interior, so the conformal term $A^4$ dominates everywhere and the disformal correction never crosses it. No curvature tensor or geodesic equation of $\tilde g$ encounters a degeneracy. The TEP object is a temporal well: $N(r) = \sqrt{-\tilde g_{tt}} > 0$ everywhere, with the lapse becoming extraordinarily small inward but never vanishing at a finite-radius boundary.
+</p>
+
+<h2>5.2 The Kretschmann Scalar: Finite de Sitter-Like Core</h2>
+<p>
+On the regular geometric background with $\phi_0 = 1$, the Kretschmann scalar of the matter metric approaches a finite value at the centre:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:global_3}
+ \tilde K \to 8/r_h^4 = 0.5 \quad \text{as } r \to 0.
+\end{equation}
+</div>
+
+<p>
+This is the de Sitter-like temporal minimum: the curvature is finite and bounded, in stark contrast to the Schwarzschild value $K_{\rm Schw} = 48\,M^2/r^6 \to \infty$. The finite Kretschmann scalar is the direct consequence of the regular geometric background. The effective anisotropic stress-energy with $w_r = -1$ supports a de Sitter-like temporal minimum of constant curvature that replaces the classical singularity. All curvature invariants — the Ricci scalar, the Gauss-Bonnet invariant, and the full Riemann contraction — remain finite throughout the interior.
+</p>
+
+<h2>5.3 The Areal Radius: Bounded Space</h2>
+<p>
+The areal radius of the matter metric is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:global_4}
+ \rho = A\,r.
+\end{equation}
+</div>
+
+<p>
+On the regular geometric background with $\phi_0 = 1$, the areal radius remains bounded:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:global_5}
+ \rho \to 1.995 \quad \text{as } r \to 0.
+\end{equation}
+</div>
+
+<p>
+The interior space does not open without limit. This is the essential distinction from the fixed-geometry limit: on a Schwarzschild background with $\phi_0 = 2$, the conformal scaling $A \sim r^{-2}$ drives the areal radius to diverge ($\rho \sim r_h^2/r \to \infty$), illustrating the fixed-background theorem (Section 3) — curvature regularity and bounded areal radius are mutually exclusive when the geometric metric is held fixed. On the regular background, the geometric metric itself is regular, and both conditions are satisfied simultaneously: the curvature is finite and the areal radius is bounded.
+</p>
+<p>
+ A classification point must be stated precisely. At an ordinary regular spherical centre one has $\rho \to 0$ as $r \to 0$. Here $\rho \to 1.995 \neq 0$: the limiting areal radius is nonzero. Because $A \sim 1/r$ in the deep interior, the radial proper distance also behaves as $\tilde\ell \sim \int dr/r \to \infty$. The limiting region is therefore not a point-like centre but a finite-area asymptotic end (a tube-like limiting region of infinite radial extent). This is a property of the $\phi_0 = 1$ benchmark only. The full coupled interior solution (Section 4.6) produces an ordinary regular point centre with $\rho_{\rm areal}(0) \to 4.68 \times 10^{-8}$ for $\eta=-0.1$, $g=1.1M$; the benchmark classification is reported here as computed.
+</p>
+<div class="key-concept">
+ <p>
+ The regular geometry resolves both aspects of the fixed-background theorem. The de Sitter-like temporal minimum provides finite curvature ($\tilde K \to 8/r_h^4 = 0.5$) and the regular geometric metric provides bounded space ($\rho \to 1.995$). The fixed-background limit ($\phi_0 = 2$ on Schwarzschild) illustrates why backreaction is necessary; the validation benchmark ($\phi_0 = 1$ on a Hayward background) confirms both conditions are achievable.
+ </p>
+</div>
+
+<h2>5.4 The Density Inference and Frame Dependence</h2>
+<p>
+The classical density estimate $M/(4\pi r^3/3)$ uses the Schwarzschild areal coordinate and presupposes that the geometric metric governs matter. In a two-metric theory this is not a locally measured matter density. Where a Lorentzian matter metric exists, the physical density is defined from a specified stress tensor and a spacelike hypersurface with induced metric $\tilde\gamma_{ij}$:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:global_6}
+ d\tilde V = \sqrt{\det\tilde\gamma_{ij}}\,d^3x,\qquad \tilde\rho = \tilde T_{\mu\nu}\,u^\mu u^\nu.
+\end{equation}
+</div>
+
+<p>
+The frame-dependence of volume is a structural feature of TEP: the classical density inference assumes the geometric metric governs matter, which is precisely what TEP questions. The matter metric $\tilde g_{\mu\nu}$ defines the physical volume and the physical density, and these differ from the geometric quantities by the conformal and disformal factors.
+</p>
+<p>
+ On the regular geometry, the density question requires careful frame separation. The geometric Einstein-tensor component $-G^t{}_t = 12M^2\ell^2/(r^3 + 2M\ell^2)^2 \to 3/\ell^2$ is the effective stress supporting the Hayward seed metric $g$; it is not automatically the matter-frame density $\tilde T_{\mu\nu}\tilde u^\mu\tilde u^\nu$. The geometric stress, the matter-frame stress, and the TEP matter stress tensor are distinct objects and must be separated explicitly. On the $\phi_0 = 1$ divergent-$A$ benchmark, the radial proper distance diverges ($\tilde\ell \to \infty$), so the integrated matter-frame spatial volume is not finite merely because the sphere area approaches a finite constant. On the target finite-$A$ architecture (Section 6.6), the centre is an ordinary regular point with finite volume, and the density is resolved through the de Sitter-like temporal minimum.
+</p>
+
+<h2>5.5 Global Regularity</h2>
+<div class="theorem">
+ <h3>Global Geometry and Curvature Regularity (Benchmark Result)</h3>
+ <p>
+ On the Hayward validation benchmark with $\phi_0 = 1$, the TEP matter metric satisfies: (i) $\det\tilde g_{2D} = -A^4 G^2 - A^2 F B (\phi')^2 < 0$ in the exterior ($F > 0$); inside horizons ($F < 0$) the determinant must be checked with the canonical formula; (ii) $\tilde K \to$ finite as $r \to 0$ (scaling $r^{4\phi_0 - 4} = r^0$ for the regular seed, not $r^{4\phi_0-6}$ which is the Schwarzschild-seed result); (iii) $\rho = Ar \to 1.995$ as $r \to 0$, a bounded areal radius, but the limiting region is a finite-area asymptotic end ($\tilde\ell \to \infty$), not an ordinary regular centre. Both null families have infinite affine parameter ($\tilde\lambda \sim \int r^{-2}\,dr \to \infty$). These benchmark results are distinct from the coupled interior solution.
+ </p>
+ <p>
+ The coupled interior solver (<code>scripts/steps/step_34_solve_interior.py</code>, Section 4.6) integrates the sGB scalar field on a regular Hayward-class background to $r = 10^{-8}M$ for the mass-inflation branch $\eta = -0.1$, regularization scale $g = 1.1M$. It produces an ordinary regular point centre: $A(0) = 4.68$, $\tilde N_{\min} = 0.211$ at $r \approx 1.41M$, $\rho = Ar \to 4.68 \times 10^{-8}$, $w_r(0) = -1.000$, and $K(0) = 27.1$. The lapse is strictly positive, the areal radius vanishes at the centre, and the matter metric retains Lorentzian signature throughout. This confirms that the TEP Global Solution Architecture is not merely a geometrically self-consistent target; it is realised by the regularised sGB-coupled interior.
+ </p>
+</div>

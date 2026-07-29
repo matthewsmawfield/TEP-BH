@@ -1,0 +1,38 @@
+{
+  "0.05": {
+    "r_cross": 0.7937005259840998,
+    "Lambda_eff": 0.13439157865545306,
+    "K_centre": 3.8027920352261653,
+    "phi_centre_estimate": 0.0419973683298291,
+    "A_centre": 0.9588723040048043,
+    "w_r_centre": -1.0,
+    "rho_areal_centre": 0.0
+  },
+  "0.1": {
+    "r_cross": 0.7937005259840998,
+    "Lambda_eff": 0.5375663146218123,
+    "K_centre": 60.844672563618644,
+    "phi_centre_estimate": 0.0839947366596582,
+    "A_centre": 0.9194360953874818,
+    "w_r_centre": -1.0,
+    "rho_areal_centre": 0.0
+  },
+  "0.15": {
+    "r_cross": 0.7937005259840998,
+    "Lambda_eff": 1.2095242078990773,
+    "K_centre": 308.02615485331916,
+    "phi_centre_estimate": 0.1259921049894873,
+    "A_centre": 0.8816218071693757,
+    "w_r_centre": -1.0,
+    "rho_areal_centre": 0.0
+  },
+  "0.2": {
+    "r_cross": 0.7937005259840998,
+    "Lambda_eff": 2.150265258487249,
+    "K_centre": 973.5147610178983,
+    "phi_centre_estimate": 0.1679894733193164,
+    "A_centre": 0.8453627335013786,
+    "w_r_centre": -1.0,
+    "rho_areal_centre": 0.0
+  }
+}

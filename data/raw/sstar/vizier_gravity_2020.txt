@@ -1,0 +1,80 @@
+Content-type:text/html
+
+<!DOCTYPE html><html lang="en" ng-app='myApp' ng-controller='myCtrl'><head>    <meta charset="utf-8">    <title>VizieR not found</title>    <meta name="keywords"   content="CDS, VizieR, astronomical data center, catalogue"/>    <meta name="Description" CONTENT="VizieR catalogues">    <script src="angularjs.js"></script>    <script src="ui-bootstrap-tpls-2.5.0.min.js"></script>    <script type="text/javascript" src="vsearch_controller.js"></script>    <script type="text/javascript" src="vsearch_model.js"></script>    <link href="bootstrap.css" rel="stylesheet">    <link href="styleSheet.css" rel="stylesheet">    <link rel="stylesheet" href="auto-complete.css">    <script src="auto-complete.js"></script>     <!-- Include the CSS stylesheet for the CDS navbar and footer: -->
+<link href="/cds-navbar-resources/css/cdsnavbar.min.css" rel="stylesheet"/>
+<!-- Include OpenSearch engines for CDS services: -->
+<link title="SIMBAD" rel="search" type="application/opensearchdescription+xml" href="/cds-navbar-resources/opensearch/simbad.xml"/>
+<link title="VizieR" rel="search" type="application/opensearchdescription+xml" href="/cds-navbar-resources/opensearch/vizier.xml"/>
+<link title="Aladin" rel="search" type="application/opensearchdescription+xml" href="/cds-navbar-resources/opensearch/aladin.xml"/>
+<link title="XMatch" rel="search" type="application/opensearchdescription+xml" href="/cds-navbar-resources/opensearch/xmatch.xml"/></head>     <!--
+#######################################################################
+#                                                                     #
+#                   CDS TOP NAVIGATION BAR                            #
+#                                                                     #
+#######################################################################
+-->
+<nav class="cds-menu for-vizier" role="menubar" aria-label="CDS services navigation" data-pagefind-ignore="all">
+<!-- HEADER: CDS WEBSITE LINK -->
+<header><a href="https://cds.unistra.fr" role="menuitem" aria-label="CDS website"></a></header>
+<!-- MENU CONTENT -->
+<ul role="menu" aria-label="CDS services">
+<!-- List of all services (collapsed on very small screens) -->
+<li class="is-collapsed-when-very-small" role="none">
+<!-- Trigger for showing the menu on very small screens -->
+<span class="menu-trigger for-all-services" tabindex="0" onclick="void(0)" role="menuitem" aria-label="List CDS services and more" aria-haspopup="true" aria-expanded="false"><span>Services</span></span>
+<!-- CDS main services -->
+<ul role="menu" aria-label="CDS main services">
+<li role="none"><a class="portal" href="https://portal.cds.unistra.fr"  role="menuitem" aria-label="CDS Portal"><span></span></a></li>
+<li role="none"><a class="simbad" href="http://simbad.cds.unistra.fr/simbad"      role="menuitem" aria-label="Simbad"><span></span></a></li>
+<li role="none"><a class="vizier" href="http://vizier.cds.unistra.fr/viz-bin/VizieR"         role="menuitem" aria-label="VizieR"><span></span></a></li>
+<li role="none"><a class="aladin" href="http://aladin.cds.unistra.fr/aladin.gml"     role="menuitem" aria-label="Aladin"><span></span></a></li>
+<li role="none"><a class="xmatch" href="http://cdsxmatch.u-strasbg.fr"  role="menuitem" aria-label="X-Match"><span></span></a></li>
+<!-- SUB-MENU: Other CDS services -->
+<li role="none">
+<!-- Trigger for showing the sub-menu -->
+<a class="menu-trigger for-other-services" tabindex="0" onclick="void(0)" role="menuitem" aria-label="Other resources" aria-haspopup="true">Others</a>
+<!-- Sub-menu itself -->
+<ul role="menu" aria-label="Other resources">
+<li role="none"><a href="https://cds.unistra.fr/cgi-bin/Sesame" role="menuitem" aria-label="Sesame name resolver">Sesame name resolver</a></li>
+<li role="none"><a href="https://cds.unistra.fr/cgi-bin/Dic-Simbad"            role="menuitem" aria-label="Dictionary of nomenclature">Dictionary of nomenclature</a></li>
+<li role="separator" class="divider" aria-hidden="true"></li>
+<!-- Link: email CDS-Question-->
+<li role="none"><a href="mailto:cds-question@unistra.fr" tabindex="0" role="menuitem" aria-label="Contact us">Contact us</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<!-- Link: CDS help resources -->
+<li role="none"><a class="help" href="https://cds.unistra.fr/help" role="menuitem" aria-label="Help resources"><span>Help</span></a></li>
+</ul>
+</nav>
+<div class="cdsPageTitle"><h1>Catalogue collection</h1></div>    <div class="container" >    <h1>Redirection error</h1>    <p>Catalogue is not found or not available.<br/>        The catalogue could be in preparation (or removed from public access).    </p><p>        In case of missing resources, please contact the <a href="mailto:cds-question@unistra.fr?Subject:vizier catalogue not found">CDS</a>    </p>    </div>    <br/>         <!--
+#######################################################################
+#                                                                     #
+#                             CDS FOOTER                              #
+#                                                                     #
+#######################################################################
+-->
+<footer class="cds-footer for-vizier" data-pagefind-ignore="all">
+<div class="cds">
+<!-- CDS Logo and link -->
+<a class="cds logo" href="https://cds.unistra.fr" title="CDS - Centre de Données astronomiques de Strasbourg" target="_blank"></a>
+<!-- Social networks links -->
+<div class="socials">
+<a class="email"    title="Send an email to the CDS team." href="mailto:cds-question@unistra.fr?Subject=VizieR"></a>
+<a class="rss"      title="RSS Feed of the CDS news"       href="https://cds.unistra.fr/news/rss.php" target="_blank" rel="noopener noreferrer"></a>
+<a class="bluesky"  title="CDS' BlueSky page."             href="https://bsky.app/profile/cdsportal.bsky.social" target="_blank" rel="noopener noreferrer"></a>
+<a class="facebook" title="CDS' Facebook page."            href="https://www.facebook.com/CDSportal/" target="_blank" rel="noopener noreferrer"></a>
+<a class="youtube"  title="CDS' Youtube channel."          href="https://www.youtube.com/@CDSportal" target="_blank" rel="noopener noreferrer"></a>
+<a class="github"   title="CDS' GitHub page."              href="https://github.com/cds-astro" target="_blank" rel="noopener noreferrer"></a>
+</div>
+</div>
+<div class="service">
+<div class="content">
+
+</div>
+</div>
+<div class="legal-links">
+<a href="https://cds.unistra.fr/about/contact/">Contact</a> - <a href="https://cds.unistra.fr/legals/">Legals</a>
+</div>
+</footer><body></body></html>

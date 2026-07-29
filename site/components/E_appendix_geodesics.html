@@ -1,0 +1,84 @@
+<h1>Appendix E — Geodesic Structure</h1>
+<p>
+ This appendix records the null geodesic structure of the TEP matter metric. The key result is that for a conformal transformation $\tilde g = A^2 g$, null geodesics of $g$ are also null geodesics of $\tilde g$ (same unparameterised curves), but the affine parameters are related by $d\tilde\lambda = A^2\,d\lambda$. This single relation determines all affine-parameter results.
+</p>
+
+<h2>E.1 Conformal Affine Parameter Relation</h2>
+<p>
+For $\tilde g_{\mu\nu} = A^2 g_{\mu\nu}$, a null geodesic $x^\mu(\lambda)$ of $g$ with tangent $k^\mu = dx^\mu/d\lambda$ satisfies $g_{\mu\nu}k^\mu k^\nu = 0$ and the geodesic equation $k^\nu\nabla_\nu k^\mu = 0$. Under the conformal transformation, the same curve is null ($\tilde g_{\mu\nu}k^\mu k^\nu = A^2 g_{\mu\nu}k^\mu k^\nu = 0$), but the affine parameter transforms as
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appE_1}
+ d\tilde\lambda = A^2\,d\lambda.
+\end{equation}
+</div>
+
+<p>
+This is the standard conformal affine-parameter relation. The Christoffel symbols transform as $\tilde\Gamma^\mu_{\alpha\beta} = \Gamma^\mu_{\alpha\beta} + \delta^\mu_\alpha \partial_\beta\ln A + \delta^\mu_\beta \partial_\alpha\ln A - g_{\alpha\beta}g^{\mu\nu}\partial_\nu\ln A$, and the geodesic equation in the rescaled parameter is satisfied.
+</p>
+
+<h2>E.2 Eddington–Finkelstein Null Algebra</h2>
+<p>
+In ingoing Eddington–Finkelstein coordinates, the conformal matter metric ($B = 0$) has components
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appE_2}
+ \tilde g_{ab} = A^2\begin{pmatrix} -F & 1 \\ 1 & 0 \end{pmatrix}, \qquad \tilde g^{ab} = A^{-2}\begin{pmatrix} 0 & 1 \\ 1 & F \end{pmatrix}.
+\end{equation}
+</div>
+
+<p>
+Note that $\tilde g^{rr} = F/A^2$, not zero. The null condition $\tilde g_{ab}k^a k^b = 0$ gives $dv(-F\,dv + 2\,dr) = 0$, yielding two families:
+</p>
+<ul>
+ <li>Ingoing ($v = \mathrm{const}$, $dv = 0$): the tangent $k^\mu = (0, 1)$. The Christoffel symbol $\tilde\Gamma^r{}_{rr} = 2A'/A$ is nonzero.</li>
+ <li>Outgoing ($dr/dv = F/2$): the tangent $k^\mu = (2/F, 1)$, or $dv/dr = 2/F$.</li>
+</ul>
+
+<h2>E.3 Affine Parameters on the Divergent-$A$ Benchmark</h2>
+<p>
+On the Hayward benchmark with $A = (r_h/r)^{\phi_0}$ and $\phi_0 = 1$, the conformal factor diverges as $A \sim r^{-1}$ near $r = 0$. The seed (Hayward) radial null affine parameter behaves as $d\lambda \propto dr$ (since $F \to 1$ and the background is regular). Applying the conformal relation:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appE_3}
+ \tilde\lambda \sim \int A^2\,dr = \int \frac{dr}{r^{2\phi_0}}.
+\end{equation}
+</div>
+
+<p>
+For $\phi_0 = 1$: $\tilde\lambda \sim \int r^{-2}\,dr = -1/r \to \infty$ as $r \to 0$. Both radial null families have infinite affine parameter. The finite-area asymptotic end lies at infinite affine distance for both families. This is consistent with the end being an asymptotic boundary, not a regular manifold point.
+</p>
+<p>
+ For $\phi_0 = 2$: $\tilde\lambda \sim \int r^{-4}\,dr \to \infty$. Both families infinite.
+</p>
+<p>
+ For general $\phi_0 > 0$: both families have $\tilde\lambda \to \infty$. The divergence is driven by $A \to \infty$, not by the background geometry.
+</p>
+
+<h2>E.4 Affine Parameters on the Correct Finite-$A$ Architecture</h2>
+<p>
+ On the target global solution with $A \to A_c$ finite as $r \to 0$, the conformal relation gives $d\tilde\lambda \to A_c^2\,d\lambda$. Since the seed (regular) geodesic has $d\lambda \propto dr$ and finite affine parameter to $r = 0$, the matter-frame affine parameter is also finite: $\tilde\lambda \to A_c^2 \lambda_{\rm seed}$. Both null families reach the regular centre at finite affine distance. The centre is a regular manifold point; geodesics are extendable through it. This is geodesic completeness in the standard sense.
+</p>
+
+<h2>E.5 The $\phi_0 = 2$ Case</h2>
+<p>
+ For $\phi_0 = 2$ on fixed Schwarzschild, $A \sim r^{-2}$ and $\tilde\lambda \sim \int r^{-4}\,dr \to \infty$ for both families. The $r \to 0$ limit is an asymptotic spatially enlarged end ($\rho \sim r_h^2/r \to \infty$), not a regular point. The matter metric is Lorentzian and nondegenerate for all $r > 0$ ($\det\tilde g_{2D} = A^4 \det g_{2D} < 0$ since $A > 0$), but the limit $r = 0$ cannot be added as a regular point. The curvature vanishes ($\tilde K \sim 39r^2/16 \to 0$), but the areal radius diverges — the fixed-background theorem (Appendix D) proves this trade-off is unavoidable for fixed Schwarzschild.
+</p>
+
+<h2>E.6 Signature Structure</h2>
+<p>
+The canonical 2D $(v,r)$ determinant for $ds_g^2 = -F\,dv^2 + 2G\,dv\,dr + R^2\,d\Omega^2$ and a static radial scalar is:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appE_4}
+ \det\tilde g_{2D} = -A^4 G^2 - A^2 F B(\phi')^2.
+\end{equation}
+</div>
+
+<p>
+For the pure conformal metric ($B = 0$): $\det\tilde g_{2D} = -A^4 G^2 < 0$ — Lorentzianity inherited analytically from $g$ via $A > 0$. For the full disformal metric, the determinant must be checked with the canonical formula. Inside horizons ($F < 0$), the disformal term $-A^2 F B(\phi')^2$ becomes positive and can oppose the conformal term; all invertibility and hyperbolicity results must be regenerated from this expression.
+</p>

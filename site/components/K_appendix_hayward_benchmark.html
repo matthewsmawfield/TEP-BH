@@ -1,0 +1,86 @@
+<h1>Appendix K — Regular-Geometry Validation Benchmark</h1>
+<p>
+ This appendix records the regular-geometry validation benchmark used throughout the main text. The Hayward metric is <em>not</em> the TEP solution and is <em>not</em> derived from the sGB field equations. It is a controlled mathematical reference used to validate the analysis pipeline and to confirm that finite curvature and bounded areal geometry are mutually compatible once the geometric singularity is absent. The question TEP asks is whether a dynamical proper-time field can supply the physical origin of that regularisation. The sGB coupled interior integration (Section 4.6) is the decisive test of this question. The literature evidence (Sotiriou & Zhou 2014; Thaalba et al. 2024) suggests that standard linear sGB may develop a finite-area singularity rather than a regular centre, so the benchmark may not be achievable with the linear sGB coupling alone.
+</p>
+
+<h2>K.1 The Hayward Metric</h2>
+<p>
+The Hayward metric is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appK_1}
+ F(r) = 1 - \frac{2Mr^2}{r^3 + 2M\ell^2},
+\end{equation}
+</div>
+
+<p>
+where $\ell$ is the regularisation scale. As $r \to 0$, $F \to 1$ (de Sitter-like temporal minimum); as $r \to \infty$, $F \to 1 - 2M/r$ (Schwarzschild). The effective energy density is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appK_2}
+ \rho_{\rm eff} = -G^t_t = \frac{12M^2\ell^2}{(r^3 + 2M\ell^2)^2} \to \frac{3}{\ell^2} \quad \text{as } r \to 0,
+\end{equation}
+</div>
+
+<p>
+finite at the centre. The Kretschmann scalar is $K_{\rm Hayward}(0) = 24/\ell^4$, finite. The equation of state is $w_r = -1$ (cosmological-constant-like radial pressure), with anisotropic tangential pressure.
+</p>
+
+<h2>K.2 TEP Matter Metric on the Hayward Background</h2>
+<p>
+ The TEP matter metric $\tilde g = A^2 g_{\rm Hayward}$ with $A = (r_h/r)^{\phi_0}$ and $\phi_0 = 1$ is placed on the Hayward background. The computed invariants are:
+</p>
+<table class="data-table">
+ <thead><tr><th>Quantity</th><th>Value as $r \to 0$</th><th>Classification</th></tr></thead>
+ <tbody>
+ <tr><td>Kretschmann $\tilde K$</td><td>$8/r_h^4 = 0.5$ (for $M=1$, $r_h=2M$)</td><td>Finite — de Sitter-like temporal minimum</td></tr>
+ <tr><td>Areal radius $\rho = Ar$</td><td>$1.995$</td><td>Bounded — finite-area asymptotic end</td></tr>
+ <tr><td>$\det\tilde g_{2D}$</td><td>$< 0$ at 100% of sampled radii</td><td>Lorentzian in exterior ($F > 0$)</td></tr>
+ <tr><td>Null expansion $\theta_+$</td><td>$0$ exactly</td><td>Constant-area property of the asymptotic end (not temporal freeze)</td></tr>
+ <tr><td>Affine parameter $\tilde\lambda$ (both families)</td><td>$\sim \int r^{-2}\,dr \to \infty$</td><td>Infinite affine distance — asymptotic end, not regular point</td></tr>
+ <tr><td>Radial proper distance $\tilde\ell$</td><td>$\sim \int dr/r \to \infty$</td><td>Infinite — tube-like asymptotic end</td></tr>
+ <tr><td>Static-observer clock rate $d\tilde\tau/dt$</td><td>$\to \infty$</td><td>Conformal blueshift (unphysical; benchmark artefact of divergent $A$)</td></tr>
+ <tr><td>Static-observer redshift $z$</td><td>$\to -1$ (blueshift)</td><td>Infinite redshift is at the Hayward outer horizon, not the centre — benchmark artefact of the divergent-$A$ test profile, not the TEP target</td></tr>
+ </tbody>
+</table>
+
+<h2>K.3 Classification of the Limiting Region</h2>
+<p>
+ At an ordinary regular spherical centre one has $\rho \to 0$ as $r \to 0$. Here $\rho \to 1.995 \neq 0$: the limiting areal radius is nonzero. Because $A \sim 1/r$ in the deep interior, the radial proper distance behaves as $\tilde\ell \sim \int dr/r \to \infty$. The limiting region is therefore not a point-like centre but a finite-area asymptotic end (a tube-like limiting region of infinite radial extent). This is still a valid TEP geometry — the curvature is finite, the areal radius is bounded, and the metric is globally Lorentzian — but it must be classified correctly as an asymptotic end rather than a regular point centre. The full coupled interior solution (Section 4.6) now produces an ordinary regular point centre with $\rho_{\rm areal}(0) \to 4.68 \times 10^{-8}$ for $\eta=-0.1$, $g=1.1M$.
+</p>
+
+<h2>K.4 What the Benchmark Validates</h2>
+<p>
+ The benchmark validates two things:
+</p>
+<ol>
+ <li>The analysis pipeline correctly recognises a regular geometric metric and classifies the matter-frame limiting region (finite Kretschmann, bounded areal radius, Lorentzianity inherited from $g$ via $A > 0$).</li>
+ <li>Finite curvature and bounded areal geometry are mutually compatible once the geometric singularity is absent — the conditions that were mutually exclusive in the fixed-background theorem (Section 3) are simultaneously achievable on a regular background.</li>
+</ol>
+<p>
+ The benchmark does <em>not</em> validate: (a) that the sGB coupling dynamically generates this geometry (that is the task of the interior integration, Section 4.6, now solved for a regular point centre); (b) that the limiting region is an ordinary regular centre (it is a finite-area asymptotic end, Section K.3); (c) that the Temporal Horizon is established (the null expansion $\theta_+ = 0$ reflects the constant-area property of the asymptotic end, not a proof of temporal freezing; the Temporal Horizon requires the invariant frequency-transfer calculation of Section 6.5); (d) geodesic completeness (both null families have infinite affine parameter, $\tilde\lambda \sim \int r^{-2}\,dr \to \infty$; the asymptotic end is at infinite affine distance, not a regular point that is reached in finite parameter).
+</p>
+
+<h2>K.5 Regularisation Scale Effects</h2>
+<p>
+ The Kretschmann scalar at the centre depends on the regularisation scale: $K_{\rm Hayward}(0) = 24/\ell^4$. For $\ell = 0.1$ (the benchmark value), $K = 2.4 \times 10^5$; for $\ell = 1.0$, $K = 24$; for $\ell = 0.001$, $K = 2.4 \times 10^{13}$. These are code-unit values ($M = 1$); they do not establish Planck-scale curvature without converting to physical units for a specific black-hole mass. The regularisation scale is a parameter of the benchmark, not a prediction of the theory; the coupled interior solution with $g = 1.1M$ gives $K(0) = 27.1$ for $\eta=-0.1$ (Section 4.6).
+</p>
+
+<h2>K.6 Configuration Scan</h2>
+<p>
+ A scan over conformal exponent $\phi_0$ on the Hayward background. For a regular (de Sitter-like) seed, the background Kretschmann $K_{\rm Hay} \to$ finite as $r \to 0$, so the dominant contribution to the conformal Kretschmann comes from the $A$-derivative terms: $\tilde K \sim r^{4\phi_0 - 4}$ (not $r^{4\phi_0 - 6}$, which is the Schwarzschild-seed result where $K_{\rm Schw} \sim r^{-6}$ dominates). The areal radius scales as $\rho = Ar \sim r^{1-\phi_0}$ on either seed. The asymptotic classifications are:
+</p>
+<table class="data-table">
+ <thead><tr><th>$\phi_0$</th><th>$\rho$ as $r\to 0$</th><th>$\tilde K$ as $r\to 0$</th><th>Lorentzian</th><th>Asymptotic classification</th></tr></thead>
+ <tbody>
+ <tr><td>0.5</td><td>$\to 0$</td><td>$\to \infty$ ($r^{-2}$)</td><td>Yes</td><td>Point centre, curvature diverges</td></tr>
+ <tr><td>1.0</td><td>$\to r_h \neq 0$</td><td>$\to$ finite ($r^0$)</td><td>Yes</td><td>Finite-area asymptotic end, finite curvature</td></tr>
+ <tr><td>1.25</td><td>$\to \infty$ ($r^{-0.25}$)</td><td>$\to 0$ ($r^1$)</td><td>Yes</td><td>Areal radius diverges, curvature vanishes</td></tr>
+ <tr><td>2.0</td><td>$\to \infty$ ($r^{-1}$)</td><td>$\to 0$ ($r^4$)</td><td>Yes</td><td>Areal radius diverges, curvature vanishes</td></tr>
+ </tbody>
+</table>
+<p>
+ The $\phi_0 = 1$ configuration is the validation benchmark used in the main text: it is the unique configuration that simultaneously achieves bounded (nonzero) areal radius and finite curvature on the Hayward background. The curvature scaling $\tilde K \sim r^{4\phi_0 - 4}$ differs from the Schwarzschild-seed scaling $\tilde K \sim r^{4\phi_0 - 6}$ (Appendix D) because the regular seed has finite background curvature, so the $A$-derivative terms dominate rather than the background Kretschmann. This distinction is critical: the fixed-background theorem uses the Schwarzschild exponent, while the benchmark classification uses the Hayward exponent. The two must not be mixed.
+</p>

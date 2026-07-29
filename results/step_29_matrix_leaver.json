@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "M": 1.0,
+    "g": 1.1,
+    "eta": -0.1,
+    "l": 2
+  },
+  "method": "Coupled shooting, regular inner BC (r^{l+1}), outgoing outer BC",
+  "scalar_qnm": {
+    "omega": "(0.5057323074905301-0.032467025733189686j)",
+    "mismatch": 2.220446049250313e-16
+  },
+  "gravitational_qnm": {
+    "omega": "(0.40287510833220613-0.03175226289741258j)",
+    "mismatch": 0.0
+  },
+  "coupled_qnm": {
+    "omega": "(0.4623653750803741-0.03201779056379613j)",
+    "mismatch": -4.440892098500626e-16
+  }
+}

@@ -1,0 +1,5 @@
+source,qpo_frequency_hz,inferred_mass_msun,ratio_to_lower,is_32_ratio
+GRS_1915_105,67.0,10.1,1.675,False
+XTE_J1550_564,184.0,9.6,2.0,False
+GRO_J1655_40,450.0,6.3,1.5,True
+H_1743_322,241.0,8.0,1.4606060606060607,True

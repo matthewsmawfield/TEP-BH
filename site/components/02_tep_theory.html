@@ -1,0 +1,405 @@
+<h1>2. TEP Theory: Action, Matter Metric, and Frame Dictionary</h1>
+
+<h2>2.1 Canonical Action and Universal Matter Coupling</h2>
+<p>
+The canonical Einstein-frame action is used:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_1}
+ S=\int d^4x\sqrt{-g}\left[\frac{M_{\rm Pl}^2}{2}R-\frac12(\nabla\Phi)^2-V(\Phi)\right]+S_m[\Psi_m,\tilde g_{\mu\nu}],
+\end{equation}
+</div>
+
+<p>
+with
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_2}
+ \tilde g_{\mu\nu}=A^2(\Phi)g_{\mu\nu}+B(\Phi)\nabla_\mu\Phi\nabla_\nu\Phi.
+\end{equation}
+</div>
+
+<p>
+This is the canonical frame: gravity has Einstein–Hilbert form, tensor modes propagate on $g_{\mu\nu}$, and all nongravitational fields couple universally to $\tilde g_{\mu\nu}$. Diffeomorphism invariance of the matter action gives $\tilde\nabla_\mu\tilde T^{\mu\nu}=0$ wherever $\tilde g$ is invertible.
+</p>
+<p>
+ The pipeline uses the dimensionless field $\phi=\Phi/M_*$ and geometrized units $G=c=1$, followed by the numerical normalization $M=1$. Thus radii and curve parameters are reported in $M$, curvature-squared diagnostics in $M^{-4}$, and three-volumes in $M^3$. $A$ and $\phi$ are dimensionless; $B_0=1$ denotes $B_0=1M^2$ in the implemented metric convention, so that $B\,\partial\phi\,\partial\phi$ is dimensionless.
+</p>
+
+<h2>2.2 Frame Dictionary and Local Lorentz Limit</h2>
+<table class="data-table">
+ <thead><tr><th>Quantity</th><th>Einstein/gravitational frame</th><th>Causal matter frame</th></tr></thead>
+ <tbody>
+ <tr><td>Metric</td><td>$g_{\mu\nu}$</td><td>$\tilde g_{\mu\nu}$</td></tr>
+ <tr><td>Propagation</td><td>tensor modes</td><td>matter, photons, ideal clocks</td></tr>
+ <tr><td>Proper time</td><td>$d\tau_g$</td><td>$d\tilde\tau$</td></tr>
+ <tr><td>Conservation</td><td>total Einstein-frame stress tensor</td><td>$\tilde\nabla_\mu\tilde T^{\mu\nu}=0$</td></tr>
+ <tr><td>Validity condition</td><td>Lorentzian $g$</td><td>Lorentzian, invertible $\tilde g$</td></tr>
+ </tbody>
+</table>
+<p>
+ At every regular point of the matter frame, Riemann normal coordinates give $\tilde g_{ab}=\eta_{ab}+O(x^2)$, preserving exact local Lorentz invariance and locally invariant $c$. Because the metric is globally non-degenerate, such local inertial frames exist everywhere for all $r > 0$.
+</p>
+
+<h2>2.3 Spherical Geometry and Scalar Ansatz</h2>
+<p>
+A horizon-regular coordinate system is used from the beginning, avoiding reliance on Schwarzschild $(t,r)$ coordinates across the horizon. The general static spherical form is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_3}
+ ds_g^2 = -F(r)\,dv^2 + 2\,G(r)\,dv\,dr + R^2(r)\,d\Omega^2,
+\end{equation}
+</div>
+
+<p>
+in Eddington-Finkelstein form. This prevents coordinate artifacts from being mistaken for physical freezing. In the exterior, $F(r) = 1 - 2M/r$, $G(r) = 1$, $R(r) = r$, recovering the standard Schwarzschild geometry.
+</p>
+<p>
+The most general symmetry-compatible scalar profile is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_4}
+ \phi(v,r) = q\,v + \psi(r).
+\end{equation}
+</div>
+
+<p>
+For the static case studied here, $q = 0$. Two scalar profiles are used in this paper, serving distinct roles in the argument:
+</p>
+<ul>
+ <li>For the fixed-background theorem (Section 3), the scalar is prescribed as $\phi(r) = \phi_0\,\ln(r/r_h)\,S(r)$ with a smooth logistic activation $S(r)$ that suppresses the field in the exterior. This prescribed profile is used only to establish the theorem: the geometric metric is fixed to Schwarzschild, and the scalar field is prescribed rather than solved from coupled equations.</li>
+ <li>For the coupled solution (Section 4), the scalar is solved from the sGB field equations and is Coulomb-like ($\phi \sim Q_s/r$) in the exterior, with the geometric metric dynamically modified by the temporal field's backreaction.</li>
+</ul>
+<p>
+ These are not two competing models. The first is a theorem-proving device; the second is the physical solution. A time-dependent scalar with static stress-energy is possible in shift-symmetric constructions and may be essential for rotating generalisations.
+</p>
+
+<h2>2.4 Complete Matter Metric</h2>
+<p>
+Expanding the disformal transformation:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_5}
+ d\tilde s^2 = A^2\,ds_g^2 + B\left(\psi'(r)\,dr\right)^2.
+\end{equation}
+</div>
+
+<p>
+The explicit components are
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_6}
+ \tilde g_{vv} = -A^2 F, \qquad \tilde g_{vr} = A^2 G, \qquad \tilde g_{rr} = A^2 \cdot 0 + B\,\psi'^2, \qquad \tilde g_{\theta\theta} = A^2 R^2.
+\end{equation}
+</div>
+
+<p>
+The two-dimensional $(v,r)$ determinant is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_7}
+ \det \tilde g_{2D} = (-A^2 F)(B\,\psi'^2) - (A^2 G)^2 = -A^4 G^2 - A^2 B F \psi'^2.
+\end{equation}
+</div>
+
+<p>
+The disformal coupling uses an ultra-damped quartic Gaussian envelope:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_8}
+ B(\phi) = B_0\frac{|\phi|^{n_B}}{1+|\phi|^{n_B}}\exp\!\left(-\frac{\phi^4}{2\sigma_B^4}\right),
+\end{equation}
+</div>
+
+<p>
+with $B_0=1M^2$, $n_B=2$, $\sigma_B=1.5$. The quartic Gaussian envelope drives $B\to0$ in the deep interior, ensuring conformal dominance: $A^4$ dominates at all radii, so $\det \tilde g_{2D} < 0$ for all $r > 0$.
+</p>
+
+<h2>2.5 Invertibility and Signature Conditions</h2>
+<p>
+The disformal transformation remains invertible when
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_9}
+ A^2 > 0, \qquad A^2 - 2BX \neq 0,
+\end{equation}
+</div>
+
+<p>
+where $X = -\tfrac12 \nabla_\mu\phi\,\nabla^\mu\phi$. The conditions for Lorentzian signature are then established as the first proposition.
+</p>
+<div class="theorem">
+ <h3>Proposition 1 (Invertibility and Signature)</h3>
+ <p>
+ For the bounded strong-field ansatz with $\beta_A = -1$, $n_B = 2$, $\delta = 0.05$, $\sigma_B = 1.5$, and $\phi_0 = 2.0$, the matter metric is Lorentzian and nondegenerate for all $r > 0$. The determinant is $-1.002$ at $r=2M$ and remains strictly negative as $r \to 0$, where the conformal dominance $A^4 \gg A^2 B F (\phi')^2$ holds asymptotically. The metric remains Lorentzian and nondegenerate throughout the open domain $r > 0$; the $r \to 0$ limit is an asymptotic spatially enlarged end ($\rho \sim r_h^2/r \to \infty$), not an ordinary manifold point. A negative determinant for every $r > 0$ proves no finite positive radius is degenerate; it does not prove the limit $r = 0$ can be added as a regular point.
+ </p>
+</div>
+
+<h2>2.6 Screening and Temporal Topology</h2>
+<p>
+Canonical TEP does not identify screening with a density switch. It represents observable suppression by the environmental operator
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:tep_10}
+ \Sigma_\mu^{\rm obs}=\mathcal S_\Sigma(\mathcal E)\,\Sigma_\mu,
+\end{equation}
+</div>
+
+<p>
+where $\mathcal E$ includes source structure, compactness, gradients, boundary conditions, and coherence scale. Temporal Topology denotes the continuous spatial and covariance structure of $\ln A$ and its Temporal Shear, not a discrete change of spacetime topology. The logistic $S(r)$ used in the fixed-background theorem is a phenomenological radial activation compatible with this vocabulary; the coupled solution does not require $S(r)$ because the scalar profile is determined by the field equations.
+</p>
+
+<h2>2.7 The Observational Inference Problem</h2>
+<p>
+ Because astrophysical mass is an inferred rather than direct measurement, its derivation depends on the assumed time-transfer map. The mass is reconstructed from observed angular positions, spectral shifts, signal periods and image scales under the assumption that source clocks, photon propagation and observer clocks can be mapped onto a single universal time coordinate. This is the <em>Isochrony Axiom</em>. The TEP framework demonstrates that this reduction is not theory-neutral.
+</p>
+<p>
+ What the telescope directly records is functions of the observer's local proper time $\tilde\tau_o$:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_isochrony_1}
+ \mathcal D_{\rm obs} = \left\{\theta_x(\tilde\tau_o),\; \theta_y(\tilde\tau_o),\; \nu_o(\tilde\tau_o),\; F_o(\tilde\tau_o)\right\},
+ \end{equation}
+</div>
+<p>
+ whereas the source trajectory is parameterised by a different local proper time $\tilde\tau_s$. The full source-to-observer map is
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_isochrony_2}
+ \tilde\tau_s \;\longrightarrow\; x^\mu_s(\tilde\tau_s) \;\longrightarrow\; k^\mu \;\longrightarrow\; \tilde\tau_o,
+ \end{equation}
+</div>
+<p>
+ with observed frequency $\omega_o = -k_\mu u_o^\mu$ and source-to-observer timing map
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_isochrony_3}
+ \frac{d\tilde\tau_o}{d\tilde\tau_s} = \mathcal T_{s\to o}\!\left[\phi,\, A,\, B,\, x_s^\mu,\, u_s^\mu,\, x_o^\mu,\, u_o^\mu\right].
+ \end{equation}
+</div>
+<p>
+ The standard analysis reconstructs orbital period, velocity, radius and mass by effectively setting $\mathcal T_{s\to o}$ to its GR or isochronous value. The familiar relation
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_isochrony_4}
+ M_{\rm app}^{\rm GR} = \frac{4\pi^2 a_{\rm GR}^3}{G P_{\rm GR}^2}
+ \end{equation}
+</div>
+<p>
+ therefore returns an apparent mass conditioned on that temporal calibration. It does not independently measure either the local material mass or the proper volume of the source region. The inferred mass is
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_isochrony_5}
+ M_{\rm app}^{\rm GR} = \mathcal F\!\left[\theta(\tilde\tau_o),\, \nu_o(\tilde\tau_o),\, D_{\rm assumed},\, \mathcal T_{s\to o}^{\rm GR},\, g_{\rm GR}\right],
+ \end{equation}
+</div>
+<p>
+ not a direct measurement of matter. The spectroscopic velocity has the same structure. The observed spectral shift is conventionally decomposed as $z_{\rm obs} = z_{\rm Doppler} + z_{\rm gravitational} + z_{\rm transverse} + \cdots$ and used to infer a radial velocity. But under TEP,
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_isochrony_6}
+ 1 + z_{\rm obs} = \frac{(-k_\mu u^\mu)_e}{(-k_\mu u^\mu)_o}
+ \end{equation}
+</div>
+<p>
+ also contains the temporal-field transfer. Some quantity interpreted as $v_{\rm radial}$ may actually contain motion plus clock-rate difference plus open-path temporal transport. If that temporal component is forced into a Doppler model, it changes the inferred orbital speed and hence the inferred mass. Even the Galactic-centre distance, though largely inferred by combining angular astrometry with spectroscopic velocities rather than from a standard candle, still assumes $v_{\rm transverse} = D\,d\theta/dt$ and compares it with a spectroscopic radial velocity measured in the same effective time standard. Under TEP the correct relation is schematically $v_{\rm transverse}^{\rm local} = D_{\rm TEP}\,(d\theta/d\tilde\tau_o)\,(d\tilde\tau_o/d\tilde\tau_s)$. Even "geometric" orbital parallax is conditional on the mapping between source time and observer time.
+</p>
+<p>
+ The Cepheid analogy is exact at the methodological level. The TEP cosmological paper treats Cepheids as environment-dependent clocks whose altered periods are misread through a universal period–luminosity law, causing distance and $H_0$ bias. The black-hole analogue is: orbital motion supplies a periodic clock; spectral lines supply atomic clocks; variable plasma features supply dynamical clocks; ringdown supplies gravitational clocks. Standard analysis assumes these clocks can be compared through one universal time coordinate. TEP says their observed periods can include $P_{\rm observed} = P_{\rm intrinsic} \times \mathcal T_{\rm path} \times \mathcal T_{\rm environment}$. If those temporal factors are instead attributed to motion or curvature, the inferred mass becomes inflated. This is the same structural mistake as treating Cepheid period contraction as luminosity or distance.
+</p>
+<p>
+ The direct observables are: changing angular positions; changing received spectral frequencies; repeated signal patterns; strong redshift; strong lensing and image distortion; a dark central observational domain. The inferred quantities — a universal source-frame orbital period, a theory-independent physical orbital velocity, a theory-independent linear radius, millions of solar masses of matter, a tiny proper volume, an event horizon, a singularity — are reconstructed through the Isochrony Axiom. The conventional inference chain is:
+</p>
+<div class="theorem">
+ <div class="equation">
+ \begin{equation} \label{eq:tep_isochrony_7}
+ \begin{aligned}
+ &\text{received angles, phases and frequencies} \\
+ &\quad\Downarrow\quad \text{Isochrony Axiom + GR transfer + distance calibration} \\
+ &\text{orbital period, velocity and radius} \\
+ &\quad\Downarrow\quad \text{Kepler/GR inversion} \\
+ &\text{large compact mass } (M_{\rm app}^{\rm GR}).
+ \end{aligned}
+ \end{equation}
+</div>
+ <p>
+ TEP replaces it with:
+ </p>
+ <div class="equation">
+ \begin{equation} \label{eq:tep_isochrony_8}
+ \begin{aligned}
+ &\text{received angles, phases and frequencies} \\
+ &\quad\Downarrow\quad \text{dynamical temporal-transfer reconstruction} \\
+ &\text{local trajectory + clock-rate field} \\
+ &\quad\Downarrow\quad \text{material source + temporal contribution.}
+ \end{aligned}
+ \end{equation}
+</div>
+ <p>
+ The precise statement is not that conventional analysis sets $\mathcal T_{s\to o}=1$ — GR includes gravitational redshift, transverse and line-of-sight Doppler shift, propagation delay, and Shapiro delay. The TEP claim is that conventional analysis fixes the transfer map to its <em>GR closure</em>, $\mathcal T_{s\to o} = \mathcal T_{s\to o}^{\rm GR}$. TEP tests whether a reproducible residual temporal-transfer field remains after the complete GR mapping is applied:
+ </p>
+ <div class="equation">
+ \begin{equation} \label{eq:tep_Delta_T}
+ \Delta_T \equiv \ln\frac{\mathcal T_{s\to o}^{\rm TEP}}{\mathcal T_{s\to o}^{\rm GR}},
+ \end{equation}
+</div>
+ <p>
+ Conventional inference is not clock-blind; it is closed under the GR transfer law. The open question is whether $\Delta_T \neq 0$ is required by the data.
+ </p>
+</div>
+
+<h2>2.8 Strong-Field Phantom Mass and the Mass Dictionary</h2>
+<p>
+ This is the strong-field counterpart of Phantom Mass in the wider TEP framework. At galactic scales, unmodelled Temporal Shear is interpreted as a dark-matter halo. At black-hole scales, extreme temporal transport can be interpreted as a very large central mass, rapid infall and a compact causal object. The conventional mass may combine a material contribution, temporal-field energy, and a non-isochronous calibration residual. The more exact expression is
+</p>
+<div class="theorem">
+ <div class="equation">
+ \begin{equation} \label{eq:tep_phantom_2}
+ M_{\rm app}^{\rm GR} = \mathcal F\!\left(M_{\rm matter},\, M_\phi,\, M_{\rm int},\, A,\, B,\, \mathcal T_{s\to o},\, D_{\rm TEP}\right),
+ \end{equation}
+</div>
+ <p>
+ where $M_{\rm matter}$ is the locally measured material content, $M_\phi$ is the temporal-field energy, $M_{\rm int}$ is the interaction energy, and $A, B, \mathcal T_{s\to o}, D_{\rm TEP}$ are the temporal-field profile and transfer functions. The strong-field Phantom Mass residual is <em>defined</em> as the difference between the conventional fitted mass and the TEP material inference:
+ </p>
+ <div class="equation">
+ \begin{equation} \label{eq:tep_phantom_3}
+ M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}.
+ \end{equation}
+</div>
+ <p>
+ This is a residual definition, not a derived decomposition. The sign of $M_{\rm phantom}^{T}$ is not assumed; it is determined by the data through the sign equation of Section 2.9. The schematic additive form $M_{\rm app}^{\rm GR} = M_{\rm local}^{\rm TEP} + M_{\rm phantom}^{T}$ is shorthand for the residual definition, valid only when $M_\phi$ and $M_{\rm int}$ are absorbed into $M_{\rm phantom}^{T}$.
+ </p>
+</div>
+<p>
+ The paper uses $M$ in several distinct roles, and the distinction matters once the mass itself is in question. The strict dictionary is:
+</p>
+<table class="data-table">
+ <thead><tr><th>Symbol</th><th>Meaning</th></tr></thead>
+ <tbody>
+ <tr><td>$M_{\rm GR-fit}$</td><td>The parameter returned by a conventional GR reduction of the observations</td></tr>
+ <tr><td>$M_g$</td><td>The asymptotic gravitational charge associated with $g_{\mu\nu}$</td></tr>
+ <tr><td>$M_{\rm matter}$</td><td>The locally measured material content $M_{\rm matter} = \int_\Sigma \tilde T_{\mu\nu}\tilde u^\mu\tilde u^\nu\,d\tilde V$</td></tr>
+ <tr><td>$M_\phi$</td><td>The temporal-field energy or effective contribution</td></tr>
+ <tr><td>$M_{\rm phantom}^{T}$</td><td>The difference between the conventional fitted mass and the TEP material inference</td></tr>
+ <tr><td>$M$</td><td>The GR-calibrated exterior mass parameter used in the conditional sGB benchmark (Sections 4–8)</td></tr>
+ </tbody>
+</table>
+<p>
+ The statement that a fixed ADM $M$ is "the physical mass measured by a distant observer" is not made in this paper. Under the paper's own thesis, that is precisely what has not yet been established. The sGB calculations of Sections 4–8 use $M$ as the GR-calibrated exterior mass parameter; their observable predictions are conditional on that calibration. The central empirical task is to determine how much of the conventional central mass survives as locally measured material content when the Isochrony Axiom is removed. The decisive analysis is a <em>TEP-native refit of the raw observations</em>, not a perturbation of a pre-assumed Schwarzschild mass.
+</p>
+
+<h2>2.9 Sign and Identifiability of Strong-Field Phantom Mass</h2>
+<p>
+ A direct intuition might suggest that because deep clocks run slow, observed periods are longer, so the inferred mass is larger. This overlooks the spatial magnification that accompanies the temporal stretching, and recognising the interplay between the two is the first gate of the entire analysis.
+</p>
+<p>
+ Consider a source orbiting in the deep region with local orbital period $P_s$ and local semi-major axis $a_{\rm local}$. A distant observer measures period $P_o$ and infers radius $a_{\rm GR}$. The temporal transfer stretches the period:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_sign_1}
+ P_o = \mathcal T_P \, P_s, \qquad \mathcal T_P = \frac{d\tilde\tau_o}{d\tilde\tau_s} > 1.
+\end{equation}
+</div>
+<p>
+ The spatial calibration relates the GR-inferred orbit to the local orbit:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_sign_2}
+ a_{\rm GR} = \mathcal S_a \, a_{\rm local},
+\end{equation}
+</div>
+<p>
+ where $\mathcal S_a$ encodes lensing magnification, distance miscalibration, and orbital-dynamics modification — all sourced by the temporal field. The conventional Kepler inversion gives:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_sign_3}
+ M_{\rm app}^{\rm GR} = \frac{4\pi^2 a_{\rm GR}^3}{G P_o^2} = \frac{4\pi^2 \mathcal S_a^3 a_{\rm local}^3}{G \mathcal T_P^2 P_s^2}.
+\end{equation}
+</div>
+<p>
+ The local mass, using the local period and scale, with a possible dynamical-law modification $\mathcal D_{\rm dyn}$ ($\mathcal D_{\rm dyn} = 1$ for Newtonian), is:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_sign_4}
+ M_{\rm local}^{\rm TEP} = \frac{4\pi^2 a_{\rm local}^3}{G P_s^2 \, \mathcal D_{\rm dyn}}.
+\end{equation}
+</div>
+<p>
+ The ratio is:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_sign_5}
+ \boxed{\frac{M_{\rm app}^{\rm GR}}{M_{\rm local}^{\rm TEP}} = \frac{\mathcal S_a^3 \, \mathcal D_{\rm dyn}}{\mathcal T_P^2}.}
+\end{equation}
+</div>
+<p>
+ If the spatial scale is held fixed ($\mathcal S_a = 1$, $\mathcal D_{\rm dyn} = 1$), then $M_{\rm app} = M_{\rm local} / \mathcal T_P^2 < M_{\rm local}$. <em>Slow deep clocks alone deflate the inferred mass</em>, producing $M_{\rm phantom}^{T} < 0$. This is the opposite of the Phantom Mass claim. Positive Phantom Mass requires the spatial magnification to dominate:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_sign_6}
+ M_{\rm phantom}^{T} > 0 \quad \Longleftrightarrow \quad \mathcal S_a^3 \, \mathcal D_{\rm dyn} > \mathcal T_P^2.
+\end{equation}
+<p>
+ Physically, spatial magnification arises because the conformal factor $A(\phi)$ rescales the matter metric relative to the geometric engine. A distant observer using a fixed angular scale and a GR-based distance calibration measures an enlarged effective orbital radius, while the local material mass needed to support that orbit is unchanged. The temporal field therefore inflates the inferred mass when $A(\phi) > 1$ is strong enough to overcome the deflation from slow local clocks.
+</p>
+</div>
+<p>
+ The spatial calibration $\mathcal S_a$ is not a free parameter. It is determined by photon propagation on $\tilde g_{\mu\nu}$ (lensing magnification), the GR-inferred distance $D_{\rm GR}$ (standard-candle or parallax calibration through the temporal field), and the orbital dynamics on the temporal-well geometry. The critical threshold is $\mathcal S_a > \mathcal T_P^{2/3}$. For moderate temporal transfer $\mathcal T_P \sim 10$, this requires $\mathcal S_a > 4.6$ — a strong but achievable lensing magnification near a compact object.
+</p>
+<p>
+ The velocity-based mass estimator gives a complementary relation. With $v_{\rm GR} = \mathcal S_v \, v_{\rm local}$ (spectroscopic velocity calibration):
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_sign_7}
+ \frac{M_{\rm app}^{\rm GR}}{M_{\rm local}^{\rm TEP}} = \mathcal S_v^2 \, \mathcal S_a \, \mathcal D_{\rm dyn}.
+\end{equation}
+</div>
+<p>
+ The two estimators (Kepler and velocity) must agree in any consistent theory. Their joint constraint tightens the identifiability of $\mathcal S_a$ and $\mathcal T_P$.
+</p>
+<p>
+ Three outcomes are possible and the pipeline must be allowed to return any of them:
+</p>
+<table class="data-table">
+ <thead><tr><th>Outcome</th><th>Condition</th><th>Interpretation</th></tr></thead>
+ <tbody>
+ <tr><td>$M_{\rm phantom}^{T} > 0$</td><td>$\mathcal S_a^3 \mathcal D_{\rm dyn} > \mathcal T_P^2$</td><td>Spatial magnification dominates. Conventional mass is inflated. $M_{\rm matter} < M_{\rm GR\text{-}fit}$.</td></tr>
+ <tr><td>$M_{\rm phantom}^{T} = 0$</td><td>$\mathcal S_a^3 \mathcal D_{\rm dyn} = \mathcal T_P^2$</td><td>Effects cancel. Conventional mass equals local material mass. TEP reduces to GR for mass inference.</td></tr>
+ <tr><td>$M_{\rm phantom}^{T} < 0$</td><td>$\mathcal S_a^3 \mathcal D_{\rm dyn} < \mathcal T_P^2$</td><td>Temporal stretching dominates. Conventional mass is deflated. $M_{\rm matter} > M_{\rm GR\text{-}fit}$.</td></tr>
+ </tbody>
+</table>
+<p>
+ A pipeline structured to return only the first outcome is not testing the thesis — it is confirming it. The TEP-native refit (Section 9, Appendix J) must determine the sign from the data, not assume it. The derivation above is in.
+</p>
+<p>
+ Two distinct hypotheses must be separated in the observational analysis. The <em>composition hypothesis</em> $H_{\rm composition}: M_{\rm matter} < M_{\rm GR\text{-}fit}$ states that the compact object contains less material mass than the conventional fit suggests. The <em>calibration hypothesis</em> $H_{\rm calibration}: M_g < M_{\rm GR\text{-}fit}$ states that the large exterior gravitational parameter itself is a calibration illusion. These are different claims: a temporal field can contribute real energy and backreaction, so TEP might find $M_{\rm matter} \ll M_{\rm GR\text{-}fit}$ while $M_g \sim M_{\rm GR\text{-}fit}$. In that case there is little compressed matter, but there remains a large physical temporal–geometric charge. That would still be a major TEP result, but it would not mean the entire dynamical mass was merely a data-reduction illusion. The raw-observation fit must test both separately.
+</p>
+<p>
+ A separate question is whether "finite density" at the regular centre implies "no extreme compression." A regular-centre geometry can still represent a physically ultra-compact object with extraordinarily high density. The intended TEP vision is stronger: no extreme local compression. This requires an explicit proper-volume diagnostic. Define the proper volume inside a boundary radius $r_b$:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_proper_volume}
+ V_{\rm proper}(r_b) = 4\pi\int_0^{r_b} \sqrt{\tilde\gamma_{rr}}\,\tilde R^2(r)\,dr,
+\end{equation}
+</div>
+<p>
+ and the local mean density $\bar\rho_{\rm local} = M_{\rm matter} / V_{\rm proper}(r_b)$. The critical diagnostic is the volume ratio:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:tep_CV}
+ \mathcal C_V \equiv \frac{V_{\rm proper}}{(4\pi/3)\,r_{\rm app}^3},
+\end{equation}
+</div>
+<p>
+ where $r_{\rm app}$ is the externally inferred apparent radius. A value $\mathcal C_V \gg 1$ would demonstrate that the externally compact image corresponds to a much larger local proper volume — apparent compactness without physical compression. Without this calculation, "apparent compactness $\neq$ physical compression" remains an interpretation rather than a demonstrated property. The proper-volume diagnostic is a required output of the TEP-native refit.
+</p>

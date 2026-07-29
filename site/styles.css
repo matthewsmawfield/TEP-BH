@@ -1,4 +1,4 @@
-/* TEP-TH manuscript styling, aligned with the TEP-EXP academic preprint design */
+/* TEP-BH manuscript styling, aligned with the TEP-EXP academic preprint design */
 :root {
     --purple-deep: #1a0a2e;
     --purple-dark: #3d1e5e;
@@ -191,13 +191,20 @@ mjx-math > * {
 .summary-box,
 .conclusion-box,
 .key-finding,
-.critical-analysis {
+.critical-analysis,
+.theorem {
     background-color: var(--gray-light);
     border: 1px solid var(--purple-mid);
     border-radius: 12px;
     padding: 20px;
     margin: 30px 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.theorem {
+    background-color: rgba(61, 30, 94, 0.04);
+    border-left: 5px solid var(--gold-accent);
+    border-radius: 4px;
 }
 
 .key-finding,
@@ -224,7 +231,9 @@ mjx-math > * {
 .summary-box h4,
 .conclusion-box h4,
 .key-finding h3,
-.critical-analysis h4 {
+.critical-analysis h4,
+.theorem h3,
+.theorem h4 {
     margin-top: 0;
     color: var(--purple-dark);
 }
@@ -344,6 +353,22 @@ pre {
     word-wrap: break-word;
     overflow-x: auto;
     max-width: 100%;
+}
+
+.code-block {
+    background-color: var(--gray-light);
+    border: 1px solid var(--purple-mid);
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
 }
 
 .component-error {

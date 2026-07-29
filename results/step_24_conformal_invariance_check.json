@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "M": 1.0,
+    "g": 1.1
+  },
+  "conformal_factor": {
+    "A(0)": 4.68,
+    "model": "Gaussian approximation for verification"
+  },
+  "photon_sphere_g": {
+    "r_ps": 2.5869337220480944,
+    "b_c": 4.870797226989539
+  },
+  "photon_sphere_tilde_g": {
+    "r_ps": 2.5869337220479904,
+    "b_c": 4.870797226989539
+  },
+  "difference": {
+    "delta_b_c": 0.0,
+    "relative": 0.0
+  },
+  "conclusion": "Shadow identical on g and tilde_g (conformal null invariance)"
+}

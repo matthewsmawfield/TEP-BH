@@ -1,0 +1,237 @@
+{
+  "bibcode": "2017ApJ...837...30G",
+  "data": [
+    {
+      "sigma_v_kms": 113.0,
+      "t_yr": 2000.487,
+      "v_rad_kms": 1199.0
+    },
+    {
+      "sigma_v_kms": 45.0,
+      "t_yr": 2002.418,
+      "v_rad_kms": -495.0
+    },
+    {
+      "sigma_v_kms": 51.0,
+      "t_yr": 2002.421,
+      "v_rad_kms": -530.0
+    },
+    {
+      "sigma_v_kms": 59.0,
+      "t_yr": 2003.271,
+      "v_rad_kms": -1571.0
+    },
+    {
+      "sigma_v_kms": 40.0,
+      "t_yr": 2003.353,
+      "v_rad_kms": -1512.0
+    },
+    {
+      "sigma_v_kms": 51.0,
+      "t_yr": 2003.446,
+      "v_rad_kms": -1428.0
+    },
+    {
+      "sigma_v_kms": 46.0,
+      "t_yr": 2004.535,
+      "v_rad_kms": -1055.0
+    },
+    {
+      "sigma_v_kms": 37.0,
+      "t_yr": 2004.537,
+      "v_rad_kms": -1056.0
+    },
+    {
+      "sigma_v_kms": 39.0,
+      "t_yr": 2004.632,
+      "v_rad_kms": -1039.0
+    },
+    {
+      "sigma_v_kms": 77.0,
+      "t_yr": 2005.158,
+      "v_rad_kms": -1001.0
+    },
+    {
+      "sigma_v_kms": 37.0,
+      "t_yr": 2005.212,
+      "v_rad_kms": -960.0
+    },
+    {
+      "sigma_v_kms": 54.0,
+      "t_yr": 2005.215,
+      "v_rad_kms": -910.0
+    },
+    {
+      "sigma_v_kms": 60.0,
+      "t_yr": 2005.455,
+      "v_rad_kms": -839.0
+    },
+    {
+      "sigma_v_kms": 43.0,
+      "t_yr": 2005.461,
+      "v_rad_kms": -907.0
+    },
+    {
+      "sigma_v_kms": 77.0,
+      "t_yr": 2005.677,
+      "v_rad_kms": -774.0
+    },
+    {
+      "sigma_v_kms": 58.0,
+      "t_yr": 2005.769,
+      "v_rad_kms": -860.0
+    },
+    {
+      "sigma_v_kms": 42.0,
+      "t_yr": 2006.204,
+      "v_rad_kms": -702.0
+    },
+    {
+      "sigma_v_kms": 77.0,
+      "t_yr": 2006.305,
+      "v_rad_kms": -718.0
+    },
+    {
+      "sigma_v_kms": 57.0,
+      "t_yr": 2006.624,
+      "v_rad_kms": -658.0
+    },
+    {
+      "sigma_v_kms": 57.0,
+      "t_yr": 2007.23,
+      "v_rad_kms": -586.0
+    },
+    {
+      "sigma_v_kms": 57.0,
+      "t_yr": 2007.304,
+      "v_rad_kms": -537.0
+    },
+    {
+      "sigma_v_kms": 57.0,
+      "t_yr": 2007.55,
+      "v_rad_kms": -505.0
+    },
+    {
+      "sigma_v_kms": 57.0,
+      "t_yr": 2007.673,
+      "v_rad_kms": -482.0
+    },
+    {
+      "sigma_v_kms": 27.0,
+      "t_yr": 2008.262,
+      "v_rad_kms": -394.0
+    },
+    {
+      "sigma_v_kms": 62.0,
+      "t_yr": 2008.431,
+      "v_rad_kms": -425.0
+    },
+    {
+      "sigma_v_kms": 45.0,
+      "t_yr": 2009.385,
+      "v_rad_kms": -241.0
+    },
+    {
+      "sigma_v_kms": 27.0,
+      "t_yr": 2010.354,
+      "v_rad_kms": -134.0
+    },
+    {
+      "sigma_v_kms": 34.0,
+      "t_yr": 2011.317,
+      "v_rad_kms": -3.0
+    },
+    {
+      "sigma_v_kms": 57.0,
+      "t_yr": 2011.567,
+      "v_rad_kms": 35.0
+    },
+    {
+      "sigma_v_kms": 34.0,
+      "t_yr": 2012.21,
+      "v_rad_kms": 185.0
+    },
+    {
+      "sigma_v_kms": 34.0,
+      "t_yr": 2012.342,
+      "v_rad_kms": 167.0
+    },
+    {
+      "sigma_v_kms": 34.0,
+      "t_yr": 2012.494,
+      "v_rad_kms": 195.0
+    },
+    {
+      "sigma_v_kms": 34.0,
+      "t_yr": 2012.513,
+      "v_rad_kms": 186.0
+    },
+    {
+      "sigma_v_kms": 45.0,
+      "t_yr": 2012.705,
+      "v_rad_kms": 190.0
+    },
+    {
+      "sigma_v_kms": 23.0,
+      "t_yr": 2013.262,
+      "v_rad_kms": 313.0
+    },
+    {
+      "sigma_v_kms": 45.0,
+      "t_yr": 2013.655,
+      "v_rad_kms": 361.0
+    },
+    {
+      "sigma_v_kms": 34.0,
+      "t_yr": 2013.726,
+      "v_rad_kms": 384.0
+    },
+    {
+      "sigma_v_kms": 28.0,
+      "t_yr": 2014.185,
+      "v_rad_kms": 490.0
+    },
+    {
+      "sigma_v_kms": 34.0,
+      "t_yr": 2014.263,
+      "v_rad_kms": 515.0
+    },
+    {
+      "sigma_v_kms": 17.0,
+      "t_yr": 2014.521,
+      "v_rad_kms": 568.0
+    },
+    {
+      "sigma_v_kms": 23.0,
+      "t_yr": 2015.299,
+      "v_rad_kms": 765.0
+    },
+    {
+      "sigma_v_kms": 45.0,
+      "t_yr": 2015.706,
+      "v_rad_kms": 869.0
+    },
+    {
+      "sigma_v_kms": 45.0,
+      "t_yr": 2016.284,
+      "v_rad_kms": 1081.0
+    },
+    {
+      "sigma_v_kms": 34.0,
+      "t_yr": 2016.519,
+      "v_rad_kms": 1198.0
+    }
+  ],
+  "data_type": "spectroscopy",
+  "eta_inject": 0.0,
+  "is_synthetic": false,
+  "n_points": 44,
+  "source": "Gillessen et al. 2017, ApJ 837, 30 (VizieR J/ApJ/837/30, table5.dat/table3.dat)",
+  "star": "S2",
+  "synthetic_note": "Real astrometric and spectroscopic measurements of S2 relative to SgrA* from Gillessen et al. 2017 (J/ApJ/837/30).",
+  "units": {
+    "sigma_v": "km/s",
+    "t": "yr",
+    "v_rad": "km/s"
+  }
+}

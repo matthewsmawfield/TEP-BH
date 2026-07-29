@@ -1,0 +1,52 @@
+<h1>Appendix F — Physical Volume and Density Diagnostics</h1>
+<p>
+ This appendix distinguishes the geometric volume from the matter-frame volume diagnostics. The pipeline computes the exterior cumulative volume and an interior constant-$r$ volume element; it does not solve a self-consistent matter density profile.
+</p>
+
+<h2>F.1 Volume Elements</h2>
+<p>
+The geometric volume is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appF_1}
+ V_{\rm geom}(r)=\frac{4\pi}{3}r^3.
+\end{equation}
+</div>
+
+<p>
+Inside the geometric horizon, the spatial constant-$r$ slice has volume element per unit $v$
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appF_2}
+ \frac{d\tilde V}{dv}=4\pi A^2r^2\sqrt{|F|}.
+\end{equation}
+</div>
+
+<p>
+For the clean run this rises from $2.08\times10^2$ at $0.1M$ to $5.50\times10^5$ at $r_{\min}=10^{-8}M$.
+</p>
+
+<h2>F.2 Geometric Collapse and Physical Interior Growth</h2>
+<p>
+ $V_{\rm geom}\to0$ as $r\to0$, while the matter-frame interior volume element grows strongly because $A\sim r^{-1}$, reaching $d\tilde V/dv=5.50\times10^5$ at $r_{\min}=10^{-8}M$. The determinant is strictly negative at every sampled radius, so this growth is a physical result on a globally Lorentzian space, not a formal continuation diagnostic. The areal radius diverges ($\rho\sim1/r$), confirming that the Schwarzschild areal coordinate is not a direct measure of physical volume in TEP.
+</p>
+
+<h2>F.3 Numerical Verification</h2>
+<table class="data-table">
+ <thead><tr><th>Quantity</th><th>Geometric frame</th><th>Matter-frame diagnostic</th></tr></thead>
+ <tbody>
+ <tr><td>Volume at $r_{\min}$</td><td>$V_{\rm geom}=4.19\times10^{-24}$</td><td>interior element $d\tilde V/dv=5.50\times10^5$</td></tr>
+ <tr><td>Lorentzian domain</td><td>globally Lorentzian</td><td>$\det\tilde g_{2D}<0$ at all sampled radii</td></tr>
+ <tr><td>Density</td><td>$M/V_{\rm geom}\propto r^{-3}$</td><td>not independently computed by this pipeline</td></tr>
+ </tbody>
+</table>
+
+<h2>F.4 Supported Statement</h2>
+<div class="theorem">
+ <h3>Proposition F.1</h3>
+ <p>
+ The $\phi_0 = 2$ fixed-Schwarzschild configuration replaces the geometric zero-volume intuition with a strongly growing matter-frame interior volume element on a Lorentzian space for all $r > 0$. The areal radius diverges ($\rho \sim 1/r \to \infty$), confirming that this configuration is a spatially enlarged asymptotic end, not a bounded solution and not the final TEP solution. The Schwarzschild areal coordinate is not a direct measure of physical volume in TEP. A finite physical density claim requires an explicit stress-energy solution and is not asserted by the present diagnostic pipeline.
+ </p>
+</div>

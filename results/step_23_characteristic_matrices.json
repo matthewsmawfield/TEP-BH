@@ -1,0 +1,89 @@
+{
+  "description": "Characteristic matrices for shift-symmetric sGB",
+  "horndeski": {
+    "G_2": "X (canonical)",
+    "G_3": "0",
+    "G_4": "M_Pl\u00b2/2 (constant)",
+    "G_5": "-4 \u03b1_GB ln|X|"
+  },
+  "tensor": {
+    "G_4": "M_Pl**2/2",
+    "G_4X": "0",
+    "c_T_squared": "1",
+    "c_T_value": "1 on the Schwarzschild background benchmark",
+    "c_T_caveat": "In general Horndeski with G_5 \u2260 0, tensor propagation is not determined by G_4 alone on all backgrounds. Full TEP solution requires complete quadratic perturbation equations.",
+    "tensor_kinetic_term": "M_Pl**2/2",
+    "ghost_free": true,
+    "ghost_free_reason": "Tensor kinetic = M_Pl**2/2 > 0 (on Schwarzschild benchmark)",
+    "structural": true,
+    "structural_reason": "G_4 = M_Pl\u00b2/2 is constant, so c_T = 1 on the Schwarzschild benchmark. G_5 may modify tensor propagation on non-Schwarzschild backgrounds.",
+    "G5_note": "G_5 does not enter the G_4-only tensor speed formula, but in general Horndeski the G_5 term couples tensor perturbations to the background scalar gradient. Published EsGB perturbation analyses derive background-dependent speeds."
+  },
+  "scalar": {
+    "G_2": "X",
+    "G_2X": "1",
+    "G_3": "0",
+    "G_4": "M_Pl**2/2",
+    "G_5": "-4*alpha_GB*log(X)",
+    "scalar_kinetic_term": "-X",
+    "scalar_kinetic_sign": "K_S = -X > 0 for timelike gradient (X < 0) \u2192 no scalar ghost",
+    "scalar_speed": "c_S\u00b2 = 1 on the background metric (G_{4\u03c6} = 0, canonical kinetic)",
+    "ghost_free": true,
+    "G5_effect": "G_5 modifies the background scalar profile and scalar-tensor mixing, but not c_S directly"
+  },
+  "birefringence": {
+    "G_5": "-4*alpha_GB*log(X)",
+    "G_5X": "-4*alpha_GB/X",
+    "birefringence_spherical": "b = 0 (spherical symmetry \u2192 no anisotropic curvature)",
+    "birefringence_general": "b ~ \u03b1_GB * G_{5X} / G_4 * (shear) \u2260 0 on non-spherical backgrounds (O(\u03b1_GB))",
+    "key_result": "b = 0 on all spherically symmetric backgrounds (including Schwarzschild + scalar hair)"
+  },
+  "frame_dictionary": {
+    "frames": {
+      "matter_photon": {
+        "metric": "tilde_g_\u03bc\u03bd = A\u00b2(\u03c6) g_\u03bc\u03bd",
+        "probes": [
+          "photons (conformal invariance)",
+          "massive particles",
+          "shadow",
+          "lensing",
+          "ISCO"
+        ],
+        "coupling_order": "O(\u03b7) for massive particles (conformal factor), O(\u03b7\u00b2) for photons (metric correction only)"
+      },
+      "tensor": {
+        "metric": "g_\u03bc\u03bd (Einstein frame)",
+        "probes": [
+          "gravitational waves",
+          "QNMs"
+        ],
+        "speed": "c_T = 1 exactly (structural)",
+        "birefringence": "b = 0 on spherical backgrounds",
+        "coupling_order": "O(\u03b7\u00b2) (background correction only)"
+      },
+      "scalar": {
+        "metric": "g^scalar_\u03bc\u03bd \u2248 g_\u03bc\u03bd (canonical kinetic, constant G_4)",
+        "probes": [
+          "scalar perturbation \u03b4\u03c6",
+          "temporal wave"
+        ],
+        "speed": "c_S = 1 on background (canonical)",
+        "coupling_order": "O(\u03b7) mixing with polar sector"
+      }
+    },
+    "frame_split_signature": {
+      "shadow": "O(\u03b7\u00b2) \u2014 photons conformally invariant",
+      "ISCO": "O(\u03b7) \u2014 massive particles feel A = e^{-\u03c6}",
+      "QNM": "O(\u03b7\u00b2) \u2014 tensor on g, background correction",
+      "ratio": "~42\u00d7 (ISCO/shadow) \u2014 the coupling-order difference"
+    },
+    "key_insight": "The three characteristic metrics are structurally distinct: tilde_g (matter), g (tensor), g^scalar (temporal). The frame-split is the different coupling orders at which observables shift."
+  },
+  "conclusions": {
+    "c_T": "1 exactly (structural, all backgrounds)",
+    "c_S": "1 on background (canonical kinetic)",
+    "ghost_free": "Both tensor and scalar sectors are ghost-free",
+    "birefringence": "b = 0 on spherically symmetric backgrounds",
+    "frame_split": "Three distinct characteristic metrics with different coupling orders"
+  }
+}

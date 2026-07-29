@@ -1,0 +1,66 @@
+{
+  "data_source": {
+    "citation": "LIGO/Virgo Collaboration 2020, PRL 125, 101102. DOI: 10.1103/PhysRevLett.125.101102",
+    "file": "ligo/GW190521_posterior_samples_J1249.h5",
+    "n_samples": 47042,
+    "sha256": "25612f3f688daf1e0477a96188e2b094d35b719e6d9deec72bc52522b91e95ab",
+    "url": "https://zenodo.org/records/4057131/files/posterior_samples_GW190521_J1249+3449.h5?download=1",
+    "zenodo_doi": "10.5281/zenodo.4057131"
+  },
+  "dependencies": [
+    "step_00_data_download",
+    "step_01_field_equations"
+  ],
+  "description": "Examine GW190521 mass-gap event for TEP exterior consistency using real LIGO posterior samples and a hypothetical conformal-factor constraint scan",
+  "honest_assessment": "TEP does not modify exterior gravitational-wave observables. The conformal factor A \u2248 1 in the exterior, so GW masses are unchanged. The pair-instability mass gap problem is not addressed by TEP temporal redshift.",
+  "hypothetical_constraint_scan": {
+    "A_critical_5pct": 0.3,
+    "A_exterior_actual": 1.0,
+    "description": "If TEP did modify exterior GW masses (which it does not), A would need to be < 0.3 to move the primary out of the mass gap. Since A \u2248 1 in the exterior, TEP is consistent with observed masses.",
+    "m1_at_A_critical": 25.620621396471314
+  },
+  "key_result": "TEP does not modify exterior GW observables (A=1.000000 \u2248 1); the pair-instability mass gap is not addressed by TEP temporal redshift",
+  "mass_gap_boundaries": {
+    "lower": 65.0,
+    "upper": 130.0
+  },
+  "model": {
+    "B0": 1.0,
+    "B_type": "gaussian_bump",
+    "M": 1.0,
+    "beta_A": -1.0,
+    "delta": 0.05,
+    "n_B": 2.0,
+    "phi_0": 2.0,
+    "r_h": 2.0,
+    "sigma_B": 1.5
+  },
+  "standard_interpretation": {
+    "chirp_mass_90ci": [
+      55.83895837786423,
+      81.4127035987419
+    ],
+    "chirp_mass_median": 64.83358955400792,
+    "final_mass_median": 143.87365359405047,
+    "m1_90ci": [
+      70.79806490971568,
+      108.85703214109309
+    ],
+    "m1_median": 85.40207132157106,
+    "m2_90ci": [
+      48.47502925043175,
+      87.87054666989675
+    ],
+    "m2_median": 67.60051096086468,
+    "prob_m1_in_mass_gap": 0.9931125377322393,
+    "redshift_median": 0.7609616445498797
+  },
+  "status": "success",
+  "step": "step_06_gw190521_mass_gap",
+  "tep_exterior_check": {
+    "A_exterior": 1.0,
+    "conclusion": "A \u2248 1 in the exterior (r >> 2M). TEP does not modify exterior GW observables. GW-measured masses are unchanged.",
+    "deviation_from_unity": 0.0
+  },
+  "timestamp": "2026-07-29T01:18:12.715662"
+}

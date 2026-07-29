@@ -1,0 +1,53 @@
+{
+  "S2": {
+    "M_BH_Msun": 4280000.0,
+    "M_BH_err": 50000.0,
+    "Omega_deg": 226.94,
+    "Omega_err": 0.6,
+    "R0_err": 60.0,
+    "R0_pc": 8320.0,
+    "T_orb_err": 0.02,
+    "T_orb_yr": 16.0,
+    "a_arcsec": 0.1255,
+    "a_err": 0.0009,
+    "e_err": 0.0019,
+    "eccentricity": 0.8839,
+    "i_err": 0.4,
+    "inclination_deg": 134.18,
+    "omega_deg": 65.51,
+    "omega_err": 0.57,
+    "references": [
+      "Gillessen et al. 2017, ApJ 837, 30 (VizieR J/ApJ/837/30, table3.dat)",
+      "GRAVITY Collaboration 2018a, A&A 615, L15 (DOI: 10.1051/0004-6361/201833718)",
+      "GRAVITY Collaboration 2020, A&A 636, L5 (DOI: 10.1051/0004-6361/202037813)",
+      "GRAVITY Collaboration 2022, A&A 657, L12 (DOI: 10.1051/0004-6361/202142465)"
+    ],
+    "star": "S2",
+    "t_peri_err": 0.01,
+    "t_peri_yr": 2002.33
+  },
+  "S29": {
+    "T_orb_yr": 83.0,
+    "a_arcsec": 0.293,
+    "eccentricity": 0.75,
+    "inclination_deg": 130.0,
+    "star": "S29",
+    "t_peri_yr": 2021.4
+  },
+  "S38": {
+    "T_orb_yr": 19.2,
+    "a_arcsec": 0.144,
+    "eccentricity": 0.42,
+    "inclination_deg": 168.0,
+    "star": "S38",
+    "t_peri_yr": 2022.1
+  },
+  "S55": {
+    "T_orb_yr": 12.0,
+    "a_arcsec": 0.107,
+    "eccentricity": 0.73,
+    "inclination_deg": 128.0,
+    "star": "S55",
+    "t_peri_yr": 2021.7
+  }
+}

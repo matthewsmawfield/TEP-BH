@@ -1,0 +1,120 @@
+{
+  "step": "02_null_expansions",
+  "description": "Null expansions and geodesic structure",
+  "regression_tests": {
+    "theta_plus_Schwarzschild": {
+      "expected": "2*sqrt(F)/r",
+      "computed": "2/(r**(3/2)*sqrt(-1/(2*M - r)))",
+      "pass": true
+    },
+    "theta_plus_TEP_Hayward_phi0_1": {
+      "expected": "0 (temporal freeze)",
+      "computed": "0",
+      "pass": true
+    },
+    "theta_plus_TEP_Schwarzschild_phi0_1": {
+      "expected": "0 (temporal freeze)",
+      "computed": "0",
+      "pass": true
+    },
+    "theta_plus_TEP_Schwarzschild_phi0_2": {
+      "expected": "nonzero (no freeze)",
+      "computed": "-2*sqrt(r)/(r_h**2*sqrt(-1/(2*M - r)))",
+      "pass": true
+    }
+  },
+  "all_tests_pass": true,
+  "metrics": {
+    "schwarzschild": {
+      "name": "Schwarzschild",
+      "theta_plus": "2/(r**(3/2)*sqrt(-1/(2*M - r)))",
+      "theta_minus": "-2/(r**(3/2)*sqrt(-1/(2*M - r)))",
+      "lambda_integrand": "sqrt(r)*sqrt(-1/(2*M - r))",
+      "limits": {
+        "theta_plus_r0": "-oo*I",
+        "theta_minus_r0": "oo*I",
+        "lambda_integrand_r0": "0"
+      },
+      "A": "1"
+    },
+    "hayward": {
+      "name": "Hayward",
+      "theta_plus": "2/(r*sqrt(2*M*ell**2 + r**3)*sqrt(1/(2*M*ell**2 - 2*M*r**2 + r**3)))",
+      "theta_minus": "-2/(r*sqrt(2*M*ell**2 + r**3)*sqrt(1/(2*M*ell**2 - 2*M*r**2 + r**3)))",
+      "lambda_integrand": "sqrt((-2*M*ell**2 - r**3)/(-2*M*ell**2 + 2*M*r**2 - r**3))",
+      "limits": {
+        "theta_plus_r0": "oo",
+        "theta_minus_r0": "-oo",
+        "lambda_integrand_r0": "1"
+      },
+      "A": "1"
+    },
+    "tep_schwarzschild_phi0_1": {
+      "name": "TEP-Schwarzschild (phi0=1)",
+      "theta_plus": "0",
+      "theta_minus": "0",
+      "lambda_integrand": "r_h*sqrt(-1/(2*M - r))/sqrt(r)",
+      "limits": {
+        "theta_plus_r0": "0",
+        "theta_minus_r0": "0",
+        "lambda_integrand_r0": "oo*I"
+      },
+      "A": "r_h/r"
+    },
+    "tep_schwarzschild_phi0_2": {
+      "name": "TEP-Schwarzschild (phi0=2)",
+      "theta_plus": "-2*sqrt(r)/(r_h**2*sqrt(-1/(2*M - r)))",
+      "theta_minus": "2*sqrt(r)/(r_h**2*sqrt(-1/(2*M - r)))",
+      "lambda_integrand": "r_h**2*sqrt(-1/(2*M - r))/r**(3/2)",
+      "limits": {
+        "theta_plus_r0": "0",
+        "theta_minus_r0": "0",
+        "lambda_integrand_r0": "oo*I"
+      },
+      "A": "r_h**2/r**2"
+    },
+    "tep_hayward_phi0_1": {
+      "name": "TEP-Hayward (phi0=1)",
+      "theta_plus": "0",
+      "theta_minus": "0",
+      "lambda_integrand": "r_h*sqrt((-2*M*ell**2 - r**3)/(-2*M*ell**2 + 2*M*r**2 - r**3))/r",
+      "limits": {},
+      "A": "r_h/r"
+    }
+  },
+  "affine_parameter_analysis": {
+    "phi0_1/2": {
+      "phi0": "1/2",
+      "exponent": "0",
+      "behavior": "converges (finite affine parameter)",
+      "limit": "finite",
+      "inward_finite": "True",
+      "outward_infinite": "False"
+    },
+    "phi0_1": {
+      "phi0": "1",
+      "exponent": "-1/2",
+      "behavior": "converges (finite affine parameter)",
+      "limit": "finite",
+      "inward_finite": "True",
+      "outward_infinite": "False"
+    },
+    "phi0_3/2": {
+      "phi0": "3/2",
+      "exponent": "-1",
+      "behavior": "diverges logarithmically (infinite affine parameter)",
+      "limit": "ln(r) -> -oo",
+      "inward_finite": "False",
+      "outward_infinite": "True"
+    },
+    "phi0_2": {
+      "phi0": "2",
+      "exponent": "-3/2",
+      "behavior": "diverges as power law (infinite affine parameter)",
+      "limit": "r^-1/2 -> oo",
+      "inward_finite": "False",
+      "outward_infinite": "True"
+    }
+  },
+  "key_finding": "For phi0=1, theta_+ = 0 exactly (temporal freeze confirmed). However, the pure conformal affine parameter converges from BOTH directions (inward and outward). The inward-finite/outward-infinite asymmetry requires EF coordinates or the disformal term."
+}

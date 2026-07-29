@@ -1,7 +1,7 @@
 # Temporal Equivalence Principle: Fermion Spin as Temporal-Orientation Holonomy
 **Matthew Lukin Smawfield**
 Version: v0.1 (Paris)
-First published: 7 June 2026 · Last updated: 2 July 2026
+First published: 7 June 2026 · Last updated: 19 July 2026
 DOI: 10.5281/zenodo.20572706
 
 ---

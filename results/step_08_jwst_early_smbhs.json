@@ -1,0 +1,36 @@
+{
+  "cosmology": {
+    "H0": 67.4,
+    "Omega_L": 0.685,
+    "Omega_m": 0.315
+  },
+  "data_sources": {
+    "CEERS_2782": "Kocevski et al. 2023, ApJL 946, L14",
+    "CEERS_746": "Kocevski et al. 2023, ApJL 946, L14",
+    "GN_z11": "Maiolino et al. 2024, Nature 627, 59",
+    "J1243_0100": "Matsuoka et al. 2019, ApJL 872, L2",
+    "J1342_0928": "Banados et al. 2018, Nature 553, 473",
+    "UHZ1": "Bogdan et al. 2024, ApJL 960, L1"
+  },
+  "dependencies": [
+    "step_00_data_download"
+  ],
+  "description": "Compare JWST high-redshift SMBH masses against an idealized Eddington-limited growth envelope from 100 M_sun seeds using the 45 Myr Salpeter timescale",
+  "eddington_parameters": {
+    "radiative_efficiency": 0.1,
+    "salpeter_time_myr": 45.0,
+    "seed_mass_msun": 100.0
+  },
+  "key_result": "2/6 high-z SMBHs exceed the continuous-Eddington growth envelope (mean M_obs/M_Edd = 2.6x); TEP does not modify exterior mass measurements",
+  "results": {
+    "max_ratio_obs_to_edd": 12.76785415327335,
+    "mean_ratio_obs_to_edd": 2.615552986156097,
+    "min_ratio_obs_to_edd": 2.9202377667586133e-06,
+    "n_exceed_continuous_eddington_envelope": 2,
+    "n_sources": 6
+  },
+  "status": "success",
+  "step": "step_08_jwst_early_smbhs",
+  "tep_assessment": "TEP does not modify exterior mass measurements. The conformal factor A(phi) ~ 1 in the exterior where BH masses are measured, so observed masses are true masses. This calculation uses the standard 45 Myr Salpeter e-folding time and reports which objects exceed an idealized continuous-Eddington envelope from a 100-solar-mass seed; it does not attribute any residual growth tension to TEP.",
+  "timestamp": "2026-07-29T01:18:12.727832"
+}

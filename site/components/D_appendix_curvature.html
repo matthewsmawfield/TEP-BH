@@ -1,0 +1,119 @@
+<h1>Appendix D — Curvature Invariants and the Fixed-Background Theorem</h1>
+<p>
+ This appendix records the exact curvature analysis for the TEP matter metric. It is proved that the naive conformal formula $\tilde K = A^{-12} K_{\rm Schw}$ is incorrect for non-constant conformal factors, the exact Kretschmann $\tilde K \sim r^{4\phi_0 - 6}$ is derived, and the fixed-background theorem for the fixed-Schwarzschild construction is established.
+</p>
+
+<h2>D.1 The Exact Kretschmann Scalar</h2>
+<p>
+ For the pure conformal matter metric $\tilde g = A^2 g_{\rm Schw}$ with $A = (r_h/r)^{\phi_0}$ in the deep interior ($r \ll r_h$, where $F \approx -2M/r$ and $B \to 0$), the Kretschmann scalar is computed in standard Schwarzschild coordinates $(t, r)$ where the metric is diagonal:
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:appD_1}
+ \tilde g_{tt} = -A^2 F, \quad \tilde g_{rr} = \frac{A^2}{F}, \quad \tilde g_{\theta\theta} = A^2 r^2.
+\end{equation}
+</div>
+<p>
+The four independent orthonormal-frame Riemann components are:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appD_2}
+ E = \frac{R_{trtr}}{\tilde g_{tt}\,\tilde g_{rr}}, \quad F_t = \frac{R_{t\theta t\theta}}{\tilde g_{tt}\,\tilde g_{\theta\theta}}, \quad F_r = \frac{R_{r\theta r\theta}}{\tilde g_{rr}\,\tilde g_{\theta\theta}}, \quad G = \frac{R_{\theta\phi\theta\phi}}{\tilde g_{\theta\theta}^2},
+\end{equation}
+</div>
+
+<p>
+and the Kretschmann scalar is $K = 4E^2 + 8F_t^2 + 8F_r^2 + 4G^2$.
+</p>
+<p>
+Each component scales as $r^{2\phi_0 - 3}$ (verified by exact SymPy computation), giving:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appD_3}
+ \boxed{\tilde K \sim r^{4\phi_0 - 6} \quad \text{as } r \to 0.}
+\end{equation}
+</div>
+<p>
+ This is NOT $r^{12\phi_0 - 6}$ as the naive conformal formula $A^{-12} K_{\rm Schw}$ suggests. The conformal formula includes only the leading Schwarzschild term scaled by $A^{-12}$, omitting the derivative terms from the non-constant conformal factor $A(r)$. For $\phi_0 < 3/2$, the derivative terms ($r^{4\phi_0-6}$) dominate over the leading term ($r^{12\phi_0-6}$), and the conformal formula underestimates the curvature.
+</p>
+
+<h2>D.2 Specific Values (Exact, $M = 1$)</h2>
+<table class="data-table">
+ <thead>
+ <tr><th>$\phi_0$</th><th>$\tilde K$ (exact, deep interior)</th><th>$\tilde K \to 0$?</th><th>$\rho = Ar$ bounded?</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>$0.5$</td><td>$\frac{75}{4r^4} + \cdots$</td><td>No ($\to \infty$)</td><td>Yes</td></tr>
+ <tr><td>$1.0$</td><td>$\frac{9}{r^2} + \frac{1}{4}$</td><td>No ($\to \infty$)</td><td>Yes ($\rho \to r_h$)</td></tr>
+ <tr><td>$1.5$</td><td>$\frac{291}{64}$ (constant)</td><td>No ($\to$ const)</td><td>No ($\rho \to \infty$)</td></tr>
+ <tr><td>$2.0$</td><td>$\frac{39\,r^2}{16}$</td><td>Yes ($\to 0$)</td><td>No ($\rho \sim r_h^2/r \to \infty$)</td></tr>
+ <tr><td>$2.5$</td><td>$\frac{1323\,r^4}{1024}$</td><td>Yes ($\to 0$)</td><td>No</td></tr>
+ </tbody>
+</table>
+
+<h2>D.3 The Fixed-Background Theorem</h2>
+<div class="theorem">
+ <h3>Theorem D.1 (Fixed-Schwarzschild)</h3>
+ <p>
+ Within the conformal-disformal TEP framework with geometric metric fixed to Schwarzschild, curvature regularity and bounded physical areal radius are mutually exclusive.
+ </p>
+</div>
+<h4>Proof</h4>
+<p>
+ Curvature regularity ($\tilde K \to 0$ as $r \to 0$) requires $4\phi_0 - 6 > 0$, i.e., $\phi_0 > 3/2$. Bounded areal radius ($\rho = A \cdot r = r_h^{\phi_0} r^{1-\phi_0}$ finite as $r \to 0$) requires $1 - \phi_0 \geq 0$, i.e., $\phi_0 \leq 1$. These conditions are mutually exclusive: there is no $\phi_0$ satisfying both $\phi_0 > 3/2$ and $\phi_0 \leq 1$. $\square$
+</p>
+
+<h2>D.4 Numerical Verification</h2>
+<p>
+ The exact formula $\tilde K \sim r^{4\phi_0 - 6}$ is verified numerically using the corrected pipeline curvature computation (standard Schwarzschild coordinates, 4-term Kretschmann formula). The power law is recovered to within 0.1% accuracy for all tested $\phi_0$ values:
+</p>
+<table class="data-table">
+ <thead>
+ <tr><th>$\phi_0$</th><th>Numerical power law</th><th>Expected $4\phi_0 - 6$</th><th>Deviation</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>0.50</td><td>$r^{-4.000}$</td><td>$-4.0$</td><td>0.000</td></tr>
+ <tr><td>0.75</td><td>$r^{-3.000}$</td><td>$-3.0$</td><td>0.000</td></tr>
+ <tr><td>1.00</td><td>$r^{-2.001}$</td><td>$-2.0$</td><td>0.001</td></tr>
+ <tr><td>1.25</td><td>$r^{-1.001}$</td><td>$-1.0$</td><td>0.001</td></tr>
+ <tr><td>1.50</td><td>$r^{-0.001}$</td><td>$0.0$</td><td>0.001</td></tr>
+ <tr><td>1.75</td><td>$r^{0.999}$</td><td>$1.0$</td><td>0.001</td></tr>
+ <tr><td>2.00</td><td>$r^{1.999}$</td><td>$2.0$</td><td>0.001</td></tr>
+ <tr><td>2.50</td><td>$r^{3.999}$</td><td>$4.0$</td><td>0.001</td></tr>
+ </tbody>
+</table>
+<p>
+ The Schwarzschild baseline ($\phi_0 \to 0$, $A \to 1$) recovers $K = 48M^2/r^6$ to within $5 \times 10^{-6}$ (0.0005%). All regression tests pass.
+</p>
+
+<h2>D.5 Corrected Values for the $\phi_0 = 2$ Prototype</h2>
+<p>
+ The $\phi_0 = 2$ case (curvature-regular but spatially-enlarged) has the following corrected curvature values, replacing the incorrect $\tilde K \sim r^{18}$ and $\tilde K \sim 10^{-150}$ from the naive conformal formula:
+</p>
+<table class="data-table">
+ <thead>
+ <tr><th>Location</th><th>$r/M$</th><th>$\tilde K$ (corrected)</th><th>$\tilde K$ (old, wrong)</th><th>$K_{\rm Schw}$</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Exterior</td><td>$10$</td><td>$4.79 \times 10^{-5}$</td><td>$4.79 \times 10^{-5}$</td><td>$4.79 \times 10^{-5}$</td></tr>
+ <tr><td>Horizon</td><td>$2$</td><td>$0.748$</td><td>$0.752$</td><td>$0.752$</td></tr>
+ <tr><td>Deep interior</td><td>$0.1$</td><td>$2.31 \times 10^{-2}$</td><td>$\sim 10^{-150}$</td><td>$4.79 \times 10^{7}$</td></tr>
+ <tr><td>Innermost</td><td>$10^{-8}$</td><td>$1.36 \times 10^{-16}$</td><td>$\sim 10^{-300}$</td><td>$4.80 \times 10^{49}$</td></tr>
+ </tbody>
+</table>
+<p>
+ The corrected values show $\tilde K$ is small but not absurdly tiny. The exact power law $\tilde K \sim 39r^2/16$ gives $\tilde K(0.1) = 0.024$, matching the numerical value $0.023$ to within 4%. The old values ($\sim 10^{-150}$) were artifacts of the incorrect conformal formula.
+</p>
+
+<h2>D.6 Disformal Term: Status of the Classification</h2>
+<p>
+ The disformal term $B\nabla\phi\nabla\phi$ contributes $B(\phi')^2$ to $\tilde g_{rr}$. In the deep interior, the Lorentzian condition $\det_{2d} < 0$ forces $B \to 0$ (for logarithmic $\psi$) or $\tilde g_{rr} \to 0$ (for saturating $\psi$). For the tested parameter space, the deep interior curvature is controlled by $A$ alone, and the conformal theorem applies. The full disformal classification — classifying all allowed asymptotics of $A$, $B$, $\phi$ under $\det\tilde g < 0$, $\tilde K < \infty$, and $\tilde R_{\rm area} < \infty$ — is an open mathematical programme (Section 3.3). The statement that the disformal term cannot help is established for the tested class but not as a general theorem.
+</p>
+
+<h2>D.7 Implication: The Temporal Field Must Modify the Geometry</h2>
+<div class="key-concept">
+ <p>
+ The fixed-background theorem proves that the fixed-Schwarzschild construction is inconsistent. The temporal field cannot merely sit on top of a Schwarzschild black hole — it must also change the black-hole geometry itself. When the geometric metric is allowed to be regular, all regularity conditions hold simultaneously.
+ </p>
+</div>

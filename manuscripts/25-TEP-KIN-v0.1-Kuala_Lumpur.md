@@ -1,7 +1,7 @@
 # Temporal Equivalence Principle: Disformal Kinematics and the Measurement Landscape
 **Matthew Lukin Smawfield**
 Version: v0.1 (Kuala Lumpur)
-First published: 24 May 2026 · Last updated: 2 July 2026
+First published: 24 May 2026 · Last updated: 19 July 2026
 DOI: 10.5281/zenodo.20572741
 
 ---

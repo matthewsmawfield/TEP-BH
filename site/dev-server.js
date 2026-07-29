@@ -14,7 +14,7 @@ class DevServer {
     this.liveServerProcess = null;
     this.watcherReady = false;
     this.watcherRestarting = false;
-    this.port = 51814; // Unique port for TEP-TH
+    this.port = 51814; // Unique port for TEP-BH
   }
 
   async killPortProcess() {
@@ -125,7 +125,7 @@ class DevServer {
   }
 
   async start() {
-    console.log("🎯 TEP-TH Development Server");
+    console.log("🎯 TEP-BH Development Server");
     console.log("===============================\n");
 
     // Ensure dist directory exists and do initial build

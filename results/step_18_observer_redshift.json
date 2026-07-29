@@ -1,0 +1,18 @@
+{
+  "step": "04_observer_redshift",
+  "description": "Observer redshift and clock-rate profile",
+  "formulas": {
+    "z_Schwarzschild_phi0_1": "r**(3/2)/(r_h*sqrt(-2*M + r)) - 1",
+    "z_Schwarzschild_phi0_2": "r**(5/2)/(r_h**2*sqrt(-2*M + r)) - 1",
+    "z_Hayward_phi0_1": "r*sqrt(2*M*ell**2 + r**3)/(r_h*sqrt(2*M*ell**2 - 2*M*r**2 + r**3)) - 1",
+    "clock_rate_Schwarzschild_phi0_1": "r_h*sqrt(-2*M/r + 1)/r",
+    "clock_rate_Hayward_phi0_1": "r_h*sqrt(-2*M*r**2/(2*M*ell**2 + r**3) + 1)/r"
+  },
+  "limits": {
+    "z_Schwarzschild_horizon": "oo",
+    "z_Hayward_centre": "-1",
+    "z_Hayward_horizon_approx": "(2*M*sqrt(4*M**2 + ell**2) - ell*r_h)/(ell*r_h)",
+    "clock_rate_Hayward_centre": "oo"
+  },
+  "key_finding": "The infinite redshift (temporal freeze) occurs at the HORIZON, not at the centre. On the Hayward regular benchmark with phi0=1, the centre has z -> -1 (blueshift) and dtau/dt -> infinity (clock runs faster), because the conformal divergence A -> infinity dominates over F -> 1. The manuscript's 'redshift becomes infinite as r -> 0' is correct for the Schwarzschild horizon but not for the Hayward centre."
+}

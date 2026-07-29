@@ -10,7 +10,7 @@ Usage:
     python process_pdf.py <input_pdf> [--quality ebook|printer|prepress|default]
 
 Example:
-    python process_pdf.py site/public/docs/27-TEP-TH-v0.2-Thika.pdf --quality ebook
+    python process_pdf.py site/public/docs/28-TEP-BH-v0.2-Bahrain.pdf --quality ebook
 """
 
 import subprocess
@@ -106,7 +106,7 @@ def build_metadata(cff_data):
     else:
         author_name = 'Matthew Lukin Smawfield'
 
-    version = cff_data.get('version', 'v0.2')
+    version = cff_data.get('version', 'v0.1')
     v_match = re.match(r'v?([\d.]+)(?:\s*\(([^)]+)\))?', str(version))
     if v_match:
         version_num = v_match.group(1)
@@ -145,7 +145,7 @@ def build_metadata(cff_data):
         'Subject': abstract,
         'Keywords': keywords,
         'Producer': producer_label,
-        'Copyright': f'Creative Commons Attribution 4.0 International License ({license_str})',
+        'Copyright': license_str,
     }
 
     if date_pdf:

@@ -1,0 +1,148 @@
+{
+  "correlation_analysis": {
+    "description": "Standard astrophysical correlation between L_peak/L_Edd and M_BH. Not interpreted as TEP evidence.",
+    "fit_log10_eddington_ratio_vs_log10_mbh": {
+      "intercept": 1.4046268343636001,
+      "n_events": 9,
+      "p_value_two_tailed": 0.16703318444076612,
+      "pearson_r": -0.5034840600228263,
+      "r_squared": 0.25349619869706874,
+      "slope": -0.3972249853173553
+    }
+  },
+  "data_sources": {
+    "catalog": "van Velzen et al. 2021, ApJ 908, 4 (ZTF TDE catalog, 33 events)",
+    "individual_events": [
+      "Holoien et al. 2016, MNRAS 455, 1690",
+      "Holoien et al. 2014, MNRAS 445, 3263",
+      "Holoien et al. 2021, MNRAS 505, 3965",
+      "Blagorodnova et al. 2017, ApJ 844, 46",
+      "Arcavi et al. 2014, ApJ 793, 38",
+      "Holoien et al. 2020, ApJ 903, 151",
+      "van Velzen et al. 2021, ApJ 908, 4",
+      "Nicholl et al. 2020, MNRAS 499, 482",
+      "Wevers et al. 2019, MNRAS 488, 4818"
+    ]
+  },
+  "dependencies": [],
+  "description": "Compile published TDE peak luminosity and BH mass measurements and perform a standard astrophysical analysis of the Eddington-ratio distribution and its correlation with black-hole mass.",
+  "key_result": "9/9 TDEs are sub-Eddington (fraction 100.0%); TEP does not modify exterior luminosities and does not explain the sub-Eddington population.",
+  "standard_analysis": {
+    "finding": "Many TDEs are significantly dimmer than Eddington-limited predictions, constituting the 'missing energy' problem in standard TDE astrophysics.",
+    "l_edd_constant_erg_s_per_msun": 1.26e+38,
+    "max_eddington_ratio": 0.25097441747368093,
+    "mean_eddington_ratio": 0.12126273867494704,
+    "median_eddington_ratio": 0.07936507936507937,
+    "min_eddington_ratio": 0.02509744174736809,
+    "n_sub_eddington": 9,
+    "n_total": 9,
+    "prediction": "L_peak ~ L_Eddington for the BH mass"
+  },
+  "status": "success",
+  "step": "step_10_tde_missing_flares",
+  "sub_eddington_fraction": 1.0,
+  "tde_measurements": [
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "Holoien et al. 2016, MNRAS 455, 1690",
+      "eddington_ratio": 0.25097441747368093,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 3.1622776601683794e+43,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 43.5,
+      "notes": "Well-studied nearby TDE in PGC 043234; X-ray and UV bright.",
+      "source": "ASASSN-14li"
+    },
+    {
+      "bh_mass_msun": 3160000.0,
+      "citation": "Holoien et al. 2014, MNRAS 445, 3263",
+      "eddington_ratio": 0.02511553144464537,
+      "l_edd_erg_s": 3.9816e+44,
+      "l_peak_erg_s": 1e+43,
+      "log_l_edd": 44.600057627735964,
+      "log_l_peak": 43.0,
+      "notes": "First ASASSN-discovered TDE; UV-bright, X-ray faint.",
+      "source": "ASASSN-14ae"
+    },
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "Holoien et al. 2021, MNRAS 505, 3965",
+      "eddington_ratio": 0.25097441747368093,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 3.1622776601683794e+43,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 43.5,
+      "notes": "Long-lived UV-bright TDE with sustained emission.",
+      "source": "ASASSN-19qj"
+    },
+    {
+      "bh_mass_msun": 316000.0,
+      "citation": "Blagorodnova et al. 2017, ApJ 844, 46",
+      "eddington_ratio": 0.07942228401065851,
+      "l_edd_erg_s": 3.9816e+43,
+      "l_peak_erg_s": 3.162277660168379e+42,
+      "log_l_edd": 43.600057627735964,
+      "log_l_peak": 42.5,
+      "notes": "Low-luminosity TDE around a low-mass BH; fast decay.",
+      "source": "iPTF16fnl"
+    },
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "Arcavi et al. 2014, ApJ 793, 38",
+      "eddington_ratio": 0.07936507936507937,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 1e+43,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 43.0,
+      "notes": "UV/optical TDE from the Palomar Transient Factory.",
+      "source": "PTF09ge"
+    },
+    {
+      "bh_mass_msun": 10000000.0,
+      "citation": "Holoien et al. 2020, ApJ 903, 151",
+      "eddington_ratio": 0.07936507936507937,
+      "l_edd_erg_s": 1.26e+45,
+      "l_peak_erg_s": 1e+44,
+      "log_l_edd": 45.10037054511756,
+      "log_l_peak": 44.0,
+      "notes": "Luminous TDE; one of the brightest optical TDEs discovered.",
+      "source": "ASASSN-18pg"
+    },
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "van Velzen et al. 2021, ApJ 908, 4",
+      "eddington_ratio": 0.25097441747368093,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 3.1622776601683794e+43,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 43.5,
+      "notes": "ZTF TDE catalog event; canonical optical/UV flare.",
+      "source": "ZTF19aamqjar"
+    },
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "Nicholl et al. 2020, MNRAS 499, 482",
+      "eddington_ratio": 0.050075979720649935,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 6.309573444801892e+42,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 42.8,
+      "notes": "Nearby TDE with early-time spectroscopy; sub-Eddington peak.",
+      "source": "AT2019qiz"
+    },
+    {
+      "bh_mass_msun": 10000000.0,
+      "citation": "Wevers et al. 2019, MNRAS 488, 4818",
+      "eddington_ratio": 0.02509744174736809,
+      "l_edd_erg_s": 1.26e+45,
+      "l_peak_erg_s": 3.1622776601683794e+43,
+      "log_l_edd": 45.10037054511756,
+      "log_l_peak": 43.5,
+      "notes": "X-ray bright TDE in LCRS B223722.5-004923; recurring flares.",
+      "source": "AT2018fyk"
+    }
+  ],
+  "tep_assessment": "TEP does not modify exterior luminosity measurements. The conformal factor A ~ 1 in the exterior where TDE emission escapes, so TDE luminosities are unaffected by TEP. The temporal-freeze mechanism only operates inside the horizon, where photons cannot escape to reach the observer. The observed sub-Eddington TDEs are therefore not explained by TEP; they reflect known astrophysical effects (super-Eddington winds, reprocessing, viewing angle, circularization efficiency).",
+  "tep_explains_sub_eddington_tdes": false,
+  "timestamp": "2026-07-29T01:18:12.922556"
+}

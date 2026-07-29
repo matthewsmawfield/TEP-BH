@@ -1,0 +1,96 @@
+{
+  "M87": {
+    "calibration_factor_alpha": {
+      "uncertainty_high": 0.5,
+      "uncertainty_low": 0.3,
+      "value": 10.7
+    },
+    "data_product": "2019-D01-01 (DOI: 10.25739/g85n-f134)",
+    "doi": "10.3847/2041-8213/ab0ec7",
+    "inferred_parameters": {
+      "distance_Mpc": {
+        "uncertainty": 0.8,
+        "value": 16.8
+      },
+      "mass_Msun": {
+        "uncertainty_stat": 200000000.0,
+        "uncertainty_syst": 700000000.0,
+        "value": 6500000000.0
+      }
+    },
+    "observation_date": "2017 April",
+    "observations": {
+      "angular_gravitational_radius_uas": {
+        "type": "stat+syst",
+        "uncertainty": 0.4,
+        "value": 3.8
+      },
+      "ring_circularity": {
+        "type": "rms deviation < 10%",
+        "uncertainty": 0.1,
+        "value": 0.9
+      },
+      "ring_diameter_uas": {
+        "type": "stat+syst",
+        "uncertainty": 3.0,
+        "value": 42.0
+      }
+    },
+    "source": "EHT Collaboration 2019, ApJL 875, L1",
+    "wavelength_mm": 1.3
+  },
+  "SgrA": {
+    "calibration_factor_alpha": {
+      "uncertainty": 0.2,
+      "value": 2.0
+    },
+    "doi": "10.3847/2041-8213/ac6674",
+    "inferred_parameters": {
+      "distance_kpc": {
+        "uncertainty_Keck_stat": 0.05,
+        "uncertainty_Keck_syst": 0.032,
+        "uncertainty_VLTI_stat": 0.009,
+        "uncertainty_VLTI_syst": 0.033,
+        "value_Keck": 7.935,
+        "value_VLTI": 8.277
+      },
+      "mass_Msun": {
+        "uncertainty_Keck_stat": 47000.0,
+        "uncertainty_Keck_syst": 10000.0,
+        "uncertainty_VLTI_stat": 13000.0,
+        "uncertainty_VLTI_syst": 20000.0,
+        "uncertainty_stat": 600000.0,
+        "uncertainty_syst": 1100000.0,
+        "value_EHT": 4000000.0,
+        "value_Keck": 3951000.0,
+        "value_VLTI": 4297000.0
+      }
+    },
+    "observation_date": "2017 April",
+    "observations": {
+      "angular_gravitational_radius_uas": {
+        "type": "EHT estimate",
+        "uncertainty": 0.7,
+        "value": 4.8
+      },
+      "angular_shadow_diameter_uas": {
+        "type": "68% CI",
+        "uncertainty": 7.0,
+        "value": 48.7
+      },
+      "emission_ring_diameter_uas": {
+        "type": "68% CI",
+        "uncertainty": 2.3,
+        "value": 51.8
+      },
+      "schwarzschild_shadow_deviation_delta": {
+        "uncertainty_Keck": 0.1,
+        "uncertainty_VLTI": 0.09,
+        "value_Keck": -0.04,
+        "value_VLTI": -0.08
+      }
+    },
+    "source": "EHT Collaboration 2022, ApJL 930, L12",
+    "wavelength_mm": 1.3
+  }
+}

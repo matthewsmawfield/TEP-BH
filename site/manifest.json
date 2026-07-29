@@ -1,18 +1,12 @@
 {
-  "title": "Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity",
+  "title": "Temporal Equivalence Principle: Black Holes and the Temporal Horizon",
   "author": "Matthew Lukin Smawfield",
-  "version": "v0.2 (Thika)",
-  "codename": "Thika",
-  "date": "5 July 2026",
-  "first_published": "18 June 2026",
-  "doi": "10.5281/zenodo.20723059",
+  "version": "v0.1 (Bahrain)",
+  "codename": "Bahrain",
+  "date": "23 July 2026",
+  "first_published": "23 July 2026",
+  "doi": "10.5281/zenodo.xxxxxxxx",
   "sections": [
-    {
-      "id": "section-parameter-dictionary",
-      "title": "Unified TEP Parameter Dictionary",
-      "file": "15a_parameter_dictionary.html",
-      "order": 15.75
-    },
     {
       "id": "section-abstract",
       "title": "Abstract",
@@ -20,106 +14,148 @@
       "order": 1
     },
     {
-      "id": "section-intro",
-      "title": "Introduction: From Big Bang Singularity to Temporal Horizon",
-      "file": "1_introduction.html",
+      "id": "section-introduction",
+      "title": "1. Introduction",
+      "file": "01_introduction.html",
       "order": 2
     },
     {
-      "id": "section-temporal-horizon-mapping",
-      "title": "Temporal-Horizon Mapping",
-      "file": "2_temporal_horizon_mapping.html",
+      "id": "section-tep-theory",
+      "title": "2. TEP Theory: Action, Matter Metric, and Frame Dictionary",
+      "file": "02_tep_theory.html",
       "order": 3
     },
     {
-      "id": "section-matter-frame-curvature",
-      "title": "Matter-Frame Geometry and Curvature Regularity",
-      "file": "3_matter_frame_curvature.html",
+      "id": "section-fixed-background-theorem",
+      "title": "3. The Fixed-Background Theorem",
+      "file": "03_fixed_background_theorem.html",
       "order": 4
     },
     {
-      "id": "section-geodesic-completeness",
-      "title": "Geodesic Completeness",
-      "file": "4_geodesic_completeness.html",
+      "id": "section-coupled-solution",
+      "title": "4. The Coupled Solution",
+      "file": "04_coupled_solution.html",
       "order": 5
     },
     {
-      "id": "section-stress-energy",
-      "title": "Effective Stress-Energy and Singularity-Theorem Evasion",
-      "file": "5_stress_energy.html",
+      "id": "section-global-geometry",
+      "title": "5. Global Geometry and Curvature Regularity",
+      "file": "05_global_geometry.html",
       "order": 6
     },
     {
-      "id": "section-bbn",
-      "title": "BBN Abundance Validation",
-      "file": "6_bbn_abundances.html",
+      "id": "section-causal-structure",
+      "title": "6. Causal Structure and the Temporal Horizon",
+      "file": "06_causal_structure.html",
       "order": 7
     },
     {
-      "id": "section-recombination",
-      "title": "Recombination and Visibility Function",
-      "file": "7_recombination_visibility.html",
+      "id": "section-stability",
+      "title": "7. Stability and Hyperbolicity",
+      "file": "07_stability.html",
       "order": 8
     },
     {
-      "id": "section-blackbody",
-      "title": "CMB Blackbody Origin and Spectral Distortion",
-      "file": "8_blackbody_origin.html",
+      "id": "section-predictions",
+      "title": "8. Observable Predictions",
+      "file": "08_predictions.html",
       "order": 9
     },
     {
-      "id": "section-entropy",
-      "title": "Entropy and Arrow of Time",
-      "file": "9_entropy_arrow.html",
+      "id": "section-interpretation",
+      "title": "9. Interpretation and Scope",
+      "file": "09_interpretation.html",
       "order": 10
     },
     {
-      "id": "section-perturbations",
-      "title": "Primordial Perturbation Origin",
-      "file": "10_perturbation_boundary.html",
+      "id": "section-conclusion",
+      "title": "10. Conclusion",
+      "file": "10_conclusion.html",
       "order": 11
     },
     {
-      "id": "section-pipeline-summary",
-      "title": "Pipeline Summary and Internal Consistency",
-      "file": "12_pipeline_summary.html",
+      "id": "appendix-A-conventions",
+      "title": "Appendix A — Conventions and Disformal Identities",
+      "file": "A_appendix_conventions.html",
       "order": 12
     },
     {
-      "id": "section-cmb-lss",
-      "title": "CMB Anisotropy and Large-Scale Structure Consistency",
-      "file": "11_cmb_lss_class.html",
+      "id": "appendix-B-field-equations",
+      "title": "Appendix B — Reduced Field Equations",
+      "file": "B_appendix_field_equations.html",
       "order": 13
     },
     {
-      "id": "section-falsifiable-predictions",
-      "title": "Falsifiable Predictions",
-      "file": "13a_falsifiable_predictions.html",
-      "order": 13.5
+      "id": "appendix-C-asymptotics",
+      "title": "Appendix C — Strong-Field Asymptotic Expansion",
+      "file": "C_appendix_asymptotics.html",
+      "order": 14
     },
     {
-      "id": "section-conclusion",
-      "title": "Conclusion",
-      "file": "13_conclusion.html",
-      "order": 14
+      "id": "appendix-D-curvature",
+      "title": "Appendix D — Curvature Invariants and the Fixed-Background Theorem",
+      "file": "D_appendix_curvature.html",
+      "order": 15
+    },
+    {
+      "id": "appendix-E-geodesics",
+      "title": "Appendix E — Geodesic Structure and Completeness",
+      "file": "E_appendix_geodesics.html",
+      "order": 16
+    },
+    {
+      "id": "appendix-F-volume",
+      "title": "Appendix F — Physical Volume and Density Diagnostics",
+      "file": "F_appendix_volume.html",
+      "order": 17
+    },
+    {
+      "id": "appendix-G-perturbations",
+      "title": "Appendix G — Scope of Gravitational Perturbations",
+      "file": "G_appendix_perturbations.html",
+      "order": 18
+    },
+    {
+      "id": "appendix-H-raytracing",
+      "title": "Appendix H — Ray Tracing and Orbital Mechanics",
+      "file": "H_appendix_raytracing.html",
+      "order": 19
+    },
+    {
+      "id": "appendix-I-comparison",
+      "title": "Appendix I — Comparison Table",
+      "file": "I_appendix_comparison.html",
+      "order": 20
+    },
+    {
+      "id": "appendix-J-reproducibility",
+      "title": "Appendix J — Reproducibility",
+      "file": "J_appendix_reproducibility.html",
+      "order": 21
+    },
+    {
+      "id": "appendix-K-hayward-benchmark",
+      "title": "Appendix K — Regular-Geometry Validation Benchmark",
+      "file": "K_appendix_hayward_benchmark.html",
+      "order": 22
+    },
+    {
+      "id": "appendix-L-corrected-observables",
+      "title": "Appendix L — Explicit Derivation of Corrected Exterior Observables",
+      "file": "L_appendix_corrected_observables.html",
+      "order": 23
     },
     {
       "id": "section-references",
       "title": "References",
-      "file": "14_references.html",
-      "order": 15
+      "file": "17_references.html",
+      "order": 24
     },
     {
       "id": "section-acknowledgements",
       "title": "Acknowledgements",
-      "file": "16_acknowledgements.html",
-      "order": 15.5
-    },
-    {
-      "id": "section-reproducibility",
-      "title": "Data Availability and Reproducibility",
-      "file": "15_reproducibility.html",
-      "order": 16
+      "file": "18_acknowledgements.html",
+      "order": 26
     }
   ]
 }

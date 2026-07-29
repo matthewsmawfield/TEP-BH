@@ -1,0 +1,53 @@
+{
+  "M": 1.0,
+  "axial_gravitational_qnm": {
+    "V_max_sGB": 0.15143597738938555,
+    "V_max_schwarzschild": 0.15128669924447097,
+    "delta_V_sGB_max": 0.000555555551215667,
+    "frequency_shift_pct": 0.0401543542253302,
+    "omega_I_sGB": -0.08816080358572244,
+    "omega_I_schwarzschild": -0.08828263855517045,
+    "omega_R_sGB": 0.39900915362716416,
+    "omega_R_schwarzschild": 0.3988489983875274
+  },
+  "dependencies": [
+    "step_12_self_gravitating"
+  ],
+  "description": "Compute the perturbation spectrum on the self-gravitating sGB background: scalar-led QNMs, modified axial (Regge-Wheeler) and polar (Zerilli) gravitational QNMs, isospectrality breaking, and echo cavity analysis.",
+  "echo_analysis": {
+    "axial_potential_peaks": 1,
+    "echo_cavity_present": false,
+    "echo_prediction": "NO",
+    "scalar_potential_peaks": 1
+  },
+  "eta": 0.3,
+  "isospectrality": {
+    "breaking_in_GR": 0.0,
+    "breaking_pct": 0.08485704068011708,
+    "interpretation": "Nonzero isospectrality breaking is a distinctive sGB signature"
+  },
+  "key_result": "The sGB self-gravitating branch predicts three perturbation channels: (1) scalar-led QNMs \u2014 a new gravitational-wave channel not present in GR, (2) shifted axial gravitational QNMs, (3) shifted polar gravitational QNMs with broken isospectrality. The isospectrality breaking of 0.08% is a falsifiable signature distinguishable from GR.",
+  "l": 2,
+  "polar_gravitational_qnm": {
+    "frequency_shift_pct": -0.05607763307159397,
+    "omega_I_sGB": -0.08846003885169366,
+    "omega_I_schwarzschild": -0.08835169553972193,
+    "omega_R_sGB": 0.39867056626735337,
+    "omega_R_schwarzschild": 0.39889425672498324
+  },
+  "scalar_led_qnm": {
+    "FWHM_r_star": 2.0671616734075138,
+    "V_max": 0.21190857518957953,
+    "V_pp": -0.015458517263090431,
+    "channel_type": "scalar_led (temporal-led coupled mode, not present in GR)",
+    "n_peaks": 1,
+    "omega_I": -0.09357759116111976,
+    "omega_R": 0.4697502961756354,
+    "r_peak_over_M": 3.0515641230244976,
+    "r_star_peak": 0.15209915454770595
+  },
+  "status": "success",
+  "step": "step_13_scalar_perturbations",
+  "timestamp": "2026-07-29T01:18:13.611345",
+  "zeta": 0.09
+}

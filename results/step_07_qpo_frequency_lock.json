@@ -1,0 +1,32 @@
+{
+  "data_sources": {
+    "GRO_J1655_40": "Strohmayer 2001, ApJ 552, L49",
+    "GRS_1915_105": "Strohmayer 2001, ApJ 554, L169; Morgan et al. 1997",
+    "H_1743_322": "Homan et al. 2005, ApJ 624, 1005",
+    "XTE_J1550_564": "Remillard et al. 2002, ApJ 564, 962"
+  },
+  "dependencies": [
+    "step_04_accretion"
+  ],
+  "description": "Analyze high-frequency QPO 3:2 resonance in microquasars using epicyclic frequency ratios in the Schwarzschild (TEP exterior) spacetime",
+  "key_result": "3:2 epicyclic resonance at r=10.7990M confirmed; 2/4 QPO pairs match 3:2 ratio (mean=1.659), consistent with Schwarzschild exterior",
+  "qpo_statistics": {
+    "fraction_32": 0.5,
+    "mean_ratio": 1.6589015151515152,
+    "n_32_ratio": 2,
+    "n_pairs": 4,
+    "std_ratio": 0.2128251138794389
+  },
+  "resonance_prediction": {
+    "frequency_scaling": "f ~ c^3 / (G * M_BH) \u2014 tied to black hole mass, not accretion rate",
+    "mechanism": "Epicyclic frequency ratio Omega_r/Omega_theta = 2/3 (standard GR, Schwarzschild exterior)",
+    "ratio_at_resonance": 0.666629237543457,
+    "resonance_radius_M": 10.799029951497575,
+    "resonance_radius_analytic_M": 10.8,
+    "target_ratio": 0.6666666666666666,
+    "tep_note": "In the TEP exterior the conformal factor A cancels, so orbital dynamics are identical to Schwarzschild. The 3:2 QPO ratio is therefore a GR prediction, consistent with \u2014 but not unique to \u2014 TEP."
+  },
+  "status": "success",
+  "step": "step_07_qpo_frequency_lock",
+  "timestamp": "2026-07-29T01:18:12.723421"
+}

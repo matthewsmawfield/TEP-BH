@@ -1,0 +1,162 @@
+<h1>Appendix J — Reproducibility</h1>
+<p>
+    Every numerical result quoted in this paper is produced by the automated pipeline, which downloads or verifies the primary data, constructs the prescribed matter metric, computes the diagnostics, and writes the comparison tables. Each clean run writes SHA-256 checksums for the result files. Checksums prove that the result files were not altered after generation; they do not prove that the calculations are correct. Three categories of calculation require particular care in scalar–tensor perturbation theory and are not cited as quantitative evidence in this manuscript: (i) the nonlinear exterior mass-function evolution, which requires a consistent scalar charge and sign convention matched to published sGB solutions; (ii) surrogate WKB QNM frequencies, which require the perturbation potential to be derived from the second variation of the action (not from inserting modified background functions into a GR potential formula); and (iii) matter-frame observables, which must be computed on the matter metric $\tilde g$ rather than the geometric metric $g$. The fixed-background limit is globally Lorentzian for all $r > 0$; the coupled solution is Lorentzian in the exterior ($F > 0$). The deep-interior Lorentzianity of the coupled solution depends on the interior integration (Section 4.6).
+</p>
+
+<h2>J.1 Pipeline Architecture</h2>
+<p>
+    The pipeline consists of 50 steps (<code>step_00</code> through <code>step_49</code>), each implemented as an independent Python module in <code>scripts/steps/</code> and orchestrated by <code>scripts/run_pipeline.py</code>. Steps 00–11 implement the fixed-background limit (Section 3); steps 12–15 implement the coupled solution (Section 4); steps 16–41 are derivation scripts (geometry, corrected observables, QNM solvers, interior, phantom mass, Kerr-sGB, GW confrontations); step 42 generates figures; steps 43–49 implement the S-star inference pipeline (Section 9, Appendix J). The steps are:
+</p>
+<table class="data-table">
+    <thead>
+        <tr><th>Step</th><th>Module</th><th>Output</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>step_00</td><td>step_00_data_download.py</td><td>data/raw/, data/processed/</td><td>Download EHT M87* visibilities, compile measurement tables</td></tr>
+        <tr><td>step_01</td><td>step_01_field_equations.py</td><td>step_01_field_equations.{json,csv}</td><td>Disformal metric, curvature invariants, geodesic completeness, physical volume/density</td></tr>
+        <tr><td>step_02</td><td>step_02_perturbations.py</td><td>step_02_perturbations.{json,csv}</td><td>Regge–Wheeler/Zerilli potentials, QNMs, echo check</td></tr>
+        <tr><td>step_03</td><td>step_03_raytracing.py</td><td>step_03_raytracing.{json,csv}</td><td>Photon sphere, shadow angular diameter, ISCO, EHT comparison</td></tr>
+        <tr><td>step_04</td><td>step_04_accretion.py</td><td>step_04_accretion.{json,csv}</td><td>Circular geodesics, epicyclic frequencies, radiative efficiency, redshift, QPO</td></tr>
+        <tr><td>step_05</td><td>step_05_observational_constraints.py</td><td>step_05_observational_constraints.{json,csv}</td><td>Chi-squared comparison of TEP predictions against EHT and LIGO</td></tr>
+        <tr><td>step_06</td><td>step_06_gw190521_mass_gap.py</td><td>step_06_gw190521_mass_gap.{json,csv}</td><td>GW190521 mass gap: LIGO posterior analysis (TEP exterior-null)</td></tr>
+        <tr><td>step_07</td><td>step_07_qpo_frequency_lock.py</td><td>step_07_qpo_frequency_lock.{json,csv}</td><td>QPO frequency lock: 3:2 epicyclic resonance ratios (Schwarzschild baseline)</td></tr>
+        <tr><td>step_08</td><td>step_08_jwst_early_smbhs.py</td><td>step_08_jwst_early_smbhs.{json,csv}</td><td>JWST early SMBHs: Eddington-limited growth envelope from stellar seeds</td></tr>
+        <tr><td>step_09</td><td>step_09_spin_bias.py</td><td>step_09_spin_bias.{json,csv}</td><td>Over-maximal spin bias: observed spin distribution (TEP exterior-null)</td></tr>
+        <tr><td>step_10</td><td>step_10_tde_missing_flares.py</td><td>step_10_tde_missing_flares.{json,csv}</td><td>TDE missing flares: sub-Eddington luminosity survey (TEP exterior-null)</td></tr>
+        <tr><td>step_11</td><td>step_11_eht_polarization.py</td><td>step_11_eht_polarization.{json,csv}</td><td>EHT polarization: birefringence check (TEP exterior-null)</td></tr>
+        <tr><td>step_12</td><td>step_12_self_gravitating.py</td><td>step_12_self_gravitating.{json,csv}</td><td>sGB metric corrections, scalar profile, exterior observables (shadow, ISCO, QNM), $\eta$-scan, GW150914 projection (Section 4)</td></tr>
+        <tr><td>step_13</td><td>step_13_scalar_perturbations.py</td><td>step_13_scalar_perturbations.{json,csv}</td><td>Scalar-led, axial, and polar QNM channels; isospectrality breaking; deep-transit analysis (Section 7)</td></tr>
+        <tr><td>step_14</td><td>step_14_kerr_tep.py</td><td>step_14_kerr_tep.{json,csv}</td><td>Kerr–TEP shadow and ISCO spin scan; frame-dragging cancellation; GW150914 Kerr ringdown comparison (Section 4)</td></tr>
+        <tr><td>step_15</td><td>step_15_dynamical_signatures.py</td><td>step_15_dynamical_signatures.{json,csv}</td><td>PPN parameters, $-1$PN scalar dipole radiation, $c_T = 1$ on the Schwarzschild background, combined $\eta$ constraints (Section 4)</td></tr>
+        <tr><td>step_16</td><td>step_16_exact_geometry.py</td><td>step_16_exact_geometry.{json,csv}</td><td>Exact curvature invariants, determinant, inverse metric, areal radius, proper radial distance</td></tr>
+        <tr><td>step_17</td><td>step_17_null_expansions.py</td><td>step_17_null_expansions.json</td><td>Null expansions $\theta_\pm$ for TEP matter metric on Schwarzschild and Hayward backgrounds</td></tr>
+        <tr><td>step_18</td><td>step_18_observer_redshift.py</td><td>step_18_observer_redshift.{json,csv}</td><td>Gravitational redshift for static observers at different radii</td></tr>
+        <tr><td>step_19</td><td>step_19_observer_frequency_transfer.py</td><td>step_19_observer_frequency_transfer.{json,csv}</td><td>Invariant emitter-receiver frequency transfer factor $\mathcal{Z}$ (Section 6)</td></tr>
+        <tr><td>step_20</td><td>step_20_corrected_observables.py</td><td>step_20_corrected_observables.json</td><td>Corrected exterior observables (shadow, ISCO, frequency transfer) under fixed-ADM normalization (Appendix L)</td></tr>
+        <tr><td>step_21</td><td>step_21_cT_derivation.py</td><td>step_21_cT_derivation.json</td><td>Tensor propagation speed $c_T$ from principal symbol of coupled Einstein-sGB equations</td></tr>
+        <tr><td>step_22</td><td>step_22_quadratic_action.py</td><td>step_22_quadratic_action.json</td><td>Exact quadratic action for axial, polar, and scalar perturbation channels (Section 7)</td></tr>
+        <tr><td>step_23</td><td>step_23_characteristic_matrices.py</td><td>step_23_characteristic_matrices.json</td><td>Tensor characteristic matrices and principal symbol analysis</td></tr>
+        <tr><td>step_24</td><td>step_24_conformal_invariance_check.py</td><td>step_24_conformal_invariance_check.json</td><td>Conformal invariance verification for null geodesics</td></tr>
+        <tr><td>step_25</td><td>step_25_qnm_solver.py</td><td>step_25_qnm_solver.json</td><td>Perturbative sGB QNM solver: axial, polar-led, scalar-led modes</td></tr>
+        <tr><td>step_26</td><td>step_26_coupled_spectral_solver.py</td><td>step_26_coupled_spectral_solver.json</td><td>Coupled spectral solver for polar-scalar mixed modes</td></tr>
+        <tr><td>step_27</td><td>step_27_qnm_horizon_branch.py</td><td>step_27_qnm_horizon_branch.json</td><td>Horizon-bearing sGB QNM: Schwarzschild base + Sotiriou-Zhou $\mathcal{O}(\eta^2)$ correction (Section 7.3)</td></tr>
+        <tr><td>step_28</td><td>step_28_qnm_validation.py</td><td>step_28_qnm_validation.json</td><td>QNM spectrum validation against published sGB results (Bryant et al. 2021; Blazquez-Salcedo et al. 2016) (Section 7.3)</td></tr>
+        <tr><td>step_29</td><td>step_29_matrix_leaver.py</td><td>step_29_matrix_leaver.json</td><td>Full coupled $2\times 2$ matrix continued-fraction QNM solver with regular inner boundary; three deep-transit modes (Section 7.7)</td></tr>
+        <tr><td>step_30</td><td>step_30_taylor_recurrence.py</td><td>step_30_taylor_recurrence.json</td><td>Exact Taylor-series recurrence for background potentials and scalar field coefficients near the origin (Section 7.3)</td></tr>
+        <tr><td>step_31</td><td>step_31_frobenius_analysis.py</td><td>step_31_frobenius_analysis.json</td><td>Frobenius regularity analysis at the temporal minimum: $r^{\ell+1}$ regularity, finite tortoise, regularised polar–scalar mixing (Section 7.3)</td></tr>
+        <tr><td>step_32</td><td>step_32_interior_integration.py</td><td>step_32_interior_integration.json</td><td>Numerical integration of sGB scalar field on Hayward-class regular background</td></tr>
+        <tr><td>step_33</td><td>step_33_interior_analysis.py</td><td>step_33_interior_analysis.json</td><td>Interior analysis: regularity checks, Lorentzian signature, lapse minimum</td></tr>
+        <tr><td>step_34</td><td>step_34_solve_interior.py</td><td>step_34_solve_interior.json</td><td>TEP interior solver: sGB scalar on Hayward background, matter metric construction (Section 4.6)</td></tr>
+        <tr><td>step_35</td><td>step_35_mass_bias_sign.py</td><td>step_35_mass_bias_sign.json</td><td>Mass-bias sign equation derivation (Section 9)</td></tr>
+        <tr><td>step_36</td><td>step_36_phantom_mass_critical.py</td><td>step_36_phantom_mass_critical.json</td><td>Horizon-scale Phantom Mass: critical $g$ analysis, EHT M87$^\ast$ and Sgr A$^\ast$ shadow comparison (Section 8.1A)</td></tr>
+        <tr><td>step_37</td><td>step_37_phantom_mass_raytrace.py</td><td>step_37_phantom_mass_raytrace.json</td><td>Phantom Mass null geodesic ray-tracing (Section 8.1A)</td></tr>
+        <tr><td>step_38</td><td>step_38_phantom_mass_scan.py</td><td>step_38_phantom_mass_scan.json</td><td>Phantom Mass parameter scan (Section 8.1A)</td></tr>
+        <tr><td>step_39</td><td>step_39_eht_visibility_fit.py</td><td>step_39_eht_visibility_fit.json</td><td>EHT visibility-domain joint inference: direct fit of TEP shadow model to calibrated visibilities (Section 8.1B)</td></tr>
+        <tr><td>step_40</td><td>step_40_kerr_sgb_true.py</td><td>step_40_kerr_sgb_true.json</td><td>True rotating sGB shadow and QNM from Delgado et al. (2020) slowly-rotating solution (Section 8.5)</td></tr>
+        <tr><td>step_41</td><td>step_41_gw250114_confrontation.py</td><td>step_41_gw250114_confrontation.json</td><td>GW250114 corrected confrontation with TEP observables</td></tr>
+        <tr><td>step_42</td><td>step_42_generate_figures.py</td><td>results/figures/</td><td>Figure generation (10 figures from paper plan)</td></tr>
+        <tr><td>step_43</td><td>step_43_sstar_data.py</td><td>step_43_sstar_data.json</td><td>S-star data acquisition: 145 astrometric + 44 radial-velocity epochs for S2 (Section 9)</td></tr>
+        <tr><td>step_44</td><td>step_44_gr_fit.py</td><td>step_44_gr_fit.json</td><td>Conventional GR fit to S-star data (Section 9)</td></tr>
+        <tr><td>step_45</td><td>step_45_mass_bias.py</td><td>step_45_mass_bias.json</td><td>Mass-bias sign (Gate -1) from GR fit residuals (Section 9)</td></tr>
+        <tr><td>step_46</td><td>step_46_tep_transfer.py</td><td>step_46_tep_transfer.json</td><td>TEP transfer-function fit with $\eta_{\rm TEP}$ as free parameter (Section 9)</td></tr>
+        <tr><td>step_47</td><td>step_47_joint_forward.py</td><td>step_47_joint_forward.json</td><td>Joint forward-model: composition vs calibration separation, $\mathcal{C}_V$ diagnostic (Section 9)</td></tr>
+        <tr><td>step_48</td><td>step_48_likelihood.py</td><td>step_48_likelihood.json</td><td>Formal likelihood comparison: Bayes factor, BIC, AIC, Wilks (Section 9)</td></tr>
+        <tr><td>step_49</td><td>step_49_posterior.py</td><td>step_49_posterior.json</td><td>Phantom Mass posterior via MCMC (Section 9)</td></tr>
+    </tbody>
+</table>
+<p>
+    All calculations use the unified parameter set: $B_0 = 1.0$, $M = 1.0$, $\beta_A = -1.0$, $n_B = 2.0$, $\delta = 0.05$, $\sigma_B = 1.5$, $r_h = 2.0$, with the quartic-damped disformal coupling $B(\phi) = B_0\,|\phi|^{n_B}/(1 + |\phi|^{n_B})\,\exp(-\phi^4/2\sigma_B^4)$. The conformal exponent $\beta_A = -1$ is frozen across all calculations — fixed-background theorem, sGB exterior, and the target global solution — consistent with the wider TEP corpus weak-field value ($\beta \simeq -0.013$, with $\beta_A = -1$ as the strong-field limit). Steps 12–15 use the sGB coupling parameter $\eta$ (primary value $\eta = -0.1$ for the mass-inflation branch) with the exact $\mathcal{O}(\alpha^2)$ perturbative metric corrections of Sotiriou \& Zhou (2014), Eqs. (56)-(63); the $\eta$-scan covers $\eta \in \{-0.05, -0.1, -0.15, -0.2\}$.
+</p>
+<div class="key-concept">
+    <h4>Convention resolution</h4>
+    <p>
+    The conformal coupling $A = e^{\beta_A \phi}$ with $\beta_A = -1$ is frozen across all calculations. The different scalar profiles interact with this single convention as follows: (i) the fixed-background theorem uses $\phi = \phi_0 \ln(r/r_h) < 0$ in the interior, giving $A = e^{-\phi} \to \infty$ — the divergent conformal factor that proves the theorem; (ii) the sGB exterior uses $\phi \sim Q_s/r$ (Coulomb). TEP selects the mass-inflation branch with $Q_s < 0$ (equivalently $\alpha_{\rm GB} < 0$), so $\phi < 0$ and $A = e^{-\phi} > 1$ — the matter metric is conformally <em>magnified</em> relative to $g$; (iii) the target global solution has $\phi \to \phi_c$ finite at the centre, giving $A_c = e^{-\phi_c}$ finite — the TEP Global Solution Architecture of Section 6.6. The strong-field value $\beta_A = -1$ connects to the weak-field corpus value $\beta \simeq -0.013$ through the effective coupling's $\phi$-dependence: if the coupling runs with $\phi$ or temporal shear, that running is part of the action. The quartic-Gaussian $B(\phi)$ should ultimately be derived from the action or screening mechanism, or an admissible class of $B(\phi, X)$ functions should be shown to produce stable results; this is a refinement target, not a structural inconsistency.
+    </p>
+</div>
+
+<h2>J.2 Output Files</h2>
+<p>
+    The pipeline produces three categories of output:
+</p>
+<ul>
+    <li><code>results/*.json</code> — structured summary of each step (the canonical machine-readable results);</li>
+    <li><code>results/*.csv</code> — data tables for plotting and inspection;</li>
+    <li><code>data/processed/*.json</code> — compiled measurement tables (EHT, LIGO QNM, QPO, TDE, spin, JWST) built from the raw downloads;</li>
+    <li><code>data/raw/</code> — downloaded EHT/LIGO data (EHT M87* 2019-D01-01 visibilities, LIGO GW190521 posterior);</li>
+    <li><code>results/pipeline_results.json</code> — top-level summary with step status, timing, and execution metadata;</li>
+    <li><code>results/checksums_sha256.json</code> — SHA-256 checksum of every <code>results/*.json</code> and <code>results/*.csv</code> file.</li>
+</ul>
+
+<h2>J.3 Checksum Verification</h2>
+<p>
+    At the end of each run, the pipeline computes the SHA-256 hash of every result file and writes them to <code>results/checksums_sha256.json</code>. This covers all result files (step JSON + step CSV + pipeline summary JSON). Any modification to a result file is detectable by re-running the hash. The checksum file itself is regenerated on each run, so the recorded hashes always correspond to the current results.
+</p>
+
+<h2>J.4 Warning-Free Execution</h2>
+<p>
+A clean run is verified with the repository command:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:appJ_1}
+    \texttt{python scripts/run\_pipeline.py}
+\end{equation}
+</div>
+
+<p>
+The current diagnostics include a numerical safeguard that masks inverse-determinant curvature expressions where $|\det\tilde g_{2D}|$ is small; in the fixed-background limit this safeguard is never triggered because the determinant is strictly negative everywhere (globally Lorentzian).
+</p>
+
+<h2>J.5 Data Sources</h2>
+<p>
+    All observational data is drawn from published, publicly available sources:
+</p>
+<table class="data-table">
+    <thead>
+        <tr><th>Source</th><th>Reference</th><th>Used in</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>EHT M87* 2019 calibrated visibilities</td><td>EHT Collaboration 2019, data product 2019-D01-01 (GitHub)</td><td>step_00, step_03, step_05, step_11</td></tr>
+        <tr><td>LIGO GW190521 posterior</td><td>Isi et al. 2020 (Zenodo 4057131)</td><td>step_06</td></tr>
+        <tr><td>QPO measurements (GRS 1915+105)</td><td>Strohmayer 2001; Remillard et al. 2002; Homan et al. 2005</td><td>step_07</td></tr>
+        <tr><td>JWST early SMBH masses</td><td>Harikane et al. 2023; Greene et al. 2023; Bogdan et al. 2024</td><td>step_08</td></tr>
+        <tr><td>Black-hole spin measurements</td><td>McClintock et al. 2014; Reynolds 2021; EHT 2019/2022</td><td>step_09</td></tr>
+        <tr><td>TDE flare catalogs</td><td>van Velzen et al. 2021; Holoien et al. 2020</td><td>step_10</td></tr>
+        <tr><td>EHT polarization</td><td>EHT 2021 ApJ 910 L13; EHT 2024 ApJ 964 L26</td><td>step_11</td></tr>
+        <tr><td>LIGO QNM measurements</td><td>compiled in data/processed/ligo_qnm_measurements.json</td><td>step_05</td></tr>
+        <tr><td>sGB perturbative metric corrections</td><td>Sotiriou &amp; Zhou 2014, Eqs. (56)-(63) (exact $\mathcal{O}(\alpha^2)$)</td><td>step_12, step_14</td></tr>
+        <tr><td>Kerr QNM / shadow formulas</td><td>Bardeen 1973; Leaver 1985 (approximate)</td><td>step_14</td></tr>
+        <tr><td>GW170817 $c_T$ constraint</td><td>LIGO/Virgo &amp; Fermi-GBM 2017</td><td>step_15</td></tr>
+        <tr><td>Binary pulsar dipole bounds</td><td>Freire et al. 2012; Antoniadis et al. 2013 (conditional on NS scalarization)</td><td>step_15</td></tr>
+    </tbody>
+</table>
+
+<h2>J.6 Running the Pipeline</h2>
+<p>
+    The full pipeline is run with a single command:
+</p>
+<div class="code-block">
+<pre>cd "/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH"
+python scripts/run_pipeline.py</pre>
+</div>
+<p>
+    Options include <code>--start-step</code>, <code>--stop-step</code>, <code>--skip-steps</code>, <code>--no-derive</code>, <code>--no-inference</code>, <code>--no-figures</code>, <code>--list-steps</code>, and <code>--continue-on-error</code>. Full documentation is in <code>scripts/README.md</code>.
+</p>
+
+<h2>J.7 Code Availability</h2>
+<p>
+    All code is in the GitHub repository:
+    <a href="https://github.com/matthewsmawfield/TEP-BH" target="_blank">https://github.com/matthewsmawfield/TEP-BH</a>
+</p>
+<p>
+    The repository contains the complete pipeline (<code>scripts/</code>), the processed and raw data (<code>data/</code>), the results (<code>results/</code>), the manuscript source (<code>site/components/</code>), and the figure-generation code (<code>scripts/steps/step_42_generate_figures.py</code>). The site is built with <code>cd site &amp;&amp; npm run build</code> and published at
+    <a href="https://mlsmawfield.com/tep/bh" target="_blank">https://mlsmawfield.com/tep/bh</a>.
+</p>
+<div class="key-concept">
+    <p>
+        The pipeline is 50 steps (step_00–step_49), runs warning-free, and writes SHA-256 checksums for all result files. Steps 00–11 use $\phi_0 = 2.0$, $\delta = 0.05$, $\sigma_B = 1.5$ for the fixed-background limit; steps 12–15 use the sGB coupling $\eta$ (primary $\eta = -0.1$) for the coupled solution, selecting the mass-inflation branch; steps 16–41 are derivation scripts; step 42 generates figures; steps 43–49 implement the S-star inference. All data is from published sources (EHT 2019-D01-01, LIGO Zenodo 4057131, and compiled measurement tables). Run with <code>python scripts/run_pipeline.py</code>; full docs in <code>scripts/README.md</code>.
+    </p>
+    <p>
+        <strong>S-star inference pipeline.</strong> Steps 43–49 of the unified pipeline implement the primary falsifiable test: a non-isochronous refit of the published S-star data around Sgr A*. Step 43 downloads the machine-readable CDS files for Gillessen et al. (2017, VizieR J/ApJ/837/30, table5.dat and table3.dat); it parses 145 NACO/NTT/Keck/Gemini astrometric epochs and 44 SINFONI/Keck/Gemini radial-velocity epochs for S2 relative to Sgr A*. The steps are: (43) data acquisition, (44) conventional GR fit, (45) Gate -1 mass-bias sign, (46) TEP transfer-function fit, (47) joint forward-model with composition/calibration separation and $\mathcal C_V$ diagnostic, (48) formal likelihood comparison (Bayes factor, BIC, AIC, Wilks), (49) MCMC posterior on $M_{\rm phantom}^T$. Run with <code>python scripts/run_pipeline.py</code>.
+    </p>
+</div>

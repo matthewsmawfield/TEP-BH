@@ -1,0 +1,124 @@
+{
+  "citations": {
+    "eht_2019": {
+      "citation": "Event Horizon Telescope 2019",
+      "description": "M87* shadow and spin constraint"
+    },
+    "eht_2022": {
+      "citation": "Event Horizon Telescope 2022",
+      "description": "Sgr A* shadow and spin constraint"
+    },
+    "gou_2011": {
+      "citation": "Gou et al. 2011, ApJ 742, 85",
+      "description": "Cygnus X-1 spin via continuum fitting"
+    },
+    "mcclintock_2014": {
+      "citation": "McClintock, Narayan & Steiner 2014, arXiv:1303.1583 (Space Sci Rev)",
+      "description": "Review of black-hole spin via continuum fitting and reflection spectroscopy"
+    },
+    "reynolds_2021": {
+      "citation": "Reynolds 2021, arXiv:2104.10300",
+      "description": "Review of X-ray reflection spin measurements and systematics"
+    }
+  },
+  "description": "Compiled black-hole spin measurements from X-ray reflection and continuum-fitting literature",
+  "n_sources": 12,
+  "sources": [
+    {
+      "environment": "dense",
+      "method": "continuum-fitting",
+      "reference": "McClintock et al. 2006",
+      "source": "GRS 1915+105",
+      "spin_measured": 0.98,
+      "spin_uncertainty": 0.02
+    },
+    {
+      "environment": "dense",
+      "method": "continuum-fitting",
+      "reference": "Gou et al. 2011, ApJ 742, 85",
+      "source": "Cygnus X-1",
+      "spin_measured": 0.97,
+      "spin_uncertainty": 0.02
+    },
+    {
+      "environment": "isolated",
+      "method": "continuum-fitting",
+      "reference": "Gou et al. 2009",
+      "source": "LMC X-1",
+      "spin_measured": 0.92,
+      "spin_uncertainty": 0.05
+    },
+    {
+      "environment": "isolated",
+      "method": "continuum-fitting",
+      "reference": "Liu et al. 2008",
+      "source": "M33 X-7",
+      "spin_measured": 0.84,
+      "spin_uncertainty": 0.05
+    },
+    {
+      "environment": "isolated",
+      "method": "continuum-fitting",
+      "reference": "Park et al. 2004",
+      "source": "4U 1543-47",
+      "spin_measured": 0.8,
+      "spin_uncertainty": 0.05
+    },
+    {
+      "environment": "dense",
+      "method": "continuum-fitting",
+      "reference": "Shafee et al. 2006",
+      "source": "GRO J1655-40",
+      "spin_measured": 0.7,
+      "spin_uncertainty": 0.05
+    },
+    {
+      "environment": "isolated",
+      "method": "continuum-fitting",
+      "reference": "Gou et al. 2010",
+      "source": "A0620-00",
+      "spin_measured": 0.12,
+      "spin_uncertainty": 0.19
+    },
+    {
+      "environment": "isolated",
+      "method": "continuum-fitting",
+      "reference": "Steiner et al. 2011",
+      "source": "XTE J1550-564",
+      "spin_measured": 0.34,
+      "spin_uncertainty": 0.15
+    },
+    {
+      "environment": "isolated",
+      "method": "continuum-fitting",
+      "reference": "Steiner et al. 2011",
+      "source": "H 1743-322",
+      "spin_measured": 0.2,
+      "spin_uncertainty": 0.3
+    },
+    {
+      "environment": "dense",
+      "method": "X-ray reflection",
+      "reference": "Porquet et al. 2018",
+      "source": "1E 1743.1-2843",
+      "spin_measured": 0.95,
+      "spin_uncertainty": 0.05
+    },
+    {
+      "environment": "dense",
+      "method": "EHT shadow",
+      "reference": "EHT 2019",
+      "source": "M87*",
+      "spin_measured": 0.9,
+      "spin_uncertainty": 0.1
+    },
+    {
+      "environment": "dense",
+      "method": "EHT shadow",
+      "reference": "EHT 2022",
+      "source": "Sgr A*",
+      "spin_measured": 0.5,
+      "spin_uncertainty": 0.2
+    }
+  ]
+}

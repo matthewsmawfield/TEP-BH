@@ -1,0 +1,77 @@
+{
+  "GW250114": {
+    "M_final_detector": 68.1,
+    "spin": 0.68,
+    "SNR": 76,
+    "f_Kerr_Hz": 248.1557743030815,
+    "sigma_f_Hz": 6.530415113238987,
+    "source": "arXiv:2509.08099"
+  },
+  "observational_bound": {
+    "alpha_GB_max_km2": 2.9,
+    "source": "Perkins et al. 2021, arXiv:2104.11189 (EdGB)",
+    "note": "EdGB bound applied as proxy for shift-symmetric sGB"
+  },
+  "unit_conversion": {
+    "GM_sun_c2_km": 1.476922573688218,
+    "alpha_GB_formula": "alpha_GB = eta * M^2 / 3, M in km"
+  },
+  "universal_analysis": [
+    {
+      "name": "10 M_sun (low-mass stellar)",
+      "M_solar": 10.0,
+      "eta_max": 0.039884467283985515,
+      "shadow_pct": -0.006999391214320167,
+      "isco_pct": 0.7777471120377175,
+      "qnm_pct": 0.021652157165510624
+    },
+    {
+      "name": "30 M_sun (stellar)",
+      "M_solar": 30.0,
+      "eta_max": 0.00443160747599839,
+      "shadow_pct": -8.641223721382917e-05,
+      "isco_pct": 0.08641634578196859,
+      "qnm_pct": 0.0002673105822902545
+    },
+    {
+      "name": "60 M_sun (GW150914-like)",
+      "M_solar": 60.0,
+      "eta_max": 0.0011079018689995974,
+      "shadow_pct": -5.400764825864323e-06,
+      "isco_pct": 0.021604086445492148,
+      "qnm_pct": 1.6706911393140908e-05
+    },
+    {
+      "name": "68 M_sun (GW250114 remnant)",
+      "M_solar": 68.0,
+      "eta_max": 0.0008625533582176799,
+      "shadow_pct": -3.2735925013994265e-06,
+      "isco_pct": 0.016819790485244755,
+      "qnm_pct": 1.0126643470238128e-05
+    },
+    {
+      "name": "100 M_sun (intermediate)",
+      "M_solar": 100.0,
+      "eta_max": 0.0003988446728398552,
+      "shadow_pct": -6.99939121432017e-07,
+      "isco_pct": 0.007777471120377176,
+      "qnm_pct": 2.1652157165510626e-06
+    },
+    {
+      "name": "10^6 M_sun (Sgr A*)",
+      "M_solar": 1000000.0,
+      "eta_max": 3.988446728398551e-12,
+      "shadow_pct": -6.999391214320166e-23,
+      "isco_pct": 7.777471120377175e-11,
+      "qnm_pct": 2.165215716551062e-22
+    },
+    {
+      "name": "6.5\u00d710^9 M_sun (M87*)",
+      "M_solar": 6500000000.0,
+      "eta_max": 9.440110599759887e-20,
+      "shadow_pct": -3.921090277970753e-38,
+      "isco_pct": 1.8408215669531774e-18,
+      "qnm_pct": 1.2129635329581248e-37
+    }
+  ]
+}

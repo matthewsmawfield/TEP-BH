@@ -1,0 +1,40 @@
+{
+  "description": "Exact quadratic action for sGB perturbations",
+  "action": "S = \u222b \u221a(-g) [M_Pl\u00b2/2 \u00b7 R - 1/2(\u2207\u03c6)\u00b2 + \u03b1_GB \u00b7 \u03c6 \u00b7 G]",
+  "alpha_GB": "eta * M\u00b2 / 3  [L\u00b2]",
+  "beta": "eta / 12  (dimensionless)",
+  "axial": {
+    "V_RW_0": "F * [l(l+1)/r\u00b2 - 6M/r\u00b3]",
+    "correction": "V_RW = V_RW^(0) * (1 + \u03b2\u00b2 * h_2(r))",
+    "h_2": "Sotiriou-Zhou O(\u03b2\u00b2) metric perturbation",
+    "dimensions": "L\u207b\u00b2",
+    "correction_order": "O(\u03b2\u00b2) = O(\u03b7\u00b2)"
+  },
+  "polar_scalar_coupled": {
+    "V_Z_0": "Zerilli potential (O(1))",
+    "V_phi_0": "F * [l(l+1)/r\u00b2 + 2M/r\u00b3] (O(1))",
+    "V_Zphi": "alpha_GB * l(l+1)(l-1)(l+2) * F / r\u2074 (O(\u03b7))",
+    "V_ZZ": "alpha_GB\u00b2 * l\u00b2(l+1)\u00b2(l-1)(l+2) * F / r\u2076 (O(\u03b7\u00b2))",
+    "V_phiphi": "alpha_GB\u00b2 * (l(l+1))\u00b2 * F / r\u2076 (O(\u03b7\u00b2))",
+    "K_mix": "l(l+1)(l-1)(l+2)/r\u00b2",
+    "dimensions": "All L\u207b\u00b2",
+    "key_result": "All potential matrix elements have L\u207b\u00b2 dimensions when alpha_GB = eta*M\u00b2/3 is used"
+  },
+  "scalar": {
+    "V_phi_0": "F * [l(l+1)/r\u00b2 + 2M/r\u00b3]",
+    "correction": "V_\u03c6 = V_\u03c6^(0) * (1 + \u03b2\u00b2*(h_2 - \u03c3_2))",
+    "key_result": "No direct GB mass term for scalar (linear coupling); correction is O(\u03b2\u00b2) from background metric",
+    "dimensions": "L\u207b\u00b2"
+  },
+  "dimension_verification": {
+    "all_dimensions_correct": true,
+    "checks": {
+      "F*l(l+1)/r\u00b2": "L\u207b\u00b2 \u2713",
+      "alpha_GB*F/r\u2074": "L\u00b2 \u00b7 L\u207b\u2074 = L\u207b\u00b2 \u2713",
+      "alpha_GB\u00b2*F/r\u2076": "L\u2074 \u00b7 L\u207b\u2076 = L\u207b\u00b2 \u2713",
+      "F*2M/r\u00b3": "L \u00b7 L\u207b\u00b3 = L\u207b\u00b2 \u2713"
+    },
+    "key_insight": "Using alpha_GB = eta*M\u00b2/3 [L\u00b2] instead of dimensionless eta ensures all potentials have L\u207b\u00b2 dimensions"
+  },
+  "conclusion": "All potentials derived from the exact quadratic action have correct L\u207b\u00b2 dimensions when alpha_GB = eta*M\u00b2/3 is used"
+}

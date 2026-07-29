@@ -1,0 +1,147 @@
+<h1>Appendix B — Reduced Field Equations</h1>
+<p>
+ This appendix records the full radial system obtained by substituting the spherical ansatz of Section 3 into the TEP action, together with the parameter set that defines the strong-field solution integrated by the pipeline. The equations are written in geometrized units $G = c = 1$.
+</p>
+
+<h2>B.1 Action and Frame Assignment</h2>
+<p>
+The complete action is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_1}
+ S = \frac{1}{16\pi}\int d^4x\,\sqrt{-g}\,R[g] + \int d^4x\,\sqrt{-g}\,\left[-\tfrac12(\nabla\phi)^2 - V(\phi)\right] + S_m[\tilde g_{\mu\nu},\Psi_m],
+\end{equation}
+</div>
+
+<p>
+with the disformal matter metric
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_2}
+ \tilde g_{\mu\nu} = A^2(\phi)\,g_{\mu\nu} + B(\phi)\,\nabla_\mu\phi\,\nabla_\nu\phi.
+\end{equation}
+</div>
+
+<p>
+Variation yields the geometric Einstein equations, the scalar equation, and the matter conservation law in the matter frame:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_3}
+ G_{\mu\nu}[g] = 8\pi\,T_{\mu\nu}, \qquad \Box_g\phi = \frac{dV}{d\phi}, \qquad \tilde\nabla_\mu\tilde T^{\mu\nu} = 0.
+\end{equation}
+</div>
+
+<p>
+The stress tensor $T_{\mu\nu}$ includes the conformal and disformal corrections derived in Appendix A.
+</p>
+
+<h2>B.2 Spherical Ansatz</h2>
+<p>
+Horizon-regular Eddington–Finkelstein form is used throughout,
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_4}
+ ds_g^2 = -F(r)\,dv^2 + 2\,G(r)\,dv\,dr + R^2(r)\,d\Omega^2,
+\end{equation}
+</div>
+
+<p>
+with a static scalar profile $\phi = \phi(r)$ (the shift-symmetric $q\,v$ piece is set to zero for the vacuum solution). The metric functions and scalar field are parameterized as
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_5}
+ A(\phi) = e^{\beta_A \phi}, \qquad B(\phi) = B_0\,|\phi|^{2}/(1 + |\phi|^{2})\,\exp\!\left(-\frac{\phi^4}{2\sigma_B^4}\right), \qquad \phi(r) = \phi_0 \ln\!\left(\frac{r}{r_h}\right) S(r),
+\end{equation}
+</div>
+
+<p>
+where $S(r) = 1/(1 + e^{(r-r_h)/(\delta\, r_h)})$ is a smooth logistic activation, and $r_h = 2M$ is the geometric horizon. The exterior areal radius is $R(r) = r$, so that $F(r) = 1 - 2M/r$ recovers Schwarzschild exactly at large $r$.
+</p>
+
+<h2>B.3 Reduced Radial System</h2>
+<p>
+Substituting the ansatz, the independent equations reduce to a coupled radial system for the six functions
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_6}
+ F(r), \qquad G(r), \qquad R(r), \qquad \psi(r) \equiv \phi'(r), \qquad A(\phi), \qquad B(\phi).
+\end{equation}
+</div>
+
+<p>
+The $vv$ and $vr$ Einstein components give two first-order constraints,
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_7}
+ \frac{F'}{F} = \frac{2M}{r^2 F} - \frac{2}{r}\left(1 - \frac{1}{G^2}\right) + 8\pi\,\mathcal{S}_{vv}[A,B,\phi],
+\end{equation}
+</div>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_8}
+ G' = -4\pi\,r\,G^2\,\mathcal{S}_{vr}[A,B,\phi],
+\end{equation}
+</div>
+
+<p>
+where $\mathcal{S}_{vv}$ and $\mathcal{S}_{vr}$ are the disformal source terms built from $A$, $B$, $\phi'$ and $X = -\tfrac12 F(\phi')^2$. The angular equation fixes $R(r)$ through
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_9}
+ \frac{R''}{R} + \frac{2}{r}\frac{R'}{R} = 8\pi\,\mathcal{S}_{\theta\theta}[A,B,\phi].
+\end{equation}
+</div>
+
+<p>
+The scalar wave equation reduces to
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:appB_10}
+ \frac{1}{r^2}\frac{d}{dr}\left(r^2\,F\,\phi'\right) = \frac{dV}{d\phi} + \frac{d\ln A}{d\phi}\,T^{(\rm m)} + \frac{d\ln B}{d\phi}\,\mathcal{D}[X,\phi],
+\end{equation}
+</div>
+
+<p>
+where the last two terms are the conformal and disformal scalar charges. The disformal source $\mathcal{D}$ is proportional to $T^{\mu\nu}\nabla_\mu\phi\,\nabla_\nu\phi$ and finite in vacuum; for the vacuum solution integrated here it is the geometric curvature that sources the scalar through the conformal coupling.
+</p>
+
+<h2>B.4 Matching Conditions at the Geometric Horizon</h2>
+<p>
+ The exterior Schwarzschild limit is approached smoothly at $r_h=2M$ by the logistic profile: $A\approx1$, $B\approx0$, and $\phi\approx0$. The clean run gives $A=1.0005$, $B=3.0\times10^{-7}$, and $\phi=-2.73\times10^{-4}$ at the sampled horizon grid point. This value of $A$ comes from the old logistic-screened fixed-background profile, not from the sGB-coupled exterior with $\beta_A = -1$. With the sGB scalar and $\beta_A = -1$, the mass-inflation branch has $A(2M) \approx 1.063$ for $\eta = -0.1$ (Section 4.3 assessment). The two profiles are different models and cannot be combined. The disformal contribution remains finite because $F\to0$. This is a continuity check for the prescribed ansatz, not a derivation of junction conditions for a fully coupled interior solution.
+</p>
+
+<h2>B.5 Model Parameters</h2>
+<p>
+ The strong-field solution integrated by the pipeline is specified by the following parameter set:
+</p>
+<table class="data-table">
+ <thead>
+ <tr><th>Parameter</th><th>Symbol</th><th>Value</th><th>Role</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Disformal amplitude</td><td>$B_0$</td><td>$1.0$</td><td>sets disformal coupling strength</td></tr>
+ <tr><td>Mass</td><td>$M$</td><td>$1.0$</td><td>geometrized black-hole mass</td></tr>
+ <tr><td>Conformal exponent</td><td>$\beta_A$</td><td>$-1.0$</td><td>controls $A(r)$ divergence in the interior</td></tr>
+ <tr><td>Disformal horizon exponent</td><td>$\delta$</td><td>$0.05$</td><td>controls $B\to0$ approach at $r_h$</td></tr>
+ <tr><td>Disformal quartic width</td><td>$\sigma_B$</td><td>$1.5$</td><td>controls $B(\phi)$ suppression against violent Coulomb gradients</td></tr>
+ <tr><td>Scalar amplitude</td><td>$\phi_0$</td><td>$2.0$</td><td>normalizes the scalar profile</td></tr>
+ <tr><td>Geometric horizon</td><td>$r_h$</td><td>$2.0\,M$</td><td>Schwarzschild radius</td></tr>
+ </tbody>
+</table>
+<p>
+ With $\beta_A=-1$ and $\phi_0=2.0$, $A(r)\sim(r/r_h)^{-2}$ in the deep interior, reaching $A\sim4.0\times10^{16}$ at the innermost sampled radius. The ultra-damped (quartic Gaussian) factor $B(\phi)=B_0|\phi|^2/(1+|\phi|^2)\exp(-\phi^4/(2\sigma_B^4))$ is suppressed by the quartic Gaussian envelope in the deep interior, driven below $10^{-300}$ at the innermost sampled radius. The conformal term $A^4$ dominates everywhere, so the determinant is strictly negative and the matter metric is globally Lorentzian with no boundary.
+</p>
+<div class="key-concept">
+ <p>
+ The implementation is a prescribed-profile metric construction, not a closed six-function radial ODE integration. Its supported result is that the bounded conformal-disformal ansatz is asymptotically Schwarzschild and Lorentzian in the exterior ($\det\tilde g_{2D} < 0$ for $F > 0$). The $\phi_0 = 2$ fixed-Schwarzschild case has vanishing curvature ($\tilde K \to 0$) but the $r \to 0$ limit is an asymptotic spatially enlarged end ($\rho \to \infty$) with both null families at infinite affine parameter — not a regular point (Appendix E). The target global solution with finite $A$ at the centre is the TEP Global Solution Architecture (Section 6.6).
+ </p>
+</div>

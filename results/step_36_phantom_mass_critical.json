@@ -1,0 +1,73 @@
+{
+  "parameters": {
+    "M": 1.0
+  },
+  "g_crit": {
+    "value": 1.0582673673219498,
+    "F_min": -6.206819502807548e-10,
+    "r_throat": 1.3333333963224256,
+    "interpretation": "Horizonless threshold: g > g_crit gives no horizon"
+  },
+  "at_g_crit": {
+    "r_ps": 2.6523600118898503,
+    "b_c": 4.9169343640015635,
+    "shadow_deviation_percent": -5.373554045199202,
+    "phantom_mass_percent": -5.373554045199203,
+    "mass_ratio": 0.946264459548008,
+    "eht": {
+      "M87": {
+        "shadow_tep_uas": 37.55661400855235,
+        "shadow_schw_uas": 39.68934226536587,
+        "shadow_measured_uas": 42.0,
+        "shadow_unc_uas": 3.0,
+        "sigma_tep": -1.481128663815883,
+        "sigma_schw": -0.7702192448780423,
+        "deviation_percent": -5.373554045199195
+      },
+      "SgrA": {
+        "shadow_tep_uas": 50.39352687487646,
+        "shadow_schw_uas": 53.25522518191943,
+        "shadow_measured_uas": 48.7,
+        "shadow_unc_uas": 7.0,
+        "sigma_tep": 0.24193241069663632,
+        "sigma_schw": 0.6507464545599179,
+        "deviation_percent": -5.373554045199193
+      }
+    },
+    "geodesics_transiting": 0
+  },
+  "at_g_above": {
+    "g": 1.0682673673219498,
+    "F_min": 0.009360951807621865,
+    "r_throat": 1.3459326418073754,
+    "r_ps": 2.638002244012695,
+    "b_c": 4.9065899470261645,
+    "shadow_deviation_percent": -5.57263244271108,
+    "eht": {
+      "M87": {
+        "shadow_tep_uas": 37.477601101987446,
+        "shadow_schw_uas": 39.68934226536587,
+        "shadow_measured_uas": 42.0,
+        "shadow_unc_uas": 3.0,
+        "sigma_tep": -1.507466299337518,
+        "sigma_schw": -0.7702192448780423,
+        "deviation_percent": -5.5726324427111
+      },
+      "SgrA": {
+        "shadow_tep_uas": 50.28750722599295,
+        "shadow_schw_uas": 53.25522518191943,
+        "shadow_measured_uas": 48.7,
+        "shadow_unc_uas": 7.0,
+        "sigma_tep": 0.22678674657042056,
+        "sigma_schw": 0.6507464545599179,
+        "deviation_percent": -5.572632442711077
+      }
+    },
+    "geodesics_transiting": 0
+  },
+  "schwarzschild_reference": {
+    "r_ps": 3.0,
+    "b_c": 5.196152422706632
+  },
+  "key_finding": "The horizonless temporal well (g >= g_crit) produces a smaller shadow than Schwarzschild \u2014 a negative Phantom Mass. The deviation is within EHT 2-sigma for both M87* and Sgr A* at the horizonless threshold."
+}

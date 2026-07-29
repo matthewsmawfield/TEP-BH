@@ -1,0 +1,204 @@
+<h1>7. Perturbation Analysis: Coupled Temporal–Geometric Ringdown</h1>
+<p>
+ This section identifies the perturbation-sector structure and presents both the exterior QNM benchmark and the full deep-transit solve. The coupled sGB solution introduces a dynamical scalar degree of freedom coupled to the gravitational sector through the Gauss–Bonnet invariant. The tensor speed $c_T = 1$ on the Schwarzschild background in shift-symmetric sGB (from $G_4 = M_{\rm Pl}^2/2$, with the Gauss–Bonnet coupling entering through $G_5$), satisfying the GW170817 constraint on that background; the full tensor characteristic metric on the TEP solution requires derivation from the complete coupled perturbation system. Two layers of QNM calculation are now in place, both within the spherically symmetric sector (Section 4.6B). The <em>exterior benchmark</em> uses the exact Schwarzschild Leaver frequencies, applies the sGB $O(\eta^2)$ horizon shift, and includes leading-order polar–scalar mixing: polar-led $\omega = 0.374076 - 0.089143i$, scalar-led $\omega = 0.484056 - 0.096781i$, isospectrality breaking $-0.028\%$ real, $+0.067\%$ damping. The <em>full deep-transit solve</em> integrates the coupled $2\times 2$ wave equation with the regular inner boundary ($u \sim r^{\ell+1}$ at the temporal minimum) and outgoing outer boundary, finding three deep-transit modes: polar-led $\omega = 0.4624 - 0.0320i$, scalar-led $\omega = 0.4163 - 0.0322i$, overtone $\omega = 0.7447 - 0.0347i$, with $2.8\times$ longer damping and $+14.8\%$ isospectrality breaking. The deep temporal gradient — not a physical boundary — is what produces the extended damping and amplified mode mixing. These frequencies are exact within the spherically symmetric sector; the true temporal well for an astrophysical source may possess no spatial symmetry, and the QNM spectrum of the full unsymmetrised problem is not yet computed.
+</p>
+
+<h2>7.1 Regge–Wheeler and Zerilli Potentials on the sGB-Corrected Metric</h2>
+<p>
+A metric perturbation on the sGB-corrected background is written
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:stab_1}
+ g_{\mu\nu} = g_{\mu\nu}^{(0)} + h_{\mu\nu},
+\end{equation}
+</div>
+
+<p>
+where $g_{\mu\nu}^{(0)}$ is the Sotiriou–Zhou $\mathcal{O}(\beta^2)$ corrected Schwarzschild metric with scalar profile $\phi(r)$. The axial and polar tensor sectors decompose into the Regge–Wheeler and Zerilli channels, each acquiring an sGB correction sourced by the background scalar gradient coupled to the Riemann tensor structure. The exact quadratic action is derived in; the key results are summarised below.
+</p>
+<p>
+The axial (Regge–Wheeler) potential receives the correction
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:stab_2}
+ V_{\rm RW}^{\rm sGB} = V_{\rm RW}^{\rm Schw}\!\left(1 + \beta^2 h_2(r)\right), \qquad \beta = \frac{\eta}{12},
+\end{equation}
+</div>
+
+<p>
+where $h_2(x)$ is the Sotiriou–Zhou $\mathcal{O}(\beta^2)$ metric perturbation with $x = 2M/r$. The axial sector <em>decouples</em> from the scalar at leading order: odd-parity perturbations do not couple to the scalar at $\mathcal{O}(\alpha_{\rm GB})$. The axial QNM shift is $\mathcal{O}(\beta^2) = \mathcal{O}(\eta^2)$. The potential has correct $L^{-2}$ dimensions: $V_{\rm RW}^{\rm Schw} \sim F \cdot \ell(\ell+1)/r^2 \sim L^{-2}$, and $h_2$ is dimensionless.
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:stab_3}
+ V_{\rm Z}^{\rm sGB} = V_{\rm Z}^{\rm Schw} + \mathcal{O}(\alpha_{\rm GB}^2), \qquad \alpha_{\rm GB} = \frac{\eta M^2}{3}\;[L^2].
+\end{equation}
+</div>
+
+<p>
+The polar (Zerilli) sector <em>couples</em> to the scalar at $\mathcal{O}(\alpha_{\rm GB})$ through the mixing potential
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:stab_3b}
+ V_{Z\phi} = \alpha_{\rm GB}\,\frac{\ell(\ell+1)(\ell-1)(\ell+2)\,F}{r^4}\;[L^{-2}],
+\end{equation}
+</div>
+
+<p>
+where $\lambda = (\ell-1)(\ell+2)/2$. The full polar-scalar system is a $2\times 2$ coupled eigenvalue problem with potential matrix
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:stab_3c}
+ \mathbf{V} = \begin{pmatrix} V_Z + \mathcal{O}(\alpha_{\rm GB}^2) & V_{Z\phi} \\ V_{Z\phi} & V_\phi + \mathcal{O}(\alpha_{\rm GB}^2) \end{pmatrix},\qquad [V_{ij}] = L^{-2}.
+\end{equation}
+</div>
+
+<p>
+The mixing $V_{Z\phi} = \mathcal{O}(\alpha_{\rm GB}) = \mathcal{O}(\eta)$ is the leading-order coupling between polar gravitational and scalar perturbations. It is the structural origin of isospectrality breaking: the polar sector mixes with the scalar while the axial sector does not, lifting the Chandrasekhar degeneracy that is exact in GR. All potential matrix elements have correct $L^{-2}$ dimensions when the dimensionful coupling $\alpha_{\rm GB} = \eta M^2/3$ $[L^2]$ is used, verified by the quadratic action derivation.
+</p>
+<p>
+The perturbation equations take the standard Schrödinger-like form on the tortoise coordinate:
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:stab_4}
+ \frac{d^2\Psi_i}{dr_*^2} + \left[\omega^2 - V_i^{\rm sGB}(r)\right]\Psi_i = 0,
+\end{equation}
+</div>
+
+<p>
+for each channel $i \in \{{\rm RW},\, {\rm Z},\, {\rm scalar}\}$. The effective potentials are derived from the exact quadratic action (second variation of the sGB action). The dimensionful GB coupling $\alpha_{\rm GB} = \eta M^2/3$ $[L^2]$ ensures all potential terms have correct $L^{-2}$ dimensions: $V_{\rm RW} \sim F \cdot \ell(\ell+1)/r^2 \sim L^{-2}$, $V_{Z\phi} \sim \alpha_{\rm GB} \cdot F/r^4 \sim L^2 \cdot L^{-4} = L^{-2}$, and $V_{ZZ} \sim \alpha_{\rm GB}^2 \cdot F/r^6 \sim L^4 \cdot L^{-6} = L^{-2}$. The scalar perturbation has no direct GB mass term (the GB coupling is linear in $\phi$, so $\delta^2 S_{\rm GB}/\delta\phi^2 = 0$); the scalar potential correction comes only from the modified background metric at $\mathcal{O}(\beta^2)$. The specific QNM frequencies computed from these potentials use WKB estimates; a coupled spectral solver (Leaver or continued-fraction) is required for precise values, validated against published nonperturbative sGB QNM spectra.
+</p>
+
+<h2>7.2 Coupled Temporal–Geometric Perturbations</h2>
+<p>
+ The perturbation system is one coupled eigenvalue problem, not a collection of independent channels. A merger perturbs both $g_{\mu\nu}$ and $\phi$, and the detector responds to their combined perturbation through $\delta\tilde g_{\mu\nu} = \delta\tilde g_{\mu\nu}[\delta g_{\mu\nu}, \delta\phi]$. The axial (Regge–Wheeler) sector decouples at leading order: the axial gravitational perturbation couples to the scalar only through the GB modification of the Einstein equations, producing an $\mathcal{O}(\eta^2)$ shift to the Schwarzschild axial QNM. The polar (Zerilli) sector and the scalar sector form a <em>coupled</em> eigenvalue system: the polar gravitational perturbation mixes with the scalar perturbation through the GB coupling, and the two must be solved as a joint system, not as independent one-dimensional potentials. This coupling lifts the Chandrasekhar isospectrality that is exact in GR between the axial and polar gravitational modes.
+</p>
+<p>
+ The eigenmodes of this coupled system may carry different relative proportions of tensor and temporal-field perturbation. The number, frequencies, excitation amplitudes, and detector projections of those modes remain to be calculated. A dynamical scalar degree of freedom means that the perturbation system contains scalar participation; it does not automatically prove efficient excitation in a merger, a clean distinct ringdown frequency, measurable strain coupling, or a separately identifiable mode. The specific frequencies require solving the coupled polar–scalar eigenvalue system with a spectral method (Leaver or continued-fraction) on the sGB-corrected background, validated against published nonperturbative rotating sGB QNM spectra (Witek et al. 2019; Blazquez-Calzadilla et al. 2020; Chen et al. 2024). Recent nonlinear merger calculations in sGB gravity extract ringdown excitation directly from numerical relativity (Figueras et al. 2025), providing a stronger benchmark than surrogate WKB potentials.
+</p>
+<p>
+ The structural predictions that follow from the sGB coupling and do not depend on the specific potential formulas are:
+</p>
+<ol>
+ <li>The coupled polar–scalar spectrum may contain eigenmodes with substantial scalar participation. Their existence, frequencies, excitation amplitudes and detector coupling have not yet been derived for the TEP temporal-well background.</li>
+ <li>Isospectrality between axial and polar geometric modes is broken at $\mathcal{O}(\eta^2)$, because the polar sector mixes with the temporal field while the axial sector does not.</li>
+ <li>The axial geometric QNM receives an $\mathcal{O}(\eta^2)$ shift from the GB-modified background: $+0.136\%$ in real frequency at $\eta = -0.1$. The polar-led mode, including leading-order mixing with the scalar, becomes $\omega = 0.374076 - 0.089143i$, giving a real isospectrality breaking of $-0.0280\%$ and a damping breaking of $+0.0668\%$.</li>
+</ol>
+<p>
+ A detection of a component with substantial scalar participation would indicate an additional scalar gravitational degree of freedom — consistent with TEP-sGB, but also consistent with other scalar–tensor theories. The next-generation ground-based detectors (Einstein Telescope, Cosmic Explorer) and LISA have the sensitivity to resolve these modes for nearby massive black-hole mergers.
+</p>
+
+<h2>7.3 Deep-Transit Ringdown Structure</h2>
+<p>
+ All three perturbation potentials are single-peaked in the exterior region. In the standard black-hole picture, a single-peaked potential with a purely absorbing horizon produces no echoes. In the TEP temporal-well picture, there is no horizon and no physical boundary — the deep region is continuous, ordinary space in which the rate of proper time drops to a minimum lapse $\tilde N_{\min} = 0.211$ at $r \approx 1.41$. The exterior potential peak and the de Sitter-like temporal core together form a resonant cavity: a wave propagating into this region does not strike a wall; it encounters an extreme continuous gradient in the temporal rate. The gradient turns the wave refractively — the propagation direction curves smoothly as the local clock slows — and the wave transits through the deep region and emerges back into the exterior. Because the local proper time runs at $\sim 21\%$ of the exterior rate, the transit takes $\sim 2.8\times$ longer in coordinate time, producing extended exposure to the polar–scalar mixing region. The resonant cavity structure is what produces the long-lived, strongly mixed deep-transit modes: the wave rings inside the temporal gradient, sustaining mode conversion for far longer than the Schwarzschild horizon permits. The late-time response may therefore contain modified damping profiles and enhanced mode mixing — signatures that are absent in the standard black-hole picture. The current perturbative sGB analysis uses horizon boundary conditions (purely ingoing at $r_H$) and therefore does not capture the deep-transit response; a proper analysis requires the full TEP solution with the correct regular inner boundary condition.
+</p>
+<p>
+ The Frobenius analysis of the regular centre confirms three structural results that govern the matrix-Leaver inner boundary. First, the tortoise coordinate is finite at the centre ($r_* \to 0$ as $r \to 0$, not $-\infty$), so the inner boundary is a regularity condition $u \sim r^{\ell+1}$ — the wave passes smoothly through the origin in spherical coordinates, not into an absorbing sink. Second, all three effective potentials (scalar, gravitational, and the polar–scalar mixing) scale as $r^{-2}$ near the centre — the standard angular-momentum barrier dominates, and the de Sitter curvature $R(0) = 12.0$ enters only as a subleading constant $c_0$ that modifies the recurrence coefficients, not the indicial exponent. The standard $r^{\ell+1}$ regularity therefore holds. Third, the exterior sGB mixing $V_{Z\phi}^{\rm ext} \sim 1/r^4$ is regularised to $1/r^2$ in the interior because $\phi'(0) = 0$ on the solved background — the scalar profile is smooth at the centre, softening the coupling. Both channels share the same Frobenius exponent, and the coupled ansatz $u_Z = r^{\ell+1} \sum a_n r^n$, $u_\phi = r^{\ell+1} \sum b_n r^n$ yields a matrix three-term recurrence $\mathbf{A}_n \mathbf{c}_{n+1} + \mathbf{B}_n \mathbf{c}_n + \mathbf{C}_n \mathbf{c}_{n-1} = 0$ with $2\times 2$ coefficients. The background metric (Hayward, a rational function of $r$) and the scalar ODE are both analytic at $r = 0$, so the Taylor coefficients of $F(r)$, $N(r)$, and $\phi(r)$ are generated exactly by recurrence from the ODE itself — no polynomial fit is needed. The Taylor series agrees with the numerical integration to $3.9 \times 10^{-13}$ relative error at $r = 10^{-6}$, degrading gracefully to $5 \times 10^{-3}$ at $r = 0.1$ as expected for a truncated series.
+</p>
+<p>
+ The full coupled QNM solver integrates the $2\times 2$ polar–scalar wave equation with the regular inner boundary ($u \sim r^{\ell+1}$ at $r = 0$) and the outgoing outer boundary ($u \sim e^{+i\omega r_*}$ at $r \to \infty$). The Hayward background with $g = 1.1$ has no horizon: $F_{\min} = 0.038$ at $r \approx 1.39$, where the lapse reaches its minimum and the temporal gradient is steepest. The solver finds three deep-transit modes at $\eta = -0.1$, all within the spherically symmetric sector:
+ <ul>
+ <li>Polar-led: $\omega = 0.4624 - 0.0320i$ (mismatch $< 10^{-15}$)</li>
+ <li>Scalar-led: $\omega = 0.4163 - 0.0322i$ (mismatch $< 10^{-15}$)</li>
+ <li>Higher overtone: $\omega = 0.7447 - 0.0347i$ (mismatch $< 10^{-15}$)</li>
+ </ul>
+ The damping timescale is $\tau/\tau_{\rm Schw} \approx 2.8$ — the deep-transit modes live nearly three times longer than the corresponding Schwarzschild QNMs ($\omega_I^{\rm Schw} \approx -0.089$ vs. $\omega_I^{\rm deep} \approx -0.032$). The extended lifetime is not trapping in a physical container; it is the natural consequence of the wave transiting through a region where proper time runs at $\sim 21\%$ of the exterior rate. The wave spends more coordinate time in the mixing region because its local clock is slow, not because it is confined. The polar–scalar isospectrality breaking is $+14.8\%$ in real frequency and $+0.8\%$ in damping — amplified by a factor of $\sim 500$ compared to the exterior benchmark ($-0.028\%$), because the extended transit through the slow-time gradient subjects the wave to sustained temporal shear that drives polar–scalar mode conversion. The coupled mode splitting between polar-led and scalar-led branches is $11.1\%$. This is the ringdown signature of the spherically symmetric temporal well: the standard Schwarzschild QNM spectrum is replaced by a set of long-lived, strongly mixed deep-transit modes. The $2.8\times$ extended damping and $14.8\%$ amplified mixing are not universal constants; they scale with the physical width of the deep region and the steepness of the temporal shear gradient. A deeper well with a lower $N_{\min}$ extends the transit time further, so the ringdown acts as a direct probe of the temporal-well geometry. The spectrum for a rotating or asymmetric source is not yet computed.
+</p>
+<p>
+ The QNM spectrum is validated against published sGB results on seven independent criteria. The exterior benchmark is qualitatively consistent with the published sGB QNM literature on five criteria: (i) the axial modes deviate at $\mathcal{O}(\alpha_{\rm GB}^2)$, matching the eikonal analysis of Bryant, Silva, Yagi \& Glampedakis (2021, PRD 104, 044051) and the numerical results of Blázquez-Salcedo et al. (2016, PRD 94, 104024); (ii) the polar sector contains two distinct families — gravitational-led and scalar-led — as found in all published sGB QNM calculations; (iii) isospectrality is broken between axial and polar modes, with the polar gravitational-led correction having opposite sign to the axial correction ($+0.039\%$ axial vs $-0.018\%$ polar at $\eta = -0.1$), matching the Blázquez-Salcedo et al. pattern; (iv) the polar deviations are larger than the axial deviations, consistent with the additional scalar-tensor coupling in the polar sector; (v) both families have smooth Schwarzschild limits as $\alpha_{\rm GB} \to 0$.
+</p>
+<p>
+ Two quantitative validations close the N/A from the earlier comparison. First, the $\mathcal{O}(\alpha_{\rm GB}^2)$ scaling is confirmed to high precision: the ratio axial-shift$/\alpha_{\rm GB}^2 = 35.08$ is constant to $1\%$ across four values of $\eta$ from $-0.05$ to $-0.20$, confirming the perturbative scaling with no contamination from higher orders. Second, the isospectrality breaking at $\eta = -0.1$ is $-0.0568\%$, compared to the Bryant et al. eikonal prediction of $0.0606\%$ — a $93.8\%$ match at $\ell = 2$, where the eikonal approximation is expected to be accurate to $\sim 10\%$. The eikonal formulas are theory-universal at leading eikonal order (common to all scalar-Gauss-Bonnet theories regardless of coupling function), so this agreement directly validates the coupling matrix $\mathbf{V}$ and the polar-scalar mixing amplitude. The calculation uses first-order perturbation theory with the exact Schwarzschild QNM from the Leaver continued fraction method as the unperturbed base, the Sotiriou \& Zhou (2014) $\mathcal{O}(\eta^2)$ metric correction for the potential shift, and second-order mixing from the Gauss-Bonnet coupling $V_{\rm mix} \sim \alpha_{\rm GB} \cdot \mathcal{R}_{\rm GB}$.
+</p>
+<p>
+ The deep-transit modes cannot be directly compared to published sGB QNMs because they are on a horizonless geometry, while all published sGB QNMs are on horizon-bearing backgrounds. They are qualitatively consistent with expectations for horizonless compact objects: longer damping ($2.8\times$), two preserved families, and amplified isospectrality breaking ($\sim 500\times$).
+</p>
+
+<h2>7.4 Hyperbolicity of the Disformal Metric</h2>
+<p>
+The disformal matter metric
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:stab_9}
+ \tilde g_{\mu\nu} = A^2(\phi)\,g_{\mu\nu} + B(\phi)\,\partial_\mu\phi\,\partial_\nu\phi
+\end{equation}
+</div>
+
+<p>
+must have a well-posed initial-value formulation for the theory to be physically viable. The characteristic structure of $\tilde g_{\mu\nu}$ is analysed to verify that the matter metric is Lorentzian in the exterior. This establishes the character of minimally coupled matter equations. The tensor sector kinetic term retains positive sign at leading order (Section 7.5) with $c_T = 1$ on the Schwarzschild background (Section 7.6); the full tensor characteristic metric on the TEP solution, global ghost freedom, and scalar sector hyperbolicity in the deep interior remain open (Section 7.7).
+</p>
+<p>
+The two-dimensional $(v, r)$ determinant of the disformal metric is
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:stab_10}
+ \det\tilde g_{2D} = -A^4\,G^2 - A^2\,F\,B\,(\phi')^2,
+\end{equation}
+</div>
+
+<p>
+where $G$ and $F$ are the geometric metric components. This is the canonical formula used throughout the manuscript. The first term is always negative ($A^4 G^2 > 0$). The second term has sign $-F$: outside the horizon ($F > 0$) it is negative, reinforcing the conformal contribution; inside the horizon ($F < 0$) it is positive, opposing the conformal contribution and potentially driving the determinant through zero. With the frozen convention $\beta_A = -1$ and the TEP mass-inflation branch ($Q_s < 0$, $\phi \sim Q_s/r < 0$), the conformal factor is $A = e^{-\phi} > 1$ in the exterior. For the pure conformal metric ($B = 0$), $\det\tilde g_{2D} = -A^4 G^2 < 0$ — Lorentzianity is inherited analytically from $g$. For the full disformal metric in the exterior ($F > 0$), the Gaussian damping envelope $\exp(-\phi^4/2\sigma_B^4)$ with $\sigma_B = 1.5$ suppresses $B$ faster than any polynomial divergence of $(\phi')^2 \sim r^{-4}$, so the $-A^4 G^2$ term strictly dominates and $\det\tilde g_{2D} < 0$. Inside the horizon ($F < 0$), the disformal term becomes positive and the determinant must be checked with the canonical formula; the interior hyperbolicity depends on the outcome of the interior integration (Section 4.6).
+</p>
+<p>
+ The deep-interior determinant cannot be established from the exterior $\phi \sim Q_s/r$ profile alone, because the Coulomb form is an asymptotic expression that cannot be extrapolated to $r \to 0$ once nonlinear backreaction dominates. The actual interior $\phi(r)$ must come from the nonlinear field equations (Section 4.6). The TEP Global Solution Architecture requires a regular centre with finite $A$; the determinant analysis on the solved profile confirms whether the interior coupling achieves this. The exterior Lorentzianity of $\tilde g$ is established. The tensor sector kinetic term retains positive sign at leading order with $c_T = 1$ on the Schwarzschild background (Section 7.6); global ghost freedom and the full tensor characteristic metric on the TEP solution remain open (Section 7.7). The scalar sector hyperbolicity in the deep interior remains open (Section 7.7).
+</p>
+<p>
+ The invertibility condition for the canonical determinant $\det\tilde g_{2D} = -A^4 G^2 - A^2 F B(\phi')^2 < 0$ is satisfied in the exterior ($F > 0$), confirming that the disformal transformation is non-degenerate and the metric $\tilde g_{\mu\nu}$ is invertible there. Inside horizons ($F < 0$), the disformal term becomes positive and the determinant must be checked separately. The characteristic cones of $\tilde g_{\mu\nu}$ are well-defined and non-degenerate in the exterior, establishing a well-posed Cauchy problem for matter fields in the exterior domain. The tensor sector kinetic term retains positive sign at leading order with $c_T = 1$ on the Schwarzschild background (Sections 7.5–7.6); global ghost freedom, the full tensor characteristic metric on the TEP solution, and the scalar sector in the deep interior remain open (Section 7.7).
+</p>
+
+<h2>7.5 Ghost and Gradient Stability: Tensor Sector</h2>
+<p>
+ The shift-symmetric sGB coupling preserves the tensor kinetic term at leading order. The scalar field equation has a canonical kinetic term with positive sign. While the Gauss–Bonnet invariant $\mathcal{G} = R^2 - 4R_{\mu\nu}R^{\mu\nu} + R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}$ is a total derivative in four dimensions, the coupling term $\alpha_{\rm GB}\,\phi\,\mathcal{G}$ is <em>not</em> topological: the scalar field $\phi$ breaks the topological invariance, and variation of $\sqrt{-g}\,\phi\,\mathcal{G}$ with respect to the metric produces local terms (derivatives fall onto $\phi$ through integration by parts). This is precisely the mechanism that produces the $h_2(x)$ and $\sigma_2(x)$ metric corrections of Sotiriou \& Zhou (2014) — if $\phi\mathcal{G}$ were purely topological, there would be no backreaction and no scalar hair. The non-topological nature modifies the background geometry and the scalar sector; the tensor kinetic term is unchanged at leading order (Section 7.6), but the full second-variation equations and global ghost freedom have not been derived (Section 7.7).
+</p>
+<p>
+ For the gravitational sector, the sGB corrections to the Regge–Wheeler and Zerilli potentials are perturbatively small ($\mathcal{O}(\eta)$ in the potential, $\mathcal{O}(\eta^2)$ in the QNM shifts). The tensor speed $c_T = 1$ on the Schwarzschild benchmark (Section 7.6). The scalar sector has a canonical kinetic term with positive sign; the bounded, single-peaked surrogate potential $V_{\rm scalar}(r)$ supports no growing modes. The polar gravitational and scalar perturbations form a coupled system at $\mathcal{O}(\eta)$; the axial sector decouples and is governed by the standard RW potential on the corrected background.
+</p>
+
+<h2>7.6 Tensor Characteristics: Benchmark Status</h2>
+<p>
+ The tensor speed $c_T$ on the Schwarzschild background benchmark is derived from the Horndeski representation of the shift-symmetric sGB action. The Gauss–Bonnet coupling $\alpha_{\rm GB}\,\phi\,\mathcal{G}$ maps to the Horndeski function $G_5 = -4\alpha_{\rm GB}\ln|X|$, while $G_4 = M_{\rm Pl}^2/2$ retains the standard Einstein–Hilbert form with no dependence on the kinetic scalar $X$ (Kobayashi, Yamaguchi \& Yokoyama 2011; Kobayashi 2019). On the Schwarzschild background, where the scalar profile is perturbatively small and the background is Ricci-flat, the tensor propagation speed reduces to
+</p>
+<div class="equation">
+ \begin{equation} \label{eq:cT_derivation}
+ c_T^2 = \frac{G_4}{G_4 - 2X\,G_{4X}} = \frac{M_{\rm Pl}^2/2}{M_{\rm Pl}^2/2 - 0} = 1.
+\end{equation}
+</div>
+<p>
+ This holds on the Schwarzschild benchmark. The present manuscript does not establish exact luminality on the nonlinear TEP temporal-well background. In general Horndeski theory with $G_5 \neq 0$, tensor propagation is not determined by $G_4$ alone on all backgrounds; the $G_5$ term couples the tensor perturbation to the background scalar gradient, and published analyses of Einstein-dilaton-Gauss–Bonnet perturbations derive background-dependent propagation speeds for axial perturbations rather than reducing the problem to the $G_4$-only expression (Blazquez-Calzadilla et al. 2020; Chen et al. 2024). The asymptotic tensor characteristics of the perturbative sGB benchmark must be taken from the complete quadratic perturbation equations, not from the $G_4$-only formula applied to all backgrounds.
+</p>
+<p>
+ The GW170817/GRB 170817A constraint $|c_T/c - 1| < 10^{-15}$ is satisfied on the Schwarzschild benchmark:
+</p>
+<div class="equation">
+ \begin{equation}
+ |c_T/c - 1|_{\rm Schw} = 0 < 10^{-15}.
+\end{equation}
+</div>
+<p>
+ Compatibility with GW170817 on the full TEP solution requires evaluation of the tensor characteristic matrix on the relevant source, propagation, and cosmological backgrounds. Published analyses have applied GW170817 to constrain scalar–Gauss–Bonnet coupling rather than treating the bound as automatically satisfied on all backgrounds (Yagi et al. 2012; Percival et al. 2017).
+</p>
+<p>
+ The birefringence parameter $b$, measuring the splitting of characteristic speeds of the $+$ and $\times$ polarisations, vanishes on any spherically symmetric background by symmetry (the Gauss–Bonnet correction is a scalar coupling and does not introduce anisotropic modification to the tensor kinetic term on spherical backgrounds). On non-spherical (e.g. rotating) backgrounds, $b \neq 0$ is possible at $\mathcal{O}(\alpha_{\rm GB})$ through the $G_{5X}$ term. The frame dictionary on the Schwarzschild benchmark is: photons probe $\tilde g$, gravitational waves probe $g$ (with $c_T = 1$ on this background), massive particles probe $\tilde g$, and the scalar sector probes the scalar effective metric. The complete characteristic structure on the nonlinear TEP solution — including the full tensor characteristic matrix, birefringence on rotating backgrounds, and the scalar effective metric — is the subject of Section 7.7.
+</p>
+
+<h2>7.7 Summary: Established and Open Results</h2>
+<div class="theorem">
+ <h4>Established</h4>
+ <p>
+ (i) the disformal metric is Lorentzian ($\det\tilde g_{2D} = -A^4 G^2 - A^2 F B(\phi')^2 < 0$ for $F > 0$), invertible, and non-degenerate in the exterior; (ii) the tensor speed $c_T = 1$ on the Schwarzschild background benchmark (from $G_4 = M_{\rm Pl}^2/2$); the full tensor characteristic metric on the nonlinear TEP solution requires derivation from the complete coupled perturbation system — in general Horndeski theory with $G_5 \neq 0$, tensor propagation is not determined by $G_4$ alone on all backgrounds; (iii) the GW170817 constraint $|c_T/c - 1| < 10^{-15}$ is satisfied on the Schwarzschild benchmark; compatibility on the full TEP solution requires evaluation on the relevant source, propagation, and cosmological backgrounds; (iv) tensor ghost freedom on the Schwarzschild benchmark — the tensor kinetic term $G_4 - 2XG_{4X} = M_{\rm Pl}^2/2 > 0$ is positive definite; global ghost freedom on the TEP solution remains open; (v) scalar ghost freedom on the Schwarzschild benchmark — the scalar kinetic term $K_S = -X > 0$ for timelike gradient ($X < 0$); (vi) birefringence $b = 0$ on spherically symmetric backgrounds (by symmetry); birefringence on non-spherical (rotating) backgrounds is open; (vii) the exact quadratic action has been derived — all potential matrix elements have correct $L^{-2}$ dimensions when $\alpha_{\rm GB} = \eta M^2/3$ is used; (viii) the axial QNM shift is $\mathcal{O}(\eta^2)$: $+0.136\%$ in real frequency at $\eta = -0.1$ (Leaver perturbative, from the would-be horizon shift $r_H \to 2M(1 - 19.6\,\beta^2)$, where $\beta = \eta/12$); (ix) the polar-scalar mixing potential $V_{Z\phi} = \alpha_{\rm GB}\,\ell(\ell+1)(\ell-1)(\ell+2)\,F/r^4$ is $\mathcal{O}(\eta)$ — the leading-order coupling within the coupled system; (x) the exterior QNM benchmark: polar-led mode $\omega = 0.374076 - 0.089143i$, scalar-led mode $\omega = 0.484056 - 0.096781i$, giving an isospectrality breaking of $-0.0280\%$ in real frequency and $+0.0668\%$ in damping at $\eta = -0.1$.
+ </p>
+ <h4>Open (require the coupled spectral solver and nonlinear interior integration)</h4>
+ <p>
+ (xi) the full coupled polar-scalar QNM spectrum on the regular temporal well — the exterior benchmark is in place; the full solve with the regular inner boundary finds three deep-transit modes (polar-led $0.462 - 0.032i$, scalar-led $0.416 - 0.032i$, overtone $0.745 - 0.035i$) with $2.8\times$ longer damping and $14.8\%$ isospectrality breaking; validation against published nonperturbative sGB QNM spectra (Witek et al. 2019; Blazquez-Calzadilla et al. 2020; Chen et al. 2024) remains open; (xii) scalar-dominated excitation amplitudes, tensor–scalar mixing into measured strain, and detector response through $\delta\tilde g_{\mu\nu}$; (xiii) the deep-transit structure depends on the deep-interior temporal gradient, altering the late-time ringdown spectrum (Section 7.3); (xiv) birefringence on non-spherical backgrounds ($b \neq 0$ in principle at $\mathcal{O}(\alpha_{\rm GB})$ for rotating spacetimes); (xv) the deep-interior hyperbolicity depends on the interior integration (Section 4.6) — standard linear sGB may develop a finite-area singularity or lose hyperbolicity inside the horizon; a modified coupling (nonlinear $f(\phi)\mathcal{G}$, or additional Ricci coupling $\xi R (\nabla\phi)^2$) can potentially regularise this.
+ </p>
+ <p>
+ The QNM estimate is a leading-order result from the would-be horizon shift. The coupled spectral solver provides perturbative estimates; a precise value requires a full matrix continued-fraction solver on the sGB-corrected potential. The full coupled system contains axial, gravitational-led polar, and scalar-dominated mode families — eigenmodes of one coupled temporal–geometric system. The QNM shift is not solely structural — the would-be horizon displacement, metric functions, principal coefficients, tortoise coordinate, and polar–scalar mixing all contribute at the same perturbative order. The deep-transit ringdown structure is analysed in Section 7.3.
+ </p>
+</div>

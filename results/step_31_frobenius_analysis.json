@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "M": 1.0,
+    "g": 1.1,
+    "eta": -0.1,
+    "l": 2
+  },
+  "tortoise_at_centre": {
+    "r_star_finite": true,
+    "r_star_at_1e-10": 0.0,
+    "interpretation": "Regular centre at finite tortoise coordinate (not a horizon)"
+  },
+  "curvature_at_centre": {
+    "ricci_scalar_R0": 12.02103681442524,
+    "kretschmann_K0": 27.094748642581305,
+    "de_sitter_radius_L": 0.7064877918265822,
+    "equation_of_state_wr": -1.0
+  },
+  "potential_scaling": {
+    "V_scalar_power": -2.0000000036620653,
+    "V_grav_power": -2.000000004119824,
+    "V_mix_interior_power": -2.0000000027465483,
+    "expected_power": -2.0,
+    "note": "All potentials scale as 1/r^2 near the regular centre"
+  },
+  "indicial_equation": {
+    "leading_term": "l(l+1)/r^2",
+    "exponents": {
+      "regular": 3.0,
+      "singular": -2.0
+    },
+    "de_sitter_correction_order": "subleading constant c_0",
+    "standard_regularity_holds": true
+  },
+  "coupled_frobenius": {
+    "ansatz": "u_Z = r^{l+1} sum a_n r^n, u_phi = r^{l+1} sum b_n r^n",
+    "mixing_regularised": true,
+    "mixing_regularisation_mechanism": "phi'(0)=0 softens exterior 1/r^4 to 1/r^2",
+    "recurrence_type": "matrix three-term with 2x2 coefficients"
+  },
+  "boundary_conditions": {
+    "inner": "u ~ r^{l+1} (regular centre, reflecting)",
+    "outer": "u ~ e^{+i*omega*r*} (outgoing at infinity)",
+    "key_difference": "r* finite at centre -> cavity structure, not absorbing sink"
+  }
+}

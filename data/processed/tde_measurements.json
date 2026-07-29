@@ -1,0 +1,106 @@
+{
+  "description": "Compiled TDE peak luminosity and BH mass measurements from published optical/UV/X-ray surveys. Used for a standard astrophysical analysis of the Eddington-ratio distribution. TEP does not modify exterior luminosity measurements and does not explain the observed sub-Eddington TDE population.",
+  "events": [
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "Holoien et al. 2016, MNRAS 455, 1690",
+      "eddington_ratio": 0.25097441747368093,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 3.1622776601683794e+43,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 43.5,
+      "notes": "Well-studied nearby TDE in PGC 043234; X-ray and UV bright.",
+      "source": "ASASSN-14li"
+    },
+    {
+      "bh_mass_msun": 3160000.0,
+      "citation": "Holoien et al. 2014, MNRAS 445, 3263",
+      "eddington_ratio": 0.02511553144464537,
+      "l_edd_erg_s": 3.9816e+44,
+      "l_peak_erg_s": 1e+43,
+      "log_l_edd": 44.600057627735964,
+      "log_l_peak": 43.0,
+      "notes": "First ASASSN-discovered TDE; UV-bright, X-ray faint.",
+      "source": "ASASSN-14ae"
+    },
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "Holoien et al. 2021, MNRAS 505, 3965",
+      "eddington_ratio": 0.25097441747368093,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 3.1622776601683794e+43,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 43.5,
+      "notes": "Long-lived UV-bright TDE with sustained emission.",
+      "source": "ASASSN-19qj"
+    },
+    {
+      "bh_mass_msun": 316000.0,
+      "citation": "Blagorodnova et al. 2017, ApJ 844, 46",
+      "eddington_ratio": 0.07942228401065851,
+      "l_edd_erg_s": 3.9816e+43,
+      "l_peak_erg_s": 3.162277660168379e+42,
+      "log_l_edd": 43.600057627735964,
+      "log_l_peak": 42.5,
+      "notes": "Low-luminosity TDE around a low-mass BH; fast decay.",
+      "source": "iPTF16fnl"
+    },
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "Arcavi et al. 2014, ApJ 793, 38",
+      "eddington_ratio": 0.07936507936507937,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 1e+43,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 43.0,
+      "notes": "UV/optical TDE from the Palomar Transient Factory.",
+      "source": "PTF09ge"
+    },
+    {
+      "bh_mass_msun": 10000000.0,
+      "citation": "Holoien et al. 2020, ApJ 903, 151",
+      "eddington_ratio": 0.07936507936507937,
+      "l_edd_erg_s": 1.26e+45,
+      "l_peak_erg_s": 1e+44,
+      "log_l_edd": 45.10037054511756,
+      "log_l_peak": 44.0,
+      "notes": "Luminous TDE; one of the brightest optical TDEs discovered.",
+      "source": "ASASSN-18pg"
+    },
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "van Velzen et al. 2021, ApJ 908, 4",
+      "eddington_ratio": 0.25097441747368093,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 3.1622776601683794e+43,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 43.5,
+      "notes": "ZTF TDE catalog event; canonical optical/UV flare.",
+      "source": "ZTF19aamqjar"
+    },
+    {
+      "bh_mass_msun": 1000000.0,
+      "citation": "Nicholl et al. 2020, MNRAS 499, 482",
+      "eddington_ratio": 0.050075979720649935,
+      "l_edd_erg_s": 1.26e+44,
+      "l_peak_erg_s": 6.309573444801892e+42,
+      "log_l_edd": 44.10037054511756,
+      "log_l_peak": 42.8,
+      "notes": "Nearby TDE with early-time spectroscopy; sub-Eddington peak.",
+      "source": "AT2019qiz"
+    },
+    {
+      "bh_mass_msun": 10000000.0,
+      "citation": "Wevers et al. 2019, MNRAS 488, 4818",
+      "eddington_ratio": 0.02509744174736809,
+      "l_edd_erg_s": 1.26e+45,
+      "l_peak_erg_s": 3.1622776601683794e+43,
+      "log_l_edd": 45.10037054511756,
+      "log_l_peak": 43.5,
+      "notes": "X-ray bright TDE in LCRS B223722.5-004923; recurring flares.",
+      "source": "AT2018fyk"
+    }
+  ],
+  "l_edd_constant_erg_s_per_msun": 1.26e+38,
+  "source_catalog": "van Velzen et al. 2021, ApJ 908, 4 (ZTF TDE catalog, 33 events)"
+}

@@ -1,0 +1,110 @@
+{
+  "M": 1.0,
+  "dependencies": [
+    "step_12_self_gravitating",
+    "step_05_observational_constraints"
+  ],
+  "description": "Extend the TEP-sGB framework to spinning (Kerr) black holes by applying the Sotiriou-Zhou perturbative O(beta^2) corrections to the Kerr metric and computing spin-dependent shadow, ISCO, frame-dragging, and QNM deviations.",
+  "eht_m87": {
+    "kerr_shadow_uas": 39.525894989164954,
+    "measured_shadow_uas": 42.3,
+    "measured_sigma": 1.5,
+    "spin_estimate": 0.9,
+    "tep_sgb_shadow_uas": 39.745090035734805
+  },
+  "eht_sgr_a": {
+    "kerr_shadow_uas": 53.20052128726928,
+    "measured_shadow_uas": 48.7,
+    "measured_sigma": 2.3,
+    "spin_estimate": 0.5,
+    "tep_sgb_shadow_uas": 53.17895347834666
+  },
+  "eta": 0.3,
+  "frame_dragging": {
+    "conformal_factor_cancels_in_omega": true,
+    "disformal_correction_order": "eta^2",
+    "interpretation": "Frame-dragging frequency is unchanged by the conformal factor but modified by disformal and sGB metric corrections at order eta^2",
+    "sgb_metric_correction_order": "eta^2"
+  },
+  "gw150914": {
+    "final_spin": 0.67,
+    "kerr_qnm_omega_I": -0.0705693,
+    "kerr_qnm_omega_R": 0.51278963,
+    "kerr_ringdown_Hz": 267.24977775553845,
+    "measured_ringdown_Hz": 250.0,
+    "tep_sgb_qnm_omega_I": -0.0705693,
+    "tep_sgb_qnm_omega_R": 0.5130074123985554,
+    "tep_sgb_ringdown_Hz": 267.36327907110325
+  },
+  "key_result": "The Kerr-TEP generalization extends the framework to spinning BHs. Shadow and ISCO deviations are spin-dependent, providing additional discriminating power. The conformal factor cancels in the frame-dragging frequency, but sGB metric corrections modify it at order eta^2. GW150914 ringdown and EHT shadows provide multi-messenger constraints on the coupling.",
+  "spin_scan": [
+    {
+      "A_at_photon_sphere": 0.9059551911095096,
+      "a_over_M": 0.0,
+      "eta": 0.3,
+      "isco_deviation_pct": -0.5615798379558279,
+      "kerr_isco_prograde": 6.0,
+      "kerr_shadow_b_avg": 5.196152422706632,
+      "phi_at_photon_sphere": 0.09876543209876541,
+      "shadow_asymmetry": 0.0,
+      "shadow_deviation_pct": -0.4179946271590351,
+      "tep_isco_prograde": 5.96630520972265,
+      "tep_shadow_b_avg": 5.174432784760724
+    },
+    {
+      "A_at_photon_sphere": 0.8836353563978538,
+      "a_over_M": 0.3,
+      "eta": 0.3,
+      "isco_deviation_pct": -0.5101002480974226,
+      "kerr_isco_prograde": 4.97861683057595,
+      "kerr_shadow_b_avg": 5.194064844050541,
+      "phi_at_photon_sphere": 0.12371079420564454,
+      "shadow_asymmetry": 0.06673432840466981,
+      "shadow_deviation_pct": -0.23147872864186514,
+      "tep_isco_prograde": 4.953220893771362,
+      "tep_shadow_b_avg": 5.1820416887846985
+    },
+    {
+      "A_at_photon_sphere": 0.8544826821074202,
+      "a_over_M": 0.5,
+      "eta": 0.3,
+      "isco_deviation_pct": -0.45008647317534844,
+      "kerr_isco_prograde": 4.233002529530826,
+      "kerr_shadow_b_avg": 5.190191461842005,
+      "phi_at_photon_sphere": 0.15725904332885593,
+      "shadow_asymmetry": 0.11143696823469151,
+      "shadow_deviation_pct": -0.04054059697302659,
+      "tep_isco_prograde": 4.213950357736238,
+      "tep_shadow_b_avg": 5.188087327239331
+    },
+    {
+      "A_at_photon_sphere": 0.8095509292990475,
+      "a_over_M": 0.67,
+      "eta": 0.3,
+      "isco_deviation_pct": -0.35922704707045394,
+      "kerr_isco_prograde": 3.5280980856575606,
+      "kerr_shadow_b_avg": 5.1850259757073385,
+      "phi_at_photon_sphere": 0.21127559332952614,
+      "shadow_asymmetry": 0.14971804226951446,
+      "shadow_deviation_pct": 0.19622096784990273,
+      "tep_isco_prograde": 3.515424203086704,
+      "tep_shadow_b_avg": 5.19520008386014
+    },
+    {
+      "A_at_photon_sphere": 0.6520747351709811,
+      "a_over_M": 0.9,
+      "eta": 0.3,
+      "isco_deviation_pct": -0.012095217071450559,
+      "kerr_isco_prograde": 2.320883041761887,
+      "kerr_shadow_b_avg": 5.174132275973033,
+      "phi_at_photon_sphere": 0.4275960991289997,
+      "shadow_asymmetry": 0.20230320742931737,
+      "shadow_deviation_pct": 0.554560615591182,
+      "tep_isco_prograde": 2.3206023259200115,
+      "tep_shadow_b_avg": 5.2028259757741715
+    }
+  ],
+  "status": "success",
+  "step": "step_14_kerr_tep",
+  "timestamp": "2026-07-29T01:18:13.925679"
+}

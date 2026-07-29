@@ -1,0 +1,73 @@
+{
+  "parameters": {
+    "M_ADM": 1.0,
+    "eta": -0.1,
+    "normalization": "fixed-ADM"
+  },
+  "horizon": {
+    "m": 0.9986407389941468,
+    "r_H": 1.9972814779882937,
+    "shift_pct": 0.13592610058531518,
+    "formula": "r_H = 2M(1 - 19.6*beta^2), beta = eta/12"
+  },
+  "scalar_profile": {
+    "r=1.9973M": {
+      "phi": -0.06127758235168038,
+      "A": 1.0631939971204065
+    },
+    "r=3.0000M": {
+      "phi": -0.032947582679816116,
+      "A": 1.033496364711618
+    },
+    "r=6.0000M": {
+      "phi": -0.013389049686828866,
+      "A": 1.0134790843902204
+    },
+    "r=10.0000M": {
+      "phi": -0.007431175473095777,
+      "A": 1.0074588551793227
+    }
+  },
+  "shadow": {
+    "Schwarzschild": {
+      "r_ph": 3.0,
+      "b": 5.196152422706632
+    },
+    "g_sGB": {
+      "r_ph": 2.997378634627863,
+      "b": 5.193864667412959
+    },
+    "tilde_g": {
+      "r_ph": 2.997378634052893,
+      "b": 5.193864667412959
+    }
+  },
+  "ISCO": {
+    "Schwarzschild": {
+      "r": 6.0
+    },
+    "g_sGB": {
+      "r": 5.996313465937573
+    },
+    "tilde_g": {
+      "r": 6.117231800484622
+    }
+  },
+  "frame_split": {
+    "shadow_dev_pct": -0.04402787115473927,
+    "isco_tilde_dev_pct": 1.9538633414103668,
+    "isco_g_dev_pct": -0.061442234373787485,
+    "coupling_order_ratio": 44.37787451824247,
+    "signature": "mass-inflation sign divergence: shadow contracts (O(eta^2)) while matter-metric ISCO expands (O(eta))"
+  },
+  "QNM": {
+    "horizon_shift_pct": 0.13592610058531518,
+    "estimated_shift_pct": 0.13592610058531518,
+    "note": "Leading order from horizon shift; needs coupled spectral solver"
+  },
+  "perturbative_control": {
+    "h2_at_horizon": -48.266666666666666,
+    "beta_sq": 6.944444444444444e-05,
+    "beta_sq_times_h2": 0.003351851851851852
+  }
+}
