@@ -1,0 +1,57 @@
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] ================================================================================
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]    STEP 08: JWST Early SMBHs — Eddington-limited Growth Analysis
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] ================================================================================
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] Step ID: step_08_jwst_early_smbhs
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] Timestamp: 2026-07-29T01:18:12.725933
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [SUCCESS] [step_08_jwst_early_smbhs] High-z BH masses saved to data/processed/jwst_highz_bh_masses.json
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] ================================================================================
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]    Standard Eddington-Limited Growth
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] ================================================================================
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Seed mass: 100 M_sun (stellar remnant)
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Salpeter time: 45 Myr (epsilon=0.1)
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Assumption: continuous Eddington-limited accretion
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Source               z        Age(Gyr)   M_obs(M_sun)    M_Edd(M_sun)    Ratio      t_need(Myr) 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   -------------------- -------- ---------- --------------- --------------- ---------- ------------
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   CEERS_2782           5.24     1.103      1.30e+07        4.45e+12        0.0        530         
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   CEERS_746            5.62     1.010      2.80e+07        5.54e+11        0.0        564         
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   GN_z11               10.60    0.436      1.60e+06        1.62e+06        1.0        436         
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   UHZ1                 10.10    0.466      4.00e+07        3.13e+06        12.8       580         
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   J1243_0100           7.07     0.751      3.30e+08        1.78e+09        0.2        675         
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   J1342_0928           7.54     0.690      8.00e+08        4.57e+08        1.7        715         
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] Key finding: 2/6 objects exceed the idealized 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 100-solar-mass, continuous-Eddington growth envelope when the standard 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 45 Myr Salpeter e-folding time is used.
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] ================================================================================
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]    TEP Assessment
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] ================================================================================
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   TEP does not modify exterior mass measurements.
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   The conformal factor A(phi) ~ 1 in the exterior region where BH
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   masses are measured (virial / reverberation / dynamical methods),
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   so observed masses are true masses.
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   The JWST early SMBH problem is not addressed by TEP through mass
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   inflation. The observed masses are real, and the challenge of
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   growing billion-solar-mass BHs in <1 Gyr remains an open
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   astrophysical problem that TEP does not resolve.
+[01:18:12] [INFO] [step_08_jwst_early_smbhs] 
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Mean M_obs/M_edd ratio: 2.6x
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Min ratio: 0.0x
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Max ratio: 12.8x
+[01:18:12] [SUCCESS] [step_08_jwst_early_smbhs]   TEP assessment: A ≈ 1 in exterior → observed masses are true masses
+[01:18:12] [SUCCESS] [step_08_jwst_early_smbhs] CSV saved to results/step_08_jwst_early_smbhs.csv
+[01:18:12] [SUCCESS] [step_08_jwst_early_smbhs] JSON summary saved to results/step_08_jwst_early_smbhs.json
+[01:18:12] [SUCCESS] [step_08_jwst_early_smbhs] Step 08 complete.
+[01:18:12] [SUCCESS] [step_08_jwst_early_smbhs] [CORE  ] step_08_jwst_early_smbhs completed in 0.0s
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Description: Compare JWST high-redshift SMBH masses against an idealized Eddington-limited growth envelope from 100 M_sun seeds using the 45 Myr Salpeter timescale
+[01:18:12] [INFO] [step_08_jwst_early_smbhs]   Key result:  2/6 high-z SMBHs exceed the continuous-Eddington growth envelope (mean M_obs/M_Edd = 2.6x); TEP does not modify exterior mass measurements

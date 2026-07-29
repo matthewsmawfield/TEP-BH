@@ -1,0 +1,117 @@
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations]    STEP 01: TEP-BH Strong-Field Metric Construction
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] Step ID: step_01_field_equations
+[01:18:11] [INFO] [step_01_field_equations] Timestamp: 2026-07-29T01:18:11.959761
+[01:18:11] [INFO] [step_01_field_equations] Project root: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] Model parameters: {'beta_A': -1.0, 'B0': 1.0, 'n_B': 2.0, 'B_type': 'gaussian_bump', 'sigma_B': 1.5, 'phi_0': 2.0, 'delta': 0.05, 'M': 1.0, 'r_h': 2.0}
+[01:18:11] [INFO] [step_01_field_equations] phi_0 = 2.0: conformal dominates, globally Lorentzian (no temporal boundary)
+[01:18:11] [INFO] [step_01_field_equations] B(phi) Gaussian bump: peaks near horizon, vanishes in core (shear zone -> pure dilation)
+[01:18:11] [INFO] [step_01_field_equations] Grid: 20000 points, r in [1.000000e-08, 5.000000e+01]
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations]    Scalar Field Profile
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations]   phi at r=10M:  5.646688e-35 (screened)
+[01:18:11] [INFO] [step_01_field_equations]   phi at r=2M:   -0.000547
+[01:18:11] [INFO] [step_01_field_equations]   phi at r=0.1M: -5.991019
+[01:18:11] [INFO] [step_01_field_equations]   phi at r_min:  -3.822766e+01
+[01:18:11] [INFO] [step_01_field_equations]   A at r=10M:    1.000000 (exterior ~1)
+[01:18:11] [INFO] [step_01_field_equations]   A at r=2M:     1.000548
+[01:18:11] [INFO] [step_01_field_equations]   A at r=0.1M:   3.998220e+02
+[01:18:11] [INFO] [step_01_field_equations]   A at r_min:    4.000000e+16
+[01:18:11] [INFO] [step_01_field_equations]   B at r=10M:    3.188508e-69 (screened)
+[01:18:11] [INFO] [step_01_field_equations]   B at r=2M:     2.995968e-07
+[01:18:11] [INFO] [step_01_field_equations]   B at r=0.1M:   0.000000
+[01:18:11] [INFO] [step_01_field_equations]   B at r_min:    0.000000e+00 (bounded -> B0)
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations]    Metric Regularity
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations]   Lorentzian at ALL points: True (20000/20000)
+[01:18:11] [INFO] [step_01_field_equations]   Nondegenerate at ALL points: True
+[01:18:11] [INFO] [step_01_field_equations]   det_2d at r=10M:  -1.000000e+00
+[01:18:11] [INFO] [step_01_field_equations]   det_2d at r=2M:   -1.002192e+00
+[01:18:11] [INFO] [step_01_field_equations]   det_2d at r=0.1M: -2.555446e+10
+[01:18:11] [INFO] [step_01_field_equations]   det_2d at r_min:  -2.559999e+66
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations]    Curvature Invariants
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations]   Kretschmann finite at ALL points: True
+[01:18:11] [INFO] [step_01_field_equations]   Kretschmann max value: 3.885331e+00
+[01:18:11] [INFO] [step_01_field_equations]   K at r=10M:  TEP=4.791770e-05, Schw=4.791766e-05
+[01:18:11] [INFO] [step_01_field_equations]   K at r=2M:   TEP=7.475277e-01, Schw=7.524538e-01
+[01:18:11] [INFO] [step_01_field_equations]   K at r=0.1M: TEP=2.315448e-02, Schw=4.793595e+07
+[01:18:11] [INFO] [step_01_field_equations]   K at r_min:  TEP=1.358222e-16, Schw=4.800000e+49
+[01:18:11] [INFO] [step_01_field_equations]   K ratio at 0.1M: TEP/Schw = 4.830295e-10 (<< 1 = regularized)
+[01:18:11] [INFO] [step_01_field_equations]   K -> 0 as r -> 0: True
+[01:18:11] [INFO] [step_01_field_equations]   Ricci scalar at r=2M: nan
+[01:18:11] [INFO] [step_01_field_equations]   Ricci scalar at r_min: -1.241649e-01
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations]    Geodesic Completeness
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations]   Null affine parameter (horizon -> temporal boundary): 5.333344e+24
+[01:18:11] [INFO] [step_01_field_equations]   Null integrand power law alpha: 3.999999991755132
+[01:18:11] [INFO] [step_01_field_equations]   Null continuation integral diverges: True
+[01:18:11] [INFO] [step_01_field_equations]   Timelike proper-time diagnostic to boundary: 5.656455e+04
+[01:18:11] [INFO] [step_01_field_equations]   Timelike continuation integral diverges: True
+[01:18:11] [INFO] [step_01_field_equations]   Physical distance at r=2M: 0.000000e+00
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations]    Physical Volume
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations]   V_physical at r=2M (exterior):  0.000000e+00
+[01:18:11] [INFO] [step_01_field_equations]   V_geometric at r=2M:             3.345564e+01
+[01:18:11] [INFO] [step_01_field_equations]   dV_interior_per_v at r=0.1M:     8.759159e+04
+[01:18:11] [INFO] [step_01_field_equations]   dV_interior_per_v at r_min:      2.843445e+22
+[01:18:11] [INFO] [step_01_field_equations]   Interior volume GROWS as r -> 0 (does not collapse): True
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations]    Energy Conditions (Raychaudhuri convergence sign)
+[01:18:11] [INFO] [step_01_field_equations] ================================================================================
+[01:18:11] [INFO] [step_01_field_equations] 
+[01:18:11] [INFO] [step_01_field_equations]   R_kk (NEC sign, ingoing null) at r=2M:  -9.995215e+00
+[01:18:11] [INFO] [step_01_field_equations]   R_uu (SEC sign, E=1 infall) at r=2M:    1.408428e+02
+[01:18:11] [INFO] [step_01_field_equations]   NEC violated anywhere (|R_kk|>1e-06): True
+[01:18:11] [INFO] [step_01_field_equations]   SEC violated anywhere (|R_uu|>1e-06): True
+[01:18:11] [INFO] [step_01_field_equations]   NEC violated r-intervals: [(2.232574045116768, 1.8118238303151475)]
+[01:18:11] [INFO] [step_01_field_equations]   SEC violated r-range: (1.8301248676325972, 2.2151904084160012)
+[01:18:11] [INFO] [step_01_field_equations]   SEC violated fraction of Lorentzian domain: 0.011143887250081941
+[01:18:12] [SUCCESS] [step_01_field_equations] CSV saved to results/step_01_field_equations.csv
+[01:18:12] [SUCCESS] [step_01_field_equations] JSON summary saved to results/step_01_field_equations.json
+[01:18:12] [INFO] [step_01_field_equations] 
+[01:18:12] [INFO] [step_01_field_equations] 
+[01:18:12] [INFO] [step_01_field_equations] ================================================================================
+[01:18:12] [INFO] [step_01_field_equations]    MAIN THEOREM VERIFICATION
+[01:18:12] [INFO] [step_01_field_equations] ================================================================================
+[01:18:12] [INFO] [step_01_field_equations] 
+[01:18:12] [INFO] [step_01_field_equations]   Globally Lorentzian (no temporal boundary): True
+[01:18:12] [INFO] [step_01_field_equations]   Nondegenerate on sampled grid: True
+[01:18:12] [INFO] [step_01_field_equations]   Determinant-zero boundary exists: False
+[01:18:12] [INFO] [step_01_field_equations]   Curvature finite on sampled points: True
+[01:18:12] [INFO] [step_01_field_equations]   Curvature vanishes at innermost: True
+[01:18:12] [INFO] [step_01_field_equations]   Physical volume element grows inward: True
+[01:18:12] [INFO] [step_01_field_equations]   Null affine parameter to r=0:  5.3333e+24
+[01:18:12] [INFO] [step_01_field_equations]   Null integrand power law: r^4.0000 (diverges if > 1)
+[01:18:12] [INFO] [step_01_field_equations]   Timelike proper time to r=0: 5.6565e+04
+[01:18:12] [SUCCESS] [step_01_field_equations]   Globally-Lorentzian result supported: True
+[01:18:12] [SUCCESS] [step_01_field_equations] Step 01 complete.
+[01:18:12] [SUCCESS] [step_01_field_equations] [CORE  ] step_01_field_equations completed in 0.3s
+[01:18:12] [INFO] [step_01_field_equations]   Description: Construct TEP disformal matter metric from Schwarzschild geometric metric; compute curvature invariants, geodesic completeness, and physical volume/density
+[01:18:12] [INFO] [step_01_field_equations]   Key result:  Globally Lorentzian matter metric (no temporal boundary), curvature finite at all points (K_max=3.885e+00), interior volume grows inward — causal-boundary result supported

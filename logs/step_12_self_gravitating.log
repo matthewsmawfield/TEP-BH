@@ -1,0 +1,113 @@
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:12] [INFO] [step_12_self_gravitating]    ======================================================================
+[01:18:12] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:12] [INFO] [step_12_self_gravitating]    Step 12: Self-Gravitating Einstein-Scalar-Gauss-Bonnet Solution
+[01:18:12] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:12] [INFO] [step_12_self_gravitating]    ======================================================================
+[01:18:12] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating]   Model parameters (SGBModel):
+[01:18:12] [INFO] [step_12_self_gravitating]     eta = -0.3 (shift-symmetric GB coupling, mass-inflation branch)
+[01:18:12] [INFO] [step_12_self_gravitating]     M = 1.0 (geometric mass)
+[01:18:12] [INFO] [step_12_self_gravitating]     r_h = 2.0 (horizon radius, leading order)
+[01:18:12] [INFO] [step_12_self_gravitating]     zeta = eta^2/M^4 = 0.090000 (dimensionless coupling)
+[01:18:12] [INFO] [step_12_self_gravitating]     B0 = 1.0, n_B = 2.0, beta_A = -1.0, sigma_B = 1.5
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating] Sotiriou-Zhou (2014) solution parameters:
+[01:18:12] [INFO] [step_12_self_gravitating]   Coupling: f(phi) = eta * phi (shift-symmetric)
+[01:18:12] [INFO] [step_12_self_gravitating]   Potential: V(phi) = 0 (massless scalar)
+[01:18:12] [INFO] [step_12_self_gravitating]   Scalar: phi(r) = (2*eta/3)*(1/r + M/r^2 + 4*M^2/(3*r^3))
+[01:18:12] [INFO] [step_12_self_gravitating]   Scalar charge: Q_s = 2*eta/3 (Coulomb-like 1/r falloff)
+[01:18:12] [INFO] [step_12_self_gravitating]   Metric: O(beta^2) perturbative, Eqs. (56)-(63)
+[01:18:12] [INFO] [step_12_self_gravitating]   beta = eta/(3*r_H^2), r_H = 2M(1 - 19.6*beta^2) (ADM-mass-fixed)
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating] Running coupling scan (eta = -0.1, -0.2, -0.3, -0.5)...
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating]   eta = -0.1 (zeta = 0.0100)...
+[01:18:12] [INFO] [step_12_self_gravitating]     Q_s = -0.0667, alpha = 0.001361
+[01:18:12] [INFO] [step_12_self_gravitating]     shadow dev = -0.045%, ISCO dev = -0.062%, QNM shift = 0.042%
+[01:18:12] [INFO] [step_12_self_gravitating]     det-zero boundary: r = 0.384177 M
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating]   eta = -0.2 (zeta = 0.0400)...
+[01:18:12] [INFO] [step_12_self_gravitating]     Q_s = -0.1333, alpha = 0.005444
+[01:18:12] [INFO] [step_12_self_gravitating]     shadow dev = -0.179%, ISCO dev = -0.247%, QNM shift = 0.171%
+[01:18:12] [INFO] [step_12_self_gravitating]     det-zero boundary: r = 0.530150 M
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating]   eta = -0.3 (zeta = 0.0900)...
+[01:18:12] [INFO] [step_12_self_gravitating]     Q_s = -0.2000, alpha = 0.012250
+[01:18:12] [INFO] [step_12_self_gravitating]     shadow dev = -0.405%, ISCO dev = -0.554%, QNM shift = 0.395%
+[01:18:12] [INFO] [step_12_self_gravitating]     det-zero boundary: r = 0.692340 M
+[01:18:12] [INFO] [step_12_self_gravitating] 
+[01:18:12] [INFO] [step_12_self_gravitating]   eta = -0.5 (zeta = 0.2500)...
+[01:18:13] [INFO] [step_12_self_gravitating]     Q_s = -0.3333, alpha = 0.034028
+[01:18:13] [INFO] [step_12_self_gravitating]     shadow dev = -1.140%, ISCO dev = -1.516%, QNM shift = 1.122%
+[01:18:13] [INFO] [step_12_self_gravitating]     No det-zero boundary (globally Lorentzian)
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:13] [INFO] [step_12_self_gravitating]    Primary result (eta = -0.1):
+[01:18:13] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating]   Scalar field profile:
+[01:18:13] [INFO] [step_12_self_gravitating]     phi(r_h) = -0.061111
+[01:18:13] [INFO] [step_12_self_gravitating]     phi(10M) = -0.007422
+[01:18:13] [INFO] [step_12_self_gravitating]     phi(100M) = -0.00067342
+[01:18:13] [INFO] [step_12_self_gravitating]     Q_s = 2*eta/3 = -0.066667
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating]   Metric corrections:
+[01:18:13] [INFO] [step_12_self_gravitating]     delta_m(inf) = 0.018168 M
+[01:18:13] [INFO] [step_12_self_gravitating]     M_eff = 1.000000 M
+[01:18:13] [INFO] [step_12_self_gravitating]     alpha = 0.001361
+[01:18:13] [INFO] [step_12_self_gravitating]     beta = eta/(3*r_H^2) = -0.008333
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating]   Exterior observables (with percentage shifts vs Schwarzschild):
+[01:18:13] [INFO] [step_12_self_gravitating]     Photon sphere: 2.997365 M (Schw: 3.0)
+[01:18:13] [INFO] [step_12_self_gravitating]     Shadow radius: 5.193829 M (Schw: 5.196152)
+[01:18:13] [INFO] [step_12_self_gravitating]     Shadow deviation: -0.0447%
+[01:18:13] [INFO] [step_12_self_gravitating]     ISCO: 5.996278 M (Schw: 6.0)
+[01:18:13] [INFO] [step_12_self_gravitating]     ISCO deviation: -0.0620%
+[01:18:13] [INFO] [step_12_self_gravitating]     QNM: omega = 0.439919 + -0.205113i
+[01:18:13] [INFO] [step_12_self_gravitating]     QNM (Schw): omega = 0.439732 + -0.205129i
+[01:18:13] [INFO] [step_12_self_gravitating]     QNM shift: 0.0425%
+[01:18:13] [INFO] [step_12_self_gravitating]     det-zero boundary: r = 0.384177 M
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] Computing observational projections...
+[01:18:13] [INFO] [step_12_self_gravitating]   M87* shadow: 39.68 uas (Schw: 39.69, EHT: 42.3 +/- 1.5)
+[01:18:13] [INFO] [step_12_self_gravitating]   Sgr A* shadow: 53.24 uas (Schw: 53.26, EHT: 48.7 +/- 2.3)
+[01:18:13] [INFO] [step_12_self_gravitating]   GW150914 ringdown: TEP-sGB = 227.8 Hz, Schw = 227.7 Hz
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:13] [INFO] [step_12_self_gravitating]    Key Finding
+[01:18:13] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:13] [INFO] [step_12_self_gravitating]    ======================================================================
+[01:18:13] [INFO] [step_12_self_gravitating] ================================================================================
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [INFO] [step_12_self_gravitating]   The shift-symmetric sGB coupling produces a self-gravitating
+[01:18:13] [INFO] [step_12_self_gravitating]   branch with EXTERIOR-OBSERVABLE deviations from Schwarzschild:
+[01:18:13] [INFO] [step_12_self_gravitating]     - Scalar charge Q_s = 2*eta/3 (Coulomb-like 1/r falloff)
+[01:18:13] [INFO] [step_12_self_gravitating]     - Post-Schwarzschild mass correction alpha ~ eta^2
+[01:18:13] [INFO] [step_12_self_gravitating]     - Shadow, ISCO, and QNM shifts all scale as eta^2
+[01:18:13] [INFO] [step_12_self_gravitating]     - The exterior is no longer identical to Schwarzschild
+[01:18:13] [INFO] [step_12_self_gravitating]     - EHT shadow observations constrain eta to < ~0.3
+[01:18:13] [INFO] [step_12_self_gravitating]     - The TEP matter metric is globally Lorentzian (no boundary in the interior)
+[01:18:13] [INFO] [step_12_self_gravitating] 
+[01:18:13] [SUCCESS] [step_12_self_gravitating] JSON summary saved to results/step_12_self_gravitating.json
+[01:18:13] [SUCCESS] [step_12_self_gravitating] CSV saved to results/step_12_self_gravitating.csv
+[01:18:13] [SUCCESS] [step_12_self_gravitating] Step 12 complete.
+[01:18:13] [SUCCESS] [step_12_self_gravitating] [COUPLED] step_12_self_gravitating completed in 0.7s
+[01:18:13] [INFO] [step_12_self_gravitating]   Description: Solve the coupled Einstein-scalar-Gauss-Bonnet system (Sotiriou-Zhou 2014 perturbative O(beta^2) solution) to produce a self-gravitating branch with post-Schwarzschild exterior corrections and compute shadow, ISCO, and QNM deviations.
+[01:18:13] [INFO] [step_12_self_gravitating]   Key result:  The sGB self-gravitating branch produces exterior-observable deviations from Schwarzschild: shadow, ISCO, and QNM shifts scaling as eta^2. This breaks the exterior-identical property of the prescribed branch and provides falsifiable predictions. EHT shadow observations constrain eta < ~0.3 for M87* and eta < ~0.2 for Sgr A*.

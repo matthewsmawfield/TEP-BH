@@ -1,0 +1,73 @@
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations]    ======================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations]    Step 13: Scalar-Led and Mixed Scalar-Tensor Perturbations
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations]    ======================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] GB coupling: eta = 0.3
+[01:18:13] [INFO] [step_13_scalar_perturbations] Dimensionless coupling: zeta = 0.0900
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] Computing scalar-led perturbation potential...
+[01:18:13] [INFO] [step_13_scalar_perturbations]   V_scalar_max = 0.211909
+[01:18:13] [INFO] [step_13_scalar_perturbations]   r_peak (scalar) = 3.0516 M
+[01:18:13] [INFO] [step_13_scalar_perturbations]   V_scalar FWHM (r*) = 2.0672 M
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Scalar QNM: omega = 0.469750 + -0.093578i
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] Computing modified Regge-Wheeler potential (axial)...
+[01:18:13] [INFO] [step_13_scalar_perturbations]   V_RW_max (sGB) = 0.151436
+[01:18:13] [INFO] [step_13_scalar_perturbations]   V_RW_max (Schw) = 0.151287
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Axial QNM (sGB): omega = 0.399009 + -0.088161i
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Axial QNM (Schw): omega = 0.398849 + -0.088283i
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Axial frequency shift: 0.0402% (real), -0.1380% (imag)
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] Computing modified Zerilli potential (polar)...
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Polar QNM (sGB): omega = 0.398671 + -0.088460i
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Polar QNM (Schw): omega = 0.398894 + -0.088352i
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Polar frequency shift: -0.0561% (real), 0.1226% (imag)
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] Isospectrality test (axial vs polar)...
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Isospectrality breaking (real): 0.0849%
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Isospectrality breaking (imag): 0.3394%
+[01:18:13] [INFO] [step_13_scalar_perturbations]   In GR: 0% (isospectral). In sGB: nonzero (distinctive signature).
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] Echo cavity analysis...
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Scalar potential peaks: 1 (no echo cavity expected)
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Axial potential peaks: 1
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Echo prediction: NO (single-peaked)
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations]    Key Finding
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations]    ======================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations] ================================================================================
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [INFO] [step_13_scalar_perturbations]   The sGB coupling eta = 0.3 produces a coupled temporal-geometric spectrum:
+[01:18:13] [INFO] [step_13_scalar_perturbations]     1. Scalar-led (temporal-led) mode: omega = 0.4698 + -0.0936i
+[01:18:13] [INFO] [step_13_scalar_perturbations]        (a coupled temporal-geometric eigenmode, not an independent radiation channel)
+[01:18:13] [INFO] [step_13_scalar_perturbations]     2. Axial tensor-led QNMs shifted by 0.04% from Schwarzschild
+[01:18:13] [INFO] [step_13_scalar_perturbations]     3. Polar tensor-led QNMs shifted by -0.06% from Schwarzschild
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Isospectrality breaking: 0.08% (zero in GR, nonzero in sGB)
+[01:18:13] [INFO] [step_13_scalar_perturbations]   No echo cavity: single-peaked potentials
+[01:18:13] [INFO] [step_13_scalar_perturbations]   The scalar-led mode is a UNIQUE prediction of TEP-sGB not present in GR.
+[01:18:13] [INFO] [step_13_scalar_perturbations] 
+[01:18:13] [SUCCESS] [step_13_scalar_perturbations] JSON summary saved to results/step_13_scalar_perturbations.json
+[01:18:13] [SUCCESS] [step_13_scalar_perturbations] CSV saved to results/step_13_scalar_perturbations.csv
+[01:18:13] [SUCCESS] [step_13_scalar_perturbations] Step 13 complete.
+[01:18:13] [SUCCESS] [step_13_scalar_perturbations] [COUPLED] step_13_scalar_perturbations completed in 0.3s
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Description: Compute the perturbation spectrum on the self-gravitating sGB background: scalar-led QNMs, modified axial (Regge-Wheeler) and polar (Zerilli) gravitational QNMs, isospectrality breaking, and echo cavity analysis.
+[01:18:13] [INFO] [step_13_scalar_perturbations]   Key result:  The sGB self-gravitating branch predicts three perturbation channels: (1) scalar-led QNMs — a new gravitational-wave channel not present in GR, (2) shifted axial gravitational QNMs, (3) shifted polar gravitational QNMs with broken isospectrality. The isospectrality breaking of 0.08% is a falsifiable signature distinguishable from GR.

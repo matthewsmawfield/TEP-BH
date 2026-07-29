@@ -1,0 +1,54 @@
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing] ================================================================================
+[01:18:12] [INFO] [step_03_raytracing]    STEP 03: Ray-Tracing and Observational Comparison
+[01:18:12] [INFO] [step_03_raytracing] ================================================================================
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing] Step ID: step_03_raytracing
+[01:18:12] [INFO] [step_03_raytracing] Timestamp: 2026-07-29T01:18:12.358900
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing] Model parameters: {'beta_A': -1.0, 'B0': 1.0, 'n_B': 2.0, 'B_type': 'gaussian_bump', 'sigma_B': 1.5, 'phi_0': 2.0, 'delta': 0.05, 'M': 1.0, 'r_h': 2.0}
+[01:18:12] [PROCESS] [step_03_raytracing] Solving TEP-BH background...
+[01:18:12] [PROCESS] [step_03_raytracing] Computing photon sphere from disformal metric...
+[01:18:12] [INFO] [step_03_raytracing]   r_photon (TEP):  3.000002 M
+[01:18:12] [INFO] [step_03_raytracing]   r_photon (Schw): 3.000000 M
+[01:18:12] [INFO] [step_03_raytracing]   b_photon (TEP):  5.196154 M
+[01:18:12] [INFO] [step_03_raytracing]   b_photon (Schw): 5.196152 M
+[01:18:12] [INFO] [step_03_raytracing]   b ratio (TEP/Schw): 1.000000
+[01:18:12] [INFO] [step_03_raytracing]   A at photon sphere: 0.999964
+[01:18:12] [PROCESS] [step_03_raytracing] Computing ISCO from disformal metric...
+[01:18:12] [INFO] [step_03_raytracing]   r_ISCO (TEP):  6.000000 M
+[01:18:12] [INFO] [step_03_raytracing]   r_ISCO (Schw): 6.000000 M
+[01:18:12] [INFO] [step_03_raytracing]   Ratio: 1.000000
+[01:18:12] [PROCESS] [step_03_raytracing] Computing observational constraints...
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing] ================================================================================
+[01:18:12] [INFO] [step_03_raytracing]    M87*
+[01:18:12] [INFO] [step_03_raytracing] ================================================================================
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing]   Mass:     6.5e+09 M_sun
+[01:18:12] [INFO] [step_03_raytracing]   Distance: 16.8 Mpc
+[01:18:12] [INFO] [step_03_raytracing]   Shadow (TEP):      39.69 uas
+[01:18:12] [INFO] [step_03_raytracing]   Shadow (Schw):     39.69 uas
+[01:18:12] [INFO] [step_03_raytracing]   Shadow (measured): 42.00 uas
+[01:18:12] [INFO] [step_03_raytracing]   TEP/Schw deviation: 0.0000%
+[01:18:12] [INFO] [step_03_raytracing]   TEP vs measured:    -5.5015%
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing] ================================================================================
+[01:18:12] [INFO] [step_03_raytracing]    Sgr A*
+[01:18:12] [INFO] [step_03_raytracing] ================================================================================
+[01:18:12] [INFO] [step_03_raytracing] 
+[01:18:12] [INFO] [step_03_raytracing]   Mass:     4.3e+06 M_sun
+[01:18:12] [INFO] [step_03_raytracing]   Distance: 8.277 kpc
+[01:18:12] [INFO] [step_03_raytracing]   Shadow (TEP):      53.26 uas
+[01:18:12] [INFO] [step_03_raytracing]   Shadow (Schw):     53.26 uas
+[01:18:12] [INFO] [step_03_raytracing]   Shadow (measured): 48.70 uas
+[01:18:12] [INFO] [step_03_raytracing]   TEP/Schw deviation: 0.0000%
+[01:18:12] [INFO] [step_03_raytracing]   TEP vs measured:    9.3537%
+[01:18:12] [SUCCESS] [step_03_raytracing] CSV saved to results/step_03_raytracing.csv
+[01:18:12] [SUCCESS] [step_03_raytracing] JSON summary saved to results/step_03_raytracing.json
+[01:18:12] [SUCCESS] [step_03_raytracing] Step 03 complete.
+[01:18:12] [SUCCESS] [step_03_raytracing] [CORE  ] step_03_raytracing completed in 0.0s
+[01:18:12] [INFO] [step_03_raytracing]   Description: Compute photon sphere, shadow angular diameter, and ISCO from the TEP disformal metric; compare with EHT M87* and Sgr A* observations
+[01:18:12] [INFO] [step_03_raytracing]   Key result:  Photon sphere r=3.0000M, ISCO r=6.0000M, M87 shadow=39.69 uas, Sgr A* shadow=53.26 uas — all consistent with Schwarzschild (deviation < 1e-4%)

@@ -1,0 +1,73 @@
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]    STEP 06: GW190521 Mass Gap — TEP Exterior Consistency Check
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] Step ID: step_06_gw190521_mass_gap
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] Timestamp: 2026-07-29T01:18:12.465874
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]    Downloading GW190521 posterior samples...
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap]   Using cached file (50,913,185 bytes)
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   SHA-256: 25612f3f688daf1e0477a96188e2b094...
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Source: Zenodo 4057131 (Isi et al. 2020)
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Citation: LIGO/Virgo 2020, PRL 125, 101102
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [PROCESS] [step_06_gw190521_mass_gap] Loading posterior samples...
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap]   Loaded 47,042 posterior samples
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]    Standard LIGO Interpretation (cosmological redshift only)
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Pair-instability mass gap boundaries: 65.0–130.0 M_sun
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Component mass estimates (90% credible intervals):
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   m1 = 85.4 (+23.5 / -14.6) M_sun
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   m2 = 67.6 (+20.3 / -19.1) M_sun
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Chirp mass = 64.8 (+16.6 / -9.0) M_sun
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Final mass = 143.9 M_sun
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Redshift z = 0.76
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   P(m1 in mass gap 65.0-130.0 M_sun) = 99.3%
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]    TEP Exterior Consistency Check
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   The TEP temporal potential is an INTERIOR property (r < 2M).
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Binary BH mergers occur in the EXTERIOR (r >> 2M) where A ≈ 1.
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Therefore TEP does NOT modify exterior GW observables.
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   GW-measured masses are unchanged; the mass gap is not addressed by TEP.
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [PROCESS] [step_06_gw190521_mass_gap]   Numerical verification: solving TEP BH model...
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   A(r > 10M) = 1.000000  (exterior conformal factor)
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Deviation from unity: 0.00e+00
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap]   Conclusion: A ≈ 1 in the exterior — GW masses are unchanged.
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap]   Standard vs TEP: m1=85.4 M_sun (both agree, A≈1)
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]    Hypothetical Constraint Scan (if TEP DID modify GW masses)
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] ================================================================================
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   This scan is a CONSTRAINT, not a prediction.
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   If TEP modified exterior GW masses, what A would be needed?
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Since A ≈ 1 in the exterior, we check consistency.
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   A critical (gap prob < 5%): 0.300
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   m1 at A=0.300: 25.6 M_sun
+[01:18:12] [INFO] [step_06_gw190521_mass_gap] 
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   At A=1.0 (exterior, actual TEP value): m1=85.4 M_sun, P(gap)=99.3%
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Since A ≈ 1.0000 in the exterior, TEP does NOT close the gap.
+[01:18:12] [WARNING] [step_06_gw190521_mass_gap]   The mass gap problem is not addressed by TEP temporal redshift.
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap]   Verdict: TEP exterior A ≈ 1 >> A_critical → mass gap NOT addressed by TEP
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap] CSV saved to results/step_06_gw190521_mass_gap.csv
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap] JSON summary saved to results/step_06_gw190521_mass_gap.json
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap] Step 06 complete.
+[01:18:12] [SUCCESS] [step_06_gw190521_mass_gap] [CORE  ] step_06_gw190521_mass_gap completed in 0.3s
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Description: Examine GW190521 mass-gap event for TEP exterior consistency using real LIGO posterior samples and a hypothetical conformal-factor constraint scan
+[01:18:12] [INFO] [step_06_gw190521_mass_gap]   Key result:  TEP does not modify exterior GW observables (A=1.000000 ≈ 1); the pair-instability mass gap is not addressed by TEP temporal redshift

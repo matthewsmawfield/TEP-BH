@@ -5,11 +5,8 @@ __pycache__/
 *.so
 .Python
 build/
-develop-eggs/
 dist/
 downloads/
-eggs/
-.eggs/
 lib/
 lib64/
 parts/
@@ -64,10 +61,6 @@ docs/_build/
 *.pickle
 
 .devin/
-
-# Logs and temp files
-logs/
-*.log
 
 # IDE workspace files
 *.code-workspace

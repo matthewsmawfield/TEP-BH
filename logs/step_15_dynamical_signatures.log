@@ -1,0 +1,95 @@
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures]    ======================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures]    Step 15: Dynamical Signatures — PN, Inspiral, Cosmology
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures]    ======================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] Post-Newtonian corrections from sGB scalar...
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Scalar charge Q_s = 0.200000
+[01:18:13] [INFO] [step_15_dynamical_signatures]   PPN gamma = 1.000000 (GR: 1.0)
+[01:18:13] [INFO] [step_15_dynamical_signatures]   PPN beta = 1.000000 (GR: 1.0)
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Post-Schwarzschild alpha = 1.361111e-03
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Perihelion correction: 705.600663 arcsec/orbit
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Light deflection correction: 5.444444e-04
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Shapiro delay correction: 6.268148e-03
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] Compact binary inspiral dephasing...
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Scalar dipole radiation formula:
+[01:18:13] [INFO] [step_15_dynamical_signatures]     delta_Psi(f) = -beta_dipole * (5/256) * (pi*M_c)^{-5/3} * f^{-7/3}
+[01:18:13] [INFO] [step_15_dynamical_signatures]     beta_dipole = (5/48) * (Q_s1/m1 - Q_s2/m2)^2 * (mu/M)^2
+[01:18:13] [INFO] [step_15_dynamical_signatures]     PN order: -1PN (dominates over GR quadrupole at low frequency)
+[01:18:13] [INFO] [step_15_dynamical_signatures]   GW150914-like system (36+29 M_sun):
+[01:18:13] [INFO] [step_15_dynamical_signatures]     eta_phys = 0.6545 km^2
+[01:18:13] [INFO] [step_15_dynamical_signatures]     zeta1 = 5.36e-08, Q_s1/m1 = 0.024617
+[01:18:13] [INFO] [step_15_dynamical_signatures]     beta_dipole = 3.854205e-06
+[01:18:13] [INFO] [step_15_dynamical_signatures]     Dephasing at f_low=10Hz: -0.000140 rad
+[01:18:13] [INFO] [step_15_dynamical_signatures]     Total dephasing (10-150 Hz): 0.000140 rad
+[01:18:13] [INFO] [step_15_dynamical_signatures]     LIGO detectable: False
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures]   LISA-like system (1e6+1e5 M_sun):
+[01:18:13] [INFO] [step_15_dynamical_signatures]     zeta1 = 9.00e-26, Q_s1/m1 = 8.86e-07
+[01:18:13] [INFO] [step_15_dynamical_signatures]     beta_dipole = 5.587551e-16
+[01:18:13] [INFO] [step_15_dynamical_signatures]     Total dephasing: 0.000000 rad
+[01:18:13] [INFO] [step_15_dynamical_signatures]     LISA detectable: False
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures]   EMRI (1e6+10 M_sun):
+[01:18:13] [INFO] [step_15_dynamical_signatures]     zeta1 = 9.00e-26, Q_s1/m1 = 8.86e-07
+[01:18:13] [INFO] [step_15_dynamical_signatures]     beta_dipole = 8.180407e-24
+[01:18:13] [INFO] [step_15_dynamical_signatures]     Total dephasing: 0.000000 rad
+[01:18:13] [INFO] [step_15_dynamical_signatures]     LISA detectable: False
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] Cosmological and multi-messenger constraints...
+[01:18:13] [INFO] [step_15_dynamical_signatures]   GW speed: c_T = 1.0 (consistent with GW170817: True)
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Delta N_eff = 0.0 (massless scalar, not thermalized)
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Cassini (solar system): DOES NOT APPLY — GB invariant negligible for Sun-like objects; PPN gamma = beta = 1
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Binary pulsar: eta < 0.03 (Applies only if NSs develop scalar hair in sGB)
+[01:18:13] [INFO] [step_15_dynamical_signatures]   LIGO constraint: eta < -6.5102022559146295
+[01:18:13] [INFO] [step_15_dynamical_signatures]   EHT constraint: eta < -2.6542620592612014
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Combined upper bound: eta < -6.5102022559146295 (EHT shadow (dominant) + LIGO ringdown (binary pulsar conditional on NS scalarization))
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Current eta = 0.3 (within constraints: False)
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] Coupling scan for inspiral dephasing...
+[01:18:13] [INFO] [step_15_dynamical_signatures]   eta=0.01: eta_phys=0.022 km^2, Q_s/m=0.0008, dephasing=1.55e-07 rad, LIGO: no
+[01:18:13] [INFO] [step_15_dynamical_signatures]   eta=0.05: eta_phys=0.109 km^2, Q_s/m=0.0041, dephasing=3.88e-06 rad, LIGO: no
+[01:18:13] [INFO] [step_15_dynamical_signatures]   eta=0.10: eta_phys=0.218 km^2, Q_s/m=0.0082, dephasing=1.55e-05 rad, LIGO: no
+[01:18:13] [INFO] [step_15_dynamical_signatures]   eta=0.20: eta_phys=0.436 km^2, Q_s/m=0.0164, dephasing=6.21e-05 rad, LIGO: no
+[01:18:13] [INFO] [step_15_dynamical_signatures]   eta=0.30: eta_phys=0.654 km^2, Q_s/m=0.0246, dephasing=1.40e-04 rad, LIGO: no
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures]    Key Finding
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures]    ======================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures] ================================================================================
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [INFO] [step_15_dynamical_signatures]   The TEP-sGB framework produces three classes of dynamical signatures:
+[01:18:13] [INFO] [step_15_dynamical_signatures]     1. PN corrections: PPN gamma = 1.000000 (GR: 1.0)
+[01:18:13] [INFO] [step_15_dynamical_signatures]        Perihelion precession and light deflection modified at order eta^2
+[01:18:13] [INFO] [step_15_dynamical_signatures]     2. Inspiral dephasing: scalar dipole radiation at -1PN
+[01:18:13] [INFO] [step_15_dynamical_signatures]        GW150914-like: 0.00 rad dephasing
+[01:18:13] [INFO] [step_15_dynamical_signatures]        LISA EMRIs: 0.00 rad dephasing
+[01:18:13] [INFO] [step_15_dynamical_signatures]     3. Cosmological: c_T = 1 (consistent with GW170817)
+[01:18:13] [INFO] [step_15_dynamical_signatures]        Combined eta constraint: < -6.5102022559146295
+[01:18:13] [INFO] [step_15_dynamical_signatures]   The -1PN dipole radiation is the strongest dynamical signature,
+[01:18:13] [INFO] [step_15_dynamical_signatures]   detectable by LISA for EMRIs and potentially by LIGO for nearby systems.
+[01:18:13] [INFO] [step_15_dynamical_signatures] 
+[01:18:13] [SUCCESS] [step_15_dynamical_signatures] JSON summary saved to results/step_15_dynamical_signatures.json
+[01:18:13] [SUCCESS] [step_15_dynamical_signatures] CSV saved to results/step_15_dynamical_signatures.csv
+[01:18:13] [SUCCESS] [step_15_dynamical_signatures] Step 15 complete.
+[01:18:13] [SUCCESS] [step_15_dynamical_signatures] [COUPLED] step_15_dynamical_signatures completed in 0.0s
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Description: Compute dynamical and cosmological signatures of the TEP-sGB framework: post-Newtonian corrections (perihelion precession, light deflection, Shapiro delay), scalar dipole radiation at -1PN causing inspiral dephasing, cT=1 consistency with GW170817, and combined multi-messenger observational constraints on eta.
+[01:18:13] [INFO] [step_15_dynamical_signatures]   Key result:  The TEP-sGB framework produces falsifiable dynamical signatures: (1) PN corrections to perihelion precession and light deflection at order eta^2, (2) scalar dipole radiation at -1PN causing inspiral dephasing detectable by LISA for EMRIs, (3) c_T = 1 consistent with GW170817. The combined observational constraint is eta < -6.5102022559146295, with the -1PN dipole radiation being the strongest dynamical signature.

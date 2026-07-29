@@ -1,0 +1,53 @@
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] ================================================================================
+[01:18:12] [INFO] [step_02_perturbations]    STEP 02: Perturbation Analysis
+[01:18:12] [INFO] [step_02_perturbations] ================================================================================
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] Step ID: step_02_perturbations
+[01:18:12] [INFO] [step_02_perturbations] Timestamp: 2026-07-29T01:18:12.268727
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] Model parameters: {'beta_A': -1.0, 'B0': 1.0, 'n_B': 2.0, 'B_type': 'gaussian_bump', 'sigma_B': 1.5, 'phi_0': 2.0, 'delta': 0.05, 'M': 1.0, 'r_h': 2.0}
+[01:18:12] [PROCESS] [step_02_perturbations] Solving TEP-BH background...
+[01:18:12] [PROCESS] [step_02_perturbations] Computing tortoise coordinate...
+[01:18:12] [INFO] [step_02_perturbations]   r* range: [3.2667e+01, 5.4738e+01]
+[01:18:12] [INFO] [step_02_perturbations]   r* at r=3M: -0.0000e+00
+[01:18:12] [PROCESS] [step_02_perturbations] Computing Regge-Wheeler potential (l=2)...
+[01:18:12] [INFO] [step_02_perturbations]   V_RW at r=3M (geometric TEP): 0.148183
+[01:18:12] [INFO] [step_02_perturbations]   V_RW at r=3M (Schw ref):      0.148183
+[01:18:12] [INFO] [step_02_perturbations]   Expected (Schw):     0.148148
+[01:18:12] [PROCESS] [step_02_perturbations] Computing Zerilli potential (l=2)...
+[01:18:12] [PROCESS] [step_02_perturbations] Computing quasinormal modes (WKB, n=0, exterior only)...
+[01:18:12] [PROCESS] [step_02_perturbations] Checking for echo cavity...
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] ================================================================================
+[01:18:12] [INFO] [step_02_perturbations]    Regge-Wheeler Potential (l=2)
+[01:18:12] [INFO] [step_02_perturbations] ================================================================================
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations]   V_max (geometric TEP): 0.151287 at r=3.2819M
+[01:18:12] [INFO] [step_02_perturbations]   V_max (Schw ref):      0.151287 at r=3.2819M
+[01:18:12] [INFO] [step_02_perturbations]   Expected (Schw): V_max=0.148148 at r=3.0M
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] ================================================================================
+[01:18:12] [INFO] [step_02_perturbations]    QNM Frequencies (l=2, n=0)
+[01:18:12] [INFO] [step_02_perturbations] ================================================================================
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations]   Geometric TEP/Schw: omega = 0.398841 + 0.088247i
+[01:18:12] [INFO] [step_02_perturbations]   Expected accurate Schw: omega ~ 0.3737 - 0.0890i
+[01:18:12] [INFO] [step_02_perturbations]   Canonical TEP-Schwarzschild gravitational shift: 0
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations] ================================================================================
+[01:18:12] [INFO] [step_02_perturbations]    Exterior Geometric Potential Check
+[01:18:12] [INFO] [step_02_perturbations] ================================================================================
+[01:18:12] [INFO] [step_02_perturbations] 
+[01:18:12] [INFO] [step_02_perturbations]   Peaks (exterior): 1
+[01:18:12] [INFO] [step_02_perturbations]   Exterior cavity:  False
+[01:18:12] [INFO] [step_02_perturbations]   No matter-sector structure is reported as a GW echo prediction.
+[01:18:12] [SUCCESS] [step_02_perturbations] CSV saved to results/step_02_perturbations.csv
+[01:18:12] [SUCCESS] [step_02_perturbations] JSON summary saved to results/step_02_perturbations.json
+[01:18:12] [SUCCESS] [step_02_perturbations] Step 02 complete.
+[01:18:12] [SUCCESS] [step_02_perturbations] [CORE  ] step_02_perturbations completed in 0.1s
+[01:18:12] [INFO] [step_02_perturbations]   Description: Compute Regge-Wheeler and Zerilli gravitational perturbation potentials and WKB quasinormal-mode frequencies on the prescribed Schwarzschild geometric metric
+[01:18:12] [INFO] [step_02_perturbations]   Key result:  RW/Zerilli QNMs (l=2, n=0) are identical to Schwarzschild (omega_RW=0.3988+0.0882i); no echo cavity (n_peaks=1, no GW echo prediction)

@@ -1,0 +1,63 @@
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias] ================================================================================
+[01:18:12] [INFO] [step_09_spin_bias]    STEP 09: Spin Bias Analysis
+[01:18:12] [INFO] [step_09_spin_bias] ================================================================================
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias] Step ID: step_09_spin_bias
+[01:18:12] [INFO] [step_09_spin_bias] Timestamp: 2026-07-29T01:18:12.914862
+[01:18:12] [INFO] [step_09_spin_bias] scipy available: True
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [PROCESS] [step_09_spin_bias] Compiling published X-ray spin measurements...
+[01:18:12] [SUCCESS] [step_09_spin_bias] Spin measurements saved to data/processed/bh_spin_measurements.json
+[01:18:12] [INFO] [step_09_spin_bias]   12 sources compiled
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias] ================================================================================
+[01:18:12] [INFO] [step_09_spin_bias]    Standard (Measured) Spin Distribution
+[01:18:12] [INFO] [step_09_spin_bias] ================================================================================
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias]   N sources:            12
+[01:18:12] [INFO] [step_09_spin_bias]   Mean a/M:             0.685
+[01:18:12] [INFO] [step_09_spin_bias]   Median a/M:           0.820
+[01:18:12] [INFO] [step_09_spin_bias]   Std dev:              0.301
+[01:18:12] [INFO] [step_09_spin_bias]   Min / Max:            0.12 / 0.98
+[01:18:12] [INFO] [step_09_spin_bias]   Fraction with a/M>0.9: 0.333 (4/12)
+[01:18:12] [INFO] [step_09_spin_bias]   Over-maximal spin fraction (a/M>0.95): 2/12 = 0.167
+[01:18:12] [INFO] [step_09_spin_bias]   KS statistic vs U[0,1]: 0.3833
+[01:18:12] [INFO] [step_09_spin_bias]   KS p-value:              0.0427
+[01:18:12] [WARNING] [step_09_spin_bias]   Distribution INCONSISTENT with uniform [0,1] (p < 0.05)
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias] ================================================================================
+[01:18:12] [INFO] [step_09_spin_bias]    TEP Assessment
+[01:18:12] [INFO] [step_09_spin_bias] ================================================================================
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias]   TEP does not modify exterior spectral measurements.
+[01:18:12] [INFO] [step_09_spin_bias]   The conformal factor A ~ 1 in the exterior and the disformal
+[01:18:12] [INFO] [step_09_spin_bias]   term B ~ 0, so spin measurements from X-ray reflection and
+[01:18:12] [INFO] [step_09_spin_bias]   continuum-fitting are unaffected by TEP.
+[01:18:12] [INFO] [step_09_spin_bias]   The observed spin clustering is not explained by TEP.
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias] Per-source spin measurements:
+[01:18:12] [INFO] [step_09_spin_bias]     GRS 1915+105       a_meas=0.98 +/- 0.02  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     Cygnus X-1         a_meas=0.97 +/- 0.02  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     LMC X-1            a_meas=0.92 +/- 0.05  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     M33 X-7            a_meas=0.84 +/- 0.05  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     4U 1543-47         a_meas=0.80 +/- 0.05  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     GRO J1655-40       a_meas=0.70 +/- 0.05  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     A0620-00           a_meas=0.12 +/- 0.19  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     XTE J1550-564      a_meas=0.34 +/- 0.15  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     H 1743-322         a_meas=0.20 +/- 0.30  method=continuum-fitting
+[01:18:12] [INFO] [step_09_spin_bias]     1E 1743.1-2843     a_meas=0.95 +/- 0.05  method=X-ray reflection
+[01:18:12] [INFO] [step_09_spin_bias]     M87*               a_meas=0.90 +/- 0.10  method=EHT shadow
+[01:18:12] [INFO] [step_09_spin_bias]     Sgr A*             a_meas=0.50 +/- 0.20  method=EHT shadow
+[01:18:12] [INFO] [step_09_spin_bias] 
+[01:18:12] [INFO] [step_09_spin_bias]   Over-maximal spin analysis: 2/12 sources have a/M > 0.95
+[01:18:12] [INFO] [step_09_spin_bias]   Near-maximal clustering: 4/12 sources have a/M > 0.90
+[01:18:12] [INFO] [step_09_spin_bias]   TEP spin correction: None (A ≈ 1 in exterior, B ≈ 0; no spectral modification)
+[01:18:12] [SUCCESS] [step_09_spin_bias] CSV saved to results/step_09_spin_bias.csv
+[01:18:12] [SUCCESS] [step_09_spin_bias] JSON summary saved to results/step_09_spin_bias.json
+[01:18:12] [SUCCESS] [step_09_spin_bias] Step 09 complete.
+[01:18:12] [SUCCESS] [step_09_spin_bias] [CORE  ] step_09_spin_bias completed in 0.2s
+[01:18:12] [INFO] [step_09_spin_bias]   Description: Compile published BH spin measurements from X-ray reflection and continuum-fitting spectroscopy and analyze the observed clustering near maximal Kerr
+[01:18:12] [INFO] [step_09_spin_bias]   Key result:  Spin distribution (n=12, mean=0.685) shows 4/12 near-maximal sources; KS test p=0.0427 vs uniform; TEP does not modify exterior spin measurements

@@ -1,0 +1,60 @@
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] ================================================================================
+[01:18:12] [INFO] [step_04_accretion]    STEP 04: Accretion Dynamics and ISCO
+[01:18:12] [INFO] [step_04_accretion] ================================================================================
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] Step ID: step_04_accretion
+[01:18:12] [INFO] [step_04_accretion] Timestamp: 2026-07-29T01:18:12.382658
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] Model parameters: {'beta_A': -1.0, 'B0': 1.0, 'n_B': 2.0, 'B_type': 'gaussian_bump', 'sigma_B': 1.5, 'phi_0': 2.0, 'delta': 0.05, 'M': 1.0, 'r_h': 2.0}
+[01:18:12] [INFO] [step_04_accretion] Exterior is conformal (A~1, B~0): orbital dynamics = Schwarzschild
+[01:18:12] [PROCESS] [step_04_accretion] Solving TEP-BH background...
+[01:18:12] [INFO] [step_04_accretion]   A at r=6M: 1.00000000 (should be ~1)
+[01:18:12] [INFO] [step_04_accretion]   B at r=6M: 9.06e-35 (should be ~0)
+[01:18:12] [PROCESS] [step_04_accretion] Computing circular geodesic properties...
+[01:18:12] [PROCESS] [step_04_accretion] Computing epicyclic frequencies...
+[01:18:12] [PROCESS] [step_04_accretion] Computing ISCO properties...
+[01:18:12] [PROCESS] [step_04_accretion] Computing redshift profile...
+[01:18:12] [PROCESS] [step_04_accretion] Analyzing QPO frequency ratios...
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] ================================================================================
+[01:18:12] [INFO] [step_04_accretion]    ISCO Properties (Schwarzschild exterior, A~1)
+[01:18:12] [INFO] [step_04_accretion] ================================================================================
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion]   r_ISCO:              6.0000 M
+[01:18:12] [INFO] [step_04_accretion]   E_ISCO:              0.942809
+[01:18:12] [INFO] [step_04_accretion]   L_ISCO:              3.464102 M
+[01:18:12] [INFO] [step_04_accretion]   Omega_ISCO:          0.068041 / M
+[01:18:12] [INFO] [step_04_accretion]   Radiative efficiency: 5.7191%
+[01:18:12] [INFO] [step_04_accretion]   Redshift factor g:    0.816497
+[01:18:12] [INFO] [step_04_accretion]   Redshift z at ISCO:   0.224745
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] ================================================================================
+[01:18:12] [INFO] [step_04_accretion]    Epicyclic Frequencies
+[01:18:12] [INFO] [step_04_accretion] ================================================================================
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion]   r=6.0M: Omega_r=0.000000, Omega_theta=0.068075, ratio=0.000000
+[01:18:12] [INFO] [step_04_accretion]   r=10.0M: Omega_r=0.019996, Omega_theta=0.031609, ratio=0.632591
+[01:18:12] [INFO] [step_04_accretion]   r=20.0M: Omega_r=0.009360, Omega_theta=0.011189, ratio=0.836568
+[01:18:12] [INFO] [step_04_accretion]   r=50.0M: Omega_r=0.002653, Omega_theta=0.002828, ratio=0.938083
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion] ================================================================================
+[01:18:12] [INFO] [step_04_accretion]    QPO Analysis
+[01:18:12] [INFO] [step_04_accretion] ================================================================================
+[01:18:12] [INFO] [step_04_accretion] 
+[01:18:12] [INFO] [step_04_accretion]   3:2 resonance at r = 10.8041 M
+[01:18:12] [INFO] [step_04_accretion]   Ratio at resonance: 0.666824
+[01:18:12] [INFO] [step_04_accretion]   Has 3:2 resonance: True
+[01:18:12] [INFO] [step_04_accretion]   f_orbital: 0.004482
+[01:18:12] [INFO] [step_04_accretion]   f_lower (radial): 0.002988
+[01:18:12] [INFO] [step_04_accretion]   f_upper (vertical): 0.004482
+[01:18:12] [INFO] [step_04_accretion]   Note: 3:2 QPO ratio from epicyclic frequencies (Schwarzschild exterior)
+[01:18:12] [SUCCESS] [step_04_accretion] CSV saved to results/step_04_accretion.csv
+[01:18:12] [SUCCESS] [step_04_accretion] JSON summary saved to results/step_04_accretion.json
+[01:18:12] [SUCCESS] [step_04_accretion] Step 04 complete.
+[01:18:12] [SUCCESS] [step_04_accretion] [CORE  ] step_04_accretion completed in 0.1s
+[01:18:12] [INFO] [step_04_accretion]   Description: Compute circular timelike geodesic properties, epicyclic frequencies, ISCO, radiative efficiency, redshift profile, and QPO frequency ratios for the TEP disformal metric
+[01:18:12] [INFO] [step_04_accretion]   Key result:  ISCO at r=6M with eta=5.72% radiative efficiency; epicyclic frequencies and 3:2 QPO resonance match Schwarzschild (conformal factor A cancels in exterior)

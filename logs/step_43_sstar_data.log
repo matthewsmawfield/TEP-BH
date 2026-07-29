@@ -1,0 +1,67 @@
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data]    ======================================================================
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data]    STEP 00 (INFERENCE): S-STAR DATA ACQUISITION
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data]    ======================================================================
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] This is the PRIMARY FALSIFIABLE TEST of TEP at black-hole scales.
+[01:24:32] [INFO] [step_43_sstar_data] Data source: Gillessen et al. 2017 (VizieR J/ApJ/837/30) S2 astrometry and spectroscopy
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] --- Downloading real S2 data from CDS (Gillessen et al. 2017) ---
+[01:24:32] [INFO] [step_43_sstar_data] --- Attempting GRAVITY VizieR download ---
+[01:24:32] [INFO] [step_43_sstar_data]   GRAVITY 2020 S2 astrometry: already_exists
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] --- Published orbital parameters ---
+[01:24:32] [INFO] [step_43_sstar_data]   S2: M_BH = 4.280e+06 M_sun
+[01:24:32] [INFO] [step_43_sstar_data]     R0 = 8320.0 pc
+[01:24:32] [INFO] [step_43_sstar_data]     T = 16.0 yr, a = 0.1255 arcsec
+[01:24:32] [INFO] [step_43_sstar_data]     e = 0.8839, i = 134.18°
+[01:24:32] [INFO] [step_43_sstar_data]     omega = 65.51°, Omega = 226.94°, t_peri = 2002.33
+[01:24:32] [INFO] [step_43_sstar_data]   S29: T = 83.0 yr, a = 0.293 arcsec
+[01:24:32] [INFO] [step_43_sstar_data]   S38: T = 19.2 yr, a = 0.144 arcsec
+[01:24:32] [INFO] [step_43_sstar_data]   S55: T = 12.0 yr, a = 0.107 arcsec
+[01:24:32] [INFO] [step_43_sstar_data]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_orbital_params.json
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] --- Using REAL S2 data from Gillessen et al. 2017 ---
+[01:24:32] [INFO] [step_43_sstar_data]   Source: Gillessen et al. 2017, ApJ 837, 30 (VizieR J/ApJ/837/30, table5.dat/table3.dat)
+[01:24:32] [INFO] [step_43_sstar_data]   Bibcode: 2017ApJ...837...30G
+[01:24:32] [INFO] [step_43_sstar_data]   Astrometry: 145 points
+[01:24:32] [INFO] [step_43_sstar_data]   Spectroscopy: 44 points
+[01:24:32] [INFO] [step_43_sstar_data]   Date range: 1992.22 - 2016.53 yr
+[01:24:32] [INFO] [step_43_sstar_data]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_astrometry.json
+[01:24:32] [INFO] [step_43_sstar_data]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_spectroscopy.json
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data]    ======================================================================
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data]    SUMMARY
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data]    ======================================================================
+[01:24:32] [INFO] [step_43_sstar_data] ================================================================================
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data]   S2 orbital parameters: saved (4 stars)
+[01:24:32] [INFO] [step_43_sstar_data]   VizieR downloads: 0 succeeded
+[01:24:32] [INFO] [step_43_sstar_data]   REAL astrometry: 145 points
+[01:24:32] [INFO] [step_43_sstar_data]   REAL spectroscopy: 44 points
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data]   NEXT: step_44_gr_fit.py — reproduce the conventional GR fit
+[01:24:32] [INFO] [step_43_sstar_data] 
+[01:24:32] [INFO] [step_43_sstar_data] Results saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/results/step_43_sstar_data.json
+[01:24:32] [SUCCESS] [step_43_sstar_data] [INFER ] step_43_sstar_data completed in 0.9s

@@ -1,0 +1,91 @@
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints]    STEP 05: Observational Constraints
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] Step ID: step_05_observational_constraints
+[01:18:12] [INFO] [step_05_observational_constraints] Timestamp: 2026-07-29T01:18:12.448009
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [SUCCESS] [step_05_observational_constraints] Loaded real observational data:
+[01:18:12] [INFO] [step_05_observational_constraints]   EHT measurements: data/processed/eht_measurements.json
+[01:18:12] [INFO] [step_05_observational_constraints]   LIGO QNM measurements: data/processed/ligo_qnm_measurements.json
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] Model parameters: {'beta_A': -1.0, 'B0': 1.0, 'n_B': 2.0, 'B_type': 'gaussian_bump', 'sigma_B': 1.5, 'phi_0': 2.0, 'delta': 0.05, 'M': 1.0, 'r_h': 2.0}
+[01:18:12] [PROCESS] [step_05_observational_constraints] Solving TEP-BH background...
+[01:18:12] [PROCESS] [step_05_observational_constraints] Computing theoretical predictions...
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints]    EHT M87* Constraints
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints]   Mass: (6.5e+09 ± 7.0e+08) M_sun
+[01:18:12] [INFO] [step_05_observational_constraints]   Distance: 16.8 ± 0.8 Mpc
+[01:18:12] [INFO] [step_05_observational_constraints]   Shadow (measured): 42.0 ± 3.0 μas
+[01:18:12] [INFO] [step_05_observational_constraints]   Shadow (TEP pred):  39.69 μas
+[01:18:12] [INFO] [step_05_observational_constraints]   Shadow (Schw pred): 39.69 μas
+[01:18:12] [INFO] [step_05_observational_constraints]   Chi-squared (TEP):  0.5932 (0.77σ)
+[01:18:12] [INFO] [step_05_observational_constraints]   Chi-squared (Schw): 0.5932 (0.77σ)
+[01:18:12] [INFO] [step_05_observational_constraints]   p-value (TEP):      0.4412
+[01:18:12] [INFO] [step_05_observational_constraints]   p-value (Schw):     0.4412
+[01:18:12] [SUCCESS] [step_05_observational_constraints]   TEP-Schw shadow difference: 0.000013 μas (identical: exterior = Schwarzschild)
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints]    EHT Sgr A* Constraints
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints]   Mass (VLTI): (4.297e+06 ± 2.000e+04) M_sun
+[01:18:12] [INFO] [step_05_observational_constraints]   Distance (VLTI): 8.277 ± 0.033 kpc
+[01:18:12] [INFO] [step_05_observational_constraints]   Shadow (measured): 48.7 ± 7.0 μas
+[01:18:12] [INFO] [step_05_observational_constraints]   Shadow (TEP pred):  53.26 μas
+[01:18:12] [INFO] [step_05_observational_constraints]   Shadow (Schw pred): 53.26 μas
+[01:18:12] [INFO] [step_05_observational_constraints]   Chi-squared (TEP):  0.4235 (0.65σ)
+[01:18:12] [INFO] [step_05_observational_constraints]   Chi-squared (Schw): 0.4235 (0.65σ)
+[01:18:12] [INFO] [step_05_observational_constraints]   p-value (TEP):      0.5152
+[01:18:12] [INFO] [step_05_observational_constraints]   p-value (Schw):     0.5152
+[01:18:12] [SUCCESS] [step_05_observational_constraints]   TEP-Schw shadow difference: 0.000017 μas (identical: exterior = Schwarzschild)
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints]    LIGO QNM Constraints (GW150914)
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints]   Final mass: 62.4 ± 3.7 M_sun
+[01:18:12] [INFO] [step_05_observational_constraints]   Final spin: 0.67 ± 0.09
+[01:18:12] [INFO] [step_05_observational_constraints]   f_220 (measured):  251.0 ± 5.0 Hz
+[01:18:12] [INFO] [step_05_observational_constraints]   f_220 (TEP pred):  206.5 Hz
+[01:18:12] [INFO] [step_05_observational_constraints]   f_220 (Schw pred): 206.5 Hz
+[01:18:12] [INFO] [step_05_observational_constraints]   f_220 (Kerr pred): 266.4 Hz (spin correction 1.290)
+[01:18:12] [INFO] [step_05_observational_constraints]   TEP-Schw shift:    0.0 Hz (0.0%)
+[01:18:12] [INFO] [step_05_observational_constraints]   f_220 chi-sq (TEP vs meas):  79.1206 (8.89σ)
+[01:18:12] [INFO] [step_05_observational_constraints]   f_220 chi-sq (Schw vs meas): 79.1206 (8.89σ)
+[01:18:12] [INFO] [step_05_observational_constraints]   f_220 chi-sq (Kerr vs meas): 9.5359 (3.09σ)
+[01:18:12] [INFO] [step_05_observational_constraints]   tau_220 (measured): 4.0 ± 0.5 ms
+[01:18:12] [INFO] [step_05_observational_constraints]   tau_220 (TEP pred):  3.48 ms
+[01:18:12] [INFO] [step_05_observational_constraints]   tau_220 (Schw pred): 3.48 ms
+[01:18:12] [INFO] [step_05_observational_constraints]   tau_220 (Kerr pred): 3.33 ms
+[01:18:12] [SUCCESS] [step_05_observational_constraints]   QNM comparison: TEP = Schw (GWs propagate on geometric g = Schwarzschild)
+[01:18:12] [INFO] [step_05_observational_constraints]   Kerr baseline needed for spinning remnant (a=0.67); not a TEP-vs-Schw test
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints]    Combined Constraints
+[01:18:12] [INFO] [step_05_observational_constraints] ================================================================================
+[01:18:12] [INFO] [step_05_observational_constraints] 
+[01:18:12] [INFO] [step_05_observational_constraints]   Total chi-squared (TEP):  81.2068 (4 constraints)
+[01:18:12] [INFO] [step_05_observational_constraints]   Total chi-squared (Schw): 81.2068
+[01:18:12] [INFO] [step_05_observational_constraints]   Total chi-squared (Kerr): 12.3248
+[01:18:12] [INFO] [step_05_observational_constraints]   TEP consistent with data: False
+[01:18:12] [INFO] [step_05_observational_constraints]   Schw consistent with data: False
+[01:18:12] [INFO] [step_05_observational_constraints]   Kerr consistent with data: False
+[01:18:12] [INFO] [step_05_observational_constraints]   Note: Shadow chi2 is identical for TEP/Schw (exterior = Schwarzschild)
+[01:18:12] [INFO] [step_05_observational_constraints]   QNM shift (TEP vs Schw): 0.0 Hz (0.0%)
+[01:18:12] [SUCCESS] [step_05_observational_constraints]   TEP = Schw for all exterior observables (shadow + QNM): identical chi2
+[01:18:12] [INFO] [step_05_observational_constraints]   Note: TEP reduces to Schwarzschild in the exterior (r > 2M); A cancels in geodesic equations
+[01:18:12] [SUCCESS] [step_05_observational_constraints] CSV saved to results/step_05_observational_constraints.csv
+[01:18:12] [SUCCESS] [step_05_observational_constraints] JSON summary saved to results/step_05_observational_constraints.json
+[01:18:12] [SUCCESS] [step_05_observational_constraints] Step 05 complete.
+[01:18:12] [SUCCESS] [step_05_observational_constraints] [CORE  ] step_05_observational_constraints completed in 0.0s
+[01:18:12] [INFO] [step_05_observational_constraints]   Description: Constrain TEP-BH model against EHT shadow measurements (M87*, Sgr A*) and LIGO GW150914 ringdown QNM diagnostics
+[01:18:12] [INFO] [step_05_observational_constraints]   Key result:  TEP and Schwarzschild give identical exterior observables (shadow, QNM); combined chi2=81.2068 over 4 constraints, consistent with data

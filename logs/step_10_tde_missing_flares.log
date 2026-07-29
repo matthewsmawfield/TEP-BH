@@ -1,0 +1,74 @@
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares] ================================================================================
+[01:18:12] [INFO] [step_10_tde_missing_flares]    STEP 10: TDE Missing Flares — Sub-Eddington TDE Luminosities
+[01:18:12] [INFO] [step_10_tde_missing_flares] ================================================================================
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares] Step ID: step_10_tde_missing_flares
+[01:18:12] [INFO] [step_10_tde_missing_flares] Timestamp: 2026-07-29T01:18:12.920317
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [PROCESS] [step_10_tde_missing_flares] Compiling TDE measurements from published papers...
+[01:18:12] [SUCCESS] [step_10_tde_missing_flares]   Compiled 9 TDE events
+[01:18:12] [SUCCESS] [step_10_tde_missing_flares]   TDE measurements saved to data/processed/tde_measurements.json
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares] ================================================================================
+[01:18:12] [INFO] [step_10_tde_missing_flares]    Standard Analysis: Eddington-Limited Predictions
+[01:18:12] [INFO] [step_10_tde_missing_flares] ================================================================================
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares]   L_Edd = 1.26e+38 * (M_BH / M_sun) erg/s
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Standard TDE theory predicts L_peak ~ L_Eddington
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares]   ASASSN-14li               M_BH=1.00e+06 M_sun  L_peak=3.16e+43 erg/s  L_Edd=1.26e+44 erg/s  L/L_Edd=2.510e-01
+[01:18:12] [INFO] [step_10_tde_missing_flares]   ASASSN-14ae               M_BH=3.16e+06 M_sun  L_peak=1.00e+43 erg/s  L_Edd=3.98e+44 erg/s  L/L_Edd=2.512e-02
+[01:18:12] [INFO] [step_10_tde_missing_flares]   ASASSN-19qj               M_BH=1.00e+06 M_sun  L_peak=3.16e+43 erg/s  L_Edd=1.26e+44 erg/s  L/L_Edd=2.510e-01
+[01:18:12] [INFO] [step_10_tde_missing_flares]   iPTF16fnl                 M_BH=3.16e+05 M_sun  L_peak=3.16e+42 erg/s  L_Edd=3.98e+43 erg/s  L/L_Edd=7.942e-02
+[01:18:12] [INFO] [step_10_tde_missing_flares]   PTF09ge                   M_BH=1.00e+06 M_sun  L_peak=1.00e+43 erg/s  L_Edd=1.26e+44 erg/s  L/L_Edd=7.937e-02
+[01:18:12] [INFO] [step_10_tde_missing_flares]   ASASSN-18pg               M_BH=1.00e+07 M_sun  L_peak=1.00e+44 erg/s  L_Edd=1.26e+45 erg/s  L/L_Edd=7.937e-02
+[01:18:12] [INFO] [step_10_tde_missing_flares]   ZTF19aamqjar              M_BH=1.00e+06 M_sun  L_peak=3.16e+43 erg/s  L_Edd=1.26e+44 erg/s  L/L_Edd=2.510e-01
+[01:18:12] [INFO] [step_10_tde_missing_flares]   AT2019qiz                 M_BH=1.00e+06 M_sun  L_peak=6.31e+42 erg/s  L_Edd=1.26e+44 erg/s  L/L_Edd=5.008e-02
+[01:18:12] [INFO] [step_10_tde_missing_flares]   AT2018fyk                 M_BH=1.00e+07 M_sun  L_peak=3.16e+43 erg/s  L_Edd=1.26e+45 erg/s  L/L_Edd=2.510e-02
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Mean Eddington ratio:   1.213e-01
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Median Eddington ratio: 7.937e-02
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Min Eddington ratio:    2.510e-02
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Max Eddington ratio:    2.510e-01
+[01:18:12] [WARNING] [step_10_tde_missing_flares]   TDEs sub-Eddington:     9 / 9
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Sub-Eddington fraction: 100.0%
+[01:18:12] [WARNING] [step_10_tde_missing_flares]   Many TDEs are significantly dimmer than Eddington-limited predictions.
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares] ================================================================================
+[01:18:12] [INFO] [step_10_tde_missing_flares]    Correlation Analysis: L_peak/L_Edd vs M_BH
+[01:18:12] [INFO] [step_10_tde_missing_flares] ================================================================================
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Standard astrophysical analysis (not a TEP test):
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Fit log10(L_peak/L_Edd) vs log10(M_BH) to characterize the
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Eddington-ratio distribution across the BH-mass range.
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Correlation log10(L_peak/L_Edd) vs log10(M_BH):
+[01:18:12] [INFO] [step_10_tde_missing_flares]     Slope:     -0.397
+[01:18:12] [INFO] [step_10_tde_missing_flares]     Intercept: 1.405
+[01:18:12] [INFO] [step_10_tde_missing_flares]     R-squared: 0.253
+[01:18:12] [INFO] [step_10_tde_missing_flares]     Pearson r: -0.503
+[01:18:12] [INFO] [step_10_tde_missing_flares]     p-value:   0.1670 (two-tailed, n=9)
+[01:18:12] [INFO] [step_10_tde_missing_flares]   This is a standard astrophysical characterization of the TDE
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Eddington-ratio distribution; it is not interpreted as TEP evidence.
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares] ================================================================================
+[01:18:12] [INFO] [step_10_tde_missing_flares]    TEP Assessment
+[01:18:12] [INFO] [step_10_tde_missing_flares] ================================================================================
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares]   TEP does not modify exterior luminosity measurements. The conformal factor A ~ 1 in the exterior where TDE emission escapes, so TDE luminosities are unaffected by TEP. The temporal-freeze mechanism only operates inside the horizon, where photons cannot escape to reach the observer. The observed sub-Eddington TDEs are therefore not explained by TEP; they reflect known astrophysical effects (super-Eddington winds, reprocessing, viewing angle, circularization efficiency).
+[01:18:12] [INFO] [step_10_tde_missing_flares] 
+[01:18:12] [INFO] [step_10_tde_missing_flares]   TEP temporal-freeze prediction assessment:
+[01:18:12] [INFO] [step_10_tde_missing_flares]     TEP temporal freeze operates INSIDE the horizon (r < r_h)
+[01:18:12] [INFO] [step_10_tde_missing_flares]     TDE emission escapes from the EXTERIOR (r > r_h)
+[01:18:12] [INFO] [step_10_tde_missing_flares]     Conformal factor A ~ 1 in the exterior => no luminosity suppression
+[01:18:12] [SUCCESS] [step_10_tde_missing_flares]     => TEP does NOT predict suppressed TDE flare luminosities
+[01:18:12] [SUCCESS] [step_10_tde_missing_flares] CSV saved to results/step_10_tde_missing_flares.csv
+[01:18:12] [SUCCESS] [step_10_tde_missing_flares] JSON summary saved to results/step_10_tde_missing_flares.json
+[01:18:12] [SUCCESS] [step_10_tde_missing_flares] Step 10 complete.
+[01:18:12] [SUCCESS] [step_10_tde_missing_flares] [CORE  ] step_10_tde_missing_flares completed in 0.0s
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Description: Compile published TDE peak luminosity and BH mass measurements and perform a standard astrophysical analysis of the Eddington-ratio distribution and its correlation with black-hole mass.
+[01:18:12] [INFO] [step_10_tde_missing_flares]   Key result:  9/9 TDEs are sub-Eddington (fraction 100.0%); TEP does not modify exterior luminosities and does not explain the sub-Eddington population.

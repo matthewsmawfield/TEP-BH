@@ -1,0 +1,79 @@
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer]    ======================================================================
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer]    STEP 03 (INFERENCE): TEP TRANSFER-FUNCTION FIT
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer]    ======================================================================
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] Fitting TEP model (with transfer functions) to S-star data.
+[01:24:33] [INFO] [step_46_tep_transfer] Additional parameter: eta_TEP (TEP coupling strength)
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer]   Data: REAL
+[01:24:33] [INFO] [step_46_tep_transfer]   Astrometry: 145 points
+[01:24:33] [INFO] [step_46_tep_transfer]   Spectroscopy: 44 points
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] --- Fitting TEP orbit model ---
+[01:24:33] [INFO] [step_46_tep_transfer]   Parameters: M_BH, R0, a, e, i, omega, Omega, T, t_peri, x0, y0, eta_TEP
+[01:24:33] [INFO] [step_46_tep_transfer]   Method: scipy.optimize.least_squares (TRF)
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer]    --- TEP fit results ---
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer]   M_BH (M_sun)         = 4296691.511806 ± 69207.957810
+[01:24:33] [INFO] [step_46_tep_transfer]   R0 (pc)              =  8320.001508 ±  55.105056
+[01:24:33] [INFO] [step_46_tep_transfer]   a (arcsec)           =     0.127977 ±   0.001261
+[01:24:33] [INFO] [step_46_tep_transfer]   e                    =     0.890955 ±   0.002258
+[01:24:33] [INFO] [step_46_tep_transfer]   i (deg)              =   133.686674 ±   0.415605
+[01:24:33] [INFO] [step_46_tep_transfer]   omega (deg)          =    65.732805 ±   0.528573
+[01:24:33] [INFO] [step_46_tep_transfer]   Omega (deg)          =   226.980623 ±   0.513055
+[01:24:33] [INFO] [step_46_tep_transfer]   T (yr)               =    16.081967 ±   0.017227
+[01:24:33] [INFO] [step_46_tep_transfer]   t_peri (yr)          =  2002.337645 ±   0.004580
+[01:24:33] [INFO] [step_46_tep_transfer]   x0 (arcsec)          =    -0.002750 ±   0.000662
+[01:24:33] [INFO] [step_46_tep_transfer]   y0 (arcsec)          =     0.001047 ±   0.000200
+[01:24:33] [INFO] [step_46_tep_transfer]   eta_TEP              =     0.000000 ±   1.000000
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer]   chi^2_TEP = 304.17
+[01:24:33] [INFO] [step_46_tep_transfer]   dof = 322
+[01:24:33] [INFO] [step_46_tep_transfer]   chi^2/dof = 0.9446
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer]    --- GR vs TEP comparison ---
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer]   chi^2_GR  = 304.17  (n_params = 11)
+[01:24:33] [INFO] [step_46_tep_transfer]   chi^2_TEP = 304.17  (n_params = 12)
+[01:24:33] [INFO] [step_46_tep_transfer]   Delta chi^2 = 0.00
+[01:24:33] [INFO] [step_46_tep_transfer]   BIC_GR  = 368.09
+[01:24:33] [INFO] [step_46_tep_transfer]   BIC_TEP = 373.90
+[01:24:33] [INFO] [step_46_tep_transfer]   Delta BIC = 5.81
+[01:24:33] [INFO] [step_46_tep_transfer]   Bayes factor B(TEP/GR) = 5.4718e-02
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer]   -> GR model is FAVOURED over TEP (B < 1)
+[01:24:33] [INFO] [step_46_tep_transfer]   -> eta_TEP is consistent with 0 within 1.0000
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer]    --- Phantom Mass estimate ---
+[01:24:33] [INFO] [step_46_tep_transfer] ================================================================================
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer]   M_BH^GR  = 4.2967e+06 M_sun
+[01:24:33] [INFO] [step_46_tep_transfer]   M_BH^TEP = 4.2967e+06 M_sun
+[01:24:33] [INFO] [step_46_tep_transfer]   M_phantom^T = M_GR - M_TEP = 4.9473e+00 M_sun
+[01:24:33] [INFO] [step_46_tep_transfer]   M_phantom fraction = 1.151423e-06
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_tep_fit.json
+[01:24:33] [INFO] [step_46_tep_transfer] 
+[01:24:33] [INFO] [step_46_tep_transfer]   NEXT: step_47_joint_forward.py — joint forward-model
+[01:24:33] [SUCCESS] [step_46_tep_transfer] [INFER ] step_46_tep_transfer completed in 0.3s

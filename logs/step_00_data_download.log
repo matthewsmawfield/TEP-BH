@@ -1,0 +1,61 @@
+[01:18:05] [INFO] [step_00_data_download] 
+[01:18:05] [INFO] [step_00_data_download] ================================================================================
+[01:18:05] [INFO] [step_00_data_download]    STEP 00: Data Download
+[01:18:05] [INFO] [step_00_data_download] ================================================================================
+[01:18:05] [INFO] [step_00_data_download] 
+[01:18:05] [INFO] [step_00_data_download] Step ID: step_00_data_download
+[01:18:05] [INFO] [step_00_data_download] Timestamp: 2026-07-29T01:18:05.178915
+[01:18:05] [INFO] [step_00_data_download] Raw data directory: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/raw
+[01:18:05] [INFO] [step_00_data_download] Processed data directory: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed
+[01:18:05] [INFO] [step_00_data_download] 
+[01:18:05] [INFO] [step_00_data_download] 
+[01:18:05] [INFO] [step_00_data_download] ================================================================================
+[01:18:05] [INFO] [step_00_data_download]    Downloading 6 data sources...
+[01:18:05] [INFO] [step_00_data_download] ================================================================================
+[01:18:05] [INFO] [step_00_data_download] 
+[01:18:05] [INFO] [step_00_data_download] 
+[01:18:05] [PROCESS] [step_00_data_download] Processing: eht_m87_2017_csv_readme
+[01:18:05] [SUCCESS] [step_00_data_download]   Downloaded 4,955 bytes -> data/raw/eht_m87_2019_D01-01_README.md
+[01:18:06] [PROCESS] [step_00_data_download] Processing: eht_m87_2017_csv_day095_lo
+[01:18:06] [SUCCESS] [step_00_data_download]   Downloaded 528,479 bytes -> data/raw/eht_m87/SR1_M87_2017_095_lo_hops_netcal_StokesI.csv
+[01:18:07] [PROCESS] [step_00_data_download] Processing: eht_m87_2017_csv_day096_lo
+[01:18:07] [SUCCESS] [step_00_data_download]   Downloaded 708,585 bytes -> data/raw/eht_m87/SR1_M87_2017_096_lo_hops_netcal_StokesI.csv
+[01:18:08] [PROCESS] [step_00_data_download] Processing: eht_m87_2017_csv_day100_lo
+[01:18:08] [SUCCESS] [step_00_data_download]   Downloaded 194,347 bytes -> data/raw/eht_m87/SR1_M87_2017_100_lo_hops_netcal_StokesI.csv
+[01:18:09] [PROCESS] [step_00_data_download] Processing: eht_m87_2017_csv_day101_lo
+[01:18:09] [SUCCESS] [step_00_data_download]   Downloaded 610,274 bytes -> data/raw/eht_m87/SR1_M87_2017_101_lo_hops_netcal_StokesI.csv
+[01:18:10] [PROCESS] [step_00_data_download] Processing: eht_m87_2018_table9
+[01:18:11] [SUCCESS] [step_00_data_download]   Downloaded 78,308 bytes -> data/raw/eht_m87/EHT_M87_2018_ring_parameters_table9.html
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download] Download summary: 6 downloaded, 0 cached, 0 failed (0 optional)
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download] ================================================================================
+[01:18:11] [INFO] [step_00_data_download]    Writing compiled measurement tables...
+[01:18:11] [INFO] [step_00_data_download] ================================================================================
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [SUCCESS] [step_00_data_download]   EHT measurements: data/processed/eht_measurements.json
+[01:18:11] [SUCCESS] [step_00_data_download]   LIGO QNM measurements: data/processed/ligo_qnm_measurements.json
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download] ================================================================================
+[01:18:11] [INFO] [step_00_data_download]    Data Sources Summary
+[01:18:11] [INFO] [step_00_data_download] ================================================================================
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download]   EHT M87* (2019): shadow d = 42 ± 3 μas, M = (6.5 ± 0.7) × 10⁹ M☉
+[01:18:11] [INFO] [step_00_data_download]   EHT Sgr A* (2022): ring d = 51.8 ± 2.3 μas, shadow d = 48.7 ± 7.0 μas
+[01:18:11] [INFO] [step_00_data_download]   LIGO GW150914: f₂₂₀ = 251 ± 5 Hz, τ₂₂₀ = 4.0 ± 0.5 ms
+[01:18:11] [INFO] [step_00_data_download]   LIGO GWTC events: 4 catalogued
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download] ================================================================================
+[01:18:11] [INFO] [step_00_data_download]    File Manifest Summary
+[01:18:11] [INFO] [step_00_data_download] ================================================================================
+[01:18:11] [INFO] [step_00_data_download] 
+[01:18:11] [INFO] [step_00_data_download]   Total files catalogued: 6
+[01:18:11] [INFO] [step_00_data_download]   Total bytes downloaded/cached: 2,124,948
+[01:18:11] [SUCCESS] [step_00_data_download] Manifest saved to results/step_00_data_download.json
+[01:18:11] [SUCCESS] [step_00_data_download] Step 00 complete.
+[01:18:11] [SUCCESS] [step_00_data_download] [CORE  ] step_00_data_download completed in 6.8s
+[01:18:11] [INFO] [step_00_data_download]   Description: Download public observational data (EHT M87*/Sgr A*, LIGO/Virgo GWTC) and compile measurement reference tables
+[01:18:11] [INFO] [step_00_data_download]   Key result:  6 downloaded, 0 cached, 0 failed of 6 sources; EHT and LIGO measurement tables compiled

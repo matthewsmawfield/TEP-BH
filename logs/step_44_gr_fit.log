@@ -1,0 +1,52 @@
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] ================================================================================
+[01:24:32] [INFO] [step_44_gr_fit]    ======================================================================
+[01:24:32] [INFO] [step_44_gr_fit] ================================================================================
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] ================================================================================
+[01:24:32] [INFO] [step_44_gr_fit]    STEP 01 (INFERENCE): CONVENTIONAL GR FIT
+[01:24:32] [INFO] [step_44_gr_fit] ================================================================================
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] ================================================================================
+[01:24:32] [INFO] [step_44_gr_fit]    ======================================================================
+[01:24:32] [INFO] [step_44_gr_fit] ================================================================================
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] Fitting standard GR point-mass model to S-star data.
+[01:24:32] [INFO] [step_44_gr_fit] This recovers M_BH^GR, R0, and orbital parameters.
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit]   Astrometry: 145 points
+[01:24:32] [INFO] [step_44_gr_fit]   Spectroscopy: 44 points
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:32] [INFO] [step_44_gr_fit] --- Fitting GR orbit model ---
+[01:24:32] [INFO] [step_44_gr_fit]   Parameters: M_BH, R0, a, e, i, omega, Omega, T, t_peri, x0, y0
+[01:24:32] [INFO] [step_44_gr_fit]   Method: scipy.optimize.least_squares (TRF)
+[01:24:32] [INFO] [step_44_gr_fit] 
+[01:24:33] [INFO] [step_44_gr_fit] 
+[01:24:33] [INFO] [step_44_gr_fit] ================================================================================
+[01:24:33] [INFO] [step_44_gr_fit]    --- GR fit results ---
+[01:24:33] [INFO] [step_44_gr_fit] ================================================================================
+[01:24:33] [INFO] [step_44_gr_fit] 
+[01:24:33] [INFO] [step_44_gr_fit]   M_BH (M_sun)         = 4296696.4591 ± 93549.4070
+[01:24:33] [INFO] [step_44_gr_fit]   R0 (pc)              =    8320.0003 ±    58.1350
+[01:24:33] [INFO] [step_44_gr_fit]   a (arcsec)           =       0.1280 ±     0.0013
+[01:24:33] [INFO] [step_44_gr_fit]   e                    =       0.8910 ±     0.0024
+[01:24:33] [INFO] [step_44_gr_fit]   i (deg)              =     133.6867 ±     0.4303
+[01:24:33] [INFO] [step_44_gr_fit]   omega (deg)          =      65.7327 ±     0.5653
+[01:24:33] [INFO] [step_44_gr_fit]   Omega (deg)          =     226.9805 ±     0.5548
+[01:24:33] [INFO] [step_44_gr_fit]   T (yr)               =      16.0820 ±     0.0170
+[01:24:33] [INFO] [step_44_gr_fit]   t_peri (yr)          =    2002.3376 ±     0.0049
+[01:24:33] [INFO] [step_44_gr_fit]   x0 (arcsec)          =      -0.0028 ±     0.0006
+[01:24:33] [INFO] [step_44_gr_fit]   y0 (arcsec)          =       0.0010 ±     0.0002
+[01:24:33] [INFO] [step_44_gr_fit] 
+[01:24:33] [INFO] [step_44_gr_fit]   chi^2 = 304.17
+[01:24:33] [INFO] [step_44_gr_fit]   dof = 323
+[01:24:33] [INFO] [step_44_gr_fit]   chi^2/dof = 0.9417
+[01:24:33] [INFO] [step_44_gr_fit] 
+[01:24:33] [INFO] [step_44_gr_fit]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_gr_fit.json
+[01:24:33] [INFO] [step_44_gr_fit] 
+[01:24:33] [INFO] [step_44_gr_fit]   NEXT: step_45_mass_bias.py — apply the mass-bias sign equation
+[01:24:33] [SUCCESS] [step_44_gr_fit] [INFER ] step_44_gr_fit completed in 0.0s

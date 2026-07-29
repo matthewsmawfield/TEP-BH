@@ -1,0 +1,82 @@
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias]    ======================================================================
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias]    STEP 02 (INFERENCE): MASS-BIAS SIGN — GATE -1
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias]    ======================================================================
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] Computing the sign of M_phantom^T from the mass-bias equation:
+[01:24:33] [INFO] [step_45_mass_bias]   M_app^GR / M_local^TEP = (S_a^3 * D_dyn) / T_P^2
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] The sign is NOT assumed — it is DERIVED from the competition
+[01:24:33] [INFO] [step_45_mass_bias] of spatial magnification (S_a) and temporal stretching (T_P).
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   M_BH^GR = 4.297e+06 M_sun
+[01:24:33] [INFO] [step_45_mass_bias]   R0 = 8320.0 pc
+[01:24:33] [INFO] [step_45_mass_bias]   a = 0.1280 arcsec, e = 0.8910
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias]    --- Mass-bias sign for various eta ---
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]      eta   r_peri/Rs           T_P           S_a         ratio        sign    M_phantom%
+[01:24:33] [INFO] [step_45_mass_bias]   ------------------------------------------------------------------------------------------
+[01:24:33] [INFO] [step_45_mass_bias]     0.00      1368.6    1.00000000    1.00000000    1.00000000        zero     0.000000%
+[01:24:33] [INFO] [step_45_mass_bias]     0.01      1368.6    0.99999756    1.00000244    1.00001218    positive     0.001218%
+[01:24:33] [INFO] [step_45_mass_bias]     0.10      1368.6    0.99997564    1.00002436    1.00012179    positive     0.012179%
+[01:24:33] [INFO] [step_45_mass_bias]     0.50      1368.6    0.99987823    1.00012179    1.00060909    positive     0.060909%
+[01:24:33] [INFO] [step_45_mass_bias]     1.00      1368.6    0.99975647    1.00024359    1.00121856    positive     0.121856%
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias]    --- GATE -1 ANALYSIS ---
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   eta=0 (GR benchmark): ratio = 1.000000000000
+[01:24:33] [INFO] [step_45_mass_bias]   Deviation from unity: 0.00e+00
+[01:24:33] [INFO] [step_45_mass_bias]   (Should be ~0, confirming the GR limit is correct)
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   eta=0.1 (sGB benchmark):
+[01:24:33] [INFO] [step_45_mass_bias]     Pericentre: ratio = 1.00012179, sign = positive
+[01:24:33] [INFO] [step_45_mass_bias]     M_phantom fraction = 1.22e-04
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias]      GATE -1 RESULT: M_phantom^T sign = positive
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   Ratio M_app/M_local = 1.00012179
+[01:24:33] [INFO] [step_45_mass_bias]   M_phantom fraction = 1.22e-04
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   Positive Phantom Mass at S2 scales.
+[01:24:33] [INFO] [step_45_mass_bias]   Spatial magnification dominates temporal stretching.
+[01:24:33] [INFO] [step_45_mass_bias]   The mass-inflation branch (alpha_GB < 0) is selected at S2 scales.
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias]    --- Physical interpretation ---
+[01:24:33] [INFO] [step_45_mass_bias] ================================================================================
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   S2 pericentre: r ~ 1369 R_s
+[01:24:33] [INFO] [step_45_mass_bias]   Gravitational potential: GM/(rc^2) ~ 3.65e-04
+[01:24:33] [INFO] [step_45_mass_bias]   TEP temporal transfer (eta=0.1): T_P - 1 ~ -2.44e-05
+[01:24:33] [INFO] [step_45_mass_bias]   TEP spatial calibration (eta=0.1): S_a - 1 ~ 2.44e-05
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   For the mass-inflation branch, eta=0.1 gives a small 1.22e-04 fraction at S2.
+[01:24:33] [INFO] [step_45_mass_bias]   The actual eta_TEP is constrained by the S2 TEP fit (steps 03/06).
+[01:24:33] [INFO] [step_45_mass_bias]   If the fitted eta_TEP is consistent with zero, the data favour GR.
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_mass_bias_sign.json
+[01:24:33] [INFO] [step_45_mass_bias] 
+[01:24:33] [INFO] [step_45_mass_bias]   NEXT: step_46_tep_transfer_fit.py — TEP transfer-function fit
+[01:24:33] [SUCCESS] [step_45_mass_bias] [INFER ] step_45_mass_bias completed in 0.0s

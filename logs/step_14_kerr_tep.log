@@ -1,0 +1,104 @@
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep]    ======================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep]    Step 14: Kerr-TEP Generalization with Frame-Dragging
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep]    ======================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] GB coupling: eta = 0.3
+[01:18:13] [INFO] [step_14_kerr_tep] Spin scan: chi = [0.0, 0.3, 0.5, 0.67, 0.9]
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   chi = 0.00:
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow: Kerr avg = 5.1962, TEP avg = 5.1744 (dev = -0.418%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow asymmetry: 0.0000
+[01:18:13] [INFO] [step_14_kerr_tep]     ISCO pro: Kerr = 6.0000, TEP = 5.9663 (dev = -0.562%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Frame-dragging Omega(ISCO) = -0.000000 (conformal cancels, sGB ~ eta^2)
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   chi = 0.30:
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow: Kerr avg = 5.1941, TEP avg = 5.1820 (dev = -0.231%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow asymmetry: 0.0667
+[01:18:13] [INFO] [step_14_kerr_tep]     ISCO pro: Kerr = 4.9786, TEP = 4.9532 (dev = -0.510%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Frame-dragging Omega(ISCO) = -0.004837 (conformal cancels, sGB ~ eta^2)
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   chi = 0.50:
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow: Kerr avg = 5.1902, TEP avg = 5.1881 (dev = -0.041%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow asymmetry: 0.1114
+[01:18:13] [INFO] [step_14_kerr_tep]     ISCO pro: Kerr = 4.2330, TEP = 4.2140 (dev = -0.450%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Frame-dragging Omega(ISCO) = -0.012919 (conformal cancels, sGB ~ eta^2)
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   chi = 0.67:
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow: Kerr avg = 5.1850, TEP avg = 5.1952 (dev = 0.196%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow asymmetry: 0.1497
+[01:18:13] [INFO] [step_14_kerr_tep]     ISCO pro: Kerr = 3.5281, TEP = 3.5154 (dev = -0.359%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Frame-dragging Omega(ISCO) = -0.028881 (conformal cancels, sGB ~ eta^2)
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   chi = 0.90:
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow: Kerr avg = 5.1741, TEP avg = 5.2028 (dev = 0.555%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Shadow asymmetry: 0.2023
+[01:18:13] [INFO] [step_14_kerr_tep]     ISCO pro: Kerr = 2.3209, TEP = 2.3206 (dev = -0.012%)
+[01:18:13] [INFO] [step_14_kerr_tep]     Frame-dragging Omega(ISCO) = -0.112491 (conformal cancels, sGB ~ eta^2)
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep]    GW150914 comparison:
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   Final spin: chi = 0.67
+[01:18:13] [INFO] [step_14_kerr_tep]   Kerr QNM: omega = 0.5128 + -0.0706i
+[01:18:13] [INFO] [step_14_kerr_tep]   TEP-sGB QNM: omega = 0.5130 + -0.0706i
+[01:18:13] [INFO] [step_14_kerr_tep]   Kerr ringdown: 267.2 Hz
+[01:18:13] [INFO] [step_14_kerr_tep]   TEP-sGB ringdown: 267.4 Hz
+[01:18:13] [INFO] [step_14_kerr_tep]   Measured: ~250 Hz
+[01:18:13] [INFO] [step_14_kerr_tep]   QNM frequency shift (TEP vs Kerr): 0.0425%
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep]    EHT shadow comparison:
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   M87* (chi=0.9):
+[01:18:13] [INFO] [step_14_kerr_tep]     Kerr shadow: 39.53 uas
+[01:18:13] [INFO] [step_14_kerr_tep]     TEP-sGB shadow: 39.75 uas
+[01:18:13] [INFO] [step_14_kerr_tep]     EHT measured: 42.3 +/- 1.5 uas
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   Sgr A* (chi=0.5):
+[01:18:13] [INFO] [step_14_kerr_tep]     Kerr shadow: 53.20 uas
+[01:18:13] [INFO] [step_14_kerr_tep]     TEP-sGB shadow: 53.18 uas
+[01:18:13] [INFO] [step_14_kerr_tep]     EHT measured: 48.7 +/- 2.3 uas
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep]    Key Finding
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep]    ======================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] ================================================================================
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [INFO] [step_14_kerr_tep]   The Kerr-TEP generalization with sGB coupling eta = 0.3:
+[01:18:13] [INFO] [step_14_kerr_tep]     - Shadow deviations from Kerr scale as eta^2 and depend on spin
+[01:18:13] [INFO] [step_14_kerr_tep]     - ISCO deviations are spin-dependent (stronger for prograde)
+[01:18:13] [INFO] [step_14_kerr_tep]     - Frame-dragging frequency is unchanged by conformal factor
+[01:18:13] [INFO] [step_14_kerr_tep]       (cancels in Omega = -g_tphi/g_phiphi), but disformal terms
+[01:18:13] [INFO] [step_14_kerr_tep]       and sGB metric corrections modify it at order eta^2
+[01:18:13] [INFO] [step_14_kerr_tep]     - GW150914 ringdown: TEP-sGB predicts 267 Hz vs measured ~250 Hz
+[01:18:13] [INFO] [step_14_kerr_tep]     - The spin dependence provides additional discriminating power
+[01:18:13] [INFO] [step_14_kerr_tep]       beyond the non-spinning case
+[01:18:13] [INFO] [step_14_kerr_tep] 
+[01:18:13] [SUCCESS] [step_14_kerr_tep] JSON summary saved to results/step_14_kerr_tep.json
+[01:18:13] [SUCCESS] [step_14_kerr_tep] CSV saved to results/step_14_kerr_tep.csv
+[01:18:13] [SUCCESS] [step_14_kerr_tep] Step 14 complete.
+[01:18:13] [SUCCESS] [step_14_kerr_tep] [COUPLED] step_14_kerr_tep completed in 0.0s
+[01:18:13] [INFO] [step_14_kerr_tep]   Description: Extend the TEP-sGB framework to spinning (Kerr) black holes by applying the Sotiriou-Zhou perturbative O(beta^2) corrections to the Kerr metric and computing spin-dependent shadow, ISCO, frame-dragging, and QNM deviations.
+[01:18:13] [INFO] [step_14_kerr_tep]   Key result:  The Kerr-TEP generalization extends the framework to spinning BHs. Shadow and ISCO deviations are spin-dependent, providing additional discriminating power. The conformal factor cancels in the frame-dragging frequency, but sGB metric corrections modify it at order eta^2. GW150914 ringdown and EHT shadows provide multi-messenger constraints on the coupling.

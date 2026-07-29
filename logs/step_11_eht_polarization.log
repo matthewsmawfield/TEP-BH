@@ -1,0 +1,113 @@
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization]    STEP 11: EHT Polarization — TEP Exterior-Null Result
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] Step ID: step_11_eht_polarization
+[01:18:12] [INFO] [step_11_eht_polarization] Timestamp: 2026-07-29T01:18:12.925243
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [SUCCESS] [step_11_eht_polarization] EHT polarization data saved to data/processed/eht_m87_polarization.json
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization]    M87* Source Parameters
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   Mass: M = 6.50e+09 M_sun
+[01:18:12] [INFO] [step_11_eht_polarization]   Distance: D = 16.8 Mpc
+[01:18:12] [INFO] [step_11_eht_polarization]   Inclination: i = 17.0 deg
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization]    Polarization Model Channels
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   Linear polarization: Stokes Q, U — primary EHT observable
+[01:18:12] [INFO] [step_11_eht_polarization]   Circular polarization: Stokes V — sub-percent, not resolved by EHT 2017
+[01:18:12] [INFO] [step_11_eht_polarization]   Birefringence: differential phase between polarization modes
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization]    Observed EHT Polarization
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   m87_star:
+[01:18:12] [INFO] [step_11_eht_polarization]     Linear polarization: 4.0% +/- 1.0%
+[01:18:12] [INFO] [step_11_eht_polarization]     EVPA swirl: 180 +/- 30 deg
+[01:18:12] [INFO] [step_11_eht_polarization]     B-field topology: predominantly normal (poloidal)
+[01:18:12] [INFO] [step_11_eht_polarization]   sgr_a_star:
+[01:18:12] [INFO] [step_11_eht_polarization]     Linear polarization: 7.0% +/- 2.0%
+[01:18:12] [INFO] [step_11_eht_polarization]     EVPA swirl: 90 +/- 30 deg
+[01:18:12] [INFO] [step_11_eht_polarization]     B-field topology: mixed
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization]    Standard GR+MHD Prediction
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   Polarization fraction: 10-15% (for magnetically arrested disk)
+[01:18:12] [INFO] [step_11_eht_polarization]   EVPA: smooth azimuthal pattern
+[01:18:12] [INFO] [step_11_eht_polarization]   Issue: Observed polarization (4-7%) is LOWER than predicted
+[01:18:12] [INFO] [step_11_eht_polarization]   Standard explanation: Faraday rotation internal to disk
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization]    TEP Exterior-Null Analysis
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   Under TEP, the conformal factor A(phi) = exp(beta_A * phi)
+[01:18:12] [INFO] [step_11_eht_polarization]   and the bounded disformal function B(phi) govern the coupling
+[01:18:12] [INFO] [step_11_eht_polarization]   between the scalar field and the EM field.
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   In the exterior (weak field, phi -> 0):
+[01:18:12] [INFO] [step_11_eht_polarization]     A(phi) ~ exp(beta_A * phi) -> 1
+[01:18:12] [INFO] [step_11_eht_polarization]     B(phi) ~ B0 * |phi|^n -> 0
+[01:18:12] [INFO] [step_11_eht_polarization]   The disformal coupling B * (dphi/dr)^2 vanishes in the exterior,
+[01:18:12] [INFO] [step_11_eht_polarization]   so there is no birefringence: both polarization modes propagate
+[01:18:12] [INFO] [step_11_eht_polarization]   with the same phase velocity. Photon polarization is unaffected.
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   The disformal term only matters inside the horizon, where
+[01:18:12] [INFO] [step_11_eht_polarization]   phi grows large in magnitude and B -> B0. Photons observed by the EHT
+[01:18:12] [INFO] [step_11_eht_polarization]   escape from the exterior (r > r_h), so any interior disformal
+[01:18:12] [INFO] [step_11_eht_polarization]   effect is not imprinted on the observed polarization signal.
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization]    TEP Birefringence Null-Result Computation
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   A_exterior = 1.000000 (unity => no conformal phase shift)
+[01:18:12] [INFO] [step_11_eht_polarization]   B_exterior = 0.000000 (zero => no disformal birefringence)
+[01:18:12] [INFO] [step_11_eht_polarization]   delta_phase_total = 0.000000 rad (identically zero)
+[01:18:12] [INFO] [step_11_eht_polarization]   pol_suppression_factor = 1.000000 (unity => no suppression)
+[01:18:12] [SUCCESS] [step_11_eht_polarization]   tep_predicts_birefringence = False
+[01:18:12] [INFO] [step_11_eht_polarization]   m87_star:
+[01:18:12] [INFO] [step_11_eht_polarization]     Observed polarization: 4.0%
+[01:18:12] [INFO] [step_11_eht_polarization]     Standard GR+MHD prediction: 10.0%
+[01:18:12] [INFO] [step_11_eht_polarization]     TEP birefringence prediction: NONE (exterior-null)
+[01:18:12] [INFO] [step_11_eht_polarization]     TEP does not explain the low polarization fraction
+[01:18:12] [INFO] [step_11_eht_polarization]   sgr_a_star:
+[01:18:12] [INFO] [step_11_eht_polarization]     Observed polarization: 7.0%
+[01:18:12] [INFO] [step_11_eht_polarization]     Standard GR+MHD prediction: 10.0%
+[01:18:12] [INFO] [step_11_eht_polarization]     TEP birefringence prediction: NONE (exterior-null)
+[01:18:12] [INFO] [step_11_eht_polarization]     TEP does not explain the low polarization fraction
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization]    Key Finding
+[01:18:12] [INFO] [step_11_eht_polarization] ================================================================================
+[01:18:12] [INFO] [step_11_eht_polarization] 
+[01:18:12] [INFO] [step_11_eht_polarization]   TEP does not predict observable birefringence in the exterior.
+[01:18:12] [INFO] [step_11_eht_polarization]   The conformal factor A ~ 1 and the disformal term B ~ 0 in
+[01:18:12] [INFO] [step_11_eht_polarization]   the exterior, so photon polarization is unaffected.
+[01:18:12] [INFO] [step_11_eht_polarization]   The observed low polarization fraction (~4-7%) is not
+[01:18:12] [INFO] [step_11_eht_polarization]   explained by TEP. The standard explanation (Faraday
+[01:18:12] [INFO] [step_11_eht_polarization]   rotation internal to the disk) remains the leading
+[01:18:12] [INFO] [step_11_eht_polarization]   interpretation in the literature.
+[01:18:12] [SUCCESS] [step_11_eht_polarization] CSV saved to results/step_11_eht_polarization.csv
+[01:18:12] [SUCCESS] [step_11_eht_polarization] JSON summary saved to results/step_11_eht_polarization.json
+[01:18:12] [SUCCESS] [step_11_eht_polarization] Step 11 complete.
+[01:18:12] [SUCCESS] [step_11_eht_polarization] [CORE  ] step_11_eht_polarization completed in 0.0s
+[01:18:12] [INFO] [step_11_eht_polarization]   Description: Record EHT polarimetric measurements for M87* and Sgr A* and document the TEP exterior-null result: the conformal factor A~1 and disformal function B~0 in the exterior, so TEP predicts no observable birefringence.
+[01:18:12] [INFO] [step_11_eht_polarization]   Key result:  TEP does not predict observable birefringence in the exterior; the observed low polarization fraction (~4-7%) is not explained by TEP and is attributed to Faraday rotation in standard GR+MHD.
