@@ -1,21 +1,21 @@
-<h1>Appendix B — Reduced Field Equations</h1>
+<h1>Appendix B — Strong-Field EFT Action and Reduced Field Equations</h1>
 <p>
- This appendix records the full radial system obtained by substituting the spherical ansatz of Section 3 into the TEP action, together with the parameter set that defines the strong-field solution integrated by the pipeline. The equations are written in geometrized units $G = c = 1$.
+ This appendix records the strong-field EFT action, the reduced radial system obtained by substituting the spherical ansatz of Section 2.3, and the parameter set that defines the solutions integrated by the pipeline. The equations are written in geometrized units $G = c = 1$.
 </p>
 
-<h2>B.1 Action and Frame Assignment</h2>
+<h2>B.1 Strong-Field EFT Action and Frame Assignment</h2>
 <p>
-The complete action is
+The strong-field TEP action used by Bahrain is the canonical TEP action (Section 2.1) augmented by the leading curvature operator — the shift-symmetric scalar–Gauss–Bonnet coupling:
 </p>
 
 <div class="equation">
  \begin{equation} \label{eq:appB_1}
- S = \frac{1}{16\pi}\int d^4x\,\sqrt{-g}\,R[g] + \int d^4x\,\sqrt{-g}\,\left[-\tfrac12(\nabla\phi)^2 - V(\phi)\right] + S_m[\tilde g_{\mu\nu},\Psi_m],
+ S_{\rm BH} = \int d^4x\,\sqrt{-g}\left[\frac{R[g]}{16\pi} - \tfrac12(\nabla\phi)^2 - V(\phi) + f(\phi)\,\mathcal{G}\right] + S_m[\tilde g_{\mu\nu},\Psi_m],
 \end{equation}
 </div>
 
 <p>
-with the disformal matter metric
+where $\mathcal{G} = R^2 - 4R_{\mu\nu}R^{\mu\nu} + R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}$ is the Gauss–Bonnet invariant, $f(\phi) = \eta\,\phi$ is the shift-symmetric coupling, and the matter metric is
 </p>
 
 <div class="equation">
@@ -25,20 +25,26 @@ with the disformal matter metric
 </div>
 
 <p>
-Variation yields the geometric Einstein equations, the scalar equation, and the matter conservation law in the matter frame:
+The terms are organised as follows. The Einstein–Hilbert term $R/(16\pi)$, the canonical scalar kinetic $-\frac12(\nabla\phi)^2$, the potential $V(\phi)$, and the conformal–disformal matter coupling $S_m[\tilde g]$ constitute the fundamental TEP sector (Section 2.1). The scalar–Gauss–Bonnet coupling $f(\phi)\,\mathcal{G}$ is the leading curvature operator of the strong-field EFT: it is the lowest-dimension higher-curvature term that couples the temporal field to the gravitational geometry and supplies real backreaction. The regularising nonlinear coefficients — higher-order curvature couplings and potential terms that control the deep-region profile — are EFT corrections to this leading operator, selected by the joint requirements of global regularity and observation (Section 4).
+</p>
+<p>
+The dimensionless coupling is $\eta \equiv 3\alpha_{\rm GB}/M^2$; the mass-inflation branch uses $\eta = -0.1$ (Section 4, step_12 of the pipeline). In code units ($M=1$), $\alpha_{\rm GB} = \eta/3$. The perturbative parameter is $\zeta \equiv \alpha_{\rm GB}^2/M^4 = \eta^2/9 \ll 1$. The shift-symmetric Gauss–Bonnet coupling is $f(\phi)=\alpha_{\rm GB}\phi$, so $df/d\phi=\alpha_{\rm GB}$; the scalar equation therefore carries the source $-\alpha_{\rm GB}\mathcal G$. The potential is $V = 0$ for the sGB branch (massless scalar). The time-dependent generalisation $\phi(v,r) = qv + \psi(r)$ of Section 2.3 uses the same $f(\phi)$.
+</p>
+<p>
+Variation yields the geometric Einstein equations (now including the Gauss–Bonnet stress-energy contribution), the scalar equation, and the matter conservation law in the matter frame:
 </p>
 
 <div class="equation">
  \begin{equation} \label{eq:appB_3}
- G_{\mu\nu}[g] = 8\pi\,T_{\mu\nu}, \qquad \Box_g\phi = \frac{dV}{d\phi}, \qquad \tilde\nabla_\mu\tilde T^{\mu\nu} = 0.
+ G_{\mu\nu}[g] = 8\pi\,T_{\mu\nu} + T_{\mu\nu}^{(\mathcal{G})}, \qquad \Box_g\phi = \frac{dV}{d\phi} - \frac{df}{d\phi}\,\mathcal{G} + \frac{d\ln A}{d\phi}\,T^{(\rm m)} + \frac{d\ln B}{d\phi}\,\mathcal{D}, \qquad \tilde\nabla_\mu\tilde T^{\mu\nu} = 0,
 \end{equation}
 </div>
 
 <p>
-The stress tensor $T_{\mu\nu}$ includes the conformal and disformal corrections derived in Appendix A.
+where $T_{\mu\nu}^{(\mathcal{G})}$ is the Gauss–Bonnet stress-energy tensor obtained by varying $f(\phi)\mathcal{G}$ with respect to $g^{\mu\nu}$, and $T_{\mu\nu}$ includes the conformal and disformal corrections derived in Appendix A. The scalar equation now contains the Gauss–Bonnet source term $-(df/d\phi)\,\mathcal{G} = -\alpha_{\rm GB}\,\mathcal{G}$. This is the term that sources the scalar in vacuum: the Gauss–Bonnet invariant is nonzero wherever curvature is present, so the scalar is sourced by geometric curvature even when the matter trace $T^{(\rm m)}$ vanishes. The conformal coupling $(d\ln A/d\phi)\,T^{(\rm m)}$ sources the scalar through the matter trace and vanishes in vacuum; it does not provide the geometric vacuum source. The disformal source $\mathcal{D}$ is proportional to $T^{\mu\nu}\nabla_\mu\phi\nabla_\nu\phi$ and is finite in vacuum.
 </p>
 
-<h2>B.2 Spherical Ansatz</h2>
+<h2>B.2 Fixed-Background Prototype Ansatz</h2>
 <p>
 Horizon-regular Eddington–Finkelstein form is used throughout,
 </p>
@@ -63,19 +69,19 @@ with a static scalar profile $\phi = \phi(r)$ (the shift-symmetric $q\,v$ piece 
 where $S(r) = 1/(1 + e^{(r-r_h)/(\delta\, r_h)})$ is a smooth logistic activation, and $r_h = 2M$ is the geometric horizon. The exterior areal radius is $R(r) = r$, so that $F(r) = 1 - 2M/r$ recovers Schwarzschild exactly at large $r$.
 </p>
 
-<h2>B.3 Reduced Radial System</h2>
+<h2>B.3 Schematic Prototype Equations</h2>
 <p>
-Substituting the ansatz, the independent equations reduce to a coupled radial system for the six functions
+Substituting the ansatz, the schematic prototype is written in terms of the independent radial variables
 </p>
 
 <div class="equation">
  \begin{equation} \label{eq:appB_6}
- F(r), \qquad G(r), \qquad R(r), \qquad \psi(r) \equiv \phi'(r), \qquad A(\phi), \qquad B(\phi).
+ F(r), \qquad G(r), \qquad R(r), \qquad \phi(r).
 \end{equation}
 </div>
 
 <p>
-The $vv$ and $vr$ Einstein components give two first-order constraints,
+The coupling functions $A(\phi)$ and $B(\phi)$ are evaluated on the solved field profile and are not independent dynamical variables. The $vv$ and $vr$ Einstein components give two first-order constraints,
 </p>
 
 <div class="equation">
@@ -106,12 +112,12 @@ The scalar wave equation reduces to
 
 <div class="equation">
  \begin{equation} \label{eq:appB_10}
- \frac{1}{r^2}\frac{d}{dr}\left(r^2\,F\,\phi'\right) = \frac{dV}{d\phi} + \frac{d\ln A}{d\phi}\,T^{(\rm m)} + \frac{d\ln B}{d\phi}\,\mathcal{D}[X,\phi],
+ \frac{1}{r^2}\frac{d}{dr}\left(r^2\,F\,\phi'\right) = \frac{dV}{d\phi} - \alpha_{\rm GB}\,\mathcal{G}[g] + \frac{d\ln A}{d\phi}\,T^{(\rm m)} + \frac{d\ln B}{d\phi}\,\mathcal{D}[X,\phi],
 \end{equation}
 </div>
 
 <p>
-where the last two terms are the conformal and disformal scalar charges. The disformal source $\mathcal{D}$ is proportional to $T^{\mu\nu}\nabla_\mu\phi\,\nabla_\nu\phi$ and finite in vacuum; for the vacuum solution integrated here it is the geometric curvature that sources the scalar through the conformal coupling.
+where the $-\alpha_{\rm GB}\,\mathcal{G}$ term is the Gauss–Bonnet geometric source, the $(d\ln A/d\phi)\,T^{(\rm m)}$ term is the conformal matter-trace source, and the $(d\ln B/d\phi)\,\mathcal{D}$ term is the disformal source. In vacuum ($T^{(\rm m)} = 0$), the scalar is sourced by the Gauss–Bonnet invariant: $\Box\phi = -\alpha_{\rm GB}\,\mathcal{G}$. For Schwarzschild, $\mathcal{G}_{\rm Schw} = 48M^2/r^6$, giving $\Box_{\rm Schw}\phi = -48\alpha_{\rm GB} M^2/r^6$. The conformal matter-trace source vanishes in vacuum; it is the Gauss–Bonnet coupling, not the conformal coupling, that provides the geometric vacuum source. This is the mechanism by which the scalar acquires hair around strong-field sources and evades the no-hair theorem (Section 4.2).
 </p>
 
 <h2>B.4 Matching Conditions at the Geometric Horizon</h2>
@@ -121,7 +127,17 @@ where the last two terms are the conformal and disformal scalar charges. The dis
 
 <h2>B.5 Model Parameters</h2>
 <p>
- The strong-field solution integrated by the pipeline is specified by the following parameter set:
+ The pipeline uses the dimensionless field $\phi=\Phi/M_*$ and geometrized units $G=c=1$, followed by the numerical normalization $M=1$. Thus radii and curve parameters are reported in $M$, curvature-squared diagnostics in $M^{-4}$, and three-volumes in $M^3$. $A$ and $\phi$ are dimensionless; $B_0=1$ denotes $B_0=1\,M^2$ in the implemented metric convention, so that $B\,\partial\phi\,\partial\phi$ is dimensionless. The conformal coupling is $A(\phi) = A_0\,e^{\beta_A \phi}$ with $\beta_A = -1$ (the dimensionless strong-field coupling $d\ln A/d\phi$) frozen across all strong-field calculations; this corresponds to the Jakarta convention $A(\Phi) = \exp(\beta_A \Phi/M_{\rm Pl})$ with the identification $\phi = \Phi/M_*$ and $M_* = M_{\rm Pl}/|\beta_A|$. The weak-field corpus value $\beta \simeq -0.013$ (the PPN coupling $d\ln A/d\Phi \cdot M_{\rm Pl}$, consistent with Cassini PPN-$\gamma$ bounds) is a different normalisation of the same coupling; the two are connected by running with $\phi$ or temporal shear, which is part of the action.
+</p>
+<p>
+ Two solution branches are integrated by the pipeline, both within the fixed strong-field EFT action of equation \eqref{eq:appB_1}:
+</p>
+<ul>
+ <li><strong>Fixed-background prototype</strong> (step_01): the geometric metric is held fixed to Schwarzschild, and the scalar is prescribed as $\phi(r) = \phi_0\ln(r/r_h)\,S(r)$. This branch establishes the Schwarzschild incompatibility (Section 3) and validates the matter-metric signature/invertibility construction. It is not a coupled solution.</li>
+ <li><strong>sGB self-gravitating branch</strong> (step_12): the scalar is solved from the sGB-sourced equation $\Box\phi = -\alpha_{\rm GB}\,\mathcal{G}$ on the Schwarzschild background, and the metric is corrected at $\mathcal{O}(\alpha_{\rm GB}^2/M^4)$ (Sotiriou \& Zhou 2014). In code units ($M=1$) this is $\mathcal{O}(\eta^2)$. This branch establishes scalar hair and real backreaction (Section 4.2). The scalar charge is $Q_s = 2\alpha_{\rm GB}/3$ and the scalar profile is $\phi(r) = (2\alpha_{\rm GB}/3)(1/r + M/r^2 + 4M^2/(3r^3))$.</li>
+</ul>
+<p>
+ The parameter set for the fixed-background prototype is:
 </p>
 <table class="data-table">
  <thead>
@@ -133,8 +149,23 @@ where the last two terms are the conformal and disformal scalar charges. The dis
  <tr><td>Conformal exponent</td><td>$\beta_A$</td><td>$-1.0$</td><td>controls $A(r)$ divergence in the interior</td></tr>
  <tr><td>Disformal horizon exponent</td><td>$\delta$</td><td>$0.05$</td><td>controls $B\to0$ approach at $r_h$</td></tr>
  <tr><td>Disformal quartic width</td><td>$\sigma_B$</td><td>$1.5$</td><td>controls $B(\phi)$ suppression against violent Coulomb gradients</td></tr>
- <tr><td>Scalar amplitude</td><td>$\phi_0$</td><td>$2.0$</td><td>normalizes the scalar profile</td></tr>
+ <tr><td>Scalar amplitude</td><td>$\phi_0$</td><td>$2.0$</td><td>normalizes the prescribed scalar profile</td></tr>
  <tr><td>Geometric horizon</td><td>$r_h$</td><td>$2.0\,M$</td><td>Schwarzschild radius</td></tr>
+ </tbody>
+</table>
+<p>
+ The additional parameter for the sGB self-gravitating branch is:
+</p>
+<table class="data-table">
+ <thead>
+ <tr><th>Parameter</th><th>Symbol</th><th>Value</th><th>Role</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>sGB coupling</td><td>$\alpha_{\rm GB}$</td><td>$\eta M^2/3$</td><td>shift-symmetric GB coupling $f(\phi)=\alpha_{\rm GB}\phi$; coefficient of $\mathcal{G}$ in the scalar equation; mass-inflation branch</td></tr>
+ <tr><td>Dimensionless sGB coupling</td><td>$\eta$</td><td>$-0.1$</td><td>$\eta = 3\alpha_{\rm GB}/M^2$; mass-inflation branch</td></tr>
+ <tr><td>Dimensionless coupling</td><td>$\eta$</td><td>$3\alpha_{\rm GB}/M^2 = -0.1$</td><td>mass-inflation branch</td></tr>
+ <tr><td>Potential</td><td>$V(\phi)$</td><td>$0$</td><td>massless scalar in the sGB branch</td></tr>
+ <tr><td>Scalar charge</td><td>$Q_s$</td><td>$2\alpha_{\rm GB}/3$ ($2\eta/3$ when $M=1$)</td><td>Coulomb-like $1/r$ falloff</td></tr>
  </tbody>
 </table>
 <p>
@@ -142,6 +173,6 @@ where the last two terms are the conformal and disformal scalar charges. The dis
 </p>
 <div class="key-concept">
  <p>
- The implementation is a prescribed-profile metric construction, not a closed six-function radial ODE integration. Its supported result is that the bounded conformal-disformal ansatz is asymptotically Schwarzschild and Lorentzian in the exterior ($\det\tilde g_{2D} < 0$ for $F > 0$). The $\phi_0 = 2$ fixed-Schwarzschild case has vanishing curvature ($\tilde K \to 0$) but the $r \to 0$ limit is an asymptotic spatially enlarged end ($\rho \to \infty$) with both null families at infinite affine parameter — not a regular point (Appendix E). The target global solution with finite $A$ at the centre is the TEP Global Solution Architecture (Section 6.6).
+ The fixed-background prototype (step_01) is a prescribed-profile metric construction, not a closed six-function radial ODE integration. Its supported result is that the bounded conformal-disformal ansatz is asymptotically Schwarzschild and Lorentzian in the exterior ($\det\tilde g_{2D} < 0$ for $F > 0$). The $\phi_0 = 2$ fixed-Schwarzschild case has vanishing curvature ($\tilde K \to 0$) but the $r \to 0$ limit is an asymptotic spatially enlarged end ($\rho \to \infty$) with both null families at infinite affine parameter — not a regular point (Appendix E). The sGB self-gravitating branch (step_12) solves the scalar from the GB-sourced equation and corrects the metric at $\mathcal{O}(\eta^2)$; it establishes hair and backreaction but not a regular deep region (Section 4.2). The joint realisation — regular geometry, bounded matter-frame curvature, and dynamical scalar backreaction in one solution — is the nonlinear closure selected by the TEP action. The minimal temporal-well criteria are given in Section 6.3.
  </p>
 </div>

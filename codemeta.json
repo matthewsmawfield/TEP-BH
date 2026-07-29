@@ -1,0 +1,43 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": [
+    "ScholarlyArticle",
+    "SoftwareSourceCode"
+  ],
+  "name": "Temporal Equivalence Principle: Black Holes and the Temporal Horizon",
+  "description": "A black hole, under the Temporal Equivalence Principle, is a temporal well: a regular spatial region with an extreme gradient in relative proper-time accumulation. The standard strong-field template is a reconstruction from observational data under an implicit isochronous transfer model. Once proper time is treated as dynamical, the conventional reconstruction is no longer the unique reading of the same observations.",
+  "abstract": "The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric tilde g = A^2 g + B. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal-geometric equations. This paper develops the strong-field consequence: a black hole, under TEP, is a temporal well — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary.",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Matthew Lukin",
+      "familyName": "Smawfield",
+      "@id": "https://orcid.org/0009-0003-8219-3159"
+    }
+  ],
+  "datePublished": "2026-07-29",
+  "dateModified": "2026-07-29",
+  "version": "0.1",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "codeRepository": "https://github.com/matthewsmawfield/TEP-BH",
+  "url": "https://mlsmawfield.com/tep/bh/",
+  "doi": "10.5281/zenodo.21677827",
+  "keywords": [
+    "Temporal Equivalence Principle",
+    "temporal well",
+    "temporal horizon",
+    "dynamical proper time",
+    "phantom mass",
+    "isochrony axiom",
+    "conformal-disformal metric",
+    "Schwarzschild incompatibility",
+    "apparent compactness",
+    "black holes",
+    "modified gravity",
+    "temporal shear",
+    "black-hole observations"
+  ],
+  "developmentStatus": "active",
+  "runtimePlatform": "Python",
+  "applicationCategory": "Scientific/Research"
+}

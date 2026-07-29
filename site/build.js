@@ -48,7 +48,7 @@
             .join('\n\n');
 
         index = index.replace(
-            /<section id="section-abstract"[\s\S]*?<section id="section-acknowledgements" data-component="[^"]+"><\/section>/,
+            /<section id="section-abstract"[\s\S]*?<section id="section-references" data-component="[^"]+"><\/section>/,
             components
         );
         index = index.replace('<script src="build.js"></script>', '<script>window.__STATIC_MANUSCRIPT__ = true;</script>');

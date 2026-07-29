@@ -2040,7 +2040,7 @@ that Pantheon+ distance-redshift data do not uniquely require
 primitive spatial expansion. Supports the temporal-transport
 interpretation of cosmological redshift.
 
-**BH temporal horizon (Paper 28):** The apparent
+**TH temporal horizon (Paper 27):** The apparent
 \(a_{\rm eff} \to 0\) limit becomes a temporal conformal boundary
 rather than a physical singularity. Provides theoretical
 closure for the late-time cosmology.

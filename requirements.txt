@@ -1,6 +1,6 @@
 # TEP-BH Requirements
 # Python 3.9+ required
-# Last updated: 2026-07-23
+# Last updated: 2026-07-29
 
 # Core scientific computing
 numpy>=1.21.0,<2.0.0

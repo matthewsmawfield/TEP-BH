@@ -1,194 +1,68 @@
-<h1>8. Observable Predictions</h1>
+<h1>8. Four Consequences of One Principle</h1>
 <p>
- The TEP-sGB framework produces a network of indicative predictions across the electromagnetic and gravitational-wave observational frontiers. Geometric-metric deviations from the GR baseline scale as $\eta^2$, while matter-metric ISCO deviations scale as $\eta$ through the conformal factor $A = e^{-\phi} > 1$. The fundamental coupling is the dimensionful $\alpha_{\rm GB}$; the dimensionless strength for a black hole of mass $M_i$ is $|\eta_i| = 3|\alpha_{\rm GB}|/M_i^2$ (the sign is fixed by the mass-inflation branch, $\alpha_{\rm GB} < 0$). A single $\alpha_{\rm GB}$ must be used across all objects: the same $|\eta| = 0.1$ cannot be applied to GW150914 ($M \sim 60\,M_\odot$), M87$^\ast$ ($M \sim 6.5\times10^9\,M_\odot$), and Sgr A$^\ast$ ($M \sim 4\times10^6\,M_\odot$) simultaneously, because that would correspond to a different $\alpha_{\rm GB}$ for each. The predictions below are computed at $\eta = -0.1$ for $M = 1$ in code units; projecting to astrophysical sources requires calculating $\eta_i$ for each source from one frozen $\alpha_{\rm GB}$. This makes sGB corrections enormously more important for small black holes than for supermassive ones. The QNM numbers require validation against published nonperturbative spectra with a proper spectral solver before precise comparison.
+The principle is that the source-to-observer temporal transfer is a dynamical degree of freedom. The transfer factor
 </p>
-
-<h2>8.1 Non-Spinning Shadow and Photon Sphere</h2>
-<p>
- The sGB corrections shift the photon sphere and shadow radius away from Schwarzschild. The following values are computed at $\eta = -0.1$ (perturbative regime: $\beta^2 |h_2| \sim 0.03 \ll 1$) for $M = 1$ in code units, using the Sotiriou \& Zhou (2014) metric perturbations $h_2(x)$ and $\sigma_2(x)$. The photon sphere and shadow are computed on $g^{\rm sGB}$; null geodesics are conformally invariant, so the photon sphere on $\tilde g = A^2 g^{\rm sGB}$ is identical. The ISCO is computed on both $g^{\rm sGB}$ (geometric, $\mathcal{O}(\eta^2)$) and $\tilde g$ (matter, $\mathcal{O}(\eta)$). The explicit derivation is in Appendix L.
-</p>
-<table class="data-table">
- <thead>
- <tr><th>Observable</th><th>Schwarzschild</th><th>TEP-sGB ($\eta=-0.1$)</th><th>Deviation</th><th>Metric / Order</th></tr>
- </thead>
- <tbody>
- <tr><td>Photon sphere $r_{\rm ph}/M$</td><td>3.000</td><td>2.9974</td><td>$-0.087\%$</td><td>$g^{\rm sGB}$ = $\tilde g$ (conformal null invariance), $\mathcal{O}(\eta^2)$</td></tr>
- <tr><td>Shadow radius $b/M$</td><td>5.196</td><td>5.194</td><td>$-0.044\%$</td><td>$g^{\rm sGB}$ = $\tilde g$ (conformal null invariance), $\mathcal{O}(\eta^2)$</td></tr>
- <tr><td>ISCO $r_{\rm ISCO}/M$ (geometric)</td><td>6.000</td><td>5.996</td><td>$-0.061\%$</td><td>$g^{\rm sGB}$, $\mathcal{O}(\eta^2)$</td></tr>
- <tr><td>ISCO $r_{\rm ISCO}/M$ (matter)</td><td>6.000</td><td>6.117</td><td>$+1.95\%$</td><td>$\tilde g = A^2 g^{\rm sGB}$, $\mathcal{O}(\eta)$</td></tr>
- </tbody>
-</table>
-<p>
- The table shows the coupling-order difference between the photon and massive-particle sectors: the shadow radius shifts negative ($-0.044\%$) while the matter-metric ISCO shifts positive ($+1.95\%$). The ISCO shift is $\sim 44\times$ larger in magnitude. In the sGB benchmark, both photons and massive particles propagate on $\tilde g_{\mu\nu}$. However, because null geodesics are conformally invariant, the conformal factor cancels in the photon orbital equations, making the shadow's shape sensitive only to the underlying $g^{\rm sGB}$ geometry at $\mathcal{O}(\eta^2)$. Massive particles, conversely, are directly scaled by the conformal factor $A = e^{-\phi} > 1$ at $\mathcal{O}(\eta)$, producing the $\sim 44\times$ larger ISCO shift. This coupling-order difference reflects conformal invariance of null geodesics in the sGB benchmark (Section 6.2). Note: $|\eta| = 0.1$ exceeds current observational constraints ($\alpha_{\rm GB} < 2.9$ km$^2$ gives $|\eta| < 0.04$ for $M = 10\,M_\odot$); within bounds, the largest shifts are for $M = 10\,M_\odot$: shadow $-0.007\%$, ISCO $+0.78\%$.
-</p>
-
-<h2>8.1A Horizon-Scale Phantom Mass from the Full Temporal-Well Geometry</h2>
-<p>
- The perturbative sGB shadow shift ($-0.044\%$) is computed on the horizon-bearing Schwarzschild branch. The full temporal-well geometry (Section 4.6) replaces the horizon with a regular interior, modifying the photon sphere and shadow at a qualitatively different level. The ray-tracing analysis integrates null geodesics on the Hayward background and finds the critical regularization scale $g_{\rm crit} = 1.058\,M$ where $F_{\min} = 0$ — the horizonless threshold. For $g > g_{\rm crit}$, no horizon exists and the temporal well is fully regular. At this threshold:
-</p>
-<table class="data-table">
- <thead>
- <tr><th>Observable</th><th>Schwarzschild</th><th>Temporal well ($g = g_{\rm crit}$)</th><th>Deviation</th></tr>
- </thead>
- <tbody>
- <tr><td>Photon sphere $r_{\rm ph}/M$</td><td>3.000</td><td>2.652</td><td>$-11.6\%$</td></tr>
- <tr><td>Shadow radius $b/M$</td><td>5.196</td><td>4.917</td><td>$-5.37\%$</td></tr>
- <tr><td>Throat radius $r_{\rm throat}/M$</td><td>2.000 (horizon)</td><td>1.333</td><td>—</td></tr>
- <tr><td>Phantom Mass $\Delta M/M$</td><td>0</td><td>$-5.37\%$</td><td>mass deficit</td></tr>
- </tbody>
-</table>
-<p>
- The horizonless temporal well produces a <em>smaller</em> shadow than Schwarzschild for the same asymptotic mass — a negative Phantom Mass. The photon sphere moves inward ($r_{\rm ph} = 2.65M$ vs. $3.0M$) because the Hayward mass function $m(r) = Mr^3/(r^3 + g^3)$ grows more slowly than $M$ near the centre, reducing the effective gravitational pull at the photon-sphere radius. The observer infers a lower mass: $M_{\rm inferred}/M_{\rm true} = 0.946$. This is the horizon-scale counterpart of the Phantom Mass mechanism identified in the S2 orbital analysis (Section 9.11): the temporal gradient modifies the apparent compactness of the object.
-</p>
-<p>
- The EHT comparison at $g = g_{\rm crit}$ (within the spherically symmetric sector, Section 4.6B):
-</p>
-<table class="data-table">
- <thead>
- <tr><th>Source</th><th>Shadow (TEP) uas</th><th>Shadow (Schw) uas</th><th>Shadow (measured) uas</th><th>$\sigma$ (TEP)</th><th>$\sigma$ (Schw)</th></tr>
- </thead>
- <tbody>
- <tr><td>M87$^\ast$</td><td>37.6</td><td>39.7</td><td>$42.0 \pm 3.0$</td><td>$-1.48$</td><td>$-0.77$</td></tr>
- <tr><td>Sgr A$^\ast$</td><td>50.4</td><td>53.3</td><td>$48.7 \pm 7.0$</td><td>$+0.24$</td><td>$+0.65$</td></tr>
- </tbody>
-</table>
-<p>
- Both sources remain within $2\sigma$ of the EHT measurements at the horizonless threshold. The temporal well <em>improves</em> the Sgr A$^\ast$ fit (from $0.65\sigma$ to $0.24\sigma$) while slightly worsening the M87$^\ast$ fit (from $-0.77\sigma$ to $-1.48\sigma$). The shadow deviation scales as $g^3$ for small $g$, recovering the Schwarzschild limit as $g \to 0$. The critical scale $g_{\rm crit} = 1.058\,M$ is set by the requirement that the temporal well be horizonless; the physical value of $g$ for a given source is determined by the sGB coupling $\eta$ and the interior solution (Section 4.6).
-</p>
-<p>
- The negative sign of the horizon-scale Phantom Mass ($-5.37\%$) is not an artefact of computing on the geometric metric $g$ rather than the matter metric $\tilde g$. Null geodesics are conformally invariant: the photon sphere and shadow depend on the ratio $\tilde g_{tt}/\tilde g_{\phi\phi} = g_{tt}/g_{\phi\phi}$, in which the conformal factor $A(\phi)$ cancels exactly. The disformal term $B(\phi)(\phi')^2$ enters only $\tilde g_{rr}$ in spherical symmetry and does not affect the shadow boundary, which is determined by $\tilde g_{tt}/\tilde g_{\phi\phi}$ alone. The shadow on $\tilde g$ is therefore identical to the shadow on $g$ in the spherically symmetric sector. The negative sign is the geometric-metric shadow signature — the same sign as the perturbative sGB shadow shift ($-0.044\%$, Section 8.1) and opposite to the matter-metric ISCO shift ($+1.95\%$, Section 8.1). This sign difference between the photon sector (negative, conformally invariant, $\mathcal{O}(\eta^2)$ on the exterior; $-5.37\%$ on the full temporal well) and the massive-particle sector (positive, conformally magnified, $\mathcal{O}(\eta)$) arises because null geodesics are conformally invariant while timelike geodesics feel the conformal factor $A > 1$ directly — a property of the sGB benchmark (Section 6.2). The S2 pericentre positive Phantom Mass (Section 9.11) is a massive-particle orbital effect; the shadow negative Phantom Mass is a null-geodesic effect. They are not contradictory — they are different observational probes of the same temporal well.
-</p>
-<p>
- Projecting to astrophysical sources requires choosing one $\alpha_{\rm GB}$ and computing $\eta_i = 3\alpha_{\rm GB}/M_i^2$ for each source. With $\alpha_{\rm GB} = 2.9$ km$^2$ (observational bound), $\eta = 0.04$ for $M = 10\,M_\odot$ but $\eta \sim 10^{-19}$ for M87$^\ast$ — the shadow deviation for supermassive black holes is unmeasurably small. A proper observational test fits $\alpha_{\rm GB}$ once and predicts different $\eta_i$ for each source. The core observational pipeline is: one universal $\alpha_{\rm GB}$; GW250114 spectroscopy (the strongest single-event black-hole spectroscopy and Kerr test, $M_f \approx 68\,M_\odot$); catalogue-level inspiral constraints; EHT 2017/2018/2021 visibility products; and joint photon–tensor consistency inference. The EHT multiyear M87$^\ast$ results find a stable ring scale but evolving polarisation and plasma structure, reinforcing the need for visibility-domain modelling rather than simple central-value diameter comparisons.
-</p>
-
-<h2>8.1B EHT Visibility-Domain Joint Inference</h2>
-<p>
- The central-value comparisons in Section 8.1A use the EHT-reported ring diameters with quoted uncertainties. A stronger test fits the TEP shadow model directly to the calibrated EHT visibility amplitudes on the uv-plane. The forward model is a ring with Gaussian thickness, brightness asymmetry, and an extended Gaussian core:
-</p>
-<p>
- $$V(q) = F_{\rm ring}\, J_0(2\pi r_{\rm ring} q)\, e^{-2(\pi\sigma_{\rm ring} q)^2} + F_{\rm ring}\, \tfrac{A}{2}\, J_1(2\pi r_{\rm ring} q)\, e^{-2(\pi\sigma_{\rm ring} q)^2}\, e^{2i\phi} + F_{\rm core}\, e^{-2(\pi\sigma_{\rm core} q)^2}$$
-</p>
-<p>
- where $q = \sqrt{u^2+v^2}$ is the uv-distance in wavelengths and $r_{\rm ring} = d_{\rm shadow}/2$. The free parameter is $\delta_{\rm shadow}$ (fractional deviation from the Schwarzschild shadow diameter), with five nuisance parameters per source (ring width $\sigma_{\rm ring}$, asymmetry $A$, ring flux $F_{\rm ring}$, core flux $F_{\rm core}$, core size $\sigma_{\rm core}$). The ring diameter for each source is $d_{{\rm ring},i} = d_{{\rm Schw},i}\,\alpha_i\,(1+\delta_{\rm shadow})$, where $\alpha_i$ is the EHT calibration factor (emission ring / shadow: $\alpha_{\rm M87} = 1.058$, $\alpha_{\rm SgrA} = 0.973$).
-</p>
-<p>
- The fit uses 20{,}501 long-baseline ($>2$\,G$\lambda$) visibilities from M87$^\ast$ (4 days, 2017) and 26{,}345 from Sgr A$^\ast$ (2 days, 2017), binned into 39 and 37 logarithmic uv-distance rings respectively. Binning stabilises the $\chi^2$ landscape by preventing dense baseline regions from dominating. Each bin uses a scatter-based uncertainty (the larger of the weighted standard deviation and the formal propagated error), capturing both measurement noise and intrinsic source variability within the bin. The $\chi^2$ is rescaled so that the best-fit $\chi^2/{\rm dof} = 1$ per source (conservative error inflation, standard EHT practice for geometric models that cannot capture intrinsic variability; EHT Papers IV, V). Confidence intervals use Wilks' theorem on the rescaled $\Delta\chi^2$: 1$\sigma$ at $\Delta\chi^2 < 1$, 2$\sigma$ at $\Delta\chi^2 < 4$. Each $\delta_{\rm shadow}$ value is fit with 5 random initialisations (multi-start) to avoid local-minima artifacts.
-</p>
-<table class="data-table">
- <thead>
- <tr><th>Fit</th><th>Best $\delta_{\rm shadow}$</th><th>$d_{\rm ring}$ ($\mu$as)</th><th>GR ($\mu$as)</th><th>1$\sigma$</th><th>2$\sigma$</th></tr>
- </thead>
- <tbody>
- <tr><td>M87$^\ast$</td><td>$+0.045$</td><td>43.88</td><td>41.99</td><td>$[+0.023, +0.058]$</td><td>$[-0.008, +0.073]$</td></tr>
- <tr><td>Sgr A$^\ast$</td><td>$+0.218$</td><td>63.09</td><td>51.82</td><td>$[+0.218, +0.250]$</td><td>$[+0.218, +0.250]$</td></tr>
- <tr><td>Joint</td><td>$-0.018$</td><td>—</td><td>—</td><td>$[-0.018, -0.018]$</td><td>$[-0.018, +0.085]$</td></tr>
- </tbody>
-</table>
-<p>
- The M87$^\ast$ individual fit prefers a ring slightly larger than GR ($\delta = +0.045$, $d_{\rm ring} = 43.9\;\mu$as vs. EHT measured $42.0 \pm 3.0\;\mu$as), with a non-degenerate 2$\sigma$ interval. The Sgr A$^\ast$ individual fit is model-limited: the simple ring + Gaussian core model cannot capture the complex visibility profile of Sgr A$^\ast$ (which exhibits intraday variability and a non-ring-like brightness distribution), pulling the best fit to the edge of the scan range. The joint fit, which sums the rescaled $\chi^2$ from both sources, finds a best fit at $\delta = -0.018$ with 2$\sigma$ interval $[-0.018, +0.085]$.
-</p>
-<p>
- The sGB perturbative channel contributes negligibly to the shadow deviation for supermassive black holes: at the observational bound $\alpha_{\rm GB} = 2.9$ km$^2$, $\eta_{\rm M87} = 9.4 \times 10^{-20}$ and $\eta_{\rm SgrA} = 2.2 \times 10^{-13}$, giving $\delta_{\rm sGB} \sim -10^{-41}$ and $\sim -10^{-28}$ respectively. The fitted $\delta_{\rm shadow}$ therefore constrains the Phantom Mass (temporal well) channel, which is a mass-independent geometric effect computed in units of $M$.
-</p>
-<p>
- The Phantom Mass prediction ($\delta = -0.054$) lies outside the joint 2$\sigma$ interval $[-0.018, +0.085]$, excluded at $>2\sigma$. GR ($\delta = 0$) lies inside the 2$\sigma$ interval but outside 1$\sigma$. The exclusion of the Phantom Mass at the horizonless threshold ($g_{\rm crit} = 1.058\,M$) by the visibility-domain fit is consistent with the central-value comparison (Section 8.1A), where the $-5.37\%$ shadow contraction produces a $-1.48\sigma$ deviation for M87$^\ast$. The visibility-domain fit, which uses the full baseline-dependent amplitude information rather than just the diameter central value, tightens this to $>2\sigma$ exclusion. The physical interpretation is that the horizonless threshold represents an extreme case; for $g < g_{\rm crit}$ the shadow deviation scales as $g^3$ and is consistent with EHT for a range of $g$ values below the threshold. The visibility-domain constraint on $\delta_{\rm shadow}$ therefore bounds the physical $g$ parameter to the sub-critical regime, where the temporal well retains a horizon and the Phantom Mass is smaller than the $-5.37\%$ threshold value.
-</p>
-
-<h2>8.2 Accretion, ISCO, and Redshift Transfer</h2>
-<p>
- The ISCO on the matter metric $\tilde g$ is $r_{\rm ISCO} = 6.117M$ at $\eta = -0.1$, a $+1.95\%$ deviation from Schwarzschild. This is an $\mathcal{O}(\eta)$ effect: the conformal factor $A = e^{-\phi} > 1$ with $\beta_A = -1$ and negative scalar charge magnifies the effective areal radius $\tilde R = A \cdot r$, pushing the ISCO outward. The geometric-metric ISCO ($r_{\rm ISCO} = 5.996M$ on $g^{\rm sGB}$, $-0.061\%$) shifts inward at $\mathcal{O}(\eta^2)$ — the $\sim 44\times$ coupling-order ratio arises because null geodesics are conformally invariant while timelike geodesics are not, a property of the sGB benchmark (Section 6.2). The accretion efficiency, QPO resonance radius, and epicyclic frequencies must all be computed on $\tilde g$ with the actual $A(r)$ profile. The Schwarzschild baseline values ($r_{\rm ISCO} = 6M$, $E = 0.9428$, $L = 3.464M$, $\eta_{\rm rad} = 5.72\%$) remain the GR reference. The explicit derivation of the ISCO on $\tilde g$ is in Appendix L.
-</p>
-
-<h2>8.3 Gravitational-Wave Ringdown</h2>
-<p>
- The ringdown is a coupled temporal–geometric spectrum (Section 7): a temporal-led (scalar-dominated) mode absent in GR — dominated by ringdown of the dynamical proper-time field — the shifted axial tensor-led QNM, and the shifted polar tensor-led QNM with broken isospectrality. These are eigenmodes of one coupled system, not three independent radiation channels. Two layers of calculation are now in place. The <em>exterior benchmark</em> uses the exact Schwarzschild QNMs from the Leaver continued-fraction solver <code>qnm</code>, applies the sGB $O(\eta^2)$ horizon shift, and includes the leading-order polar–scalar mixing through a 2x2 effective matrix. The <em>full deep-transit solve</em> integrates the coupled $2\times 2$ wave equation with the regular inner boundary ($u \sim r^{\ell+1}$ at the temporal minimum) and outgoing outer boundary, finding three deep-transit modes. For $\eta = -0.1$, $g = 1.1$, and $M = 1$ in code units:
- <ul>
- <li><strong>Exterior benchmark</strong> (horizon BC): axial $\omega = 0.374180 - 0.089083i$, polar-led $\omega = 0.374076 - 0.089143i$, scalar-led $\omega = 0.484056 - 0.096781i$; isospectrality breaking $-0.028\%$ real, $+0.067\%$ damping.</li>
- <li><strong>Full deep-transit solve</strong> (regular inner BC): polar-led $\omega = 0.4624 - 0.0320i$, scalar-led $\omega = 0.4163 - 0.0322i$, overtone $\omega = 0.7447 - 0.0347i$; damping timescale $2.8\times$ longer than Schwarzschild; isospectrality breaking $+14.8\%$ real, $+0.8\%$ damping; mode splitting $11.1\%$.</li>
- </ul>
- The deep-transit modes are qualitatively different from the Schwarzschild QNMs: the de Sitter-like temporal gradient at the temporal minimum replaces the absorbing horizon with a region of extreme slow time. The damping is reduced by $\sim 65\%$ because the wave transits through a region where proper time runs at $\sim 21\%$ of the exterior rate — the wave is not trapped, it simply takes longer to cross. This is the quantitative realisation of the coordinate-time slowing described in Section 1.1: the $2.8\times$ longer damping timescale is the direct numerical signature of the coupled wave transiting the steep temporal gradient. The polar–scalar mixing is amplified by $\sim 500\times$ (from $0.028\%$ to $14.8\%$) because the extended transit through the slow-time gradient subjects the wave to sustained temporal shear that drives mode conversion. These results are exact within the spherically symmetric sector; the spectrum for a rotating or asymmetric source is not yet computed.
- For observational comparison, GW250114 (arXiv:2509.08099) provides the strongest single-event black-hole spectroscopy and Kerr test, with final mass $M_f \approx 68\,M_\odot$ (detector frame), spin $a_f \approx 0.68$, and network SNR $\sim 76$. Within current observational constraints ($\alpha_{\rm GB} < 2.9$ km$^2$), the dimensionless coupling for this mass is $\eta \approx 0.0009$, giving a QNM shift of $\sim 10^{-6}\%$ — far below detectability. TEP-sGB is therefore not constrained by GW250114. The strongest constraints come from low-mass stellar black holes ($M \sim 10\,M_\odot$), where $\eta$ can reach $\sim 0.04$ within current bounds.
-</p>
-
-<h2>8.4 Exterior-Null Consistency Checks</h2>
-<p>
- The exterior of the coupled solution: the geometric metric $g^{\rm sGB}$ deviates from Schwarzschild at $\mathcal{O}(\eta^2)$, but the matter metric $\tilde g$ deviates at $\mathcal{O}(\eta)$ through the conformal factor $A = e^{-\phi} > 1$ (Section 4.3 assessment). The exterior consistency checks below are computed on the geometric metric and on the old logistic-screened profile ($A \approx 1$), not on the actual sGB-coupled matter metric. They are therefore indicative, not self-consistent predictions of the sGB-coupled theory. A self-consistent observational analysis requires: (a) a dynamical screening mechanism; (b) recomputation of all matter-frame observables on $\tilde g$ with the actual $A(r)$; (c) one universal $\alpha_{\rm GB}$ across all sources. The following checks confirm that the sGB exterior is not excluded by current observations at the geometric-metric level, but do not constitute a complete TEP observational test:
-</p>
-<ul>
- <li>EHT shadow consistency: M87$^\ast$ within $0.77\sigma$, Sgr A$^\ast$ within $0.65\sigma$;</li>
- <li>Single-peaked Regge–Wheeler potential with no echo structure;</li>
- <li>3:2 QPO resonance at $r = 10.8\,M$;</li>
- <li>Schwarzschild gravitational QNM baseline consistent with GW150914;</li>
- <li>Photon sphere at $r = 3.000002M$ (deviation $7.1\times10^{-5}\%$);</li>
- <li>Shadow impact parameter $b = 5.196154M$ (deviation $3.3\times10^{-5}\%$).</li>
-</ul>
-<p>
- These are consistency checks that confirm the solution is not excluded by current observations. The discriminating predictions are the sub-percent deviations of Section 8.1–8.3, testable by next-generation instruments.
-</p>
-
-<h2>8.5 Kerr–TEP: Spin-Dependent Shadow from the Delgado et al. (2020) Solution</h2>
-<p>
- All astrophysical black holes are expected to spin, and the observational targets — GW150914, M87$^\ast$, Sgr A$^\ast$ — involve remnants with significant angular momentum. The earlier exploratory pipeline applied the static sGB perturbative metric corrections to the Kerr background as a proxy. We now replace this proxy with the actual slowly-rotating shift-symmetric sGB solution of Delgado, Herdeiro \& Radu (2020, JHEP 04, 180), which provides the $\mathcal{O}(\beta^2)$ correction to the frame-dragging function $W(r)$ from the coupled Einstein-scalar-Gauss-Bonnet field equations.
-</p>
-<p>
- The Delgado et al. solution uses the metric ansatz $ds^2 = -N\sigma^2 dt^2 + dr^2/N + r^2[d\theta^2 + \sin^2\theta\,(d\varphi - W\,dt)^2]$, where $N(r)$ and $\sigma(r)$ are the Sotiriou \& Zhou (2014) static functions and $W(r) = (2J/r^3)[1 + w_1(r)\beta^2 + \mathcal{O}(\beta^4)]$ with $w_1(r) = -(6/5\,x^2 + 28/3\,x^3 + 3x^4 + 12/5\,x^5 - 10/3\,x^6)$, $x = r_H/r$. The horizon angular velocity receives the correction $\Omega_H = (2J/r_H^3)(1 - 63/5\,\beta^2)$, or equivalently $\omega_H = (j/4)[1 + 21/20\,(\alpha/M^2)^2]$ in dimensionless form — the sGB coupling <em>increases</em> the reduced horizon angular velocity relative to Kerr, matching the Delgado et al. numerical results (their Fig. 7).
-</p>
-<p>
- The shadow calculation separates two distinct sGB corrections. The <em>average</em> shadow correction comes from the static modification to $F(r)$ (the Sotiriou \& Zhou $\mathcal{O}(\beta^2)$ metric correction) and is spin-independent: $-0.045\%$ at $\eta = -0.1$, identical to the non-rotating result. The conformal invariance of null geodesics established in Section 8.1 carries over to the rotating case, so the average Kerr–sGB shadow on $\tilde g$ equals that on $g^{\rm sGB}$. The <em>asymmetry</em> correction — the difference between the retrograde and prograde critical impact parameters — comes from the Delgado et al. $W(r)$ correction and is the new spin-dependent signature: $+0.147\%$ at $\eta = -0.1$ (any spin $\chi \gtrsim 0.1$), scaling as $\beta^2 \chi$. This asymmetry correction is absent in the proxy and in the static case; it is a combined coupling-spin effect that requires the actual rotating sGB solution. The prograde shadow is more strongly affected ($-0.090\%$ at $\chi = 0.5$, $\eta = -0.1$) than the retrograde ($-0.014\%$), because the prograde photon sphere is closer to the horizon where the $W(r)$ correction is largest. The horizon angular velocity correction is $+0.32\%$ at $\eta = -0.1$, confirming the Delgado et al. prediction.
-</p>
-<p>
- The QNM spectrum receives three corrections: (i) the static sGB correction from Track A ($+0.039\%$ axial at $\eta = -0.1$), (ii) the standard Kerr spin correction ($+22.7\%$ at $\chi = 0.5$ from the <code>qnm</code> package), and (iii) the rotating sGB correction from the $W(r)$ modification at the photon sphere ($-0.027\%$ at $\eta = -0.1$). The rotating sGB QNM correction is negative (opposing the static correction), a combined $\beta^2 \chi$ effect that is absent in the proxy. The total sGB QNM shift at $\chi = 0.5$, $\eta = -0.1$ is $+0.012\%$ — the static and rotating corrections partially cancel. This cancellation is a prediction of the true rotating solution that the proxy cannot reproduce.
-</p>
-<p>
- The TEP action does not require axisymmetry any more than it requires spherical symmetry (Section 4.6B); the true temporal well for a rotating source is determined by the full field equations with the actual angular-momentum distribution. The Delgado et al. slowly-rotating solution is valid to $\mathcal{O}(\chi)$ in spin and $\mathcal{O}(\beta^2)$ in coupling; the nonperturbative rotating sGB solutions (Delgado et al. 2020; Blazquez-Calzadilla et al. 2020; Chen et al. 2024) extend to arbitrary spin but require numerical integration. The shadow asymmetry correction and the horizon angular velocity increase are robust predictions of the slowly-rotating regime and provide the correct framework for the rotating case.
-</p>
-
-<h2>8.6 Dynamical Signatures: Post-Newtonian, Inspiral, and Cosmological</h2>
-<p>
- The TEP-sGB framework produces dynamical signatures across three observational frontiers:
-</p>
-<ul>
- <li>Post-Newtonian strong-field tests: the sGB scalar modifies the PPN parameters at $\mathcal{O}(\eta^2)$, but the Cassini constraint does not apply because the Gauss–Bonnet invariant is negligible for the Sun.</li>
- <li>Gravitational-wave inspiral: because time is a dynamical field, accelerating black holes radiate into the coupled temporal–geometric field. This $-1$PN scalar dipole radiation produces a dephasing in binary inspirals, testable with Einstein Telescope, Cosmic Explorer, and LISA EMRIs. The specific dephasing amplitude requires derivation with binary component masses, scalar charges, spin assumptions, and one universal $\alpha_{\rm GB}$; the previously quoted value of $1.4 \times 10^{-4}$ rad is suppressed pending this derivation.</li>
- <li>Cosmological: $\Delta N_{\rm eff}$ for the massless scalar requires a cosmological calculation (thermal population, decoupling temperature, reheating, initial conditions) and cannot be assumed zero. The tensor speed $c_T = 1$ on the Schwarzschild background (Section 7.6), satisfying the GW170817 constraint on that background; the full tensor characteristic metric on the TEP solution requires derivation from the complete coupled perturbation system. A complete multimessenger test requires the tensor and photon characteristics on the neutron-star source and cosmological backgrounds.</li>
-</ul>
-
-<h2>8.7 Observational Constraints</h2>
-<table class="data-table">
- <thead><tr><th>Probe</th><th>Constraint</th><th>Dimensions</th><th>Regime</th><th>Applies?</th></tr></thead>
- <tbody>
- <tr><td>Cassini (PPN $\gamma$)</td><td>PPN $\gamma - 1 < 2.3 \times 10^{-5}$</td><td>$\sqrt{\alpha_{\rm GB}}$ [km]</td><td>Weak-field (Sun)</td><td>Conditional: applies unless screening derived</td></tr>
- <tr><td>Binary pulsars (dipole)</td><td>Stringent on $\sqrt{\alpha_{\rm GB}}$ if NS scalarize</td><td>$\sqrt{\alpha_{\rm GB}}$ [km]</td><td>NS–NS</td><td>Conditional on NS scalarization</td></tr>
- <tr><td>LIGO/Virgo catalogue stacking</td><td>$\sqrt{\alpha_{\rm GB}} \lesssim 1.7$ km (Perkins et al. 2021)</td><td>$\sqrt{\alpha_{\rm GB}}$ [km]</td><td>Strong-field (BH–BH)</td><td>Yes (mass-normalised)</td></tr>
- <tr><td>EsGB waveform modelling</td><td>Sub-km limits (newer analyses)</td><td>$\sqrt{\alpha_{\rm GB}}$ [km]</td><td>Strong-field (BH–BH)</td><td>Yes (mass-normalised)</td></tr>
- <tr><td>EHT shadow (M87$^\ast$, Sgr A$^\ast$)</td><td>Sub-percent deviations at $|\eta|=0.1$ below $\sim 3.5\%$ precision</td><td>$\alpha_{\rm GB}$ [km²]</td><td>Strong-field (SMBH)</td><td>Yes (mass-normalised)</td></tr>
- <tr><td>GW170817 ($c_T$)</td><td>$|c_T/c - 1| < 10^{-15}$</td><td>—</td><td>Cosmological</td><td>Satisfied on Schwarzschild benchmark: $c_T = 1$ (Horndeski $G_4 = M_{\rm Pl}^2/2$; Section 7.6); compatibility on full TEP solution requires evaluation on relevant backgrounds</td></tr>
- <tr><td>CMB/BBN ($N_{\rm eff}$)</td><td>Pending cosmological calculation</td><td>—</td><td>Cosmological</td><td>Required calculation</td></tr>
- </tbody>
-</table>
-<p>
- The Cassini constraint requires careful treatment. The Gauss–Bonnet invariant is small for the Sun, so the sGB curvature coupling does not directly source the scalar in the weak-field regime. However, the universal matter coupling $S_m[\Psi, \tilde g]$ itself couples to the scalar through $A(\phi)$ and $B(\phi)$: matter sources the scalar through the conformal/disformal sector, not only through the GB curvature term. Solar-System constraints therefore apply unless a dynamical screening mechanism suppresses the matter–scalar coupling in the weak-field regime. The screening law connecting $\beta \simeq -0.013$ (weak field) to $\beta_A = -1$ (strong field) must be derived from the action before the Cassini constraint can be declared inapplicable. The binary pulsar constraint is conditional on whether neutron stars develop scalar hair in sGB theory.
-</p>
-<p>
- A robust combined upper bound on the dimensionful coupling $\alpha_{\rm GB}$ requires a proper likelihood analysis with explicit mass normalisation. Published gravitational-wave analyses quote bounds on $\sqrt{\alpha_{\rm GB}}$ (a length scale): approximately $1.7$ km from earlier catalogue stacking (Perkins et al. 2021) and substantially tighter sub-kilometre limits from newer EsGB waveform modelling. The dimensionless $\eta_i = 3\alpha_{\rm GB}/M_i^2$ is mass-normalised and cannot be transferred unchanged between black holes of different mass. One universal $\alpha_{\rm GB}$ must be fit across all sources.
-</p>
-
-<h2>8.8 Summary of Predictions</h2>
-<div class="theorem">
- <p>
- The TEP-sGB framework produces the following structural predictions, pending self-consistent computation on the matter metric $\tilde g$ with a dynamical screening law and one universal $\alpha_{\rm GB}$:
- </p>
- <ol>
- <li>A non-spinning shadow deviation scaling as $\eta^2$ ($-0.044\%$ at $\eta = -0.1$ on $g^{\rm sGB}$, conformal null invariance); the disformal sector may modify this. Within current observational constraints ($\alpha_{\rm GB} < 2.9$ km$^2$), the largest shadow shift is $\sim -0.007\%$ for $M = 10\,M_\odot$.</li>
- <li>A horizon-scale Phantom Mass from the full temporal-well geometry: at the horizonless threshold $g_{\rm crit} = 1.058\,M$, the shadow deviates by $-5.37\%$ from Schwarzschild (mass deficit), with $r_{\rm ph} = 2.65M$ and $b_c = 4.92M$. Both M87$^\ast$ ($-1.48\sigma$) and Sgr A$^\ast$ ($+0.24\sigma$) remain within $2\sigma$ of EHT measurements in the central-value comparison; the temporal well improves the Sgr A$^\ast$ fit. The visibility-domain joint inference (Section 8.1B), which fits the TEP ring model directly to 46{,}846 binned EHT visibility amplitudes, excludes the Phantom Mass at $>2\sigma$ ($\delta = -0.054$ outside the joint 2$\sigma$ interval $[-0.018, +0.085]$), constraining the physical $g$ parameter to the sub-critical regime ($g < g_{\rm crit}$). The deviation scales as $g^3$ for small $g$ (Section 8.1A).</li>
- <li>A temporal-wave ringdown QNM channel (scalar-led) absent in GR — the ringdown of the dynamical proper-time field. The exterior benchmark is validated against published sGB QNM results on seven criteria: five qualitative ($\mathcal{O}(\alpha_{\rm GB}^2)$ scaling, two-family polar structure, isospectrality breaking with opposite-sign axial/polar corrections, polar deviations larger than axial, smooth Schwarzschild limits) plus two quantitative ($\mathcal{O}(\alpha_{\rm GB}^2)$ scaling confirmed to $1\%$ precision, isospectrality breaking matching the Bryant et al. eikonal prediction to $93.8\%$ at $\ell = 2$). The deep-transit modes on the horizonless temporal well show $2.8\times$ longer damping and $500\times$ amplified isospectrality breaking, qualitatively consistent with horizonless compact object expectations. These values are not universal constants; they scale with the width of the deep region and the steepness of the temporal shear gradient, so the ringdown acts as a direct probe of the temporal-well geometry.</li>
- <li>Broken isospectrality between axial and polar geometric QNMs at $\mathcal{O}(\eta^2)$. Exterior benchmark (perturbative, exact Schwarzschild base): axial $+0.039\%$, polar $-0.018\%$ at $\eta = -0.1$, with breaking $-0.057\%$ matching the Bryant et al. eikonal prediction of $0.061\%$ to $94\%$. Full deep-transit solve: $+14.8\%$ real breaking, $+0.8\%$ damping breaking — amplified $\sim 500\times$ by the sustained temporal shear in the slow-time gradient. Three deep-transit modes found: polar-led $0.462 - 0.032i$, scalar-led $0.416 - 0.032i$, overtone $0.745 - 0.035i$, with $2.8\times$ longer damping than Schwarzschild.</li>
- <li>An ISCO deviation on $\tilde g$ at $\mathcal{O}(\eta)$ from the conformal factor: $+1.95\%$ at $\eta = -0.1$, different coupling order and opposite sign from the shadow — a property of the sGB benchmark (Section 6.2, Appendix L). Within current observational constraints ($\alpha_{\rm GB} < 2.9$ km$^2$), the largest ISCO shift is $\sim +0.78\%$ for $M = 10\,M_\odot$.</li>
- <li>A spin-dependent shadow asymmetry correction from the Delgado et al. (2020) slowly-rotating sGB solution: $+0.147\%$ asymmetry enhancement at $\eta = -0.1$ (any $\chi \gtrsim 0.1$), scaling as $\beta^2 \chi$. The prograde shadow is more strongly affected ($-0.090\%$) than the retrograde ($-0.014\%$) at $\chi = 0.5$. The horizon angular velocity increases by $+0.32\%$ at $\eta = -0.1$, matching the Delgado et al. prediction $\omega_H = (j/4)[1 + 21/20\,(\alpha/M^2)^2]$. The rotating sGB QNM correction is $-0.027\%$ at $\eta = -0.1$, partially cancelling the static $+0.039\%$ correction — a cancellation the proxy cannot reproduce (Section 8.5).</li>
- <li>A $-1$PN scalar dipole dephasing in binary inspirals — radiation into the coupled temporal–geometric field. The specific value requires derivation with binary component masses, scalar charges, spin assumptions, and one universal $\alpha_{\rm GB}$.</li>
- </ol>
- <p>
- Claims removed pending derivation: $\Delta N_{\rm eff} = 0$ (requires a cosmological calculation of thermal population, decoupling temperature, and reheating); the specific dipole dephasing amplitude ($1.4 \times 10^{-4}$ rad, requires proper binary waveform derivation); the full matrix continued-fraction QNM solve on the regular temporal well (the exterior benchmark is now in place, validated against <code>qnm</code>); the deep-interior regularisation (requires a full nonlinear integration with a healthy Horndeski/DHOST action). The tensor speed $c_T = 1$ on the Schwarzschild background in shift-symmetric sGB (from $G_4 = M_{\rm Pl}^2/2$, with the Gauss–Bonnet coupling entering through $G_5$); the full tensor characteristic metric on the TEP solution requires derivation from the complete coupled perturbation system (Section 7.7). The ISCO has been recomputed on $\tilde g$ (Section 8.2, Appendix L). The rotating sGB shadow and QNM are now computed from the Delgado et al. (2020) slowly-rotating solution (Section 8.5); extension to arbitrary spin requires the nonperturbative numerical solution.
- </p>
+<div class="equation">
+ \begin{equation} \label{eq:pred_transfer}
+ \mathcal{T}_{e\to o} = \frac{\omega_e}{\omega_o} = \frac{(-k_\mu u^\mu)_e}{(-k_\mu u^\mu)_o}
+\end{equation}
 </div>
+<p>
+is the single quantity from which all observational consequences follow. Four consequences, one field:
+</p>
+<ol>
+ <li><strong>Time transfer</strong> — signals are redshifted, delayed, and diluted by the transfer factor.</li>
+ <li><strong>Mass inference</strong> — the conventional mass is reconstructed under isochrony; a non-isochronous refit yields a phantom mass residual.</li>
+ <li><strong>Photon accessibility</strong> — the shadow and photon region are projections of the transfer field; the Temporal Horizon is the observer-relative accessibility boundary.</li>
+ <li><strong>Ringdown</strong> — replacing an absorbing horizon with a continuous, strongly time-dilated region changes the boundary-value problem in principle.</li>
+</ol>
+<p>
+These are not separate mechanisms bolted onto a GR background. They are different projections of one field. The sGB coupling provides the realised benchmark for the first three; the fourth is a structural prediction independent of the specific coupling. Detailed numerical tables are in Appendix L; the main text retains only the structural points.
+</p>
+
+<h2>8.1 Time Transfer</h2>
+<p>
+When $|\Delta_T| = |\ln(\mathcal{T}_{e\to o}^{\rm TEP}/\mathcal{T}_{e\to o}^{\rm GR})|$ becomes extreme, signals are strongly redshifted, observed processes appear greatly slowed, and signal arrival rates become extremely slow. The object appears dark because the transfer exceeds any practical accessibility threshold, not because signals are absolutely forbidden. The transfer factor from the temporal-rate minimum is finite: $\mathcal{Z}_{\max} \sim N_o/N_{\min}$, where $N_{\min} \ll N_o$. This may be astronomically large but is not divergent.
+</p>
+<p>
+In the sGB benchmark, the conformal factor $A = e^{-\phi}$ modifies clock rates at $\mathcal{O}(\eta)$. The tensor speed $c_T = 1$ on the Schwarzschild background in shift-symmetric sGB, satisfying the GW170817 constraint on that background. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. The full tensor characteristic metric on the TEP solution requires derivation from the complete coupled perturbation system (Section 7).
+</p>
+
+<h2>8.2 Mass Inference</h2>
+<p>
+The conventional mass $M_{\rm app}^{\rm GR}$ is not directly weighed. It is reconstructed from observed angles, frequencies, and periods under the isochrony closure. The TEP phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures the difference between the GR-reconstructed mass and the locally measured material content. Its sign is not assumed: slow deep clocks alone deflate the inferred mass; positive phantom mass requires spatial magnification to dominate temporal stretching (Section 2.8).
+</p>
+<p>
+The sGB benchmark illustrates the mechanism. The mass-inflation branch ($\alpha_{\rm GB} < 0$) gives $A > 1$ in the exterior — the matter metric is conformally magnified, providing the conformal orientation required for mass inflation. Because pure conformal scaling cancels from null geodesic paths, $A > 1$ does not automatically imply observed angular-scale magnification $\mathcal S_a > 1$; positive phantom mass requires the joint photon–orbit–timing forward model to establish $\mathcal S_a^3 \mathcal D_{\rm dyn} > \mathcal T_P^2$ (Section 2.8). The magnitude scales with the dimensionless coupling $|\eta| = 3|\alpha_{\rm GB}|/M^2$, making corrections largest for low-mass stellar black holes. The fundamental coupling $\alpha_{\rm GB}$ is a dimensionful constant; a single value must be used across all objects. Detailed numbers are in Appendix L.
+</p>
+
+<h2>8.3 Photon Accessibility</h2>
+<p>
+The shadow and photon region are projections of the transfer field. In the sGB benchmark, the shadow is sensitive to the geometric metric at $\mathcal{O}(\eta^2)$ while the ISCO feels the conformal factor at $\mathcal{O}(\eta)$ — because null geodesics are conformally invariant while timelike geodesics are not. This coupling-order difference is a property of the sGB realisation; the nonlinear TEP solution determines the universal structure.
+</p>
+<p>
+The Temporal Horizon $\mathcal{H}_T^{(\Lambda)}[u_o]$ is the observer-relative accessibility boundary. It is defined directly from the observable transfer factor, not from a global property of an assumed spacetime. Horizon-scale images constrain how far the photon-region geometry can differ from the GR-calibrated exterior; they do not directly establish an event horizon or measure the local density and proper volume of the obscured region. The pipeline implementation and data products for the visibility-domain fit are documented in Appendix J.
+</p>
+
+<h2>8.4 Ringdown</h2>
+<p>
+ TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain. The late-time spectral problem is therefore not the GR black-hole spectral problem. This is the theory-level prediction. The altered late-time spectrum is an unavoidable consequence. Whether the altered spectrum exhibits longer or shorter damping, weak or strong reflection, echoes or no resolvable echoes depends on the specific geometry.
+</p>
+<p>
+ An altered late-time spectrum is universal to the TEP boundary condition. The calculation on a prescribed Hayward background (Section 7.2) isolates the geometric mechanism: longer damping, two preserved families, and amplified isospectrality breaking are the realised behaviour of the present deep-transit benchmark. The nonlinear TEP solution determines the physical spectrum. The deep-transit modes cannot be directly compared to published sGB QNMs because they are on a horizonless geometry while all published sGB QNMs are on horizon-bearing backgrounds.
+</p>
+
+<h2>8.5 Rotating Sources</h2>
+<p>
+The static, spherically symmetric ansatz is an imposed symmetry reduction, not a derived property of the theory. A real astrophysical source with angular momentum produces a temporal field that is neither spherical nor static. The slowly-rotating shift-symmetric sGB solution (Delgado et al. 2020) provides the $\mathcal{O}(\beta^2)$ correction to the frame-dragging function from the coupled field equations — an axisymmetric realisation that isolates the spin-coupling mechanism. The nonlinear TEP solution determines the physical rotating-source geometry. The shadow and QNM corrections from spin are documented in the pipeline (Appendix J).
+</p>
+
+<h2>8.6 Dynamical Signatures</h2>
+<p>
+A binary merger produces a highly asymmetric, dynamical temporal gradient. The coupled system contains axial, gravitational-led polar, and scalar-led temporal mode families; the ringdown can differ from GR because the temporal field participates in the coupled dynamics. During inspiral, the coupled theory permits a $-1$PN scalar dipole channel when the components carry unequal temporal charges — absent in GR because GR has no dynamical time field. These channels are identified as relevant signatures; their quantitative prediction requires the full coupled calculation.
+</p>
+
+<h2>8.7 Summary</h2>
+<p>
+Four observational consequences follow from one temporal field. The sGB coupling provides the realised benchmark for the first three; the fourth is a structural prediction. None of these is a pillar holding up the theory — they are consequences of the principle that proper time is dynamical. The decisive test is the raw-observable, non-isochronous refit (Section 9).
+</p>

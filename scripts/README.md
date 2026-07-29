@@ -103,14 +103,14 @@ All 50 steps are in `scripts/steps/`, numbered `step_00` through `step_49`.
 | `step_33_interior_analysis` | Interior regularity, Lorentzian, lapse checks |
 | `step_34_solve_interior` | TEP interior solver, matter metric construction |
 
-### Derive — Phantom Mass & EHT (35–39)
+### Derive — phantom mass & EHT (35–39)
 
 | Step ID | Description |
 |---------|-------------|
 | `step_35_mass_bias_sign` | Mass-bias sign equation |
-| `step_36_phantom_mass_critical` | Phantom Mass critical g analysis, EHT comparison |
-| `step_37_phantom_mass_raytrace` | Phantom Mass null geodesic ray-tracing |
-| `step_38_phantom_mass_scan` | Phantom Mass parameter scan |
+| `step_36_phantom_mass_critical` | phantom mass critical g analysis, EHT comparison |
+| `step_37_phantom_mass_raytrace` | phantom mass null geodesic ray-tracing |
+| `step_38_phantom_mass_scan` | phantom mass parameter scan |
 | `step_39_eht_visibility_fit` | EHT visibility-domain joint inference |
 
 ### Derive — Kerr & GW (40–41)
@@ -136,7 +136,7 @@ All 50 steps are in `scripts/steps/`, numbered `step_00` through `step_49`.
 | `step_46_tep_transfer` | TEP transfer-function fit |
 | `step_47_joint_forward` | Joint forward-model, composition vs calibration |
 | `step_48_likelihood` | Likelihood comparison (Bayes, BIC, AIC, Wilks) |
-| `step_49_posterior` | Phantom Mass posterior via MCMC |
+| `step_49_posterior` | phantom mass posterior via MCMC |
 
 ## Architecture
 

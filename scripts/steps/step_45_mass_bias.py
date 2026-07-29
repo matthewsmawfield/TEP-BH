@@ -3,7 +3,7 @@
 
 GATE -1: Determine the SIGN of the Phantom Mass residual.
 
-The mass-bias sign equation (Section 2.9 of the manuscript) is:
+The mass-bias sign equation (Section 2.8 of the manuscript) is:
 
     M_app^GR / M_local^TEP = (S_a^3 * D_dyn) / T_P^2
 

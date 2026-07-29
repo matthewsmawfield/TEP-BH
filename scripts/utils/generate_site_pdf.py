@@ -171,7 +171,7 @@ def copy_pdf_to_root(source_pdf: Path, base_dir: Path):
 
 def process_pdf_with_metadata(pdf_path: Path):
     """Run the PDF processing script to add metadata and compress."""
-    process_script = Path(__file__).parent / 'utils' / 'process_pdf.py'
+    process_script = Path(__file__).parent / 'process_pdf.py'
 
     if not process_script.exists():
         print("⚠️  PDF processing script not found, skipping metadata embedding")

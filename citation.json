@@ -1,0 +1,24 @@
+{
+  "id": "smawfield2026bh",
+  "type": "article",
+  "title": "Temporal Equivalence Principle: Black Holes and the Temporal Horizon",
+  "author": [
+    {
+      "family": "Smawfield",
+      "given": "Matthew Lukin"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        29
+      ]
+    ]
+  },
+  "abstract": "The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric tilde g = A^2 g + B. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal-geometric equations. This paper develops the strong-field consequence: a black hole, under TEP, is a temporal well — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon.",
+  "URL": "https://mlsmawfield.com/tep/bh/",
+  "publisher": "Preprint",
+  "note": "Preprint, Version 0.1 (Bahrain)"
+}

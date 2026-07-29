@@ -1,11 +1,1 @@
-v0.1 (Bahrain) — Black-hole gravitational collapse paper - 23 July 2026
-
-- New manuscript: Temporal Equivalence Principle: Black Holes and the Temporal Horizon
-- One continuous argument: one action, one theorem, one coupled solution, one validation pipeline, one set of predictions
-- Fixed-background theorem: a dynamical proper-time field necessarily implies a dynamical gravitational geometry (curvature regularity and bounded areal radius are mutually exclusive on fixed Schwarzschild)
-- Coupled solution: scalar-Gauss-Bonnet (sGB) coupling as a candidate dynamical completion; perturbative exterior (Sotiriou & Zhou 2014, exact O(alpha^2)) and non-perturbative exterior integration confirm real scalar backreaction (m(r_h) ~ 0.7M for eta = 1)
-- sGB backreaction and scalar hair: supported; sGB-generated regular de Sitter core: NOT supported by existing literature (Sotiriou & Zhou 2014 find finite-area singularity at r ~ 0.27 r_h; Thaalba et al. 2024 confirm and connect to hyperbolicity loss)
-- Regular-geometry validation benchmark (Hayward class, Appendix K): TEP matter metric simultaneously achieves bounded areal radius (rho -> 1.995), finite Kretschmann (K -> 8/r_h^4 = 0.5), global Lorentzianity, and temporal freeze (theta_+ = 0) — benchmark result, not sGB solution result
-- Interior integration is the decisive test: Outcome A (regular centre), B (finite-area singularity, expected from literature), or C (hyperbolicity failure)
-- Sections: introduction, TEP theory, fixed-background theorem, coupled solution, global geometry, causal structure / Temporal Horizon, stability, observable predictions, interpretation, conclusion
-- Appendices A-K: conventions, reduced field equations, asymptotic expansion, curvature invariants, geodesic completeness, physical volume, perturbations, ray tracing, comparison table, reproducibility, regular-geometry validation benchmark
+v0.1 (Bahrain) — Temporal Equivalence Principle: Black Holes and the Temporal Horizon - 29 July 2026

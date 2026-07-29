@@ -3,9 +3,9 @@
   "author": "Matthew Lukin Smawfield",
   "version": "v0.1 (Bahrain)",
   "codename": "Bahrain",
-  "date": "23 July 2026",
-  "first_published": "23 July 2026",
-  "doi": "10.5281/zenodo.xxxxxxxx",
+  "date": "29 July 2026",
+  "first_published": "29 July 2026",
+  "doi": "10.5281/zenodo.21677827",
   "sections": [
     {
       "id": "section-abstract",
@@ -15,7 +15,7 @@
     },
     {
       "id": "section-introduction",
-      "title": "1. Introduction",
+      "title": "1. Introduction: Black Holes under the Temporal Equivalence Principle",
       "file": "01_introduction.html",
       "order": 2
     },
@@ -27,13 +27,13 @@
     },
     {
       "id": "section-fixed-background-theorem",
-      "title": "3. The Fixed-Background Theorem",
+      "title": "3. Why Schwarzschild Is Not Enough",
       "file": "03_fixed_background_theorem.html",
       "order": 4
     },
     {
       "id": "section-coupled-solution",
-      "title": "4. The Coupled Solution",
+      "title": "4. Existence Demonstrations",
       "file": "04_coupled_solution.html",
       "order": 5
     },
@@ -45,19 +45,19 @@
     },
     {
       "id": "section-causal-structure",
-      "title": "6. Causal Structure and the Temporal Horizon",
+      "title": "6. Causal Structure",
       "file": "06_causal_structure.html",
       "order": 7
     },
     {
       "id": "section-stability",
-      "title": "7. Stability and Hyperbolicity",
+      "title": "7. Perturbation Analysis: Ringdown Structure",
       "file": "07_stability.html",
       "order": 8
     },
     {
       "id": "section-predictions",
-      "title": "8. Observable Predictions",
+      "title": "8. Four Consequences of One Principle",
       "file": "08_predictions.html",
       "order": 9
     },
@@ -93,7 +93,7 @@
     },
     {
       "id": "appendix-D-curvature",
-      "title": "Appendix D — Curvature Invariants and the Fixed-Background Theorem",
+      "title": "Appendix D — Curvature Invariants and the Schwarzschild Incompatibility",
       "file": "D_appendix_curvature.html",
       "order": 15
     },
@@ -111,7 +111,7 @@
     },
     {
       "id": "appendix-G-perturbations",
-      "title": "Appendix G — Scope of Gravitational Perturbations",
+      "title": "Appendix G — Fixed-Schwarzschild Perturbation Baseline",
       "file": "G_appendix_perturbations.html",
       "order": 18
     },
@@ -150,12 +150,6 @@
       "title": "References",
       "file": "17_references.html",
       "order": 24
-    },
-    {
-      "id": "section-acknowledgements",
-      "title": "Acknowledgements",
-      "file": "18_acknowledgements.html",
-      "order": 26
     }
   ]
 }

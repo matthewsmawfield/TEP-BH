@@ -1,7 +1,7 @@
 {
   "name": "tep-bh-site",
   "version": "0.1.0",
-  "description": "TEP-BH: Temporal Horizon Cosmology",
+  "description": "TEP-BH: Black Holes and the Temporal Horizon",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",
@@ -12,19 +12,18 @@
   },
   "keywords": [
     "TEP-BH",
-    "Temporal Cosmology",
-    "Cosmic Redshift",
-    "FLRW",
-    "Big Bang Cosmology",
-    "Cosmic Expansion",
-    "Proper-Time Transport",
-    "Redshift Drift",
-    "Distance Duality",
     "Temporal Equivalence Principle",
-    "Cosmology"
+    "temporal well",
+    "temporal horizon",
+    "phantom mass",
+    "isochrony axiom",
+    "Schwarzschild incompatibility",
+    "black holes",
+    "modified gravity",
+    "temporal shear"
   ],
   "author": "Matthew Lukin Smawfield",
-  "license": "MIT",
+  "license": "CC-BY-4.0",
   "devDependencies": {
     "chokidar": "^4.0.3",
     "live-server": "^1.2.2"
