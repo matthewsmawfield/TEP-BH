@@ -8,29 +8,27 @@ DOI: 10.5281/zenodo.21677827
 
 ## Abstract
 
-The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$, while gravitational disturbances propagate on the Einstein-frame metric $g_{\mu\nu}$. This paper develops the strong-field consequence: *a black hole, under TEP, is a temporal well* — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. A continuous, extreme but finite gradient in proper-time rate is sufficient to produce the full observational phenomenology attributed to a black hole.
+The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: *a black hole, under TEP, is a temporal well* — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. A continuous, extreme but finite gradient in proper-time rate is sufficient to produce the full observational phenomenology attributed to a black hole.
 
-Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the temporal horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.
+Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.
 
-The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. Admissible strong-field temporal geometries exist. Which completion TEP selects is the construction programme — not a precondition for the temporal-well claim.
+The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed theory — not selecting among competing theories.
 
-Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test, because replacing an absorbing horizon boundary with a continuous, strongly time-dilated region changes the ringdown boundary-value problem in principle. *Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.*
+Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test, because TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain, changing the late-time spectral problem. *Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.*
 
-Code Availability: https://github.com/matthewsmawfield/TEP-BH
-
-Keywords: temporal equivalence principle, temporal well, temporal horizon, dynamical proper time, phantom mass, isochrony axiom, conformal-disformal metric, Schwarzschild incompatibility, apparent compactness, black holes, modified gravity, temporal shear, black-hole observations
+Keywords: Temporal Equivalence Principle, temporal well, temporal horizon, dynamical proper time, phantom mass, isochrony axiom, conformal-disformal metric, Schwarzschild incompatibility, apparent compactness, black holes, modified gravity, temporal shear, black-hole observations
 
 # 1. Introduction: Black Holes under the Temporal Equivalence Principle
 
 ## 1.1 The Temporal Well
 
-The Temporal Equivalence Principle (TEP) treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$, while gravitational disturbances propagate on the Einstein-frame metric $g_{\mu\nu}$. This paper develops the strong-field consequence: a black hole, under TEP, is a temporal well — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. A continuous, extreme but finite gradient in proper-time rate is sufficient to produce the full observational phenomenology attributed to a black hole.
+The Temporal Equivalence Principle (TEP) treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: a black hole, under TEP, is a temporal well — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. A continuous, extreme but finite gradient in proper-time rate is sufficient to produce the full observational phenomenology attributed to a black hole.
 
-Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the temporal horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. The same principle that reframes cosmology reframes the dark compact sources called black holes. Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.
+Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. The same principle that reframes cosmology reframes the dark compact sources called black holes. Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.
 
 ## 1.2 The Principle
 
-TEP distinguishes the Einstein-frame gravitational metric $g_{\mu\nu}$, on which gravitational disturbances propagate, from the universal causal matter metric
+TEP distinguishes the Einstein-frame gravitational metric $g_{\mu\nu}$, which carries the gravitational dynamics, from the universal causal matter metric
 
 \begin{equation} \label{eq:intro_1}
 \tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi,
@@ -77,7 +75,7 @@ TEP drops the isochrony closure. Under TEP, the conventional reconstruction — 
 
 The event horizon is a global causal construct. It is defined as the boundary of the causal past of future null infinity — a statement that requires knowledge of the entire future spacetime. It is not a local observable. No telescope, no interferometer, no gravitational-wave detector has ever measured an event horizon. What is observed is that signals from certain regions become extremely redshifted, delayed, and faint. The conventional interpretation assigns this to a one-way causal boundary. TEP assigns it to an extreme temporal-transfer mismatch. Both interpretations are compatible with the same observational data — that is the non-uniqueness.
 
-The temporal horizon $\mathcal{H}_T^{(\Lambda)}[u_o]$ is the operational boundary defined directly from observable temporal accessibility:
+The Temporal Horizon $\mathcal{H}_T^{(\Lambda)}[u_o]$ is the operational boundary defined directly from observable temporal accessibility:
 
 \begin{equation} \label{eq:intro_TH}
 \mathcal{H}_T^{(\Lambda)}[u_o] = \{x_e : \mathcal{T}_{e\to o} \geq \Lambda\}.
@@ -89,7 +87,7 @@ It is not a null boundary, not one-way, and does not divide spacetime into an ou
 
 The exterior observer infers a compact, dark, massive object because processes deeper in the temporal field are strongly redshifted, signal arrival rates become extremely slow, light paths are strongly distorted, and matter appears to accumulate or freeze within a small apparent radius. But the density $\rho_{\rm inferred} \sim M/(4\pi r^3/3)$ is an exterior-frame inference that assumes the Schwarzschild radial coordinate and exterior clock remain valid measures of the deep region. The locally measured density and local physical volume need not reproduce that inference. The extreme density attributed to a black hole may be an artefact of reconstructing a region with a radically different proper-time rate using exterior spatial and temporal standards.
 
-This interpretation is dual to the temporal horizon Cosmology reading (Thika, v0.2); the strong-field PLACEHOLDER_TH is operationally distinct from the cosmological past boundary $\mathscr{T}^-$ (see Section 6.1). On cosmological scales, a temporal-rate gradient produces observed redshift, which standard physics interprets as spatial expansion — the conformal volume element $V_{\rm eff} = A_{\rm clock}^3 a_m^3$ tends to zero, but the underlying matter-frame spatial geometry does not collapse. Around an extreme gravitational source, a temporal-rate gradient produces redshift, lensing and altered trajectories, which standard physics interprets as gravitational collapse and inward suction. In both cases, the conventional spatial narrative is an observational projection of a single underlying dynamical proper-time field. *Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.*
+This interpretation is dual to the Temporal Horizon Cosmology reading (Thika); the strong-field Temporal Horizon is operationally distinct from the cosmological past boundary $\mathscr{T}^-$ (see Section 6.1). On cosmological scales, a temporal-rate gradient produces observed redshift, which standard physics interprets as spatial expansion — the conformal volume element $V_{\rm eff} = A_{\rm clock}^3 a_m^3$ tends to zero, but the underlying matter-frame spatial geometry does not collapse. Around an extreme gravitational source, a temporal-rate gradient produces redshift, lensing and altered trajectories, which standard physics interprets as gravitational collapse and inward suction. In both cases, the conventional spatial narrative is an observational projection of a single underlying dynamical proper-time field. *Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.*
 
 ## 1.6 The Argument
 
@@ -97,11 +95,11 @@ This paper develops the strong-field consequence of TEP and shows what follows f
 
 **First:** the theory is defined (Section 2). The two-metric action, the conformal-disformal matter metric, the frame dictionary, the observational inference problem, and the strong-field phantom mass decomposition. The isochrony closure is identified as the axiom TEP replaces.
 
-**Second:** the analysis of Section 3 shows that the temporal field cannot sit passively on fixed Schwarzschild geometry. Finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. If the temporal field becomes strong enough to create a temporal horizon, the geometry cannot remain ordinary Schwarzschild.
+**Second:** the analysis of Section 3 shows that the temporal field cannot sit passively on fixed Schwarzschild geometry. Finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. If the temporal field becomes strong enough to create a Temporal Horizon, the geometry cannot remain ordinary Schwarzschild.
 
-**Third:** the required geometric ingredients are shown to be mathematically attainable (Sections 4–5). Regular geometries exist. Curvature-coupled scalars produce real backreaction. Admissible strong-field temporal geometries exist; which completion TEP selects is the construction programme.
+**Third:** the required geometric ingredients are shown to be mathematically attainable (Sections 4–5). Regular geometries exist. The leading curvature operator produces real backreaction. The canonical TEP matter coupling fixes the temporal sector; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed theory.
 
-**Fourth:** four observational consequences follow from one temporal field (Sections 6–8): time transfer, mass inference, photon accessibility, and ringdown. The temporal horizon is the operational boundary defined directly from observable temporal accessibility. Replacing an absorbing horizon boundary with a continuous, strongly time-dilated region changes the ringdown boundary-value problem in principle.
+**Fourth:** four observational consequences follow from one temporal field (Sections 6–8): time transfer, mass inference, photon accessibility, and ringdown. The Temporal Horizon is the operational boundary defined directly from observable temporal accessibility. Replacing an absorbing horizon boundary with a continuous, strongly time-dilated region changes the ringdown boundary-value problem in principle.
 
 **Fifth:** existing data are confronted as examples of the framework (Section 9). S2 is a weak-field consistency check. Horizon-scale images constrain the photon-region geometry. Gravitational waves provide the strongest future test. None of these is a pillar holding up the theory — they are examples of the framework applied to real data.
 
@@ -115,7 +113,7 @@ This paper develops the strong-field consequence of TEP and shows what follows f
 
 - Section 5 establishes global geometry and curvature regularity on the validation benchmark.
 
-- Section 6 derives the causal structure and the temporal horizon as the operational boundary.
+- Section 6 derives the causal structure and the Temporal Horizon as the operational boundary.
 
 - Section 7 analyses the perturbation spectrum and the structural ringdown prediction.
 
@@ -131,11 +129,11 @@ Detailed sGB derivations, numerical QNM solvers, EHT visibility fits, and pipeli
 
 This paper develops the strong-field consequence of TEP: a black hole is a temporal well. The Schwarzschild incompatibility and the minimal temporal-well criteria follow from the TEP principle. The claim is that the phenomena attributed to black holes are produced by an extreme but finite gradient in proper-time rate — without physical collapse, without a singular core, without an absolute one-way boundary.
 
-What is settled: under TEP, the conventional black-hole reconstruction is not the unique reading of the observations; the event horizon is not a direct observable; conformal time on fixed Schwarzschild is incompatible with finite curvature and bounded area; the temporal horizon is operational and observer-relative.
+What is derived from TEP: the conventional black-hole reconstruction is not the unique reading of the observations; the event horizon is not a direct observable; conformal time on fixed Schwarzschild is incompatible with finite curvature and bounded area; the Temporal Horizon is operational and observer-relative; the ringdown boundary condition is altered.
 
-What is demonstrated: regular geometry and curvature-coupled scalar backreaction are attainable; weak-field S2 recovers GR; photon-region data do not entail a horizon ontology.
+What is constructively demonstrated: regular geometry and curvature-coupled scalar backreaction are attainable; finite-curvature matter metrics are achievable; weak-field S2 recovers GR; the exterior and deep-transit benchmarks isolate the geometric mechanism of the altered spectral problem.
 
-What is next: the TEP-selected global field solution; the full coupled characteristic system; the raw non-isochronous multi-messenger refit of the same data GR already uses.
+What requires decisive closure: the TEP-selected global field solution; the complete coupled characteristic system; the raw non-isochronous multi-messenger refit; the measured phantom-mass sign.
 
 # 2. TEP Theory: Action, Matter Metric, and Frame Dictionary
 
@@ -153,7 +151,29 @@ with
 \tilde g_{\mu\nu}=A^2(\Phi)g_{\mu\nu}+B(\Phi)\nabla_\mu\Phi\nabla_\nu\Phi.
 \end{equation}
 
-This is the canonical frame: gravity has Einstein–Hilbert form, tensor modes propagate on $g_{\mu\nu}$, and all nongravitational fields couple universally to $\tilde g_{\mu\nu}$. Diffeomorphism invariance of the matter action gives $\tilde\nabla_\mu\tilde T^{\mu\nu}=0$ wherever $\tilde g$ is invertible. This action and matter metric are the foundational TEP structure (Jakarta, v0.9); the present paper extends them to the strong-field regime. The pipeline uses the dimensionless field $\phi=\Phi/M_*$ and geometrized units $G=c=1$; the numerical normalisation, parameter freeze ($\beta_A=-1$, $B_0=1$), and weak-to-strong-field running are detailed in Appendix B. The lab-scale lock $\beta \simeq -0.013$ is a weak-field convention; strong-field profiles here are not required to hold that value pointwise.
+This is the canonical frame: gravity has Einstein–Hilbert form, tensor modes propagate on $g_{\mu\nu}$, and all nongravitational fields couple universally to $\tilde g_{\mu\nu}$. Diffeomorphism invariance of the matter action gives $\tilde\nabla_\mu\tilde T^{\mu\nu}=0$ wherever $\tilde g$ is invertible. This action and matter metric are the foundational TEP structure (Jakarta); the present paper extends them to the strong-field regime. The pipeline uses the dimensionless field $\phi=\Phi/M_*$ and geometrized units $G=c=1$; the numerical normalisation, parameter freeze ($\beta_A=-1$, $B_0=1$), and weak-to-strong-field running are detailed in Appendix B. The lab-scale lock $\beta \simeq -0.013$ is a weak-field convention; strong-field profiles here are not required to hold that value pointwise.
+
+The theory is a defined modified-gravity theory, not a broad framework into which arbitrary completions are inserted. The terms are organised into the fundamental sector and the strong-field EFT sector.
+
+**Fundamental sector — fixed by the TEP principle.**
+
+- The Einstein–Hilbert gravitational action $\frac{M_{\rm Pl}^2}{2}R[g]$: the Einstein–Hilbert term supplies the canonical gravitational kinetic structure. On the Schwarzschild benchmark, tensor propagation reduces to $c_T = 1$, consistent with GW170817; the nonlinear Temporal-Well characteristics follow from the complete coupled principal symbol.
+
+- The canonical scalar kinetic $-\frac12(\nabla\Phi)^2$ and potential $V(\Phi)$: the temporal field $\Phi$ is the dynamical proper-time field. The canonical kinetic term supplies a hyperbolic scalar principal part, while $V''>0$ gives local stability around the selected background.
+
+- The universal conformal matter coupling $A(\Phi) = \exp(\beta_A \Phi/M_{\rm Pl})$: a single function fixes the clock sector for all non-gravitational fields. This is the canonical TEP matter coupling; it is not a free function to be chosen per problem.
+
+- The disformal matter coupling $B(\Phi)\nabla_\mu\Phi\nabla_\nu\Phi$: the disformal rule is fixed by the quartic-Gaussian form (Appendix B), constrained by GW170817 to $|c_\gamma - c_g|/c \lesssim \text{few}\times10^{-15}$ along observed paths. $B$ is not set to zero; it is bounded and structurally fixed.
+
+- The environmental screening/running law $\Sigma_\mu^{\rm obs} = \mathcal S_\Sigma(\mathcal E)\,\Sigma_\mu$ (Section 2.5): the Temporal Topology operator governs weak-to-strong-field running of the effective coupling and reconciles terrestrial tests with cosmological dynamics. This is part of the theory, not an external add-on.
+
+**Strong-field EFT sector — the leading curvature operator and regularising coefficients.**
+
+- The leading curvature operator is the scalar–Gauss–Bonnet coupling $\alpha_{\rm GB}\,\phi\,\mathcal{G}$. This is the lowest-dimension higher-curvature term that couples the temporal field to the gravitational geometry and supplies real backreaction. It is the canonical strong-field extension of the TEP action, not one option among many.
+
+- The regularising nonlinear coefficients — higher-order curvature couplings and potential terms that control the deep-region profile — are selected by the joint requirements of global regularity (finite curvature, bounded areal radius, Lorentzian signature) and observational consistency. These are EFT corrections to the leading operator, not alternative theories.
+
+The canonical TEP matter coupling fixes the temporal sector. The present paper derives the strong-field solution requirements: the Schwarzschild incompatibility (Section 3) forces gravitational backreaction, and the leading curvature operator supplies it (Section 4). The regularising nonlinear coefficients are selected by global regularity and observation. What is under construction is the global field solution of this fixed theory — not a choice among competing theories.
 
 ## 2.2 Frame Dictionary and Local Lorentz Limit
 
@@ -187,9 +207,9 @@ For the static case studied here, $q = 0$. Two scalar profiles are used in this 
 
 - For the Schwarzschild incompatibility analysis (Section 3), the scalar is prescribed as $\phi(r) = \phi_0\,\ln(r/r_h)\,S(r)$ with a smooth logistic activation $S(r)$ that suppresses the field in the exterior. This prescribed profile is used only to establish the incompatibility: the geometric metric is fixed to Schwarzschild, and the scalar field is prescribed rather than solved from coupled equations.
 
-- For the coupled solution (Section 4), the scalar is solved from the sGB field equations and is Coulomb-like ($\phi \sim Q_s/r$) in the exterior, with the geometric metric dynamically modified by the temporal field's backreaction.
+- For the perturbative sGB exterior branch (Section 4), the scalar is solved from the sGB field equations and is Coulomb-like ($\phi \sim Q_s/r$) in the exterior, with the geometric metric dynamically modified by the temporal field's backreaction.
 
-These are not two competing models. The first is a proof device for the Schwarzschild incompatibility; the second is an illustrative dynamical coupling that demonstrates the backreaction channel is physical. Neither exhausts TEP — any completion implementing transfer and backreaction is admissible. A time-dependent scalar with static stress-energy is possible in shift-symmetric constructions and may be essential for rotating generalisations.
+These are not two competing models. The first is a proof device for the Schwarzschild incompatibility; the second is the leading curvature operator of the strong-field EFT, demonstrating that the backreaction channel is physical. Both are calculations within the fixed TEP theory — the canonical action, the universal conformal coupling, the bounded disformal rule, and the environmental screening law of Section 2.1. A time-dependent scalar with static stress-energy is possible in shift-symmetric constructions and may be essential for rotating generalisations; this is an extension of the scalar ansatz within the same theory, not a replacement of the theory.
 
 ## 2.4 Complete Matter Metric and Signature
 
@@ -258,7 +278,7 @@ The direct observables are: changing angular positions; changing received spectr
 \begin{equation} \label{eq:tep_isochrony_7}
 \begin{aligned}
 &\text{received angles, phases and frequencies} \\
-&\quad\Downarrow\quad \text{Isochrony Axiom + GR transfer + distance calibration} \\
+&\quad\Downarrow\quad \text{isochrony axiom + GR transfer + distance calibration} \\
 &\text{orbital period, velocity and radius} \\
 &\quad\Downarrow\quad \text{Kepler/GR inversion} \\
 &\text{large compact mass } (M_{\rm app}^{\rm GR}).
@@ -284,7 +304,7 @@ The precise statement is not that conventional analysis sets $\mathcal T_{s\to o
 
 Conventional inference is not clock-blind; it is closed under the GR transfer law. Whether $\Delta_T \neq 0$ is required by the data is the central empirical question of the TEP programme.
 
-## 2.7 Strong-Field Phantom Mass and the Mass Dictionary
+## 2.7 Strong-Field phantom mass and the Mass Dictionary
 
 This paper defines the strong-field counterpart of phantom mass in the wider TEP framework. At galactic scales, unmodelled temporal shear is interpreted as a dark-matter halo. At black-hole scales, extreme temporal transport can be interpreted as a very large central mass, rapid infall and a compact causal object. The conventional mass may combine a material contribution, temporal-field energy, and a non-isochronous calibration residual. The more exact expression is
 
@@ -311,9 +331,9 @@ The paper uses $M$ in several distinct roles, and the distinction matters once t
 | $M_{\rm phantom}^{T}$ | The difference between the conventional fitted mass and the TEP material inference |
 | $M$ | The GR-calibrated exterior mass parameter used in the conditional sGB benchmark (Sections 4–8) |
 
-The statement that a fixed ADM $M$ is "the physical mass measured by a distant observer" is not made in this paper. Under the paper's own thesis, that is precisely what the TEP programme determines. The sGB calculations of Sections 4–8 use $M$ as the GR-calibrated exterior mass parameter; their observable predictions are conditional on that calibration. The central empirical task is to determine how much of the conventional central mass survives as locally measured material content when the isochrony axiom is removed. The decisive analysis is a *TEP-native refit of the raw observations*, not a perturbation of a pre-assumed Schwarzschild mass.
+The statement that a fixed ADM $M$ is "the physical mass measured by a distant observer" is not made in this paper. Under the paper's own thesis, that is precisely what the TEP programme determines. The sGB calculations of Sections 4–8 use $M$ as the GR-calibrated exterior mass parameter; their observable predictions are conditional on that calibration. The central empirical task is to determine how much of the conventional central mass survives as locally measured material content when the Isochrony Axiom is removed. The decisive analysis is a *TEP-native refit of the raw observations*, not a perturbation of a pre-assumed Schwarzschild mass.
 
-## 2.8 Sign and Identifiability of Strong-Field Phantom Mass
+## 2.8 Sign and Identifiability of Strong-Field phantom mass
 
 A direct intuition might suggest that because deep clocks run slow, observed periods are longer, so the inferred mass is larger. This overlooks the spatial magnification that accompanies the temporal stretching, and recognising the interplay between the two is the first gate of the entire analysis.
 
@@ -393,7 +413,7 @@ where $r_{\rm app}$ is the externally inferred apparent radius. A value $\mathca
 
 # 3. Why Schwarzschild Is Not Enough
 
-A natural question: why can TEP not simply add a temporal field onto ordinary Schwarzschild geometry? This section answers that question. The geometric metric is held fixed to Schwarzschild, and the conformal factor takes the power-law form $A = (r_h/r)^{\phi_0}$ in the deep interior. The question is whether the conformal matter metric can simultaneously achieve curvature regularity and bounded areal radius. The answer is no. If the temporal field becomes strong enough to create a temporal horizon, the geometry cannot remain ordinary Schwarzschild. The geometry has to respond. The full disformal generalisation — classifying all allowed asymptotics of $A$, $B$, $\phi$ — is a separate mathematical programme; the conformal case already establishes the incompatibility.
+A natural question: why can TEP not simply add a temporal field onto ordinary Schwarzschild geometry? This section answers that question. The geometric metric is held fixed to Schwarzschild, and the conformal factor takes the power-law form $A = (r_h/r)^{\phi_0}$ in the deep interior. The question is whether the conformal matter metric can simultaneously achieve curvature regularity and bounded areal radius. The answer is no. If the temporal field becomes strong enough to create a Temporal Horizon, the geometry cannot remain ordinary Schwarzschild. The geometry has to respond. The full disformal generalisation — classifying all allowed asymptotics of $A$, $B$, $\phi$ — is a separate mathematical programme; the conformal case already establishes the incompatibility.
 
 ## 3.1 The Compatibility Conditions
 
@@ -427,7 +447,7 @@ This is a structural incompatibility within the tested class, not a failure of a
 
 ## 3.3 Physical Principle
 
-The incompatibility is the mathematical expression of a physical principle: because gravity depends on how things move through time, changing time must also change gravity. The temporal field cannot sit inertly atop a Schwarzschild geometry; it must backreact on the geometric metric itself. The mutual exclusion of finite curvature and bounded areal radius is proved for conformal matter metrics on fixed Schwarzschild. That is enough to force backreaction in the class that carries the clock sector. A full classification of disformal asymptotics remains open and is part of the construction programme, not a loophole in the temporal-well claim. Within the tested class, a dynamical proper-time field necessarily implies a dynamical gravitational geometry. A fixed Schwarzschild singular geometry cannot satisfy the conditions for a physically admissible temporal well. Any viable strong-field realisation of TEP must arise from a dynamically coupled temporal–geometric solution. The coupled solution of Section 4 implements this requirement.
+The incompatibility is the mathematical expression of a physical principle: because gravity depends on how things move through time, changing time must also change gravity. The temporal field cannot sit inertly atop a Schwarzschild geometry; it must backreact on the geometric metric itself. The mutual exclusion of finite curvature and bounded areal radius is proved for conformal matter metrics on fixed Schwarzschild; full disformal asymptotics remain open and do not weaken the backreaction requirement for the clock sector. Within the tested class, a dynamical proper-time field necessarily implies a dynamical gravitational geometry. A fixed Schwarzschild singular geometry cannot satisfy the conditions for a physically admissible temporal well. Any viable strong-field realisation of TEP must arise from a dynamically coupled temporal–geometric solution. Section 4 establishes the required backreaction channel and the regular geometric architecture; their joint nonlinear realisation is selected by the TEP field equations.
 
 ## 3.4 Raychaudhuri Equation and the Convergence Condition
 
@@ -441,7 +461,7 @@ The sign of $\tilde R_{\mu\nu}\tilde u^\mu u^\nu$ is the geometric statement of 
 
 # 4. Existence Demonstrations
 
-The Schwarzschild incompatibility result determines the admissible class of strong-field solutions: the temporal field must backreact on the geometric metric, and the resulting geometry must simultaneously achieve finite matter-frame curvature, continuous temporal transport, real exterior hair, and dynamical backreaction. The question is whether members of this class are mathematically attainable. Two existence demonstrations confirm that they are.
+The Schwarzschild incompatibility result determines the admissible class of strong-field solutions: the temporal field must backreact on the geometric metric, and the resulting geometry must simultaneously achieve finite matter-frame curvature, continuous temporal transport, real exterior hair, and dynamical backreaction. The Schwarzschild obstruction is not a general geometric impossibility. Regular geometry, bounded matter-frame curvature, and dynamical scalar backreaction are each explicitly attainable — established separately by the two demonstrations below. Their joint realisation in one dynamically generated solution is the nonlinear closure selected by the TEP action.
 
 ## 4.1 Regular Geometry Exists
 
@@ -451,7 +471,7 @@ The demonstration proves that singularity is optional, not mandatory. Once the g
 
 ## 4.2 Dynamical Coupling Exists
 
-The scalar-Gauss-Bonnet (sGB) coupling $\alpha_{\rm GB}\,\phi\,\mathcal{G}$ is an illustrative dynamical completion. The published perturbative solution (Sotiriou \& Zhou 2014, exact $\mathcal{O}(\alpha^2)$) establishes:
+The scalar-Gauss-Bonnet (sGB) coupling $\alpha_{\rm GB}\,\phi\,\mathcal{G}$ is the leading curvature operator of the strong-field EFT (Section 2.1). It is the lowest-dimension higher-curvature term that couples the temporal field to the gravitational geometry and supplies real backreaction. The published perturbative solution (Sotiriou \& Zhou 2014, exact $\mathcal{O}(\alpha^2)$) establishes:
 
 - Scalar hair around strong-field sources — the no-hair theorem is evaded because the Gauss-Bonnet coupling provides a geometric source term.
 
@@ -459,7 +479,7 @@ The scalar-Gauss-Bonnet (sGB) coupling $\alpha_{\rm GB}\,\phi\,\mathcal{G}$ is a
 
 - Sector-dependent observables — the shadow is sensitive to the geometric metric at $\mathcal{O}(\eta^2)$ while the ISCO feels the conformal factor at $\mathcal{O}(\eta)$, because null geodesics are conformally invariant while timelike geodesics are not (Appendix L).
 
-What sGB does *not* establish: a regular deep region. The nonlinear solutions of Sotiriou \& Zhou (2014) for the same linear sGB coupling develop a finite-area singularity rather than a regular temporal minimum, and recent simulations (Thaalba et al. 2024) confirm this and explore a possible connection to loss of hyperbolicity. The TEP-selected solution must satisfy the minimal temporal-well criteria: $0 < N(r)$ and $N_{\min} \ll N_o$ everywhere, with no observer-independent one-way boundary. Which modified coupling dynamically produces this is the construction programme — not a precondition for the temporal-well claim.
+What sGB does *not* establish: a regular deep region. The nonlinear solutions of Sotiriou \& Zhou (2014) for the same linear sGB coupling develop a finite-area singularity rather than a regular temporal minimum, and recent simulations (Thaalba et al. 2024) confirm this and explore a possible connection to loss of hyperbolicity. The TEP-selected solution must satisfy the minimal temporal-well criteria: $0 < N(r)$ and $N_{\min} \ll N_o$ everywhere, with no observer-independent one-way boundary. The leading curvature operator supplies the backreaction channel; the regularising nonlinear coefficients that complete the deep-region profile are selected by the joint requirements of global regularity and observation. This is the construction programme — solving the fixed theory, not choosing among theories.
 
 ## 4.3 The Inverse Reconstruction
 
@@ -473,15 +493,15 @@ finite at the centre with $w_r = -1$. This is the stress-energy profile that a r
 
 ## 4.4 Status
 
-Admissible strong-field temporal geometries exist. Which completion TEP selects is the construction programme — not a precondition for the temporal-well claim. The theory is carried by the principle and field equations, not by any individual solution.
+The Schwarzschild obstruction is not a general geometric impossibility. Regular geometry, bounded matter-frame curvature, and dynamical scalar backreaction are each explicitly attainable. Their joint realisation is the nonlinear closure selected by the TEP action. The canonical matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of this theory — not selecting among competing theories. The theory is carried by the principle, the action, and the field equations; the global solution is what is under construction.
 
 # 5. Global Geometry and Curvature Regularity
 
-The existence demonstrations of Section 4 require a regular geometric background. This section confirms that the TEP matter metric on a regular background achieves the minimal temporal-well criteria. Three properties are established; detailed calculations are in Appendix K.
+The existence demonstrations of Section 4 require a regular geometric background. This section confirms that finite curvature, bounded areal geometry, and Lorentzian signature can coexist on a regular background. The physical Temporal Well additionally requires $N_{\min}\ll N_o$. Three properties are established; detailed calculations are in Appendix K.
 
 ## 5.1 Three Results
 
-- **Global Lorentzian signature.** The radial-block determinant $\det\tilde g_{2D} = -A^4 G^2 - A^2 B\,F\,(\phi')^2$ is strictly negative for all $r > 0$. No determinant-zero boundary, no signature change, no invertibility obstruction at any radius. The lapse $N(r) > 0$ everywhere, becoming extraordinarily small inward but never vanishing at a finite-radius boundary.
+- **Global Lorentzian signature.** The radial-block determinant $\det\tilde g_{2D} = -A^4 G^2 - A^2 B\,F\,(\phi')^2$ is strictly negative for all $r > 0$. The determinant remains strictly negative throughout the tested domain, establishing a globally Lorentzian benchmark without a finite-radius signature boundary. This benchmark tests geometric regularity; the physical Temporal Well requires the separate condition ($N_{\min}\ll N_o$).
 
 - **Bounded curvature.** The Kretschmann scalar approaches a finite value at the centre, $\tilde K \to 8/r_h^4$, in contrast to the Schwarzschild value $K_{\rm Schw} = 48\,M^2/r^6 \to \infty$. All curvature invariants remain finite throughout.
 
@@ -493,29 +513,29 @@ The classical density estimate $M/(4\pi r^3/3)$ presupposes that the geometric m
 
 ## 5.3 Status
 
-These three results confirm that the minimal temporal-well criteria — finite curvature, bounded geometry, Lorentzian signature — are attainable on a regular background. The coupled interior calculation (Appendix K) confirms that the sGB scalar field on a regular background produces a strictly positive lapse, vanishing areal radius at the centre, and Lorentzian signature throughout. The specific numerical values are properties of the benchmark; the structural conclusion is general.
+These results establish that finite curvature, bounded areal geometry, and Lorentzian signature can coexist once the fixed Schwarzschild singularity is removed. The nonlinear TEP solution combines these geometric conditions with the defining slow-clock condition ($N_{\min}\ll N_o$). The scalar-on-regular-background benchmark (Appendix K) confirms that the sGB scalar field on a regular background produces a strictly positive lapse, vanishing areal radius at the centre, and Lorentzian signature throughout. The specific numerical values are properties of the benchmark; the structural conclusion is general.
 
 # 6. Causal Structure
 
-The event horizon is not an observable. It is a global causal construct inferred from the spacetime model. No telescope has ever measured an event horizon. What is observed is that signals from certain regions become extremely redshifted, delayed, and faint. The temporal horizon is the operational boundary defined directly from observable temporal accessibility. The causal structure of TEP is fundamentally different from the standard black-hole picture: the standard "black hole" is replaced by the *temporal well* — a regular spatial region in which the rate of proper time differs radically from the exterior (Section 1.1). *Darkness does not require an event horizon; it requires sufficiently extreme temporal decoupling.*
+The event horizon is not an observable. It is a global causal construct inferred from the spacetime model. No telescope has ever measured an event horizon. What is observed is that signals from certain regions become extremely redshifted, delayed, and faint. The Temporal Horizon is the operational boundary defined directly from observable temporal accessibility. The causal structure of TEP is fundamentally different from the standard black-hole picture: the standard "black hole" is replaced by the *temporal well* — a regular spatial region in which the rate of proper time differs radically from the exterior (Section 1.1). *Darkness does not require an event horizon; it requires sufficiently extreme temporal decoupling.*
 
-## 6.1 The Operational temporal horizon
+## 6.1 The Operational Temporal Horizon
 
-The temporal horizon was introduced in the cosmological context (Thika, v0.2) as the conformal-temporal boundary where $A_{\rm clock} \to 0$. This paper extends the concept to the strong-field regime. The shared name marks a shared mechanism — clock-transport as boundary — not a shared definition. In Thika the temporal horizon is the past conformal boundary $\mathscr{T}^-$ where $A_{\rm clock} \to 0$. Here it is the observer-relative accessibility set $\mathcal{H}_T^{(\Lambda)}[u_o] = \{x_e : \mathcal{T}_{e\to o} \geq \Lambda\}$. Cosmological $\mathscr{T}^-$ is not the black-hole surface $\mathcal{H}_T$; both are reconstructions of dynamical proper time. Around a compact source, the relevant boundary is an observer-relative accessibility threshold — the surface beyond which the clock-transfer factor renders signals practically undetectable. The physical lapse $N(r) = \sqrt{-\tilde g_{\mu\nu}\xi^\mu\xi^\nu}$ satisfies $0 < N(r) < 1$ through the deep region, with $N(r) \ll 1$ where the object appears black, but $N(r) \neq 0$ at every finite physical location. The TEP-selected solution must have $N(r) \geq N_{\min} > 0$ everywhere — the lapse has a finite minimum at the temporal-rate minimum, never vanishing at any finite radius. The perturbative sGB benchmark belongs to a horizon-bearing branch that does not realise the temporal well; the full TEP action must produce $N(r) \geq N_{\min} > 0$ everywhere.
+The Temporal Horizon was introduced in the cosmological context (Thika) as the conformal-temporal boundary where $A_{\rm clock} \to 0$. This paper extends the concept to the strong-field regime. The shared name marks a shared mechanism — clock-transport as boundary — not a shared definition. In Thika the Temporal Horizon is the past conformal boundary $\mathscr{T}^-$ where $A_{\rm clock} \to 0$. Here it is the observer-relative accessibility set $\mathcal{H}_T^{(\Lambda)}[u_o] = \{x_e : \mathcal{T}_{e\to o} \geq \Lambda\}$. Cosmological $\mathscr{T}^-$ is not the black-hole surface $\mathcal{H}_T$; both are reconstructions of dynamical proper time. Around a compact source, the relevant boundary is an observer-relative accessibility threshold — the surface beyond which the clock-transfer factor renders signals practically undetectable. The physical lapse $N(r) = \sqrt{-\tilde g_{\mu\nu}\xi^\mu\xi^\nu}$ satisfies $0 < N(r) < 1$ through the deep region, with $N(r) \ll 1$ where the object appears black, but $N(r) \neq 0$ at every finite physical location. The TEP-selected solution must have $N(r) \geq N_{\min} > 0$ everywhere — the lapse has a finite minimum at the temporal-rate minimum, never vanishing at any finite radius. The perturbative sGB benchmark belongs to a horizon-bearing branch that does not realise the temporal well; the full TEP action must produce $N(r) \geq N_{\min} > 0$ everywhere.
 
-The temporal horizon is defined by the clock-transfer factor between an emitter $e$ and observer $o$:
+The Temporal Horizon is defined by the clock-transfer factor between an emitter $e$ and observer $o$:
 
 \begin{equation} \label{eq:temporal_horizon_def}
 \mathcal{T}_{e\to o} = \frac{d\tilde\tau_o}{d\tilde\tau_e} = \frac{\omega_e}{\omega_o} = \frac{(-k_\mu u^\mu)_e}{(-k_\mu u^\mu)_o},
 \end{equation}
 
-where $k_\mu$ is the signal wavevector and $u^\mu$ is the observer's four-velocity. For stationary observers with matter-frame lapse $N(x)$, the Killing energy is conserved, giving $\mathcal{T}_{e\to o} = N_o/N_e$. The maximum transfer factor from the temporal-rate minimum is finite: $\mathcal{Z}_{\max} \sim N_o/N_{\min}$ — potentially astronomically large but never divergent. The object appears black because the transfer factor exceeds any practical accessibility threshold, not because signals are absolutely forbidden from escaping. The operational temporal horizon at threshold $\Lambda$ is:
+where $k_\mu$ is the signal wavevector and $u^\mu$ is the observer's four-velocity. For stationary observers with matter-frame lapse $N(x)$, the Killing energy is conserved, giving $\mathcal{T}_{e\to o} = N_o/N_e$. The maximum transfer factor from the temporal-rate minimum is finite: $\mathcal{Z}_{\max} \sim N_o/N_{\min}$ — potentially astronomically large but never divergent. The object appears black because the transfer factor exceeds any practical accessibility threshold, not because signals are absolutely forbidden from escaping. The operational Temporal Horizon at threshold $\Lambda$ is:
 
 \begin{equation} \label{eq:operational_TH}
 \mathcal{H}_T^{(\Lambda)}[u_o] = \left\{x_e \in J^-(\gamma_o) : \mathcal{T}_{e\to o} \geq \Lambda\right\}.
 \end{equation}
 
-This boundary is not null, not one-way, and does not divide spacetime into an outside and an inside. It changes with the observer's proper-time rate, motion, and worldline: $\mathcal{H}_T^{(\Lambda)}[u_1] \neq \mathcal{H}_T^{(\Lambda)}[u_2]$. The black-hole observables used here are open-path transfer factors $\mathcal{T}_{e\to o}$; they do not require residual closed-loop synchronization holonomy, which remains a disformal/Jakarta programme probe. A freely falling observer moving through the deep temporal region experiences ordinary local space, a normally running local clock, no wall, no horizon crossing, no signature change. The distant observer's temporal horizon is not their temporal horizon.
+This boundary is not null, not one-way, and does not divide spacetime into an outside and an inside. It changes with the observer's proper-time rate, motion, and worldline: $\mathcal{H}_T^{(\Lambda)}[u_1] \neq \mathcal{H}_T^{(\Lambda)}[u_2]$. The black-hole observables used here are open-path transfer factors $\mathcal{T}_{e\to o}$; they do not require residual closed-loop synchronization holonomy, which remains a disformal/Jakarta programme probe. A freely falling observer moving through the deep temporal region experiences ordinary local space, a normally running local clock, no wall, no horizon crossing, no signature change. The distant observer's Temporal Horizon is not their Temporal Horizon.
 
 ## 6.2 Transfer, Refraction, and Darkness
 
@@ -544,10 +564,15 @@ A(\phi_c) = A_c, \quad 0 < A_c < \infty, \quad B(\phi_c) \text{ finite}.
 Then the physical areal radius becomes $\tilde R = A(\phi)R(r) \sim A_c r \to 0$ — an ordinary regular centre with no spatial opening, no tube-like asymptotic end, no other universe, no wall, and finite local geometry. Both null families have finite affine parameter. The centre is at finite optical distance. An emitter at the centre has finite $\mathcal{Z}$ with any causally connected receiver. The temporal-rate minimum need not coincide with a centre — it may occur at a shell or an asymmetric basin — but the invariant is the same: $N_{\min} > 0$ with finite transfer mismatch to any receiver. The TEP object is a temporal well, not a regular-centre black hole.
 
 \begin{equation} \label{eq:causal_8}
-\text{regular Lorentzian geometry} + \text{finite local density} + 0 < N(r) \text{ everywhere with } N_{\min} \ll N_o + \text{no observer-independent one-way boundary } (N \geq N_{\min} > 0) + \text{extreme external redshift}
+\begin{aligned}
+&\text{regular Lorentzian geometry} + \text{finite local density} \\
+&\qquad + 0 < N(r) \text{ everywhere with } N_{\min} \ll N_o \\
+&\qquad + \text{no observer-independent one-way boundary } (N \geq N_{\min} > 0) \\
+&\qquad + \text{extreme external redshift}
+\end{aligned}
 \end{equation}
 
-The Schwarzschild incompatibility analysis (Section 3) shows that the temporal field must backreact on the geometric metric: the fixed-Schwarzschild construction cannot work. The inverse reconstruction (Section 4) identifies $w_r = -1$ as a sufficient regularity condition, demonstrated by the regularity benchmark (Appendix K). A valid dynamical completion of TEP — whether through sGB, a modified coupling, or the full TEP action — must produce a temporal well: a regular spatial domain with finite local density and an extreme temporal-rate gradient, not a regular black hole. The sGB perturbative exterior produces $F = 0$ at a shifted $r_H$ because it is an EFT approximation around the Schwarzschild background; the TEP-selected solution must have $N(r) \geq N_{\min} > 0$ everywhere. The observable predictions (shadow, ISCO, QNM) are computed at $r \sim 3$–$6M$ in the conditional sGB benchmark, far from the would-be horizon at $r \sim 2M$; their robustness to the deep-region profile requires the TEP-native solution. The horizonless temporal well alters the late-time ringdown spectrum (Section 7).
+The Schwarzschild incompatibility analysis (Section 3) shows that the temporal field must backreact on the geometric metric: the fixed-Schwarzschild construction cannot work. The inverse reconstruction (Section 4) identifies $w_r = -1$ as a sufficient regularity condition, demonstrated by the regularity benchmark (Appendix K). The global solution of the fixed TEP theory — the canonical action with the leading sGB curvature operator and the regularising nonlinear coefficients selected by global regularity — must produce a temporal well: a regular spatial domain with finite local density and an extreme temporal-rate gradient, not a regular black hole. The sGB perturbative exterior produces $F = 0$ at a shifted $r_H$ because it is an EFT approximation around the Schwarzschild background; the TEP-selected solution must have $N(r) \geq N_{\min} > 0$ everywhere. The observable predictions (shadow, ISCO, QNM) are computed at $r \sim 3$–$6M$ in the conditional sGB benchmark, far from the would-be horizon at $r \sim 2M$; their robustness to the deep-region profile requires the TEP-native solution. The horizonless temporal well alters the late-time ringdown spectrum (Section 7).
 
 The organising question of TEP is not "How is a black-hole interior regularised?" but rather: *can the phenomena attributed to black holes arise from an extreme relative-time gradient without physical collapse into an ultra-dense object?* The shadow is reproduced by the photon sphere (at $r \sim 3M$, independent of the horizon). The ISCO is reproduced by the orbital structure (at $r \sim 6M$, independent of the horizon). The gravitational-wave ringdown is reproduced by the perturbation spectrum, with a theory-dependent inner boundary condition. The darkness is reproduced by the extreme redshift of signals from the deep temporal region. The apparent inward pull is reproduced by the complete matter metric $\tilde g_{\mu\nu}$. The apparent compactness is reproduced by the exterior observer's reconstruction through strongly redshifted, delayed signals. No event horizon is required, no ultra-dense object is required, and no suction mechanism is required — not a better black hole, but an explanation of why a regular temporal domain is mistaken for one. The duality with cosmological expansion is established in Section 1.5.
 
@@ -555,21 +580,21 @@ In the minimal temporal-well picture, the observer falling toward the deep regio
 
 # 7. Perturbation Analysis: Ringdown Structure
 
-Replacing an absorbing horizon boundary with a continuous, strongly time-dilated region changes the ringdown boundary-value problem in principle. The structural prediction follows from the TEP principle and is independent of the specific coupling: longer effective damping, mode mixing between tensor and scalar sectors, and late-time structure controlled by the temporal bottleneck. Precise spectra are geometry-dependent; the structural prediction is not optional.
+TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain. Therefore its late-time spectral problem is not the GR black-hole spectral problem. This is the theory-level structural prediction, independent of the specific coupling. The altered late-time spectrum is an unavoidable consequence. Whether the altered spectrum exhibits longer or shorter damping, weak or strong reflection, echoes or no resolvable echoes depends on the effective potential, characteristic speeds, interior transmission, scalar coupling, boundary regularity, and excitation coefficients of the specific geometry.
 
 ## 7.1 The Structural Prediction
 
-In the standard black-hole picture, a single-peaked potential with a purely absorbing horizon produces no echoes. In the TEP temporal-well picture, there is no horizon and no physical boundary — the deep region is continuous, ordinary space in which the rate of proper time drops to a finite minimum. The exterior potential peak and the de Sitter-like temporal core together form a resonant cavity: a wave propagating into this region does not strike a wall; it encounters an extreme continuous gradient in the temporal rate. The gradient turns the wave refractively — the propagation direction curves smoothly as the local clock slows — and the wave transits through the deep region and emerges back into the exterior. Because the local proper time runs slow relative to the exterior rate, the transit takes longer in coordinate time, producing extended exposure to the polar–scalar mixing region.
+In the standard black-hole picture, a single-peaked potential with a purely absorbing horizon produces no echoes. In the TEP temporal-well picture, there is no horizon and no physical boundary — the deep region is continuous, ordinary space in which the rate of proper time drops to a finite minimum. The wave does not strike a wall; it encounters an extreme continuous gradient in the temporal rate. The gradient may turn the wave refractively — the propagation direction curves smoothly as the local clock slows — and the wave may transit through the deep region and emerge back into the exterior. Whether a resonant cavity forms, whether the transit produces longer or shorter damping, and whether scalar–tensor mixing is enhanced or suppressed are all determined by the specific geometry.
 
-The resonant cavity structure produces long-lived, strongly mixed deep-transit modes: the wave rings inside the temporal gradient, sustaining mode conversion for far longer than the Schwarzschild horizon permits. The late-time response therefore contains modified damping profiles and enhanced mode mixing — signatures absent in the standard black-hole picture. The ringdown acts as a direct probe of the temporal-well geometry: a deeper well with a lower $N_{\min}$ extends the transit time further.
+The structural prediction is categorical: the boundary condition is changed, and therefore the late-time spectrum is altered. The benchmark calculation on a prescribed Hayward background (Section 7.2) isolates the geometric mechanism: longer damping and amplified isospectrality breaking are the realised behaviour of the present deep-transit benchmark. The nonlinear TEP solution determines the physical realisation.
 
 ## 7.2 Benchmark Calculations
 
-Two layers of QNM calculation support the structural prediction within the spherically symmetric sector: an exterior benchmark on the Schwarzschild background with the sGB horizon shift and polar–scalar mixing, and a full deep-transit solve on the regular temporal-well geometry. The deep-transit solve finds modes with significantly longer damping timescale and amplified isospectrality breaking — the deep temporal gradient, not a physical boundary, produces the extended damping. Detailed potentials, frequencies, validation against published sGB QNM spectra, and the full Frobenius analysis are in Appendix L.
+Three layers of QNM calculation are reported, each on a distinct geometry. **(1) Fixed-Schwarzschild baseline:** the geometric metric is held at Schwarzschild; gravitational tensor QNMs are the GR baseline, with no TEP shift (Appendix G). **(2) Perturbative sGB exterior:** the Sotiriou–Zhou metric perturbation introduces scalar hair and backreaction; the full coupled axial operator requires derivation from the second variation of the action, and the sign and coefficient of the QNM shift are not determined by the horizon displacement alone (Appendix L). **(3) Prescribed Hayward deep-transit model:** an eigenvalue problem on a horizonless regular geometry, isolating the geometric mechanism of the altered spectral problem. The deep-transit modes find longer damping and amplified isospectrality breaking — the realised behaviour of the present benchmark. The nonlinear TEP solution determines the physical QNM spectrum. The sGB exterior potentials, shadow/ISCO shifts, and QNM horizon-displacement estimates are in Appendix L; the deep-transit eigenvalue calculation is described in this section and documented in the pipeline (Appendix J).
 
 ## 7.3 Hyperbolicity and Characteristics
 
-The disformal matter metric must have a well-posed initial-value formulation. The radial-block determinant is strictly negative in the exterior, confirming Lorentzianity, invertibility, and non-degeneracy (Section 2.4, Appendix B). The tensor speed $c_T = 1$ on the Schwarzschild background benchmark, satisfying the GW170817 constraint. The full tensor characteristic metric on the nonlinear TEP solution, global ghost freedom, and scalar sector hyperbolicity in the deep interior require derivation from the complete coupled perturbation system. Detailed derivations are in Appendix L.
+The disformal matter metric must have a well-posed initial-value formulation. The radial-block determinant is strictly negative in the exterior, confirming Lorentzianity, invertibility, and non-degeneracy (Section 2.4, Appendix B). The tensor speed $c_T = 1$ on the Schwarzschild background benchmark, satisfying the GW170817 constraint. The full tensor characteristic metric on the nonlinear TEP solution, global ghost freedom, and scalar sector hyperbolicity in the deep interior require derivation from the complete coupled perturbation system — an open problem, not yet contained in any appendix.
 
 # 8. Four Consequences of One Principle
 
@@ -589,87 +614,85 @@ is the single quantity from which all observational consequences follow. Four co
 
 - **Ringdown** — replacing an absorbing horizon with a continuous, strongly time-dilated region changes the boundary-value problem in principle.
 
-These are not separate mechanisms bolted onto a GR background. They are different projections of one field. The sGB coupling provides an illustrative benchmark for the first three; the fourth is a structural prediction independent of the specific coupling. Detailed numerical tables are in Appendix L; the main text retains only the structural points.
+These are not separate mechanisms bolted onto a GR background. They are different projections of one field. The sGB coupling provides the realised benchmark for the first three; the fourth is a structural prediction independent of the specific coupling. Detailed numerical tables are in Appendix L; the main text retains only the structural points.
 
 ## 8.1 Time Transfer
 
 When $|\Delta_T| = |\ln(\mathcal{T}_{e\to o}^{\rm TEP}/\mathcal{T}_{e\to o}^{\rm GR})|$ becomes extreme, signals are strongly redshifted, observed processes appear greatly slowed, and signal arrival rates become extremely slow. The object appears dark because the transfer exceeds any practical accessibility threshold, not because signals are absolutely forbidden. The transfer factor from the temporal-rate minimum is finite: $\mathcal{Z}_{\max} \sim N_o/N_{\min}$, where $N_{\min} \ll N_o$. This may be astronomically large but is not divergent.
 
-In the sGB benchmark, the conformal factor $A = e^{-\phi}$ modifies clock rates at $\mathcal{O}(\eta)$. The tensor speed $c_T = 1$ on the Schwarzschild background in shift-symmetric sGB, satisfying the GW170817 constraint on that background. The full tensor characteristic metric on the TEP solution requires derivation from the complete coupled perturbation system (Section 7).
+In the sGB benchmark, the conformal factor $A = e^{-\phi}$ modifies clock rates at $\mathcal{O}(\eta)$. The tensor speed $c_T = 1$ on the Schwarzschild background in shift-symmetric sGB, satisfying the GW170817 constraint on that background. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. The full tensor characteristic metric on the TEP solution requires derivation from the complete coupled perturbation system (Section 7).
 
 ## 8.2 Mass Inference
 
 The conventional mass $M_{\rm app}^{\rm GR}$ is not directly weighed. It is reconstructed from observed angles, frequencies, and periods under the isochrony closure. The TEP phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures the difference between the GR-reconstructed mass and the locally measured material content. Its sign is not assumed: slow deep clocks alone deflate the inferred mass; positive phantom mass requires spatial magnification to dominate temporal stretching (Section 2.8).
 
-The sGB benchmark illustrates the mechanism. The mass-inflation branch ($\alpha_{\rm GB} < 0$) gives $A > 1$ in the exterior — the matter metric is conformally magnified, producing positive phantom mass. The magnitude scales with the dimensionless coupling $|\eta| = 3|\alpha_{\rm GB}|/M^2$, making corrections largest for low-mass stellar black holes. The fundamental coupling $\alpha_{\rm GB}$ is a dimensionful constant; a single value must be used across all objects. Detailed numbers are in Appendix L.
+The sGB benchmark illustrates the mechanism. The mass-inflation branch ($\alpha_{\rm GB} < 0$) gives $A > 1$ in the exterior — the matter metric is conformally magnified, providing the conformal orientation required for mass inflation. Because pure conformal scaling cancels from null geodesic paths, $A > 1$ does not automatically imply observed angular-scale magnification $\mathcal S_a > 1$; positive phantom mass requires the joint photon–orbit–timing forward model to establish $\mathcal S_a^3 \mathcal D_{\rm dyn} > \mathcal T_P^2$ (Section 2.8). The magnitude scales with the dimensionless coupling $|\eta| = 3|\alpha_{\rm GB}|/M^2$, making corrections largest for low-mass stellar black holes. The fundamental coupling $\alpha_{\rm GB}$ is a dimensionful constant; a single value must be used across all objects. Detailed numbers are in Appendix L.
 
 ## 8.3 Photon Accessibility
 
-The shadow and photon region are projections of the transfer field. In the sGB benchmark, the shadow is sensitive to the geometric metric at $\mathcal{O}(\eta^2)$ while the ISCO feels the conformal factor at $\mathcal{O}(\eta)$ — because null geodesics are conformally invariant while timelike geodesics are not. This coupling-order difference is a property of the sGB benchmark, not a universal TEP prediction.
+The shadow and photon region are projections of the transfer field. In the sGB benchmark, the shadow is sensitive to the geometric metric at $\mathcal{O}(\eta^2)$ while the ISCO feels the conformal factor at $\mathcal{O}(\eta)$ — because null geodesics are conformally invariant while timelike geodesics are not. This coupling-order difference is a property of the sGB realisation; the nonlinear TEP solution determines the universal structure.
 
-The Temporal Horizon $\mathcal{H}_T^{(\Lambda)}[u_o]$ is the observer-relative accessibility boundary. It is defined directly from the observable transfer factor, not from a global property of an assumed spacetime. Horizon-scale images constrain how far the photon-region geometry can differ from the GR-calibrated exterior; they do not directly establish an event horizon or measure the local density and proper volume of the obscured region. The visibility-domain fit is detailed in Appendix L.
+The Temporal Horizon $\mathcal{H}_T^{(\Lambda)}[u_o]$ is the observer-relative accessibility boundary. It is defined directly from the observable transfer factor, not from a global property of an assumed spacetime. Horizon-scale images constrain how far the photon-region geometry can differ from the GR-calibrated exterior; they do not directly establish an event horizon or measure the local density and proper volume of the obscured region. The pipeline implementation and data products for the visibility-domain fit are documented in Appendix J.
 
 ## 8.4 Ringdown
 
-Replacing an absorbing horizon boundary with a continuous, strongly time-dilated region changes the ringdown boundary-value problem in principle. The wave does not strike a wall; it encounters an extreme continuous gradient in the temporal rate, transits through the deep region, and emerges back into the exterior. The consequences are structural: longer effective damping, mode mixing between tensor and scalar sectors, and late-time structure controlled by the temporal bottleneck. Precise spectra are geometry-dependent; the structural prediction is not optional.
+TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain. The late-time spectral problem is therefore not the GR black-hole spectral problem. This is the theory-level prediction. The altered late-time spectrum is an unavoidable consequence. Whether the altered spectrum exhibits longer or shorter damping, weak or strong reflection, echoes or no resolvable echoes depends on the specific geometry.
 
-An illustrative calculation on a prescribed Hayward background (Appendix L) demonstrates the mechanism. The deep-transit modes cannot be directly compared to published sGB QNMs because they are on a horizonless geometry while all published sGB QNMs are on horizon-bearing backgrounds. They are qualitatively consistent with expectations for a continuous temporal well: longer damping, two preserved families, and amplified isospectrality breaking. The precise spectrum requires the full coupled calculation on the TEP-selected solution.
+An altered late-time spectrum is universal to the TEP boundary condition. The calculation on a prescribed Hayward background (Section 7.2) isolates the geometric mechanism: longer damping, two preserved families, and amplified isospectrality breaking are the realised behaviour of the present deep-transit benchmark. The nonlinear TEP solution determines the physical spectrum. The deep-transit modes cannot be directly compared to published sGB QNMs because they are on a horizonless geometry while all published sGB QNMs are on horizon-bearing backgrounds.
 
 ## 8.5 Rotating Sources
 
-The static, spherically symmetric ansatz is an imposed symmetry reduction, not a derived property of the theory. A real astrophysical source with angular momentum produces a temporal field that is neither spherical nor static. The slowly-rotating shift-symmetric sGB solution (Delgado et al. 2020) provides the $\mathcal{O}(\beta^2)$ correction to the frame-dragging function from the coupled field equations — an illustrative axisymmetric calculation, not the TEP-selected solution for a rotating source. The shadow and QNM corrections from spin are computed in Appendix L as illustrative calculations.
+The static, spherically symmetric ansatz is an imposed symmetry reduction, not a derived property of the theory. A real astrophysical source with angular momentum produces a temporal field that is neither spherical nor static. The slowly-rotating shift-symmetric sGB solution (Delgado et al. 2020) provides the $\mathcal{O}(\beta^2)$ correction to the frame-dragging function from the coupled field equations — an axisymmetric realisation that isolates the spin-coupling mechanism. The nonlinear TEP solution determines the physical rotating-source geometry. The shadow and QNM corrections from spin are documented in the pipeline (Appendix J).
 
 ## 8.6 Dynamical Signatures
 
-A binary merger produces a highly asymmetric, dynamical temporal gradient. The coupled system contains axial, gravitational-led polar, and scalar-led temporal mode families; the ringdown can differ from GR because the temporal field participates in the coupled dynamics. During inspiral, the accelerating binary radiates into the coupled temporal-geometric field — scalar dipole emission at $-1$PN, absent in GR because GR has no dynamical time field. These channels are identified as relevant signatures; their quantitative prediction requires the full coupled calculation.
+A binary merger produces a highly asymmetric, dynamical temporal gradient. The coupled system contains axial, gravitational-led polar, and scalar-led temporal mode families; the ringdown can differ from GR because the temporal field participates in the coupled dynamics. During inspiral, the coupled theory permits a $-1$PN scalar dipole channel when the components carry unequal temporal charges — absent in GR because GR has no dynamical time field. These channels are identified as relevant signatures; their quantitative prediction requires the full coupled calculation.
 
 ## 8.7 Summary
 
-Four observational consequences follow from one temporal field. The sGB coupling provides an illustrative benchmark for the first three; the fourth is a structural prediction. None of these is a pillar holding up the theory — they are consequences of the principle that proper time is dynamical. The decisive test is the raw-observable, non-isochronous refit (Section 9).
+Four observational consequences follow from one temporal field. The sGB coupling provides the realised benchmark for the first three; the fourth is a structural prediction. None of these is a pillar holding up the theory — they are consequences of the principle that proper time is dynamical. The decisive test is the raw-observable, non-isochronous refit (Section 9).
 
 # 9. Interpretation and Scope
 
 TEP treats proper time as a dynamical field. The strong-field consequence is the temporal well. This section collects the interpretation, confronts existing data as examples of the framework, and defines the scope.
 
-## 9.1 Settled, Demonstrated, Next
+## 9.1 Derived, Demonstrated, Decisive Closure
 
-**Settled — follows from the TEP principle.**
+**Derived from TEP — follows from the principle.**
 
-- Under TEP, a black hole is a temporal well: a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse, without a singular core, without an absolute one-way boundary.
+- The temporal-well interpretation: a black hole is a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse, without a singular core, without an absolute one-way boundary.
 
-- The event horizon is not an observable. It is a global causal construct inferred from the spacetime model. The temporal horizon is the operational boundary defined directly from observable temporal accessibility.
+- The operational Temporal Horizon: the observer-relative accessibility boundary defined directly from observable temporal accessibility.
 
-- Standard black-hole ontology assumes isochrony. TEP drops that closure. The conventional reconstruction is no longer the unique reading of the same observations.
+- Non-unique GR-closed inverse mapping: the conventional black-hole reconstruction is not the unique reading of the same observations once the Isochrony Axiom is dropped.
 
-- Apparent compactness $\neq$ physical compression. The density $\rho_{\rm inferred} \sim M/(4\pi r^3/3)$ is an exterior-frame inference; the locally measured density need not reproduce it.
+- Fixed-Schwarzschild incompatibility in the defined conformal class: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed.
 
-- Passive temporal structure is incompatible with fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction.
+- Altered horizonless ringdown boundary condition: TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain; the late-time spectral problem is therefore not the GR black-hole spectral problem.
 
-- Four consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown.
-
-**Demonstrated — attainability proofs and consistency checks.**
+**Constructively demonstrated — attainability proofs and consistency checks.**
 
 - Regular geometry exists: the Hayward metric achieves finite Kretschmann, bounded areal radius, and Lorentzianity simultaneously (Section 5, Appendix K).
 
-- Dynamical coupling exists: the sGB coupling produces real scalar hair and real backreaction on the gravitational metric (Section 4, Appendix L).
+- Scalar hair and backreaction exist: the sGB coupling produces real scalar hair and real backreaction on the gravitational metric (Section 4, Appendix L).
 
-- Weak-field S2 recovers GR — a required consistency gate, not a null result (Section 9.4, Appendix J).
+- Finite-curvature matter metrics are attainable: the scalar-on-regular-background benchmark produces a regular point centre (Section 4, Appendix K).
 
-- Photon-region data do not entail a horizon ontology: horizon-scale images constrain the transfer field, not the boundary condition (Section 9.5, Appendix L).
+- Weak-field S2 recovers GR — a required consistency gate, not a null result (Section 9.3, Appendix J).
 
-**Next — the construction programme.**
+- Exterior and deep-transit benchmarks: the sGB shadow/ISCO shifts and the prescribed Hayward deep-transit eigenmodes isolate the geometric mechanism of the altered spectral problem (Sections 7–8, Appendices G, L).
 
-- The TEP-selected global field solution: which modified coupling dynamically produces the minimal temporal-well profile.
+**Decisive closure — the nonlinear selection problem.**
 
-- The full coupled characteristic system — tensor, scalar, and mixed sectors on the TEP-selected geometry.
+- One global TEP solution: solving the coupled Einstein–scalar–sGB system with the canonical matter coupling to obtain the minimal temporal-well profile.
 
-- The precise QNM spectrum. The structural prediction (longer damping, mode mixing, late-time structure) follows from the principle; the precise frequencies require the full coupled calculation.
+- Complete characteristics: the full coupled tensor, scalar, and mixed-sector perturbation system on the TEP-selected geometry.
 
-- The rotating solution: the slowly-rotating sGB calculation is an axisymmetric illustration, not the TEP-selected solution for a spinning source.
+- Raw multi-messenger inference: the non-isochronous refit of the same data GR already uses.
 
-- The raw non-isochronous multi-messenger refit of the same data GR already uses.
+- Measured phantom-mass sign: the joint photon–orbit–timing forward model that fixes $\mathcal S_a^3 \mathcal D_{\rm dyn}$ relative to $\mathcal T_P^2$.
 
-The distinction between what follows from the TEP principle and what requires explicit construction makes the framework more robust, not less: the conceptual claims cannot be dismissed by finding an issue in one calculation. Admissible strong-field temporal geometries exist. Which completion TEP selects is the construction programme — not a precondition for the temporal-well claim. The strongest route forward is: one action, one exterior coupling, one global solution, one coupled characteristic system, one observational likelihood, one phantom mass posterior.
+The distinction between what is derived from the TEP principle and what requires explicit construction makes the framework more robust, not less: the conceptual claims cannot be dismissed by finding an issue in one calculation. Bahrain fixes the governing principle, action structure, and global solution conditions. The nonlinear field equations select the realised temporal-well geometry and its observable spectrum. The remaining nonlinear integration does not decide whether the paradigm exists; it selects the unique quantitative realisation of the paradigm already fixed by TEP. The strongest route forward is: one action, one exterior coupling, one global solution, one coupled characteristic system, one observational likelihood, one phantom mass posterior.
 
 ## 9.2 Data as Examples
 
@@ -677,37 +700,39 @@ Existing data are not pillars holding up the theory. They are examples of the fr
 
 ## 9.3 S2: Weak-Field Consistency
 
-S2 orbits Sgr A* at pericentre $r \sim 1369\,R_s$ — far outside the deep temporal region. Consistency with GR at this scale is required, not disappointing. TEP is a strong-field theory; weak-field recovery is a passed consistency gate. The mass-bias sign equation (Section 2.8) establishes the positive sign direction for the mass-inflation branch at S2 pericentre, but the benchmark magnitude is $\sim 10^{-4}$, far below current precision. The TEP fit does not improve $\chi^2$ over GR; the coupling is consistent with zero at weak-field precision. The decisive test requires horizon-scale observations. The detailed 7-step pipeline, GR fit, and MCMC posterior are in Appendix J.
+S2 orbits Sgr A* at pericentre $r \sim 1369\,R_s$ — far outside the deep temporal region. Consistency with GR at this scale is required, not disappointing. TEP is a strong-field theory; weak-field recovery is a passed consistency gate. S2 validates weak-field recovery and the non-isochronous inference pipeline; it does not determine the horizon-scale Phantom Mass sign. The fitted coupling is consistent with zero at weak-field precision. The decisive test requires horizon-scale observations. The detailed 7-step pipeline, GR fit, and MCMC posterior are in Appendix J.
 
 ## 9.4 EHT: Photon-Region Constraint
 
-Horizon-scale images constrain how far the photon-region geometry can differ from the GR-calibrated exterior. They do not directly establish an event horizon or measure the local density and proper volume of the obscured region. The visibility-domain fit to EHT M87$^\ast$ and Sgr A$^\ast$ data bounds the regularisation scale; the detailed fit is in Appendix L. The epistemological point is that a horizon-scale image is a constraint on the photon-region transfer field, not a direct observation of an event horizon.
+Horizon-scale images constrain how far the photon-region geometry can differ from the GR-calibrated exterior. They do not directly establish an event horizon or measure the local density and proper volume of the obscured region. The visibility-domain fit to EHT M87$^\ast$ and Sgr A$^\ast$ data constrains deviations in the photon-region transfer model; the pipeline implementation and data products are documented in Appendix J. The epistemological point is that a horizon-scale image is a constraint on the photon-region transfer field, not a direct observation of an event horizon.
 
 ## 9.5 Gravitational Waves: The Strongest Test
 
-Replacing an absorbing horizon boundary with a continuous, strongly time-dilated region changes the ringdown boundary-value problem in principle. The structural prediction — longer effective damping, mode mixing, and late-time structure controlled by the temporal bottleneck — follows from the TEP principle and is independent of the specific coupling. Gravitational-wave ringdown is the strongest test because it directly probes the boundary condition that distinguishes a temporal well from a black hole.
+TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain. The late-time spectral problem is therefore not the GR black-hole spectral problem — this is the theory-level prediction, independent of the specific coupling. The altered spectrum is an unavoidable consequence; its specific form (longer or shorter damping, echoes or no resolvable echoes, weak or strong scalar–tensor mixing) depends on the geometry. Gravitational-wave ringdown is the strongest test because it directly probes the boundary condition that distinguishes a temporal well from a black hole.
 
 ## 9.6 The Unified Statement
 
-*Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.* On cosmological scales, the conformal volume element $V_{\rm eff} = A_{\rm clock}^3 a_m^3$ tends to zero while the matter-frame geometry does not collapse (Thika, v0.2); temporal evolution is interpreted as increasing spatial separation. Around extreme gravitational sources, temporal gradients are interpreted as spatial attraction, compression and causal capture. In both cases, TEP replaces apparent spatial dynamics with the observable consequences of a dynamical proper-time field.
+*Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.* On cosmological scales, the conformal volume element $V_{\rm eff} = A_{\rm clock}^3 a_m^3$ tends to zero while the matter-frame geometry does not collapse (Thika); temporal evolution is interpreted as increasing spatial separation. Around extreme gravitational sources, temporal gradients are interpreted as spatial attraction, compression and causal capture. In both cases, TEP replaces apparent spatial dynamics with the observable consequences of a dynamical proper-time field.
 
 The object is a regular region in which the rate of proper time differs radically from the exterior — not a drain or a singularity, but a continuous spatial domain with an extreme temporal gradient. Matter moving into that gradient appears, from the exterior, to accelerate inward, become increasingly redshifted, slow and fade, collect within a small apparent radius, and become inaccessible. But locally there is no mysterious suction. Matter follows its ordinary local trajectory through a continuous physical environment. The apparent force is analogous to refraction: trajectories curve when the propagation rate varies through a medium, not because matter is being pulled sideways.
 
 ## 9.7 Scope
 
-The settled, demonstrated, and next-stage claims are collected in Section 9.1. The construction programme — the TEP-selected global solution, the coupled characteristic system, the raw non-isochronous refit — is the next stage of the same programme, not a precondition for the temporal-well claim.
+The derived, demonstrated, and decisive-closure claims are collected in Section 9.1. Bahrain defines the nonlinear closure problem and the boundary conditions that uniquely identify the physical strong-field branch. The nonlinear integration selects the realised temporal-well geometry; it does not decide whether the paradigm exists.
 
 # 10. Conclusion
 
 The Temporal Equivalence Principle treats proper time as a dynamical field. This paper develops its strong-field consequence: a black hole, under TEP, is a temporal well — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. A continuous, extreme but finite gradient in proper-time rate is sufficient to produce the full observational phenomenology attributed to a black hole.
 
-The operational boundary is the temporal horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. The event horizon is a global causal construct inferred from the spacetime model, not an observable. Apparent compactness arises from exterior-frame reconstruction, not physical compression. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.
+The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. The event horizon is a global causal construct inferred from the spacetime model, not an observable. Apparent compactness arises from exterior-frame reconstruction, not physical compression. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.
 
-The temporal field cannot sit passively on fixed Schwarzschild geometry. Finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. Admissible strong-field temporal geometries exist. Which completion TEP selects is the construction programme — not a precondition for the temporal-well claim.
+The temporal field cannot sit passively on fixed Schwarzschild geometry. Finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed theory — not selecting among competing theories.
 
-Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Replacing an absorbing horizon boundary with a continuous, strongly time-dilated region changes the ringdown boundary-value problem in principle — longer effective damping, mode mixing, and late-time structure controlled by the temporal bottleneck. The structural prediction follows from the principle; the precise spectra require the full coupled calculation.
+Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain; the late-time spectral problem is therefore not the GR black-hole spectral problem. This is the theory-level prediction. An altered late-time spectrum is universal to the TEP boundary condition. The benchmark calculation on a prescribed Hayward background isolates the geometric mechanism: longer damping and amplified isospectrality breaking are the realised behaviour of the present deep-transit benchmark. The nonlinear TEP solution determines the physical spectrum.
 
 Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test. The decisive programme is the raw non-isochronous multi-messenger refit of the same data GR already uses.
+
+Black holes are not fundamental collapsed objects in TEP. They are the observational appearance of regular strong-field temporal wells reconstructed under exterior temporal standards. Bahrain derives the governing strong-field conditions, proves fixed Schwarzschild insufficient, identifies the required backreaction channel, constructs regular benchmarks, and defines the decisive observational tests. The remaining nonlinear integration does not decide whether the paradigm exists; it selects the unique quantitative realisation of the paradigm already fixed by TEP.
 
 *Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.* The standard black-hole object was never what the telescopes measured. The event horizon, the singularity, and the ultradense core are GR reconstructions from observational data under an implicit isochronous transfer model. Under TEP, the same observations are produced by a temporal well — and the conventional reconstruction is no longer the unique reading.
 
@@ -794,35 +819,39 @@ The first term is the familiar conformal rescaling; the second is the disformal 
 | Connection split | $\tilde\Gamma - \Gamma = $ conformal $+$ disformal |
 | Stress split | $T^{\mu\nu} = A^{-2}\tilde T^{\mu\nu} + $ disformal corrections |
 
-The disformal metric is invertible and Lorentzian in the exterior region ($F > 0$), with $\det\tilde g_{2D} < 0$ at every sampled radius. The pipeline-verified conditions $A^2 > 0$ and $A^2 - 2BX \neq 0$ hold at every sampled radius in the exterior. Inside horizons ($F < 0$), the disformal term $-A^2 F B(\phi')^2$ becomes positive and can oppose the conformal term; the determinant must be checked with the canonical formula. The interior hyperbolicity depends on the outcome of the interior integration (Section 4, Appendix K).
+The disformal metric is invertible and Lorentzian in the exterior region ($F > 0$), with $\det\tilde g_{2D} < 0$ at every sampled radius. The pipeline-verified conditions $A^2 > 0$ and $A^2 - 2BX \neq 0$ hold at every sampled radius in the exterior. Inside horizons ($F < 0$), the disformal term $-A^2 F B(\phi')^2$ becomes positive and can oppose the conformal term; the determinant must be checked with the canonical formula. The interior hyperbolicity depends on the outcome of the scalar-on-regular-background benchmark (Section 4, Appendix K).
 
-# Appendix B — Reduced Field Equations
+# Appendix B — Strong-Field EFT Action and Reduced Field Equations
 
-This appendix records the full radial system obtained by substituting the spherical ansatz of Section 3 into the TEP action, together with the parameter set that defines the strong-field solution integrated by the pipeline. The equations are written in geometrized units $G = c = 1$.
+This appendix records the strong-field EFT action, the reduced radial system obtained by substituting the spherical ansatz of Section 2.3, and the parameter set that defines the solutions integrated by the pipeline. The equations are written in geometrized units $G = c = 1$.
 
-## B.1 Action and Frame Assignment
+## B.1 Strong-Field EFT Action and Frame Assignment
 
-The complete action is
+The strong-field TEP action used by Bahrain is the canonical TEP action (Section 2.1) augmented by the leading curvature operator — the shift-symmetric scalar–Gauss–Bonnet coupling:
 
 \begin{equation} \label{eq:appB_1}
-S = \frac{1}{16\pi}\int d^4x\,\sqrt{-g}\,R[g] + \int d^4x\,\sqrt{-g}\,\left[-\tfrac12(\nabla\phi)^2 - V(\phi)\right] + S_m[\tilde g_{\mu\nu},\Psi_m],
+S_{\rm BH} = \int d^4x\,\sqrt{-g}\left[\frac{R[g]}{16\pi} - \tfrac12(\nabla\phi)^2 - V(\phi) + f(\phi)\,\mathcal{G}\right] + S_m[\tilde g_{\mu\nu},\Psi_m],
 \end{equation}
 
-with the disformal matter metric
+where $\mathcal{G} = R^2 - 4R_{\mu\nu}R^{\mu\nu} + R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}$ is the Gauss–Bonnet invariant, $f(\phi) = \eta\,\phi$ is the shift-symmetric coupling, and the matter metric is
 
 \begin{equation} \label{eq:appB_2}
 \tilde g_{\mu\nu} = A^2(\phi)\,g_{\mu\nu} + B(\phi)\,\nabla_\mu\phi\,\nabla_\nu\phi.
 \end{equation}
 
-Variation yields the geometric Einstein equations, the scalar equation, and the matter conservation law in the matter frame:
+The terms are organised as follows. The Einstein–Hilbert term $R/(16\pi)$, the canonical scalar kinetic $-\frac12(\nabla\phi)^2$, the potential $V(\phi)$, and the conformal–disformal matter coupling $S_m[\tilde g]$ constitute the fundamental TEP sector (Section 2.1). The scalar–Gauss–Bonnet coupling $f(\phi)\,\mathcal{G}$ is the leading curvature operator of the strong-field EFT: it is the lowest-dimension higher-curvature term that couples the temporal field to the gravitational geometry and supplies real backreaction. The regularising nonlinear coefficients — higher-order curvature couplings and potential terms that control the deep-region profile — are EFT corrections to this leading operator, selected by the joint requirements of global regularity and observation (Section 4).
+
+The dimensionless coupling is $\eta \equiv 3\alpha_{\rm GB}/M^2$; the mass-inflation branch uses $\eta = -0.1$ (Section 4, step_12 of the pipeline). In code units ($M=1$), $\alpha_{\rm GB} = \eta/3$. The perturbative parameter is $\zeta \equiv \alpha_{\rm GB}^2/M^4 = \eta^2/9 \ll 1$. The shift-symmetric Gauss–Bonnet coupling is $f(\phi)=\alpha_{\rm GB}\phi$, so $df/d\phi=\alpha_{\rm GB}$; the scalar equation therefore carries the source $-\alpha_{\rm GB}\mathcal G$. The potential is $V = 0$ for the sGB branch (massless scalar). The time-dependent generalisation $\phi(v,r) = qv + \psi(r)$ of Section 2.3 uses the same $f(\phi)$.
+
+Variation yields the geometric Einstein equations (now including the Gauss–Bonnet stress-energy contribution), the scalar equation, and the matter conservation law in the matter frame:
 
 \begin{equation} \label{eq:appB_3}
-G_{\mu\nu}[g] = 8\pi\,T_{\mu\nu}, \qquad \Box_g\phi = \frac{dV}{d\phi}, \qquad \tilde\nabla_\mu\tilde T^{\mu\nu} = 0.
+G_{\mu\nu}[g] = 8\pi\,T_{\mu\nu} + T_{\mu\nu}^{(\mathcal{G})}, \qquad \Box_g\phi = \frac{dV}{d\phi} - \frac{df}{d\phi}\,\mathcal{G} + \frac{d\ln A}{d\phi}\,T^{(\rm m)} + \frac{d\ln B}{d\phi}\,\mathcal{D}, \qquad \tilde\nabla_\mu\tilde T^{\mu\nu} = 0,
 \end{equation}
 
-The stress tensor $T_{\mu\nu}$ includes the conformal and disformal corrections derived in Appendix A.
+where $T_{\mu\nu}^{(\mathcal{G})}$ is the Gauss–Bonnet stress-energy tensor obtained by varying $f(\phi)\mathcal{G}$ with respect to $g^{\mu\nu}$, and $T_{\mu\nu}$ includes the conformal and disformal corrections derived in Appendix A. The scalar equation now contains the Gauss–Bonnet source term $-(df/d\phi)\,\mathcal{G} = -\alpha_{\rm GB}\,\mathcal{G}$. This is the term that sources the scalar in vacuum: the Gauss–Bonnet invariant is nonzero wherever curvature is present, so the scalar is sourced by geometric curvature even when the matter trace $T^{(\rm m)}$ vanishes. The conformal coupling $(d\ln A/d\phi)\,T^{(\rm m)}$ sources the scalar through the matter trace and vanishes in vacuum; it does not provide the geometric vacuum source. The disformal source $\mathcal{D}$ is proportional to $T^{\mu\nu}\nabla_\mu\phi\nabla_\nu\phi$ and is finite in vacuum.
 
-## B.2 Spherical Ansatz
+## B.2 Fixed-Background Prototype Ansatz
 
 Horizon-regular Eddington–Finkelstein form is used throughout,
 
@@ -838,15 +867,15 @@ A(\phi) = e^{\beta_A \phi}, \qquad B(\phi) = B_0\,|\phi|^{2}/(1 + |\phi|^{2})\,\
 
 where $S(r) = 1/(1 + e^{(r-r_h)/(\delta\, r_h)})$ is a smooth logistic activation, and $r_h = 2M$ is the geometric horizon. The exterior areal radius is $R(r) = r$, so that $F(r) = 1 - 2M/r$ recovers Schwarzschild exactly at large $r$.
 
-## B.3 Reduced Radial System
+## B.3 Schematic Prototype Equations
 
-Substituting the ansatz, the independent equations reduce to a coupled radial system for the six functions
+Substituting the ansatz, the schematic prototype is written in terms of the independent radial variables
 
 \begin{equation} \label{eq:appB_6}
-F(r), \qquad G(r), \qquad R(r), \qquad \psi(r) \equiv \phi'(r), \qquad A(\phi), \qquad B(\phi).
+F(r), \qquad G(r), \qquad R(r), \qquad \phi(r).
 \end{equation}
 
-The $vv$ and $vr$ Einstein components give two first-order constraints,
+The coupling functions $A(\phi)$ and $B(\phi)$ are evaluated on the solved field profile and are not independent dynamical variables. The $vv$ and $vr$ Einstein components give two first-order constraints,
 
 \begin{equation} \label{eq:appB_7}
 \frac{F'}{F} = \frac{2M}{r^2 F} - \frac{2}{r}\left(1 - \frac{1}{G^2}\right) + 8\pi\,\mathcal{S}_{vv}[A,B,\phi],
@@ -865,10 +894,10 @@ where $\mathcal{S}_{vv}$ and $\mathcal{S}_{vr}$ are the disformal source terms b
 The scalar wave equation reduces to
 
 \begin{equation} \label{eq:appB_10}
-\frac{1}{r^2}\frac{d}{dr}\left(r^2\,F\,\phi'\right) = \frac{dV}{d\phi} + \frac{d\ln A}{d\phi}\,T^{(\rm m)} + \frac{d\ln B}{d\phi}\,\mathcal{D}[X,\phi],
+\frac{1}{r^2}\frac{d}{dr}\left(r^2\,F\,\phi'\right) = \frac{dV}{d\phi} - \alpha_{\rm GB}\,\mathcal{G}[g] + \frac{d\ln A}{d\phi}\,T^{(\rm m)} + \frac{d\ln B}{d\phi}\,\mathcal{D}[X,\phi],
 \end{equation}
 
-where the last two terms are the conformal and disformal scalar charges. The disformal source $\mathcal{D}$ is proportional to $T^{\mu\nu}\nabla_\mu\phi\,\nabla_\nu\phi$ and finite in vacuum; for the vacuum solution integrated here it is the geometric curvature that sources the scalar through the conformal coupling.
+where the $-\alpha_{\rm GB}\,\mathcal{G}$ term is the Gauss–Bonnet geometric source, the $(d\ln A/d\phi)\,T^{(\rm m)}$ term is the conformal matter-trace source, and the $(d\ln B/d\phi)\,\mathcal{D}$ term is the disformal source. In vacuum ($T^{(\rm m)} = 0$), the scalar is sourced by the Gauss–Bonnet invariant: $\Box\phi = -\alpha_{\rm GB}\,\mathcal{G}$. For Schwarzschild, $\mathcal{G}_{\rm Schw} = 48M^2/r^6$, giving $\Box_{\rm Schw}\phi = -48\alpha_{\rm GB} M^2/r^6$. The conformal matter-trace source vanishes in vacuum; it is the Gauss–Bonnet coupling, not the conformal coupling, that provides the geometric vacuum source. This is the mechanism by which the scalar acquires hair around strong-field sources and evades the no-hair theorem (Section 4.2).
 
 ## B.4 Matching Conditions at the Geometric Horizon
 
@@ -876,9 +905,15 @@ The exterior Schwarzschild limit is approached smoothly at $r_h=2M$ by the logis
 
 ## B.5 Model Parameters
 
-The pipeline uses the dimensionless field $\phi=\Phi/M_*$ and geometrized units $G=c=1$, followed by the numerical normalization $M=1$. Thus radii and curve parameters are reported in $M$, curvature-squared diagnostics in $M^{-4}$, and three-volumes in $M^3$. $A$ and $\phi$ are dimensionless; $B_0=1$ denotes $B_0=1\,M^2$ in the implemented metric convention, so that $B\,\partial\phi\,\partial\phi$ is dimensionless. The conformal coupling is $A(\phi) = A_0\,e^{\beta_A \phi}$ with $\beta_A = -1$ frozen across all strong-field calculations; this corresponds to the Jakarta convention $A(\Phi) = \exp(\beta_A \Phi/M_{\rm Pl})$ with the identification $\phi = \Phi/M_*$ and $M_* = M_{\rm Pl}/|\beta_A|$. The weak-field corpus value $\beta \simeq -0.013$ (consistent with Cassini PPN-$\gamma$ bounds) connects to the strong-field value $\beta_A = -1$ through possible running with $\phi$ or temporal shear; that running is part of the action.
+The pipeline uses the dimensionless field $\phi=\Phi/M_*$ and geometrized units $G=c=1$, followed by the numerical normalization $M=1$. Thus radii and curve parameters are reported in $M$, curvature-squared diagnostics in $M^{-4}$, and three-volumes in $M^3$. $A$ and $\phi$ are dimensionless; $B_0=1$ denotes $B_0=1\,M^2$ in the implemented metric convention, so that $B\,\partial\phi\,\partial\phi$ is dimensionless. The conformal coupling is $A(\phi) = A_0\,e^{\beta_A \phi}$ with $\beta_A = -1$ (the dimensionless strong-field coupling $d\ln A/d\phi$) frozen across all strong-field calculations; this corresponds to the Jakarta convention $A(\Phi) = \exp(\beta_A \Phi/M_{\rm Pl})$ with the identification $\phi = \Phi/M_*$ and $M_* = M_{\rm Pl}/|\beta_A|$. The weak-field corpus value $\beta \simeq -0.013$ (the PPN coupling $d\ln A/d\Phi \cdot M_{\rm Pl}$, consistent with Cassini PPN-$\gamma$ bounds) is a different normalisation of the same coupling; the two are connected by running with $\phi$ or temporal shear, which is part of the action.
 
-The strong-field solution integrated by the pipeline is specified by the following parameter set:
+Two solution branches are integrated by the pipeline, both within the fixed strong-field EFT action of equation \eqref{eq:appB_1}:
+
+- **Fixed-background prototype** (step_01): the geometric metric is held fixed to Schwarzschild, and the scalar is prescribed as $\phi(r) = \phi_0\ln(r/r_h)\,S(r)$. This branch establishes the Schwarzschild incompatibility (Section 3) and validates the matter-metric signature/invertibility construction. It is not a coupled solution.
+
+- **sGB self-gravitating branch** (step_12): the scalar is solved from the sGB-sourced equation $\Box\phi = -\alpha_{\rm GB}\,\mathcal{G}$ on the Schwarzschild background, and the metric is corrected at $\mathcal{O}(\alpha_{\rm GB}^2/M^4)$ (Sotiriou \& Zhou 2014). In code units ($M=1$) this is $\mathcal{O}(\eta^2)$. This branch establishes scalar hair and real backreaction (Section 4.2). The scalar charge is $Q_s = 2\alpha_{\rm GB}/3$ and the scalar profile is $\phi(r) = (2\alpha_{\rm GB}/3)(1/r + M/r^2 + 4M^2/(3r^3))$.
+
+The parameter set for the fixed-background prototype is:
 
 | Parameter | Symbol | Value | Role |
 | --- | --- | --- | --- |
@@ -887,16 +922,26 @@ The strong-field solution integrated by the pipeline is specified by the followi
 | Conformal exponent | $\beta_A$ | $-1.0$ | controls $A(r)$ divergence in the interior |
 | Disformal horizon exponent | $\delta$ | $0.05$ | controls $B\to0$ approach at $r_h$ |
 | Disformal quartic width | $\sigma_B$ | $1.5$ | controls $B(\phi)$ suppression against violent Coulomb gradients |
-| Scalar amplitude | $\phi_0$ | $2.0$ | normalizes the scalar profile |
+| Scalar amplitude | $\phi_0$ | $2.0$ | normalizes the prescribed scalar profile |
 | Geometric horizon | $r_h$ | $2.0\,M$ | Schwarzschild radius |
+
+The additional parameter for the sGB self-gravitating branch is:
+
+| Parameter | Symbol | Value | Role |
+| --- | --- | --- | --- |
+| sGB coupling | $\alpha_{\rm GB}$ | $\eta M^2/3$ | shift-symmetric GB coupling $f(\phi)=\alpha_{\rm GB}\phi$; coefficient of $\mathcal{G}$ in the scalar equation; mass-inflation branch |
+| Dimensionless sGB coupling | $\eta$ | $-0.1$ | $\eta = 3\alpha_{\rm GB}/M^2$; mass-inflation branch |
+| Dimensionless coupling | $\eta$ | $3\alpha_{\rm GB}/M^2 = -0.1$ | mass-inflation branch |
+| Potential | $V(\phi)$ | $0$ | massless scalar in the sGB branch |
+| Scalar charge | $Q_s$ | $2\alpha_{\rm GB}/3$ ($2\eta/3$ when $M=1$) | Coulomb-like $1/r$ falloff |
 
 With $\beta_A=-1$ and $\phi_0=2.0$, $A(r)\sim(r/r_h)^{-2}$ in the deep interior, reaching $A\sim4.0\times10^{16}$ at the innermost sampled radius. The ultra-damped (quartic Gaussian) factor $B(\phi)=B_0|\phi|^2/(1+|\phi|^2)\exp(-\phi^4/(2\sigma_B^4))$ is suppressed by the quartic Gaussian envelope in the deep interior, driven below $10^{-300}$ at the innermost sampled radius. The conformal term $A^4$ dominates everywhere, so the determinant is strictly negative and the matter metric is globally Lorentzian with no boundary.
 
-The implementation is a prescribed-profile metric construction, not a closed six-function radial ODE integration. Its supported result is that the bounded conformal-disformal ansatz is asymptotically Schwarzschild and Lorentzian in the exterior ($\det\tilde g_{2D} < 0$ for $F > 0$). The $\phi_0 = 2$ fixed-Schwarzschild case has vanishing curvature ($\tilde K \to 0$) but the $r \to 0$ limit is an asymptotic spatially enlarged end ($\rho \to \infty$) with both null families at infinite affine parameter — not a regular point (Appendix E). The minimal temporal-well criteria are given in Section 6.3.
+The fixed-background prototype (step_01) is a prescribed-profile metric construction, not a closed six-function radial ODE integration. Its supported result is that the bounded conformal-disformal ansatz is asymptotically Schwarzschild and Lorentzian in the exterior ($\det\tilde g_{2D} < 0$ for $F > 0$). The $\phi_0 = 2$ fixed-Schwarzschild case has vanishing curvature ($\tilde K \to 0$) but the $r \to 0$ limit is an asymptotic spatially enlarged end ($\rho \to \infty$) with both null families at infinite affine parameter — not a regular point (Appendix E). The sGB self-gravitating branch (step_12) solves the scalar from the GB-sourced equation and corrects the metric at $\mathcal{O}(\eta^2)$; it establishes hair and backreaction but not a regular deep region (Section 4.2). The joint realisation — regular geometry, bounded matter-frame curvature, and dynamical scalar backreaction in one solution — is the nonlinear closure selected by the TEP action. The minimal temporal-well criteria are given in Section 6.3.
 
 # Appendix C — Strong-Field Asymptotic Expansion (the $\phi_0=2$ Case)
 
-This appendix derives the interior scaling of the metric functions, the physical radial distance, and the areal radius for the $\phi_0 = 2$ case (curvature-regular but spatially-enlarged; see Appendix D for the Schwarzschild incompatibility result that establishes why this case is not the final answer). All exponents and numerical values are taken directly from the pipeline integration of the reduced system in Appendix B.
+This appendix derives the interior scaling of the metric functions, the physical radial distance, and the areal radius for the $\phi_0 = 2$ case (curvature-regular but spatially-enlarged; see Appendix D for the Schwarzschild incompatibility result that establishes why this case does not satisfy the temporal-well criteria). All exponents and numerical values are taken directly from the pipeline integration of the reduced system in Appendix B.
 
 #### Context
 
@@ -1173,15 +1218,15 @@ $V_{\rm geom}\to0$ as $r\to0$, while the matter-frame interior volume element gr
 
 ### Proposition F.1
 
-The $\phi_0 = 2$ fixed-Schwarzschild configuration replaces the geometric zero-volume intuition with a strongly growing matter-frame interior volume element on a Lorentzian space for all $r > 0$. The areal radius diverges ($\rho \sim 1/r \to \infty$), confirming that this configuration is a spatially enlarged asymptotic end, not a bounded solution and not the final TEP solution. The Schwarzschild areal coordinate is not a direct measure of physical volume in TEP. A finite physical density claim requires an explicit stress-energy solution and is not asserted by the present diagnostic pipeline.
+The $\phi_0 = 2$ fixed-Schwarzschild configuration replaces the geometric zero-volume intuition with a strongly growing matter-frame interior volume element on a Lorentzian space for all $r > 0$. The areal radius diverges ($\rho \sim 1/r \to \infty$), confirming that this configuration is a spatially enlarged asymptotic end, not a bounded solution. The nonlinear TEP solution determines the physical interior volume. The Schwarzschild areal coordinate is not a direct measure of physical volume in TEP. A finite physical density claim requires an explicit stress-energy solution and is not asserted by the present diagnostic pipeline.
 
-# Appendix G — Scope of Gravitational Perturbations
+# Appendix G — Fixed-Schwarzschild Perturbation Baseline
 
-Canonical TEP distinguishes the geometric metric $g_{\mu\nu}$ from the matter metric $\tilde g_{\mu\nu}$. Gravitational waves propagate on $g_{\mu\nu}$. In the case analysed in this manuscript, the geometric metric is fixed at Schwarzschild; conformal and disformal factors in $\tilde g_{\mu\nu}$ therefore do not shift the gravitational Regge–Wheeler or Zerilli spectrum.
+This appendix records the perturbation calculation on the fixed-Schwarzschild geometric background — the first of three QNM calculations in this manuscript. The three are: **(1) Fixed-Schwarzschild baseline** (this appendix): the geometric metric is held at Schwarzschild; gravitational tensor QNMs are the GR baseline. **(2) Perturbative sGB exterior** (Appendix L): the Sotiriou–Zhou metric perturbation introduces scalar hair and backreaction; the full coupled axial operator requires derivation from the second variation of the action. **(3) Prescribed Hayward deep-transit model** (Section 7.2): a toy eigenvalue problem on a horizonless regular geometry, illustrating one realisation of the altered spectral problem.
 
 ## G.1 Geometric Tensor Equation
 
-Decomposing $h_{\mu\nu}$ into axial and polar spherical harmonics and Fourier transforming $\Psi(t,r)=e^{-i\omega t}\Psi(r)$ gives
+In the fixed-background limit, the geometric metric is Schwarzschild. Canonical TEP distinguishes the geometric metric $g_{\mu\nu}$ from the matter metric $\tilde g_{\mu\nu}$; gravitational waves propagate on $g_{\mu\nu}$. Conformal and disformal factors in $\tilde g_{\mu\nu}$ therefore do not shift the gravitational Regge–Wheeler or Zerilli spectrum. Decomposing $h_{\mu\nu}$ into axial and polar spherical harmonics and Fourier transforming $\Psi(t,r)=e^{-i\omega t}\Psi(r)$ gives
 
 \begin{equation} \label{eq:appG_1}
 \frac{d^2\Psi_i}{dr_*^2}+\left[\omega^2-V_i^{\rm Schw}(r)\right]\Psi_i=0,
@@ -1195,24 +1240,23 @@ The pipeline also evaluated surrogate radial functions constructed from the disf
 
 ## G.3 Ringdown Spectrum
 
-The gravitational QNMs of this non-spinning fixed-background limit are the Schwarzschild GR baseline. The previously quoted $0.421-0.099\,i$ frequency and 5.6% shift arose from the matter-metric surrogate rather than the geometric gravitational equation and are not gravitational QNM predictions. The coupled solution (Section 4) introduces scalar-led and mixed scalar–tensor modes with coupling-specific QNM shifts of sub-percent to percent-level.
+The gravitational QNMs of this non-spinning fixed-background limit are the Schwarzschild GR baseline. The previously quoted $0.421-0.099\,i$ frequency and 5.6% shift arose from the matter-metric surrogate rather than the geometric gravitational equation and are not gravitational QNM predictions. The coupled solution (Section 4) introduces scalar-led and mixed modes with coupling-specific QNM shifts; the full coupled axial operator requires derivation from the second variation of the action (Appendix L).
 
 ## G.4 Stability and Echo Scope
 
-No quadratic action or complete coupled perturbation system was analysed. Background regularity and the shape of a surrogate matter-metric potential are insufficient to prove absence of ghosts, gradient instabilities, or growing scalar and mixed modes. They are likewise insufficient to exclude gravitational-wave echoes. An echo statement requires geometric perturbation evolution with physically specified inner boundary conditions and a waveform-level analysis; those calculations were not performed.
+No complete coupled perturbation system was analysed on this fixed background. Background regularity and the shape of a surrogate matter-metric potential are insufficient to prove absence of ghosts, gradient instabilities, or growing scalar and mixed modes. They are likewise insufficient to predict or exclude gravitational-wave echoes. An echo statement requires geometric perturbation evolution with physically specified inner boundary conditions and a waveform-level analysis; those calculations were not performed on this background. The prescribed Hayward deep-transit model (Section 7.2) addresses a different geometry.
 
 ## G.5 Summary
 
-| Question | Result for the fixed-background limit |
+| Question | Result for the fixed-Schwarzschild baseline |
 | --- | --- |
-| GW propagation metric | Geometric $g_{\mu\nu}$ |
-| Fixed geometric background | Schwarzschild |
-| Gravitational tensor QNMs | Geometric GR baseline; no TEP shift |
-| Scalar-led and mixed modes | Computed in the coupled solution (Section 4): sub-percent to percent-level shifts |
-| Full linear stability | Background regularity verified; coupled-solution stability is open (Section 7) |
-| Gravitational-wave echoes | Neither predicted nor excluded |
+| GW propagation metric | Geometric $g_{\mu\nu}$ = Schwarzschild |
+| Gravitational tensor QNMs | GR baseline; no TEP shift |
+| Scalar-led and mixed modes | Computed in the perturbative sGB exterior (Appendix L); full axial operator open |
+| Full linear stability | Background regularity verified; coupled-system stability is open (Section 7) |
+| Gravitational-wave echoes | Neither predicted nor excluded on this background |
 
-Disformal matter-metric diagnostics must not be interpreted as gravitational QNMs. For the fixed Schwarzschild geometric metric, gravitational ringdown remains the GR baseline.
+This appendix covers the fixed-Schwarzschild baseline only. The perturbative sGB exterior (Appendix L) and the prescribed Hayward deep-transit model (Section 7.2) are separate calculations on different geometries. The three must not be conflated.
 
 # Appendix H — Ray Tracing and Orbital Mechanics
 
@@ -1321,11 +1365,11 @@ Gravitational waves propagate on the geometric metric, not on the matter metric 
 | GW150914 $f_{220}$ (non-spinning WKB diagnostic) | $206.5\,$Hz | Schwarzschild baseline (0% shift) |
 | GW150914 $f_{220}$ (Kerr, $\chi=0.67$) | $267\,$Hz | Kerr baseline; measured $\sim 250\,$Hz |
 
-The exterior orbital structure (photon sphere at $3M$, ISCO at $6M$, 3:2 QPO at $10.8M$) is identical to Schwarzschild. EHT shadows agree at $0.77\sigma$ (M87*) and $0.65\sigma$ (Sgr A*). The gravitational QNM baseline is the Schwarzschild spectrum for non-spinning remnants; for GW150914's spinning remnant ($\chi=0.67$) the appropriate baseline is Kerr, giving $f_{220}\approx 267\,$Hz (step_14) versus the measured $\sim 250\,$Hz. The non-spinning WKB diagnostic $f_{220}=206.5\,$Hz (step_05, $\omega_R^{\rm WKB}=0.3988$) is not the physical prediction for a spinning remnant and carries $\sim 7\%$ WKB systematic error relative to the exact Schwarzschild value $\omega_R^{\rm exact}=0.3737$. There is no coupling-specific ringdown frequency shift in this fixed-background limit.
+The exterior orbital structure (photon sphere at $3M$, ISCO at $6M$, 3:2 QPO at $10.8M$) is identical to Schwarzschild. EHT shadows agree at $0.77\sigma$ (M87*) and $0.65\sigma$ (Sgr A*). The gravitational QNM baseline is the Schwarzschild spectrum for non-spinning remnants; for GW150914's spinning remnant ($\chi=0.67$) the appropriate baseline is Kerr, giving $f_{220}\approx 267\,$Hz versus the measured $\sim 250\,$Hz. The non-spinning WKB diagnostic $f_{220}=206.5\,$Hz ($\omega_R^{\rm WKB}=0.3988$) is not the physical prediction for a spinning remnant and carries $\sim 7\%$ WKB systematic error relative to the exact Schwarzschild value $\omega_R^{\rm exact}=0.3737$. There is no coupling-specific ringdown frequency shift in this fixed-background limit.
 
 # Appendix I — Comparison Table
 
-This appendix provides a detailed technical comparison of TEP-BH with the major competing models of singularity resolution. The TEP-BH column is split into four sub-columns reflecting the distinct calculations performed in this paper: the fixed-Schwarzschild theorem case, the Hayward validation benchmark, the linear sGB exterior candidate, and the regularised sGB-coupled interior (now solved). These must not be combined into a single "TEP" column, because they represent different geometries with different properties.
+This appendix provides a detailed technical comparison of TEP-BH with the major competing models of singularity resolution. The TEP-BH column is split into four sub-columns reflecting the distinct calculations performed in this paper: the fixed-Schwarzschild theorem case, the Hayward validation benchmark, the linear sGB exterior candidate, and the scalar-on-regular-background benchmark. These must not be combined into a single "TEP" column, because they represent different geometries with different properties.
 
 ## I.1 Detailed Comparison
 
@@ -1336,7 +1380,7 @@ This appendix provides a detailed technical comparison of TEP-BH with the major 
 | Central curvature | $K\to\infty$ | Finite (by construction) | Vanishes ($\tilde K \sim 39r^2/16 \to 0$) but areal radius diverges | Finite ($\tilde K \to 8/r_h^4$) but asymptotic end, not regular centre | Likely divergent at finite-area singularity (literature) | Finite: $K(0) = 27.1$ for $g=1.1M$ |
 | Geodesic completeness | No (incomplete at $r=0$) | Model-dependent | Both null families infinite affine ($\tilde\lambda \sim \int r^{-4}\,dr \to \infty$); asymptotic end | Both null families infinite affine ($\tilde\lambda \sim \int r^{-2}\,dr \to \infty$); asymptotic end | Not yet computed; likely incomplete at finite-area singularity | Both families finite affine; regular point centre, extendable geodesics |
 | Horizon structure | Event horizon at $r=2M$ | Event + inner horizon | Schwarzschild horizon (fixed) | Hayward outer + inner horizon | sGB apparent horizon (perturbative artifact) | Temporal well: $\tilde N_{\min} = 0.211$ at $r \approx 1.41M$, no finite causal horizon |
-| temporal horizon | — | — | Not established (theorem case only) | Not established ($\theta_+=0$ is constant-area property, not temporal freeze) | Not yet computed | Operational: $\mathcal{Z}_{\max} \sim N_o/\tilde N_{\min} \sim 4.7$ at $r \approx 1.41M$; $\tilde N > 0$ everywhere |
+| Temporal Horizon | — | — | Not established (theorem case only) | Not established ($\theta_+=0$ is constant-area property, not temporal freeze) | Not yet computed | Operational: $\mathcal{Z}_{\max} \sim N_o/\tilde N_{\min} \sim 4.7$ at $r \approx 1.41M$; $\tilde N > 0$ everywhere |
 | Surface / junction | None | None (smooth) | None (but asymptotic end) | None (but asymptotic end) | Not yet determined | None (smooth, regular point centre) |
 | Lorentzianity | Yes | Yes | Yes for all $r > 0$ ($\det = A^4 \det g < 0$); limit $r=0$ not a regular point | Yes in exterior ($F > 0$); inside horizon must check canonical determinant | Yes in exterior ($F > 0$) | Yes: $\det\tilde g_{2D} < 0$ throughout the integrated domain |
 | Observable shifts | — | — | — | — | Not yet derived (conformal null invariance; disformal circular orbit; tensor characteristic metric all require derivation) | Photons on $\tilde g$, GWs on $\mathcal{G}_{\rm tensor}$; shadow vs ringdown consistency (target) |
@@ -1361,7 +1405,7 @@ The established results in this paper are:
 
 - The minimal temporal-well criteria: $0 < N(r)$ everywhere with $N_{\min} \ll N_o$, regular Lorentzian geometry, no observer-independent one-way boundary, extreme external redshift (Section 6.3).
 
-- The regularised sGB-coupled interior solution with a regular point centre, integrated to $r = 10^{-8}M$ for $\eta=-0.1$ (Section 4, Appendix K).
+- The scalar-on-regular-background benchmark with a regular point centre, integrated to $r = 10^{-8}M$ for $\eta=-0.1$ (Section 4, Appendix K).
 
 The remaining target results are:
 
@@ -1377,64 +1421,64 @@ The comparison table above distinguishes these explicitly. Earlier versions of t
 
 # Appendix J — Reproducibility
 
-Every numerical result quoted in this paper is produced by the automated pipeline, which downloads or verifies the primary data, constructs the prescribed matter metric, computes the diagnostics, and writes the comparison tables. Each clean run writes SHA-256 checksums for the result files. Checksums prove that the result files were not altered after generation; they do not prove that the calculations are correct. Three categories of calculation require particular care in scalar–tensor perturbation theory and are not cited as quantitative evidence in this manuscript: (i) the nonlinear exterior mass-function evolution, which requires a consistent scalar charge and sign convention matched to published sGB solutions; (ii) surrogate WKB QNM frequencies, which require the perturbation potential to be derived from the second variation of the action (not from inserting modified background functions into a GR potential formula); and (iii) matter-frame observables, which must be computed on the matter metric $\tilde g$ rather than the geometric metric $g$. The fixed-background limit is globally Lorentzian for all $r > 0$; the coupled solution is Lorentzian in the exterior ($F > 0$). The deep-interior Lorentzianity of the coupled solution depends on the interior integration (Section 4, Appendix K).
+Every numerical result quoted in this paper is produced by the automated pipeline, which downloads or verifies the primary data, constructs the prescribed matter metric, computes the diagnostics, and writes the comparison tables. Each clean run writes SHA-256 checksums for the result files. Checksums prove that the result files were not altered after generation; they do not prove that the calculations are correct. Three categories of calculation require particular care in scalar–tensor perturbation theory and are not cited as quantitative evidence in this manuscript: (i) the nonlinear exterior mass-function evolution, which requires a consistent scalar charge and sign convention matched to published sGB solutions; (ii) surrogate WKB QNM frequencies, which require the perturbation potential to be derived from the second variation of the action (not from inserting modified background functions into a GR potential formula); and (iii) matter-frame observables, which must be computed on the matter metric $\tilde g$ rather than the geometric metric $g$. The fixed-background limit is globally Lorentzian for all $r > 0$; the coupled solution is Lorentzian in the exterior ($F > 0$). The deep-interior Lorentzianity of the scalar-on-regular-background benchmark depends on the interior integration (Section 4, Appendix K).
 
 ## J.1 Pipeline Architecture
 
-The pipeline consists of 50 steps (`step_00` through `step_49`), each implemented as an independent Python module in `scripts/steps/` and orchestrated by `scripts/run_pipeline.py`. Steps 00–11 implement the fixed-background limit (Section 3); steps 12–15 implement the coupled solution (Section 4); steps 16–41 are derivation scripts (geometry, corrected observables, QNM solvers, interior, phantom mass, Kerr-sGB, GW confrontations); step 42 generates figures; steps 43–49 implement the S-star inference pipeline (Section 9, Appendix J). The steps are:
+The pipeline consists of 50 steps (`step_00` through `step_49`), each implemented as an independent Python module. Steps 00–11 implement the fixed-background limit (Section 3); steps 12–15 implement the coupled solution (Section 4); steps 16–41 are derivation scripts (geometry, corrected observables, QNM solvers, interior, phantom mass, Kerr-sGB, GW confrontations); step 42 generates figures; steps 43–49 implement the S-star inference pipeline (Section 9, Appendix J). The steps are:
 
-| Step | Module | Output | Description |
+| Step | Inference Step | Output | Description |
 | --- | --- | --- | --- |
-| step_00 | step_00_data_download.py | data/raw/, data/processed/ | Download EHT M87* visibilities, compile measurement tables |
-| step_01 | step_01_field_equations.py | step_01_field_equations.{json,csv} | Disformal metric, curvature invariants, geodesic completeness, physical volume/density |
-| step_02 | step_02_perturbations.py | step_02_perturbations.{json,csv} | Regge–Wheeler/Zerilli potentials, QNMs, echo check |
-| step_03 | step_03_raytracing.py | step_03_raytracing.{json,csv} | Photon sphere, shadow angular diameter, ISCO, EHT comparison |
-| step_04 | step_04_accretion.py | step_04_accretion.{json,csv} | Circular geodesics, epicyclic frequencies, radiative efficiency, redshift, QPO |
-| step_05 | step_05_observational_constraints.py | step_05_observational_constraints.{json,csv} | Chi-squared comparison of TEP predictions against EHT and LIGO |
-| step_06 | step_06_gw190521_mass_gap.py | step_06_gw190521_mass_gap.{json,csv} | GW190521 mass gap: LIGO posterior analysis (TEP exterior-null) |
-| step_07 | step_07_qpo_frequency_lock.py | step_07_qpo_frequency_lock.{json,csv} | QPO frequency lock: 3:2 epicyclic resonance ratios (Schwarzschild baseline) |
-| step_08 | step_08_jwst_early_smbhs.py | step_08_jwst_early_smbhs.{json,csv} | JWST early SMBHs: Eddington-limited growth envelope from stellar seeds |
-| step_09 | step_09_spin_bias.py | step_09_spin_bias.{json,csv} | Over-maximal spin bias: observed spin distribution (TEP exterior-null) |
-| step_10 | step_10_tde_missing_flares.py | step_10_tde_missing_flares.{json,csv} | TDE missing flares: sub-Eddington luminosity survey (TEP exterior-null) |
-| step_11 | step_11_eht_polarization.py | step_11_eht_polarization.{json,csv} | EHT polarization: birefringence check (TEP exterior-null) |
-| step_12 | step_12_self_gravitating.py | step_12_self_gravitating.{json,csv} | sGB metric corrections, scalar profile, exterior observables (shadow, ISCO, QNM), $\eta$-scan, GW150914 projection (Section 4) |
-| step_13 | step_13_scalar_perturbations.py | step_13_scalar_perturbations.{json,csv} | Scalar-led, axial, and polar QNM channels; isospectrality breaking; deep-transit analysis (Section 7) |
-| step_14 | step_14_kerr_tep.py | step_14_kerr_tep.{json,csv} | Kerr–TEP shadow and ISCO spin scan; frame-dragging cancellation; GW150914 Kerr ringdown comparison (Section 4) |
-| step_15 | step_15_dynamical_signatures.py | step_15_dynamical_signatures.{json,csv} | PPN parameters, $-1$PN scalar dipole radiation, $c_T = 1$ on the Schwarzschild background, combined $\eta$ constraints (Section 4) |
-| step_16 | step_16_exact_geometry.py | step_16_exact_geometry.{json,csv} | Exact curvature invariants, determinant, inverse metric, areal radius, proper radial distance |
-| step_17 | step_17_null_expansions.py | step_17_null_expansions.json | Null expansions $\theta_\pm$ for TEP matter metric on Schwarzschild and Hayward backgrounds |
-| step_18 | step_18_observer_redshift.py | step_18_observer_redshift.{json,csv} | Gravitational redshift for static observers at different radii |
-| step_19 | step_19_observer_frequency_transfer.py | step_19_observer_frequency_transfer.{json,csv} | Invariant emitter-receiver frequency transfer factor $\mathcal{Z}$ (Section 6) |
-| step_20 | step_20_corrected_observables.py | step_20_corrected_observables.json | Corrected exterior observables (shadow, ISCO, frequency transfer) under fixed-ADM normalization (Appendix L) |
-| step_21 | step_21_cT_derivation.py | step_21_cT_derivation.json | Tensor propagation speed $c_T$ from principal symbol of coupled Einstein-sGB equations |
-| step_22 | step_22_quadratic_action.py | step_22_quadratic_action.json | Exact quadratic action for axial, polar, and scalar perturbation channels (Section 7) |
-| step_23 | step_23_characteristic_matrices.py | step_23_characteristic_matrices.json | Tensor characteristic matrices and principal symbol analysis |
-| step_24 | step_24_conformal_invariance_check.py | step_24_conformal_invariance_check.json | Conformal invariance verification for null geodesics |
-| step_25 | step_25_qnm_solver.py | step_25_qnm_solver.json | Perturbative sGB QNM solver: axial, polar-led, scalar-led modes |
-| step_26 | step_26_coupled_spectral_solver.py | step_26_coupled_spectral_solver.json | Coupled spectral solver for polar-scalar mixed modes |
-| step_27 | step_27_qnm_horizon_branch.py | step_27_qnm_horizon_branch.json | Horizon-bearing sGB QNM: Schwarzschild base + Sotiriou-Zhou $\mathcal{O}(\eta^2)$ correction (Section 7.3) |
-| step_28 | step_28_qnm_validation.py | step_28_qnm_validation.json | QNM spectrum validation against published sGB results (Bryant et al. 2021; Blazquez-Salcedo et al. 2016) (Section 7.3) |
-| step_29 | step_29_matrix_leaver.py | step_29_matrix_leaver.json | Full coupled $2\times 2$ matrix continued-fraction QNM solver with regular inner boundary; three deep-transit modes (Section 7.3) |
-| step_30 | step_30_taylor_recurrence.py | step_30_taylor_recurrence.json | Exact Taylor-series recurrence for background potentials and scalar field coefficients near the origin (Section 7.3) |
-| step_31 | step_31_frobenius_analysis.py | step_31_frobenius_analysis.json | Frobenius regularity analysis at the temporal minimum: $r^{\ell+1}$ regularity, finite tortoise, regularised polar–scalar mixing (Section 7.3) |
-| step_32 | step_32_interior_integration.py | step_32_interior_integration.json | Numerical integration of sGB scalar field on Hayward-class regular background |
-| step_33 | step_33_interior_analysis.py | step_33_interior_analysis.json | Interior analysis: regularity checks, Lorentzian signature, lapse minimum |
-| step_34 | step_34_solve_interior.py | step_34_solve_interior.json | TEP interior solver: sGB scalar on Hayward background, matter metric construction (Section 4, Appendix K) |
-| step_35 | step_35_mass_bias_sign.py | step_35_mass_bias_sign.json | Mass-bias sign equation derivation (Section 2.8) |
-| step_36 | step_36_phantom_mass_critical.py | step_36_phantom_mass_critical.json | Horizon-scale phantom mass: critical $g$ analysis, EHT M87$^\ast$ and Sgr A$^\ast$ shadow comparison (Section 8.2, Appendix L) |
-| step_37 | step_37_phantom_mass_raytrace.py | step_37_phantom_mass_raytrace.json | Phantom mass null geodesic ray-tracing (Section 8.2, Appendix L) |
-| step_38 | step_38_phantom_mass_scan.py | step_38_phantom_mass_scan.json | Phantom mass parameter scan (Section 8.2, Appendix L) |
-| step_39 | step_39_eht_visibility_fit.py | step_39_eht_visibility_fit.json | EHT visibility-domain joint inference: direct fit of TEP shadow model to calibrated visibilities (Section 9.4, Appendix L) |
-| step_40 | step_40_kerr_sgb_true.py | step_40_kerr_sgb_true.json | True rotating sGB shadow and QNM from Delgado et al. (2020) slowly-rotating solution (Section 8.5) |
-| step_41 | step_41_gw250114_confrontation.py | step_41_gw250114_confrontation.json | GW250114 corrected confrontation with TEP observables |
-| step_42 | step_42_generate_figures.py | results/figures/ | Figure generation (10 figures from paper plan) |
-| step_43 | step_43_sstar_data.py | step_43_sstar_data.json | S-star data acquisition: 145 astrometric + 44 radial-velocity epochs for S2 (Section 9) |
-| step_44 | step_44_gr_fit.py | step_44_gr_fit.json | Conventional GR fit to S-star data (Section 9) |
-| step_45 | step_45_mass_bias.py | step_45_mass_bias.json | Mass-bias sign from GR fit residuals (Section 9) |
-| step_46 | step_46_tep_transfer.py | step_46_tep_transfer.json | TEP transfer-function fit with $\eta_{\rm TEP}$ as free parameter (Section 9) |
-| step_47 | step_47_joint_forward.py | step_47_joint_forward.json | Joint forward-model: composition vs calibration separation, $\mathcal{C}_V$ diagnostic (Section 9) |
-| step_48 | step_48_likelihood.py | step_48_likelihood.json | Formal likelihood comparison: Bayes factor, BIC, AIC, Wilks (Section 9) |
-| step_49 | step_49_posterior.py | step_49_posterior.json | Phantom mass posterior via MCMC (Section 9) |
+| step_00 | step_00_data_download | data/raw/, data/processed/ | Download EHT M87* visibilities, compile measurement tables |
+| step_01 | step_01_field_equations | step_01_field_equations.{json,csv} | Disformal metric, curvature invariants, geodesic completeness, physical volume/density |
+| step_02 | step_02_perturbations | step_02_perturbations.{json,csv} | Regge–Wheeler/Zerilli potentials, QNMs, echo check |
+| step_03 | step_03_raytracing | step_03_raytracing.{json,csv} | Photon sphere, shadow angular diameter, ISCO, EHT comparison |
+| step_04 | step_04_accretion | step_04_accretion.{json,csv} | Circular geodesics, epicyclic frequencies, radiative efficiency, redshift, QPO |
+| step_05 | step_05_observational_constraints | step_05_observational_constraints.{json,csv} | Chi-squared comparison of TEP predictions against EHT and LIGO |
+| step_06 | step_06_gw190521_mass_gap | step_06_gw190521_mass_gap.{json,csv} | GW190521 mass gap: LIGO posterior analysis (TEP exterior-null) |
+| step_07 | step_07_qpo_frequency_lock | step_07_qpo_frequency_lock.{json,csv} | QPO frequency lock: 3:2 epicyclic resonance ratios (Schwarzschild baseline) |
+| step_08 | step_08_jwst_early_smbhs | step_08_jwst_early_smbhs.{json,csv} | JWST early SMBHs: Eddington-limited growth envelope from stellar seeds |
+| step_09 | step_09_spin_bias | step_09_spin_bias.{json,csv} | Over-maximal spin bias: observed spin distribution (TEP exterior-null) |
+| step_10 | step_10_tde_missing_flares | step_10_tde_missing_flares.{json,csv} | TDE missing flares: sub-Eddington luminosity survey (TEP exterior-null) |
+| step_11 | step_11_eht_polarization | step_11_eht_polarization.{json,csv} | EHT polarization: birefringence check (TEP exterior-null) |
+| step_12 | step_12_self_gravitating | step_12_self_gravitating.{json,csv} | sGB metric corrections, scalar profile, exterior observables (shadow, ISCO, QNM), $\eta$-scan, GW150914 projection (Section 4) |
+| step_13 | step_13_scalar_perturbations | step_13_scalar_perturbations.{json,csv} | Scalar-led, axial, and polar QNM channels; isospectrality breaking; deep-transit analysis (Section 7) |
+| step_14 | step_14_kerr_tep | step_14_kerr_tep.{json,csv} | Kerr–TEP shadow and ISCO spin scan; frame-dragging cancellation; GW150914 Kerr ringdown comparison (Section 4) |
+| step_15 | step_15_dynamical_signatures | step_15_dynamical_signatures.{json,csv} | PPN parameters, $-1$PN scalar dipole radiation, $c_T = 1$ on the Schwarzschild background, combined $\eta$ constraints (Section 4) |
+| step_16 | step_16_exact_geometry | step_16_exact_geometry.{json,csv} | Exact curvature invariants, determinant, inverse metric, areal radius, proper radial distance |
+| step_17 | step_17_null_expansions | step_17_null_expansions.json | Null expansions $\theta_\pm$ for TEP matter metric on Schwarzschild and Hayward backgrounds |
+| step_18 | step_18_observer_redshift | step_18_observer_redshift.{json,csv} | Gravitational redshift for static observers at different radii |
+| step_19 | step_19_observer_frequency_transfer | step_19_observer_frequency_transfer.{json,csv} | Invariant emitter-receiver frequency transfer factor $\mathcal{Z}$ (Section 6) |
+| step_20 | step_20_corrected_observables | step_20_corrected_observables.json | Corrected exterior observables (shadow, ISCO, frequency transfer) under fixed-ADM normalization (Appendix L) |
+| step_21 | step_21_cT_derivation | step_21_cT_derivation.json | Tensor propagation speed $c_T$ from principal symbol of coupled Einstein-sGB equations |
+| step_22 | step_22_quadratic_action | step_22_quadratic_action.json | Exact quadratic action for axial, polar, and scalar perturbation channels (Section 7) |
+| step_23 | step_23_characteristic_matrices | step_23_characteristic_matrices.json | Tensor characteristic matrices and principal symbol analysis |
+| step_24 | step_24_conformal_invariance_check | step_24_conformal_invariance_check.json | Conformal invariance verification for null geodesics |
+| step_25 | step_25_qnm_solver | step_25_qnm_solver.json | Perturbative sGB QNM solver: axial, polar-led, scalar-led modes |
+| step_26 | step_26_coupled_spectral_solver | step_26_coupled_spectral_solver.json | Coupled spectral solver for polar-scalar mixed modes |
+| step_27 | step_27_qnm_horizon_branch | step_27_qnm_horizon_branch.json | Horizon-bearing sGB QNM: Schwarzschild base + Sotiriou-Zhou $\mathcal{O}(\eta^2)$ correction (Section 7.3) |
+| step_28 | step_28_qnm_validation | step_28_qnm_validation.json | QNM spectrum validation against published sGB results (Bryant et al. 2021; Blazquez-Salcedo et al. 2016) (Section 7.3) |
+| step_29 | step_29_matrix_leaver | step_29_matrix_leaver.json | Full coupled $2\times 2$ matrix continued-fraction QNM solver with regular inner boundary; three deep-transit modes (Section 7.3) |
+| step_30 | step_30_taylor_recurrence | step_30_taylor_recurrence.json | Exact Taylor-series recurrence for background potentials and scalar field coefficients near the origin (Section 7.3) |
+| step_31 | step_31_frobenius_analysis | step_31_frobenius_analysis.json | Frobenius regularity analysis at the temporal minimum: $r^{\ell+1}$ regularity, finite tortoise, regularised polar–scalar mixing (Section 7.3) |
+| step_32 | step_32_interior_integration | step_32_interior_integration.json | Numerical integration of sGB scalar field on Hayward-class regular background |
+| step_33 | step_33_interior_analysis | step_33_interior_analysis.json | Interior analysis: regularity checks, Lorentzian signature, lapse minimum |
+| step_34 | step_34_solve_interior | step_34_solve_interior.json | TEP interior solver: sGB scalar on Hayward background, matter metric construction (Section 4, Appendix K) |
+| step_35 | step_35_mass_bias_sign | step_35_mass_bias_sign.json | Mass-bias sign equation derivation (Section 2.8) |
+| step_36 | step_36_phantom_mass_critical | step_36_phantom_mass_critical.json | Horizon-scale phantom mass: critical $g$ analysis, EHT M87$^\ast$ and Sgr A$^\ast$ shadow comparison (Section 8.2) |
+| step_37 | step_37_phantom_mass_raytrace | step_37_phantom_mass_raytrace.json | phantom mass null geodesic ray-tracing (Section 8.2) |
+| step_38 | step_38_phantom_mass_scan | step_38_phantom_mass_scan.json | phantom mass parameter scan (Section 8.2) |
+| step_39 | step_39_eht_visibility_fit | step_39_eht_visibility_fit.json | EHT visibility-domain joint inference: direct fit of TEP shadow model to calibrated visibilities (Section 9.4) |
+| step_40 | step_40_kerr_sgb_true | step_40_kerr_sgb_true.json | True rotating sGB shadow and QNM from Delgado et al. (2020) slowly-rotating solution (Section 8.5) |
+| step_41 | step_41_gw250114_confrontation | step_41_gw250114_confrontation.json | GW250114 corrected confrontation with TEP observables |
+| step_42 | step_42_generate_figures | results/figures/ | Figure generation (10 figures from paper plan) |
+| step_43 | step_43_sstar_data | step_43_sstar_data.json | S-star data acquisition: 145 astrometric + 44 radial-velocity epochs for S2 (Section 9) |
+| step_44 | step_44_gr_fit | step_44_gr_fit.json | Conventional GR fit to S-star data (Section 9) |
+| step_45 | step_45_mass_bias | step_45_mass_bias.json | Initial mass-bias sign evaluation from GR fit residuals (Section 9) |
+| step_46 | step_46_tep_transfer | step_46_tep_transfer.json | TEP transfer-function fit with $\eta_{\rm TEP}$ as free parameter (Section 9) |
+| step_47 | step_47_joint_forward | step_47_joint_forward.json | Joint forward-model: composition vs calibration separation, $\mathcal{C}_V$ diagnostic (Section 9) |
+| step_48 | step_48_likelihood | step_48_likelihood.json | Formal likelihood comparison: Bayes factor, BIC, AIC, Wilks (Section 9) |
+| step_49 | step_49_posterior | step_49_posterior.json | phantom mass posterior via MCMC (Section 9) |
 
 All calculations use the unified parameter set: $B_0 = 1.0$, $M = 1.0$, $\beta_A = -1.0$, $n_B = 2.0$, $\delta = 0.05$, $\sigma_B = 1.5$, $r_h = 2.0$, with the quartic-damped disformal coupling $B(\phi) = B_0\,|\phi|^{n_B}/(1 + |\phi|^{n_B})\,\exp(-\phi^4/2\sigma_B^4)$. The conformal exponent $\beta_A = -1$ is frozen across all calculations — the analysis of Section 3, sGB exterior, and the target global solution — consistent with the wider TEP corpus weak-field value ($\beta \simeq -0.013$, with $\beta_A = -1$ as the strong-field limit). Steps 12–15 use the sGB coupling parameter $\eta$ (primary value $\eta = -0.1$ for the mass-inflation branch) with the exact $\mathcal{O}(\alpha^2)$ perturbative metric corrections of Sotiriou \& Zhou (2014), Eqs. (56)-(63); the $\eta$-scan covers $\eta \in \{-0.05, -0.1, -0.15, -0.2\}$.
 
@@ -1495,7 +1539,8 @@ All observational data is drawn from published, publicly available sources:
 
 The full pipeline is run with a single command:
 
-cd "/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH"
+git clone https://github.com/matthewsmawfield/TEP-BH.git
+cd TEP-BH
 python scripts/run_pipeline.py
 
 Options include `--start-step`, `--stop-step`, `--skip-steps`, `--no-derive`, `--no-inference`, `--no-figures`, `--list-steps`, and `--continue-on-error`. Full documentation is in `scripts/README.md`.
@@ -1508,13 +1553,13 @@ https://github.com/matthewsmawfield/TEP-BH
 The repository contains the complete pipeline (`scripts/`), the processed and raw data (`data/`), the results (`results/`), the manuscript source (`site/components/`), and the figure-generation code (`scripts/steps/step_42_generate_figures.py`). The site is built with `cd site && npm run build` and published at
 https://mlsmawfield.com/tep/bh.
 
-The pipeline is 50 steps (step_00–step_49), runs warning-free, and writes SHA-256 checksums for all result files. Steps 00–11 use $\phi_0 = 2.0$, $\delta = 0.05$, $\sigma_B = 1.5$ for the fixed-background limit; steps 12–15 use the sGB coupling $\eta$ (primary $\eta = -0.1$) for the coupled solution, selecting the mass-inflation branch; steps 16–41 are derivation scripts; step 42 generates figures; steps 43–49 implement the S-star inference. All data is from published sources (EHT 2019-D01-01, LIGO Zenodo 4057131, and compiled measurement tables). Run with `python scripts/run_pipeline.py`; full docs in `scripts/README.md`.
+The pipeline is 50 steps (step_00–step_49), runs warning-free, and writes SHA-256 checksums for all result files. Steps 00–11 use $\phi_0 = 2.0$, $\delta = 0.05$, $\sigma_B = 1.5$ for the fixed-background limit; steps 12–15 use the sGB coupling $\eta$ (primary $\eta = -0.1$) for the coupled solution, selecting the mass-inflation branch; steps 16–41 are derivation scripts; step 42 generates figures; steps 43–49 implement the S-star inference. All data is from published sources (EHT 2019-D01-01, LIGO Zenodo 4057131, and compiled measurement tables). Full documentation is in the repository `README`.
 
-**S-star inference pipeline.** Steps 43–49 of the unified pipeline implement the primary falsifiable test: a non-isochronous refit of the published S-star data around Sgr A*. Step 43 downloads the machine-readable CDS files for Gillessen et al. (2017, VizieR J/ApJ/837/30, table5.dat and table3.dat); it parses 145 NACO/NTT/Keck/Gemini astrometric epochs and 44 SINFONI/Keck/Gemini radial-velocity epochs for S2 relative to Sgr A*. The steps are: (43) data acquisition, (44) conventional GR fit, (45) mass-bias sign evaluation, (46) TEP transfer-function fit, (47) joint forward-model with composition/calibration separation and $\mathcal C_V$ diagnostic, (48) formal likelihood comparison (Bayes factor, BIC, AIC, Wilks), (49) MCMC posterior on $M_{\rm phantom}^T$. Run with `python scripts/run_pipeline.py`.
+**S-star inference pipeline.** Steps 43–49 of the unified pipeline implement the primary falsifiable test: a non-isochronous refit of the published S-star data around Sgr A*. Step 43 downloads the machine-readable CDS files for Gillessen et al. (2017, VizieR J/ApJ/837/30, table5.dat and table3.dat); it parses 145 NACO/NTT/Keck/Gemini astrometric epochs and 44 SINFONI/Keck/Gemini radial-velocity epochs for S2 relative to Sgr A*. The steps are: (43) data acquisition, (44) conventional GR fit, (45) initial mass-bias sign evaluation, (46) TEP transfer-function fit, (47) joint forward-model with composition/calibration separation and $\mathcal C_V$ diagnostic, (48) formal likelihood comparison (Bayes factor, BIC, AIC, Wilks), (49) MCMC posterior on $M_{\rm phantom}^T$.
 
 # Appendix K — Regular-Geometry Validation Benchmark
 
-This appendix records the regular-geometry validation benchmark used throughout the main text. The Hayward metric is a controlled mathematical reference, not the TEP-selected solution: it validates the analysis pipeline and confirms that finite curvature and bounded areal geometry are mutually compatible once the geometric singularity is absent. The question TEP asks is whether a dynamical proper-time field can supply the physical origin of that regularisation. The sGB coupled interior integration (Section 4) is the decisive test of this question. The literature evidence (Sotiriou & Zhou 2014; Thaalba et al. 2024) indicates that standard linear sGB may develop a finite-area singularity rather than a regular centre, motivating the full TEP action.
+This appendix records the regular-geometry validation benchmark used throughout the main text. The Hayward metric is a controlled mathematical reference, not the TEP-selected solution: it validates the analysis pipeline and confirms that finite curvature and bounded areal geometry are mutually compatible once the geometric singularity is absent. The question TEP asks is whether a dynamical proper-time field can supply the physical origin of that regularisation. The scalar-on-regular-background benchmark (Section 4) is the decisive test of this question. The literature evidence (Sotiriou & Zhou 2014; Thaalba et al. 2024) indicates that standard linear sGB may develop a finite-area singularity rather than a regular centre, motivating the full TEP action.
 
 ## K.1 The Hayward Metric
 
@@ -1549,7 +1594,7 @@ The TEP matter metric $\tilde g = A^2 g_{\rm Hayward}$ with $A = (r_h/r)^{\phi_0
 
 ## K.3 Classification of the Limiting Region
 
-At an ordinary regular spherical centre one has $\rho \to 0$ as $r \to 0$. Here $\rho \to 1.995 \neq 0$: the limiting areal radius is nonzero. Because $A \sim 1/r$ in the deep interior, the radial proper distance behaves as $\tilde\ell \sim \int dr/r \to \infty$. The limiting region is therefore not a point-like centre but a finite-area asymptotic end (a tube-like limiting region of infinite radial extent). This is still a valid TEP geometry — the curvature is finite, the areal radius is bounded, and the metric is globally Lorentzian — but it must be classified correctly as an asymptotic end rather than a regular point centre. The full coupled interior solution (Section 4) now produces an ordinary regular point centre with $\rho_{\rm areal}(0) \to 4.68 \times 10^{-8}$ for $\eta=-0.1$, $g=1.1M$.
+At an ordinary regular spherical centre one has $\rho \to 0$ as $r \to 0$. Here $\rho \to 1.995 \neq 0$: the limiting areal radius is nonzero. Because $A \sim 1/r$ in the deep interior, the radial proper distance behaves as $\tilde\ell \sim \int dr/r \to \infty$. The limiting region is therefore not a point-like centre but a finite-area asymptotic end (a tube-like limiting region of infinite radial extent). This is still a valid TEP geometry — the curvature is finite, the areal radius is bounded, and the metric is globally Lorentzian — but it must be classified correctly as an asymptotic end rather than a regular point centre. The scalar-on-regular-background benchmark (Section 4) now produces an ordinary regular point centre with $\rho_{\rm areal}(0) \to 4.68 \times 10^{-8}$ for $\eta=-0.1$, $g=1.1M$.
 
 ## K.4 What the Benchmark Validates
 
@@ -1559,11 +1604,11 @@ The benchmark validates two things:
 
 - Finite curvature and bounded areal geometry are mutually compatible once the geometric singularity is absent — the conditions that were mutually exclusive in the Schwarzschild incompatibility result (Section 3) are simultaneously achievable on a regular background.
 
-The benchmark establishes pipeline correctness and the mutual compatibility of finite curvature and bounded areal geometry on a regular background. The dynamical generation of this geometry by the sGB coupling is the task of the interior integration (Section 4). The limiting region is a finite-area asymptotic end (Section K.3). The null expansion $\theta_+ = 0$ reflects the constant-area property of the asymptotic end; the invariant frequency-transfer calculation of Section 6 establishes the temporal horizon. Both null families have infinite affine parameter ($\tilde\lambda \sim \int r^{-2}\,dr \to \infty$); the asymptotic end is at infinite affine distance.
+The benchmark establishes pipeline correctness and the mutual compatibility of finite curvature and bounded areal geometry on a regular background. The dynamical generation of this geometry by the sGB coupling is the task of the scalar-on-regular-background benchmark (Section 4). The limiting region is a finite-area asymptotic end (Section K.3). The null expansion $\theta_+ = 0$ reflects the constant-area property of the asymptotic end; the invariant frequency-transfer calculation of Section 6 establishes the Temporal Horizon. Both null families have infinite affine parameter ($\tilde\lambda \sim \int r^{-2}\,dr \to \infty$); the asymptotic end is at infinite affine distance.
 
 ## K.5 Regularisation Scale Effects
 
-The Kretschmann scalar at the centre depends on the regularisation scale: $K_{\rm Hayward}(0) = 24/\ell^4$. For $\ell = 0.1$ (the benchmark value), $K = 2.4 \times 10^5$; for $\ell = 1.0$, $K = 24$; for $\ell = 0.001$, $K = 2.4 \times 10^{13}$. These are code-unit values ($M = 1$); they do not establish Planck-scale curvature without converting to physical units for a specific black-hole mass. The regularisation scale is a parameter of the benchmark, not a prediction of the theory; the coupled interior solution with $g = 1.1M$ gives $K(0) = 27.1$ for $\eta=-0.1$ (Section 4).
+The Kretschmann scalar at the centre depends on the regularisation scale: $K_{\rm Hayward}(0) = 24/\ell^4$. For $\ell = 0.1$ (the benchmark value), $K = 2.4 \times 10^5$; for $\ell = 1.0$, $K = 24$; for $\ell = 0.001$, $K = 2.4 \times 10^{13}$. These are code-unit values ($M = 1$); they do not establish Planck-scale curvature without converting to physical units for a specific black-hole mass. The regularisation scale is a parameter of the benchmark, not a prediction of the theory; the scalar-on-regular-background benchmark with $g = 1.1M$ gives $K(0) = 27.1$ for $\eta=-0.1$ (Section 4).
 
 ## K.6 Configuration Scan
 
@@ -1644,7 +1689,7 @@ The key result is the coupling-order difference and sign difference between the 
 \frac{\delta r_{\rm ISCO}}{r_{\rm ISCO}}\bigg|_{\tilde g} = +1.95\% \quad (\mathcal{O}(\eta), \text{ massive particles on } \tilde g).
 \end{equation}
 
-The coupling-order difference is a mathematical property of the perturbative sGB calculation (Section 6.2), not an indication of fractured metric structure. Matter, photons, and clocks all propagate universally on the single causal matter metric, $\tilde g_{\mu\nu}$. The $\sim 44\times$ coupling-order ratio and sign divergence arise purely from the geometry of the paths: because null geodesics ($d\tilde s^2 = 0$) are conformally invariant, the temporal scaling $A^2(\phi)$ divides out exactly, making the shadow sensitive only to the underlying backreacted geometry at $\mathcal{O}(\eta^2)$. Conversely, massive particles travel on timelike geodesics ($d\tilde s^2 < 0$) and therefore feel the conformal factor $A = e^{-\phi} > 1$ directly, shifting the ISCO at $\mathcal{O}(\eta)$. Both effects are complementary projections of the same unified temporal well. The matter-metric ISCO shift is an order of magnitude larger than the shadow shift ($+1.95\%$ vs $-0.044\%$) because the conformal factor contributes at $\mathcal{O}(\eta)$, not $\mathcal{O}(\eta^2)$. The would-be horizon shift $r_H = 2M(1 - 19.6\,\beta^2)$ is the sGB perturbative signature: the temporal field backreacts on the geometry through the sGB coupling, contracting the horizon of the horizon-bearing branch. The temporal horizon is observer-dependent and operational — a distant observer (fast clock) sees the accessibility boundary far from the centre; a deeper observer (stronger conformal field, larger $A$) sees less redshift to any given emitter, and the practical observability boundary moves inward.
+The coupling-order difference is a mathematical property of the perturbative sGB calculation (Section 6.2), not an indication of fractured metric structure. Matter, photons, and clocks all propagate universally on the single causal matter metric, $\tilde g_{\mu\nu}$. The $\sim 44\times$ coupling-order ratio and sign divergence arise purely from the geometry of the paths: because null geodesics ($d\tilde s^2 = 0$) are conformally invariant, the temporal scaling $A^2(\phi)$ divides out exactly, making the shadow sensitive only to the underlying backreacted geometry at $\mathcal{O}(\eta^2)$. Conversely, massive particles travel on timelike geodesics ($d\tilde s^2 < 0$) and therefore feel the conformal factor $A = e^{-\phi} > 1$ directly, shifting the ISCO at $\mathcal{O}(\eta)$. Both effects are complementary projections of the same unified temporal well. The matter-metric ISCO shift is an order of magnitude larger than the shadow shift ($+1.95\%$ vs $-0.044\%$) because the conformal factor contributes at $\mathcal{O}(\eta)$, not $\mathcal{O}(\eta^2)$. The would-be horizon shift $r_H = 2M(1 - 19.6\,\beta^2)$ is the sGB perturbative signature: the temporal field backreacts on the geometry through the sGB coupling, contracting the horizon of the horizon-bearing branch. The Temporal Horizon is observer-dependent and operational — a distant observer (fast clock) sees the accessibility boundary far from the centre; a deeper observer (stronger conformal field, larger $A$) sees less redshift to any given emitter, and the practical observability boundary moves inward.
 
 The scaling with $\eta$ is:
 
@@ -1658,7 +1703,7 @@ All numbers are computed at $\eta = -0.1$ in the perturbative regime. Note that 
 
 # References
 
-- Smawfield, M. L. (2025). Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed. Paper 0, v0.9 (Jakarta). DOI: 10.5281/zenodo.16921911.
+- Smawfield, M. L. (2025). Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed. Paper 0 (Jakarta). DOI: 10.5281/zenodo.16921911.
 
 - Schwarzschild, K. (1916). Über das Gravitationsfeld eines Massenpunktes nach der Einsteinschen Theorie. *Sitzungsber. Preuss. Akad. Wiss.*, 189–196.
 
@@ -1696,11 +1741,11 @@ All numbers are computed at $\eta = -0.1$ in the perturbative regime. Note that 
 
 - Event Horizon Telescope Collaboration (2022). First Sagittarius A* Event Horizon Telescope results. I. The shadow of the supermassive black hole in the center of the Milky Way. *ApJL*, 930, L12.
 
-- Smawfield, M. L. (2026). Temporal Equivalence Principle: A Covariant Alternative to Cosmic Expansion. Paper 26, v0.1 (Athens). DOI: 10.5281/zenodo.20370143.
+- Smawfield, M. L. (2026). Temporal Equivalence Principle: A Covariant Alternative to Cosmic Expansion. Paper 26 (Athens). DOI: 10.5281/zenodo.20370143.
 
-- Smawfield, M. L. (2026). Temporal Equivalence Principle: Native hi_class Conformal Implementation, Linear Perturbation Closure, and CMB Acoustic Peak Preservation. Paper 18, v0.5 (Cambridge).
+- Smawfield, M. L. (2026). Temporal Equivalence Principle: Native hi_class Conformal Implementation, Linear Perturbation Closure, and CMB Acoustic Peak Preservation. Paper 18 (Cambridge).
 
-- Smawfield, M. L. (2026). Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity. Paper 27, v0.2 (Thika). DOI: 10.5281/zenodo.20723059.
+- Smawfield, M. L. (2026). Temporal Equivalence Principle: Temporal Horizon Cosmology and the Absence of a Physical Big Bang Singularity. Paper 27 (Thika). DOI: 10.5281/zenodo.20723059.
 
 - LIGO/Virgo Collaboration (2016). Observation of gravitational waves from a binary black hole merger. *Phys. Rev. Lett.*, 116, 241102. DOI: 10.1103/PhysRevLett.116.241102.
 
