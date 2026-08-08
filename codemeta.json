@@ -5,7 +5,7 @@
     "SoftwareSourceCode"
   ],
   "name": "Temporal Equivalence Principle: Black Holes and the Temporal Horizon",
-  "description": "A black hole, under the Temporal Equivalence Principle, is a temporal well: a regular spatial region with an extreme gradient in relative proper-time accumulation. The standard strong-field template is a reconstruction from observational data under an implicit isochronous transfer model. Once proper time is treated as dynamical, the conventional reconstruction is no longer the unique reading of the same observations.",
+  "description": "The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\\tilde g_{\\mu\\nu}=A^2(\\phi)g_{\\mu\\nu}+B(\\phi)\\nabla_\\mu\\phi\\nabla_\\nu\\phi$. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: a black hole, under TEP, is a temporal well — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. A continuous, extreme but finite gradient in proper-time rate is sufficient to produce the full observational phenomenology attributed to a black hole.<br><br>Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\\rm phantom}^{T} \\equiv M_{\\rm fit}^{\\rm GR} - M_{\\rm matter}^{\\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.<br><br>The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\\mu\\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed theory — not selecting among competing theories.<br><br>Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test, because TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain, changing the late-time spectral problem. Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.",
   "abstract": "The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric tilde g = A^2 g + B. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal-geometric equations. This paper develops the strong-field consequence: a black hole, under TEP, is a temporal well — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary.",
   "author": [
     {
@@ -15,13 +15,13 @@
       "@id": "https://orcid.org/0009-0003-8219-3159"
     }
   ],
-  "datePublished": "2026-07-29",
-  "dateModified": "2026-07-29",
-  "version": "0.1",
+  "datePublished": "2026-08-08",
+  "dateModified": "2026-08-08",
+  "version": "0.2",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "codeRepository": "https://github.com/matthewsmawfield/TEP-BH",
   "url": "https://mlsmawfield.com/tep/bh/",
-  "doi": "10.5281/zenodo.21677827",
+  "doi": "10.5281/zenodo.21677826",
   "keywords": [
     "Temporal Equivalence Principle",
     "temporal well",

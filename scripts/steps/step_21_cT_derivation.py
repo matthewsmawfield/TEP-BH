@@ -43,7 +43,7 @@ Outputs (prefixed step_21_cT_derivation):
   - logs/step_21_cT_derivation.log
 
 Author: Matthew Lukin Smawfield
-Version: TEP-BH v0.1 (Bahrain)
+Version: TEP-BH v0.2 (Bahrain)
 """
 
 from __future__ import annotations

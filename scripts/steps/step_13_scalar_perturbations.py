@@ -50,7 +50,7 @@ Outputs (prefixed step_13_scalar_perturbations):
   - logs/step_13_scalar_perturbations.log
 
 Author: Matthew Lukin Smawfield
-Version: TEP-BH v0.1 (Bahrain)
+Version: TEP-BH v0.2 (Bahrain)
 """
 
 from __future__ import annotations

@@ -62,7 +62,7 @@ Outputs (prefixed step_12_self_gravitating):
   - logs/step_12_self_gravitating.log       (verbose log)
 
 Author: Matthew Lukin Smawfield
-Version: TEP-BH v0.1 (Bahrain)
+Version: TEP-BH v0.2 (Bahrain)
 """
 
 from __future__ import annotations

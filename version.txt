@@ -1,1 +1,6 @@
-v0.1 (Bahrain) — Temporal Equivalence Principle: Black Holes and the Temporal Horizon - 29 July 2026
+v0.2 (Bahrain) — 2026-08-08 — EFT framing alignment and eternal-universe cross-paper consistency
+
+- Scalar-Gauss-Bonnet coupling reframed as native operator in master TEP EFT action, not an ad-hoc addition
+- References: added DOI for TEP-HC, added TEP-BBN (Paper 29)
+- Appendix A: fixed LaTeX typo in Riemann tensor definition
+- Cross-paper consistency: aligned with TEP (Paper 0) v0.10 eternal-universe architecture

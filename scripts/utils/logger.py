@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-TEP-BH Logging Utilities
+TEP-C0 Logging Utilities
 ================================
 
-Standardized logging infrastructure for the TEP-BH temporal-horizon cosmology pipeline.
+Standardized logging infrastructure for the TEP-C0 cosmological analysis pipeline.
 Provides color-coded console output, file logging, and custom log levels for
 consistent status reporting across all analysis steps.
 
@@ -26,7 +26,7 @@ from typing import Optional
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
 
 class TEPFormatter(logging.Formatter):
-    """Formatter with color support and optional prefix."""
+    """Formatter with color support."""
 
     COLORS = {
         'SUCCESS': '\033[1;32m',  # Green bold
@@ -41,10 +41,9 @@ class TEPFormatter(logging.Formatter):
     }
     RESET = '\033[0m'
 
-    def __init__(self, fmt=None, datefmt=None, use_colors=True, prefix=None):
+    def __init__(self, fmt=None, datefmt=None, use_colors=True):
         super().__init__(fmt, datefmt='%H:%M:%S')
         self.use_colors = use_colors
-        self.prefix = prefix
 
     def format(self, record):
         message = record.getMessage()
@@ -61,19 +60,17 @@ class TEPFormatter(logging.Formatter):
 
         level_name, color = level_mapping.get(record.levelno, ('INFO', self.COLORS['INFO']))
         timestamp = self.formatTime(record, self.datefmt)
-        prefix_str = f" [{self.prefix}]" if self.prefix else ""
         
         if self.use_colors:
-            return f"{color}[{timestamp}] [{level_name}]{prefix_str} {message}{self.RESET}"
+            return f"{color}[{timestamp}] [{level_name}] {message}{self.RESET}"
         else:
-            return f"[{timestamp}] [{level_name}]{prefix_str} {message}"
+            return f"[{timestamp}] [{level_name}] {message}"
 
 class TEPFileFormatter(logging.Formatter):
     """Clean formatter for file output without ANSI color codes."""
 
-    def __init__(self, fmt=None, datefmt=None, prefix=None):
+    def __init__(self, fmt=None, datefmt=None):
         super().__init__(fmt, datefmt='%H:%M:%S')
-        self.prefix = prefix
 
     def format(self, record):
         message = record.getMessage()
@@ -89,27 +86,25 @@ class TEPFileFormatter(logging.Formatter):
         }
         level_name = level_mapping.get(record.levelno, 'INFO')
         timestamp = self.formatTime(record, self.datefmt)
-        prefix_str = f" [{self.prefix}]" if self.prefix else ""
-        return f"[{timestamp}] [{level_name}]{prefix_str} {message}"
+        return f"[{timestamp}] [{level_name}] {message}"
 
 class TEPLogger:
-    def __init__(self, name: str = "tep_bh", level: str = "INFO", log_file_path: Optional[Path] = None, reset_log: bool = True, prefix: str = None):
+    def __init__(self, name: str = "tep_c0", level: str = "INFO", log_file_path: Optional[Path] = None, reset_log: bool = True):
         self.logger = logging.getLogger(name)
         self.logger.setLevel(self._get_log_level(level))
         self.logger.handlers.clear()
-        self.prefix = prefix
-
+        
         ch = logging.StreamHandler(sys.stdout)
         ch.setLevel(logging.DEBUG)
         ch.stream.reconfigure(line_buffering=True)
-        ch.setFormatter(TEPFormatter(use_colors=sys.stdout.isatty(), prefix=prefix))
+        ch.setFormatter(TEPFormatter(use_colors=sys.stdout.isatty()))
         self.logger.addHandler(ch)
         self.logger.propagate = False
 
         if log_file_path is None:
             default_log_dir = PACKAGE_ROOT / "logs"
             default_log_dir.mkdir(parents=True, exist_ok=True)
-            log_file_path = default_log_dir / "tep_bh_pipeline.log"
+            log_file_path = default_log_dir / "tep_c0_pipeline.log"
             reset_log = False
 
         log_file_path.parent.mkdir(parents=True, exist_ok=True)
@@ -120,10 +115,17 @@ class TEPLogger:
             except Exception:
                 pass
         
-        fh = logging.FileHandler(log_file_path, mode='a', encoding='utf-8')
+        fh = logging.FileHandler(log_file_path, mode='a', encoding='utf-8', delay=True)
         fh.setLevel(logging.DEBUG)
-        fh.setFormatter(TEPFileFormatter(prefix=prefix))
+        fh.setFormatter(TEPFileFormatter())
         self.logger.addHandler(fh)
+
+    def close(self):
+        """Explicitly close all file handlers to prevent I/O errors on exit."""
+        for handler in self.logger.handlers:
+            if isinstance(handler, logging.FileHandler):
+                handler.close()
+        self.logger.handlers.clear()
 
     def _get_log_level(self, level_name: str):
         return getattr(logging, level_name.upper(), logging.INFO)

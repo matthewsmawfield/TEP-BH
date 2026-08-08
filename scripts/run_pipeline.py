@@ -33,7 +33,7 @@ Usage:
     python scripts/run_pipeline.py --list-steps          # List all steps
 
 Author: Matthew Lukin Smawfield
-Version: TEP-BH v0.1 (Bahrain)
+Version: TEP-BH v0.2 (Bahrain)
 License: CC-BY-4.0
 """
 
@@ -274,7 +274,7 @@ def run_pipeline(args: argparse.Namespace) -> dict:
 
     print_status("=" * 70, "TITLE")
     print_status("TEP-BH ANALYSIS PIPELINE", "TITLE")
-    print_status("Paper 28 — Bahrain — v0.1", "TITLE")
+    print_status("Paper 28 — Bahrain — v0.2", "TITLE")
     print_status("=" * 70, "TITLE")
     print_status(f"Project root: {PROJECT_ROOT}", "INFO")
     print_status(f"Started: {datetime.now().isoformat()}", "INFO")

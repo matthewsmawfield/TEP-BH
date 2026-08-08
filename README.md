@@ -1,27 +1,31 @@
 # Temporal Equivalence Principle: Black Holes and the Temporal Horizon
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21677827.svg)](https://doi.org/10.5281/zenodo.21677827)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21677826.svg)](https://doi.org/10.5281/zenodo.21677826)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
 ![TEP-BH: Black Holes and the Temporal Horizon](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.1 (Bahrain)  
-**First published:** 29 July 2026 · **Last updated:** 29 July 2026  
+**Version:** v0.2 (Bahrain)  
+**First published:** 8 August 2026 · **Last updated:8 August 2026
 **Status:** Preprint (Open for Collaboration)  
-**DOI:** [10.5281/zenodo.21677827](https://doi.org/10.5281/zenodo.21677827)  
+**DOI:** [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826)  
 **Website:** [https://mlsmawfield.com/tep/bh](https://mlsmawfield.com/tep/bh)  
 **Paper Series:** TEP Series: Paper 28 (Black Holes and the Temporal Horizon)
 
 ## Abstract
 
-The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: **a black hole, under TEP, is a temporal well** — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. A continuous, extreme but finite gradient in proper-time rate is sufficient to produce the full observational phenomenology attributed to a black hole.
+The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: Under TEP, a black hole is modeled as a temporal well—a target regular spatial region in which matter-frame clock rates become strongly suppressed. A continuous, extreme but finite gradient in proper-time rate provides a unified mechanism for the principal observational signatures attributed to a black hole.
 
 Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.
 
-The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed theory — not selecting among competing theories.
+The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed EFT architecture — not selecting among competing theories.
 
-Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test, because TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain, changing the late-time spectral problem. *Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.*
+Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test, because TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain, changing the late-time spectral problem. Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.
+
+Keywords: Temporal Equivalence Principle, temporal well, temporal horizon, dynamical proper time, phantom mass, isochrony axiom, conformal-disformal metric, Schwarzschild incompatibility, apparent compactness, black holes, modified gravity, temporal shear, black-hole observations
+
+# 1. Introduction: Black Holes under the Temporal Equivalence Principle
 
 ## Overview
 
@@ -77,7 +81,7 @@ npm run build
 
 This generates:
 - `site/dist/index.html` — static manuscript
-- `28-TEP-BH-v0.1-Bahrain.md` — root markdown manuscript
+- `28-TEP-BH-v0.2-Bahrain.md` — root markdown manuscript
 
 ## PDF Generation
 
@@ -85,7 +89,7 @@ This generates:
 python scripts/utils/generate_site_pdf.py --quality high --wait-time 8
 ```
 
-Generates `28-TEP-BH-v0.1-Bahrain.pdf` in both the root and `site/public/docs/`.
+Generates `28-TEP-BH-v0.2-Bahrain.pdf` in both the root and `site/public/docs/`.
 
 ## Project Structure
 
@@ -104,8 +108,8 @@ TEP-BH/
 │   ├── build.js          # Site build script
 │   └── manifest.json     # Site manifest
 ├── manuscripts/          # Markdown manuscripts
-├── 28-TEP-BH-v0.1-Bahrain.md  # Auto-generated root manuscript
-└── 28-TEP-BH-v0.1-Bahrain.pdf # Generated PDF
+├── 28-TEP-BH-v0.2-Bahrain.md  # Auto-generated root manuscript
+└── 28-TEP-BH-v0.2-Bahrain.pdf # Generated PDF
 ```
 
 ## License
@@ -134,10 +138,10 @@ Creative Commons Attribution 4.0 International License (CC BY 4.0) — see [LICE
 | **Paper 15** | [TEP-EFA](https://github.com/matthewsmawfield/TEP-EFA) | Temporal Shear in the Earth Flyby Anomaly | [10.5281/zenodo.19454863](https://doi.org/10.5281/zenodo.19454863) |
 | **Paper 16** | [TEP-J0437](https://github.com/matthewsmawfield/TEP-J0437) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620) |
 | **Paper 17** | [TEP-LLR](https://github.com/matthewsmawfield/TEP-LLR) | Lunar Laser Ranging and the Nordtvedt Effect | [10.5281/zenodo.19446029](https://doi.org/10.5281/zenodo.19446029) |
-| **Paper 18** | [TEP-HC](https://github.com/matthewsmawfield/TEP-HC) | EFT Mapping and Acoustic Peak Constraints via hi_class | — |
+| **Paper 18** | [TEP-HC](https://github.com/matthewsmawfield/TEP-HC) | EFT Mapping and Acoustic Peak Constraints via hi_class | [10.5281/zenodo.20682752](https://doi.org/10.5281/zenodo.20682752) |
 | **Paper 19** | [TEP-LENS](https://github.com/matthewsmawfield/TEP-LENS) | Blind-Prediction Residual Test in Multiply-Imaged Supernovae | — |
-| **Paper 26** | [TEP-C0](https://github.com/matthewsmawfield/TEP-C0) | A Covariant Alternative to Cosmic Expansion | — |
-| **Paper 28** | **TEP-BH** (This repo) | Black Holes and the Temporal Horizon | [10.5281/zenodo.21677827](https://doi.org/10.5281/zenodo.21677827) |
+| **Paper 26** | [TEP-C0](https://github.com/matthewsmawfield/TEP-C0) | A Covariant Alternative to Cosmic Expansion | [10.5281/zenodo.20370143](https://doi.org/10.5281/zenodo.20370143) |
+| **Paper 28** | **TEP-BH** (This repo) | Black Holes and the Temporal Horizon | [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826) |
 
 ## Citation
 
@@ -147,8 +151,8 @@ Creative Commons Attribution 4.0 International License (CC BY 4.0) — see [LICE
   author={Smawfield, Matthew Lukin},
   journal={Zenodo},
   year={2026},
-  doi={10.5281/zenodo.21677827},
-  note={Preprint v0.1 (Bahrain)},
+  doi={10.5281/zenodo.21677826},
+  note={Preprint v0.2 (Bahrain)},
   license={CC-BY-4.0}
 }
 ```

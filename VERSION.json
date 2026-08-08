@@ -1,6 +1,7 @@
 {
-  "version": "v0.1",
+  "version": "0.2",
   "codename": "Bahrain",
   "description": "Paper 28: Temporal Equivalence Principle: Black Holes and the Temporal Horizon",
-  "date": "2026-07-29"
+  "date": "2026-08-08",
+  "paper": "28"
 }

@@ -37,7 +37,7 @@ def load_citation_metadata():
     citation_file = base_dir / 'CITATION.cff'
 
     # Default fallback
-    metadata = {'version': 'v0.1', 'codename': 'Bahrain', 'paper_code': 'TEP-BH', 'paper_num': '28'}
+    metadata = {'version': 'v0.2', 'codename': 'Bahrain', 'paper_code': 'TEP-BH', 'paper_num': '28'}
 
     # Try VERSION.json first for paper code and number
     if version_file.exists():
