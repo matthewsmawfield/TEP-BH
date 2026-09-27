@@ -5597,8 +5597,8 @@
     "phantom_mass": {
       "delta_shadow": -0.0537
     },
-    "sGB_horizon_bearing_eta_0.1": {
-      "delta_shadow": -0.0004
+    "sGB_horizon_bearing_eta_0.3": {
+      "delta_shadow": -0.0035
     }
   },
   "key_finding": "Joint best fit: delta = -0.0175, 1-sigma (Wilks): [-0.0175, -0.0175], 2-sigma (Wilks): [-0.0175, +0.0850]. Phantom Mass (delta=-0.054) EXCLUDED at >2-sigma. GR (delta=0) outside 1-sigma."

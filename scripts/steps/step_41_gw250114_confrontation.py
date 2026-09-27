@@ -144,16 +144,16 @@ def universal_analysis():
         eta_max = max_eta_for_mass(M_solar)
 
         # Shadow shift: O(β²) = O((η/12)²)
-        # From the v3 script at η = -0.1: shadow = -0.0440%
-        # The sign is negative for both mass-inflation and mass-deflation
+        # From step_20 at η = +0.3: shadow = -0.349%
+        # The sign is negative on both branches
         # because the geometric metric receives the O(η²) inward shift.
-        # Scale: shadow_shift = -0.0440 * (|eta|/0.1)²
-        shadow_pct = -0.0440 * (abs(eta_max) / 0.1)**2
+        # Scale: shadow_shift = -0.349 * (|eta|/0.3)²
+        shadow_pct = -0.349 * (abs(eta_max) / 0.3)**2
 
         # ISCO on tilde g: O(η) from conformal factor
-        # From the v3 script at η = -0.1 (mass-inflation branch): ISCO = +1.95%
-        # This scales as |η|, so: ISCO = +1.95 * (|eta_max|/0.1)
-        isco_pct = +1.95 * (abs(eta_max) / 0.1)
+        # From step_20 at η = +0.3 (temporal-well branch): ISCO = -6.19%
+        # This scales as |η|, so: ISCO = -6.19 * (|eta_max|/0.3)
+        isco_pct = -6.19 * (abs(eta_max) / 0.3)
 
         # QNM shift: O(β²) = 19.6 * (η/12)²
         qnm_pct = 100 * qnm_shift_fraction(eta_max)

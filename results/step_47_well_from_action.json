@@ -1,0 +1,42 @@
+{
+  "step": "step_47_well_from_action",
+  "method": "exact match of the static scalar equation (r^2 phi')'=r^2(mu^2 phi-rho) to a Yukawa exterior, then m(r) from the stress tensor",
+  "mu2": 0.05,
+  "R_core": 2.0,
+  "bound": "Delta phi = O(rho/mu^2). For these horizon-free cores A_centre stays above 0.97. A->0 is not a solution.",
+  "rows": [
+    {
+      "rho_b": 0.002,
+      "phi_c": 0.0029856413858688757,
+      "A_centre": 0.9970188112089875,
+      "M": 0.06666045427099249,
+      "F_min": 0.9330403651791042,
+      "hayward_rms": 0.09256531958652496,
+      "g": 1.9963365509948285,
+      "sigma_max": 5.003204213348534e-12,
+      "phi_at_10": 5.814989389139199e-05
+    },
+    {
+      "rho_b": 0.005,
+      "phi_c": 0.0074641034646721754,
+      "A_centre": 0.9925636837769963,
+      "M": 0.1669326270694673,
+      "F_min": 0.832526074644848,
+      "hayward_rms": 0.0924149096986429,
+      "g": 1.997348667138651,
+      "sigma_max": 1.9659566663572652e-10,
+      "phi_at_10": 0.00014537473472847997
+    },
+    {
+      "rho_b": 0.01,
+      "phi_c": 0.014928206929344351,
+      "A_centre": 0.9851826663529613,
+      "M": 0.3348035587788903,
+      "F_min": 0.6648026882799879,
+      "hayward_rms": 0.09216576488233094,
+      "g": 1.9990325017707296,
+      "sigma_max": 3.1765309737942977e-09,
+      "phi_at_10": 0.00029074946945695994
+    }
+  ]
+}

@@ -48,7 +48,7 @@ from pathlib import Path
 
 import numpy as np
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(PROJECT_ROOT / "scripts" / "steps"))
 sys.path.insert(0, str(PROJECT_ROOT / "scripts" / "steps" / "inference"))
@@ -78,7 +78,7 @@ STEP_ID = "step_47_joint_forward"
 # ============================================================
 # Proper-volume diagnostic
 # ============================================================
-def compute_proper_volume_diagnostic(M_BH_Msun, R0_pc, r_boundary_AU, eta=0.1):
+def compute_proper_volume_diagnostic(M_BH_Msun, R0_pc, r_boundary_AU, eta=0.3):
     """Compute the proper-volume diagnostic C_V.
 
     C_V = V_proper / V_apparent

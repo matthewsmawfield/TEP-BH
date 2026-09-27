@@ -2,7 +2,7 @@
   "parameters": {
     "M": 1.0,
     "g": 1.1,
-    "eta": -0.1
+    "eta": 0.3
   },
   "method": "Full-geometry null geodesic integration on Hayward + sGB background",
   "geometry": {

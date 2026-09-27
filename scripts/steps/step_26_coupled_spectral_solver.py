@@ -149,7 +149,7 @@ def mixing_matrix_element(omega_g, omega_s, V_mix, M, l):
 
     # Value of mixing potential at the midpoint of the two peaks
     r_mid = 0.5 * (rp_g + rp_s)
-    V_mix_peak = V_Zphi(r_mid, -0.1, M, l)
+    V_mix_peak = V_Zphi(r_mid, 0.1, M, l)
 
     return V_mix_peak * overlap
 
@@ -172,7 +172,7 @@ def coupled_qnm_frequencies(omega_g, omega_s, M_mix):
 def main():
     M = 1.0
     l = 2
-    eta = -0.1
+    eta = 0.3
 
     print("=" * 70)
     print("EXTERIOR ISOSPECTRALITY-BREAKING BENCHMARK (sGB, mass-inflation)")

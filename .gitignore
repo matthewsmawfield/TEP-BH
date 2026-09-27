@@ -71,3 +71,4 @@ plan[0-9]*
 
 # OS files
 .DS_Store
+manuscripts/

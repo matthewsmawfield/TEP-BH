@@ -2,7 +2,7 @@
 """Track 1: Full-geometry ray-tracer for the solved temporal well.
 
 Integrates null geodesics through the full Hayward + sGB interior
-(g=1.1, eta=-0.1) and computes the shadow boundary, comparing against
+(g=1.1, eta=+0.3) and computes the shadow boundary, comparing against
 the Schwarzschild benchmark and EHT M87* / Sgr A* observations.
 
 Key physics:
@@ -54,7 +54,7 @@ UAS_TO_RAD = 4.84813681109536e-12
 # Parameters
 M = 1.0
 G_PARAM = 1.1
-ETA = -0.1
+ETA = 0.3
 
 
 # ---------------------------------------------------------------------------

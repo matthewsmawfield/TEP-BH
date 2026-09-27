@@ -50,7 +50,7 @@ from pathlib import Path
 
 import numpy as np
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(PROJECT_ROOT / "scripts" / "steps"))
 
@@ -93,7 +93,7 @@ def tep_lapse_schwarzschild(r_rs, M_rs):
     return np.sqrt(np.maximum(F, 0))
 
 
-def tep_lapse_with_conformal(r_rs, eta=0.1):
+def tep_lapse_with_conformal(r_rs, eta=0.3):
     """TEP lapse N(r) = A(r) * sqrt(F(r)) for the mass-inflation branch.
 
     The conformal factor is A = exp(+eta/(3*r_rs)) (alpha_GB < 0 branch).
@@ -104,7 +104,7 @@ def tep_lapse_with_conformal(r_rs, eta=0.1):
     return A * np.sqrt(np.maximum(F, 0))
 
 
-def temporal_transfer_factor(r_source_rs, r_observer_rs, eta=0.1):
+def temporal_transfer_factor(r_source_rs, r_observer_rs, eta=0.3):
     """Compute T_P = dtau_observer / dtau_source.
 
     For static observers: dtau = N(r) * dt, so
@@ -118,7 +118,7 @@ def temporal_transfer_factor(r_source_rs, r_observer_rs, eta=0.1):
     return N_observer / N_source
 
 
-def spatial_calibration_factor(r_source_rs, M_BH_Msun, R0_pc, eta=0.1):
+def spatial_calibration_factor(r_source_rs, M_BH_Msun, R0_pc, eta=0.3):
     """Compute S_a = a_GR_inferred / a_local.
 
     The GR-inferred semi-major axis is obtained from the observed
@@ -152,7 +152,7 @@ def spatial_calibration_factor(r_source_rs, M_BH_Msun, R0_pc, eta=0.1):
     return S_a
 
 
-def dynamical_modification_factor(r_source_rs, eta=0.1):
+def dynamical_modification_factor(r_source_rs, eta=0.3):
     """Compute D_dyn.
 
     The dynamical-law modification captures how the orbital dynamics
@@ -163,7 +163,7 @@ def dynamical_modification_factor(r_source_rs, eta=0.1):
     For weak fields: D_dyn ~ 1 + O(eta * GM/(rc^2))
     """
     phi_grav = 1.0 / (2.0 * r_source_rs)
-    # The ISCO shift at O(eta) is ~+1.95% at eta=-0.1 for r ~ 6M
+    # The ISCO shift at O(eta) is ~+5.9% at eta=0.3 for r ~ 6M
     # (mass-inflation branch, A > 1). At r ~ 3000 R_s, this is suppressed
     # by (6M/r)^2 ~ 10^-6, so D_dyn ~ 1 + O(10^-6) for S2.
     D_dyn = 1.0 + eta * phi_grav * (6.0 / r_source_rs)**2
@@ -173,7 +173,7 @@ def dynamical_modification_factor(r_source_rs, eta=0.1):
 # ============================================================
 # Mass-bias sign computation
 # ============================================================
-def compute_mass_bias_sign(M_BH_Msun, R0_pc, a_arcsec, e, eta=0.1):
+def compute_mass_bias_sign(M_BH_Msun, R0_pc, a_arcsec, e, eta=0.3):
     """Compute the mass-bias sign for a given orbit.
 
     Returns the TEP mass-bias ratio relative to GR:
@@ -311,7 +311,7 @@ def main():
     print_status("")
 
     # --- Compute for several eta values ---
-    eta_values = [0.0, 0.01, 0.1, 0.5, 1.0]
+    eta_values = [0.0, 0.01, 0.1, 0.3, 0.5, 1.0]
     results = {}
 
     print_status("--- Mass-bias sign for various eta ---", "TITLE")
@@ -337,10 +337,10 @@ def main():
     print_status("  (Should be ~0, confirming the GR limit is correct)", "INFO")
     print_status("")
 
-    # At eta=0.1 (sGB benchmark)
-    res_01 = results["eta_0.1"]
+    # At eta=0.3 (interior-regularity floor, sGB benchmark)
+    res_01 = results["eta_0.3"]
     peri_01 = res_01["pericentre"]
-    print_status(f"  eta=0.1 (sGB benchmark):", "INFO")
+    print_status(f"  eta=0.3 (sGB benchmark):", "INFO")
     print_status(f"    Pericentre: ratio = {peri_01['ratio']:.8f}, sign = {peri_01['sign']}", "INFO")
     print_status(f"    M_phantom fraction = {peri_01['M_phantom_fraction']:.2e}", "INFO")
     print_status("")
@@ -376,10 +376,10 @@ def main():
     print_status("--- Physical interpretation ---", "TITLE")
     print_status(f"  S2 pericentre: r ~ {r_peri_Rs:.0f} R_s", "INFO")
     print_status(f"  Gravitational potential: GM/(rc^2) ~ {1/(2*r_peri_Rs):.2e}", "INFO")
-    print_status(f"  TEP temporal transfer (eta=0.1): T_P - 1 ~ {peri_01['T_P'] - 1:.2e}", "INFO")
-    print_status(f"  TEP spatial calibration (eta=0.1): S_a - 1 ~ {peri_01['S_a'] - 1:.2e}", "INFO")
+    print_status(f"  TEP temporal transfer (eta=0.3): T_P - 1 ~ {peri_01['T_P'] - 1:.2e}", "INFO")
+    print_status(f"  TEP spatial calibration (eta=0.3): S_a - 1 ~ {peri_01['S_a'] - 1:.2e}", "INFO")
     print_status("")
-    print_status(f"  For the mass-inflation branch, eta=0.1 gives a small {peri_01['M_phantom_fraction']:.2e} fraction at S2.", "INFO")
+    print_status(f"  For the mass-inflation branch, eta=0.3 gives a small {peri_01['M_phantom_fraction']:.2e} fraction at S2.", "INFO")
     print_status("  The actual eta_TEP is constrained by the S2 TEP fit (steps 03/06).", "INFO")
     print_status("  If the fitted eta_TEP is consistent with zero, the data favour GR.", "INFO")
     print_status("")
@@ -404,7 +404,7 @@ def main():
         },
         "interpretation": (
             f"At S2 pericentre (r ~ {r_peri_Rs:.0f} R_s), the mass-inflation TEP branch "
-            "(alpha_GB < 0) gives a positive Phantom Mass sign.  For eta=0.1 the magnitude is "
+            "(alpha_GB < 0) gives a positive Phantom Mass sign.  For eta=0.3 the magnitude is "
             f"~{peri_01['M_phantom_fraction']:.2e}.  The actual eta_TEP is constrained by the S2 "
             "TEP fit; if consistent with zero, the data favour GR.  Horizon-scale probes provide "
             "the decisive test."

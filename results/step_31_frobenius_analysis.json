@@ -2,7 +2,7 @@
   "parameters": {
     "M": 1.0,
     "g": 1.1,
-    "eta": -0.1,
+    "eta": 0.3,
     "l": 2
   },
   "tortoise_at_centre": {
@@ -19,7 +19,7 @@
   "potential_scaling": {
     "V_scalar_power": -2.0000000036620653,
     "V_grav_power": -2.000000004119824,
-    "V_mix_interior_power": -2.0000000027465483,
+    "V_mix_interior_power": -2.000000002746549,
     "expected_power": -2.0,
     "note": "All potentials scale as 1/r^2 near the regular centre"
   },

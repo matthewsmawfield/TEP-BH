@@ -15,7 +15,8 @@ All scripts are numbered step_00 through step_49 in scripts/steps/:
                    characteristic matrices, conformal invariance.
   QNM       25–30  QNM solvers: perturbative, spectral, horizon branch,
                    validation, matrix Leaver, Taylor recurrence.
-  INT       31–34  Interior: Frobenius, integration, analysis, solver.
+  INT       31–34,50  Interior: Frobenius, integration, analysis, solver,
+                   darkness threshold.
   PHAN      35–39  Phantom mass, EHT visibility fit.
   KGW       40–41  Kerr-sGB true solution, GW250114 confrontation.
   FIG       42     Figure generation.
@@ -114,12 +115,13 @@ QNM_STEPS = [
     ("step_30_taylor_recurrence", "Taylor Recurrence Solver", ["step_34_solve_interior"]),
 ]
 
-# Phase 6: Derive — Interior (31–34)
+# Phase 6: Derive — Interior (31–34, 50)
 INTERIOR_STEPS = [
     ("step_31_frobenius_analysis", "Frobenius Analysis", ["step_12_self_gravitating"]),
     ("step_32_interior_integration", "Interior Integration", ["step_31_frobenius_analysis"]),
     ("step_33_interior_analysis", "Interior Analysis", ["step_32_interior_integration"]),
     ("step_34_solve_interior", "TEP Interior Solver on Hayward Background", ["step_32_interior_integration"]),
+    ("step_50_darkness_threshold", "Operational Darkness Threshold", ["step_34_solve_interior"]),
 ]
 
 # Phase 7: Derive — Phantom Mass & EHT (35–39)
@@ -160,7 +162,7 @@ PHASE_BOUNDARIES = {
     "geometry": ("step_16_exact_geometry", "step_19_observer_frequency_transfer"),
     "observables": ("step_20_corrected_observables", "step_24_conformal_invariance_check"),
     "qnm": ("step_25_qnm_solver", "step_30_taylor_recurrence"),
-    "interior": ("step_31_frobenius_analysis", "step_34_solve_interior"),
+    "interior": ("step_31_frobenius_analysis", "step_50_darkness_threshold"),
     "phantom": ("step_35_mass_bias_sign", "step_39_eht_visibility_fit"),
     "kerr_gw": ("step_40_kerr_sgb_true", "step_41_gw250114_confrontation"),
     "figures": ("step_42_generate_figures", "step_42_generate_figures"),
@@ -479,7 +481,7 @@ def main():
   geometry   16-19  Exact geometry, null expansions, redshift
   observables 20-24 Corrected observables, cT, quadratic action
   qnm        25-30  QNM solvers
-  interior   31-34  Interior analysis & solver
+  interior   31-34,50  Interior analysis, solver & darkness threshold
   phantom    35-39  Phantom mass, EHT visibility
   kerr_gw    40-41  Kerr-sGB, GW250114
   figures    42     Figure generation

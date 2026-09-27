@@ -129,11 +129,11 @@ def GB_taylor_coefficients(M, g, order=20):
 def scalar_taylor_recurrence(M, g, eta, phi_0, order=30):
     """Compute Taylor coefficients of phi(r) from the scalar ODE.
 
-    The scalar equation is:
-      (1/(r^2 N)) d/dr (r^2 N phi') = alpha_GB * f'(phi) * G(r)
+    The scalar equation (corrected convention, see step_34) is:
+      (1/r^2) d/dr (r^2 N^2 phi') = -alpha_GB * f'(phi) * G(r)
 
     Expanding:
-      phi'' + (2/r + N'/N) phi' = alpha_GB * f'(phi) * G / N^2
+      phi'' + (2/r + 2 N'/N) phi' = -alpha_GB * f'(phi) * G / N^2
 
     With phi(r) = sum phi_n r^n, and the metric Taylor coefficients,
     we match powers of r order by order.
@@ -144,15 +144,15 @@ def scalar_taylor_recurrence(M, g, eta, phi_0, order=30):
     The ODE becomes:
       phi'' + P(r) phi' = S(r)
 
-    where P(r) = 2/r + N'/N = 2/r + sum P_n r^{n-1}  (N'/N has a simple form)
-    and   S(r) = alpha_GB * G(r) / N^2(r) = sum S_n r^n
+    where P(r) = 2/r + 2 N'/N = 2/r + sum P_n r^{n-1}
+    and   S(r) = -alpha_GB * G(r) / N^2(r) = sum S_n r^n
 
     Substituting phi = sum phi_n r^n:
-      sum n(n-1) phi_n r^{n-2} + (2/r + N'/N) sum n phi_n r^{n-1} = S(r)
+      sum n(n-1) phi_n r^{n-2} + (2/r + 2 N'/N) sum n phi_n r^{n-1} = S(r)
 
-      sum n(n+1) phi_n r^{n-2} + (N'/N) sum n phi_n r^{n-1} = S(r)
+      sum n(n+1) phi_n r^{n-2} + (2 N'/N) sum n phi_n r^{n-1} = S(r)
 
-    Let Q(r) = N'/N = sum Q_n r^n (Taylor series).
+    Let Q(r) = 2 N'/N = sum Q_n r^n (Taylor series).
     Then: sum n(n+1) phi_n r^{n-2} + Q(r) sum n phi_n r^{n-1} = S(r)
 
     Shifting index: let m = n-2 in the first sum, m = n-1 in the second:
@@ -183,11 +183,11 @@ def scalar_taylor_recurrence(M, g, eta, phi_0, order=30):
     Nprime_coeffs = np.zeros(order + 1)
     for n in range(1, order + 1):
         Nprime_coeffs[n - 1] = n * N_coeffs[n]
-    # Q = N' / N:  Q * N = N', so sum Q_j N_{m-j} = N'_m
-    Q_coeffs[0] = Nprime_coeffs[0] / N_coeffs[0]
+    # Q = 2 N' / N:  (Q/2) * N = N', so sum (Q_j/2) N_{m-j} = N'_m
+    Q_coeffs[0] = 2.0 * Nprime_coeffs[0] / N_coeffs[0]
     for m in range(1, order + 1):
         s = sum(Q_coeffs[j] * N_coeffs[m - j] for j in range(m))
-        Q_coeffs[m] = (Nprime_coeffs[m] - s) / N_coeffs[0]
+        Q_coeffs[m] = 2.0 * (Nprime_coeffs[m] - s) / N_coeffs[0]
 
     # Taylor coefficients of S = alpha_GB * G / N^2 = alpha_GB * G / F
     # G / F:  (sum G_n r^n) / (sum F_n r^n)  by series division
@@ -196,7 +196,7 @@ def scalar_taylor_recurrence(M, g, eta, phi_0, order=30):
     for m in range(1, order + 1):
         s = sum(GF_coeffs[j] * F_coeffs[m - j] for j in range(m))
         GF_coeffs[m] = (G_coeffs[m] - s) / F_coeffs[0]
-    S_coeffs = alpha_GB * GF_coeffs  # f'(phi) = 1 for linear coupling
+    S_coeffs = -alpha_GB * GF_coeffs  # f'(phi) = 1 for linear coupling; EdGB well sign
 
     # Taylor recurrence for phi
     phi_coeffs = np.zeros(order + 1)
@@ -224,25 +224,25 @@ def validate_taylor_against_integration(M, g, eta, phi_0, taylor_data, order=20)
     """Compare the Taylor series of phi(r) with the numerical integration."""
     phi_coeffs = taylor_data["phi_coeffs"]
 
-    # Numerical integration (from step_34_solve_interior.py)
-    r_match = 10.0
-    r_min = 1e-8
-    n_steps = 5000
-    r_grid_num = np.geomspace(r_match, r_min, n_steps)
+    # Numerical reference: outward integration from the regular centre
+    # (the corrected two-point BVP of step_34_solve_interior.py).  The
+    # regular-centre expansion is phi(r) = phi_0 + phi_2 r^2 + ...,
+    # phi_2 = src(0) / (6 N(0)^2), with src = -alpha_GB G for f' = 1.
+    alpha_GB = eta * M**2 / 3.0
+    r_eps = 1e-6
+    src0 = -alpha_GB * gb_invariant(r_eps, M, g)
+    phi2 = src0 / (6.0 * hayward_lapse_sq(r_eps, M, g))
+    y0 = [phi_0 + phi2 * r_eps**2, 2.0 * phi2 * r_eps]
 
-    phi0_match = sgb_scalar_exterior(r_match, M, eta)
-    phi_p0_match = sgb_scalar_exterior_derivative(r_match, M, eta)
-
-    def odes(r, y):
-        return [-v for v in scalar_equation(r, y, M, eta, g, linear_f, d_linear_f)]
-
-    sol = solve_ivp(odes, [r_match, r_min], [phi0_match, phi_p0_match],
-                    method="Radau", t_eval=r_grid_num, rtol=1e-9, atol=1e-11)
+    sol = solve_ivp(
+        lambda r, y: scalar_equation(r, y, M, eta, g, linear_f, d_linear_f),
+        [r_eps, 0.2], y0, method="Radau", dense_output=True,
+        rtol=1e-9, atol=1e-11)
 
     # Compare at several radii near the centre
     r_test = np.array([1e-6, 1e-5, 1e-4, 1e-3, 1e-2, 5e-2, 1e-1])
     phi_taylor = np.array([sum(phi_coeffs[n] * r**n for n in range(order + 1)) for r in r_test])
-    phi_numerical = np.interp(r_test, sol.t[::-1], sol.y[0][::-1])
+    phi_numerical = sol.sol(r_test)[0]
 
     # Also compare F(r) and N(r)
     F_taylor = np.array([sum(taylor_data["F_coeffs"][n] * r**n for n in range(order + 1)) for r in r_test])
@@ -361,7 +361,7 @@ def matrix_recurrence_coefficients(M, g, eta, l, omega, taylor_data, order=30):
 def main():
     M = 1.0
     g = 1.1
-    eta = -0.1
+    eta = 0.3
     l = 2
     order = 30
 
@@ -382,8 +382,11 @@ def main():
 
     # 2. Scalar field Taylor coefficients
     print("\n--- 2. Scalar field phi(r) Taylor recurrence ---")
-    # phi(0) from the numerical integration (mass-inflation branch)
-    phi_0 = -1.5425551708756  # from results/step_34_solve_interior.json
+    # phi(0) from the numerical BVP solution (temporal-well branch)
+    _s34_path = os.path.join(RESULTS_DIR, "step_34_solve_interior.json")
+    with open(_s34_path) as _f:
+        _s34 = json.load(_f)
+    phi_0 = _s34["best_diagnostics"]["phi_final"]  # from results/step_34_solve_interior.json
     taylor_data = scalar_taylor_recurrence(M, g, eta, phi_0, order)
     phi_coeffs = taylor_data["phi_coeffs"]
     print(f"  phi(0)   = {phi_coeffs[0]:.10f}")

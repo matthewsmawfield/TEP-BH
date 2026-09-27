@@ -1,26 +1,26 @@
 {
   "bayes_factors": {
-    "AIC": 0.3678794524281269,
-    "BIC": 0.05471756719075152,
-    "max_likelihood_ratio": 1.0000000305988412
+    "AIC": 0.36787945169596215,
+    "BIC": 0.054717567081850965,
+    "max_likelihood_ratio": 1.000000028608611
   },
   "chi2": {
-    "GR": 304.17107585858656,
-    "TEP": 304.1710757973889,
-    "delta": 6.119768158896477e-08
+    "GR": 304.171075853439,
+    "TEP": 304.17107579622177,
+    "delta": 5.721722118323669e-08
   },
   "conclusion": "At S2 pericentre (r ~ 1381 R_s), the fitted TEP correction is consistent with zero. The extra TEP parameter is not constrained by the data, so GR is the preferred simpler model. This is the expected weak-field result. The decisive test requires horizon-scale observations.",
   "description": "Formal likelihood comparison: GR vs TEP",
   "information_criteria": {
     "AIC": {
-      "GR": 326.17107585858656,
-      "TEP": 328.1710757973889,
-      "delta": 1.9999999388023184
+      "GR": 326.171075853439,
+      "TEP": 328.17107579622177,
+      "delta": 1.9999999427827788
     },
     "BIC": {
-      "GR": 368.0936267813303,
-      "TEP": 373.9047677131093,
-      "delta": 5.81114093177905
+      "GR": 368.0936267761827,
+      "TEP": 373.9047677119422,
+      "delta": 5.811140935759511
     }
   },
   "interpretation": "strong evidence for GR",
@@ -31,10 +31,10 @@
   },
   "status": "success",
   "step": "step_48_likelihood",
-  "timestamp": "2026-07-29T01:24:33.364241",
+  "timestamp": "2026-09-21T23:09:54.524028",
   "wilks_test": {
-    "delta_chi2": 6.119768158896477e-08,
+    "delta_chi2": 5.721722118323669e-08,
     "dof": 1,
-    "p_value": 0.9998026180015102
+    "p_value": 0.9998091450455701
   }
 }

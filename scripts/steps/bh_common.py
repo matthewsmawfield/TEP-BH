@@ -214,7 +214,6 @@ def make_step_logger(step_id: str) -> TEPLogger:
         name=f"tep_bh_{step_id}",
         log_file_path=log_path(step_id),
         reset_log=True,
-        prefix=step_id,
     )
     # Also tee step output to the main pipeline log so it captures everything.
     pipeline_log = LOGS_DIR / "tep_bh_pipeline.log"
@@ -223,7 +222,7 @@ def make_step_logger(step_id: str) -> TEPLogger:
         from scripts.utils.logger import TEPFileFormatter
         tee_fh = _logging.FileHandler(pipeline_log, mode='a', encoding='utf-8')
         tee_fh.setLevel(_logging.DEBUG)
-        tee_fh.setFormatter(TEPFileFormatter(prefix=step_id))
+        tee_fh.setFormatter(TEPFileFormatter())
         logger.logger.addHandler(tee_fh)
     set_step_logger(logger)
     return logger
@@ -416,10 +415,46 @@ class TEPBHModel:
         """Radial derivative of scalar field."""
         return _scalar_field_gradient(r, self.M, self.phi_0, self.delta)
 
+    def b0_canonical_coefficient(self, mass_kg):
+        """Convention-A equivalent of the code-unit B0 for a given mass.
+
+        The code uses geometric units (G = c = 1) with a dimensionless
+        field (phi = Phi/M_*) and the black-hole mass M = 1, so B0 = 1.0
+        means B0 = 1.0 M_BH^2 in geometrized units -- i.e. mass^{-2} in
+        natural units (hbar = c = 1), the correct dimension for a
+        dimensionless-field disformal coefficient. In the canonical
+        Paper 0 EFT the field has mass dimension 1 and B_0 has
+        dimension -4; expressed as the dimensionless coefficient
+        B_0 M_Pl^4 of the holonomy-bound convention (|B_0| M_Pl^4
+        <= 5e-8), the code value maps to
+
+            B0_A = B0 * (M_BH_geom * M_Pl_nat)^2   (dimensionless)
+
+        where M_BH_geom = GM/c^2 [m] and M_Pl_nat = M_Pl c/hbar [m^-1].
+        For a solar-mass black hole this is ~3e74 -- far ABOVE the bound.
+        This is NOT a violation: it demonstrates that the strong-field
+        construction normalization and the canonical weak-field transport
+        amplitude are distinct-sector parameters that must not be
+        numerically identified (Paper 0 Section 2.2 states that
+        dimensionless-field normalizations are not imported into the
+        weak-field theory).
+        """
+        G_SI = 6.674e-11        # m^3 kg^-1 s^-2
+        C_SI = 299792458.0      # m/s
+        HBAR_SI = 1.054571817e-34  # J s
+        M_PL_KG = 4.341e-9      # reduced Planck mass [kg]
+        m_geom = G_SI * mass_kg / C_SI**2          # geometrized mass [m]
+        m_pl_inv = M_PL_KG * C_SI / HBAR_SI        # M_Pl in m^-1
+        return self.B0 * (m_geom * m_pl_inv) ** 2
+
     def to_dict(self):
+        M_SUN_KG = 1.989e30
         return {
             'beta_A': self.beta_A,
             'B0': self.B0,
+            'B0_units': 'geometric code units (M = 1, dimensionless field); B0 = 1 M_BH^2 geometrized (mass^-2 natural units) -- strong-field construction normalization, not the canonical weak-field coefficient of Paper 0',
+            'B0_canonical_coefficient_per_solar_mass': self.b0_canonical_coefficient(M_SUN_KG),
+            'B0_convention_note': 'B0_A = B0 * (M_BH_geom * M_Pl_nat)^2 in the canonical dimensionless convention; ~3e74 for 1 M_sun, ~1e94 for M87* -- incommensurable with the Paper 0 holonomy bound |B_0| <= 5e-8 because the two are distinct-sector parameters (strong-field construction envelope vs weak-field transport amplitude), not two values of one parameter',
             'n_B': self.n_B,
             'B_type': 'gaussian_bump',
             'sigma_B': self.sigma_B,

@@ -53,9 +53,9 @@
     "exterior_benchmark": {
       "method": "2x2 effective matrix with sGB O(eta^2) horizon shift + leading polar-scalar mixing",
       "parameters": {
-        "eta": -0.1,
+        "eta": 0.3,
         "M": 1.0,
-        "alpha_GB": -0.03333333333333333
+        "alpha_GB": 0.09999999999999999
       },
       "schwarzschild_reference": {
         "gravitational_l2": {
@@ -68,47 +68,47 @@
         }
       },
       "polar_led": {
-        "real": 0.374076,
-        "imag": -0.089143
+        "real": 0.378145,
+        "imag": -0.090111
       },
       "scalar_led": {
-        "real": 0.484056,
-        "imag": -0.096781
+        "real": 0.48669,
+        "imag": -0.097308
       },
       "axial_shift": {
-        "real_percent": 0.136,
+        "real_percent": 0.344,
         "imag_percent": 0.0
       },
       "isospectrality_breaking": {
-        "real_percent": -0.028,
-        "damping_percent": 0.067
+        "real_percent": -0.0276,
+        "damping_percent": 0.0654
       }
     },
     "deep_transit": {
       "method": "Full 2x2 matrix continued-fraction solver with regular inner boundary",
       "parameters": {
-        "eta": -0.1,
+        "eta": 0.3,
         "M": 1.0,
         "g": 1.1,
-        "alpha_GB": -0.03333333333333333
+        "alpha_GB": 0.09999999999999999
       },
       "geometry": "Hayward regular background (horizonless, F_min = 0.038)",
       "polar_led": {
-        "real": 0.4624,
-        "imag": -0.032
+        "real": 0.4402,
+        "imag": -0.0341
       },
       "scalar_led": {
-        "real": 0.4163,
-        "imag": -0.0322
+        "real": 0.4164,
+        "imag": -0.0323
       },
       "overtone": {
-        "real": 0.7447,
+        "real": 0.7446,
         "imag": -0.0347
       },
-      "damping_ratio": 2.8,
+      "damping_ratio": 2.6,
       "isospectrality_breaking": {
-        "real_percent": 14.8,
-        "damping_percent": 0.8
+        "real_percent": 9.3,
+        "damping_percent": 7.3
       }
     }
   },
@@ -146,12 +146,12 @@
     {
       "check": "Quantitative match to Bryant eikonal splitting",
       "status": "PASS",
-      "note": "Our breaking -0.0568% vs eikonal 0.0606%: 93.8% match at l=2"
+      "note": "Our breaking -0.5558% vs eikonal 0.5452%: 98.1% match at l=2"
     },
     {
       "check": "O(alpha^2) scaling confirmed quantitatively",
       "status": "PASS",
-      "note": "Axial/alpha^2 = 35.08 (constant to 1% across eta values)"
+      "note": "Axial/alpha^2 = 34.89 (range 34.40-35.14 across eta values)"
     }
   ],
   "deep_transit_validation": [
@@ -168,7 +168,7 @@
     {
       "check": "Longer damping (horizonless signature)",
       "status": "PASS",
-      "note": "2.8x longer than Schwarzschild"
+      "note": "2.6x longer than Schwarzschild"
     },
     {
       "check": "Regular inner boundary",

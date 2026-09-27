@@ -69,11 +69,14 @@ class TEPFormatter(logging.Formatter):
 class TEPFileFormatter(logging.Formatter):
     """Clean formatter for file output without ANSI color codes."""
 
-    def __init__(self, fmt=None, datefmt=None):
+    def __init__(self, fmt=None, datefmt=None, prefix=None):
         super().__init__(fmt, datefmt='%H:%M:%S')
+        self.prefix = prefix
 
     def format(self, record):
         message = record.getMessage()
+        if self.prefix:
+            message = f"[{self.prefix}] {message}"
         level_mapping = {
             25: 'PROCESS',
             26: 'SUCCESS',
@@ -89,10 +92,19 @@ class TEPFileFormatter(logging.Formatter):
         return f"[{timestamp}] [{level_name}] {message}"
 
 class TEPLogger:
-    def __init__(self, name: str = "tep_c0", level: str = "INFO", log_file_path: Optional[Path] = None, reset_log: bool = True):
+    def __init__(self, name: str = "tep_c0", level: str = "INFO", log_file_path: Optional[Path] = None, reset_log: bool = True, prefix: Optional[str] = None):
         self.logger = logging.getLogger(name)
         self.logger.setLevel(self._get_log_level(level))
         self.logger.handlers.clear()
+        self.logger.filters.clear()
+
+        if prefix:
+            class _PrefixFilter(logging.Filter):
+                def filter(self, record):
+                    record.msg = f"[{prefix}] {record.getMessage()}"
+                    record.args = ()
+                    return True
+            self.logger.addFilter(_PrefixFilter())
         
         ch = logging.StreamHandler(sys.stdout)
         ch.setLevel(logging.DEBUG)

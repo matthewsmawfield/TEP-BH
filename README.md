@@ -6,8 +6,8 @@
 ![TEP-BH: Black Holes and the Temporal Horizon](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.2 (Bahrain)  
-**First published:** 8 August 2026 · **Last updated:8 August 2026
+**Version:** v0.3 (Bahrain)  
+**First published:** 29 July 2026 · **Last updated:** 23 September 2026
 **Status:** Preprint (Open for Collaboration)  
 **DOI:** [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826)  
 **Website:** [https://mlsmawfield.com/tep/bh](https://mlsmawfield.com/tep/bh)  
@@ -81,7 +81,7 @@ npm run build
 
 This generates:
 - `site/dist/index.html` — static manuscript
-- `28-TEP-BH-v0.2-Bahrain.md` — root markdown manuscript
+- `28-TEP-BH-v0.3-Bahrain.md` — root markdown manuscript
 
 ## PDF Generation
 
@@ -89,7 +89,7 @@ This generates:
 python scripts/utils/generate_site_pdf.py --quality high --wait-time 8
 ```
 
-Generates `28-TEP-BH-v0.2-Bahrain.pdf` in both the root and `site/public/docs/`.
+Generates `28-TEP-BH-v0.3-Bahrain.pdf` in both the root and `site/public/docs/`.
 
 ## Project Structure
 
@@ -108,8 +108,8 @@ TEP-BH/
 │   ├── build.js          # Site build script
 │   └── manifest.json     # Site manifest
 ├── manuscripts/          # Markdown manuscripts
-├── 28-TEP-BH-v0.2-Bahrain.md  # Auto-generated root manuscript
-└── 28-TEP-BH-v0.2-Bahrain.pdf # Generated PDF
+├── 28-TEP-BH-v0.3-Bahrain.md  # Auto-generated root manuscript
+└── 28-TEP-BH-v0.3-Bahrain.pdf # Generated PDF
 ```
 
 ## License
@@ -127,18 +127,18 @@ Creative Commons Attribution 4.0 International License (CC BY 4.0) — see [LICE
 | **Paper 4** | [TEP-GL](https://github.com/matthewsmawfield/TEP-GL) | Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations | [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) |
 | **Paper 5** | [TEP-GTE](https://github.com/matthewsmawfield/TEP-GTE) | Global Time Echoes: Empirical Validation of the Temporal Equivalence Principle | [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) |
 | **Paper 6** | [TEP-UCD](https://github.com/matthewsmawfield/TEP-UCD) | Universal Critical Density: Unifying Atomic, Galactic, and Compact Object Scales | [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) |
-| **Paper 7** | [TEP-RBH](https://github.com/matthewsmawfield/TEP-RBH) | The Soliton Wake: A Runaway Black Hole as a Gravitational Soliton | [10.5281/zenodo.18059251](https://doi.org/10.5281/zenodo.18059251) |
+| **Paper 7** | [TEP-RBH](https://github.com/matthewsmawfield/TEP-RBH) | The Soliton Wake: A Runaway Black Hole as a Gravitational Soliton | [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) |
 | **Paper 8** | [TEP-SLR](https://github.com/matthewsmawfield/TEP-SLR) | Global Time Echoes: Optical-Domain Consistency Test via Satellite Laser Ranging | [10.5281/zenodo.18064581](https://doi.org/10.5281/zenodo.18064581) |
 | **Paper 9** | [TEP-EXP](https://github.com/matthewsmawfield/TEP-EXP) | What Do Precision Tests of General Relativity Actually Measure? | [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760) |
 | **Paper 10** | [TEP-COS](https://github.com/matthewsmawfield/TEP-COS) | Suppressed Density Scaling in Globular Cluster Pulsars | [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) |
 | **Paper 11** | [TEP-H0](https://github.com/matthewsmawfield/TEP-H0) | The Cepheid Bias: Resolving the Hubble Tension | [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) |
 | **Paper 12** | [TEP-JWST](https://github.com/matthewsmawfield/TEP-JWST) | A Unified Resolution to the JWST High-Redshift Anomalies | [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) |
-| **Paper 13** | [TEP-WB](https://github.com/matthewsmawfield/TEP-WB) | Temporal Shear Recovery in Gaia DR3 Wide Binaries | [10.5281/zenodo.19102062](https://doi.org/10.5281/zenodo.19102062) |
+| **Paper 13** | [TEP-WB](https://github.com/matthewsmawfield/TEP-WB) | Temporal Shear Recovery in Gaia DR3 Wide Binaries | [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) |
 | **Paper 14** | [TEP-GNSS-MGEX](https://github.com/matthewsmawfield/TEP-GNSS-MGEX) | MGEX Multi-GNSS Clock Replication | — |
-| **Paper 15** | [TEP-EFA](https://github.com/matthewsmawfield/TEP-EFA) | Temporal Shear in the Earth Flyby Anomaly | [10.5281/zenodo.19454863](https://doi.org/10.5281/zenodo.19454863) |
+| **Paper 15** | [TEP-EFA](https://github.com/matthewsmawfield/TEP-EFA) | Temporal Shear in the Earth Flyby Anomaly | [10.5281/zenodo.19454862](https://doi.org/10.5281/zenodo.19454862) |
 | **Paper 16** | [TEP-J0437](https://github.com/matthewsmawfield/TEP-J0437) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620) |
 | **Paper 17** | [TEP-LLR](https://github.com/matthewsmawfield/TEP-LLR) | Lunar Laser Ranging and the Nordtvedt Effect | [10.5281/zenodo.19446029](https://doi.org/10.5281/zenodo.19446029) |
-| **Paper 18** | [TEP-HC](https://github.com/matthewsmawfield/TEP-HC) | EFT Mapping and Acoustic Peak Constraints via hi_class | [10.5281/zenodo.20682752](https://doi.org/10.5281/zenodo.20682752) |
+| **Paper 18** | [TEP-HC](https://github.com/matthewsmawfield/TEP-HC) | EFT Mapping and Acoustic Peak Constraints via hi_class | [10.5281/zenodo.20572722](https://doi.org/10.5281/zenodo.20572722) |
 | **Paper 19** | [TEP-LENS](https://github.com/matthewsmawfield/TEP-LENS) | Blind-Prediction Residual Test in Multiply-Imaged Supernovae | — |
 | **Paper 26** | [TEP-C0](https://github.com/matthewsmawfield/TEP-C0) | A Covariant Alternative to Cosmic Expansion | [10.5281/zenodo.20370143](https://doi.org/10.5281/zenodo.20370143) |
 | **Paper 28** | **TEP-BH** (This repo) | Black Holes and the Temporal Horizon | [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826) |
@@ -152,7 +152,7 @@ Creative Commons Attribution 4.0 International License (CC BY 4.0) — see [LICE
   journal={Zenodo},
   year={2026},
   doi={10.5281/zenodo.21677826},
-  note={Preprint v0.2 (Bahrain)},
+  note={Preprint v0.3 (Bahrain)},
   license={CC-BY-4.0}
 }
 ```

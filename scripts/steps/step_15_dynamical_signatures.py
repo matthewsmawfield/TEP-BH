@@ -275,7 +275,9 @@ def compute_cosmological_constraints(eta, M):
     5. **LIGO constraint**: From GW150914 inspiral phase, the -1PN dipole
        correction must be < ~10% of the quadrupole, giving eta < ~0.1.
 
-    6. **EHT constraint**: From shadow size measurements, eta < ~0.1.
+    6. **EHT constraint**: From shadow size measurements, |eta| < ~0.3
+       (the self-consistent shadow shift at eta=+0.3 is ~0.16 uas,
+       an order below the ~1.5 uas measurement uncertainty).
     """
     Q_s = 2.0 * eta / 3.0
     zeta = eta**2 / M**4

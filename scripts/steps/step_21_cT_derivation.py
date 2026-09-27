@@ -105,7 +105,7 @@ def derive_cT():
     print_status("")
 
     M = 1.0
-    eta = 0.1
+    eta = 0.3
     alpha_GB = eta * M**2 / 3
 
     print_status(f"Local c_T at various radii (η = {eta}, M = {M}):", "INFO")

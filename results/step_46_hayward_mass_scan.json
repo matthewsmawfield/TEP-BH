@@ -1,0 +1,114 @@
+{
+  "step": "step_46_hayward_mass_scan",
+  "g_core": 1.0,
+  "kretschmann_centre_formula": "96 M^2 / g^6",
+  "rows": [
+    {
+      "M": 1.0,
+      "f_min": -0.05826726451611752,
+      "f_positive_outside_any_horizon_or_core": true,
+      "kretschmann_centre": 96.0,
+      "finite": true,
+      "static": true
+    },
+    {
+      "M": 3.0,
+      "f_min": -2.174801793548353,
+      "f_positive_outside_any_horizon_or_core": false,
+      "kretschmann_centre": 864.0,
+      "finite": true,
+      "static": true
+    },
+    {
+      "M": 10.0,
+      "f_min": -9.572248108836503,
+      "f_positive_outside_any_horizon_or_core": false,
+      "kretschmann_centre": 9600.0,
+      "finite": true,
+      "static": true
+    },
+    {
+      "M": 100.0,
+      "f_min": -99.01249531035131,
+      "f_positive_outside_any_horizon_or_core": false,
+      "kretschmann_centre": 960000.0,
+      "finite": true,
+      "static": true
+    },
+    {
+      "M": 1000.0,
+      "f_min": -198.75039937597347,
+      "f_positive_outside_any_horizon_or_core": false,
+      "kretschmann_centre": 96000000.0,
+      "finite": true,
+      "static": true
+    },
+    {
+      "M": 1000000.0,
+      "f_min": -198.94999999980018,
+      "f_positive_outside_any_horizon_or_core": false,
+      "kretschmann_centre": 96000000000000.0,
+      "finite": true,
+      "static": true
+    },
+    {
+      "M": 1000000000.0,
+      "f_min": -198.95,
+      "f_positive_outside_any_horizon_or_core": false,
+      "kretschmann_centre": 9.6e+19,
+      "finite": true,
+      "static": true
+    },
+    {
+      "M": 10000000000.0,
+      "f_min": -198.95,
+      "f_positive_outside_any_horizon_or_core": false,
+      "kretschmann_centre": 9.6e+21,
+      "finite": true,
+      "static": true
+    }
+  ],
+  "perturbative_sgb_coupling": [
+    {
+      "M": 1.0,
+      "eta": 0.3,
+      "perturbative": true
+    },
+    {
+      "M": 3.0,
+      "eta": 0.03333333333333333,
+      "perturbative": true
+    },
+    {
+      "M": 10.0,
+      "eta": 0.003,
+      "perturbative": true
+    },
+    {
+      "M": 100.0,
+      "eta": 2.9999999999999997e-05,
+      "perturbative": true
+    },
+    {
+      "M": 1000.0,
+      "eta": 3e-07,
+      "perturbative": true
+    },
+    {
+      "M": 1000000.0,
+      "eta": 3e-13,
+      "perturbative": true
+    },
+    {
+      "M": 1000000000.0,
+      "eta": 3e-19,
+      "perturbative": true
+    },
+    {
+      "M": 10000000000.0,
+      "eta": 3e-21,
+      "perturbative": true
+    }
+  ],
+  "statement": "The static Hayward temporal well has finite central curvature at every scanned mass, including supermassive. The perturbative sGB coupling is small at those masses; its breakdown near a few solar masses is a failure of that approximation, not of the well."
+}

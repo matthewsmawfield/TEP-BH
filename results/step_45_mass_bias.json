@@ -3,8 +3,8 @@
   "equation": "(M_app^GR / M_local^TEP)(eta) / (M_app^GR / M_local^TEP)(eta=0) = ([S_a(eta)/S_a(0)]^3 * [D_dyn(eta)/D_dyn(0)]) / [T_P(eta)/T_P(0)]^2",
   "gate": "GATE -1",
   "gate_result": {
-    "M_phantom_fraction": 0.00012178881534441466,
-    "ratio": 1.0001217888153444,
+    "M_phantom_fraction": 0.0003654109453865573,
+    "ratio": 1.0003654109453866,
     "sign": "positive"
   },
   "gr_fit": {
@@ -13,7 +13,7 @@
     "a_arcsec": 0.1279766075188798,
     "e": 0.8909546466739195
   },
-  "interpretation": "At S2 pericentre (r ~ 1369 R_s), the mass-inflation TEP branch (alpha_GB < 0) gives a positive Phantom Mass sign.  For eta=0.1 the magnitude is ~1.22e-04.  The actual eta_TEP is constrained by the S2 TEP fit; if consistent with zero, the data favour GR.  Horizon-scale probes provide the decisive test.",
+  "interpretation": "At S2 pericentre (r ~ 1369 R_s), the mass-inflation TEP branch (alpha_GB < 0) gives a positive Phantom Mass sign.  For eta=0.3 the magnitude is ~3.65e-04.  The actual eta_TEP is constrained by the S2 TEP fit; if consistent with zero, the data favour GR.  Horizon-scale probes provide the decisive test.",
   "results_by_eta": {
     "eta_0.0": {
       "R_s_AU": 0.08483807476956957,
@@ -87,6 +87,30 @@
         "sign": "positive"
       }
     },
+    "eta_0.3": {
+      "R_s_AU": 0.08483807476956957,
+      "apocentre": {
+        "D_dyn": 1.000000000000404,
+        "M_phantom_fraction": 2.106834135795488e-05,
+        "S_a": 1.0000042136326812,
+        "T_P": 0.9999957863850734,
+        "r_AU": 2013.4230941386616,
+        "r_Rs": 23732.541074362674,
+        "ratio": 1.000021068341358,
+        "sign": "positive"
+      },
+      "eta": 0.3,
+      "pericentre": {
+        "D_dyn": 1.000000002106604,
+        "M_phantom_fraction": 0.0003654109453865573,
+        "S_a": 1.0000730710880543,
+        "T_P": 0.9999269342509393,
+        "r_AU": 116.10772002460456,
+        "r_Rs": 1368.5803259912145,
+        "ratio": 1.0003654109453866,
+        "sign": "positive"
+      }
+    },
     "eta_0.5": {
       "R_s_AU": 0.08483807476956957,
       "apocentre": {
@@ -138,5 +162,5 @@
   },
   "status": "success",
   "step": "step_45_mass_bias",
-  "timestamp": "2026-07-29T01:24:33.024246"
+  "timestamp": "2026-09-21T23:04:06.055659"
 }

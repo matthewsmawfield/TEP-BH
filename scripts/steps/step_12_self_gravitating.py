@@ -675,7 +675,7 @@ def main():
     # receive an O(eta) ISCO correction from the conformal factor.
     # sigma_B=1.5 with quartic damping crushes B fast enough to keep
     # det < 0 everywhere.
-    model = SGBModel(eta=-0.3, M=M, B0=1.0, n_B=2.0, beta_A=-1.0, sigma_B=1.5)
+    model = SGBModel(eta=0.3, M=M, B0=1.0, n_B=2.0, beta_A=-1.0, sigma_B=1.5)
 
     print_status(f"  Model parameters (SGBModel):", "INFO")
     print_status(f"    eta = {model.eta} (shift-symmetric GB coupling, mass-inflation branch)", "INFO")
@@ -703,11 +703,11 @@ def main():
     r_full = np.logspace(np.log10(r_min), np.log10(r_max), 80000)
 
     # --- Coupling scan ---
-    # Negative eta = mass-inflation branch (A > 1 in the exterior)
-    eta_values = [-0.1, -0.2, -0.3, -0.5]
+    # Positive eta = temporal-well branch (A < 1 in the exterior, A -> 0 deep interior)
+    eta_values = [0.1, 0.2, 0.3, 0.5]
     scan_results = []
 
-    print_status("Running coupling scan (eta = -0.1, -0.2, -0.3, -0.5)...", "INFO")
+    print_status("Running coupling scan (eta = 0.1, 0.2, 0.3, 0.5)...", "INFO")
     print_status("")
 
     for eta in eta_values:
@@ -744,8 +744,8 @@ def main():
             print_status(f"    No det-zero boundary (globally Lorentzian)", "INFO")
         print_status("")
 
-    # --- Primary result: eta = -0.1 (moderate, perturbative, mass-inflation branch) ---
-    eta_primary = -0.1
+    # --- Primary result: eta = +0.3 (interior-regularity floor, temporal-well branch) ---
+    eta_primary = 0.3
     primary = [r for r in scan_results if r['eta'] == eta_primary][0]
 
     print_status(f"Primary result (eta = {eta_primary}):", "TITLE")

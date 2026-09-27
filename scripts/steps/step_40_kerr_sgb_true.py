@@ -331,7 +331,7 @@ def main():
     print("Delgado, Herdeiro, Radu (2020) slowly-rotating solution")
     print("=" * 70)
 
-    ETA_VALUES = [0.0, -0.05, -0.1, -0.15, -0.2]
+    ETA_VALUES = [0.0, 0.05, 0.1, 0.15, 0.2, 0.3]
     CHI_VALUES = [0.0, 0.1, 0.3, 0.5, 0.7, 0.9]
 
     # Part 1: Shadow calculation
@@ -345,7 +345,7 @@ def main():
         for eta in ETA_VALUES:
             result = shadow_rotating_sgb(J, eta, M)
             shadow_results.append(result)
-            if chi in [0.0, 0.5, 0.9] and eta in [0.0, -0.1, -0.2]:
+            if chi in [0.0, 0.5, 0.9] and eta in [0.0, 0.3]:
                 print(f"\n  chi={chi:.1f}, eta={eta:.2f}:")
                 print(f"    r_ph = {result['r_photon_sphere']:.4f}")
                 print(f"    b_pro_sgb = {result['b_prograde_sgb']:.4f}, b_ret_sgb = {result['b_retrograde_sgb']:.4f}")
@@ -394,12 +394,12 @@ def main():
     qnm_results = []
     for chi in [0.0, 0.1, 0.3, 0.5, 0.7, 0.9]:
         J = chi * M**2
-        for eta in [0.0, -0.1, -0.2]:
+        for eta in [0.0, 0.1, 0.2, 0.3]:
             result = sgb_qnm_rotating(J, eta, M, l=2, m=2)
             result["chi"] = float(chi)
             result["eta"] = float(eta)
             qnm_results.append(result)
-            if chi in [0.0, 0.5, 0.9] and eta in [0.0, -0.1]:
+            if chi in [0.0, 0.5, 0.9] and eta in [0.0, 0.3]:
                 print(f"\n  chi={chi:.1f}, eta={eta:.2f}:")
                 print(f"    omega_Schw = {result['omega_schw']['real']:.6f} {result['omega_schw']['imag']:+.6f}i")
                 print(f"    omega_Kerr = {result['omega_kerr']['real']:.6f} {result['omega_kerr']['imag']:+.6f}i")
@@ -411,12 +411,12 @@ def main():
     # QNM shift table
     print("\n--- QNM total real shift from Schwarzschild (%) ---")
     print(f"{'chi\\eta':>8s}", end="")
-    for eta in [0.0, -0.1, -0.2]:
+    for eta in [0.0, 0.1, 0.2, 0.3]:
         print(f"  {eta:7.2f}", end="")
     print()
     for chi in [0.0, 0.1, 0.3, 0.5, 0.7, 0.9]:
         print(f"{chi:8.1f}", end="")
-        for eta in [0.0, -0.1, -0.2]:
+        for eta in [0.0, 0.1, 0.2, 0.3]:
             r = [x for x in qnm_results if abs(x["chi"] - chi) < 0.01 and abs(x["eta"] - eta) < 0.01]
             if r:
                 print(f"  {r[0]['shift_total_pct']['real']:+7.4f}", end="")
@@ -435,7 +435,7 @@ def main():
     print()
 
     for chi in [0.5, 0.9]:
-        for eta in [-0.1, -0.2]:
+        for eta in [0.1, 0.2]:
             r = [x for x in shadow_results if abs(x["chi"] - chi) < 0.01 and abs(x["eta"] - eta) < 0.01]
             if r:
                 print(f"  chi={chi}, eta={eta}:")

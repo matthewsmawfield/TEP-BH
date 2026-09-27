@@ -2,44 +2,44 @@
   "description": "Joint forward-model: composition vs calibration",
   "hypotheses": {
     "D_dyn": 1.0,
-    "M_g_Msun": 4296691.51180587,
-    "M_matter_Msun": 4296691.51180587,
-    "M_phantom_Msun": 0.0,
-    "M_phantom_fraction": 0.0,
-    "S_a": 1.000730685475997,
-    "T_P": 1.0003655430729614,
+    "M_g_Msun": 4296690.859343312,
+    "M_matter_Msun": 4296690.859343307,
+    "M_phantom_Msun": 4.6566128730773926e-09,
+    "M_phantom_fraction": 1.0837672584592436e-15,
+    "S_a": 1.0007306853452624,
+    "T_P": 1.000365543007522,
     "calibration_hypothesis": true,
-    "composition_hypothesis": false,
-    "ratio_Mg_Mmatter": 1.0
+    "composition_hypothesis": true,
+    "ratio_Mg_Mmatter": 1.000000000000001
   },
-  "interpretation": "At S2 pericentre (r ~ 1369 R_s), the TEP conformal factor is A ~ 1.000000, C_V - 1 ~ 5.49e-04, and the TEP M_phantom fraction is ~ 0.00e+00. The S-star data at current precision cannot distinguish H_composition from H_calibration, nor TEP from GR. The decisive test requires horizon-scale observations.",
+  "interpretation": "At S2 pericentre (r ~ 1369 R_s), the TEP conformal factor is A ~ 1.000000, C_V - 1 ~ 5.49e-04, and the TEP M_phantom fraction is ~ 1.08e-15. The S-star data at current precision cannot distinguish H_composition from H_calibration, nor TEP from GR. The decisive test requires horizon-scale observations.",
   "proper_volume_diagnostic": {
     "GR_benchmark": {
-      "C_V": 1.0005491228709642,
-      "V_apparent_AU3": 6556462.751718883,
-      "V_proper_AU3": 6560063.0553684775,
+      "C_V": 1.0005491227726953,
+      "V_apparent_AU3": 6556461.585491681,
+      "V_proper_AU3": 6560061.887856576,
       "eta": 0.0,
-      "r_boundary_AU": 116.10751486995804,
-      "r_boundary_Rs": 1368.577907800478
+      "r_boundary_AU": 116.10750798577087,
+      "r_boundary_Rs": 1368.5781526673832
     },
     "apocentre": {
-      "C_V": 1.0000321050780967,
-      "V_apparent_AU3": 34189766496.729286,
-      "V_proper_AU3": 34190864161.85277,
-      "eta": 4.045807939928346e-15,
-      "r_boundary_AU": 2013.4267849814325,
-      "r_boundary_Rs": 23732.584578918628
+      "C_V": 1.000032105070218,
+      "V_apparent_AU3": 34189767632.2397,
+      "V_proper_AU3": 34190865297.13027,
+      "eta": 1.0778071430051477e-12,
+      "r_boundary_AU": 2013.426807271407,
+      "r_boundary_Rs": 23732.59049504519
     },
     "pericentre": {
-      "C_V": 1.0005491228709642,
-      "V_apparent_AU3": 6556462.751718883,
-      "V_proper_AU3": 6560063.0553684775,
-      "eta": 4.045807939928346e-15,
-      "r_boundary_AU": 116.10751486995804,
-      "r_boundary_Rs": 1368.577907800478
+      "C_V": 1.0005491227726964,
+      "V_apparent_AU3": 6556461.585491681,
+      "V_proper_AU3": 6560061.887856583,
+      "eta": 1.0778071430051477e-12,
+      "r_boundary_AU": 116.10750798577087,
+      "r_boundary_Rs": 1368.5781526673832
     }
   },
   "status": "success",
   "step": "step_47_joint_forward",
-  "timestamp": "2026-07-29T01:24:33.358091"
+  "timestamp": "2026-09-21T23:09:54.128452"
 }

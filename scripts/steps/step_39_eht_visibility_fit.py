@@ -636,7 +636,7 @@ def main():
         "tep_predictions": {
             "GR": {"delta_shadow": 0.0},
             "phantom_mass": {"delta_shadow": -0.0537},
-            "sGB_horizon_bearing_eta_0.1": {"delta_shadow": -0.0004},
+            "sGB_horizon_bearing_eta_0.3": {"delta_shadow": -0.0035},
         },
         "key_finding": (
             f"Joint best fit: delta = {joint_fit['best']['delta_shadow']:+.4f}, "

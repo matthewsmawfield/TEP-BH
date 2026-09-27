@@ -18,12 +18,12 @@ Fixes:
    (slower clock) sees less redshift to any given emitter.
 
 3. The frame-split SURVIVES as coupling-order difference:
-   - Shadow: O(eta^2) = -0.044% (photons probe g_sGB)
-   - ISCO on tilde_g: O(eta) = +1.95% (massive particles probe tilde_g)
+   - Shadow: O(eta^2) = -0.35% (photons probe g_sGB)
+   - ISCO on tilde_g: O(eta) (massive particles probe tilde_g)
    - Ratio: ~45x (the ISCO shift is an order of magnitude larger)
-   With the mass-inflation branch (eta < 0 in this convention), the
-   conformal factor A = e^{-phi} > 1 magnifies spatial scales. The ISCO
-   on the matter metric moves outward, while the photon-sphere/shadow
+   On the temporal-well branch (eta > 0 in this convention), the
+   conformal factor A = e^{-phi} < 1 contracts spatial scales. The ISCO
+   on the matter metric moves inward, while the photon-sphere/shadow
    on the geometric metric remains inward-shifted at O(eta^2). The
    frame-split signature is a divergence, not a common sign.
 
@@ -255,7 +255,7 @@ def frequency_transfer(r_e, r_o, m, eta, M_ADM=1.0):
 # ============================================================
 if __name__ == "__main__":
     M = 1.0  # Fixed ADM mass
-    eta = -0.1  # mass-inflation branch (alpha_GB < 0, A > 1)
+    eta = 0.3  # temporal-well branch (alpha_GB > 0, A < 1); interior regularity floor (step_33, Paper 0)
 
     m = get_horizon_mass(M, eta)
     r_H = get_r_H(M, eta)

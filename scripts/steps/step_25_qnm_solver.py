@@ -297,7 +297,7 @@ if __name__ == "__main__":
     print("\n--- TEP-sGB corrected QNMs ---")
     results = {}
 
-    for eta in [0.05, 0.1, 0.15, 0.2]:
+    for eta in [0.05, 0.1, 0.15, 0.2, 0.3]:
         print(f"\n  η = {eta} (β² = {(eta/12)**2:.6f}):")
         results[eta] = {}
         beta_sq = (eta/12)**2
@@ -346,12 +346,12 @@ if __name__ == "__main__":
                     "shift_R_pct": float(100*(omega_s.real/omega_s_schw.real-1)),
                 }
 
-    # Summary at eta=0.1
+    # Summary at eta=0.3
     print("\n" + "=" * 70)
-    print("THREE-CHANNEL RINGDOWN AT η = 0.1")
+    print("THREE-CHANNEL RINGDOWN AT η = 0.3")
     print("=" * 70)
 
-    eta = 0.1
+    eta = 0.3
     r = results[eta]
 
     if "axial_l2_n0" in r:

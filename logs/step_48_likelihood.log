@@ -1,92 +1,91 @@
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    ======================================================================
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    STEP 05 (INFERENCE): LIKELIHOOD COMPARISON
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]      GR vs TEP — Formal Statistical Test
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    ======================================================================
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    --- Chi-squared values ---
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   chi^2_GR  = 304.1711  (n_params = 11, dof = 323)
-[01:24:33] [INFO] [step_48_likelihood]   chi^2_TEP = 304.1711  (n_params = 12, dof = 322)
-[01:24:33] [INFO] [step_48_likelihood]   Delta chi^2 = 0.0000
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    --- Information criteria ---
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   BIC_GR  = 368.0936
-[01:24:33] [INFO] [step_48_likelihood]   BIC_TEP = 373.9048
-[01:24:33] [INFO] [step_48_likelihood]   Delta BIC = 5.8111  (negative favours TEP)
-[01:24:33] [INFO] [step_48_likelihood]   AIC_GR  = 326.1711
-[01:24:33] [INFO] [step_48_likelihood]   AIC_TEP = 328.1711
-[01:24:33] [INFO] [step_48_likelihood]   Delta AIC = 2.0000  (negative favours TEP)
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    --- Bayes factors ---
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   Maximum likelihood ratio: 1.000000e+00
-[01:24:33] [INFO] [step_48_likelihood]   Bayes factor (BIC):       5.471757e-02
-[01:24:33] [INFO] [step_48_likelihood]   Bayes factor (AIC):       3.678795e-01
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   Interpretation (Kass & Raftery 1995): strong evidence for GR
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    --- Wilks' theorem test ---
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   Delta chi^2 = 0.0000 (should follow chi^2(1) under null)
-[01:24:33] [INFO] [step_48_likelihood]   p-value = 0.9998
-[01:24:33] [INFO] [step_48_likelihood]   -> TEP is NOT statistically significant (p = 0.9998 > 0.05)
-[01:24:33] [INFO] [step_48_likelihood]   -> eta_TEP is consistent with 0
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    ======================================================================
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    SUMMARY: GR vs TEP at S-star scales
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood]    ======================================================================
-[01:24:33] [INFO] [step_48_likelihood] ================================================================================
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   Bayes factor B(TEP/GR) = 5.4718e-02
-[01:24:33] [INFO] [step_48_likelihood]   p-value (Wilks) = 0.9998
-[01:24:33] [INFO] [step_48_likelihood]   Interpretation: strong evidence for GR
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   At S2 pericentre (r ~ 1381 R_s), the fitted TEP correction is
-[01:24:33] [INFO] [step_48_likelihood]   consistent with zero and the extra TEP parameter is not
-[01:24:33] [INFO] [step_48_likelihood]   constrained by the data. GR is the preferred simpler model.
-[01:24:33] [INFO] [step_48_likelihood]   This is the expected weak-field result.
-[01:24:33] [INFO] [step_48_likelihood]   The decisive test requires horizon-scale observations.
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_likelihood_comparison.json
-[01:24:33] [INFO] [step_48_likelihood] 
-[01:24:33] [INFO] [step_48_likelihood]   NEXT: step_06_phantom_mass_posterior.py — MCMC posterior
-[01:24:33] [SUCCESS] [step_48_likelihood] [INFER ] step_48_likelihood completed in 0.0s
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    ======================================================================
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    STEP 05 (INFERENCE): LIKELIHOOD COMPARISON
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]      GR vs TEP — Formal Statistical Test
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    ======================================================================
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    --- Chi-squared values ---
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   chi^2_GR  = 304.1711  (n_params = 11, dof = 323)
+[23:09:54] [INFO]   chi^2_TEP = 304.1711  (n_params = 12, dof = 322)
+[23:09:54] [INFO]   Delta chi^2 = 0.0000
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    --- Information criteria ---
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   BIC_GR  = 368.0936
+[23:09:54] [INFO]   BIC_TEP = 373.9048
+[23:09:54] [INFO]   Delta BIC = 5.8111  (negative favours TEP)
+[23:09:54] [INFO]   AIC_GR  = 326.1711
+[23:09:54] [INFO]   AIC_TEP = 328.1711
+[23:09:54] [INFO]   Delta AIC = 2.0000  (negative favours TEP)
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    --- Bayes factors ---
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   Maximum likelihood ratio: 1.000000e+00
+[23:09:54] [INFO]   Bayes factor (BIC):       5.471757e-02
+[23:09:54] [INFO]   Bayes factor (AIC):       3.678795e-01
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   Interpretation (Kass & Raftery 1995): strong evidence for GR
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    --- Wilks' theorem test ---
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   Delta chi^2 = 0.0000 (should follow chi^2(1) under null)
+[23:09:54] [INFO]   p-value = 0.9998
+[23:09:54] [INFO]   -> TEP is NOT statistically significant (p = 0.9998 > 0.05)
+[23:09:54] [INFO]   -> eta_TEP is consistent with 0
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    ======================================================================
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    SUMMARY: GR vs TEP at S-star scales
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    ======================================================================
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   Bayes factor B(TEP/GR) = 5.4718e-02
+[23:09:54] [INFO]   p-value (Wilks) = 0.9998
+[23:09:54] [INFO]   Interpretation: strong evidence for GR
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   At S2 pericentre (r ~ 1381 R_s), the fitted TEP correction is
+[23:09:54] [INFO]   consistent with zero and the extra TEP parameter is not
+[23:09:54] [INFO]   constrained by the data. GR is the preferred simpler model.
+[23:09:54] [INFO]   This is the expected weak-field result.
+[23:09:54] [INFO]   The decisive test requires horizon-scale observations.
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_likelihood_comparison.json
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   NEXT: step_06_phantom_mass_posterior.py — MCMC posterior

@@ -78,7 +78,7 @@ c_si = 2.998e8    # m/s
 M_sun_kg = 1.989e30  # kg
 AU_m = 1.496e11  # m
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(PROJECT_ROOT / "scripts" / "steps"))
 

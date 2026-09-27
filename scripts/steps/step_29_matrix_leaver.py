@@ -18,7 +18,7 @@ from step_34_solve_interior import (
     hayward_mass, hayward_N, hayward_lapse_sq, hayward_dNdr, gb_invariant,
 )
 
-M = 1.0; G_PARAM = 1.1; ETA = -0.1; L = 2
+M = 1.0; G_PARAM = 1.1; ETA = 0.3; L = 2
 ALPHA_GB = ETA * M**2 / 3.0
 
 def F_met(r): return hayward_lapse_sq(r, M, G_PARAM)
@@ -235,6 +235,20 @@ def main():
         for om, mis, lab in coupled_modes:
             print(f"    {om:.6f}  mis={mis:.4e}  ({lab})")
 
+    # 3b. Gravitational-channel cavity tower: the horizonless interior supports
+    # a discrete tower of long-lived modes. Scan adjacent windows and store all.
+    print("\n--- 3b. Gravitational-channel cavity tower ---")
+    tower = []
+    for lo, hi in [(0.15, 0.35), (0.35, 0.55), (0.55, 0.75), (0.7, 0.95)]:
+        om_t, mis_t = scan_grid(lambda x, **kw: mismatch_1d(x, V_grav, **kw),
+                                [lo, hi], [-0.12, -0.01], n_re=14, n_im=10)
+        if mis_t < 0.5:
+            om_t, mis_t = refine(om_t, lambda x, **kw: mismatch_1d(x, V_grav, **kw))
+        if mis_t < 1e-6 and all(abs(om_t - t[0]) > 0.02 for t in tower):
+            tower.append((om_t, mis_t))
+            print(f"  mode: {om_t:.6f}  mis={mis_t:.2e}")
+    tower.sort(key=lambda t: t[0].real)
+
     # 4. Summary
     print("\n"+"="*70)
     print("SUMMARY")
@@ -257,6 +271,8 @@ def main():
         "scalar_qnm": {"omega": str(omega_s), "mismatch": float(mis_s)},
         "gravitational_qnm": {"omega": str(omega_g), "mismatch": float(mis_g)},
         "coupled_qnm": {"omega": str(omega_c), "mismatch": float(mis_c)},
+        "grav_cavity_tower": [{"omega": str(om), "mismatch": float(ms)} for om, ms in tower],
+        "coupled_modes_all": [{"omega": str(om), "mismatch": float(ms), "label": lab} for om, ms, lab in coupled_modes],
     }
     _results_dir = os.path.join(_PROJECT_ROOT, "results")
     os.makedirs(_results_dir, exist_ok=True)

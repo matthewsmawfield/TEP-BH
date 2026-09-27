@@ -2,7 +2,7 @@
   "parameters": {
     "M": 1.0,
     "l": 2,
-    "eta": -0.1
+    "eta": 0.3
   },
   "method": "qnm-exterior Leaver + leading-order 2x2 mixing (WKB overlap)",
   "schwarzschild_reference": {
@@ -16,33 +16,33 @@
     }
   },
   "exterior_sgb": {
-    "horizon_shift": 0.0027222222222222222,
-    "fractional_shift": 0.0013611111111111111,
+    "horizon_shift": 0.024499999999999997,
+    "fractional_shift": 0.012249999999999999,
     "axial_uncoupled": {
-      "omega_R": 0.37418029309959117,
-      "omega_I": -0.08908340328527618
+      "omega_R": 0.37824916255214297,
+      "omega_I": -0.09005210405611111
     },
     "scalar_uncoupled": {
-      "omega_R": 0.4839730187348561,
-      "omega_I": -0.0968246257008301
+      "omega_R": 0.4866061909280033,
+      "omega_I": -0.09735142348115633
     }
   },
   "coupled_qnm": {
     "polar_led": {
-      "omega_R": 0.374075576022108,
-      "omega_I": -0.08914295067697305
+      "omega_R": 0.3781448106542909,
+      "omega_I": -0.09011101867748618
     },
     "scalar_led": {
-      "omega_R": 0.4840562463259474,
-      "omega_I": -0.09678123167023933
+      "omega_R": 0.48668956436775546,
+      "omega_I": -0.09730827960678855
     }
   },
   "isospectrality_breaking_percent": {
-    "real": -0.02798572757953654,
-    "imag": 0.06684454062242207
+    "real": -0.027588137181318338,
+    "imag": 0.06542281492763365
   },
   "mixing_matrix_element": {
-    "real": -0.0029936967909329278,
+    "real": 0.0029936967909329278,
     "imag": 0.0
   }
 }

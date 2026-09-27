@@ -1,86 +1,85 @@
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior] ================================================================================
-[01:24:33] [INFO] [step_49_posterior]    ======================================================================
-[01:24:33] [INFO] [step_49_posterior] ================================================================================
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior] ================================================================================
-[01:24:33] [INFO] [step_49_posterior]    STEP 06 (INFERENCE): PHANTOM MASS POSTERIOR (MCMC)
-[01:24:33] [INFO] [step_49_posterior] ================================================================================
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior] ================================================================================
-[01:24:33] [INFO] [step_49_posterior]    ======================================================================
-[01:24:33] [INFO] [step_49_posterior] ================================================================================
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior] Sampling the posterior distribution of TEP parameters.
-[01:24:33] [INFO] [step_49_posterior] Key output: posterior of M_phantom^T
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior]   Data: REAL
-[01:24:33] [INFO] [step_49_posterior]   M_GR-fit = 4.2967e+06 M_sun
-[01:24:33] [INFO] [step_49_posterior] 
-[01:24:33] [INFO] [step_49_posterior] --- Running emcee MCMC ---
-[01:24:33] [INFO] [step_49_posterior]   Walkers: 24
-[01:24:33] [INFO] [step_49_posterior]   Samples: 10000
-[01:24:33] [INFO] [step_49_posterior]   Burn-in: 1000
-[01:24:33] [INFO] [step_49_posterior] 
-[01:26:19] [INFO] [step_49_posterior]   Acceptance rate: 0.349
-[01:26:19] [INFO] [step_49_posterior]   Total samples: 240000
-[01:26:19] [INFO] [step_49_posterior] 
-[01:26:19] [INFO] [step_49_posterior] 
-[01:26:19] [INFO] [step_49_posterior] ================================================================================
-[01:26:19] [INFO] [step_49_posterior]    --- Posterior statistics ---
-[01:26:19] [INFO] [step_49_posterior] ================================================================================
-[01:26:19] [INFO] [step_49_posterior] 
-[01:26:19] [INFO] [step_49_posterior]   M_BH       = 4301242.8313 +96938.6313 / -96000.4102  M_sun
-[01:26:19] [INFO] [step_49_posterior]   R0         =    8318.1108 + 57.3765 / - 55.1224  pc
-[01:26:19] [INFO] [step_49_posterior]   a          =       0.1279 +  0.0012 / -  0.0012  arcsec
-[01:26:19] [INFO] [step_49_posterior]   e          =       0.8908 +  0.0023 / -  0.0024  
-[01:26:19] [INFO] [step_49_posterior]   i          =     133.7194 +  0.4210 / -  0.4149  deg
-[01:26:19] [INFO] [step_49_posterior]   omega      =      65.6899 +  0.5417 / -  0.5623  deg
-[01:26:19] [INFO] [step_49_posterior]   Omega      =     226.9470 +  0.5371 / -  0.5587  deg
-[01:26:19] [INFO] [step_49_posterior]   T          =      16.0822 +  0.0180 / -  0.0177  yr
-[01:26:19] [INFO] [step_49_posterior]   t_peri     =    2002.3374 +  0.0045 / -  0.0050  yr
-[01:26:19] [INFO] [step_49_posterior]   x0         =      -0.0027 +  0.0006 / -  0.0006  arcsec
-[01:26:19] [INFO] [step_49_posterior]   y0         =       0.0010 +  0.0002 / -  0.0002  arcsec
-[01:26:19] [INFO] [step_49_posterior]   eta_TEP    =       0.4254 +  0.3850 / -  0.3468  
-[01:26:19] [INFO] [step_49_posterior] 
-[01:26:19] [INFO] [step_49_posterior] 
-[01:26:19] [INFO] [step_49_posterior] ================================================================================
-[01:26:19] [INFO] [step_49_posterior]    --- Phantom Mass posterior ---
-[01:26:19] [INFO] [step_49_posterior] ================================================================================
-[01:26:19] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior]   M_phantom^T:
-[01:26:21] [INFO] [step_49_posterior]     median = 2.2235e+03 M_sun
-[01:26:21] [INFO] [step_49_posterior]     mean   = 2.3161e+03 M_sun
-[01:26:21] [INFO] [step_49_posterior]     std    = 1.5974e+03 M_sun
-[01:26:21] [INFO] [step_49_posterior]     68% CI = [4.1076e+02, 4.2427e+03] M_sun
-[01:26:21] [INFO] [step_49_posterior]     fraction positive: 1.000
-[01:26:21] [INFO] [step_49_posterior]     fraction negative: 0.000
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior]   M_matter^TEP:
-[01:26:21] [INFO] [step_49_posterior]     median = 4.2989e+06 M_sun
-[01:26:21] [INFO] [step_49_posterior]     68% CI = [4.2027e+06, 4.3959e+06] M_sun
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior]   Ratio M_g/M_matter:
-[01:26:21] [INFO] [step_49_posterior]     median = 1.00051771
-[01:26:21] [INFO] [step_49_posterior]     68% CI = [1.00009568, 1.00098769]
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior] ================================================================================
-[01:26:21] [INFO] [step_49_posterior]    --- SIGN DETERMINATION (Gate -1) ---
-[01:26:21] [INFO] [step_49_posterior] ================================================================================
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior]   M_phantom^T > 0 (fraction positive: 1.000)
-[01:26:21] [INFO] [step_49_posterior]   -> Spatial magnification dominates
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_phantom_mass_posterior.json
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior] ================================================================================
-[01:26:21] [INFO] [step_49_posterior]      INFERENCE PIPELINE COMPLETE.
-[01:26:21] [INFO] [step_49_posterior] ================================================================================
-[01:26:21] [INFO] [step_49_posterior] 
-[01:26:21] [INFO] [step_49_posterior]   All steps 00-06 executed.
-[01:26:21] [SUCCESS] [step_49_posterior] [INFER ] step_49_posterior completed in 107.7s
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    ======================================================================
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    STEP 06 (INFERENCE): PHANTOM MASS POSTERIOR (MCMC)
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO]    ======================================================================
+[23:09:54] [INFO] ================================================================================
+[23:09:54] [INFO] 
+[23:09:54] [INFO] 
+[23:09:54] [INFO] Sampling the posterior distribution of TEP parameters.
+[23:09:54] [INFO] Key output: posterior of M_phantom^T
+[23:09:54] [INFO] 
+[23:09:54] [INFO]   Data: REAL
+[23:09:54] [INFO]   M_GR-fit = 4.2967e+06 M_sun
+[23:09:54] [INFO] 
+[23:09:55] [INFO] --- Running emcee MCMC ---
+[23:09:55] [INFO]   Walkers: 24
+[23:09:55] [INFO]   Samples: 10000
+[23:09:55] [INFO]   Burn-in: 1000
+[23:09:55] [INFO] 
+[23:11:13] [INFO]   Acceptance rate: 0.348
+[23:11:13] [INFO]   Total samples: 240000
+[23:11:13] [INFO] 
+[23:11:13] [INFO] 
+[23:11:13] [INFO] ================================================================================
+[23:11:13] [INFO]    --- Posterior statistics ---
+[23:11:13] [INFO] ================================================================================
+[23:11:13] [INFO] 
+[23:11:13] [INFO]   M_BH       = 4302887.8842 +96947.1045 / -92175.0383  M_sun
+[23:11:13] [INFO]   R0         =    8319.1955 + 58.0341 / - 57.5485  pc
+[23:11:13] [INFO]   a          =       0.1279 +  0.0013 / -  0.0012  arcsec
+[23:11:13] [INFO]   e          =       0.8907 +  0.0024 / -  0.0023  
+[23:11:13] [INFO]   i          =     133.7074 +  0.4153 / -  0.4211  deg
+[23:11:13] [INFO]   omega      =      65.6758 +  0.5721 / -  0.5439  deg
+[23:11:13] [INFO]   Omega      =     226.9282 +  0.5565 / -  0.5409  deg
+[23:11:13] [INFO]   T          =      16.0830 +  0.0176 / -  0.0174  yr
+[23:11:13] [INFO]   t_peri     =    2002.3372 +  0.0048 / -  0.0048  yr
+[23:11:13] [INFO]   x0         =      -0.0027 +  0.0006 / -  0.0006  arcsec
+[23:11:13] [INFO]   y0         =       0.0010 +  0.0002 / -  0.0002  arcsec
+[23:11:13] [INFO]   eta_TEP    =       0.4224 +  0.3828 / -  0.3496  
+[23:11:13] [INFO] 
+[23:11:13] [INFO] 
+[23:11:13] [INFO] ================================================================================
+[23:11:13] [INFO]    --- Phantom Mass posterior ---
+[23:11:13] [INFO] ================================================================================
+[23:11:13] [INFO] 
+[23:11:14] [INFO]   M_phantom^T:
+[23:11:14] [INFO]     median = 2.2066e+03 M_sun
+[23:11:14] [INFO]     mean   = 2.2998e+03 M_sun
+[23:11:14] [INFO]     std    = 1.6018e+03 M_sun
+[23:11:14] [INFO]     68% CI = [3.8142e+02, 4.2186e+03] M_sun
+[23:11:14] [INFO]     fraction positive: 1.000
+[23:11:14] [INFO]     fraction negative: 0.000
+[23:11:14] [INFO] 
+[23:11:14] [INFO]   M_matter^TEP:
+[23:11:14] [INFO]     median = 4.3006e+06 M_sun
+[23:11:14] [INFO]     68% CI = [4.2083e+06, 4.3974e+06] M_sun
+[23:11:14] [INFO] 
+[23:11:14] [INFO]   Ratio M_g/M_matter:
+[23:11:14] [INFO]     median = 1.00051329
+[23:11:14] [INFO]     68% CI = [1.00008890, 1.00097978]
+[23:11:14] [INFO] 
+[23:11:14] [INFO] 
+[23:11:14] [INFO] ================================================================================
+[23:11:14] [INFO]    --- SIGN DETERMINATION (Gate -1) ---
+[23:11:14] [INFO] ================================================================================
+[23:11:14] [INFO] 
+[23:11:14] [INFO]   M_phantom^T > 0 (fraction positive: 1.000)
+[23:11:14] [INFO]   -> Spatial magnification dominates
+[23:11:14] [INFO] 
+[23:11:14] [INFO]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_phantom_mass_posterior.json
+[23:11:14] [INFO] 
+[23:11:14] [INFO] 
+[23:11:14] [INFO] ================================================================================
+[23:11:14] [INFO]      INFERENCE PIPELINE COMPLETE.
+[23:11:14] [INFO] ================================================================================
+[23:11:14] [INFO] 
+[23:11:14] [INFO]   All steps 00-06 executed.

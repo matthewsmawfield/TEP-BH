@@ -6,6 +6,8 @@ Tests:
 2. Conformal phi_0=1 (deep interior): K ~ 9/(M^2*r^2) + 1/(4*M^4) -> infinity
 3. Conformal phi_0=2 (deep interior): K ~ 39*r^2/(16*M^6) -> 0
 4. Power law verification: K ~ r^{4*phi_0 - 6} for various phi_0
+   (both branches: phi_0 > 0 benchmark and phi_0 < 0 physical temporal well)
+5. No-go theorem across both branches
 """
 
 import sys
@@ -121,7 +123,9 @@ def test_power_law_scan():
     print("=" * 60)
 
     results = []
-    for phi_0 in [0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.5]:
+    # Both branches: phi_0 < 0 is the physical temporal-well branch (A -> 0,
+    # phi -> +inf); phi_0 > 0 is the complementary benchmark branch (A -> inf).
+    for phi_0 in [-2.0, -1.5, -1.0, -0.5, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.5]:
         model = TEPBHModel(beta_A=-1.0, B0=0.0, phi_0=phi_0, delta=0.05, M=1.0, sigma_B=1.5)
         r = np.logspace(np.log10(1e-6), np.log10(1.5), 50000)
         metric = compute_disformal_metric(r, model)
@@ -159,8 +163,13 @@ def test_no_go_theorem():
     print("TEST 5: No-go theorem (finite areal + vanishing K = impossible)")
     print("=" * 60)
 
+    # Physical branch (phi_0 < 0): K ~ r^{4*phi_0-6} has exponent < -6 for every
+    # phi_0 < 0, so K diverges faster than Schwarzschild unconditionally and
+    # areal radius -> 0. The no-go is therefore unconditional on the physical
+    # branch and mutual-exclusion on the benchmark branch.
     found_both = False
-    for phi_0 in np.arange(0.5, 3.01, 0.25):
+    physical_diverges = True
+    for phi_0 in np.arange(-2.0, 3.01, 0.25):
         model = TEPBHModel(beta_A=-1.0, B0=0.0, phi_0=phi_0, delta=0.05, M=1.0, sigma_B=1.5)
         r = np.logspace(np.log10(1e-6), np.log10(1.5), 50000)
         metric = compute_disformal_metric(r, model)
@@ -175,6 +184,16 @@ def test_no_go_theorem():
         K_vanishes = K[idx_small] < K[idx_ref] * 1e-3
         areal_finite = areal[0] < 1e3
 
+        # Physical branch: confirm K diverges faster than Schwarzschild r^-6
+        if phi_0 < 0:
+            mask = (r >= 1e-4) & (r <= 1e-2) & np.isfinite(K) & (K > 0)
+            if np.sum(mask) > 10:
+                alpha = np.polyfit(np.log(r[mask]), np.log(K[mask]), 1)[0]
+                if alpha > -6.0:
+                    physical_diverges = False
+                    print(f"  phi_0={phi_0:.2f}: physical-branch K exponent {alpha:.2f} "
+                          f"NOT steeper than -6 *** UNEXPECTED ***")
+
         if K_vanishes and areal_finite:
             found_both = True
             print(f"  phi_0={phi_0:.2f}: K_vanishes={K_vanishes}, areal_finite={areal_finite} *** BOTH! ***")
@@ -188,9 +207,11 @@ def test_no_go_theorem():
                 status = "neither"
             print(f"  phi_0={phi_0:.2f}: K_vanishes={K_vanishes}, areal_finite={areal_finite} ({status})")
 
-    passed = not found_both
-    print(f"\n  No phi_0 achieves both: {'YES' if passed else 'NO'}")
-    print(f"  {'✓ PASS (no-go confirmed)' if passed else '✗ FAIL (no-go violated!)'}")
+    passed = (not found_both) and physical_diverges
+    print(f"\n  No phi_0 achieves both: {'YES' if not found_both else 'NO'}")
+    print(f"  Physical branch (phi_0<0) diverges faster than r^-6 for all tested: "
+          f"{'YES' if physical_diverges else 'NO'}")
+    print(f"  {'✓ PASS (no-go confirmed on both branches)' if passed else '✗ FAIL (no-go violated!)'}")
     return passed
 
 

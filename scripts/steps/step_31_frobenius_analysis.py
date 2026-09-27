@@ -2,7 +2,7 @@
 """Frobenius analysis of the regular temporal-well inner boundary.
 
 This script examines the near-origin geometry of the solved TEP interior
-(Hayward + sGB, eta=-0.1, g=1.1) and determines the correct Frobenius
+(Hayward + sGB, eta=+0.3, g=1.1) and determines the correct Frobenius
 expansion for the coupled polar-scalar QNM system at the regular centre.
 
 Key questions answered:
@@ -149,7 +149,7 @@ def ricci_scalar_origin(M, g):
 def main():
     M = 1.0
     g = 1.1
-    eta = -0.1
+    eta = 0.3
     l = 2
 
     print("=" * 70)

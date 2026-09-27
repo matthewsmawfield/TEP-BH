@@ -222,16 +222,21 @@ def integrate_interior(eta, xi, M=1.0, r_match=2.0, r_min=1e-4, n_steps=10000):
 
     y0 = [m0, phi0, phi_p0, Lam0]
 
-    # Integrate inward (from r_match to r_min)
-    # We reverse the direction by negating the derivatives
-    def equations_reversed(r, y):
-        return [-v for v in interior_equations(r, y, M, eta, xi)]
+    # Integrate inward (from r_match to r_min) with the stated ODE.
+    # NOTE (corrected): the previous implementation negated the whole
+    # right-hand side to "reverse" the direction.  That changes the
+    # equation itself — the friction term of the scalar equation is
+    # effectively reversed, so the old profiles solved a different,
+    # artificially damped problem.  solve_ivp accepts a decreasing
+    # t_span natively; the same equations are used in both directions.
+    def equations(r, y):
+        return interior_equations(r, y, M, eta, xi)
 
     # Use a logarithmic grid in r for better resolution near the centre
     r_grid = np.exp(np.linspace(np.log(r_match), np.log(r_min), n_steps))
 
     sol = solve_ivp(
-        equations_reversed,
+        equations,
         [r_match, r_min],
         y0,
         method='Radau',  # stiff solver for deep interior
@@ -363,7 +368,7 @@ if __name__ == "__main__":
     print("deep interior, preventing hyperbolicity loss (Thaalba et al. 2024).")
 
     # Test different values of ξ
-    eta = 0.1
+    eta = 0.1  # exploratory Ricci-coupling branch test; canonical interior is step_33 (Paper 0)
     print(f"\n--- Interior integration at η = {eta} ---")
 
     results = {}
@@ -439,29 +444,50 @@ if __name__ == "__main__":
     print("SUMMARY: Interior Integration Results")
     print("=" * 70)
     print()
-    print("The modified coupling (GB + Ricci) produces the following:")
-    print()
-    print("  ξ = 0 (standard linear sGB):")
-    print("    - Hyperbolicity may be lost in the deep interior")
-    print("    - Finite-area singularity (Thaalba et al. 2024)")
-    print()
-    print("  ξ > 0 (modified coupling):")
-    print("    - Ricci coupling modifies the scalar kinetic matrix")
-    print("    - Prevents hyperbolicity loss")
-    print("    - Allows regular centre with finite A and bounded ρ")
-    print()
-    print("  The TEP Global Solution Architecture requires:")
-    print("    1. Regular centre: finite Kretschmann ✓ (with ξ > 0)")
-    print("    2. de Sitter-like core: w_r → -1 ✓ (GB potential dominates)")
-    print("    3. Bounded areal radius: ρ → 0 ✓ (with finite A)")
-    print("    4. Hyperbolicity preserved ✓ (Ricci coupling)")
-    print()
-    print("  The modified coupling dynamically generates the TEP Global")
-    print("  Solution Architecture, confirming the structural mandate from")
-    print("  the inverse reconstruction (Section 4.4).")
+    if results:
+        print("The modified coupling (GB + Ricci) produces the following:")
+        print()
+        print("  ξ = 0 (standard linear sGB):")
+        print("    - Hyperbolicity may be lost in the deep interior")
+        print("    - Finite-area singularity (Thaalba et al. 2024)")
+        print()
+        print("  ξ > 0 (modified coupling):")
+        print("    - Ricci coupling modifies the scalar kinetic matrix")
+        print("    - Prevents hyperbolicity loss")
+        print("    - Allows regular centre with finite A and bounded ρ")
+        print()
+        print("  The TEP Global Solution Architecture requires:")
+        print("    1. Regular centre: finite Kretschmann ✓ (with ξ > 0)")
+        print("    2. de Sitter-like core: w_r → -1 ✓ (GB potential dominates)")
+        print("    3. Bounded areal radius: ρ → 0 ✓ (with finite A)")
+        print("    4. Hyperbolicity preserved ✓ (Ricci coupling)")
+        print()
+        print("  The modified coupling dynamically generates the TEP Global")
+        print("  Solution Architecture, confirming the structural mandate from")
+        print("  the inverse reconstruction (Section 4.4).")
+    else:
+        print("Exploratory inward IVP: no ξ value reaches a regular centre")
+        print("under the true stated equation.  Direct inward integration of")
+        print("the exterior matching data breaks down in the deep interior —")
+        print("the exterior data do not lie on a regular-centre integral")
+        print("curve (consistent with the Coulomb-mode divergence diagnosed")
+        print("in step_34).  The regular interior is a two-point boundary-")
+        print("value problem; the canonical benchmark is step_34, which")
+        print("solves it by outward shooting from a regular centre.")
 
     # Save results
+    output = {
+        'exploratory_results': results,
+        'method_note': (
+            "Exploratory Ricci-coupling branch scan. Corrected from the previous "
+            "negated-RHS inward integration, which reversed the scalar friction "
+            "term and solved a different equation. Under the stated ODE the "
+            "inward IVP from the exterior matching data does not reach a "
+            "regular centre; the regular interior is a two-point BVP solved in "
+            "step_34_solve_interior."
+        ),
+    }
     with open("results/step_32_interior_integration.json", "w") as f:
-        json.dump(results, f, indent=2)
+        json.dump(output, f, indent=2)
 
     print("\nResults saved to results/step_32_interior_integration.json")

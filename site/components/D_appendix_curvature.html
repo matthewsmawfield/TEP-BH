@@ -56,23 +56,36 @@ Each component scales as $r^{2\phi_0 - 3}$ (verified by exact SymPy computation)
 <div class="theorem">
  <h3>Theorem D.1 (Fixed-Schwarzschild)</h3>
  <p>
- Within the conformal-disformal TEP framework with geometric metric fixed to Schwarzschild, curvature regularity and bounded physical areal radius are mutually exclusive.
+ Within the conformal-disformal TEP framework with geometric metric fixed to Schwarzschild, curvature regularity and bounded physical areal radius are mutually exclusive on the $A \to \infty$ branch, and curvature regularity fails unconditionally on the physical $A \to 0$ temporal-well branch.
  </p>
 </div>
 <h4>Proof</h4>
 <p>
- Curvature regularity ($\tilde K \to 0$ as $r \to 0$) requires $4\phi_0 - 6 > 0$, i.e., $\phi_0 > 3/2$. Bounded areal radius ($\rho = A \cdot r = r_h^{\phi_0} r^{1-\phi_0}$ finite as $r \to 0$) requires $1 - \phi_0 \geq 0$, i.e., $\phi_0 \leq 1$. These conditions are mutually exclusive: there is no $\phi_0$ satisfying both $\phi_0 > 3/2$ and $\phi_0 \leq 1$. $\square$
+ The exponent $\phi_0$ is allowed either sign; with $A = e^{\beta_A\phi}$, $\beta_A = -1$, the branch $\phi_0 > 0$ corresponds to $A \to \infty$ ($\phi \to -\infty$) and $\phi_0 < 0$ to $A \to 0$ ($\phi \to +\infty$), the latter being the physical branch under the $\phi > 0$-in-wells convention.
+</p>
+<p>
+ <em>Benchmark branch ($\phi_0 > 0$).</em> Curvature regularity ($\tilde K \to 0$ as $r \to 0$) requires $4\phi_0 - 6 > 0$, i.e., $\phi_0 > 3/2$. Bounded areal radius ($\rho = A \cdot r = r_h^{\phi_0} r^{1-\phi_0}$ finite as $r \to 0$) requires $1 - \phi_0 \geq 0$, i.e., $\phi_0 \leq 1$. These conditions are mutually exclusive: there is no $\phi_0 > 0$ satisfying both $\phi_0 > 3/2$ and $\phi_0 \leq 1$.
+</p>
+<p>
+ <em>Physical branch ($\phi_0 < 0$).</em> The Kretschmann exponent $4\phi_0 - 6 < -6$ for every $\phi_0 < 0$: $\tilde K$ diverges faster than the Schwarzschild $r^{-6}$ singularity for every admissible index, while $\rho \sim r^{1-\phi_0} \to 0$ is trivially bounded. Curvature regularity therefore fails unconditionally — no $\phi_0 < 0$ achieves finite or vanishing $\tilde K$. The incompatibility on the physical branch is thus stronger than mutual exclusion: the finiteness condition itself is unreachable. $\square$
+</p>
+<p>
+ The two branches exhaust the power-law ansatz (the borderline $\phi_0 = 0$ recovers Schwarzschild itself, $K = 48M^2/r^6$, divergent). No conformal power-law temporal well exists on fixed Schwarzschild geometry.
 </p>
 
 <h2>D.4 Numerical Verification</h2>
 <p>
- The exact formula $\tilde K \sim r^{4\phi_0 - 6}$ is verified numerically using the corrected pipeline curvature computation (standard Schwarzschild coordinates, 4-term Kretschmann formula). The power law is recovered to within 0.1% accuracy for all tested $\phi_0$ values:
+ The exact formula $\tilde K \sim r^{4\phi_0 - 6}$ is verified numerically using the corrected pipeline curvature computation (standard Schwarzschild coordinates, 4-term Kretschmann formula). The power law is recovered to within 0.2% accuracy for all tested $\phi_0$ values on both branches (negative $\phi_0$ rows are the physical temporal-well branch):
 </p>
 <table class="data-table">
  <thead>
  <tr><th>$\phi_0$</th><th>Numerical power law</th><th>Expected $4\phi_0 - 6$</th><th>Deviation</th></tr>
  </thead>
  <tbody>
+ <tr><td>$-2.00$</td><td>$r^{-14.000}$</td><td>$-14.0$</td><td>0.000</td></tr>
+ <tr><td>$-1.50$</td><td>$r^{-12.000}$</td><td>$-12.0$</td><td>0.000</td></tr>
+ <tr><td>$-1.00$</td><td>$r^{-10.000}$</td><td>$-10.0$</td><td>0.000</td></tr>
+ <tr><td>$-0.50$</td><td>$r^{-8.000}$</td><td>$-8.0$</td><td>0.000</td></tr>
  <tr><td>0.50</td><td>$r^{-4.000}$</td><td>$-4.0$</td><td>0.000</td></tr>
  <tr><td>0.75</td><td>$r^{-3.000}$</td><td>$-3.0$</td><td>0.000</td></tr>
  <tr><td>1.00</td><td>$r^{-2.001}$</td><td>$-2.0$</td><td>0.001</td></tr>
@@ -84,7 +97,7 @@ Each component scales as $r^{2\phi_0 - 3}$ (verified by exact SymPy computation)
  </tbody>
 </table>
 <p>
- The Schwarzschild baseline ($\phi_0 \to 0$, $A \to 1$) recovers $K = 48M^2/r^6$ to within $5 \times 10^{-6}$ (0.0005%). All regression tests pass.
+ The physical-branch rows confirm numerically that every $\phi_0 &lt; 0$ gives a divergence steeper than the Schwarzschild $r^{-6}$ (exponents $-8$ to $-14$ over the sampled range), with bounded areal radius throughout — the unconditional failure asserted in Theorem D.1. The Schwarzschild baseline ($\phi_0 \to 0$, $A \to 1$) recovers $K = 48M^2/r^6$ to within $5 \times 10^{-6}$ (0.0005%). All regression tests pass on both branches.
 </p>
 
 <h2>D.5 Corrected Values for the $\phi_0 = 2$ Prototype</h2>
