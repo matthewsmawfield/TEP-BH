@@ -3,7 +3,7 @@
   "author": "Matthew Lukin Smawfield",
   "version": "v0.3 (Bahrain)",
   "codename": "Bahrain",
-  "date": "23 September 2026",
+  "date": "30 September 2026",
   "first_published": "29 July 2026",
   "doi": "10.5281/zenodo.21677826",
   "sections": [
@@ -150,6 +150,12 @@
       "title": "References",
       "file": "17_references.html",
       "order": 24
+    },
+    {
+      "id": "acknowledgements",
+      "file": "18_acknowledgements.html",
+      "title": "Acknowledgements",
+      "order": 25
     }
   ]
 }

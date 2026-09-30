@@ -1,6 +1,6 @@
 {
   "name": "tep-bh-site",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "TEP-BH: Black Holes and the Temporal Horizon",
   "main": "index.html",
   "scripts": {
