@@ -1,6 +1,5 @@
-v0.3 (Bahrain) — 2026-09-23 — EFT framing alignment and eternal-universe cross-paper consistency
+v0.4 (Bahrain) — 17 October 2026 — Unstretched-space positive phantom mass, EHT shadow consistency, and coupled temporal-well floor
 
-- Scalar-Gauss-Bonnet coupling reframed as native operator in master TEP EFT action, not an ad-hoc addition
-- References: added DOI for TEP-HC, added TEP-BBN (Paper 29)
-- Appendix A: fixed LaTeX typo in Riemann tensor definition
-- Cross-paper consistency: aligned with TEP (Paper 0) v0.10 eternal-universe architecture
+- Evaluated strong-field photon spheres under the unstretched-space (3+1) ADM temporal metric g_tilde_munu = -A_loc^2(u_grav) U_mu U_nu + A_sp^2(u_drift) Pi_munu (Step 36), showing that the fiducial eta = +0.30 coupled solution produces a positive phantom mass M_phantom = +1.41% (Q_s = 0.20 M) to +2.65% (Q_eff = 0.236 M), unifying the positive phantom-mass sign across black-hole, galactic, and cluster scales while matching EHT M87* (40.25-40.74 uas) and Sgr A* (54.00-54.67 uas) shadow diameters within 1 sigma
+- Updated the coupled boundary-value solve (Steps 34, 47) to the unified master potential V(u) = (lambda/4) M_Pl^4 u^4 e^{-(u/u_s)^4} + V_0 e^{-(u_s/u)^4} (u_s = 10, V_0 = 0.3 M_Pl^4) and two-branch solar PPN screening (|gamma_PPN - 1| = 4.32 x 10^-8)
+- Regenerated S-star (S2) pericentre and gravitational-redshift forward-model outputs (Steps 43, 46) and synchronized the shared core library

@@ -5,7 +5,7 @@ Black-hole analysis pipeline for the Temporal Equivalence Principle (TEP).
 ## Quick Start
 
 ```bash
-cd "/Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH"
+cd "TEP-BH"
 python scripts/run_pipeline.py
 ```
 

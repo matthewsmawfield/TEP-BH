@@ -2,25 +2,33 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21677826.svg)](https://doi.org/10.5281/zenodo.21677826)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
-
 ![TEP-BH: Black Holes and the Temporal Horizon](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.3 (Bahrain)  
-**First published:** 29 July 2026 · **Last updated:** 30 September 2026
-**Status:** Preprint (Open for Collaboration)  
+**Version:** v0.4 (Bahrain)  
+**First published:** 29 July 2026 · **Last updated:** 17 October 2026  
+**Status:** Preprint  
 **DOI:** [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826)  
-**Website:** [https://mlsmawfield.com/tep/bh](https://mlsmawfield.com/tep/bh)  
-**Paper Series:** TEP Series: Paper 28 (Black Holes and the Temporal Horizon)
+**Website:** [https://mlsmawfield.com/tep/bh/](https://mlsmawfield.com/tep/bh/)  
+**Paper Series:** TEP Series · Group F (VI. Cosmological Transport, Horizon Boundary & Standard Sirens) · Paper 28 (`F28`)
 
 ## Abstract
 
+<!-- Generated from site/components/0_abstract.html; update the manuscript source, then run tools/sync_current_corpus_readmes.py. -->
 
+The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu} = -A_{\rm loc}²(u_{\rm grav}(\mathbf x))\,U_\mu U_\nu + A_{\rm sp}²(u_{\rm drift}(t,\mathbf x))\,\Pi_{\mu\nu} + B(\phi)\,\Pi_\mu^\alpha\Pi_\nu^\beta\nabla_\alpha\phi\nabla_\beta\phi$ ($U_\mu \equiv -\nabla_\mu\bar\phi/\sqrt{2\bar X}$, $\Pi_{\mu\nu} = g_{\mu\nu} + U_\mu U_\nu$; written in isotropic conformal–disformal shorthand as $\tilde g_{\mu\nu}=A²(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$). The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: Under TEP, a black hole is modeled as a temporal well—a target regular spatial region in which matter-frame clock rates become strongly suppressed. A continuous, extreme but finite gradient in proper-time rate provides a unified mechanism for the principal observational signatures attributed to a black hole.
 
+Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.
 
+The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed EFT architecture — not selecting among competing theories.
 
-The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric tilde g_μν=A²(ϕ)g_μν+B(ϕ)nabla_μϕnabla_νϕ. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: Under TEP, a black hole is modeled as a temporal well—a target regular spatial region in which matter-frame clock rates become strongly suppressed. A continuous, extreme but finite gradient in proper-time rate provides a unified mechanism for the principal observational signatures attributed to a black hole. Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual M_phantomT ≡ M_fit GR - M_matter TEP measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations. The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when g_μν is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed EFT architecture — not selecting among competing theories. Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test, because TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain, changing the late-time spectral problem. Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time. The scope of the construction is stated plainly. The temporal-well criteria are derived as necessary conditions, but each quantitative result is computed on a separate benchmark — fixed Schwarzschild (incompatibility proof), perturbative sGB exterior, or prescribed Hayward interior — and no single global solution yet satisfies all criteria simultaneously. The Rule-20 construction target is a static, gravitationally regular temporal-well family from stellar to supermassive scales, with the same fixed potential floor and a finite positive minimum matter-clock rate. The benchmarks establish ingredients of that family; the coupled global mass-family solution remains to be constructed. The phantom-mass unification is at the level of mechanism, not sign: the galactic channel gives M_phantom > 0 while the strong-field sGB benchmark gives a negative residual (-6.3%), the sign being scale- and data-dependent. The disformal normalisation B_0 = 1 used here is a positive-sign (Bgeq0) strong-field benchmark. Paper 0's loop diagnostic also tests a positive coefficient, but defines its dimensionless normalization separately (Appendix E, R6); the earlier B_0 ≈ -3 × 10⁻³ volume-balance calibration is excluded by the sign requirement. What remains open is the dimensional reconciliation between the geometrized strong-field normalization (B_0 = 1 M_BH²) and the mass-dimension-(-4) weak-field coefficient, together with the derivation of B(ϕ) from the master action. Finally, the construction is carried out in static spherical symmetry; the rotating generalisation is required for direct comparison with EHT images and LIGO ringdown, so the non-rotating shadow and quasinormal-mode figures are mechanism demonstrations, not direct observational predictions.
+Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test, because TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain, changing the late-time spectral problem. Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.
 
+The scope of the construction is stated plainly. The temporal-well criteria are derived as necessary conditions, with quantitative evaluations across fixed Schwarzschild (incompatibility proof), perturbative sGB exterior, and the regular Hayward-class interior (Step 34). On the isotropic conformal benchmark ($\tilde g_{\mu\nu}=A²(\phi)g_{\mu\nu}$, where spatial stretching cancels $A²(\phi)$ out of null geodesics), only the softened Hayward core acts on the photon sphere, yielding a $-5.4\%$ to $-6.3\%$ shadow contraction; under the unstretched-space temporal metric $\tilde g_{\mu\nu}=-A_{\rm loc}²(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}²(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$) (where the $(3+1)$ ADM spatial 3-metric does not stretch and the temporal well $A(\phi(r))=e^{-\phi(r)}<1$ refracts null trajectories via $\tilde V_{\rm eff}(r)=e^{-2\phi(r)}F(r)/r²$, Step 36), the fiducial $\eta=+0.30$ solution produces a positive phantom mass $M_{\rm phantom}=+1.41\%$ ($Q_s=0.20\,M$) to $+2.65\%$ ($Q_{\rm eff}=0.236\,M$ from the solved Step 34 BVP), unifying the positive phantom-mass sign ($M_{\rm phantom}>0$) across black-hole, galactic, and cluster scales while matching the EHT M87$^\ast$ ($40.25$–$40.74\,\mu$as vs $42.0\pm3.0\,\mu$as, $-0.58\sigma$ to $-0.42\sigma$) and Sgr A$^\ast$ ($54.00$–$54.67\,\mu$as vs $48.7\pm7.0\,\mu$as, $+0.76\sigma$ to $+0.85\sigma$) shadow diameters within $1\sigma$. The disformal normalisation $B_0 = 1$ used here is a positive-sign ($B\geq0$) strong-field benchmark. Paper 0's loop diagnostic also tests a positive coefficient, but defines its dimensionless normalization separately (Appendix E, R6); the earlier $B_0 \approx -3\times10^{-3}$ volume-balance calibration is excluded by the sign requirement. What remains open is the dimensional reconciliation between the geometrized strong-field normalization ($B_0 = 1\,M_{\rm BH}²$) and the mass-dimension-$(-4)$ weak-field coefficient, together with the derivation of $B(\phi)$ from the master action. Finally, the construction is carried out in static spherical symmetry; the rotating generalisation is required for direct comparison with EHT images and LIGO ringdown, so the non-rotating shadow and quasinormal-mode figures are mechanism demonstrations, not direct observational predictions.
+
+Keywords: Temporal Equivalence Principle, temporal well, temporal horizon, dynamical proper time, phantom mass, isochrony axiom, conformal-disformal metric, Schwarzschild incompatibility, apparent compactness, black holes, modified gravity, temporal shear, black-hole observations
+
+Current manuscript source: [0_abstract.html](site/components/0_abstract.html).
 
 ## Overview
 
@@ -76,7 +84,7 @@ npm run build
 
 This generates:
 - `site/dist/index.html` — static manuscript
-- `28-TEP-BH-v0.3-Bahrain.md` — root markdown manuscript
+- `F28-TEP-BH-v0.4-Bahrain.md` — root markdown manuscript
 
 ## PDF Generation
 
@@ -84,7 +92,7 @@ This generates:
 python scripts/utils/generate_site_pdf.py --quality high --wait-time 8
 ```
 
-Generates `28-TEP-BH-v0.3-Bahrain.pdf` in both the root and `site/public/docs/`.
+Generates `F28-TEP-BH-v0.4-Bahrain.pdf` in both the root and `site/public/docs/`.
 
 ## Project Structure
 
@@ -103,8 +111,8 @@ TEP-BH/
 │   ├── build.js          # Site build script
 │   └── manifest.json     # Site manifest
 ├── manuscripts/          # Markdown manuscripts
-├── 28-TEP-BH-v0.3-Bahrain.md  # Auto-generated root manuscript
-└── 28-TEP-BH-v0.3-Bahrain.pdf # Generated PDF
+├── F28-TEP-BH-v0.4-Bahrain.md  # Auto-generated root manuscript
+└── F28-TEP-BH-v0.4-Bahrain.pdf # Generated PDF
 ```
 
 ## License
@@ -131,7 +139,7 @@ Creative Commons Attribution 4.0 International License (CC BY 4.0) — see [LICE
 | **Paper 13** | [TEP-WB](https://github.com/matthewsmawfield/TEP-WB) | Temporal Shear Recovery in Gaia DR3 Wide Binaries | [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) |
 | **Paper 14** | [TEP-GNSS-MGEX](https://github.com/matthewsmawfield/TEP-GNSS-MGEX) | MGEX Multi-GNSS Clock Replication | — |
 | **Paper 15** | [TEP-EFA](https://github.com/matthewsmawfield/TEP-EFA) | Temporal Shear in the Earth Flyby Anomaly | [10.5281/zenodo.19454862](https://doi.org/10.5281/zenodo.19454862) |
-| **Paper 16** | [TEP-J0437](https://github.com/matthewsmawfield/TEP-J0437) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620) |
+| **Paper 16** | [TEP-J0437](https://github.com/matthewsmawfield/TEP-J0437) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454619](https://doi.org/10.5281/zenodo.19454619) |
 | **Paper 17** | [TEP-LLR](https://github.com/matthewsmawfield/TEP-LLR) | Lunar Laser Ranging and the Nordtvedt Effect | [10.5281/zenodo.19446028](https://doi.org/10.5281/zenodo.19446028) |
 | **Paper 18** | [TEP-HC](https://github.com/matthewsmawfield/TEP-HC) | EFT Mapping and Acoustic Peak Constraints via hi_class | [10.5281/zenodo.20572722](https://doi.org/10.5281/zenodo.20572722) |
 | **Paper 19** | [TEP-LENS](https://github.com/matthewsmawfield/TEP-LENS) | Blind-Prediction Residual Test in Multiply-Imaged Supernovae | — |
@@ -147,7 +155,7 @@ Creative Commons Attribution 4.0 International License (CC BY 4.0) — see [LICE
   journal={Zenodo},
   year={2026},
   doi={10.5281/zenodo.21677826},
-  note={Preprint v0.3 (Bahrain)},
+  note={Preprint v0.4 (Bahrain)},
   license={CC-BY-4.0}
 }
 ```

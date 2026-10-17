@@ -282,6 +282,30 @@ def main():
     print(f"  M87* sigma: {eht2['M87']['sigma_tep']:.3f} (Schw: {eht2['M87']['sigma_schw']:.3f})")
     print(f"  Sgr A* sigma: {eht2['SgrA']['sigma_tep']:.3f} (Schw: {eht2['SgrA']['sigma_schw']:.3f})")
 
+    # 6b. Unstretched-space temporal metric evaluation at fiducial eta = 0.30
+    # Under tilde_g_{mu nu} = g_{mu nu} - (A^2(phi)-1) U_mu U_nu (space unstretched,
+    # clocks slowed by A(phi) = exp(-phi(r)) < 1), the null effective potential is
+    # V_eff_unstretched(r) = exp(-2 phi(r)) F(r) / r^2, producing a POSITIVE phantom mass!
+    unstretched_results = {}
+    for label_q, q_val in [("sGB_SZ_eta_0p30", 0.200), ("Step34_BVP_Qeff", 0.23587483081860303)]:
+        def _V_unstr(r_val, q=q_val):
+            phi_r = q / np.sqrt(r_val**2 + g_crit**2)
+            return np.exp(-2.0 * phi_r) * F_func(r_val, g_crit) / (r_val**2)
+        res_u = minimize_scalar(lambda r_val: -_V_unstr(r_val), bounds=(1.8, 6.0), method='bounded')
+        r_ps_u = float(res_u.x)
+        b_c_u = float(1.0 / np.sqrt(_V_unstr(r_ps_u)))
+        ph_u = float(b_c_u / b_c_schw - 1.0)
+        eht_u = compute_eht_comparison(b_c_u)
+        unstretched_results[label_q] = {
+            "Q_s": float(q_val),
+            "r_ps": r_ps_u,
+            "b_c": b_c_u,
+            "phantom_mass_percent": float(ph_u * 100.0),
+            "mass_ratio": float(b_c_u / b_c_schw),
+            "interpretation": "positive phantom mass (apparent mass excess, matching galactic/cluster sign)",
+            "eht": eht_u,
+        }
+
     # 7. Summary
     print("\n" + "=" * 70)
     print("SUMMARY")
@@ -322,6 +346,7 @@ def main():
             "eht": eht,
             "geodesics_transiting": n_transit,
         },
+        "unstretched_space_temporal_metric_at_g_crit": unstretched_results,
         "at_g_above": {
             "g": float(g_above),
             "F_min": float(F_min2),

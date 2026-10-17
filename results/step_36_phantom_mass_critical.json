@@ -36,6 +36,64 @@
     },
     "geodesics_transiting": 0
   },
+  "unstretched_space_temporal_metric_at_g_crit": {
+    "sGB_SZ_eta_0p30": {
+      "Q_s": 0.2,
+      "r_ps": 2.7279703874328955,
+      "b_c": 5.269226615493442,
+      "phantom_mass_percent": 1.406313495875966,
+      "mass_ratio": 1.0140631349587597,
+      "interpretation": "positive phantom mass (apparent mass excess, matching galactic/cluster sign)",
+      "eht": {
+        "M87": {
+          "shadow_tep_uas": 40.24749884206812,
+          "shadow_schw_uas": 39.68934226536587,
+          "shadow_measured_uas": 42.0,
+          "shadow_unc_uas": 3.0,
+          "sigma_tep": -0.5841670526439605,
+          "sigma_schw": -0.7702192448780423,
+          "deviation_percent": 1.406313495875969
+        },
+        "SgrA": {
+          "shadow_tep_uas": 54.0041606009119,
+          "shadow_schw_uas": 53.25522518191943,
+          "shadow_measured_uas": 48.7,
+          "shadow_unc_uas": 7.0,
+          "sigma_tep": 0.7577372287016999,
+          "sigma_schw": 0.6507464545599179,
+          "deviation_percent": 1.4063134958759755
+        }
+      }
+    },
+    "Step34_BVP_Qeff": {
+      "Q_s": 0.23587483081860303,
+      "r_ps": 2.7421692194655014,
+      "b_c": 5.334080493133817,
+      "phantom_mass_percent": 2.6544269529980236,
+      "mass_ratio": 1.0265442695299802,
+      "interpretation": "positive phantom mass (apparent mass excess, matching galactic/cluster sign)",
+      "eht": {
+        "M87": {
+          "shadow_tep_uas": 40.74286686392538,
+          "shadow_schw_uas": 39.68934226536587,
+          "shadow_measured_uas": 42.0,
+          "shadow_unc_uas": 3.0,
+          "sigma_tep": -0.4190443786915405,
+          "sigma_schw": -0.7702192448780423,
+          "deviation_percent": 2.654426952998017
+        },
+        "SgrA": {
+          "shadow_tep_uas": 54.66884623302809,
+          "shadow_schw_uas": 53.25522518191943,
+          "shadow_measured_uas": 48.7,
+          "shadow_unc_uas": 7.0,
+          "sigma_tep": 0.8526923190040127,
+          "sigma_schw": 0.6507464545599179,
+          "deviation_percent": 2.6544269529980293
+        }
+      }
+    }
+  },
   "at_g_above": {
     "g": 1.0682673673219498,
     "F_min": 0.009360951807621865,

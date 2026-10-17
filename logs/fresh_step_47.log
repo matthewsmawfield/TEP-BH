@@ -1,0 +1,5 @@
+rho=0.002 phi_c=0.0031 A_c=0.9969 Fmin=0.933 M=0.067 freeze=1.055 sigma=5.390e-12
+rho=0.005 phi_c=0.0080 A_c=0.9920 Fmin=0.832 M=0.168 freeze=1.153 sigma=2.386e-10
+rho=0.01 phi_c=0.0174 A_c=0.9827 Fmin=0.664 M=0.337 freeze=1.374 sigma=4.810e-09
+rho=0.02 phi_c=0.0437 A_c=0.9573 Fmin=0.327 M=0.681 freeze=2.401 sigma=1.406e-07
+wrote /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/results/step_47_well_bvp_diagnostic.json horizon-free 4

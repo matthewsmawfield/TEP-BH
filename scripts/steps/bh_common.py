@@ -271,7 +271,8 @@ def _scalar_field_profile(r, M, phi_0, delta):
     r = np.asarray(r, dtype=float)
     r_h = 2.0 * M
     r_safe = np.maximum(r, 1e-30)
-    S = 1.0 / (1.0 + np.exp((r - r_h) / (delta * r_h)))
+    arg = np.clip((r - r_h) / (delta * r_h), -500.0, 500.0)
+    S = 1.0 / (1.0 + np.exp(arg))
     phi = phi_0 * np.log(r_safe / r_h) * S
     return phi
 
@@ -315,7 +316,8 @@ def _scalar_field_gradient(r, M, phi_0, delta):
     r = np.asarray(r, dtype=float)
     r_h = 2.0 * M
     r_safe = np.maximum(r, 1e-30)
-    S = 1.0 / (1.0 + np.exp((r - r_h) / (delta * r_h)))
+    arg = np.clip((r - r_h) / (delta * r_h), -500.0, 500.0)
+    S = 1.0 / (1.0 + np.exp(arg))
     dS = -S * (1.0 - S) / (delta * r_h)
     dphi = phi_0 * (1.0 / r_safe * S + np.log(r_safe / r_h) * dS)
     return dphi

@@ -35,7 +35,7 @@ Each component scales as $r^{2\phi_0 - 3}$ (verified by exact SymPy computation)
 \end{equation}
 </div>
 <p>
- This is NOT $r^{12\phi_0 - 6}$ as the naive conformal formula $A^{-12} K_{\rm Schw}$ suggests. The conformal formula includes only the leading Schwarzschild term scaled by $A^{-12}$, omitting the derivative terms from the non-constant conformal factor $A(r)$. For $\phi_0 < 3/2$, the derivative terms ($r^{4\phi_0-6}$) dominate over the leading term ($r^{12\phi_0-6}$), and the conformal formula underestimates the curvature.
+ This is NOT $r^{12\phi_0 - 6}$ as the naive conformal formula $A^{-12} K_{\rm Schw}$ suggests. The conformal formula includes only the leading Schwarzschild term scaled by $A^{-12}$, omitting the derivative terms from the non-constant conformal factor $A(r)$. For $\phi_0 &lt; 3/2$, the derivative terms ($r^{4\phi_0-6}$) dominate over the leading term ($r^{12\phi_0-6}$), and the conformal formula underestimates the curvature.
 </p>
 
 <h2>D.2 Specific Values (Exact, $M = 1$)</h2>
@@ -61,13 +61,13 @@ Each component scales as $r^{2\phi_0 - 3}$ (verified by exact SymPy computation)
 </div>
 <h4>Proof</h4>
 <p>
- The exponent $\phi_0$ is allowed either sign; with $A = e^{\beta_A\phi}$, $\beta_A = -1$, the branch $\phi_0 > 0$ corresponds to $A \to \infty$ ($\phi \to -\infty$) and $\phi_0 < 0$ to $A \to 0$ ($\phi \to +\infty$), the latter being the physical branch under the $\phi > 0$-in-wells convention.
+ The exponent $\phi_0$ is allowed either sign; with $A = e^{\beta_A\phi}$, $\beta_A = -1$, the branch $\phi_0 > 0$ corresponds to $A \to \infty$ ($\phi \to -\infty$) and $\phi_0 &lt; 0$ to $A \to 0$ ($\phi \to +\infty$), the latter being the physical branch under the $\phi > 0$-in-wells convention.
 </p>
 <p>
  <em>Benchmark branch ($\phi_0 > 0$).</em> Curvature regularity ($\tilde K \to 0$ as $r \to 0$) requires $4\phi_0 - 6 > 0$, i.e., $\phi_0 > 3/2$. Bounded areal radius ($\rho = A \cdot r = r_h^{\phi_0} r^{1-\phi_0}$ finite as $r \to 0$) requires $1 - \phi_0 \geq 0$, i.e., $\phi_0 \leq 1$. These conditions are mutually exclusive: there is no $\phi_0 > 0$ satisfying both $\phi_0 > 3/2$ and $\phi_0 \leq 1$.
 </p>
 <p>
- <em>Physical branch ($\phi_0 < 0$).</em> The Kretschmann exponent $4\phi_0 - 6 < -6$ for every $\phi_0 < 0$: $\tilde K$ diverges faster than the Schwarzschild $r^{-6}$ singularity for every admissible index, while $\rho \sim r^{1-\phi_0} \to 0$ is trivially bounded. Curvature regularity therefore fails unconditionally — no $\phi_0 < 0$ achieves finite or vanishing $\tilde K$. The incompatibility on the physical branch is thus stronger than mutual exclusion: the finiteness condition itself is unreachable. $\square$
+ <em>Physical branch ($\phi_0 &lt; 0$).</em> The Kretschmann exponent $4\phi_0 - 6 &lt; -6$ for every $\phi_0 &lt; 0$: $\tilde K$ diverges faster than the Schwarzschild $r^{-6}$ singularity for every admissible index, while $\rho \sim r^{1-\phi_0} \to 0$ is trivially bounded. Curvature regularity therefore fails unconditionally — no $\phi_0 &lt; 0$ achieves finite or vanishing $\tilde K$. The incompatibility on the physical branch is thus stronger than mutual exclusion: the finiteness condition itself is unreachable. $\square$
 </p>
 <p>
  The two branches exhaust the power-law ansatz (the borderline $\phi_0 = 0$ recovers Schwarzschild itself, $K = 48M^2/r^6$, divergent). No conformal power-law temporal well exists on fixed Schwarzschild geometry.
@@ -121,7 +121,7 @@ Each component scales as $r^{2\phi_0 - 3}$ (verified by exact SymPy computation)
 
 <h2>D.6 Disformal Term: Status of the Classification</h2>
 <p>
- The disformal term $B\nabla\phi\nabla\phi$ contributes $B(\phi')^2$ to $\tilde g_{rr}$. In the deep interior, the Lorentzian condition $\det_{2d} < 0$ forces $B \to 0$ (for logarithmic $\psi$) or $\tilde g_{rr} \to 0$ (for saturating $\psi$). For the tested parameter space, the deep interior curvature is controlled by $A$ alone, and the conformal theorem applies. The full disformal classification — classifying all allowed asymptotics of $A$, $B$, $\phi$ under $\det\tilde g < 0$, $\tilde K < \infty$, and $\tilde R_{\rm area} < \infty$ — is an open mathematical programme (Section 3.3). The statement that the disformal term cannot help is established for the tested class but not as a general theorem.
+ The disformal term $B\nabla\phi\nabla\phi$ contributes $B(\phi')^2$ to $\tilde g_{rr}$. In the deep interior, the Lorentzian condition $\det_{2d} &lt; 0$ forces $B \to 0$ (for logarithmic $\psi$) or $\tilde g_{rr} \to 0$ (for saturating $\psi$). For the tested parameter space, the deep interior curvature is controlled by $A$ alone, and the conformal theorem applies. The full disformal classification — classifying all allowed asymptotics of $A$, $B$, $\phi$ under $\det\tilde g &lt; 0$, $\tilde K &lt; \infty$, and $\tilde R_{\rm area} &lt; \infty$ — is an open mathematical programme (Section 3.3). The statement that the disformal term cannot help is established for the tested class but not as a general theorem.
 </p>
 
 <h2>D.7 Implication: The Temporal Field Must Modify the Geometry</h2>

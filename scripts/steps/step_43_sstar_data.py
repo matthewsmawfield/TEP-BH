@@ -620,14 +620,29 @@ def main():
             print_status(f"--- Generating synthetic S2 data with TEP injection (eta={eta_inject}) ---", "INFO")
             print_status(f"  The conformal factor A(r) = exp(+eta/(3*r_rs)) is applied", "INFO")
             print_status(f"  to simulate what would be observed if TEP is true.", "INFO")
+            astrometry = generate_s2_synthetic_astrometry(S2_ORBITAL_PARAMS, n_points=150, noise_mas=0.1, eta_inject=eta_inject)
+            spectroscopy = generate_s2_synthetic_spectroscopy(S2_ORBITAL_PARAMS, n_points=100, noise_kms=10, eta_inject=eta_inject)
+            is_synthetic = True
+            synthetic_note = "Generated from published GRAVITY Collaboration orbital parameters for injection testing."
         else:
-            print_status("--- Real data download failed; generating synthetic S2 data from published parameters ---", "WARN")
-            print_status(f"  Reason: {real_data.get('error', 'unknown')}", "WARN")
-
-        astrometry = generate_s2_synthetic_astrometry(S2_ORBITAL_PARAMS, n_points=150, noise_mas=0.1, eta_inject=eta_inject)
-        spectroscopy = generate_s2_synthetic_spectroscopy(S2_ORBITAL_PARAMS, n_points=100, noise_kms=10, eta_inject=eta_inject)
-        is_synthetic = True
-        synthetic_note = "Generated from published GRAVITY Collaboration orbital parameters for pipeline testing."
+            # Check if cached real data exists on disk before failing
+            cached_astro = PROCESSED_DIR / "sstar_astrometry.json"
+            cached_spec = PROCESSED_DIR / "sstar_spectroscopy.json"
+            if cached_astro.exists() and cached_spec.exists():
+                ca = json.loads(cached_astro.read_text())
+                cs = json.loads(cached_spec.read_text())
+                if not ca.get("is_synthetic", True) and not cs.get("is_synthetic", True):
+                    print_status("--- CDS unreachable; using cached REAL S2 data from Gillessen et al. 2017 ---", "INFO")
+                    astrometry = ca["data"]
+                    spectroscopy = cs["data"]
+                    is_synthetic = False
+                    synthetic_note = ca.get("synthetic_note", "")
+                    real_data["source"] = ca.get("source")
+                    real_data["bibcode"] = ca.get("bibcode")
+                else:
+                    raise RuntimeError(f"Real S2 data download failed ({real_data.get('error', 'unknown')}); synthetic fallback disabled.")
+            else:
+                raise RuntimeError(f"Real S2 data download failed ({real_data.get('error', 'unknown')}); synthetic fallback disabled.")
 
     print_status(f"  Astrometry: {len(astrometry)} points", "INFO")
     print_status(f"  Spectroscopy: {len(spectroscopy)} points", "INFO")

@@ -47,7 +47,7 @@ def test_schwarzschild():
     passed = max_ratio < 0.01  # 1% tolerance
     print(f"  Max deviation from 48M²/r⁶: {max_ratio:.4e}")
     print(f"  {'✓ PASS' if passed else '✗ FAIL'}")
-    return passed
+    assert passed, "Curvature regression failed; see diagnostics above."
 
 
 def test_conformal_phi0_1():
@@ -80,7 +80,7 @@ def test_conformal_phi0_1():
     passed = alpha < -1.5
     print(f"  K diverges: {'YES' if alpha < -1.5 else 'NO'}")
     print(f"  {'✓ PASS' if passed else '✗ FAIL'}")
-    return passed
+    assert passed, "Curvature regression failed; see diagnostics above."
 
 
 def test_conformal_phi0_2():
@@ -113,7 +113,7 @@ def test_conformal_phi0_2():
     passed = alpha > 0.5
     print(f"  K vanishes: {'YES' if alpha > 0.5 else 'NO'}")
     print(f"  {'✓ PASS' if passed else '✗ FAIL'}")
-    return passed
+    assert passed, "Curvature regression failed; see diagnostics above."
 
 
 def test_power_law_scan():
@@ -154,7 +154,7 @@ def test_power_law_scan():
     passed = max_diff < 0.1  # tolerance for numerical effects
     print(f"\n  Max power law deviation: {max_diff:.4f}")
     print(f"  {'✓ PASS' if passed else '✗ FAIL'}")
-    return passed
+    assert passed, "Curvature regression failed; see diagnostics above."
 
 
 def test_no_go_theorem():
@@ -212,7 +212,7 @@ def test_no_go_theorem():
     print(f"  Physical branch (phi_0<0) diverges faster than r^-6 for all tested: "
           f"{'YES' if physical_diverges else 'NO'}")
     print(f"  {'✓ PASS (no-go confirmed on both branches)' if passed else '✗ FAIL (no-go violated!)'}")
-    return passed
+    assert passed, "Curvature regression failed; see diagnostics above."
 
 
 def main():
@@ -231,8 +231,8 @@ def main():
     results = []
     for test in tests:
         try:
-            result = test()
-            results.append(result)
+            test()
+            results.append(True)
         except Exception as e:
             print(f"  ERROR: {e}")
             results.append(False)

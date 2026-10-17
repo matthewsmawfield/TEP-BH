@@ -1,76 +1,76 @@
-[23:09:54] [INFO] 
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO]    ======================================================================
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO] 
-[23:09:54] [INFO] 
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO]    STEP 04 (INFERENCE): JOINT FORWARD-MODEL
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO] 
-[23:09:54] [INFO] 
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO]      Composition vs Calibration Hypotheses
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO] 
-[23:09:54] [INFO] 
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO]    ======================================================================
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO] 
-[23:09:54] [INFO] 
-[23:09:54] [INFO] Separating two distinct TEP claims:
-[23:09:54] [INFO]   H_composition: M_matter < M_GR-fit  (less material mass)
-[23:09:54] [INFO]   H_calibration: M_g < M_GR-fit       (gravitational mass calibrated)
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   M_GR-fit = 4.2967e+06 M_sun
-[23:09:54] [INFO]   M_g (TEP) = 4.2967e+06 M_sun
-[23:09:54] [INFO]   eta_TEP = 0.0000 ± 1.0000
-[23:09:54] [INFO] 
-[23:09:54] [INFO] 
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO]    --- Hypothesis separation ---
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   M_g      = 4.2967e+06 M_sun
-[23:09:54] [INFO]   M_matter = 4.2967e+06 M_sun
-[23:09:54] [INFO]   Ratio M_g/M_matter = 1.00000000
-[23:09:54] [INFO]   T_P = 1.00036554, S_a = 1.00073069, D_dyn = 1.00000000
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   H_composition (M_matter < M_g): True
-[23:09:54] [INFO]   H_calibration (M_g < M_GR-fit): True
-[23:09:54] [INFO]   M_phantom = 4.6566e-09 M_sun (1.083767e-15 fraction)
-[23:09:54] [INFO] 
-[23:09:54] [INFO] 
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO]    --- Proper-volume diagnostic C_V ---
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   At pericentre (r = 1369 R_s):
-[23:09:54] [INFO]     C_V (eta=1.0778071430051477e-12) = 1.00054912
-[23:09:54] [INFO]     C_V (eta=0, GR)    = 1.00054912
-[23:09:54] [INFO]     V_proper / V_apparent = 1.00054912
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   At apocentre (r = 23733 R_s):
-[23:09:54] [INFO]     C_V (eta=1.0778071430051477e-12) = 1.00003211
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   -> C_V ~ 1: no significant volume distortion at S2 scales
-[23:09:54] [INFO] 
-[23:09:54] [INFO] 
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO]    --- Interpretation ---
-[23:09:54] [INFO] ================================================================================
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   At S2 pericentre (r ~ 1369 R_s):
-[23:09:54] [INFO]   TEP conformal factor A ~ 1.000000
-[23:09:54] [INFO]   C_V - 1 ~ 5.49e-04
-[23:09:54] [INFO]   TEP M_phantom fraction ~ 1.08e-15
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   The S-star data at current precision cannot distinguish:
-[23:09:54] [INFO]     - H_composition from H_calibration
-[23:09:54] [INFO]     - TEP from GR (eta_TEP consistent with 0)
-[23:09:54] [INFO]   The decisive test requires horizon-scale observations.
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_joint_forward.json
-[23:09:54] [INFO] 
-[23:09:54] [INFO]   NEXT: step_48_likelihood.py — formal likelihood comparison
+[23:33:14] [INFO] 
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO]    ======================================================================
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO] 
+[23:33:14] [INFO] 
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO]    STEP 04 (INFERENCE): JOINT FORWARD-MODEL
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO] 
+[23:33:14] [INFO] 
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO]      Composition vs Calibration Hypotheses
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO] 
+[23:33:14] [INFO] 
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO]    ======================================================================
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO] 
+[23:33:14] [INFO] 
+[23:33:14] [INFO] Separating two distinct TEP claims:
+[23:33:14] [INFO]   H_composition: M_matter < M_GR-fit  (less material mass)
+[23:33:14] [INFO]   H_calibration: M_g < M_GR-fit       (gravitational mass calibrated)
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   M_GR-fit = 4.2967e+06 M_sun
+[23:33:14] [INFO]   M_g (TEP) = 4.3112e+06 M_sun
+[23:33:14] [INFO]   eta_TEP = 1.0000 ± 0.7571
+[23:33:14] [INFO] 
+[23:33:14] [INFO] 
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO]    --- Hypothesis separation ---
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   M_g      = 4.3112e+06 M_sun
+[23:33:14] [INFO]   M_matter = 4.3060e+06 M_sun
+[23:33:14] [INFO]   Ratio M_g/M_matter = 1.00121769
+[23:33:14] [INFO]   T_P = 1.00012184, S_a = 1.00097376, D_dyn = 1.00000001
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   H_composition (M_matter < M_g): True
+[23:33:14] [INFO]   H_calibration (M_g < M_GR-fit): False
+[23:33:14] [INFO]   M_phantom = 5.2434e+03 M_sun (1.216213e-03 fraction)
+[23:33:14] [INFO] 
+[23:33:14] [INFO] 
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO]    --- Proper-volume diagnostic C_V ---
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   At pericentre (r = 1370 R_s):
+[23:33:14] [INFO]     C_V (eta=0.9999999999995881) = 1.00164560
+[23:33:14] [INFO]     C_V (eta=0, GR)    = 1.00054873
+[23:33:14] [INFO]     V_proper / V_apparent = 1.00164560
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   At apocentre (r = 23759 R_s):
+[23:33:14] [INFO]     C_V (eta=0.9999999999995881) = 1.00009521
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   -> C_V ~ 1: no significant volume distortion at S2 scales
+[23:33:14] [INFO] 
+[23:33:14] [INFO] 
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO]    --- Interpretation ---
+[23:33:14] [INFO] ================================================================================
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   At S2 pericentre (r ~ 1370 R_s):
+[23:33:14] [INFO]   TEP conformal factor A ~ 1.000243
+[23:33:14] [INFO]   C_V - 1 ~ 1.65e-03
+[23:33:14] [INFO]   TEP M_phantom fraction ~ 1.22e-03
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   The S-star data at current precision cannot distinguish:
+[23:33:14] [INFO]     - H_composition from H_calibration
+[23:33:14] [INFO]     - TEP from GR (eta_TEP consistent with 0)
+[23:33:14] [INFO]   The decisive test requires horizon-scale observations.
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   Saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-BH/data/processed/sstar_joint_forward.json
+[23:33:14] [INFO] 
+[23:33:14] [INFO]   NEXT: step_48_likelihood.py — formal likelihood comparison
